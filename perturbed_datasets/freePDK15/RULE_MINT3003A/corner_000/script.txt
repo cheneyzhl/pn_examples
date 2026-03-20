@@ -1,0 +1,4 @@
+wide_MINT3A = MINT3A with width <= 0.028 
+d = INT wide_MINT3A <= 1 opposite 
+d_p = dfm property wide_MINT3A d overlap abut also [EC1 = EC(d)] > 1.80 
+copy d_p

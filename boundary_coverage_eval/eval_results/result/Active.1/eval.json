@@ -1,0 +1,151 @@
+{
+  "rule_name": "Active.1",
+  "rule_description": "Minimum width of active = 0.09",
+  "rule_script": "INTERNAL active < 0.09",
+  "perturbed_scripts": {
+    "corner_000": "INTERNAL active < 0.089\n",
+    "corner_001": "INTERNAL active < 0.091\n",
+    "corner_original": "INTERNAL active < 0.09\n"
+  },
+  "data_name": "freepdk-45nm",
+  "judge_mode": "match",
+  "corner_count": 3,
+  "sample_count": 2,
+  "all_corners_match": false,
+  "all_corners_detect": false,
+  "all_corners_ok": true,
+  "per_corner": [
+    {
+      "corner_id": "corner_000",
+      "script_expected_correct": false,
+      "script_predicted_correct": false,
+      "corner_any_mismatch": true,
+      "corner_all_match": false,
+      "corner_ok": true,
+      "samples": [
+        {
+          "idx": 0,
+          "predicted_label": true,
+          "calibre_label": true,
+          "match": true,
+          "error": null,
+          "pos": {
+            "ACTIVE_1": [
+              {
+                "llx": 0,
+                "lly": 0,
+                "urx": 90,
+                "ury": 100
+              }
+            ]
+          }
+        },
+        {
+          "idx": 1,
+          "predicted_label": false,
+          "calibre_label": true,
+          "match": false,
+          "error": null,
+          "pos": {
+            "ACTIVE_1": [
+              {
+                "llx": 0,
+                "lly": 0,
+                "urx": 89,
+                "ury": 100
+              }
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "corner_id": "corner_001",
+      "script_expected_correct": false,
+      "script_predicted_correct": false,
+      "corner_any_mismatch": true,
+      "corner_all_match": false,
+      "corner_ok": true,
+      "samples": [
+        {
+          "idx": 0,
+          "predicted_label": true,
+          "calibre_label": false,
+          "match": false,
+          "error": null,
+          "pos": {
+            "ACTIVE_1": [
+              {
+                "llx": 0,
+                "lly": 0,
+                "urx": 90,
+                "ury": 100
+              }
+            ]
+          }
+        },
+        {
+          "idx": 1,
+          "predicted_label": false,
+          "calibre_label": false,
+          "match": true,
+          "error": null,
+          "pos": {
+            "ACTIVE_1": [
+              {
+                "llx": 0,
+                "lly": 0,
+                "urx": 89,
+                "ury": 100
+              }
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "corner_id": "corner_original",
+      "script_expected_correct": true,
+      "script_predicted_correct": true,
+      "corner_any_mismatch": false,
+      "corner_all_match": true,
+      "corner_ok": true,
+      "samples": [
+        {
+          "idx": 0,
+          "predicted_label": true,
+          "calibre_label": true,
+          "match": true,
+          "error": null,
+          "pos": {
+            "ACTIVE_1": [
+              {
+                "llx": 0,
+                "lly": 0,
+                "urx": 90,
+                "ury": 100
+              }
+            ]
+          }
+        },
+        {
+          "idx": 1,
+          "predicted_label": false,
+          "calibre_label": false,
+          "match": true,
+          "error": null,
+          "pos": {
+            "ACTIVE_1": [
+              {
+                "llx": 0,
+                "lly": 0,
+                "urx": 89,
+                "ury": 100
+              }
+            ]
+          }
+        }
+      ]
+    }
+  ]
+}

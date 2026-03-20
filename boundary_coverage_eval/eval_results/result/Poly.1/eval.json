@@ -1,0 +1,406 @@
+{
+  "rule_name": "Poly.1",
+  "rule_description": "Min width of poly = 0.05",
+  "rule_script": "INTERNAL poly < 0.05",
+  "perturbed_scripts": {
+    "corner_000": "INTERNAL poly < 0.049\n",
+    "corner_001": "INTERNAL poly < 0.051\n",
+    "corner_original": "INTERNAL poly < 0.05\n"
+  },
+  "data_name": "freepdk-45nm",
+  "judge_mode": "match",
+  "corner_count": 3,
+  "sample_count": 7,
+  "all_corners_match": false,
+  "all_corners_detect": true,
+  "all_corners_ok": false,
+  "per_corner": [
+    {
+      "corner_id": "corner_000",
+      "script_expected_correct": false,
+      "script_predicted_correct": false,
+      "corner_any_mismatch": true,
+      "corner_all_match": false,
+      "corner_ok": true,
+      "samples": [
+        {
+          "idx": 0,
+          "predicted_label": true,
+          "calibre_label": true,
+          "match": true,
+          "error": null,
+          "pos": {
+            "POLY_1": [
+              {
+                "llx": 0,
+                "lly": 0,
+                "urx": 50,
+                "ury": 50
+              }
+            ]
+          }
+        },
+        {
+          "idx": 1,
+          "predicted_label": false,
+          "calibre_label": false,
+          "match": true,
+          "error": null,
+          "pos": {
+            "POLY_1": [
+              {
+                "llx": 0,
+                "lly": 0,
+                "urx": 4,
+                "ury": 50
+              }
+            ]
+          }
+        },
+        {
+          "idx": 2,
+          "predicted_label": false,
+          "calibre_label": false,
+          "match": true,
+          "error": null,
+          "pos": {
+            "POLY_1": [
+              {
+                "llx": 0,
+                "lly": 0,
+                "urx": 50,
+                "ury": 4
+              }
+            ]
+          }
+        },
+        {
+          "idx": 3,
+          "predicted_label": true,
+          "calibre_label": false,
+          "match": false,
+          "error": null,
+          "pos": {
+            "POLY_1": [
+              {
+                "llx": 0,
+                "lly": 0,
+                "urx": 5,
+                "ury": 50
+              }
+            ]
+          }
+        },
+        {
+          "idx": 4,
+          "predicted_label": true,
+          "calibre_label": false,
+          "match": false,
+          "error": null,
+          "pos": {
+            "POLY_1": [
+              {
+                "llx": 0,
+                "lly": 0,
+                "urx": 50,
+                "ury": 5
+              }
+            ]
+          }
+        },
+        {
+          "idx": 5,
+          "predicted_label": false,
+          "calibre_label": false,
+          "match": true,
+          "error": null,
+          "pos": {
+            "POLY_1": [
+              {
+                "llx": 0,
+                "lly": 0,
+                "urx": 3,
+                "ury": 50
+              }
+            ]
+          }
+        },
+        {
+          "idx": 6,
+          "predicted_label": false,
+          "calibre_label": false,
+          "match": true,
+          "error": null,
+          "pos": {
+            "POLY_1": [
+              {
+                "llx": 0,
+                "lly": 0,
+                "urx": 50,
+                "ury": 3
+              }
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "corner_id": "corner_001",
+      "script_expected_correct": false,
+      "script_predicted_correct": false,
+      "corner_any_mismatch": true,
+      "corner_all_match": false,
+      "corner_ok": true,
+      "samples": [
+        {
+          "idx": 0,
+          "predicted_label": true,
+          "calibre_label": false,
+          "match": false,
+          "error": null,
+          "pos": {
+            "POLY_1": [
+              {
+                "llx": 0,
+                "lly": 0,
+                "urx": 50,
+                "ury": 50
+              }
+            ]
+          }
+        },
+        {
+          "idx": 1,
+          "predicted_label": false,
+          "calibre_label": false,
+          "match": true,
+          "error": null,
+          "pos": {
+            "POLY_1": [
+              {
+                "llx": 0,
+                "lly": 0,
+                "urx": 4,
+                "ury": 50
+              }
+            ]
+          }
+        },
+        {
+          "idx": 2,
+          "predicted_label": false,
+          "calibre_label": false,
+          "match": true,
+          "error": null,
+          "pos": {
+            "POLY_1": [
+              {
+                "llx": 0,
+                "lly": 0,
+                "urx": 50,
+                "ury": 4
+              }
+            ]
+          }
+        },
+        {
+          "idx": 3,
+          "predicted_label": true,
+          "calibre_label": false,
+          "match": false,
+          "error": null,
+          "pos": {
+            "POLY_1": [
+              {
+                "llx": 0,
+                "lly": 0,
+                "urx": 5,
+                "ury": 50
+              }
+            ]
+          }
+        },
+        {
+          "idx": 4,
+          "predicted_label": true,
+          "calibre_label": false,
+          "match": false,
+          "error": null,
+          "pos": {
+            "POLY_1": [
+              {
+                "llx": 0,
+                "lly": 0,
+                "urx": 50,
+                "ury": 5
+              }
+            ]
+          }
+        },
+        {
+          "idx": 5,
+          "predicted_label": false,
+          "calibre_label": false,
+          "match": true,
+          "error": null,
+          "pos": {
+            "POLY_1": [
+              {
+                "llx": 0,
+                "lly": 0,
+                "urx": 3,
+                "ury": 50
+              }
+            ]
+          }
+        },
+        {
+          "idx": 6,
+          "predicted_label": false,
+          "calibre_label": false,
+          "match": true,
+          "error": null,
+          "pos": {
+            "POLY_1": [
+              {
+                "llx": 0,
+                "lly": 0,
+                "urx": 50,
+                "ury": 3
+              }
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "corner_id": "corner_original",
+      "script_expected_correct": true,
+      "script_predicted_correct": false,
+      "corner_any_mismatch": true,
+      "corner_all_match": false,
+      "corner_ok": false,
+      "samples": [
+        {
+          "idx": 0,
+          "predicted_label": true,
+          "calibre_label": true,
+          "match": true,
+          "error": null,
+          "pos": {
+            "POLY_1": [
+              {
+                "llx": 0,
+                "lly": 0,
+                "urx": 50,
+                "ury": 50
+              }
+            ]
+          }
+        },
+        {
+          "idx": 1,
+          "predicted_label": false,
+          "calibre_label": false,
+          "match": true,
+          "error": null,
+          "pos": {
+            "POLY_1": [
+              {
+                "llx": 0,
+                "lly": 0,
+                "urx": 4,
+                "ury": 50
+              }
+            ]
+          }
+        },
+        {
+          "idx": 2,
+          "predicted_label": false,
+          "calibre_label": false,
+          "match": true,
+          "error": null,
+          "pos": {
+            "POLY_1": [
+              {
+                "llx": 0,
+                "lly": 0,
+                "urx": 50,
+                "ury": 4
+              }
+            ]
+          }
+        },
+        {
+          "idx": 3,
+          "predicted_label": true,
+          "calibre_label": false,
+          "match": false,
+          "error": null,
+          "pos": {
+            "POLY_1": [
+              {
+                "llx": 0,
+                "lly": 0,
+                "urx": 5,
+                "ury": 50
+              }
+            ]
+          }
+        },
+        {
+          "idx": 4,
+          "predicted_label": true,
+          "calibre_label": false,
+          "match": false,
+          "error": null,
+          "pos": {
+            "POLY_1": [
+              {
+                "llx": 0,
+                "lly": 0,
+                "urx": 50,
+                "ury": 5
+              }
+            ]
+          }
+        },
+        {
+          "idx": 5,
+          "predicted_label": false,
+          "calibre_label": false,
+          "match": true,
+          "error": null,
+          "pos": {
+            "POLY_1": [
+              {
+                "llx": 0,
+                "lly": 0,
+                "urx": 3,
+                "ury": 50
+              }
+            ]
+          }
+        },
+        {
+          "idx": 6,
+          "predicted_label": false,
+          "calibre_label": false,
+          "match": true,
+          "error": null,
+          "pos": {
+            "POLY_1": [
+              {
+                "llx": 0,
+                "lly": 0,
+                "urx": 50,
+                "ury": 3
+              }
+            ]
+          }
+        }
+      ]
+    }
+  ]
+}

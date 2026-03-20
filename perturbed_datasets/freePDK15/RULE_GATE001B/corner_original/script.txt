@@ -1,0 +1,4 @@
+INTERNAL GATEB_vertical_edges < 0.014 
+INTERNAL GATEB_vertical_edges > 0.014 < 0.016 
+INTERNAL GATEB_vertical_edges > 0.016 < 0.020 
+INTERNAL GATEB_vertical_edges > 0.020 < 0.200

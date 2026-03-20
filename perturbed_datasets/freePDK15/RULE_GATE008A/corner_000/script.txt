@@ -1,0 +1,3 @@
+GateAnotC = GATEA NOT GATEC 
+x = SIZE GateAnotC BY 0.237 
+GATEA NOT x

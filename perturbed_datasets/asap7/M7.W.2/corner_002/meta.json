@@ -1,0 +1,36 @@
+{
+  "corner_id": "corner_002",
+  "corner_idx": 2,
+  "bits": [
+    0,
+    1,
+    0
+  ],
+  "targets_used": [
+    {
+      "kind": "INTERNAL",
+      "var": "M7_VE",
+      "op": ">",
+      "num_str": "20",
+      "decimals": 0,
+      "line_idx": 0
+    },
+    {
+      "kind": "INTERNAL",
+      "var": "M7_VE",
+      "op": "<",
+      "num_str": "10000",
+      "decimals": 0,
+      "line_idx": 0
+    },
+    {
+      "kind": "INTERNAL",
+      "var": "M7_VE",
+      "op": ">",
+      "num_str": "0",
+      "decimals": 0,
+      "line_idx": 0
+    }
+  ],
+  "script_expected_correct": false
+}

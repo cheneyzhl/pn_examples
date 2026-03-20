@@ -1,0 +1,21 @@
+{
+  "rule_name": "RULE_NIM007B",
+  "data_name": "freePDK15",
+  "extracted_targets_total": 1,
+  "used_targets": [
+    {
+      "kind": "HOLES",
+      "var": "NIM",
+      "op": "<",
+      "num_str": "0.049",
+      "decimals": 3,
+      "line_idx": 0,
+      "num_start": 12,
+      "num_end": 17
+    }
+  ],
+  "delta": 0.001,
+  "decomposition_mode": "numeric",
+  "generated_corners_count": 3,
+  "generated_at": "2026-03-19_20-28-23"
+}

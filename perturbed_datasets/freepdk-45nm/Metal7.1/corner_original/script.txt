@@ -1,0 +1,1 @@
+INTERNAL metal7 < 0.4

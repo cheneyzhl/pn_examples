@@ -1,0 +1,526 @@
+{
+    "WELL.W.1": {
+        "rule": "Minimum horizontal width of WELL is 108 nm.",
+        "script": "INTERNAL WELL_VE < 0.108",
+        "constraints": [
+            "set_min_width(108)"
+        ]
+    },
+    "WELL.W.2": {
+        "rule": "Minimum vertical width of WELL is 54 nm.",
+        "script": "INTERNAL WELL_HE < 0.054",
+        "constraints": [
+            "set_min_height(54)"
+        ]
+    },
+    "WELL.A.1A": {
+        "rule": "Minimum area of WELL is 5832 nm-sq.",
+        "script": "AREA WELL  < 0.005832",
+        "constraints": [
+            "(self.width * self.height) >= 5832"
+        ]
+    },
+    "WELL.A.1B": {
+        "rule": "Minimum enclosed area of WELL is 5832 nm-sq.",
+        "script": "HOLES WELL < 0.005832",
+        "constraints": []
+    },
+    "FIN.W.1": {
+        "rule": "Exact vertical FIN width is 7 nm.",
+        "script": "INTERNAL FIN_HE < 0.007 \nINTERNAL FIN_HE > 0.007 < 0.5",
+        "constraints": [
+            "self.height == 7"
+        ]
+    },
+    "FIN.W.2": {
+        "rule": "Minimum horizontal FIN width is 108 nm.",
+        "script": "INTERNAL FIN_VE < 0.108",
+        "constraints": [
+            "set_min_width(108)"
+        ]
+    },
+    "GATE.W.1": {
+        "rule": "GATE.W.1 Exact horizontal GATE width is 20 nm.",
+        "script": "INTERNAL GATE_VE < 0.020 \nINTERNAL GATE_VE > 0.020 < 1000",
+        "constraints": [
+            "self.width == 20"
+        ]
+    },
+    "GATE.W.2": {
+        "rule": "Minimum vertical GATE width is 40 nm.",
+        "script": "INTERNAL GATE_HE < VAR_OPT_RES",
+        "constraints": [
+            "set_min_height(40)"
+        ]
+    },
+    "ACTIVE.W.1": {
+        "rule": "Minimum vertical width of ACTIVE layer is 27 nm.",
+        "script": "INTERNAL ACTIVE_HE < 0.027",
+        "constraints": [
+            "set_min_height(27)"
+        ]
+    },
+    "ACTIVE.W.2": {
+        "rule": "ACTIVE layer vertical width increment is an integer multiple of 27 nm.",
+        "script": "INTERNAL ACTIVE_HE < 0.027 \nINTERNAL ACTIVE_HE > 0.027 < 0.054 OPPOSITE \nINTERNAL ACTIVE_HE > 0.054 < 0.081 OPPOSITE \nINTERNAL ACTIVE_HE > 0.081 < 0.108 OPPOSITE \nINTERNAL ACTIVE_HE > 0.108 < 0.135 OPPOSITE \nINTERNAL ACTIVE_HE > 0.135 < 0.162 OPPOSITE \nINTERNAL ACTIVE_HE > 0.162 < 0.189 OPPOSITE \nINTERNAL ACTIVE_HE > 0.189 < 0.216 OPPOSITE \nINTERNAL ACTIVE_HE > 0.216 < 0.243 OPPOSITE \nINTERNAL ACTIVE_HE > 0.243 < 0.270 OPPOSITE \nINTERNAL ACTIVE_HE > 0.270 < 0.297 OPPOSITE \nINTERNAL ACTIVE_HE > 0.297 < 0.324 OPPOSITE \nINTERNAL ACTIVE_HE > 0.324 < 0.351 OPPOSITE \nINTERNAL ACTIVE_HE > 0.351 < 0.378 OPPOSITE \nINTERNAL ACTIVE_HE > 0.378 < 0.405 OPPOSITE \nINTERNAL ACTIVE_HE > 0.405 < 0.432 OPPOSITE \nINTERNAL ACTIVE_HE > 0.432 < 0.459 OPPOSITE \nINTERNAL ACTIVE_HE > 0.459 < 0.486 OPPOSITE \nINTERNAL ACTIVE_HE > 0.486 < 0.513 OPPOSITE \nINTERNAL ACTIVE_HE > 0.513 < 0.540 OPPOSITE \nINTERNAL ACTIVE_HE > 0.540 < 0.567 OPPOSITE \nINTERNAL ACTIVE_HE > 0.567 < 0.594 OPPOSITE \nINTERNAL ACTIVE_HE > 0.594 < 0.621 OPPOSITE \nINTERNAL ACTIVE_HE > 0.621 < 0.648 OPPOSITE \nINTERNAL ACTIVE_HE > 0.648 < 0.675 OPPOSITE",
+        "constraints": [
+            "(self.height % 27) == 0"
+        ]
+    },
+    "ACTIVE.W.3": {
+        "rule": "Minimum horizontal width of ACTIVE is 16 nm.",
+        "script": "INTERNAL ACTIVE_VE < 0.016",
+        "constraints": [
+            "set_min_width(16)"
+        ]
+    },
+    "GCUT.W.1": {
+        "rule": "Minimum vertical width of GCUT is 17 nm.",
+        "script": "INTERNAL GCUT_HE < 0.017 ABUT < 90 OPPOSITE",
+        "constraints": [
+            "set_min_height(17)"
+        ]
+    },
+    "GCUT.AUX.3": {
+        "rule": "GCUT.AUX.3 GCUT may not interact with channel.",
+        "script": "GCUT INTERACT CHANNELR",
+        "constraints": []
+    },
+    "NSELECT.W.1": {
+        "rule": "Minimum horizontal width of NSELECT is 108 nm.",
+        "script": "INTERNAL NSELECT_VE < 0.108 OPPOSITE",
+        "constraints": [
+            "set_min_width(108)"
+        ]
+    },
+    "NSELECT.W.2": {
+        "rule": "Minimum vertical width of NSELECT is 54 nm.",
+        "script": "INTERNAL NSELECT_HE < 0.054 OPPOSITE",
+        "constraints": [
+            "set_min_height(54)"
+        ]
+    },
+    "PSELECT.W.1": {
+        "rule": "Minimum horizontal width of PSELECT is 108 nm.",
+        "script": "INTERNAL PSELECT_VE < 0.108 OPPOSITE",
+        "constraints": [
+            "set_min_width(108)"
+        ]
+    },
+    "PSELECT.W.2": {
+        "rule": "Minimum vertical width of PSELECT is 54 nm.",
+        "script": "INTERNAL PSELECT_HE < 0.054 OPPOSITE",
+        "constraints": [
+            "set_min_height(54)"
+        ]
+    },
+    "SLVT.W.1": {
+        "rule": "Minimum horizontal width of SLVT is 108 nm.",
+        "script": "INTERNAL SLVT_VE < 0.108 OPPOSITE",
+        "constraints": [
+            "set_min_width(108)"
+        ]
+    },
+    "SLVT.W.2": {
+        "rule": "Minimum vertical width of SLVT is 54 nm.",
+        "script": "INTERNAL SLVT_HE < 0.054 OPPOSITE",
+        "constraints": [
+            "set_min_height(54)"
+        ]
+    },
+    "LVT.W.1": {
+        "rule": "Minimum horizontal width of LVT is 108 nm.",
+        "script": "INTERNAL LVT_VE < 0.108 OPPOSITE",
+        "constraints": [
+            "set_min_width(108)"
+        ]
+    },
+    "LVT.W.2": {
+        "rule": "Minimum vertical width of LVT is 54 nm.",
+        "script": "INTERNAL LVT_HE < 0.054 OPPOSITE",
+        "constraints": [
+            "set_min_height(54)"
+        ]
+    },
+    "SRAMVT.W.1": {
+        "rule": "Minimum horizontal width of SRAMVT is 108 nm.",
+        "script": "INTERNAL SRAMVT_VE < 0.108 OPPOSITE",
+        "constraints": [
+            "set_min_width(108)"
+        ]
+    },
+    "SRAMVT.W.2": {
+        "rule": "Minimum vertical width of SRAMVT is 54 nm.",
+        "script": "INTERNAL SRAMVT_HE < 0.054 OPPOSITE",
+        "constraints": [
+            "set_min_height(54)"
+        ]
+    },
+    "DUMMY.W.1": {
+        "rule": "Width of dummy should be 40 nm",
+        "script": "INTERNAL DUMMY_VE <0.040 \nINTERNAL DUMMY_VE >0.040 < 0.5",
+        "constraints": [
+            "self.width == 40"
+        ]
+    },
+    "SDT.W.1": {
+        "rule": "SDT.W.1 Minimum horizontal width of SDT is 24 nm.",
+        "script": "INTERNAL SDT_VE < 0.024 OPPOSITE",
+        "constraints": [
+            "set_min_width(24)"
+        ]
+    },
+    "LISD.W.1": {
+        "rule": "LISD.W.1 Minimum width of LISD is 24 nm.",
+        "script": "INTERNAL LISD < 0.024",
+        "constraints": [
+            "set_min_width(24) \t set_min_height(24)"
+        ]
+    },
+    "LISD.A.1": {
+        "rule": "LISD.A.1 Minimum LISD area is 648 nm-sq.",
+        "script": "AREA LISD < 0.000648",
+        "constraints": [
+            "(self.height * self.width) >= 648"
+        ]
+    },
+    "LIG.W.1": {
+        "rule": "LIG.W.1 Minimum width of LIG is 16 nm.",
+        "script": "INTERNAL LIG < 0.016",
+        "constraints": [
+            "set_min_width(16)",
+            "set_min_height(16)"
+        ]
+    },
+    "LIG.A.1": {
+        "rule": "LIG.A.1 Minimum LIG area is 324 nm-sq.",
+        "script": "AREA LIG < 0.000324",
+        "constraints": [
+            "(self.height * self.width) >= 324"
+        ]
+    },
+    "M1.W.1": {
+        "rule": "Minimum width of M1 is 18 nm.",
+        "script": "INTERNAL M1 < 0.018",
+        "constraints": [
+            "set_min_width(18) \t set_min_height(18)"
+        ]
+    },
+    "M1.A.1": {
+        "rule": "Minimum M1 area is 504 nm-sq.",
+        "script": "AREA M1 < 0.000504",
+        "constraints": [
+            "(self.height * self.width) >= 504"
+        ]
+    },
+    "M2.W.1": {
+        "rule": "Minimum width of M2 is 18 nm.",
+        "script": "INTERNAL M2 < 0.018",
+        "constraints": [
+            "set_min_width(18) \t set_min_height(18)"
+        ]
+    },
+    "M2.A.1": {
+        "rule": "Minimum M2 area is 504 nm-sq.",
+        "script": "AREA M2 < 0.000504",
+        "constraints": [
+            "(self.height * self.width) >= 504"
+        ]
+    },
+    "M3.W.1": {
+        "rule": "Minimum width of M3 is 18 nm.",
+        "script": "INTERNAL M3 < 0.018",
+        "constraints": [
+            "set_min_width(18)",
+            "set_min_height(18)"
+        ]
+    },
+    "M3.A.1": {
+        "rule": "Minimum M3 area is 504 nm-sq.",
+        "script": "AREA M3 < 0.000504",
+        "constraints": [
+            "(self.height * self.width) >= 504"
+        ]
+    },
+    "M4.W.1": {
+        "rule": "Minimum vertical width of M4 is 24 nm.",
+        "script": "INTERNAL M4_HE < VAR_M4_1X",
+        "constraints": [
+            "set_min_height(24)"
+        ]
+    },
+    "M4.W.2": {
+        "rule": "Maximum vertical width of M4 is 480 nm.",
+        "script": "INTERNAL M4_HE > 20*VAR_M4_1X < 10000*VAR_M4_1X REGION OPPOSITE PARALLEL ONLY PROJ > 0",
+        "constraints": [
+            "set_max_height(480)"
+        ]
+    },
+    "M4.W.3": {
+        "rule": "M4 vertical width may not be an even integer multiple of its minimum width.",
+        "script": "INTERNAL M4_HE ==  2*VAR_M4_1X REGION OPPOSITE PARALLEL ONLY PROJ > 0 \nINTERNAL M4_HE ==  4*VAR_M4_1X REGION OPPOSITE PARALLEL ONLY PROJ > 0 \nINTERNAL M4_HE ==  6*VAR_M4_1X REGION OPPOSITE PARALLEL ONLY PROJ > 0 \nINTERNAL M4_HE ==  8*VAR_M4_1X REGION OPPOSITE PARALLEL ONLY PROJ > 0 \nINTERNAL M4_HE == 10*VAR_M4_1X REGION OPPOSITE PARALLEL ONLY PROJ > 0 \nINTERNAL M4_HE == 12*VAR_M4_1X REGION OPPOSITE PARALLEL ONLY PROJ > 0 \nINTERNAL M4_HE == 14*VAR_M4_1X REGION OPPOSITE PARALLEL ONLY PROJ > 0 \nINTERNAL M4_HE == 16*VAR_M4_1X REGION OPPOSITE PARALLEL ONLY PROJ > 0 \nINTERNAL M4_HE == 18*VAR_M4_1X REGION OPPOSITE PARALLEL ONLY PROJ > 0 \nINTERNAL M4_HE == 20*VAR_M4_1X REGION OPPOSITE PARALLEL ONLY PROJ > 0",
+        "constraints": [
+            "(self.height % (2 * self.min_height)) != 0"
+        ]
+    },
+    "M4.W.4": {
+        "rule": "M4 vertical width, resulting in the polygon spanning an even number of minimum width routing tracks vertically, is not allowed.",
+        "script": "INTERNAL M4_HE ==  3*VAR_M4_1X REGION OPPOSITE PARALLEL ONLY PROJ > 0 \nINTERNAL M4_HE ==  7*VAR_M4_1X REGION OPPOSITE PARALLEL ONLY PROJ > 0 \nINTERNAL M4_HE == 11*VAR_M4_1X REGION OPPOSITE PARALLEL ONLY PROJ > 0 \nINTERNAL M4_HE == 15*VAR_M4_1X REGION OPPOSITE PARALLEL ONLY PROJ > 0 \nINTERNAL M4_HE == 19*VAR_M4_1X REGION OPPOSITE PARALLEL ONLY PROJ > 0",
+        "constraints": [
+            "((self.height + self.min_height) % (4 * self.min_height)) != 0"
+        ]
+    },
+    "M4.W.5": {
+        "rule": "Minimum horizontal width of M4 is 44 nm.",
+        "script": "INTERNAL M4_VE < VAR_BLOCK_MASK_T2T",
+        "constraints": [
+            "set_min_width(44)"
+        ]
+    },
+    "M4.AUX.1": {
+        "rule": "M4 horizontal edges must be at a grid of 24 nm.",
+        "script": "OFFGRID M4 1 VAR_M4_1X_DBU OFFSET 0 VAR_M4_YOFFSET HINT",
+        "constraints": [
+            "And((self.lly % 24) == 0, (self.ury % 24) == 0)"
+        ]
+    },
+    "M5.W.1": {
+        "rule": "Minimum horizontal width of M5 is 24 nm.",
+        "script": "INTERNAL M5_VE < VAR_M5_1X",
+        "constraints": [
+            "set_min_width(24)"
+        ]
+    },
+    "M5.W.2": {
+        "rule": "Maximum horizontal width of M5 is 480 nm.",
+        "script": "INTERNAL M5_VE > 20*VAR_M5_1X < 10000*VAR_M5_1X REGION OPPOSITE PARALLEL ONLY PROJ > 0",
+        "constraints": [
+            "set_max_width(480)"
+        ]
+    },
+    "M5.W.3": {
+        "rule": "M5 horizontal width may not be an even integer multiple of its minimum width.",
+        "script": "INTERNAL M5_VE ==  2*VAR_M5_1X REGION OPPOSITE PARALLEL ONLY PROJ > 0 \nINTERNAL M5_VE ==  4*VAR_M5_1X REGION OPPOSITE PARALLEL ONLY PROJ > 0 \nINTERNAL M5_VE ==  6*VAR_M5_1X REGION OPPOSITE PARALLEL ONLY PROJ > 0 \nINTERNAL M5_VE ==  8*VAR_M5_1X REGION OPPOSITE PARALLEL ONLY PROJ > 0 \nINTERNAL M5_VE == 10*VAR_M5_1X REGION OPPOSITE PARALLEL ONLY PROJ > 0 \nINTERNAL M5_VE == 12*VAR_M5_1X REGION OPPOSITE PARALLEL ONLY PROJ > 0 \nINTERNAL M5_VE == 14*VAR_M5_1X REGION OPPOSITE PARALLEL ONLY PROJ > 0 \nINTERNAL M5_VE == 16*VAR_M5_1X REGION OPPOSITE PARALLEL ONLY PROJ > 0 \nINTERNAL M5_VE == 18*VAR_M5_1X REGION OPPOSITE PARALLEL ONLY PROJ > 0 \nINTERNAL M5_VE == 20*VAR_M5_1X REGION OPPOSITE PARALLEL ONLY PROJ > 0",
+        "constraints": [
+            "(self.width % (2 * self.min_width)) != 0"
+        ]
+    },
+    "M5.W.4": {
+        "rule": "M5 horizontal width, resulting in the polygon spanning an even number of minimum width routing tracks horizontally, is not allowed.",
+        "script": "INTERNAL M5_VE ==  3*VAR_M5_1X REGION OPPOSITE PARALLEL ONLY PROJ > 0 \nINTERNAL M5_VE ==  7*VAR_M5_1X REGION OPPOSITE PARALLEL ONLY PROJ > 0 \nINTERNAL M5_VE == 11*VAR_M5_1X REGION OPPOSITE PARALLEL ONLY PROJ > 0 \nINTERNAL M5_VE == 15*VAR_M5_1X REGION OPPOSITE PARALLEL ONLY PROJ > 0 \nINTERNAL M5_VE == 19*VAR_M5_1X REGION OPPOSITE PARALLEL ONLY PROJ > 0",
+        "constraints": [
+            "((self.width + self.min_width) % (4 * self.min_width)) != 0"
+        ]
+    },
+    "M5.W.5": {
+        "rule": "Minimum vertical width of M5 is 44 nm.",
+        "script": "INTERNAL M5_HE < VAR_BLOCK_MASK_T2T",
+        "constraints": [
+            "set_min_height(44)"
+        ]
+    },
+    "M5.AUX.1": {
+        "rule": "M5 vertical edges must be at a grid of 24 nm.",
+        "script": "OFFGRID M5 VAR_M5_1X_DBU 1 OFFSET VAR_M5_XOFFSET 0 HINT",
+        "constraints": [
+            "And((self.llx % 24) == 0, (self.urx % 24) == 0)"
+        ]
+    },
+    "M6.W.1": {
+        "rule": "Minimum vertical width of M6 is 32 nm.",
+        "script": "INTERNAL M6_HE < VAR_M6_1X",
+        "constraints": [
+            "set_min_height(32)"
+        ]
+    },
+    "M6.W.2": {
+        "rule": "Maximum vertical width of M6 is 640 nm.",
+        "script": "INTERNAL M6_HE > 20*VAR_M6_1X < 10000*VAR_M6_1X REGION OPPOSITE PARALLEL ONLY PROJ > 0",
+        "constraints": [
+            "set_max_height(640)"
+        ]
+    },
+    "M6.W.3": {
+        "rule": "M6 vertical width may not be an even integer multiple of its minimum width.",
+        "script": "INTERNAL M6_HE ==  2*VAR_M6_1X REGION OPPOSITE PARALLEL ONLY PROJ > 0 \nINTERNAL M6_HE ==  4*VAR_M6_1X REGION OPPOSITE PARALLEL ONLY PROJ > 0 \nINTERNAL M6_HE ==  6*VAR_M6_1X REGION OPPOSITE PARALLEL ONLY PROJ > 0 \nINTERNAL M6_HE ==  8*VAR_M6_1X REGION OPPOSITE PARALLEL ONLY PROJ > 0 \nINTERNAL M6_HE == 10*VAR_M6_1X REGION OPPOSITE PARALLEL ONLY PROJ > 0 \nINTERNAL M6_HE == 12*VAR_M6_1X REGION OPPOSITE PARALLEL ONLY PROJ > 0 \nINTERNAL M6_HE == 14*VAR_M6_1X REGION OPPOSITE PARALLEL ONLY PROJ > 0 \nINTERNAL M6_HE == 16*VAR_M6_1X REGION OPPOSITE PARALLEL ONLY PROJ > 0 \nINTERNAL M6_HE == 18*VAR_M6_1X REGION OPPOSITE PARALLEL ONLY PROJ > 0 \nINTERNAL M6_HE == 20*VAR_M6_1X REGION OPPOSITE PARALLEL ONLY PROJ > 0",
+        "constraints": [
+            "(self.height % (2 * self.min_height)) != 0"
+        ]
+    },
+    "M6.W.4": {
+        "rule": "M6 vertical width, resulting in the polygon spanning an even number of minimum width routing tracks vertically, is not allowed.",
+        "script": "INTERNAL M6_HE ==  3*VAR_M6_1X REGION OPPOSITE PARALLEL ONLY PROJ > 0 \nINTERNAL M6_HE ==  7*VAR_M6_1X REGION OPPOSITE PARALLEL ONLY PROJ > 0 \nINTERNAL M6_HE == 11*VAR_M6_1X REGION OPPOSITE PARALLEL ONLY PROJ > 0 \nINTERNAL M6_HE == 15*VAR_M6_1X REGION OPPOSITE PARALLEL ONLY PROJ > 0 \nINTERNAL M6_HE == 19*VAR_M6_1X REGION OPPOSITE PARALLEL ONLY PROJ > 0",
+        "constraints": [
+            "((self.height + self.min_height) % (4 * self.min_height)) != 0"
+        ]
+    },
+    "M6.W.5": {
+        "rule": "Minimum horizontal width of M6 is 44 nm.",
+        "script": "INTERNAL M6_VE < VAR_BLOCK_MASK_T2T",
+        "constraints": [
+            "set_min_width(44)"
+        ]
+    },
+    "M6.AUX.1": {
+        "rule": "M6 horizontal edges must be at a grid of 32 nm.",
+        "script": "OFFGRID M6 1 VAR_M6_1X_DBU OFFSET 0 VAR_M6_YOFFSET HINT",
+        "constraints": [
+            "And((self.lly % 32) == 0, (self.ury % 32) == 0)"
+        ]
+    },
+    "M7.W.1": {
+        "rule": "Minimum horizontal width of M7 is 32 nm.",
+        "script": "INTERNAL M7_VE < VAR_M7_1X",
+        "constraints": [
+            "set_min_width(32)"
+        ]
+    },
+    "M7.W.2": {
+        "rule": "Maximum horizontal width of M7 is 640 nm.",
+        "script": "INTERNAL M7_VE > 20*VAR_M7_1X < 10000*VAR_M7_1X REGION OPPOSITE PARALLEL ONLY PROJ > 0",
+        "constraints": [
+            "set_max_width(640)"
+        ]
+    },
+    "M7.W.3": {
+        "rule": "M7 horizontal width may not be an even integer multiple of its minimum width.",
+        "script": "INTERNAL M7_VE ==  2*VAR_M7_1X REGION OPPOSITE PARALLEL ONLY PROJ > 0 \nINTERNAL M7_VE ==  4*VAR_M7_1X REGION OPPOSITE PARALLEL ONLY PROJ > 0 \nINTERNAL M7_VE ==  6*VAR_M7_1X REGION OPPOSITE PARALLEL ONLY PROJ > 0 \nINTERNAL M7_VE ==  8*VAR_M7_1X REGION OPPOSITE PARALLEL ONLY PROJ > 0 \nINTERNAL M7_VE == 10*VAR_M7_1X REGION OPPOSITE PARALLEL ONLY PROJ > 0 \nINTERNAL M7_VE == 12*VAR_M7_1X REGION OPPOSITE PARALLEL ONLY PROJ > 0 \nINTERNAL M7_VE == 14*VAR_M7_1X REGION OPPOSITE PARALLEL ONLY PROJ > 0 \nINTERNAL M7_VE == 16*VAR_M7_1X REGION OPPOSITE PARALLEL ONLY PROJ > 0 \nINTERNAL M7_VE == 18*VAR_M7_1X REGION OPPOSITE PARALLEL ONLY PROJ > 0 \nINTERNAL M7_VE == 20*VAR_M7_1X REGION OPPOSITE PARALLEL ONLY PROJ > 0",
+        "constraints": [
+            "(self.width % (2 * self.min_width)) != 0"
+        ]
+    },
+    "M7.W.4": {
+        "rule": "M7 horizontal width, resulting in the polygon spanning an even number of minimum width routing tracks horizontally, is not allowed.",
+        "script": "INTERNAL M7_VE ==  3*VAR_M7_1X REGION OPPOSITE PARALLEL ONLY PROJ > 0 \nINTERNAL M7_VE ==  7*VAR_M7_1X REGION OPPOSITE PARALLEL ONLY PROJ > 0 \nINTERNAL M7_VE == 11*VAR_M7_1X REGION OPPOSITE PARALLEL ONLY PROJ > 0 \nINTERNAL M7_VE == 15*VAR_M7_1X REGION OPPOSITE PARALLEL ONLY PROJ > 0 \nINTERNAL M7_VE == 19*VAR_M7_1X REGION OPPOSITE PARALLEL ONLY PROJ > 0",
+        "constraints": [
+            "((self.width + self.min_width) % (4 * self.min_width)) != 0"
+        ]
+    },
+    "M7.W.5": {
+        "rule": "Minimum vertical width of M7 is 44 nm.",
+        "script": "INTERNAL M7_HE < VAR_BLOCK_MASK_T2T",
+        "constraints": [
+            "set_min_height(44)"
+        ]
+    },
+    "M7.AUX.1": {
+        "rule": "M7 vertical edges must be at a grid of 32 nm.",
+        "script": "OFFGRID M7 VAR_M7_1X_DBU 1 OFFSET VAR_M7_XOFFSET 0 HINT",
+        "constraints": [
+            "And((self.llx % 32) == 0, (self.urx % 32) == 0)"
+        ]
+    },
+    "M8.W.1": {
+        "rule": "Minimum width of M8 is 40 nm.",
+        "script": "INTERNAL M8 < 0.040",
+        "constraints": [
+            "set_min_width(40)"
+        ]
+    },
+    "M8.W.2": {
+        "rule": "Minimum width of M8, when its length >= 400 nm and < 1200 nm, is 60 nm.",
+        "script": "X = LENGTH M8 > 0.4 < 1.2 \nY = M8 WITH EDGE X \nINTERNAL Y < 0.060",
+        "constraints": [
+            "Implies(And(self.length >= 400, self.length < 1200), And(self.width >= 60, self.height>=60))"
+        ]
+    },
+    "M8.W.3": {
+        "rule": "Minimum width of M8, when its length >= 1200 nm and < 1800 nm, is 80 nm.",
+        "script": "X = LENGTH M8 >=1.2 < 1.8 \nY = M8 WITH EDGE X \nINTERNAL Y < 0.080",
+        "constraints": [
+            "Implies(And(self.length >= 1200, self.length < 1800), And(self.width >= 80, self.height>=80))"
+        ]
+    },
+    "M8.W.4": {
+        "rule": "Minimum width of M8, when its length >= 1800 nm, is 120 nm.",
+        "script": "X = LENGTH M8 >=1.8 \nY = M8 WITH EDGE X \nINTERNAL Y < 0.12",
+        "constraints": [
+            "Implies(self.length >= 1800, And(self.width >= 120, self.height >= 120))"
+        ]
+    },
+    "M8.W.5": {
+        "rule": "Maximum width of M8 is 2000 nm.",
+        "script": "INTERNAL M8 > 2.000 < 10.0",
+        "constraints": [
+            "set_max_width(2000)",
+            "set_max_height(2000)"
+        ]
+    },
+    "M8.A.1": {
+        "rule": "Minimum area of M8 is 7520 nm-sq.",
+        "script": "AREA M8 < 0.007520",
+        "constraints": [
+            "(self.height * self.width) >= 7520"
+        ]
+    },
+    "M8.L.1 ": {
+        "rule": "Minimum feature length of M8 is 40 nm.",
+        "script": "CONVEX EDGE M8 ANGLE1 == 90 ANGLE2 > 90 WITH LENGTH < 0.040",
+        "constraints": [
+            "self.length >= 40"
+        ]
+    },
+    "M9.W.1": {
+        "rule": "Minimum width of M9 is 40 nm.",
+        "script": "INTERNAL M9 < 0.040",
+        "constraints": [
+            "set_min_width(40) \t set_min_height(40)"
+        ]
+    },
+    "M9.W.2": {
+        "rule": "Minimum width of M9, when its length >= 400 nm and < 1200 nm, is 60 nm.",
+        "script": "X = LENGTH M9 > 0.4 < 1.2 \nY = M9 WITH EDGE X \nINTERNAL Y < 0.060",
+        "constraints": [
+            "Implies(And(self.length >= 400, self.length < 1200), And(self.width >= 60, self.height>=60))"
+        ]
+    },
+    "M9.W.3": {
+        "rule": "Minimum width of M9, when its length >= 1200 nm and < 1800 nm, is 80 nm.",
+        "script": "X = LENGTH M9 >=1.2 < 1.8 \nY = M9 WITH EDGE X \nINTERNAL Y < 0.080",
+        "constraints": [
+            "Implies(And(self.length >= 1200, self.length < 1800), And(self.width >= 80, self.height>=80))"
+        ]
+    },
+    "M9.W.4": {
+        "rule": "Minimum width of M9, when its length >= 1800 nm, is 120 nm.",
+        "script": "X = LENGTH M9 >=1.8 \nY = M9 WITH EDGE X \nINTERNAL Y < 0.12",
+        "constraints": [
+            "Implies(self.length >= 1800, And(self.width >= 120, self.height>=120))"
+        ]
+    },
+    "M9.W.5": {
+        "rule": "Maximum width of M9 is 2000 nm.",
+        "script": "INTERNAL M9 > 2.000 < 10.0",
+        "constraints": [
+            "set_max_width(2000) \t  set_max_height(2000)"
+        ]
+    },
+    "M9.A.1": {
+        "rule": "Minimum area of M9 is 7520 nm-sq.",
+        "script": "AREA M9 < 0.007520",
+        "constraints": [
+            "(self.height * self.width) >= 7520"
+        ]
+    },
+    "M9.L.1 ": {
+        "rule": "Minimum feature length of M9 is 40 nm.",
+        "script": "CONVEX EDGE M9 ANGLE1 == 90 ANGLE2 > 90 WITH LENGTH < 0.040",
+        "constraints": [
+            "self.length >= 40"
+        ]
+    },
+    "V8.W.1": {
+        "rule": "Exact width of a V8 instance is [40 nm x 40 nm | 40 nm x 120 nm | 120 nm x 40 nm].",
+        "script": "x= NOT RECTANGLE V8 == 0.04 BY ==0.04 \ny= NOT RECTANGLE V8 == 0.12 BY ==0.04 \nz= NOT RECTANGLE V8 == 0.04 BY ==0.12 \nx AND (y AND z)",
+        "constraints": [
+            "Or(And(self.width==40, self.height==40), And(self.width==40, self.height==120), And(self.width==120, self.height==40))"
+        ]
+    },
+    "V9.W.1": {
+        "rule": "Exact width of a V9 instance is [40 nm x 40 nm | 40 nm x 120 nm | 120 nm x 40 nm].",
+        "script": "x= NOT RECTANGLE V9 == 0.04 BY ==0.04 \ny= NOT RECTANGLE V9 == 0.12 BY ==0.04 \nz= NOT RECTANGLE V9 == 0.04 BY ==0.12 \nx AND (y AND z)",
+        "constraints": [
+            "Or(And(self.width == 40, self.height == 40), And(self.width == 40, self.height == 120), And(self.width == 120, self.height == 40))"
+        ]
+    }
+}

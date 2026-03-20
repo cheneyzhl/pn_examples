@@ -1,0 +1,27 @@
+{
+  "corner_id": "corner_002",
+  "corner_idx": 2,
+  "bits": [
+    0,
+    1
+  ],
+  "targets_used": [
+    {
+      "kind": "INTERNAL",
+      "var": "M9",
+      "op": ">",
+      "num_str": "2.000",
+      "decimals": 3,
+      "line_idx": 0
+    },
+    {
+      "kind": "INTERNAL",
+      "var": "M9",
+      "op": "<",
+      "num_str": "10.0",
+      "decimals": 1,
+      "line_idx": 0
+    }
+  ],
+  "script_expected_correct": false
+}

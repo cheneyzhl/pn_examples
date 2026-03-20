@@ -1,0 +1,4 @@
+wide_MSMG5 = MSMG5 with width <= 0.056 
+d = INT wide_MSMG5 <= 1 opposite 
+d_p = dfm property wide_MSMG5 d overlap abut also [EC1 = EC(d)] > 1.920 
+copy d_p

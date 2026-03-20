@@ -1,0 +1,972 @@
+{
+    "RULE_NW003": {
+        "rule": "Minimum width of NW is 160nm",
+        "script": "INTERNAL NW < 0.160",
+        "constraints": [
+            "set_min_width(160) \t set_min_height(160)"
+        ]
+    },
+    "RULE_NW004A": {
+        "rule": "Minimum area of NW is 0.140 um2",
+        "script": "AREA NW  < 0.140",
+        "constraints": [
+            "(self.height * self.width) >= 0.140*(10**6)"
+        ]
+    },
+    "RULE_NW004B": {
+        "rule": "Minimum enclosed area of NW is 0.140 um2",
+        "script": "HOLES NW < 0.140",
+        "constraints": []
+    },
+    "RULE_NW005": {
+        "rule": "NW Must be orthogonal",
+        "script": "ANGLE NW >0 <90",
+        "constraints": []
+    },
+    "RULE_ACT001": {
+        "rule": "Minimum vertical width of ACT layer is 48nm",
+        "script": "ACT_HORIZONTAL_EDGES = ACT ANGLE == 0 \nINTERNAL ACT_HORIZONTAL_EDGES < 0.048",
+        "constraints": [
+            "set_min_height(48)"
+        ]
+    },
+    "RULE_ACT002": {
+        "rule": "Minimum Incremental vertical width of ACT layer is 40nm",
+        "script": "ACT_HORIZONTAL_EDGES = ACT ANGLE == 0 \nINTERNAL ACT_HORIZONTAL_EDGES < 0.048 \nINTERNAL ACT_HORIZONTAL_EDGES > 0.048 < 0.088 \nINTERNAL ACT_HORIZONTAL_EDGES > 0.088 < 0.128 \nINTERNAL ACT_HORIZONTAL_EDGES > 0.128 < 0.168 \nINTERNAL ACT_HORIZONTAL_EDGES > 0.168 < 0.208 \nINTERNAL ACT_HORIZONTAL_EDGES > 0.208 < 0.248 \nINTERNAL ACT_HORIZONTAL_EDGES > 0.248 < 0.288 \nINTERNAL ACT_HORIZONTAL_EDGES > 0.288 < 0.328 \nINTERNAL ACT_HORIZONTAL_EDGES > 0.328 < 0.368 \nINTERNAL ACT_HORIZONTAL_EDGES > 0.368 < 0.408 \nINTERNAL ACT_HORIZONTAL_EDGES > 0.408 < 0.448 \nINTERNAL ACT_HORIZONTAL_EDGES > 0.448 < 0.488 \nINTERNAL ACT_HORIZONTAL_EDGES > 0.488 < 0.528 \nINTERNAL ACT_HORIZONTAL_EDGES > 0.528 < 0.568 \nINTERNAL ACT_HORIZONTAL_EDGES > 0.568 < 0.608 \nINTERNAL ACT_HORIZONTAL_EDGES > 0.608 < 0.648 \nINTERNAL ACT_HORIZONTAL_EDGES > 0.648 < 0.688 \nINTERNAL ACT_HORIZONTAL_EDGES > 0.688 < 0.728 \nINTERNAL ACT_HORIZONTAL_EDGES > 0.728 < 0.768 \nINTERNAL ACT_HORIZONTAL_EDGES > 0.768 < 0.808 \nINTERNAL ACT_HORIZONTAL_EDGES > 0.808 < 0.848 \nINTERNAL ACT_HORIZONTAL_EDGES > 0.848 < 0.888 \nINTERNAL ACT_HORIZONTAL_EDGES > 0.888 < 0.928 \nINTERNAL ACT_HORIZONTAL_EDGES > 0.928 < 0.968 \nINTERNAL ACT_HORIZONTAL_EDGES > 0.968 < 1.008",
+        "constraints": [
+            "((self.height - self.min_height) % 40) == 0"
+        ]
+    },
+    "RULE_ACT004": {
+        "rule": "Minimum horizontal width of ACT is 96nm",
+        "script": "ACT_VERTICAL_EDGES = ACT ANGLE == 90 \nINTERNAL ACT_VERTICAL_EDGES < 0.096",
+        "constraints": [
+            "set_min_width(96)"
+        ]
+    },
+    "RULE_ACT008A": {
+        "rule": "Minimum area of ACT is 0.004608 um2",
+        "script": "AREA ACT  < 0.004608",
+        "constraints": [
+            "(self.height * self.width) >= 0.004608*(10**6)"
+        ]
+    },
+    "RULE_ACT008B": {
+        "rule": "Minimum enclosed area of ACT is 0.004608 um2",
+        "script": "HOLES ACT < 0.004608",
+        "constraints": []
+    },
+    "RULE_ACT009": {
+        "rule": "Maximum distance between ACT forming a MOS device and ACT forming a bulk/substrate contact within the same well/substrate is 30um, to prevent latch up",
+        "script": "ACT_MOS_DEV_A = GATEA AND ACT \nACT_MOS_DEV_B = GATEB AND ACT \n \nACT_CONTACT = AIL1 AND ACT \nNTAP = NW AND NIM \nAIL1_NTAP = ACT_CONTACT AND NTAP \nAIL1_PTAP = ACT_CONTACT AND PIM \na = AIL1_NTAP SIZE BY 30 \nACT_MOS_DEV_A NOT INSIDE a \nACT_MOS_DEV_B NOT INSIDE a \nb = AIL1_PTAP SIZE BY 30 \nACT_MOS_DEV_A NOT INSIDE b \nACT_MOS_DEV_B NOT INSIDE b",
+        "constraints": []
+    },
+    "RULE_GATE001A": {
+        "rule": "Exact horizontal width of GATE [A] is 20, 16 or 14 nm",
+        "script": "INTERNAL GATEA_vertical_edges < 0.014 \nINTERNAL GATEA_vertical_edges > 0.014 < 0.016 \nINTERNAL GATEA_vertical_edges > 0.016 < 0.020 \nINTERNAL GATEA_vertical_edges > 0.020 < 0.200",
+        "constraints": [
+            "Or(self.width == 20, self.width == 16, self.width == 14)"
+        ]
+    },
+    "RULE_GATE001B": {
+        "rule": "Exact horizontal width of GATE [B] is 20, 16 or 14 nm",
+        "script": "INTERNAL GATEB_vertical_edges < 0.014 \nINTERNAL GATEB_vertical_edges > 0.014 < 0.016 \nINTERNAL GATEB_vertical_edges > 0.016 < 0.020 \nINTERNAL GATEB_vertical_edges > 0.020 < 0.200",
+        "constraints": [
+            "Or(self.width == 14, self.width == 16, self.width == 20)"
+        ]
+    },
+    "RULE_GATE007A": {
+        "rule": "Minimum length of Gate A (vertical edge, gate C ignored) 200nm",
+        "script": "LENGTH GATEA_vertical_edges < 0.200",
+        "constraints": [
+            "self.height >= 200"
+        ]
+    },
+    "RULE_GATE007B": {
+        "rule": "Minimum length of Gate B (vertical edge, gate C ignored) 200nm",
+        "script": "LENGTH GATEB_vertical_edges < 0.200",
+        "constraints": [
+            "self.height >= 200"
+        ]
+    },
+    "RULE_GATE008A": {
+        "rule": "(gatea not gatec) maximum distance to neighbor shape on same design mask is 236nm",
+        "script": "GateAnotC = GATEA NOT GATEC \nx = SIZE GateAnotC BY 0.237 \nGATEA NOT x",
+        "constraints": []
+    },
+    "RULE_GATE008B": {
+        "rule": "(gateb not gatec) maximum distance to neighbor shape 236nm",
+        "script": "GateBnotC = GATEB NOT GATEC \nx = SIZE GateBnotC BY 0.237 \nGATEB NOT x",
+        "constraints": []
+    },
+    "RULE_GATE001AB": {
+        "rule": "Exact horizontal width of GATE [AB] is 20, 16 or 14 nm",
+        "script": "INTERNAL GATEAB_VERTICAL_EDGES < 0.014 \nINTERNAL GATEAB_VERTICAL_EDGES > 0.014 < 0.016 \nINTERNAL GATEAB_VERTICAL_EDGES > 0.016 < 0.020 \nINTERNAL GATEAB_VERTICAL_EDGES > 0.020 < 0.800",
+        "constraints": [
+            "Or(self.width == 20, self.width == 16, self.width == 14)"
+        ]
+    },
+    "RULE_GATE007AB": {
+        "rule": "Minimum length of Gate AB (vertical edge, gate C ignored) 200nm",
+        "script": "LENGTH GATEAB_VERTICAL_EDGES < 0.200",
+        "constraints": [
+            "self.height>=200"
+        ]
+    },
+    "RULE_GATE008AB": {
+        "rule": "(gateAB not gatec) maximum distance to neighbor shape 236nm",
+        "script": "GateABnotC = GATEAB NOT GATEC \nx = SIZE GateABnotC BY 0.237 \nGATEAB NOT x",
+        "constraints": []
+    },
+    "RULE_GATE001Ca": {
+        "rule": "Exact vertical width of GATEC is 32nm (1 is arbitrary large value) shape is oriented horizonally",
+        "script": "vert_edges = GATEC ANGLE == 90 \nhor_edges = GATEC ANGLE == 0 \nvert_edges_int = INT vert_edges < 1 \nhor_edges_int = INT hor_edges < 1 \nvert_polygons = DFM PROPERTY GATEC hor_edges_int vert_edges_int OVERLAP MULTI [check1 = EW(vert_edges_int) - EW(hor_edges_int)] < 0 \nhor_polygons = DFM PROPERTY GATEC hor_edges_int vert_edges_int OVERLAP MULTI [check2 = EW(vert_edges_int) - EW(hor_edges_int)] > 0 \nhor_edges_hor_pol = hor_polygons angle == 0 \nINT hor_edges_hor_pol > 0 < 0.032 \nINT hor_edges_hor_pol > 0.032 < 1",
+        "constraints": [
+            "Implies(self.width > self.height, self.height == 32)"
+        ]
+    },
+    "RULE_GATE002Ca": {
+        "rule": "Minimum horizontal length of GATEC is 128nm shape is oriented horizonatally",
+        "script": "vert_edges = GATEC ANGLE == 90 \nhor_edges = GATEC ANGLE == 0 \nvert_edges_int = INT vert_edges < 1 \nhor_edges_int = INT hor_edges < 1 \nvert_polygons = DFM PROPERTY GATEC hor_edges_int vert_edges_int OVERLAP MULTI [check1 = EW(vert_edges_int) - EW(hor_edges_int)] < 0 \nhor_polygons = DFM PROPERTY GATEC hor_edges_int vert_edges_int OVERLAP MULTI [check2 = EW(vert_edges_int) - EW(hor_edges_int)] > 0 \nvert_edges_hor_pol = hor_polygons angle == 90 \nINT vert_edges_hor_pol < 0.128",
+        "constraints": [
+            "Implies(self.width > self.height, self.width >= 128)"
+        ]
+    },
+    "RULE_GATE003C": {
+        "rule": "Minimum space of GATEC is 128nm",
+        "script": "EXTERNAL GATEC < 0.128",
+        "constraints": []
+    },
+    "RULE_GATE007C": {
+        "rule": "GATEC shape bottom or top must be aligned if distance < 192nm",
+        "script": "ext_region = EXT GATEC < 0.192 REGION \nangled_edges = ANGLE ext_region >0 <90 \nangled_regions = ext_region WITH EDGE angled_edges \nGATEC INTERACT angled_regions",
+        "constraints": []
+    },
+    "RULE_NIM001A": {
+        "rule": "Minimum width of NIM is 128nm",
+        "script": "INTERNAL NIM <0.128",
+        "constraints": [
+            "set_min_width(128) \t set_min_height(128)"
+        ]
+    },
+    "RULE_PIM001A": {
+        "rule": "Minimum width of PIM is 128nm",
+        "script": "INTERNAL PIM <0.128",
+        "constraints": [
+            "set_min_width(128) \t set_min_height(128)"
+        ]
+    },
+    "RULE_NIM007A": {
+        "rule": "Minimum area of NIM is 0.049 um2",
+        "script": "AREA NIM  < 0.049",
+        "constraints": [
+            "(self.height * self.width) >= 0.049*(10**6)"
+        ]
+    },
+    "RULE_NIM007B": {
+        "rule": "Minimum enclosed area of NIM is 0.049 um2",
+        "script": "HOLES NIM < 0.049",
+        "constraints": []
+    },
+    "RULE_PIM007A": {
+        "rule": "Minimum area of PIM is 0.049 um2",
+        "script": "AREA PIM  < 0.049",
+        "constraints": [
+            "(self.height * self.width) >= 0.049*(10**6)"
+        ]
+    },
+    "RULE_PIM007B": {
+        "rule": "Minimum enclosed area of PIM is 0.049 um2",
+        "script": "HOLES PIM < 0.049",
+        "constraints": []
+    },
+    "RULE_AIL1001": {
+        "rule": "Horizontal Width of AIL1 is 28nm",
+        "script": "AIL1_VERTICAL_EDGES = AIL1 ANGLE == 90 \nINTERNAL AIL1_VERTICAL_EDGES < 0.028",
+        "constraints": [
+            "self.width == 28"
+        ]
+    },
+    "RULE_AIL1005": {
+        "rule": "Minimum Vertical length of AIL1 is 58nm",
+        "script": "AIL1_HORIZONTAL_EDGES = AIL1 ANGLE == 0 \nINTERNAL AIL1_HORIZONTAL_EDGES < 0.058",
+        "constraints": [
+            "set_min_height(58)"
+        ]
+    },
+    "RULE_AIL2001": {
+        "rule": "Horizontal width of AIL2 is 24nm",
+        "script": "AIL2_VERTICAL_EDGES = AIL2 ANGLE == 90 \nINTERNAL AIL2_VERTICAL_EDGES < 0.024",
+        "constraints": [
+            "self.width == 24"
+        ]
+    },
+    "RULE_AIL2006": {
+        "rule": "Vertical length of AIL2 is 68nm",
+        "script": "AIL2_HORIZ_EDGES = AIL2 ANGLE == 0 \nINTERNAL AIL2_HORIZ_EDGES < 0.068",
+        "constraints": [
+            "self.height == 68"
+        ]
+    },
+    "RULE_GIL001": {
+        "rule": "Minimum vertical width of GIL is 44nm",
+        "script": "ALL_HORIZ_EDGES = ANGLE GIL == 0 \nINTERNAL ALL_HORIZ_EDGES < 0.044",
+        "constraints": [
+            "set_min_height(44)"
+        ]
+    },
+    "RULE_GIL002": {
+        "rule": "Minimum horizontal length of GIL is 56nm",
+        "script": "ALL_VERT_EDGES = ANGLE GIL == 90 \nINTERNAL ALL_VERT_EDGES < 0.056",
+        "constraints": [
+            "self.width >= 56"
+        ]
+    },
+    "RULE_V0001a": {
+        "rule": "V0 is a square with 28nm edge length",
+        "script": "RECTANGLE V0 != 0.028 BY != 0.028 ASPECT ==1",
+        "constraints": [
+            "And(self.width == 28, self.height == 28)"
+        ]
+    },
+    "RULE_M1001A": {
+        "rule": "M1A width 28nm, 32nm, 40nm, 2.4um (10um is arbitrary)",
+        "script": "INTERNAL M1A < 0.028",
+        "constraints": [
+            "Or(self.width == 28, self.width == 32, self.width == 40, self.width == 2400)"
+        ]
+    },
+    "RULE_M1001B": {
+        "rule": "M1B width 28nm, 32nm, 40nm, 2.4um (10um is arbitrary)",
+        "script": "INTERNAL M1B < 0.028",
+        "constraints": [
+            "Or(self.width == 28, self.width == 32, self.width == 40, self.width == 2400)"
+        ]
+    },
+    "RULE_M1001": {
+        "rule": "M1 minimum width 28nm",
+        "script": "INTERNAL M1 < 0.028",
+        "constraints": [
+            "set_min_width(28)\tset_min_height(28)"
+        ]
+    },
+    "RULE_M1002A": {
+        "rule": "One of two edges connected to the same vertex must have at least one of 56nm",
+        "script": "x = CONVEX EDGE M1A ANGLE1==90 ANGLE2==90 WITH LENGTH < 0.056 \nINT x < 0.001 ABUT",
+        "constraints": []
+    },
+    "RULE_M1002B": {
+        "rule": "One of two edges connected to the same vertex must have at least one of 56nm",
+        "script": "x = CONVEX EDGE M1B ANGLE1==90 ANGLE2==90 WITH LENGTH < 0.056 \nINT x < 0.001 ABUT",
+        "constraints": []
+    },
+    "RULE_M1002": {
+        "rule": "One of two edges connected to the same vertex must have at least one of 56nm",
+        "script": "x = CONVEX EDGE M1 ANGLE1==90 ANGLE2==90 WITH LENGTH < 0.056 \nINT x < 0.001 ABUT",
+        "constraints": []
+    },
+    "RULE_M1003A": {
+        "rule": "maximum length of M1A for wires with min width 28nm is 1.8um",
+        "script": "wide_M1A = M1A with width <= 0.028 \nd = INT wide_M1A <= 1 opposite \nd_p = dfm property wide_M1A d overlap abut also [EC1 = EC(d)] > 1.80 \ncopy d_p",
+        "constraints": [
+            "Implies(self.width == 28, self.height <= 1800)"
+        ]
+    },
+    "RULE_M1003B": {
+        "rule": "maximum length of M1B for wires with min width 28nm is 1.8um",
+        "script": "wide_M1B = M1B with width <= 0.028 \nd = INT wide_M1B <= 1 opposite \nd_p = dfm property wide_M1B d overlap abut also [EC1 = EC(d)] > 1.80 \ncopy d_p",
+        "constraints": [
+            "Implies(self.width == 28, self.height <= 1800)"
+        ]
+    },
+    "RULE_M1003": {
+        "rule": "maximum length of M1 for wires with min width 28nm is 1.8um",
+        "script": "wide_M1 = M1 with width <= 0.028 \nd = INT wide_M1 <= 1 opposite \nd_p = dfm property wide_M1 d overlap abut also [EC1 = EC(d)] > 1.80 \ncopy d_p",
+        "constraints": [
+            "Implies(self.width == 28, self.height <= 1800)"
+        ]
+    },
+    "RULE_M1027A": {
+        "rule": "M1A minimum area for rectangular shape is 0.0024um2",
+        "script": "rect_M1A = RECTANGLE M1A \nAREA rect_M1A < 0.0024",
+        "constraints": [
+            "(self.height * self.width) >= 0.0024*(10**6)"
+        ]
+    },
+    "RULE_M1027B": {
+        "rule": "M1B minimum area for rectangular shape is 0.0024um2",
+        "script": "rect_M1B = RECTANGLE M1B \nAREA rect_M1B < 0.0024",
+        "constraints": [
+            "(self.height * self.width) >= 0.0024*(10**6)"
+        ]
+    },
+    "RULE_M1027": {
+        "rule": "M1 minimum area for rectangular shape is 0.0024um2",
+        "script": "rect_M1 = RECTANGLE M1 \nAREA rect_M1 < 0.0024",
+        "constraints": [
+            "(self.height * self.width) >= 0.0024*(10**6)"
+        ]
+    },
+    "RULE_V1001a": {
+        "rule": "V1 is a square with 28nm edge length",
+        "script": "RECTANGLE V1 != 0.028 BY != 0.028 ASPECT ==1",
+        "constraints": [
+            "And(self.width == 28, self.height == 28)"
+        ]
+    },
+    "RULE_VINT1001a": {
+        "rule": "VINT1 is a square with 28nm edge length",
+        "script": "RECTANGLE VINT1 != 0.028 BY != 0.028 ASPECT ==1",
+        "constraints": [
+            "And(self.width == 28, self.height == 28)"
+        ]
+    },
+    "RULE_VINT2001a": {
+        "rule": "VINT2 is a square with 28nm edge length",
+        "script": "RECTANGLE VINT2 != 0.028 BY != 0.028 ASPECT ==1",
+        "constraints": [
+            "And(self.width == 28, self.height == 28)"
+        ]
+    },
+    "RULE_VINT3001a": {
+        "rule": "VINT3 is a square with 28nm edge length",
+        "script": "RECTANGLE VINT3 != 0.028 BY != 0.028 ASPECT ==1",
+        "constraints": [
+            "And(self.width == 28, self.height == 28)"
+        ]
+    },
+    "RULE_VINT4001a": {
+        "rule": "VINT4 is a square with 28nm edge length",
+        "script": "RECTANGLE VINT4 != 0.028 BY != 0.028 ASPECT ==1",
+        "constraints": [
+            "And(self.width == 28, self.height == 28)"
+        ]
+    },
+    "RULE_VINT5001a": {
+        "rule": "VINT5 is a square with 28nm edge length",
+        "script": "RECTANGLE VINT5 != 0.028 BY != 0.028 ASPECT ==1",
+        "constraints": [
+            "And(self.width == 28, self.height == 28)"
+        ]
+    },
+    "RULE_MINT1001A": {
+        "rule": "MINT1A width > 28nm",
+        "script": "INTERNAL MINT1A < 0.028",
+        "constraints": [
+            "set_min_width(28) \t set_min_height(28)"
+        ]
+    },
+    "RULE_MINT1001B": {
+        "rule": "MINT1B width > 28nm",
+        "script": "INTERNAL MINT1B < 0.028",
+        "constraints": [
+            "set_min_width(28) \t set_min_height(28)"
+        ]
+    },
+    "RULE_MINT1001": {
+        "rule": "MINT1 width > 28nm",
+        "script": "INTERNAL MINT1 < 0.028",
+        "constraints": [
+            "set_min_width(28) \t set_min_height(28)"
+        ]
+    },
+    "RULE_MINT1002A": {
+        "rule": "One of two edges connected to the same vertex must have at least one of 56nm",
+        "script": "x = CONVEX EDGE MINT1A ANGLE1==90 ANGLE2==90 WITH LENGTH < 0.056 \nINT x < 0.001 ABUT",
+        "constraints": []
+    },
+    "RULE_MINT1002B": {
+        "rule": "One of two edges connected to the same vertex must have at least one of 56nm",
+        "script": "x = CONVEX EDGE MINT1B ANGLE1==90 ANGLE2==90 WITH LENGTH < 0.056 \nINT x < 0.001 ABUT",
+        "constraints": []
+    },
+    "RULE_MINT1002": {
+        "rule": "One of two edges connected to the same vertex must have at least one of 56nm",
+        "script": "x = CONVEX EDGE MINT1 ANGLE1==90 ANGLE2==90 WITH LENGTH < 0.056 \nINT x < 0.001 ABUT",
+        "constraints": []
+    },
+    "RULE_MINT1003A": {
+        "rule": "maximum length of MINT1A for wires with min width 28nm is 1.8um",
+        "script": "wide_MINT1A = MINT1A with width <= 0.028 \nd = INT wide_MINT1A <= 1 opposite \nd_p = dfm property wide_MINT1A d overlap abut also [EC1 = EC(d)] > 1.80 \ncopy d_p",
+        "constraints": [
+            "Implies(self.width == 28, self.height <= 1800)"
+        ]
+    },
+    "RULE_MINT1003B": {
+        "rule": "maximum length of MINT1B for wires with min width 28nm is 1.8um",
+        "script": "wide_MINT1B = MINT1B with width <= 0.028 \nd = INT wide_MINT1B <= 1 opposite \nd_p = dfm property wide_MINT1B d overlap abut also [EC1 = EC(d)] > 1.80 \ncopy d_p",
+        "constraints": [
+            "Implies(self.width == 28, self.height <= 1800)"
+        ]
+    },
+    "RULE_MINT1003": {
+        "rule": "maximum length of MINT1 for wires with min width 28nm is 1.8um",
+        "script": "wide_MINT1 = MINT1 with width <= 0.028 \nd = INT wide_MINT1 <= 1 opposite \nd_p = dfm property wide_MINT1 d overlap abut also [EC1 = EC(d)] > 1.80 \ncopy d_p",
+        "constraints": [
+            "Implies(self.width == 28, self.height <= 1800)"
+        ]
+    },
+    "RULE_MINT1027A": {
+        "rule": "MINT1A minimum area for rectangular shape is 0.0024um2",
+        "script": "rect_MINT1A = RECTANGLE MINT1A \nAREA rect_MINT1A < 0.0024",
+        "constraints": [
+            "(self.height * self.width) >= 0.0024*(10**6)"
+        ]
+    },
+    "RULE_MINT1027B": {
+        "rule": "MINT1B minimum area for rectangular shape is 0.0024um2",
+        "script": "rect_MINT1B = RECTANGLE MINT1B \nAREA rect_MINT1B < 0.0024",
+        "constraints": [
+            "(self.height * self.width) >= 0.0024*(10**6)"
+        ]
+    },
+    "RULE_MINT1027": {
+        "rule": "MINT1 minimum area for rectangular shape is 0.0024um2",
+        "script": "rect_MINT1 = RECTANGLE MINT1 \nAREA rect_MINT1 < 0.0024",
+        "constraints": [
+            "(self.height * self.width) >= 0.0024*(10**6)"
+        ]
+    },
+    "RULE_MINT2001A": {
+        "rule": "MINT2A width > 28nm",
+        "script": "INTERNAL MINT2A < 0.028",
+        "constraints": [
+            "set_min_width(28) \t set_min_height(28)"
+        ]
+    },
+    "RULE_MINT2001B": {
+        "rule": "MINT2B width > 28nm",
+        "script": "INTERNAL MINT2B < 0.028",
+        "constraints": [
+            "set_min_width(28) \t set_min_height(28)"
+        ]
+    },
+    "RULE_MINT2001": {
+        "rule": "MINT2 width > 28nm",
+        "script": "INTERNAL MINT2 < 0.028",
+        "constraints": [
+            "set_min_width(28) \t set_min_height(28)"
+        ]
+    },
+    "RULE_MINT2002A": {
+        "rule": "One of two edges connected to the same vertex must have at least one of 56nm",
+        "script": "x = CONVEX EDGE MINT2A ANGLE1==90 ANGLE2==90 WITH LENGTH < 0.056 \nINT x < 0.001 ABUT",
+        "constraints": []
+    },
+    "RULE_MINT2002B": {
+        "rule": "One of two edges connected to the same vertex must have at least one of 56nm",
+        "script": "x = CONVEX EDGE MINT2B ANGLE1==90 ANGLE2==90 WITH LENGTH < 0.056 \nINT x < 0.001 ABUT",
+        "constraints": []
+    },
+    "RULE_MINT2002": {
+        "rule": "One of two edges connected to the same vertex must have at least one of 56nm",
+        "script": "x = CONVEX EDGE MINT2 ANGLE1==90 ANGLE2==90 WITH LENGTH < 0.056 \nINT x < 0.001 ABUT",
+        "constraints": []
+    },
+    "RULE_MINT2003A": {
+        "rule": "maximum length of MINT2A for wires with min width 28nm is 1.8um",
+        "script": "wide_MINT2A = MINT2A with width <= 0.028 \nd = INT wide_MINT2A <= 1 opposite \nd_p = dfm property wide_MINT2A d overlap abut also [EC1 = EC(d)] > 1.80 \ncopy d_p",
+        "constraints": [
+            "Implies(self.width == 28, self.height <= 1800)"
+        ]
+    },
+    "RULE_MINT2003B": {
+        "rule": "maximum length of MINT2B for wires with min width 28nm is 1.8um",
+        "script": "wide_MINT2B = MINT2B with width <= 0.028 \nd = INT wide_MINT2B <= 1 opposite \nd_p = dfm property wide_MINT2B d overlap abut also [EC1 = EC(d)] > 1.80 \ncopy d_p",
+        "constraints": [
+            "Implies(self.width == 28, self.height <= 1800)"
+        ]
+    },
+    "RULE_MINT2003": {
+        "rule": "maximum length of MINT2 for wires with min width 28nm is 1.8um",
+        "script": "wide_MINT2 = MINT2 with width <= 0.028 \nd = INT wide_MINT2 <= 1 opposite \nd_p = dfm property wide_MINT2 d overlap abut also [EC1 = EC(d)] > 1.80 \ncopy d_p",
+        "constraints": [
+            "Implies(self.width == 28, self.height <= 1800)"
+        ]
+    },
+    "RULE_MINT2027A": {
+        "rule": "MINT2A minimum area for rectangular shape is 0.0024um2",
+        "script": "rect_MINT2A = RECTANGLE MINT2A \nAREA rect_MINT2A < 0.0024",
+        "constraints": [
+            "(self.height * self.width) >= 0.0024*(10**6)"
+        ]
+    },
+    "RULE_MINT2027B": {
+        "rule": "MINT2B minimum area for rectangular shape is 0.0024um2",
+        "script": "rect_MINT2B = RECTANGLE MINT2B \nAREA rect_MINT2B < 0.0024",
+        "constraints": [
+            "(self.height * self.width) >= 0.0024*(10**6)"
+        ]
+    },
+    "RULE_MINT2027": {
+        "rule": "MINT2 minimum area for rectangular shape is 0.0024um2",
+        "script": "rect_MINT2 = RECTANGLE MINT2 \nAREA rect_MINT2 < 0.0024",
+        "constraints": [
+            "(self.height * self.width) >= 0.0024*(10**6)"
+        ]
+    },
+    "RULE_MINT3001A": {
+        "rule": "MINT3A width > 28nm",
+        "script": "INTERNAL MINT3A < 0.028",
+        "constraints": [
+            "set_min_width(28) \t set_min_height(28)"
+        ]
+    },
+    "RULE_MINT3001B": {
+        "rule": "MINT3B width > 28nm",
+        "script": "INTERNAL MINT3B < 0.028",
+        "constraints": [
+            "set_min_width(28) \t set_min_height(28)"
+        ]
+    },
+    "RULE_MINT3001": {
+        "rule": "MINT3 width > 28nm",
+        "script": "INTERNAL MINT3 < 0.028",
+        "constraints": [
+            "set_min_width(28) \t set_min_height(28)"
+        ]
+    },
+    "RULE_MINT3002A": {
+        "rule": "One of two edges connected to the same vertex must have at least one of 56nm",
+        "script": "x = CONVEX EDGE MINT3A ANGLE1==90 ANGLE2==90 WITH LENGTH < 0.056 \nINT x < 0.001 ABUT",
+        "constraints": []
+    },
+    "RULE_MINT3002B": {
+        "rule": "One of two edges connected to the same vertex must have at least one of 56nm",
+        "script": "x = CONVEX EDGE MINT3B ANGLE1==90 ANGLE2==90 WITH LENGTH < 0.056 \nINT x < 0.001 ABUT",
+        "constraints": []
+    },
+    "RULE_MINT3002": {
+        "rule": "One of two edges connected to the same vertex must have at least one of 56nm",
+        "script": "x = CONVEX EDGE MINT3 ANGLE1==90 ANGLE2==90 WITH LENGTH < 0.056 \nINT x < 0.001 ABUT",
+        "constraints": []
+    },
+    "RULE_MINT3003A": {
+        "rule": "maximum length of MINT3A for wires with min width 28nm is 1.8um",
+        "script": "wide_MINT3A = MINT3A with width <= 0.028 \nd = INT wide_MINT3A <= 1 opposite \nd_p = dfm property wide_MINT3A d overlap abut also [EC1 = EC(d)] > 1.80 \ncopy d_p",
+        "constraints": [
+            "Implies(self.width == 28, self.height <= 1800)"
+        ]
+    },
+    "RULE_MINT3003B": {
+        "rule": "maximum length of MINT3B for wires with min width 28nm is 1.8um",
+        "script": "wide_MINT3B = MINT3B with width <= 0.028 \nd = INT wide_MINT3B <= 1 opposite \nd_p = dfm property wide_MINT3B d overlap abut also [EC1 = EC(d)] > 1.80 \ncopy d_p",
+        "constraints": [
+            "Implies(self.width == 28, self.height <= 1800)"
+        ]
+    },
+    "RULE_MINT3003": {
+        "rule": "maximum length of MINT3 for wires with min width 28nm is 1.8um",
+        "script": "wide_MINT3 = MINT3 with width <= 0.028 \nd = INT wide_MINT3 <= 1 opposite \nd_p = dfm property wide_MINT3 d overlap abut also [EC1 = EC(d)] > 1.80 \ncopy d_p",
+        "constraints": [
+            "Implies(self.width == 28, self.height <= 1800)"
+        ]
+    },
+    "RULE_MINT3027A": {
+        "rule": "MINT3A minimum area for rectangular shape is 0.0024um2",
+        "script": "rect_MINT3A = RECTANGLE MINT3A \nAREA rect_MINT3A < 0.0024",
+        "constraints": [
+            "(self.height * self.width) >= 0.0024*(10**6)"
+        ]
+    },
+    "RULE_MINT3027B": {
+        "rule": "MINT3B minimum area for rectangular shape is 0.0024um2",
+        "script": "rect_MINT3B = RECTANGLE MINT3B \nAREA rect_MINT3B < 0.0024",
+        "constraints": [
+            "(self.height * self.width) >= 0.0024*(10**6)"
+        ]
+    },
+    "RULE_MINT3027": {
+        "rule": "MINT3 minimum area for rectangular shape is 0.0024um2",
+        "script": "rect_MINT3 = RECTANGLE MINT3 \nAREA rect_MINT3 < 0.0024",
+        "constraints": [
+            "(self.height * self.width) >= 0.0024*(10**6)"
+        ]
+    },
+    "RULE_MINT4001A": {
+        "rule": "MINT4A width > 28nm",
+        "script": "INTERNAL MINT4A < 0.028",
+        "constraints": [
+            "set_min_width(28) \t set_min_height(28)"
+        ]
+    },
+    "RULE_MINT4001B": {
+        "rule": "MINT4B width > 28nm",
+        "script": "INTERNAL MINT4B < 0.028",
+        "constraints": [
+            "set_min_width(28) \t set_min_height(28)"
+        ]
+    },
+    "RULE_MINT4001": {
+        "rule": "MINT4 width > 28nm",
+        "script": "INTERNAL MINT4 < 0.028",
+        "constraints": [
+            "set_min_width(28) \t set_min_height(28)"
+        ]
+    },
+    "RULE_MINT4002A": {
+        "rule": "One of two edges connected to the same vertex must have at least one of 56nm",
+        "script": "x = CONVEX EDGE MINT4A ANGLE1==90 ANGLE2==90 WITH LENGTH < 0.056 \nINT x < 0.001 ABUT",
+        "constraints": []
+    },
+    "RULE_MINT4002B": {
+        "rule": "One of two edges connected to the same vertex must have at least one of 56nm",
+        "script": "x = CONVEX EDGE MINT4B ANGLE1==90 ANGLE2==90 WITH LENGTH < 0.056 \nINT x < 0.001 ABUT",
+        "constraints": []
+    },
+    "RULE_MINT4002": {
+        "rule": "One of two edges connected to the same vertex must have at least one of 56nm",
+        "script": "x = CONVEX EDGE MINT4 ANGLE1==90 ANGLE2==90 WITH LENGTH < 0.056 \nINT x < 0.001 ABUT",
+        "constraints": []
+    },
+    "RULE_MINT4003A": {
+        "rule": "maximum length of MINT4A for wires with min width 28nm is 1.8um",
+        "script": "wide_MINT4A = MINT4A with width <= 0.028 \nd = INT wide_MINT4A <= 1 opposite \nd_p = dfm property wide_MINT4A d overlap abut also [EC1 = EC(d)] > 1.80 \ncopy d_p",
+        "constraints": [
+            "Implies(self.width == 28, self.height <= 1800)"
+        ]
+    },
+    "RULE_MINT4003B": {
+        "rule": "maximum length of MINT4B for wires with min width 28nm is 1.8um",
+        "script": "wide_MINT4B = MINT4B with width <= 0.028 \nd = INT wide_MINT4B <= 1 opposite \nd_p = dfm property wide_MINT4B d overlap abut also [EC1 = EC(d)] > 1.80 \ncopy d_p",
+        "constraints": [
+            "Implies(self.width == 28, self.height <= 1800)"
+        ]
+    },
+    "RULE_MINT4003": {
+        "rule": "maximum length of MINT4 for wires with min width 28nm is 1.8um",
+        "script": "wide_MINT4 = MINT4 with width <= 0.028 \nd = INT wide_MINT4 <= 1 opposite \nd_p = dfm property wide_MINT4 d overlap abut also [EC1 = EC(d)] > 1.80 \ncopy d_p",
+        "constraints": [
+            "Implies(self.width == 28, self.height <= 1800)"
+        ]
+    },
+    "RULE_MINT4027A": {
+        "rule": "MINT4A minimum area for rectangular shape is 0.0024um2",
+        "script": "rect_MINT4A = RECTANGLE MINT4A \nAREA rect_MINT4A < 0.0024",
+        "constraints": [
+            "(self.height * self.width) >= 0.0024*(10**6)"
+        ]
+    },
+    "RULE_MINT4027B": {
+        "rule": "MINT4B minimum area for rectangular shape is 0.0024um2",
+        "script": "rect_MINT4B = RECTANGLE MINT4B \nAREA rect_MINT4B < 0.0024",
+        "constraints": [
+            "(self.height * self.width) >= 0.0024*(10**6)"
+        ]
+    },
+    "RULE_MINT4027": {
+        "rule": "MINT4 minimum area for rectangular shape is 0.0024um2",
+        "script": "rect_MINT4 = RECTANGLE MINT4 \nAREA rect_MINT4 < 0.0024",
+        "constraints": [
+            "(self.height * self.width) >= 0.0024*(10**6)"
+        ]
+    },
+    "RULE_MINT5001A": {
+        "rule": "MINT5A width > 28nm",
+        "script": "INTERNAL MINT5A < 0.028",
+        "constraints": [
+            "set_min_width(28) \t set_min_height(28)"
+        ]
+    },
+    "RULE_MINT5001B": {
+        "rule": "MINT5B width > 28nm",
+        "script": "INTERNAL MINT5B < 0.028",
+        "constraints": [
+            "set_min_width(28) \t set_min_height(28)"
+        ]
+    },
+    "RULE_MINT5001": {
+        "rule": "MINT5 width > 28nm",
+        "script": "INTERNAL MINT5 < 0.028",
+        "constraints": [
+            "set_min_width(28)",
+            "set_min_height(28)"
+        ]
+    },
+    "RULE_MINT5002A": {
+        "rule": "One of two edges connected to the same vertex must have at least one of 56nm",
+        "script": "x = CONVEX EDGE MINT5A ANGLE1==90 ANGLE2==90 WITH LENGTH < 0.056 \nINT x < 0.001 ABUT",
+        "constraints": []
+    },
+    "RULE_MINT5002B": {
+        "rule": "One of two edges connected to the same vertex must have at least one of 56nm",
+        "script": "x = CONVEX EDGE MINT5B ANGLE1==90 ANGLE2==90 WITH LENGTH < 0.056 \nINT x < 0.001 ABUT",
+        "constraints": []
+    },
+    "RULE_MINT5002": {
+        "rule": "One of two edges connected to the same vertex must have at least one of 56nm",
+        "script": "x = CONVEX EDGE MINT5 ANGLE1==90 ANGLE2==90 WITH LENGTH < 0.056 \nINT x < 0.001 ABUT",
+        "constraints": []
+    },
+    "RULE_MINT5003A": {
+        "rule": "maximum length of MINT5A for wires with min width 28nm is 1.8um",
+        "script": "wide_MINT5A = MINT5A with width <= 0.028 \nd = INT wide_MINT5A <= 1 opposite \nd_p = dfm property wide_MINT5A d overlap abut also [EC1 = EC(d)] > 1.80 \ncopy d_p",
+        "constraints": [
+            "Implies(self.width == 28, self.height <= 1800)"
+        ]
+    },
+    "RULE_MINT5003B": {
+        "rule": "maximum length of MINT5B for wires with min width 28nm is 1.8um",
+        "script": "wide_MINT5B = MINT5B with width <= 0.028 \nd = INT wide_MINT5B <= 1 opposite \nd_p = dfm property wide_MINT5B d overlap abut also [EC1 = EC(d)] > 1.80 \ncopy d_p",
+        "constraints": [
+            "Implies(self.width == 28, self.height <= 1800)"
+        ]
+    },
+    "RULE_MINT5003": {
+        "rule": "maximum length of MINT5 for wires with min width 28nm is 1.8um",
+        "script": "wide_MINT5 = MINT5 with width <= 0.028 \nd = INT wide_MINT5 <= 1 opposite \nd_p = dfm property wide_MINT5 d overlap abut also [EC1 = EC(d)] > 1.80 \ncopy d_p",
+        "constraints": [
+            "Implies(self.width == 28, self.height <= 1800)"
+        ]
+    },
+    "RULE_MINT5027A": {
+        "rule": "MINT5A minimum area for rectangular shape is 0.0024um2",
+        "script": "rect_MINT5A = RECTANGLE MINT5A \nAREA rect_MINT5A < 0.0024",
+        "constraints": [
+            "(self.height * self.width) >= 0.0024*(10**6)"
+        ]
+    },
+    "RULE_MINT5027B": {
+        "rule": "MINT5B minimum area for rectangular shape is 0.0024um2",
+        "script": "rect_MINT5B = RECTANGLE MINT5B \nAREA rect_MINT5B < 0.0024",
+        "constraints": [
+            "(self.height * self.width) >= 0.0024*(10**6)"
+        ]
+    },
+    "RULE_MINT5027": {
+        "rule": "MINT5 minimum area for rectangular shape is 0.0024um2",
+        "script": "rect_MINT5 = RECTANGLE MINT5 \nAREA rect_MINT5 < 0.0024",
+        "constraints": [
+            "(self.height * self.width) >= 0.0024*(10**6)"
+        ]
+    },
+    "RULE_VSMG1001a": {
+        "rule": "VSMG1 is a square with 56nm edge length",
+        "script": "RECTANGLE VSMG1 != 0.056 BY != 0.056 ASPECT ==1",
+        "constraints": [
+            "And(self.width == 56, self.height == 56)"
+        ]
+    },
+    "RULE_VSMG2001a": {
+        "rule": "VSMG2 is a square with 56nm edge length",
+        "script": "RECTANGLE VSMG2 != 0.056 BY != 0.056 ASPECT ==1",
+        "constraints": [
+            "And(self.width == 56, self.height == 56)"
+        ]
+    },
+    "RULE_VSMG3001a": {
+        "rule": "VSMG3 is a square with 56nm edge length",
+        "script": "RECTANGLE VSMG3 != 0.056 BY != 0.056 ASPECT ==1",
+        "constraints": [
+            "And(self.width == 56, self.height == 56)"
+        ]
+    },
+    "RULE_VSMG4001a": {
+        "rule": "VSMG4 is a square with 56nm edge length",
+        "script": "RECTANGLE VSMG4 != 0.056 BY != 0.056 ASPECT ==1",
+        "constraints": [
+            "And(self.height == 56, self.width == 56)"
+        ]
+    },
+    "RULE_VSMG5001a": {
+        "rule": "VSMG5 is a square with 56nm edge length",
+        "script": "RECTANGLE VSMG5 != 0.056 BY != 0.056 ASPECT ==1",
+        "constraints": [
+            "And(self.width == 56, self.height == 56)"
+        ]
+    },
+    "RULE_MSMG1001": {
+        "rule": "MSMG1 width > 56nm",
+        "script": "INTERNAL MSMG1 < 0.056",
+        "constraints": [
+            "set_min_width(56) \t set_min_height(56)"
+        ]
+    },
+    "RULE_MSMG1002": {
+        "rule": "One of two edges connected to the same vertex must have at least one of 112nm",
+        "script": "x = CONVEX EDGE MSMG1 ANGLE1==90 ANGLE2==90 WITH LENGTH < 0.112 \nINT x < 0.001 ABUT",
+        "constraints": []
+    },
+    "RULE_MSMG1003": {
+        "rule": "maximum length of MSMG1 for wires with min width 56nm is 1.92um",
+        "script": "wide_MSMG1 = MSMG1 with width <= 0.056 \nd = INT wide_MSMG1 <= 1 opposite \nd_p = dfm property wide_MSMG1 d overlap abut also [EC1 = EC(d)] > 1.920 \ncopy d_p",
+        "constraints": [
+            "Implies(self.width == 56, self.height <= 1920)"
+        ]
+    },
+    "RULE_MSMG1014": {
+        "rule": "MSMG1 minimum area for rectangular shape is 0.0024um2",
+        "script": "rect_MSMG1 = RECTANGLE MSMG1 \nAREA rect_MSMG1 < 0.0024",
+        "constraints": [
+            "(self.height * self.width) >= 0.0024*(10**6)"
+        ]
+    },
+    "RULE_MSMG2001": {
+        "rule": "MSMG2 width > 56nm",
+        "script": "INTERNAL MSMG2 < 0.056",
+        "constraints": [
+            "set_min_width(56) \t set_min_height(56)"
+        ]
+    },
+    "RULE_MSMG2002": {
+        "rule": "One of two edges connected to the same vertex must have at least one of 112nm",
+        "script": "x = CONVEX EDGE MSMG2 ANGLE1==90 ANGLE2==90 WITH LENGTH < 0.112 \nINT x < 0.001 ABUT",
+        "constraints": []
+    },
+    "RULE_MSMG2003": {
+        "rule": "maximum length of MSMG2 for wires with min width 56nm is 1.92um",
+        "script": "wide_MSMG2 = MSMG2 with width <= 0.056 \nd = INT wide_MSMG2 <= 1 opposite \nd_p = dfm property wide_MSMG2 d overlap abut also [EC1 = EC(d)] > 1.920 \ncopy d_p",
+        "constraints": [
+            "Implies(self.width == 56, self.height <= 1920)"
+        ]
+    },
+    "RULE_MSMG2014": {
+        "rule": "MSMG2 minimum area for rectangular shape is 0.0024um2",
+        "script": "rect_MSMG2 = RECTANGLE MSMG2 \nAREA rect_MSMG2 < 0.0024",
+        "constraints": [
+            "(self.height * self.width) >= 0.0024*(10**6)"
+        ]
+    },
+    "RULE_MSMG3001": {
+        "rule": "MSMG3 width > 56nm",
+        "script": "INTERNAL MSMG3 < 0.056",
+        "constraints": [
+            "set_min_width(56) \t set_min_height(56)"
+        ]
+    },
+    "RULE_MSMG3002": {
+        "rule": "One of two edges connected to the same vertex must have at least one of 112nm",
+        "script": "x = CONVEX EDGE MSMG3 ANGLE1==90 ANGLE2==90 WITH LENGTH < 0.112 \nINT x < 0.001 ABUT",
+        "constraints": []
+    },
+    "RULE_MSMG3003": {
+        "rule": "maximum length of MSMG3 for wires with min width 56nm is 1.92um",
+        "script": "wide_MSMG3 = MSMG3 with width <= 0.056 \nd = INT wide_MSMG3 <= 1 opposite \nd_p = dfm property wide_MSMG3 d overlap abut also [EC1 = EC(d)] > 1.920 \ncopy d_p",
+        "constraints": [
+            "Implies(self.width == 56, self.height <= 1920)"
+        ]
+    },
+    "RULE_MSMG3014": {
+        "rule": "MSMG3 minimum area for rectangular shape is 0.0024um2",
+        "script": "rect_MSMG3 = RECTANGLE MSMG3 \nAREA rect_MSMG3 < 0.0024",
+        "constraints": [
+            "(self.height * self.width) >= 0.0024*(10**6)"
+        ]
+    },
+    "RULE_MSMG4001": {
+        "rule": "MSMG4 width > 56nm",
+        "script": "INTERNAL MSMG4 < 0.056",
+        "constraints": [
+            "set_min_width(56) \t set_min_height(56)"
+        ]
+    },
+    "RULE_MSMG4002": {
+        "rule": "One of two edges connected to the same vertex must have at least one of 112nm",
+        "script": "x = CONVEX EDGE MSMG4 ANGLE1==90 ANGLE2==90 WITH LENGTH < 0.112 \nINT x < 0.001 ABUT",
+        "constraints": []
+    },
+    "RULE_MSMG4003": {
+        "rule": "maximum length of MSMG4 for wires with min width 56nm is 1.92um",
+        "script": "wide_MSMG4 = MSMG4 with width <= 0.056 \nd = INT wide_MSMG4 <= 1 opposite \nd_p = dfm property wide_MSMG4 d overlap abut also [EC1 = EC(d)] > 1.920 \ncopy d_p",
+        "constraints": [
+            "Implies(self.width == 56, self.height <= 1920)"
+        ]
+    },
+    "RULE_MSMG4014": {
+        "rule": "MSMG4 minimum area for rectangular shape is 0.0024um2",
+        "script": "rect_MSMG4 = RECTANGLE MSMG4 \nAREA rect_MSMG4 < 0.0024",
+        "constraints": [
+            "(self.height * self.width) >= 0.0024*(10**6)"
+        ]
+    },
+    "RULE_MSMG5001": {
+        "rule": "MSMG5 width > 56nm",
+        "script": "INTERNAL MSMG5 < 0.056",
+        "constraints": [
+            "set_min_width(56) \t set_min_height(56)"
+        ]
+    },
+    "RULE_MSMG5003": {
+        "rule": "maximum length of MSMG5 for wires with min width 56nm is 1.92um",
+        "script": "wide_MSMG5 = MSMG5 with width <= 0.056 \nd = INT wide_MSMG5 <= 1 opposite \nd_p = dfm property wide_MSMG5 d overlap abut also [EC1 = EC(d)] > 1.920 \ncopy d_p",
+        "constraints": [
+            "Implies(self.width == 56, self.height <= 1920)"
+        ]
+    },
+    "RULE_MSMG5014": {
+        "rule": "MSMG5 minimum area for rectangular shape is 0.0024um2",
+        "script": "rect_MSMG5 = RECTANGLE MSMG5 \nAREA rect_MSMG5 < 0.0024",
+        "constraints": [
+            "(self.height * self.width) >= 0.0024*(10**6)"
+        ]
+    },
+    "RULE_VG1001a": {
+        "rule": "VG1 is a square with 112nm edge length",
+        "script": "RECTANGLE VG1 != 0.112 BY != 0.112 ASPECT ==1",
+        "constraints": [
+            "And(self.width == 112, self.height == 112)"
+        ]
+    },
+    "RULE_MG1001": {
+        "rule": "MG1 width > 112nm",
+        "script": "INTERNAL MG1 < 0.112",
+        "constraints": [
+            "set_min_width(112) \t set_min_height(112)"
+        ]
+    },
+    "RULE_MG1002": {
+        "rule": "One of two edges connected to the same vertex must have at least one of 224nm",
+        "script": "x = CONVEX EDGE MG1 ANGLE1==90 ANGLE2==90 WITH LENGTH < 0.224 \nINT x < 0.001 ABUT",
+        "constraints": []
+    },
+    "RULE_MG1003": {
+        "rule": "maximum length of MG1 for wires with min width 112nm is 3.84um",
+        "script": "wide_MG1 = MG1 with width <= 0.112 \nd = INT wide_MG1 <= 1 opposite \nd_p = dfm property wide_MG1 d overlap abut also [EC1 = EC(d)] > 3.840 \ncopy d_p",
+        "constraints": [
+            "Implies(self.width == 112, self.height <= 3840)"
+        ]
+    },
+    "RULE_MG1013": {
+        "rule": "MG1 minimum area for rectangular shape is 0.0024um2",
+        "script": "rect_MG1 = RECTANGLE MG1 \nAREA rect_MG1 < 0.0024",
+        "constraints": [
+            "(self.height * self.width) >= 0.0024*(10**6)"
+        ]
+    },
+    "RULE_MG2001": {
+        "rule": "MG2 width > 112nm",
+        "script": "INTERNAL MG2 < 0.112",
+        "constraints": [
+            "set_min_width(112) \t set_min_height(112)"
+        ]
+    },
+    "RULE_MG2002": {
+        "rule": "One of two edges connected to the same vertex must have at least one of 224nm",
+        "script": "x = CONVEX EDGE MG2 ANGLE1==90 ANGLE2==90 WITH LENGTH < 0.224 \nINT x < 0.001 ABUT",
+        "constraints": []
+    },
+    "RULE_MG2003": {
+        "rule": "maximum length of MG2 for wires with min width 112nm is 3.84um",
+        "script": "wide_MG2 = MG2 with width <= 0.112 \nd = INT wide_MG2 <= 1 opposite \nd_p = dfm property wide_MG2 d overlap abut also [EC1 = EC(d)] > 3.840 \ncopy d_p",
+        "constraints": [
+            "Implies(self.width == 112, self.height <= 3840)"
+        ]
+    },
+    "RULE_MG2013": {
+        "rule": "MG2 minimum area for rectangular shape is 0.0024um2",
+        "script": "rect_MG2 = RECTANGLE MG2 \nAREA rect_MG2 < 0.0024",
+        "constraints": [
+            "(self.height * self.width) >= 0.0024*(10**6)"
+        ]
+    },
+    "RULE_MIS02A": {
+        "rule": "[ANTENNA] Ratio of Maximum Allowed GATE[A] Area to transistor Gate Area is 100:1",
+        "script": "NET AREA RATIO GATEA GIL M1A MINT1A MINT2A MINT3A MINT4A MINT5A OVER N_GATE_A P_GATE_A > 100",
+        "constraints": []
+    },
+    "RULE_MIS02B": {
+        "rule": "[ANTENNA] Ratio of Maximum Allowed GATE[B] Area to transistor Gate Area is 100:1",
+        "script": "NET AREA RATIO GATEB GIL M1B MINT1B MINT2B MINT3B MINT4B MINT5B OVER N_GATE_B P_GATE_B > 100",
+        "constraints": []
+    }
+}

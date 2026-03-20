@@ -1,0 +1,187 @@
+{
+  "total_correct": 5,
+  "total_examples": 8,
+  "overall_accuracy": 0.625,
+  "per_rule": [
+    {
+      "rule_name": "RULE_NW001",
+      "rule_description": "Minimum spacing of NW (or) PW at different potential is 180nm",
+      "rule_script": "EXTERNAL NW < 0.180 NOT CONNECTED OPPOSITE",
+      "correct": 3,
+      "total": 4,
+      "accuracy": 0.75,
+      "details": [
+        {
+          "idx": 0,
+          "predicted_label": true,
+          "calibre_label": true,
+          "match": true,
+          "pos": {
+            "NW_1": [
+              {
+                "llx": 0,
+                "lly": 0,
+                "urx": 500,
+                "ury": 500
+              }
+            ],
+            "NW_2": [
+              {
+                "llx": 680,
+                "lly": 0,
+                "urx": 1180,
+                "ury": 500
+              }
+            ]
+          }
+        },
+        {
+          "idx": 1,
+          "predicted_label": true,
+          "calibre_label": true,
+          "match": true,
+          "pos": {
+            "NW_1": [
+              {
+                "llx": 0,
+                "lly": 0,
+                "urx": 400,
+                "ury": 400
+              }
+            ],
+            "NW_2": [
+              {
+                "llx": 0,
+                "lly": 580,
+                "urx": 400,
+                "ury": 980
+              }
+            ]
+          }
+        },
+        {
+          "idx": 2,
+          "predicted_label": false,
+          "calibre_label": true,
+          "match": false,
+          "pos": {
+            "NW_1": [
+              {
+                "llx": 0,
+                "lly": 0,
+                "urx": 500,
+                "ury": 500
+              }
+            ],
+            "NW_2": [
+              {
+                "llx": 500,
+                "lly": 0,
+                "urx": 1000,
+                "ury": 500
+              }
+            ]
+          }
+        },
+        {
+          "idx": 3,
+          "predicted_label": false,
+          "calibre_label": false,
+          "match": true,
+          "pos": {
+            "NW_1": [
+              {
+                "llx": 0,
+                "lly": 0,
+                "urx": 300,
+                "ury": 300
+              }
+            ],
+            "NW_2": [
+              {
+                "llx": 450,
+                "lly": 0,
+                "urx": 750,
+                "ury": 300
+              }
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "rule_name": "RULE_NW003",
+      "rule_description": "Minimum width of NW is 160nm",
+      "rule_script": "INTERNAL NW < 0.160",
+      "correct": 2,
+      "total": 4,
+      "accuracy": 0.5,
+      "details": [
+        {
+          "idx": 0,
+          "predicted_label": true,
+          "calibre_label": false,
+          "match": false,
+          "pos": {
+            "NW_1": [
+              {
+                "llx": 0,
+                "lly": 0,
+                "urx": 200,
+                "ury": 100
+              }
+            ]
+          }
+        },
+        {
+          "idx": 1,
+          "predicted_label": true,
+          "calibre_label": false,
+          "match": false,
+          "pos": {
+            "NW_1": [
+              {
+                "llx": 0,
+                "lly": 0,
+                "urx": 160,
+                "ury": 100
+              }
+            ]
+          }
+        },
+        {
+          "idx": 2,
+          "predicted_label": false,
+          "calibre_label": false,
+          "match": true,
+          "pos": {
+            "NW_1": [
+              {
+                "llx": 0,
+                "lly": 0,
+                "urx": 150,
+                "ury": 100
+              }
+            ]
+          }
+        },
+        {
+          "idx": 3,
+          "predicted_label": false,
+          "calibre_label": false,
+          "match": true,
+          "pos": {
+            "NW_1": [
+              {
+                "llx": 0,
+                "lly": 0,
+                "urx": 159,
+                "ury": 100
+              }
+            ]
+          }
+        }
+      ]
+    }
+  ]
+}

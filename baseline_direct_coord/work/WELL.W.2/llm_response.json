@@ -1,0 +1,107 @@
+{
+  "raw_response": "```json\n{\n  \"examples\": [\n    {\n      \"WELL_1\": [\n        { \"llx\": 0, \"lly\": 0, \"urx\": 100, \"ury\": 54 }\n      ]\n    },\n    {\n      \"WELL_1\": [\n        { \"llx\": 0, \"lly\": 0, \"urx\": 100, \"ury\": 53 }\n      ]\n    },\n    {\n      \"WELL_1\": [\n        { \"llx\": 0, \"lly\": 0, \"urx\": 54, \"ury\": 100 }\n      ]\n    },\n    {\n      \"WELL_1\": [\n        { \"llx\": 0, \"lly\": 0, \"urx\": 53, \"ury\": 100 }\n      ]\n    },\n    {\n      \"WELL_1\": [\n        { \"llx\": 0, \"lly\": 0, \"urx\": 54, \"ury\": 54 }\n      ]\n    },\n    {\n      \"WELL_1\": [\n        { \"llx\": 0, \"lly\": 0, \"urx\": 53, \"ury\": 53 }\n      ]\n    },\n    {\n      \"WELL_1\": [\n        { \"llx\": 0, \"lly\": 0, \"urx\": 100, \"ury\": 54 },\n        { \"llx\": 200, \"lly\": 0, \"urx\": 300, \"ury\": 54 }\n      ]\n    },\n    {\n      \"WELL_1\": [\n        { \"llx\": 0, \"lly\": 0, \"urx\": 100, \"ury\": 54 },\n        { \"llx\": 200, \"lly\": 0, \"urx\": 300, \"ury\": 53 }\n      ]\n    }\n  ],\n  \"labels\": [\n    true,\n    false,\n    true,\n    false,\n    true,\n    false,\n    true,\n    false\n  ]\n}\n```",
+  "examples": [
+    {
+      "WELL_1": [
+        {
+          "llx": 0,
+          "lly": 0,
+          "urx": 100,
+          "ury": 54
+        }
+      ]
+    },
+    {
+      "WELL_1": [
+        {
+          "llx": 0,
+          "lly": 0,
+          "urx": 100,
+          "ury": 53
+        }
+      ]
+    },
+    {
+      "WELL_1": [
+        {
+          "llx": 0,
+          "lly": 0,
+          "urx": 54,
+          "ury": 100
+        }
+      ]
+    },
+    {
+      "WELL_1": [
+        {
+          "llx": 0,
+          "lly": 0,
+          "urx": 53,
+          "ury": 100
+        }
+      ]
+    },
+    {
+      "WELL_1": [
+        {
+          "llx": 0,
+          "lly": 0,
+          "urx": 54,
+          "ury": 54
+        }
+      ]
+    },
+    {
+      "WELL_1": [
+        {
+          "llx": 0,
+          "lly": 0,
+          "urx": 53,
+          "ury": 53
+        }
+      ]
+    },
+    {
+      "WELL_1": [
+        {
+          "llx": 0,
+          "lly": 0,
+          "urx": 100,
+          "ury": 54
+        },
+        {
+          "llx": 200,
+          "lly": 0,
+          "urx": 300,
+          "ury": 54
+        }
+      ]
+    },
+    {
+      "WELL_1": [
+        {
+          "llx": 0,
+          "lly": 0,
+          "urx": 100,
+          "ury": 54
+        },
+        {
+          "llx": 200,
+          "lly": 0,
+          "urx": 300,
+          "ury": 53
+        }
+      ]
+    }
+  ],
+  "labels": [
+    true,
+    false,
+    true,
+    false,
+    true,
+    false,
+    true,
+    false
+  ]
+}

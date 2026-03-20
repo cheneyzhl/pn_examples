@@ -1,0 +1,1 @@
+INTERNAL metal10 < 0.8

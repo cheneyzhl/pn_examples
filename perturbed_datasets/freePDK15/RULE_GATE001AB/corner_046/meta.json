@@ -1,0 +1,72 @@
+{
+  "corner_id": "corner_046",
+  "corner_idx": 46,
+  "bits": [
+    0,
+    1,
+    1,
+    1,
+    0,
+    1,
+    0
+  ],
+  "targets_used": [
+    {
+      "kind": "INTERNAL",
+      "var": "GATEAB_VERTICAL_EDGES",
+      "op": "<",
+      "num_str": "0.014",
+      "decimals": 3,
+      "line_idx": 0
+    },
+    {
+      "kind": "INTERNAL",
+      "var": "GATEAB_VERTICAL_EDGES",
+      "op": ">",
+      "num_str": "0.014",
+      "decimals": 3,
+      "line_idx": 1
+    },
+    {
+      "kind": "INTERNAL",
+      "var": "GATEAB_VERTICAL_EDGES",
+      "op": "<",
+      "num_str": "0.016",
+      "decimals": 3,
+      "line_idx": 1
+    },
+    {
+      "kind": "INTERNAL",
+      "var": "GATEAB_VERTICAL_EDGES",
+      "op": ">",
+      "num_str": "0.016",
+      "decimals": 3,
+      "line_idx": 2
+    },
+    {
+      "kind": "INTERNAL",
+      "var": "GATEAB_VERTICAL_EDGES",
+      "op": "<",
+      "num_str": "0.020",
+      "decimals": 3,
+      "line_idx": 2
+    },
+    {
+      "kind": "INTERNAL",
+      "var": "GATEAB_VERTICAL_EDGES",
+      "op": ">",
+      "num_str": "0.020",
+      "decimals": 3,
+      "line_idx": 3
+    },
+    {
+      "kind": "INTERNAL",
+      "var": "GATEAB_VERTICAL_EDGES",
+      "op": "<",
+      "num_str": "0.800",
+      "decimals": 3,
+      "line_idx": 3
+    }
+  ],
+  "script_expected_correct": false
+}

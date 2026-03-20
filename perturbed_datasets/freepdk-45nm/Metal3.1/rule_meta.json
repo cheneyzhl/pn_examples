@@ -1,0 +1,21 @@
+{
+  "rule_name": "Metal3.1",
+  "data_name": "freepdk-45nm",
+  "extracted_targets_total": 1,
+  "used_targets": [
+    {
+      "kind": "INTERNAL",
+      "var": "metal3",
+      "op": "<",
+      "num_str": "0.07",
+      "decimals": 2,
+      "line_idx": 0,
+      "num_start": 18,
+      "num_end": 22
+    }
+  ],
+  "delta": 0.001,
+  "decomposition_mode": "numeric",
+  "generated_corners_count": 3,
+  "generated_at": "2026-03-19_20-28-34"
+}

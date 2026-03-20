@@ -1,0 +1,31 @@
+{
+  "rule_name": "M8.W.5",
+  "data_name": "asap7",
+  "extracted_targets_total": 2,
+  "used_targets": [
+    {
+      "kind": "INTERNAL",
+      "var": "M8",
+      "op": ">",
+      "num_str": "2.000",
+      "decimals": 3,
+      "line_idx": 0,
+      "num_start": 14,
+      "num_end": 19
+    },
+    {
+      "kind": "INTERNAL",
+      "var": "M8",
+      "op": "<",
+      "num_str": "10.0",
+      "decimals": 1,
+      "line_idx": 0,
+      "num_start": 22,
+      "num_end": 26
+    }
+  ],
+  "delta": 0.001,
+  "decomposition_mode": "numeric",
+  "generated_corners_count": 5,
+  "generated_at": "2026-03-19_20-28-28"
+}

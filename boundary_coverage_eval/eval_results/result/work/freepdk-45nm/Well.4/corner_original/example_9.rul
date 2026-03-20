@@ -1,0 +1,563 @@
+LAYOUT SYSTEM 			GDSII
+LAYOUT PATH 			"/share/home/zenghuanlong/pn_examples/boundary_coverage_eval/eval_results/result/work/freepdk-45nm/Well.4/gds/example_9.gds"
+LAYOUT PRIMARY 			TOPCELL
+DRC SUMMARY REPORT 		drc_report
+DRC RESULTS DATABASE 		drc_results.db
+DRC INCREMENTAL CONNECT YES
+
+PRECISION			5000
+LAYOUT PRECISION 		1000
+LAYOUT MAGNIFY			AUTO
+RESOLUTION			1
+
+layer nwell 3
+layer pwell 2
+layer active 1
+layer nimplant 4
+layer pimplant 5
+layer vtg 6
+layer vth 7
+layer poly 9
+layer contact 10
+layer metal1 11
+layer via1 12
+layer metal2 13
+layer via2 14
+layer metal3 15
+layer via3 16
+layer metal4 17
+layer via4 18
+layer metal5 19
+layer via5 20
+layer metal6 21
+layer via6 22
+layer metal7 23 
+layer via7 24
+layer metal8 25
+layer via8 26
+layer metal9 27
+layer via9 28
+layer metal10 29
+
+layer well 30
+layer gate 31
+layer implant 32
+layer fieldpoly 33
+layer vt 34
+layer contactenc1 35
+layer contactenc 36
+layer diode 37
+
+
+
+
+
+
+
+
+Well.4 {
+@Min width of well = 0.2
+INTERNAL well < 0.2
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+L111 = SIZE metal1 BY 0.045 UNDEROVER
+L112 = AND L111 metal1
+L113 = COINCIDENT EDGE metal1 L112
+L114 = LENGTH L113 >= 0.3
+
+L115 = SIZE metal1 BY 0.135 UNDEROVER
+L116 = AND L115 metal1
+L117 = COINCIDENT EDGE metal1 L116
+L118 = LENGTH L117 >= 0.9
+
+L119 = SIZE metal1 BY 0.25 UNDEROVER
+L120 = AND L119 metal1
+L121 = COINCIDENT EDGE metal1 L120
+L122 = LENGTH L121 >= 1.8
+
+L123 = SIZE metal1 BY 0.45 UNDEROVER
+L124 = AND L123 metal1
+L125 = COINCIDENT EDGE metal1 L124
+L126 = LENGTH L125 >= 2.7
+
+L127 = SIZE metal1 BY 0.75 UNDEROVER
+L128 = AND L127 metal1
+L129 = COINCIDENT EDGE metal1 L128
+L130 = LENGTH L129 >= 4.0
+
+L211 = SIZE metal2 BY 0.045 UNDEROVER
+L212 = AND L211 metal2
+L213 = COINCIDENT EDGE metal2 L212
+L214 = LENGTH L213 >= 0.3
+
+L215 = SIZE metal2 BY 0.135 UNDEROVER
+L216 = AND L215 metal2
+L217 = COINCIDENT EDGE metal2 L216
+L218 = LENGTH L217 >= 0.9
+
+L219 = SIZE metal2 BY 0.25 UNDEROVER
+L220 = AND L219 metal2
+L221 = COINCIDENT EDGE metal2 L220
+L222 = LENGTH L221 >= 1.8
+
+L223 = SIZE metal2 BY 0.45 UNDEROVER
+L224 = AND L223 metal2
+L225 = COINCIDENT EDGE metal2 L224
+L226 = LENGTH L225 >= 2.7
+
+L227 = SIZE metal2 BY 0.75 UNDEROVER
+L228 = AND L227 metal2
+L229 = COINCIDENT EDGE metal2 L228
+L230 = LENGTH L229 >= 4.0
+
+L311 = SIZE metal3 BY 0.045 UNDEROVER
+L312 = AND L311 metal3
+L313 = COINCIDENT EDGE metal3 L312
+L314 = LENGTH L313 >= 0.3
+
+L315 = SIZE metal3 BY 0.135 UNDEROVER
+L316 = AND L315 metal3
+L317 = COINCIDENT EDGE metal3 L316
+L318 = LENGTH L317 >= 0.9
+
+L319 = SIZE metal3 BY 0.25 UNDEROVER
+L320 = AND L319 metal3
+L321 = COINCIDENT EDGE metal3 L320
+L322 = LENGTH L321 >= 1.8
+
+L323 = SIZE metal3 BY 0.45 UNDEROVER
+L324 = AND L323 metal3
+L325 = COINCIDENT EDGE metal3 L324
+L326 = LENGTH L325 >= 2.7
+
+L327 = SIZE metal3 BY 0.75 UNDEROVER
+L328 = AND L327 metal3
+L329 = COINCIDENT EDGE metal3 L328
+L330 = LENGTH L329 >= 4.0
+
+L415 = SIZE metal4 BY 0.135 UNDEROVER
+L416 = AND L415 metal4
+L417 = COINCIDENT EDGE metal4 L416
+L418 = LENGTH L417 >= 0.9
+
+L419 = SIZE metal4 BY 0.25 UNDEROVER
+L420 = AND L419 metal4
+L421 = COINCIDENT EDGE metal4 L420
+L422 = LENGTH L421 >= 1.8
+
+L423 = SIZE metal4 BY 0.45 UNDEROVER
+L424 = AND L423 metal4
+L425 = COINCIDENT EDGE metal4 L424
+L426 = LENGTH L425 >= 2.7
+
+L427 = SIZE metal4 BY 0.75 UNDEROVER
+L428 = AND L427 metal4
+L429 = COINCIDENT EDGE metal4 L428
+L430 = LENGTH L429 >= 4.0
+
+L515 = SIZE metal5 BY 0.135 UNDEROVER
+L516 = AND L515 metal5
+L517 = COINCIDENT EDGE metal5 L516
+L518 = LENGTH L517 >= 0.9
+
+L519 = SIZE metal5 BY 0.25 UNDEROVER
+L520 = AND L519 metal5
+L521 = COINCIDENT EDGE metal5 L520
+L522 = LENGTH L521 >= 1.8
+
+L523 = SIZE metal5 BY 0.45 UNDEROVER
+L524 = AND L523 metal5
+L525 = COINCIDENT EDGE metal5 L524
+L526 = LENGTH L525 >= 2.7
+
+L527 = SIZE metal5 BY 0.75 UNDEROVER
+L528 = AND L527 metal5
+L529 = COINCIDENT EDGE metal5 L528
+L530 = LENGTH L529 >= 4.0
+
+L615 = SIZE metal6 BY 0.135 UNDEROVER
+L616 = AND L615 metal6
+L617 = COINCIDENT EDGE metal6 L616
+L618 = LENGTH L617 >= 0.9
+
+L619 = SIZE metal6 BY 0.25 UNDEROVER
+L620 = AND L619 metal6
+L621 = COINCIDENT EDGE metal6 L620
+L622 = LENGTH L621 >= 1.8
+
+L623 = SIZE metal6 BY 0.45 UNDEROVER
+L624 = AND L623 metal6
+L625 = COINCIDENT EDGE metal6 L624
+L626 = LENGTH L625 >= 2.7
+
+L627 = SIZE metal6 BY 0.75 UNDEROVER
+L628 = AND L627 metal6
+L629 = COINCIDENT EDGE metal6 L628
+L630 = LENGTH L629 >= 4.0
+
+L719 = SIZE metal7 BY 0.25 UNDEROVER
+L720 = AND L719 metal7
+L721 = COINCIDENT EDGE metal7 L720
+L722 = LENGTH L721 >= 1.8
+
+L723 = SIZE metal7 BY 0.45 UNDEROVER
+L724 = AND L723 metal7
+L725 = COINCIDENT EDGE metal7 L724
+L726 = LENGTH L725 >= 2.7
+
+L727 = SIZE metal7 BY 0.75 UNDEROVER
+L728 = AND L727 metal7
+L729 = COINCIDENT EDGE metal7 L728
+L730 = LENGTH L729 >= 4.0
+
+
+L819 = SIZE metal8 BY 0.25 UNDEROVER
+L820 = AND L819 metal8
+L821 = COINCIDENT EDGE metal8 L820
+L822 = LENGTH L821 >= 1.8
+
+L823 = SIZE metal8 BY 0.45 UNDEROVER
+L824 = AND L823 metal8
+L825 = COINCIDENT EDGE metal8 L824
+L826 = LENGTH L825 >= 2.7
+
+L827 = SIZE metal8 BY 0.75 UNDEROVER
+L828 = AND L827 metal8
+L829 = COINCIDENT EDGE metal8 L828
+L830 = LENGTH L829 >= 4.0
+
+L923 = SIZE metal9 BY 0.45 UNDEROVER
+L924 = AND L923 metal9
+L925 = COINCIDENT EDGE metal9 L924
+L926 = LENGTH L925 >= 2.7
+
+L927 = SIZE metal9 BY 0.75 UNDEROVER
+L928 = AND L927 metal9
+L929 = COINCIDENT EDGE metal9 L928
+L930 = LENGTH L929 >= 4.0
+
+L1023 = SIZE metal10 BY 0.45 UNDEROVER
+L1024 = AND L1023 metal10
+L1025 = COINCIDENT EDGE metal10 L1024
+L1026 = LENGTH L1025 >= 2.7
+
+L1027 = SIZE metal10 BY 0.75 UNDEROVER
+L1028 = AND L1027 metal10
+L1029 = COINCIDENT EDGE metal10 L1028
+L1030 = LENGTH L1029 >= 4.0
+
+Grid.1 {
+@All shapes must be on a 2.5 nm grid
+OFFGRID active 5 5
+}
+
+Grid.2 {
+@All shapes must be on a 2.5 nm grid
+OFFGRID implant 5 5
+}
+
+Grid.3 {
+@All shapes must be on a 2.5 nm grid
+OFFGRID well 5 5
+}
+
+Grid.4 {
+@All shapes must be on a 2.5 nm grid
+OFFGRID contact 5 5
+}
+
+Grid.5 {
+@All shapes must be on a 2.5 nm grid
+OFFGRID poly 5 5
+}
+
+Grid.6 {
+@All shapes must be on a 2.5 nm grid
+OFFGRID metal1 5 5
+}
+
+Grid.7 {
+@All shapes must be on a 2.5 nm grid
+OFFGRID via1 5 5
+}
+
+Grid.8 {
+@All shapes must be on a 2.5 nm grid
+OFFGRID metal2 5 5
+}
+
+Grid.9 {
+@All shapes must be on a 2.5 nm grid
+OFFGRID via2 5 5
+}
+
+Grid.10 {
+@All shapes must be on a 2.5 nm grid
+OFFGRID metal3 5 5
+}
+
+Grid.11 {
+@All shapes must be on a 2.5 nm grid
+OFFGRID via3 5 5
+}
+
+Grid.12 {
+@All shapes must be on a 2.5 nm grid
+OFFGRID metal4 5 5
+}
+
+Grid.13 {
+@All shapes must be on a 2.5 nm grid
+OFFGRID via4 5 5
+}
+
+Grid.14 {
+@All shapes must be on a 2.5 nm grid
+OFFGRID metal5 5 5
+}
+
+Grid.15 {
+@All shapes must be on a 2.5 nm grid
+OFFGRID via5 5 5
+}
+
+Grid.16 {
+@All shapes must be on a 2.5 nm grid
+OFFGRID metal6 5 5
+}
+
+Grid.17 {
+@All shapes must be on a 2.5 nm grid
+OFFGRID via6 5 5
+}
+
+Grid.18 {
+@All shapes must be on a 2.5 nm grid
+OFFGRID metal7 5 5
+}
+
+Grid.19 {
+@All shapes must be on a 2.5 nm grid
+OFFGRID via7 5 5
+}
+
+Grid.20 {
+@All shapes must be on a 2.5 nm grid
+OFFGRID metal8 5 5
+}
+
+Grid.21 {
+@All shapes must be on a 2.5 nm grid
+OFFGRID via8 5 5
+}
+
+Grid.22 {
+@All shapes must be on a 2.5 nm grid
+OFFGRID metal9 5 5
+}
+
+Grid.23 {
+@All shapes must be on a 2.5 nm grid
+OFFGRID via9 5 5
+}
+
+Grid.24 {
+@All shapes must be on a 2.5 nm grid
+OFFGRID metal10 5 5
+}
+
+Grid.25 {
+@All shapes must be on a 2.5 nm grid
+OFFGRID vtg 5 5
+}
+
+Grid.26 {
+@All shapes must be on a 2.5 nm grid
+OFFGRID vth 5 5
+}
+
+CONNECT poly gate
+CONNECT metal1 poly BY contact
+CONNECT metal1 diode
+
+Antenna.poly{
+@Maximum allowed field poly area to antenna area is 100:1. Connect diode to relax constraint.
+NET AREA RATIO poly gate diode > 100
+	[(AREA(poly) * !AREA(diode))  / AREA(gate)]
+}
+ac0 =NET AREA RATIO poly gate >=0 ACCUMULATE
+
+Antenna.metal1 { 
+@Maximum allowed (poly + metal 1) antenna area to gate area is 300:1. Connect diode to relax constraint.
+NET AREA RATIO metal1 poly gate diode > 300
+	[((AREA(metal1)+ AREA(poly)) * !AREA(diode))  / AREA(gate)]
+}
+ac1=NET AREA RATIO metal1 gate >=0 ACCUMULATE ac0
+
+CONNECT metal2 metal1 BY via1
+Antenna.metal2 {
+@[Area(poly)+Area(Metal 1)]:Area(Gate) should be < 300:1 to prevent plasma induced damage.
+NET AREA RATIO metal2 metal1 poly gate diode > 300
+	[((AREA(metal1)+ AREA(poly)) * !AREA(diode))  / AREA(gate)]
+
+}
+ac2=NET AREA RATIO metal2 gate >=0 ACCUMULATE ac1
+
+CONNECT metal3 metal2 BY via2
+Antenna.metal3 {
+@[Area(poly)+Area(Metal 1)+Area(Metal 2)]:Area(Gate) should be < 300:1 to prevent plasma induced gate oxide damage.
+NET AREA RATIO metal3 metal2 metal1 poly gate diode > 300
+[((AREA(metal2)+ AREA(metal1)+ AREA(poly)) * !AREA(diode))  / AREA(gate)]
+
+}
+ac3=NET AREA RATIO metal3 gate >=0 ACCUMULATE ac2
+
+CONNECT metal4 metal3 BY via3
+Antenna.metal4 {
+@[Area(poly)+Area(Metal 1)+Area(Metal 2)+Area(Metal 3)]:Area(Gate) should be < 300:1 to prevent plasma induced gate oxide damage
+NET AREA RATIO metal4 metal3 metal2 metal1 poly gate diode > 300
+[((AREA(metal3)+ AREA(metal2)+ AREA(metal1)+ AREA(poly)) * !AREA(diode))  / AREA(gate)]
+}
+ac4=NET AREA RATIO metal4 gate >=0 ACCUMULATE ac3
+
+CONNECT metal5 metal4 BY via4
+Antenna.metal5 {
+@[Area(poly+M1+M2+M3+M4):Area(Gate) should be < 300:1 to prevent plasma induced gate oxide damage
+NET AREA RATIO metal5 metal4 metal3 metal2 metal1 poly gate diode > 300
+[((AREA(metal4)+ AREA(metal3)+ AREA(metal2)+ AREA(metal1)+ AREA(poly)) * !AREA(diode))  / AREA(gate)]
+}
+ac5=NET AREA RATIO metal5 gate >=0 ACCUMULATE ac4
+
+CONNECT metal6 metal5 BY via5
+Antenna.metal6 {
+@[Area(poly+M1+M2+M3+M4+M5)]:Area(Gate) should be < 300:1 to prevent plasma induced gate oxide damage
+NET AREA RATIO metal6 metal5 metal4 metal3 metal2 metal1 poly gate diode > 300
+[((AREA(metal5)+AREA(metal4)+ AREA(metal3)+ AREA(metal2)+ AREA(metal1)+ AREA(poly)) * !AREA(diode))  / AREA(gate)]
+}
+ac6=NET AREA RATIO metal6 gate >=0 ACCUMULATE ac5
+
+CONNECT metal7 metal6 BY via6
+Antenna.metal7 {
+@[Area(poly+M1+M2+M3+M4+M5+M6)]:Area(Gate) should be < 300:1 to prevent plasma induced gate oxide damage
+NET AREA RATIO metal7 metal6 metal5 metal4 metal3 metal2 metal1 poly gate diode> 300 
+[((AREA(metal6)+AREA(metal5)+AREA(metal4)+ AREA(metal3)+ AREA(metal2)+ AREA(metal1)+ AREA(poly)) * !AREA(diode))  / AREA(gate)]
+}
+ac7=NET AREA RATIO metal7 gate >=0 ACCUMULATE ac6
+
+CONNECT metal8 metal7 BY via7
+Antenna.metal8 {
+@[Area(poly+M1+M2+M3+M4+M5+M6+M7)]:Area(Gate) should be < 300:1 to prevent plasma induced gate oxide damage
+NET AREA RATIO metal8 metal7 metal6 metal5 metal4 metal3 metal2 metal1 poly gate diode > 300
+[((AREA(metal7)+AREA(metal6)+AREA(metal5)+AREA(metal4)+ AREA(metal3)+ AREA(metal2)+ AREA(metal1)+ AREA(poly)) * !AREA(diode))  / AREA(gate)]
+}
+ac8=NET AREA RATIO metal8 gate >=0 ACCUMULATE ac7
+
+CONNECT metal9 metal8 BY via8
+Antenna.metal9 {
+@[Area(poly+M1+M2+M3+M4+M5+M6+M7+M8)]:Area(Gate) should be < 300:1 to prevent plasma induced gate oxide damage
+NET AREA RATIO metal9 metal8 metal7 metal6 metal5 metal4 metal3 metal2 metal1 poly gate diode > 300
+[((AREA(metal8)+AREA(metal7)+AREA(metal6)+AREA(metal5)+AREA(metal4)+ AREA(metal3)+ AREA(metal2)+ AREA(metal1)+ AREA(poly)) * !AREA(diode))  / AREA(gate)]
+}
+ac9=NET AREA RATIO metal9 gate >=0 ACCUMULATE ac8
+
+CONNECT metal10 metal9 BY via9
+Antenna.metal10 {
+@[Area(poly+M1+M2+M3+M4+M5+M6+M7+M8+M9)]:Area(Gate) should be < 300:1 to prevent plasma induced gate oxide damage
+NET AREA RATIO metal10 metal9 metal8 metal7 metal6 metal5 metal4 metal3 metal2 metal1 poly gate diode > 300
+[((AREA(metal9)+AREA(metal8)+AREA(metal7)+AREA(metal6)+AREA(metal5)+AREA(metal4)+ AREA(metal3)+ AREA(metal2)+ AREA(metal1)+ AREA(poly)) * !AREA(diode))  / AREA(gate)]
+}
+ac10=NET AREA RATIO metal10 gate >=0 ACCUMULATE ac9

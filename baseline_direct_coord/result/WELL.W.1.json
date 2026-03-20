@@ -1,0 +1,134 @@
+{
+  "rule_name": "WELL.W.1",
+  "rule_description": "Minimum horizontal width of WELL is 108 nm.",
+  "rule_script": "INTERNAL WELL_VE < 0.108",
+  "sample_correct": 6,
+  "sample_total": 6,
+  "accuracy": 1.0,
+  "details": [
+    {
+      "idx": 0,
+      "predicted_label": true,
+      "calibre_label": true,
+      "match": true,
+      "pos": {
+        "WELL_1": [
+          {
+            "llx": 0,
+            "lly": 0,
+            "urx": 108,
+            "ury": 100
+          }
+        ]
+      }
+    },
+    {
+      "idx": 1,
+      "predicted_label": false,
+      "calibre_label": false,
+      "match": true,
+      "pos": {
+        "WELL_1": [
+          {
+            "llx": 0,
+            "lly": 0,
+            "urx": 107,
+            "ury": 100
+          }
+        ]
+      }
+    },
+    {
+      "idx": 2,
+      "predicted_label": true,
+      "calibre_label": true,
+      "match": true,
+      "pos": {
+        "WELL_1": [
+          {
+            "llx": 0,
+            "lly": 0,
+            "urx": 108,
+            "ury": 100
+          },
+          {
+            "llx": 200,
+            "lly": 0,
+            "urx": 308,
+            "ury": 100
+          }
+        ]
+      }
+    },
+    {
+      "idx": 3,
+      "predicted_label": false,
+      "calibre_label": false,
+      "match": true,
+      "pos": {
+        "WELL_1": [
+          {
+            "llx": 0,
+            "lly": 0,
+            "urx": 108,
+            "ury": 100
+          },
+          {
+            "llx": 200,
+            "lly": 0,
+            "urx": 307,
+            "ury": 100
+          }
+        ]
+      }
+    },
+    {
+      "idx": 4,
+      "predicted_label": true,
+      "calibre_label": true,
+      "match": true,
+      "pos": {
+        "WELL_1": [
+          {
+            "llx": 0,
+            "lly": 0,
+            "urx": 108,
+            "ury": 100
+          }
+        ],
+        "FIN_1": [
+          {
+            "llx": 10,
+            "lly": 10,
+            "urx": 20,
+            "ury": 20
+          }
+        ]
+      }
+    },
+    {
+      "idx": 5,
+      "predicted_label": false,
+      "calibre_label": false,
+      "match": true,
+      "pos": {
+        "WELL_1": [
+          {
+            "llx": 0,
+            "lly": 0,
+            "urx": 107,
+            "ury": 100
+          }
+        ],
+        "FIN_1": [
+          {
+            "llx": 10,
+            "lly": 10,
+            "urx": 20,
+            "ury": 20
+          }
+        ]
+      }
+    }
+  ]
+}

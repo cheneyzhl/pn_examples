@@ -1,0 +1,21 @@
+{
+  "rule_name": "SRAMVT.W.2",
+  "data_name": "asap7",
+  "extracted_targets_total": 1,
+  "used_targets": [
+    {
+      "kind": "INTERNAL",
+      "var": "SRAMVT_HE",
+      "op": "<",
+      "num_str": "0.054",
+      "decimals": 3,
+      "line_idx": 0,
+      "num_start": 21,
+      "num_end": 26
+    }
+  ],
+  "delta": 0.001,
+  "decomposition_mode": "numeric",
+  "generated_corners_count": 3,
+  "generated_at": "2026-03-19_20-28-28"
+}

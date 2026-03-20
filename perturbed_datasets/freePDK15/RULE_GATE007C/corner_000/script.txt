@@ -1,0 +1,4 @@
+ext_region = EXT GATEC < 0.192 REGION 
+angled_edges = ANGLE ext_region >0 <90 
+angled_regions = ext_region WITH EDGE angled_edges 
+GATEC INTERACT angled_regions

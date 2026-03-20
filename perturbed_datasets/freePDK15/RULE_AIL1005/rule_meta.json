@@ -1,0 +1,21 @@
+{
+  "rule_name": "RULE_AIL1005",
+  "data_name": "freePDK15",
+  "extracted_targets_total": 1,
+  "used_targets": [
+    {
+      "kind": "INTERNAL",
+      "var": "AIL1_HORIZONTAL_EDGES",
+      "op": "<",
+      "num_str": "0.058",
+      "decimals": 3,
+      "line_idx": 1,
+      "num_start": 33,
+      "num_end": 38
+    }
+  ],
+  "delta": 0.001,
+  "decomposition_mode": "numeric",
+  "generated_corners_count": 3,
+  "generated_at": "2026-03-19_20-28-23"
+}

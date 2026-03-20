@@ -1,0 +1,21 @@
+{
+  "rule_name": "RULE_MINT1001B",
+  "data_name": "freePDK15",
+  "extracted_targets_total": 1,
+  "used_targets": [
+    {
+      "kind": "INTERNAL",
+      "var": "MINT1B",
+      "op": "<",
+      "num_str": "0.028",
+      "decimals": 3,
+      "line_idx": 0,
+      "num_start": 18,
+      "num_end": 23
+    }
+  ],
+  "delta": 0.001,
+  "decomposition_mode": "numeric",
+  "generated_corners_count": 3,
+  "generated_at": "2026-03-19_20-28-23"
+}

@@ -1,0 +1,106 @@
+{
+  "rule_name": "RULE_NW004A",
+  "rule_description": "Minimum area of NW is 0.140 um2",
+  "rule_script": "AREA NW  < 0.140",
+  "sample_correct": 3,
+  "sample_total": 6,
+  "accuracy": 0.0,
+  "details": [
+    {
+      "idx": 0,
+      "predicted_label": true,
+      "calibre_label": false,
+      "match": false,
+      "pos": {
+        "NW_1": [
+          {
+            "llx": 0,
+            "lly": 0,
+            "urx": 40,
+            "ury": 35
+          }
+        ]
+      }
+    },
+    {
+      "idx": 1,
+      "predicted_label": false,
+      "calibre_label": false,
+      "match": true,
+      "pos": {
+        "NW_1": [
+          {
+            "llx": 0,
+            "lly": 0,
+            "urx": 39,
+            "ury": 35
+          }
+        ]
+      }
+    },
+    {
+      "idx": 2,
+      "predicted_label": true,
+      "calibre_label": false,
+      "match": false,
+      "pos": {
+        "NW_1": [
+          {
+            "llx": 0,
+            "lly": 0,
+            "urx": 20,
+            "ury": 70
+          }
+        ]
+      }
+    },
+    {
+      "idx": 3,
+      "predicted_label": false,
+      "calibre_label": false,
+      "match": true,
+      "pos": {
+        "NW_1": [
+          {
+            "llx": 0,
+            "lly": 0,
+            "urx": 20,
+            "ury": 69
+          }
+        ]
+      }
+    },
+    {
+      "idx": 4,
+      "predicted_label": true,
+      "calibre_label": false,
+      "match": false,
+      "pos": {
+        "NW_1": [
+          {
+            "llx": 0,
+            "lly": 0,
+            "urx": 37,
+            "ury": 38
+          }
+        ]
+      }
+    },
+    {
+      "idx": 5,
+      "predicted_label": false,
+      "calibre_label": false,
+      "match": true,
+      "pos": {
+        "NW_1": [
+          {
+            "llx": 0,
+            "lly": 0,
+            "urx": 37,
+            "ury": 37
+          }
+        ]
+      }
+    }
+  ]
+}

@@ -1,0 +1,10 @@
+{
+    "RULE_NW001": {
+        "rule": "Minimum spacing of NW (or) PW at different potential is 180nm",
+        "layers": ["NW"]
+    },
+    "RULE_NW003": {
+        "rule": "Minimum width of NW is 160nm",
+        "layers": ["NW"]
+    }
+}

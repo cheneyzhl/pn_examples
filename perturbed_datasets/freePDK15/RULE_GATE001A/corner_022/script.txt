@@ -1,0 +1,4 @@
+INTERNAL GATEA_vertical_edges < 0.013
+INTERNAL GATEA_vertical_edges > 0.015 < 0.017
+INTERNAL GATEA_vertical_edges > 0.015 < 0.021
+INTERNAL GATEA_vertical_edges > 0.019 < 0.199

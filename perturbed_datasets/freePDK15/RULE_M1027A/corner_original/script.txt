@@ -1,0 +1,2 @@
+rect_M1A = RECTANGLE M1A 
+AREA rect_M1A < 0.0024

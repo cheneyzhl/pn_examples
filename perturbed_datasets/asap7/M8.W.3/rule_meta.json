@@ -1,0 +1,21 @@
+{
+  "rule_name": "M8.W.3",
+  "data_name": "asap7",
+  "extracted_targets_total": 1,
+  "used_targets": [
+    {
+      "kind": "INTERNAL",
+      "var": "Y",
+      "op": "<",
+      "num_str": "0.080",
+      "decimals": 3,
+      "line_idx": 2,
+      "num_start": 13,
+      "num_end": 18
+    }
+  ],
+  "delta": 0.001,
+  "decomposition_mode": "numeric",
+  "generated_corners_count": 3,
+  "generated_at": "2026-03-19_20-28-28"
+}

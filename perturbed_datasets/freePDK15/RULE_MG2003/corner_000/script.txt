@@ -1,0 +1,4 @@
+wide_MG2 = MG2 with width <= 0.112 
+d = INT wide_MG2 <= 1 opposite 
+d_p = dfm property wide_MG2 d overlap abut also [EC1 = EC(d)] > 3.840 
+copy d_p

@@ -1,0 +1,81 @@
+{
+  "corner_id": "corner_099",
+  "corner_idx": 99,
+  "bits": [
+    1,
+    1,
+    0,
+    0,
+    0,
+    1,
+    1,
+    0
+  ],
+  "targets_used": [
+    {
+      "kind": "INTERNAL",
+      "var": "ACTIVE_HE",
+      "op": "<",
+      "num_str": "0.027",
+      "decimals": 3,
+      "line_idx": 0
+    },
+    {
+      "kind": "INTERNAL",
+      "var": "ACTIVE_HE",
+      "op": ">",
+      "num_str": "0.027",
+      "decimals": 3,
+      "line_idx": 1
+    },
+    {
+      "kind": "INTERNAL",
+      "var": "ACTIVE_HE",
+      "op": "<",
+      "num_str": "0.054",
+      "decimals": 3,
+      "line_idx": 1
+    },
+    {
+      "kind": "INTERNAL",
+      "var": "ACTIVE_HE",
+      "op": ">",
+      "num_str": "0.054",
+      "decimals": 3,
+      "line_idx": 2
+    },
+    {
+      "kind": "INTERNAL",
+      "var": "ACTIVE_HE",
+      "op": "<",
+      "num_str": "0.081",
+      "decimals": 3,
+      "line_idx": 2
+    },
+    {
+      "kind": "INTERNAL",
+      "var": "ACTIVE_HE",
+      "op": ">",
+      "num_str": "0.081",
+      "decimals": 3,
+      "line_idx": 3
+    },
+    {
+      "kind": "INTERNAL",
+      "var": "ACTIVE_HE",
+      "op": "<",
+      "num_str": "0.108",
+      "decimals": 3,
+      "line_idx": 3
+    },
+    {
+      "kind": "INTERNAL",
+      "var": "ACTIVE_HE",
+      "op": ">",
+      "num_str": "0.108",
+      "decimals": 3,
+      "line_idx": 4
+    }
+  ],
+  "script_expected_correct": false
+}

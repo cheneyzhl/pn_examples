@@ -1,0 +1,52 @@
+{
+  "per_rule": [
+    {
+      "rule_name": "RULE_NW004A",
+      "details": [
+        {
+          "idx": 0,
+          "predicted_label": true,
+          "pos": {
+            "NW_1": [
+              {
+                "llx": 0,
+                "lly": 0,
+                "urx": 500,
+                "ury": 281
+              }
+            ]
+          }
+        },
+        {
+          "idx": 1,
+          "predicted_label": false,
+          "pos": {
+            "NW_1": [
+              {
+                "llx": 0,
+                "lly": 0,
+                "urx": 450,
+                "ury": 310
+              }
+            ]
+          }
+        },
+        {
+          "idx": 2,
+          "predicted_label": true,
+          "pos": {
+            "NW_1": [
+              {
+                "llx": 0,
+                "lly": 0,
+                "urx": 500,
+                "ury": 300
+              }
+            ]
+          }
+        }
+      ]
+    }
+  ]
+}
+

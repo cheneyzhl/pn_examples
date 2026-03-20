@@ -1,0 +1,91 @@
+{
+  "rule_name": "M6.W.3",
+  "data_name": "asap7",
+  "extracted_targets_total": 10,
+  "used_targets": [
+    {
+      "kind": "INTERNAL",
+      "var": "M6_HE",
+      "op": ">",
+      "num_str": "0",
+      "decimals": 0,
+      "line_idx": 0,
+      "num_start": 68,
+      "num_end": 69
+    },
+    {
+      "kind": "INTERNAL",
+      "var": "M6_HE",
+      "op": ">",
+      "num_str": "0",
+      "decimals": 0,
+      "line_idx": 1,
+      "num_start": 68,
+      "num_end": 69
+    },
+    {
+      "kind": "INTERNAL",
+      "var": "M6_HE",
+      "op": ">",
+      "num_str": "0",
+      "decimals": 0,
+      "line_idx": 2,
+      "num_start": 68,
+      "num_end": 69
+    },
+    {
+      "kind": "INTERNAL",
+      "var": "M6_HE",
+      "op": ">",
+      "num_str": "0",
+      "decimals": 0,
+      "line_idx": 3,
+      "num_start": 68,
+      "num_end": 69
+    },
+    {
+      "kind": "INTERNAL",
+      "var": "M6_HE",
+      "op": ">",
+      "num_str": "0",
+      "decimals": 0,
+      "line_idx": 4,
+      "num_start": 68,
+      "num_end": 69
+    },
+    {
+      "kind": "INTERNAL",
+      "var": "M6_HE",
+      "op": ">",
+      "num_str": "0",
+      "decimals": 0,
+      "line_idx": 5,
+      "num_start": 68,
+      "num_end": 69
+    },
+    {
+      "kind": "INTERNAL",
+      "var": "M6_HE",
+      "op": ">",
+      "num_str": "0",
+      "decimals": 0,
+      "line_idx": 6,
+      "num_start": 68,
+      "num_end": 69
+    },
+    {
+      "kind": "INTERNAL",
+      "var": "M6_HE",
+      "op": ">",
+      "num_str": "0",
+      "decimals": 0,
+      "line_idx": 7,
+      "num_start": 68,
+      "num_end": 69
+    }
+  ],
+  "delta": 0.001,
+  "decomposition_mode": "numeric",
+  "generated_corners_count": 257,
+  "generated_at": "2026-03-19_20-28-28"
+}

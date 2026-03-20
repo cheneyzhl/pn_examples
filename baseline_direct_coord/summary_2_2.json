@@ -1,0 +1,367 @@
+{
+  "total_correct": 11,
+  "total_examples": 16,
+  "overall_accuracy": 0.6875,
+  "per_rule": [
+    {
+      "rule_name": "RULE_NW001",
+      "rule_description": "Minimum spacing of NW (or) PW at different potential is 180nm",
+      "rule_script": "EXTERNAL NW < 0.180 NOT CONNECTED OPPOSITE",
+      "correct": 1,
+      "total": 4,
+      "accuracy": 0.25,
+      "details": [
+        {
+          "idx": 0,
+          "predicted_label": true,
+          "calibre_label": true,
+          "match": true,
+          "pos": {
+            "NW_1": [
+              {
+                "llx": 0,
+                "lly": 0,
+                "urx": 100,
+                "ury": 100
+              }
+            ],
+            "NW_2": [
+              {
+                "llx": 280,
+                "lly": 0,
+                "urx": 380,
+                "ury": 100
+              }
+            ]
+          }
+        },
+        {
+          "idx": 1,
+          "predicted_label": true,
+          "calibre_label": false,
+          "match": false,
+          "pos": {
+            "NW_1": [
+              {
+                "llx": 0,
+                "lly": 0,
+                "urx": 100,
+                "ury": 100
+              }
+            ],
+            "NW_2": [
+              {
+                "llx": 180,
+                "lly": 0,
+                "urx": 280,
+                "ury": 100
+              }
+            ]
+          }
+        },
+        {
+          "idx": 2,
+          "predicted_label": false,
+          "calibre_label": true,
+          "match": false,
+          "pos": {
+            "NW_1": [
+              {
+                "llx": 0,
+                "lly": 0,
+                "urx": 100,
+                "ury": 100
+              }
+            ],
+            "NW_2": [
+              {
+                "llx": 100,
+                "lly": 0,
+                "urx": 200,
+                "ury": 100
+              }
+            ]
+          }
+        },
+        {
+          "idx": 3,
+          "predicted_label": false,
+          "calibre_label": true,
+          "match": false,
+          "pos": {
+            "NW_1": [
+              {
+                "llx": 0,
+                "lly": 0,
+                "urx": 100,
+                "ury": 100
+              }
+            ],
+            "NW_2": [
+              {
+                "llx": 50,
+                "lly": 0,
+                "urx": 150,
+                "ury": 100
+              }
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "rule_name": "RULE_NW002",
+      "rule_description": "Minimum spacing of NW (or) PW at same potential is 110nm",
+      "rule_script": "EXTERNAL NW < 0.110 CONNECTED OPPOSITE",
+      "correct": 2,
+      "total": 4,
+      "accuracy": 0.5,
+      "details": [
+        {
+          "idx": 0,
+          "predicted_label": true,
+          "calibre_label": true,
+          "match": true,
+          "pos": {
+            "NW_1": [
+              {
+                "llx": 0,
+                "lly": 0,
+                "urx": 100,
+                "ury": 100
+              }
+            ],
+            "NW_2": [
+              {
+                "llx": 210,
+                "lly": 0,
+                "urx": 310,
+                "ury": 100
+              }
+            ]
+          }
+        },
+        {
+          "idx": 1,
+          "predicted_label": true,
+          "calibre_label": true,
+          "match": true,
+          "pos": {
+            "NW_1": [
+              {
+                "llx": 0,
+                "lly": 0,
+                "urx": 100,
+                "ury": 100
+              }
+            ],
+            "NW_2": [
+              {
+                "llx": 110,
+                "lly": 0,
+                "urx": 210,
+                "ury": 100
+              }
+            ]
+          }
+        },
+        {
+          "idx": 2,
+          "predicted_label": false,
+          "calibre_label": true,
+          "match": false,
+          "pos": {
+            "NW_1": [
+              {
+                "llx": 0,
+                "lly": 0,
+                "urx": 100,
+                "ury": 100
+              }
+            ],
+            "NW_2": [
+              {
+                "llx": 100,
+                "lly": 0,
+                "urx": 200,
+                "ury": 100
+              }
+            ]
+          }
+        },
+        {
+          "idx": 3,
+          "predicted_label": false,
+          "calibre_label": true,
+          "match": false,
+          "pos": {
+            "NW_1": [
+              {
+                "llx": 0,
+                "lly": 0,
+                "urx": 100,
+                "ury": 100
+              }
+            ],
+            "NW_2": [
+              {
+                "llx": 50,
+                "lly": 0,
+                "urx": 150,
+                "ury": 100
+              }
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "rule_name": "WELL.W.1",
+      "rule_description": "Minimum horizontal width of WELL is 108 nm.",
+      "rule_script": "INTERNAL WELL_VE < 0.108",
+      "correct": 4,
+      "total": 4,
+      "accuracy": 1.0,
+      "details": [
+        {
+          "idx": 0,
+          "predicted_label": true,
+          "calibre_label": true,
+          "match": true,
+          "pos": {
+            "WELL_1": [
+              {
+                "llx": 0,
+                "lly": 0,
+                "urx": 108,
+                "ury": 200
+              }
+            ]
+          }
+        },
+        {
+          "idx": 1,
+          "predicted_label": true,
+          "calibre_label": true,
+          "match": true,
+          "pos": {
+            "WELL_2": [
+              {
+                "llx": 0,
+                "lly": 0,
+                "urx": 150,
+                "ury": 200
+              }
+            ]
+          }
+        },
+        {
+          "idx": 2,
+          "predicted_label": false,
+          "calibre_label": false,
+          "match": true,
+          "pos": {
+            "WELL_3": [
+              {
+                "llx": 0,
+                "lly": 0,
+                "urx": 100,
+                "ury": 200
+              }
+            ]
+          }
+        },
+        {
+          "idx": 3,
+          "predicted_label": false,
+          "calibre_label": false,
+          "match": true,
+          "pos": {
+            "WELL_4": [
+              {
+                "llx": 0,
+                "lly": 0,
+                "urx": 107,
+                "ury": 200
+              }
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "rule_name": "WELL.W.2",
+      "rule_description": "Minimum vertical width of WELL is 54 nm.",
+      "rule_script": "INTERNAL WELL_HE < 0.054",
+      "correct": 4,
+      "total": 4,
+      "accuracy": 1.0,
+      "details": [
+        {
+          "idx": 0,
+          "predicted_label": true,
+          "calibre_label": true,
+          "match": true,
+          "pos": {
+            "WELL_1": [
+              {
+                "llx": 0,
+                "lly": 0,
+                "urx": 100,
+                "ury": 54
+              }
+            ]
+          }
+        },
+        {
+          "idx": 1,
+          "predicted_label": true,
+          "calibre_label": true,
+          "match": true,
+          "pos": {
+            "WELL_1": [
+              {
+                "llx": 0,
+                "lly": 0,
+                "urx": 200,
+                "ury": 60
+              }
+            ]
+          }
+        },
+        {
+          "idx": 2,
+          "predicted_label": false,
+          "calibre_label": false,
+          "match": true,
+          "pos": {
+            "WELL_1": [
+              {
+                "llx": 0,
+                "lly": 0,
+                "urx": 100,
+                "ury": 50
+              }
+            ]
+          }
+        },
+        {
+          "idx": 3,
+          "predicted_label": false,
+          "calibre_label": false,
+          "match": true,
+          "pos": {
+            "WELL_1": [
+              {
+                "llx": 0,
+                "lly": 0,
+                "urx": 150,
+                "ury": 53
+              }
+            ]
+          }
+        }
+      ]
+    }
+  ]
+}

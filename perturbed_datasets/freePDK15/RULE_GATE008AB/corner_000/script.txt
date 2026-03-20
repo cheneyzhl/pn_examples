@@ -1,0 +1,3 @@
+GateABnotC = GATEAB NOT GATEC 
+x = SIZE GateABnotC BY 0.237 
+GATEAB NOT x

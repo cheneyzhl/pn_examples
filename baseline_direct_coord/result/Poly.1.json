@@ -1,0 +1,122 @@
+{
+  "rule_name": "Poly.1",
+  "rule_description": "Min width of poly = 0.05",
+  "rule_script": "INTERNAL poly < 0.05",
+  "sample_correct": 5,
+  "sample_total": 7,
+  "accuracy": 0.0,
+  "details": [
+    {
+      "idx": 0,
+      "predicted_label": true,
+      "calibre_label": true,
+      "match": true,
+      "pos": {
+        "POLY_1": [
+          {
+            "llx": 0,
+            "lly": 0,
+            "urx": 50,
+            "ury": 50
+          }
+        ]
+      }
+    },
+    {
+      "idx": 1,
+      "predicted_label": false,
+      "calibre_label": false,
+      "match": true,
+      "pos": {
+        "POLY_1": [
+          {
+            "llx": 0,
+            "lly": 0,
+            "urx": 4,
+            "ury": 50
+          }
+        ]
+      }
+    },
+    {
+      "idx": 2,
+      "predicted_label": false,
+      "calibre_label": false,
+      "match": true,
+      "pos": {
+        "POLY_1": [
+          {
+            "llx": 0,
+            "lly": 0,
+            "urx": 50,
+            "ury": 4
+          }
+        ]
+      }
+    },
+    {
+      "idx": 3,
+      "predicted_label": true,
+      "calibre_label": false,
+      "match": false,
+      "pos": {
+        "POLY_1": [
+          {
+            "llx": 0,
+            "lly": 0,
+            "urx": 5,
+            "ury": 50
+          }
+        ]
+      }
+    },
+    {
+      "idx": 4,
+      "predicted_label": true,
+      "calibre_label": false,
+      "match": false,
+      "pos": {
+        "POLY_1": [
+          {
+            "llx": 0,
+            "lly": 0,
+            "urx": 50,
+            "ury": 5
+          }
+        ]
+      }
+    },
+    {
+      "idx": 5,
+      "predicted_label": false,
+      "calibre_label": false,
+      "match": true,
+      "pos": {
+        "POLY_1": [
+          {
+            "llx": 0,
+            "lly": 0,
+            "urx": 3,
+            "ury": 50
+          }
+        ]
+      }
+    },
+    {
+      "idx": 6,
+      "predicted_label": false,
+      "calibre_label": false,
+      "match": true,
+      "pos": {
+        "POLY_1": [
+          {
+            "llx": 0,
+            "lly": 0,
+            "urx": 50,
+            "ury": 3
+          }
+        ]
+      }
+    }
+  ]
+}

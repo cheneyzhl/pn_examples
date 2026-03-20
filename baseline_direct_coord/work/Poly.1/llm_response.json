@@ -1,0 +1,84 @@
+{
+  "raw_response": "```json\n{\n  \"examples\": [\n    {\n      \"POLY_1\": [\n        {\n          \"llx\": 0,\n          \"lly\": 0,\n          \"urx\": 50,\n          \"ury\": 50\n        }\n      ]\n    },\n    {\n      \"POLY_1\": [\n        {\n          \"llx\": 0,\n          \"lly\": 0,\n          \"urx\": 4,\n          \"ury\": 50\n        }\n      ]\n    },\n    {\n      \"POLY_1\": [\n        {\n          \"llx\": 0,\n          \"lly\": 0,\n          \"urx\": 50,\n          \"ury\": 4\n        }\n      ]\n    },\n    {\n      \"POLY_1\": [\n        {\n          \"llx\": 0,\n          \"lly\": 0,\n          \"urx\": 5,\n          \"ury\": 50\n        }\n      ]\n    },\n    {\n      \"POLY_1\": [\n        {\n          \"llx\": 0,\n          \"lly\": 0,\n          \"urx\": 50,\n          \"ury\": 5\n        }\n      ]\n    },\n    {\n      \"POLY_1\": [\n        {\n          \"llx\": 0,\n          \"lly\": 0,\n          \"urx\": 3,\n          \"ury\": 50\n        }\n      ]\n    },\n    {\n      \"POLY_1\": [\n        {\n          \"llx\": 0,\n          \"lly\": 0,\n          \"urx\": 50,\n          \"ury\": 3\n        }\n      ]\n    }\n  ],\n  \"labels\": [\n    true,\n    false,\n    false,\n    true,\n    true,\n    false,\n    false\n  ]\n}\n```",
+  "examples": [
+    {
+      "POLY_1": [
+        {
+          "llx": 0,
+          "lly": 0,
+          "urx": 50,
+          "ury": 50
+        }
+      ]
+    },
+    {
+      "POLY_1": [
+        {
+          "llx": 0,
+          "lly": 0,
+          "urx": 4,
+          "ury": 50
+        }
+      ]
+    },
+    {
+      "POLY_1": [
+        {
+          "llx": 0,
+          "lly": 0,
+          "urx": 50,
+          "ury": 4
+        }
+      ]
+    },
+    {
+      "POLY_1": [
+        {
+          "llx": 0,
+          "lly": 0,
+          "urx": 5,
+          "ury": 50
+        }
+      ]
+    },
+    {
+      "POLY_1": [
+        {
+          "llx": 0,
+          "lly": 0,
+          "urx": 50,
+          "ury": 5
+        }
+      ]
+    },
+    {
+      "POLY_1": [
+        {
+          "llx": 0,
+          "lly": 0,
+          "urx": 3,
+          "ury": 50
+        }
+      ]
+    },
+    {
+      "POLY_1": [
+        {
+          "llx": 0,
+          "lly": 0,
+          "urx": 50,
+          "ury": 3
+        }
+      ]
+    }
+  ],
+  "labels": [
+    true,
+    false,
+    false,
+    true,
+    true,
+    false,
+    false
+  ]
+}

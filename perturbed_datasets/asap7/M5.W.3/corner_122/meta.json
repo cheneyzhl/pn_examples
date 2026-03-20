@@ -1,0 +1,81 @@
+{
+  "corner_id": "corner_122",
+  "corner_idx": 122,
+  "bits": [
+    0,
+    1,
+    0,
+    1,
+    1,
+    1,
+    1,
+    0
+  ],
+  "targets_used": [
+    {
+      "kind": "INTERNAL",
+      "var": "M5_VE",
+      "op": ">",
+      "num_str": "0",
+      "decimals": 0,
+      "line_idx": 0
+    },
+    {
+      "kind": "INTERNAL",
+      "var": "M5_VE",
+      "op": ">",
+      "num_str": "0",
+      "decimals": 0,
+      "line_idx": 1
+    },
+    {
+      "kind": "INTERNAL",
+      "var": "M5_VE",
+      "op": ">",
+      "num_str": "0",
+      "decimals": 0,
+      "line_idx": 2
+    },
+    {
+      "kind": "INTERNAL",
+      "var": "M5_VE",
+      "op": ">",
+      "num_str": "0",
+      "decimals": 0,
+      "line_idx": 3
+    },
+    {
+      "kind": "INTERNAL",
+      "var": "M5_VE",
+      "op": ">",
+      "num_str": "0",
+      "decimals": 0,
+      "line_idx": 4
+    },
+    {
+      "kind": "INTERNAL",
+      "var": "M5_VE",
+      "op": ">",
+      "num_str": "0",
+      "decimals": 0,
+      "line_idx": 5
+    },
+    {
+      "kind": "INTERNAL",
+      "var": "M5_VE",
+      "op": ">",
+      "num_str": "0",
+      "decimals": 0,
+      "line_idx": 6
+    },
+    {
+      "kind": "INTERNAL",
+      "var": "M5_VE",
+      "op": ">",
+      "num_str": "0",
+      "decimals": 0,
+      "line_idx": 7
+    }
+  ],
+  "script_expected_correct": false
+}

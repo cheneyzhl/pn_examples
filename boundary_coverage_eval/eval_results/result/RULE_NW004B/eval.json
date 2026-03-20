@@ -1,0 +1,715 @@
+{
+  "rule_name": "RULE_NW004B",
+  "rule_description": "Minimum enclosed area of NW is 0.140 um2",
+  "rule_script": "HOLES NW < 0.140",
+  "perturbed_scripts": {
+    "corner_000": "HOLES NW < 0.139\n",
+    "corner_001": "HOLES NW < 0.141\n",
+    "corner_original": "HOLES NW < 0.140\n"
+  },
+  "data_name": "freePDK15",
+  "judge_mode": "match",
+  "corner_count": 3,
+  "sample_count": 10,
+  "all_corners_match": false,
+  "all_corners_detect": true,
+  "all_corners_ok": false,
+  "per_corner": [
+    {
+      "corner_id": "corner_000",
+      "script_expected_correct": false,
+      "script_predicted_correct": false,
+      "corner_any_mismatch": true,
+      "corner_all_match": false,
+      "corner_ok": true,
+      "samples": [
+        {
+          "idx": 0,
+          "predicted_label": true,
+          "calibre_label": true,
+          "match": true,
+          "error": null,
+          "pos": {
+            "NW_1": [
+              {
+                "llx": 0,
+                "lly": 0,
+                "urx": 374,
+                "ury": 374
+              }
+            ]
+          }
+        },
+        {
+          "idx": 1,
+          "predicted_label": false,
+          "calibre_label": true,
+          "match": false,
+          "error": null,
+          "pos": {
+            "NW_1": [
+              {
+                "llx": 0,
+                "lly": 0,
+                "urx": 373,
+                "ury": 373
+              }
+            ]
+          }
+        },
+        {
+          "idx": 2,
+          "predicted_label": true,
+          "calibre_label": true,
+          "match": true,
+          "error": null,
+          "pos": {
+            "NW_1": [
+              {
+                "llx": 0,
+                "lly": 0,
+                "urx": 374,
+                "ury": 374
+              }
+            ],
+            "NW_2": [
+              {
+                "llx": 400,
+                "lly": 0,
+                "urx": 774,
+                "ury": 374
+              }
+            ]
+          }
+        },
+        {
+          "idx": 3,
+          "predicted_label": false,
+          "calibre_label": true,
+          "match": false,
+          "error": null,
+          "pos": {
+            "NW_1": [
+              {
+                "llx": 0,
+                "lly": 0,
+                "urx": 374,
+                "ury": 374
+              }
+            ],
+            "NW_2": [
+              {
+                "llx": 373,
+                "lly": 0,
+                "urx": 747,
+                "ury": 374
+              }
+            ]
+          }
+        },
+        {
+          "idx": 4,
+          "predicted_label": true,
+          "calibre_label": true,
+          "match": true,
+          "error": null,
+          "pos": {
+            "NW_1": [
+              {
+                "llx": 0,
+                "lly": 0,
+                "urx": 500,
+                "ury": 280
+              }
+            ]
+          }
+        },
+        {
+          "idx": 5,
+          "predicted_label": false,
+          "calibre_label": true,
+          "match": false,
+          "error": null,
+          "pos": {
+            "NW_1": [
+              {
+                "llx": 0,
+                "lly": 0,
+                "urx": 500,
+                "ury": 279
+              }
+            ]
+          }
+        },
+        {
+          "idx": 6,
+          "predicted_label": true,
+          "calibre_label": true,
+          "match": true,
+          "error": null,
+          "pos": {
+            "NW_1": [
+              {
+                "llx": 0,
+                "lly": 0,
+                "urx": 280,
+                "ury": 500
+              }
+            ]
+          }
+        },
+        {
+          "idx": 7,
+          "predicted_label": false,
+          "calibre_label": true,
+          "match": false,
+          "error": null,
+          "pos": {
+            "NW_1": [
+              {
+                "llx": 0,
+                "lly": 0,
+                "urx": 279,
+                "ury": 500
+              }
+            ]
+          }
+        },
+        {
+          "idx": 8,
+          "predicted_label": true,
+          "calibre_label": true,
+          "match": true,
+          "error": null,
+          "pos": {
+            "NW_1": [
+              {
+                "llx": 0,
+                "lly": 0,
+                "urx": 374,
+                "ury": 374
+              },
+              {
+                "llx": 400,
+                "lly": 0,
+                "urx": 774,
+                "ury": 374
+              }
+            ],
+            "ACT_1": [
+              {
+                "llx": 100,
+                "lly": 100,
+                "urx": 200,
+                "ury": 200
+              }
+            ]
+          }
+        },
+        {
+          "idx": 9,
+          "predicted_label": false,
+          "calibre_label": true,
+          "match": false,
+          "error": null,
+          "pos": {
+            "NW_1": [
+              {
+                "llx": 0,
+                "lly": 0,
+                "urx": 374,
+                "ury": 374
+              },
+              {
+                "llx": 400,
+                "lly": 0,
+                "urx": 774,
+                "ury": 374
+              }
+            ],
+            "ACT_1": [
+              {
+                "llx": 100,
+                "lly": 100,
+                "urx": 200,
+                "ury": 200
+              }
+            ],
+            "VTH_1": [
+              {
+                "llx": 150,
+                "lly": 150,
+                "urx": 250,
+                "ury": 250
+              }
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "corner_id": "corner_001",
+      "script_expected_correct": false,
+      "script_predicted_correct": false,
+      "corner_any_mismatch": true,
+      "corner_all_match": false,
+      "corner_ok": true,
+      "samples": [
+        {
+          "idx": 0,
+          "predicted_label": true,
+          "calibre_label": true,
+          "match": true,
+          "error": null,
+          "pos": {
+            "NW_1": [
+              {
+                "llx": 0,
+                "lly": 0,
+                "urx": 374,
+                "ury": 374
+              }
+            ]
+          }
+        },
+        {
+          "idx": 1,
+          "predicted_label": false,
+          "calibre_label": true,
+          "match": false,
+          "error": null,
+          "pos": {
+            "NW_1": [
+              {
+                "llx": 0,
+                "lly": 0,
+                "urx": 373,
+                "ury": 373
+              }
+            ]
+          }
+        },
+        {
+          "idx": 2,
+          "predicted_label": true,
+          "calibre_label": true,
+          "match": true,
+          "error": null,
+          "pos": {
+            "NW_1": [
+              {
+                "llx": 0,
+                "lly": 0,
+                "urx": 374,
+                "ury": 374
+              }
+            ],
+            "NW_2": [
+              {
+                "llx": 400,
+                "lly": 0,
+                "urx": 774,
+                "ury": 374
+              }
+            ]
+          }
+        },
+        {
+          "idx": 3,
+          "predicted_label": false,
+          "calibre_label": true,
+          "match": false,
+          "error": null,
+          "pos": {
+            "NW_1": [
+              {
+                "llx": 0,
+                "lly": 0,
+                "urx": 374,
+                "ury": 374
+              }
+            ],
+            "NW_2": [
+              {
+                "llx": 373,
+                "lly": 0,
+                "urx": 747,
+                "ury": 374
+              }
+            ]
+          }
+        },
+        {
+          "idx": 4,
+          "predicted_label": true,
+          "calibre_label": true,
+          "match": true,
+          "error": null,
+          "pos": {
+            "NW_1": [
+              {
+                "llx": 0,
+                "lly": 0,
+                "urx": 500,
+                "ury": 280
+              }
+            ]
+          }
+        },
+        {
+          "idx": 5,
+          "predicted_label": false,
+          "calibre_label": true,
+          "match": false,
+          "error": null,
+          "pos": {
+            "NW_1": [
+              {
+                "llx": 0,
+                "lly": 0,
+                "urx": 500,
+                "ury": 279
+              }
+            ]
+          }
+        },
+        {
+          "idx": 6,
+          "predicted_label": true,
+          "calibre_label": true,
+          "match": true,
+          "error": null,
+          "pos": {
+            "NW_1": [
+              {
+                "llx": 0,
+                "lly": 0,
+                "urx": 280,
+                "ury": 500
+              }
+            ]
+          }
+        },
+        {
+          "idx": 7,
+          "predicted_label": false,
+          "calibre_label": true,
+          "match": false,
+          "error": null,
+          "pos": {
+            "NW_1": [
+              {
+                "llx": 0,
+                "lly": 0,
+                "urx": 279,
+                "ury": 500
+              }
+            ]
+          }
+        },
+        {
+          "idx": 8,
+          "predicted_label": true,
+          "calibre_label": true,
+          "match": true,
+          "error": null,
+          "pos": {
+            "NW_1": [
+              {
+                "llx": 0,
+                "lly": 0,
+                "urx": 374,
+                "ury": 374
+              },
+              {
+                "llx": 400,
+                "lly": 0,
+                "urx": 774,
+                "ury": 374
+              }
+            ],
+            "ACT_1": [
+              {
+                "llx": 100,
+                "lly": 100,
+                "urx": 200,
+                "ury": 200
+              }
+            ]
+          }
+        },
+        {
+          "idx": 9,
+          "predicted_label": false,
+          "calibre_label": true,
+          "match": false,
+          "error": null,
+          "pos": {
+            "NW_1": [
+              {
+                "llx": 0,
+                "lly": 0,
+                "urx": 374,
+                "ury": 374
+              },
+              {
+                "llx": 400,
+                "lly": 0,
+                "urx": 774,
+                "ury": 374
+              }
+            ],
+            "ACT_1": [
+              {
+                "llx": 100,
+                "lly": 100,
+                "urx": 200,
+                "ury": 200
+              }
+            ],
+            "VTH_1": [
+              {
+                "llx": 150,
+                "lly": 150,
+                "urx": 250,
+                "ury": 250
+              }
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "corner_id": "corner_original",
+      "script_expected_correct": true,
+      "script_predicted_correct": false,
+      "corner_any_mismatch": true,
+      "corner_all_match": false,
+      "corner_ok": false,
+      "samples": [
+        {
+          "idx": 0,
+          "predicted_label": true,
+          "calibre_label": true,
+          "match": true,
+          "error": null,
+          "pos": {
+            "NW_1": [
+              {
+                "llx": 0,
+                "lly": 0,
+                "urx": 374,
+                "ury": 374
+              }
+            ]
+          }
+        },
+        {
+          "idx": 1,
+          "predicted_label": false,
+          "calibre_label": true,
+          "match": false,
+          "error": null,
+          "pos": {
+            "NW_1": [
+              {
+                "llx": 0,
+                "lly": 0,
+                "urx": 373,
+                "ury": 373
+              }
+            ]
+          }
+        },
+        {
+          "idx": 2,
+          "predicted_label": true,
+          "calibre_label": true,
+          "match": true,
+          "error": null,
+          "pos": {
+            "NW_1": [
+              {
+                "llx": 0,
+                "lly": 0,
+                "urx": 374,
+                "ury": 374
+              }
+            ],
+            "NW_2": [
+              {
+                "llx": 400,
+                "lly": 0,
+                "urx": 774,
+                "ury": 374
+              }
+            ]
+          }
+        },
+        {
+          "idx": 3,
+          "predicted_label": false,
+          "calibre_label": true,
+          "match": false,
+          "error": null,
+          "pos": {
+            "NW_1": [
+              {
+                "llx": 0,
+                "lly": 0,
+                "urx": 374,
+                "ury": 374
+              }
+            ],
+            "NW_2": [
+              {
+                "llx": 373,
+                "lly": 0,
+                "urx": 747,
+                "ury": 374
+              }
+            ]
+          }
+        },
+        {
+          "idx": 4,
+          "predicted_label": true,
+          "calibre_label": true,
+          "match": true,
+          "error": null,
+          "pos": {
+            "NW_1": [
+              {
+                "llx": 0,
+                "lly": 0,
+                "urx": 500,
+                "ury": 280
+              }
+            ]
+          }
+        },
+        {
+          "idx": 5,
+          "predicted_label": false,
+          "calibre_label": true,
+          "match": false,
+          "error": null,
+          "pos": {
+            "NW_1": [
+              {
+                "llx": 0,
+                "lly": 0,
+                "urx": 500,
+                "ury": 279
+              }
+            ]
+          }
+        },
+        {
+          "idx": 6,
+          "predicted_label": true,
+          "calibre_label": true,
+          "match": true,
+          "error": null,
+          "pos": {
+            "NW_1": [
+              {
+                "llx": 0,
+                "lly": 0,
+                "urx": 280,
+                "ury": 500
+              }
+            ]
+          }
+        },
+        {
+          "idx": 7,
+          "predicted_label": false,
+          "calibre_label": true,
+          "match": false,
+          "error": null,
+          "pos": {
+            "NW_1": [
+              {
+                "llx": 0,
+                "lly": 0,
+                "urx": 279,
+                "ury": 500
+              }
+            ]
+          }
+        },
+        {
+          "idx": 8,
+          "predicted_label": true,
+          "calibre_label": true,
+          "match": true,
+          "error": null,
+          "pos": {
+            "NW_1": [
+              {
+                "llx": 0,
+                "lly": 0,
+                "urx": 374,
+                "ury": 374
+              },
+              {
+                "llx": 400,
+                "lly": 0,
+                "urx": 774,
+                "ury": 374
+              }
+            ],
+            "ACT_1": [
+              {
+                "llx": 100,
+                "lly": 100,
+                "urx": 200,
+                "ury": 200
+              }
+            ]
+          }
+        },
+        {
+          "idx": 9,
+          "predicted_label": false,
+          "calibre_label": true,
+          "match": false,
+          "error": null,
+          "pos": {
+            "NW_1": [
+              {
+                "llx": 0,
+                "lly": 0,
+                "urx": 374,
+                "ury": 374
+              },
+              {
+                "llx": 400,
+                "lly": 0,
+                "urx": 774,
+                "ury": 374
+              }
+            ],
+            "ACT_1": [
+              {
+                "llx": 100,
+                "lly": 100,
+                "urx": 200,
+                "ury": 200
+              }
+            ],
+            "VTH_1": [
+              {
+                "llx": 150,
+                "lly": 150,
+                "urx": 250,
+                "ury": 250
+              }
+            ]
+          }
+        }
+      ]
+    }
+  ]
+}

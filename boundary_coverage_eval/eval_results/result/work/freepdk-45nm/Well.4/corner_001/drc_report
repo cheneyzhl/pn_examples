@@ -1,0 +1,109 @@
+
+
+==================================================================================
+=== CALIBRE::DRC-H SUMMARY REPORT
+===
+Execution Date/Time:       Fri Mar 20 16:01:10 2026
+Calibre Version:           v2019.3_15.11    Tue Jul 2 12:24:58 PDT 2019
+Rule File Pathname:        /share/home/zenghuanlong/pn_examples/boundary_coverage_eval/eval_results/result/work/freepdk-45nm/Well.4/corner_001/example_13.rul
+Rule File Title:           
+Layout System:             GDS
+Layout Path(s):            /share/home/zenghuanlong/pn_examples/boundary_coverage_eval/eval_results/result/work/freepdk-45nm/Well.4/gds/example_13.gds
+Layout Primary Cell:       TOPCELL
+Current Directory:         /share/home/zenghuanlong/pn_examples/boundary_coverage_eval/eval_results/result/work/freepdk-45nm/Well.4/corner_001
+User Name:                 zenghuanlong
+Maximum Results/RuleCheck: 1000
+Maximum Result Vertices:   4096
+DRC Results Database:      drc_results.db (ASCII)
+Layout Depth:              ALL
+Text Depth:                PRIMARY
+Summary Report File:       drc_report (REPLACE)
+Geometry Flagging:         ACUTE = NO  SKEW = NO  ANGLED = NO  OFFGRID = NO
+                           NONSIMPLE POLYGON = NO  NONSIMPLE PATH = NO
+Excluded Cells:           
+CheckText Mapping:         COMMENT TEXT + RULE FILE INFORMATION
+Layers:                    MEMORY-BASED
+Keep Empty Checks:         YES
+----------------------------------------------------------------------------------
+--- RUNTIME WARNINGS
+---
+----------------------------------------------------------------------------------
+--- ORIGINAL LAYER STATISTICS
+---
+LAYER metal1 .... TOTAL Original Geometry Count = 0 (0)
+LAYER metal2 .... TOTAL Original Geometry Count = 0 (0)
+LAYER metal3 .... TOTAL Original Geometry Count = 0 (0)
+LAYER metal4 .... TOTAL Original Geometry Count = 0 (0)
+LAYER metal5 .... TOTAL Original Geometry Count = 0 (0)
+LAYER metal6 .... TOTAL Original Geometry Count = 0 (0)
+LAYER metal7 .... TOTAL Original Geometry Count = 0 (0)
+LAYER metal8 .... TOTAL Original Geometry Count = 0 (0)
+LAYER metal9 .... TOTAL Original Geometry Count = 0 (0)
+LAYER metal10 ... TOTAL Original Geometry Count = 0 (0)
+LAYER poly ...... TOTAL Original Geometry Count = 0 (0)
+LAYER gate ...... TOTAL Original Geometry Count = 0 (0)
+LAYER well ...... TOTAL Original Geometry Count = 1 (1)
+LAYER active .... TOTAL Original Geometry Count = 0 (0)
+LAYER implant ... TOTAL Original Geometry Count = 0 (0)
+LAYER contact ... TOTAL Original Geometry Count = 0 (0)
+LAYER via1 ...... TOTAL Original Geometry Count = 0 (0)
+LAYER via2 ...... TOTAL Original Geometry Count = 0 (0)
+LAYER via3 ...... TOTAL Original Geometry Count = 0 (0)
+LAYER via4 ...... TOTAL Original Geometry Count = 0 (0)
+LAYER via5 ...... TOTAL Original Geometry Count = 0 (0)
+LAYER via6 ...... TOTAL Original Geometry Count = 0 (0)
+LAYER via7 ...... TOTAL Original Geometry Count = 0 (0)
+LAYER via8 ...... TOTAL Original Geometry Count = 0 (0)
+LAYER via9 ...... TOTAL Original Geometry Count = 0 (0)
+LAYER vtg ....... TOTAL Original Geometry Count = 0 (0)
+LAYER vth ....... TOTAL Original Geometry Count = 0 (0)
+LAYER diode ..... TOTAL Original Geometry Count = 0 (0)
+----------------------------------------------------------------------------------
+--- RULECHECK RESULTS STATISTICS
+---
+RULECHECK Well.4 ............ TOTAL Result Count = 2 (2)
+RULECHECK Grid.1 ............ TOTAL Result Count = 0 (0)
+RULECHECK Grid.2 ............ TOTAL Result Count = 0 (0)
+RULECHECK Grid.3 ............ TOTAL Result Count = 0 (0)
+RULECHECK Grid.4 ............ TOTAL Result Count = 0 (0)
+RULECHECK Grid.5 ............ TOTAL Result Count = 0 (0)
+RULECHECK Grid.6 ............ TOTAL Result Count = 0 (0)
+RULECHECK Grid.7 ............ TOTAL Result Count = 0 (0)
+RULECHECK Grid.8 ............ TOTAL Result Count = 0 (0)
+RULECHECK Grid.9 ............ TOTAL Result Count = 0 (0)
+RULECHECK Grid.10 ........... TOTAL Result Count = 0 (0)
+RULECHECK Grid.11 ........... TOTAL Result Count = 0 (0)
+RULECHECK Grid.12 ........... TOTAL Result Count = 0 (0)
+RULECHECK Grid.13 ........... TOTAL Result Count = 0 (0)
+RULECHECK Grid.14 ........... TOTAL Result Count = 0 (0)
+RULECHECK Grid.15 ........... TOTAL Result Count = 0 (0)
+RULECHECK Grid.16 ........... TOTAL Result Count = 0 (0)
+RULECHECK Grid.17 ........... TOTAL Result Count = 0 (0)
+RULECHECK Grid.18 ........... TOTAL Result Count = 0 (0)
+RULECHECK Grid.19 ........... TOTAL Result Count = 0 (0)
+RULECHECK Grid.20 ........... TOTAL Result Count = 0 (0)
+RULECHECK Grid.21 ........... TOTAL Result Count = 0 (0)
+RULECHECK Grid.22 ........... TOTAL Result Count = 0 (0)
+RULECHECK Grid.23 ........... TOTAL Result Count = 0 (0)
+RULECHECK Grid.24 ........... TOTAL Result Count = 0 (0)
+RULECHECK Grid.25 ........... TOTAL Result Count = 0 (0)
+RULECHECK Grid.26 ........... TOTAL Result Count = 0 (0)
+RULECHECK Antenna.poly ...... TOTAL Result Count = 0 (0)
+RULECHECK Antenna.metal1 .... TOTAL Result Count = 0 (0)
+RULECHECK Antenna.metal2 .... TOTAL Result Count = 0 (0)
+RULECHECK Antenna.metal3 .... TOTAL Result Count = 0 (0)
+RULECHECK Antenna.metal4 .... TOTAL Result Count = 0 (0)
+RULECHECK Antenna.metal5 .... TOTAL Result Count = 0 (0)
+RULECHECK Antenna.metal6 .... TOTAL Result Count = 0 (0)
+RULECHECK Antenna.metal7 .... TOTAL Result Count = 0 (0)
+RULECHECK Antenna.metal8 .... TOTAL Result Count = 0 (0)
+RULECHECK Antenna.metal9 .... TOTAL Result Count = 0 (0)
+RULECHECK Antenna.metal10 ... TOTAL Result Count = 0 (0)
+----------------------------------------------------------------------------------
+--- SUMMARY
+---
+TOTAL CPU Time:                  0
+TOTAL REAL Time:                 27
+TOTAL Original Layer Geometries: 1 (1)
+TOTAL DRC RuleChecks Executed:   38
+TOTAL DRC Results Generated:     2 (2)

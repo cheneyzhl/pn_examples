@@ -1,0 +1,4 @@
+x= NOT RECTANGLE V8 == 0.04 BY ==0.04 
+y= NOT RECTANGLE V8 == 0.12 BY ==0.04 
+z= NOT RECTANGLE V8 == 0.04 BY ==0.12 
+x AND (y AND z)

@@ -1,0 +1,41 @@
+{
+  "rule_name": "M5.W.2",
+  "data_name": "asap7",
+  "extracted_targets_total": 3,
+  "used_targets": [
+    {
+      "kind": "INTERNAL",
+      "var": "M5_VE",
+      "op": ">",
+      "num_str": "20",
+      "decimals": 0,
+      "line_idx": 0,
+      "num_start": 17,
+      "num_end": 19
+    },
+    {
+      "kind": "INTERNAL",
+      "var": "M5_VE",
+      "op": "<",
+      "num_str": "10000",
+      "decimals": 0,
+      "line_idx": 0,
+      "num_start": 32,
+      "num_end": 37
+    },
+    {
+      "kind": "INTERNAL",
+      "var": "M5_VE",
+      "op": ">",
+      "num_str": "0",
+      "decimals": 0,
+      "line_idx": 0,
+      "num_start": 85,
+      "num_end": 86
+    }
+  ],
+  "delta": 0.001,
+  "decomposition_mode": "numeric",
+  "generated_corners_count": 9,
+  "generated_at": "2026-03-19_20-28-28"
+}

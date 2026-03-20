@@ -1,0 +1,3 @@
+GateBnotC = GATEB NOT GATEC 
+x = SIZE GateBnotC BY 0.237 
+GATEB NOT x

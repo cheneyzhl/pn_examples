@@ -1,0 +1,8 @@
+vert_edges = GATEC ANGLE == 90 
+hor_edges = GATEC ANGLE == 0 
+vert_edges_int = INT vert_edges < 1 
+hor_edges_int = INT hor_edges < 1 
+vert_polygons = DFM PROPERTY GATEC hor_edges_int vert_edges_int OVERLAP MULTI [check1 = EW(vert_edges_int) - EW(hor_edges_int)] < 0 
+hor_polygons = DFM PROPERTY GATEC hor_edges_int vert_edges_int OVERLAP MULTI [check2 = EW(vert_edges_int) - EW(hor_edges_int)] > 0 
+vert_edges_hor_pol = hor_polygons angle == 90 
+INT vert_edges_hor_pol < 0.128

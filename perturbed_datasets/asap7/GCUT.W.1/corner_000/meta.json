@@ -1,0 +1,27 @@
+{
+  "corner_id": "corner_000",
+  "corner_idx": 0,
+  "bits": [
+    0,
+    0
+  ],
+  "targets_used": [
+    {
+      "kind": "INTERNAL",
+      "var": "GCUT_HE",
+      "op": "<",
+      "num_str": "0.017",
+      "decimals": 3,
+      "line_idx": 0
+    },
+    {
+      "kind": "INTERNAL",
+      "var": "GCUT_HE",
+      "op": "<",
+      "num_str": "90",
+      "decimals": 0,
+      "line_idx": 0
+    }
+  ],
+  "script_expected_correct": false
+}

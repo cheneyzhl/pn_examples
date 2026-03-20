@@ -1,0 +1,1 @@
+INTERNAL metal1 < 0.065

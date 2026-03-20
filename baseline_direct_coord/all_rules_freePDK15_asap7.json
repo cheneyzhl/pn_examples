@@ -1,0 +1,7528 @@
+{
+  "RULE_NW001": {
+    "rule": "Minimum spacing of NW (or) PW at different potential is 180nm",
+    "layers": [
+      "NW"
+    ],
+    "process": "freePDK15"
+  },
+  "RULE_NW002": {
+    "rule": "Minimum spacing of NW (or) PW at same potential is 110nm",
+    "layers": [
+      "NW"
+    ],
+    "process": "freePDK15"
+  },
+  "RULE_NW003": {
+    "rule": "Minimum width of NW is 160nm",
+    "layers": [
+      "NW"
+    ],
+    "process": "freePDK15"
+  },
+  "RULE_NW004A": {
+    "rule": "Minimum area of NW is 0.140 um2",
+    "layers": [
+      "NW"
+    ],
+    "process": "freePDK15"
+  },
+  "RULE_NW004B": {
+    "rule": "Minimum enclosed area of NW is 0.140 um2",
+    "layers": [
+      "NW"
+    ],
+    "process": "freePDK15"
+  },
+  "RULE_NW005": {
+    "rule": "NW Must be orthogonal",
+    "layers": [
+      "NW"
+    ],
+    "process": "freePDK15"
+  },
+  "RULE_NW006A": {
+    "rule": "Minimum extension of NW past CHANNEL_A is 80nm",
+    "layers": [
+      "NW"
+    ],
+    "process": "freePDK15"
+  },
+  "RULE_NW006B": {
+    "rule": "Minimum extension of NW past CHANNEL_B is 80nm",
+    "layers": [
+      "NW"
+    ],
+    "process": "freePDK15"
+  },
+  "RULE_NW006AB": {
+    "rule": "Minimum extension of NW past CHANNEL_AB is 80nm",
+    "layers": [
+      "NW"
+    ],
+    "process": "freePDK15"
+  },
+  "RULE_ACT001": {
+    "rule": "Minimum vertical width of ACT layer is 48nm",
+    "layers": [
+      "ACT"
+    ],
+    "process": "freePDK15"
+  },
+  "RULE_ACT002": {
+    "rule": "Minimum Incremental vertical width of ACT layer is 40nm",
+    "layers": [
+      "ACT"
+    ],
+    "process": "freePDK15"
+  },
+  "RULE_ACT003": {
+    "rule": "Minimum vertical spacing of ACT is 62nm",
+    "layers": [
+      "ACT"
+    ],
+    "process": "freePDK15"
+  },
+  "RULE_ACT004": {
+    "rule": "Minimum horizontal width of ACT is 96nm",
+    "layers": [
+      "ACT"
+    ],
+    "process": "freePDK15"
+  },
+  "RULE_ACT005": {
+    "rule": "Horizontal spacing of ACT  must be 32nm, 96nm or >= 160nm",
+    "layers": [
+      "ACT"
+    ],
+    "process": "freePDK15"
+  },
+  "RULE_ACT006": {
+    "rule": "Minimum notch of ACT is 112nm",
+    "layers": [
+      "ACT"
+    ],
+    "process": "freePDK15"
+  },
+  "RULE_ACT007A": {
+    "rule": "Minimum spacing of NW to ACT is 31nm",
+    "layers": [
+      "NW",
+      "ACT"
+    ],
+    "process": "freePDK15"
+  },
+  "RULE_ACT007B": {
+    "rule": "Minimum enclosure of NW to ACT is 31nm",
+    "layers": [
+      "NW",
+      "ACT"
+    ],
+    "process": "freePDK15"
+  },
+  "RULE_ACT008A": {
+    "rule": "Minimum area of ACT is 0.004608 um2",
+    "layers": [
+      "ACT"
+    ],
+    "process": "freePDK15"
+  },
+  "RULE_ACT008B": {
+    "rule": "Minimum enclosed area of ACT is 0.004608 um2",
+    "layers": [
+      "ACT"
+    ],
+    "process": "freePDK15"
+  },
+  "RULE_ACT009": {
+    "rule": "Maximum distance between ACT forming a MOS device and ACT forming a bulk/substrate contact within the same well/substrate is 30um, to prevent latch up",
+    "layers": [
+      "ACT"
+    ],
+    "process": "freePDK15"
+  },
+  "RULE_GATE001A": {
+    "rule": "Exact horizontal width of GATE [A] is 20, 16 or 14 nm",
+    "layers": [
+      "GATEA"
+    ],
+    "process": "freePDK15"
+  },
+  "RULE_GATE001B": {
+    "rule": "Exact horizontal width of GATE [B] is 20, 16 or 14 nm",
+    "layers": [
+      "GATEB"
+    ],
+    "process": "freePDK15"
+  },
+  "RULE_GATE002A": {
+    "rule": "Min horizontal pitch of GATE [A] is 128 nm",
+    "layers": [
+      "GATEA"
+    ],
+    "process": "freePDK15"
+  },
+  "RULE_GATE002B": {
+    "rule": "Min horizontal pitch of GATE [B] is 128 nm",
+    "layers": [
+      "GATEB"
+    ],
+    "process": "freePDK15"
+  },
+  "RULE_GATE003": {
+    "rule": "Minimum horizontal spacing of GATE[A] and GATE[B] is 44 nm",
+    "layers": [
+      "GATEB",
+      "GATEA"
+    ],
+    "process": "freePDK15"
+  },
+  "RULE_GATE004A": {
+    "rule": "GATE[A] may not bend",
+    "layers": [
+      "GATEA"
+    ],
+    "process": "freePDK15"
+  },
+  "RULE_GATE004B": {
+    "rule": "GATE[B] may not bend",
+    "layers": [
+      "GATEB"
+    ],
+    "process": "freePDK15"
+  },
+  "RULE_GATE005A": {
+    "rule": "Minimum extension of ACT past GATE [A] is 38nm",
+    "layers": [
+      "GATEA",
+      "ACT"
+    ],
+    "process": "freePDK15"
+  },
+  "RULE_GATE005B": {
+    "rule": "Minimum extension of ACT past GATE [B] is 38nm",
+    "layers": [
+      "GATEB",
+      "ACT"
+    ],
+    "process": "freePDK15"
+  },
+  "RULE_GATE006A": {
+    "rule": "Minimum extension of GATE [A] past ACT is 62nm",
+    "layers": [
+      "GATEA",
+      "ACT"
+    ],
+    "process": "freePDK15"
+  },
+  "RULE_GATE006B": {
+    "rule": "Minimum extension of GATE [B] past ACT is 62nm",
+    "layers": [
+      "GATEB",
+      "ACT"
+    ],
+    "process": "freePDK15"
+  },
+  "RULE_GATE007A": {
+    "rule": "Minimum length of Gate A (vertical edge, gate C ignored) 200nm",
+    "layers": [
+      "GATEC",
+      "GATEA"
+    ],
+    "process": "freePDK15"
+  },
+  "RULE_GATE007B": {
+    "rule": "Minimum length of Gate B (vertical edge, gate C ignored) 200nm",
+    "layers": [
+      "GATEB",
+      "GATEC"
+    ],
+    "process": "freePDK15"
+  },
+  "RULE_GATE008A": {
+    "rule": "(gatea not gatec) maximum distance to neighbor shape on same design mask is 236nm",
+    "layers": [
+      "GATEC",
+      "GATEA"
+    ],
+    "process": "freePDK15"
+  },
+  "RULE_GATE008B": {
+    "rule": "(gateb not gatec) maximum distance to neighbor shape 236nm",
+    "layers": [
+      "GATEB",
+      "GATEC"
+    ],
+    "process": "freePDK15"
+  },
+  "RULE_GATE001AB": {
+    "rule": "Exact horizontal width of GATE [AB] is 20, 16 or 14 nm",
+    "layers": [
+      "GATEAB"
+    ],
+    "process": "freePDK15"
+  },
+  "RULE_GATE002AB": {
+    "rule": "Min horizontal pitch of GATE [AB] is 64nm",
+    "layers": [
+      "GATEAB"
+    ],
+    "process": "freePDK15"
+  },
+  "RULE_GATE003AB": {
+    "rule": "Minimum horizontal spacing of GATE[AB] is 44 nm",
+    "layers": [
+      "GATEAB"
+    ],
+    "process": "freePDK15"
+  },
+  "RULE_GATE004AB": {
+    "rule": "GATE[AB] may not bend",
+    "layers": [
+      "GATEAB"
+    ],
+    "process": "freePDK15"
+  },
+  "RULE_GATE005AB": {
+    "rule": "Minimum extension of ACT past GATE [AB] is 38nm",
+    "layers": [
+      "GATEAB",
+      "ACT"
+    ],
+    "process": "freePDK15"
+  },
+  "RULE_GATE006AB": {
+    "rule": "Minimum extension of GATE [AB] past ACT is 62nm",
+    "layers": [
+      "GATEAB",
+      "ACT"
+    ],
+    "process": "freePDK15"
+  },
+  "RULE_GATE007AB": {
+    "rule": "Minimum length of Gate AB (vertical edge, gate C ignored) 200nm",
+    "layers": [
+      "GATEC",
+      "GATEAB"
+    ],
+    "process": "freePDK15"
+  },
+  "RULE_GATE008AB": {
+    "rule": "(gateAB not gatec) maximum distance to neighbor shape 236nm",
+    "layers": [
+      "GATEC",
+      "GATEAB"
+    ],
+    "process": "freePDK15"
+  },
+  "RULE_GATE001Ca": {
+    "rule": "Exact vertical width of GATEC is 32nm (1 is arbitrary large value) shape is oriented horizonally",
+    "layers": [
+      "GATEC"
+    ],
+    "process": "freePDK15"
+  },
+  "RULE_GATE002Ca": {
+    "rule": "Minimum horizontal length of GATEC is 128nm shape is oriented horizonatally",
+    "layers": [
+      "GATEC"
+    ],
+    "process": "freePDK15"
+  },
+  "RULE_GATE003C": {
+    "rule": "Minimum space of GATEC is 128nm",
+    "layers": [
+      "GATEC"
+    ],
+    "process": "freePDK15"
+  },
+  "RULE_GATE004Ca": {
+    "rule": "Minimum extension of GATEC past GATEA (horizontal direction) is 22nm",
+    "layers": [
+      "GATEC",
+      "GATEA"
+    ],
+    "process": "freePDK15"
+  },
+  "RULE_GATE004Cb": {
+    "rule": "Minimum extension of GATEC past GATEB (horizontal direction) is 22nm",
+    "layers": [
+      "GATEB",
+      "GATEC"
+    ],
+    "process": "freePDK15"
+  },
+  "RULE_GATE005C": {
+    "rule": "GATEC minimum space to ACT is 15nm",
+    "layers": [
+      "GATEC",
+      "ACT"
+    ],
+    "process": "freePDK15"
+  },
+  "RULE_GATE006C": {
+    "rule": "GATEC may not bend",
+    "layers": [
+      "GATEC"
+    ],
+    "process": "freePDK15"
+  },
+  "RULE_GATE007C": {
+    "rule": "GATEC shape bottom or top must be aligned if distance < 192nm",
+    "layers": [
+      "GATEC"
+    ],
+    "process": "freePDK15"
+  },
+  "RULE_VT001": {
+    "rule": "Minimum width of VTL/VTH/(not (VTL or VTH)) is 144nm",
+    "layers": [
+      "VTL",
+      "VTH"
+    ],
+    "process": "freePDK15"
+  },
+  "RULE_VT002": {
+    "rule": "Minimum spacing of VTL/VTH/(not (VTL or VTH)) is 144nm",
+    "layers": [
+      "VTL",
+      "VTH"
+    ],
+    "process": "freePDK15"
+  },
+  "RULE_VTL003A": {
+    "rule": "Minimum enclosure of GATEA by VTL is 64nm",
+    "layers": [
+      "VTL"
+    ],
+    "process": "freePDK15"
+  },
+  "RULE_VTL003B": {
+    "rule": "Minimum enclosure of GATEB by VTL is 64nm",
+    "layers": [
+      "GATEB",
+      "VTL"
+    ],
+    "process": "freePDK15"
+  },
+  "RULE_VTH003A": {
+    "rule": "Minimum enclosure of GATEA by VTH is 64nm",
+    "layers": [
+      "VTH"
+    ],
+    "process": "freePDK15"
+  },
+  "RULE_VTH003B": {
+    "rule": "Minimum enclosure of GATEB by VTH is 64nm",
+    "layers": [
+      "GATEB",
+      "VTH"
+    ],
+    "process": "freePDK15"
+  },
+  "RULE_VTL004A": {
+    "rule": "Minimum spacing of GATEA to VTL is 44nm",
+    "layers": [
+      "VTL",
+      "GATEA"
+    ],
+    "process": "freePDK15"
+  },
+  "RULE_VTL004B": {
+    "rule": "Minimum spacing of GATEB to VTL is 44nm",
+    "layers": [
+      "GATEB",
+      "VTL"
+    ],
+    "process": "freePDK15"
+  },
+  "RULE_VTH004A": {
+    "rule": "Minimum spacing of GATEA to VTH is 44nm",
+    "layers": [
+      "GATEA",
+      "VTH"
+    ],
+    "process": "freePDK15"
+  },
+  "RULE_VTH004B": {
+    "rule": "Minimum spacing of GATEB to VTH is 44nm",
+    "layers": [
+      "GATEB",
+      "VTH"
+    ],
+    "process": "freePDK15"
+  },
+  "RULE_NIM001A": {
+    "rule": "Minimum width of NIM is 128nm",
+    "layers": [
+      "NIM"
+    ],
+    "process": "freePDK15"
+  },
+  "RULE_NIM001B": {
+    "rule": "Minimum Spacing of NIM is 128nm",
+    "layers": [
+      "NIM"
+    ],
+    "process": "freePDK15"
+  },
+  "RULE_NIM001C": {
+    "rule": "Minimum Spacing of NIM is 128nm",
+    "layers": [
+      "NIM"
+    ],
+    "process": "freePDK15"
+  },
+  "RULE_PIM001A": {
+    "rule": "Minimum width of PIM is 128nm",
+    "layers": [
+      "PIM"
+    ],
+    "process": "freePDK15"
+  },
+  "RULE_PIM001B": {
+    "rule": "Minimum Spacing of PIM is 128nm",
+    "layers": [
+      "PIM"
+    ],
+    "process": "freePDK15"
+  },
+  "RULE_PIM001C": {
+    "rule": "Minimum Spacing of PIM is 128nm",
+    "layers": [
+      "PIM"
+    ],
+    "process": "freePDK15"
+  },
+  "RULE_NIM002A": {
+    "rule": "Minimum spacing of NIM to channel: width of SD at GATE[A] is 32nm",
+    "layers": [
+      "GATEA",
+      "NIM"
+    ],
+    "process": "freePDK15"
+  },
+  "RULE_NIM002B": {
+    "rule": "Minimum spacing of NIM to channel: width of SD at GATE[B] is 32nm",
+    "layers": [
+      "GATEB",
+      "NIM"
+    ],
+    "process": "freePDK15"
+  },
+  "RULE_NIM002AB": {
+    "rule": "Minimum spacing of NIM to channel: width of SD at GATE[AB] is 32nm",
+    "layers": [
+      "GATEAB",
+      "NIM"
+    ],
+    "process": "freePDK15"
+  },
+  "RULE_PIM002A": {
+    "rule": "Minimum spacing of PIM to channel: width of SD at GATE[A] is 32nm",
+    "layers": [
+      "GATEA",
+      "PIM"
+    ],
+    "process": "freePDK15"
+  },
+  "RULE_PIM002B": {
+    "rule": "Minimum spacing of PIM to channel: width of SD at GATE[B] is 32nm",
+    "layers": [
+      "GATEB",
+      "PIM"
+    ],
+    "process": "freePDK15"
+  },
+  "RULE_PIM002AB": {
+    "rule": "Minimum spacing of PIM to channel: width of SD at GATE[AB] is 32nm",
+    "layers": [
+      "GATEAB",
+      "PIM"
+    ],
+    "process": "freePDK15"
+  },
+  "RULE_NIM003A": {
+    "rule": "Minimum Extension of NIM past channel (Horizontal Direction): Overlap between Gate[A] and NIM  is 32nm",
+    "layers": [
+      "GATEA",
+      "NIM"
+    ],
+    "process": "freePDK15"
+  },
+  "RULE_NIM003B": {
+    "rule": "Minimum Extension of NIM past channel (Horizontal Direction): Overlap between Gate[B] and NIM  is 32nm",
+    "layers": [
+      "GATEB",
+      "NIM"
+    ],
+    "process": "freePDK15"
+  },
+  "RULE_PIM003A": {
+    "rule": "Minimum Extension of NIM past channel (Horizontal Direction): Overlap between Gate[A] and NIM  is 32nm",
+    "layers": [
+      "GATEA",
+      "NIM"
+    ],
+    "process": "freePDK15"
+  },
+  "RULE_PIM003B": {
+    "rule": "Minimum Extension of NIM past channel (Horizontal Direction): Overlap between Gate[B] and NIM  is 32nm",
+    "layers": [
+      "GATEB",
+      "NIM"
+    ],
+    "process": "freePDK15"
+  },
+  "RULE_NIM004A": {
+    "rule": "Minimum Extension of NIM past channel (Vertical Direction): Overlap between Gate[A] and NIM  is 30nm",
+    "layers": [
+      "GATEA",
+      "NIM"
+    ],
+    "process": "freePDK15"
+  },
+  "RULE_NIM004B": {
+    "rule": "Minimum Extension of NIM past channel (Vertical Direction): Overlap between Gate[B] and NIM  is 30nm",
+    "layers": [
+      "GATEB",
+      "NIM"
+    ],
+    "process": "freePDK15"
+  },
+  "RULE_PIM004A": {
+    "rule": "Minimum Extension of NIM past channel (Vertical Direction): Overlap between Gate[A] and NIM  is 30nm",
+    "layers": [
+      "GATEA",
+      "NIM"
+    ],
+    "process": "freePDK15"
+  },
+  "RULE_PIM004B": {
+    "rule": "Minimum Extension of NIM past channel (Vertical Direction): Overlap between Gate[B] and NIM  is 30nm",
+    "layers": [
+      "GATEB",
+      "NIM"
+    ],
+    "process": "freePDK15"
+  },
+  "RULE_NIM005": {
+    "rule": "Minimum spacing of NIM to (ACT enclosed by PIM) is 0.030 um",
+    "layers": [
+      "PIM",
+      "NIM",
+      "ACT"
+    ],
+    "process": "freePDK15"
+  },
+  "RULE_PIM005": {
+    "rule": "Minimum spacing of PIM to (ACT enclosed by NIM) is 0.030 um",
+    "layers": [
+      "PIM",
+      "NIM",
+      "ACT"
+    ],
+    "process": "freePDK15"
+  },
+  "RULE_NIM006": {
+    "rule": "Minimum enclosure of ACT by NIM is 0.030 um",
+    "layers": [
+      "NIM",
+      "ACT"
+    ],
+    "process": "freePDK15"
+  },
+  "RULE_PIM006": {
+    "rule": "Minimum enclosure of ACT by PIM is 0.030 um",
+    "layers": [
+      "PIM",
+      "ACT"
+    ],
+    "process": "freePDK15"
+  },
+  "RULE_NIM007A": {
+    "rule": "Minimum area of NIM is 0.049 um2",
+    "layers": [
+      "NIM"
+    ],
+    "process": "freePDK15"
+  },
+  "RULE_NIM007B": {
+    "rule": "Minimum enclosed area of NIM is 0.049 um2",
+    "layers": [
+      "NIM"
+    ],
+    "process": "freePDK15"
+  },
+  "RULE_PIM007A": {
+    "rule": "Minimum area of PIM is 0.049 um2",
+    "layers": [
+      "PIM"
+    ],
+    "process": "freePDK15"
+  },
+  "RULE_PIM007B": {
+    "rule": "Minimum enclosed area of PIM is 0.049 um2",
+    "layers": [
+      "PIM"
+    ],
+    "process": "freePDK15"
+  },
+  "RULE_AIL1001": {
+    "rule": "Horizontal Width of AIL1 is 28nm",
+    "layers": [
+      "AIL1"
+    ],
+    "process": "freePDK15"
+  },
+  "RULE_AIL1002": {
+    "rule": "Horizontal spacing of AIL1 is 36nm",
+    "layers": [
+      "AIL1"
+    ],
+    "process": "freePDK15"
+  },
+  "RULE_AIL1003A": {
+    "rule": "Minimum spacing of AIL1 to GATE[A] is 8nm",
+    "layers": [
+      "GATEA",
+      "AIL1"
+    ],
+    "process": "freePDK15"
+  },
+  "RULE_AIL1003B": {
+    "rule": "Minimum spacing of AIL1 to GATE[B] is 8nm",
+    "layers": [
+      "GATEB",
+      "AIL1"
+    ],
+    "process": "freePDK15"
+  },
+  "RULE_AIL1004": {
+    "rule": "Minimum extenxion of ACT past AIL1 in horizontal direction is 2nm",
+    "layers": [
+      "ACT",
+      "AIL1"
+    ],
+    "process": "freePDK15"
+  },
+  "RULE_AIL1005": {
+    "rule": "Minimum Vertical length of AIL1 is 58nm",
+    "layers": [
+      "AIL1"
+    ],
+    "process": "freePDK15"
+  },
+  "RULE_AIL1006": {
+    "rule": "Minimum Vertical spacing of AIL1 is 62nm",
+    "layers": [
+      "AIL1"
+    ],
+    "process": "freePDK15"
+  },
+  "RULE_AIL1007": {
+    "rule": "Minimum Vertical extension of AIL1 past ACT is 0nm",
+    "layers": [
+      "ACT",
+      "AIL1"
+    ],
+    "process": "freePDK15"
+  },
+  "RULE_AIL1008": {
+    "rule": "AIL1 layer may not bend",
+    "layers": [
+      "AIL1"
+    ],
+    "process": "freePDK15"
+  },
+  "RULE_AIL2001": {
+    "rule": "Horizontal width of AIL2 is 24nm",
+    "layers": [
+      "AIL2"
+    ],
+    "process": "freePDK15"
+  },
+  "RULE_AIL2002": {
+    "rule": "Horizontal spacing of AIL2 is 40nm",
+    "layers": [
+      "AIL2"
+    ],
+    "process": "freePDK15"
+  },
+  "RULE_AIL2003A": {
+    "rule": "Minimum spacing between AIL2 and GATE[A] is 2nm",
+    "layers": [
+      "GATEA",
+      "AIL2"
+    ],
+    "process": "freePDK15"
+  },
+  "RULE_AIL2003B": {
+    "rule": "Minimum spacing between AIL2 and GATE[B] is 2nm",
+    "layers": [
+      "GATEB",
+      "AIL2"
+    ],
+    "process": "freePDK15"
+  },
+  "RULE_AIL2004": {
+    "rule": "Minimum horizontal enclosure of AIL1 around AIL2 is 2 nm",
+    "layers": [
+      "AIL2",
+      "AIL1"
+    ],
+    "process": "freePDK15"
+  },
+  "RULE_AIL2005": {
+    "rule": "Minimum Vertical overlap of AIL1 and AIL2 is 6nm",
+    "layers": [
+      "AIL2",
+      "AIL1"
+    ],
+    "process": "freePDK15"
+  },
+  "RULE_AIL2006": {
+    "rule": "Vertical length of AIL2 is 68nm",
+    "layers": [
+      "AIL2"
+    ],
+    "process": "freePDK15"
+  },
+  "RULE_AIL2007": {
+    "rule": "Vertical spacing of AIL2 is 62nm",
+    "layers": [
+      "AIL2"
+    ],
+    "process": "freePDK15"
+  },
+  "RULE_AIL2008": {
+    "rule": "AIL2 may not bend",
+    "layers": [
+      "AIL2"
+    ],
+    "process": "freePDK15"
+  },
+  "RULE_AIL2009": {
+    "rule": "Minimum horizontal spacing of AIL1 and AIL2 is 16nm",
+    "layers": [
+      "AIL2",
+      "AIL1"
+    ],
+    "process": "freePDK15"
+  },
+  "RULE_AIL2010": {
+    "rule": "Minimum vertical spacing of AIL1 and AIL2 is 16nm",
+    "layers": [
+      "AIL2",
+      "AIL1"
+    ],
+    "process": "freePDK15"
+  },
+  "RULE_GIL001": {
+    "rule": "Minimum vertical width of GIL is 44nm",
+    "layers": [
+      "GIL"
+    ],
+    "process": "freePDK15"
+  },
+  "RULE_GIL002": {
+    "rule": "Minimum horizontal length of GIL is 56nm",
+    "layers": [
+      "GIL"
+    ],
+    "process": "freePDK15"
+  },
+  "RULE_GIL003": {
+    "rule": "Minimum vertical spacing of GIL is 32nm",
+    "layers": [
+      "GIL"
+    ],
+    "process": "freePDK15"
+  },
+  "RULE_GIL004": {
+    "rule": "Minimum horizontal spacing of GIL is 40nm",
+    "layers": [
+      "GIL"
+    ],
+    "process": "freePDK15"
+  },
+  "RULE_GIL005": {
+    "rule": "Minimum vertical spacing of GIL to ACT is 6nm",
+    "layers": [
+      "GIL",
+      "ACT"
+    ],
+    "process": "freePDK15"
+  },
+  "RULE_GIL006A": {
+    "rule": "Minimum horizontal extension of GIL past GATE[A] is 2nm",
+    "layers": [
+      "GATEA",
+      "GIL"
+    ],
+    "process": "freePDK15"
+  },
+  "RULE_GIL006B": {
+    "rule": "Minimum horizontal extension of GIL past GATE[B] is 2nm",
+    "layers": [
+      "GATEB",
+      "GIL"
+    ],
+    "process": "freePDK15"
+  },
+  "RULE_GIL007": {
+    "rule": "Minimum horizontal space of GIL to AIL2 is 8nm",
+    "layers": [
+      "AIL2",
+      "GIL"
+    ],
+    "process": "freePDK15"
+  },
+  "RULE_GIL008": {
+    "rule": "Minimum vertical space of GIL to AIL2 is 5nm",
+    "layers": [
+      "AIL2",
+      "GIL"
+    ],
+    "process": "freePDK15"
+  },
+  "RULE_GIL009A": {
+    "rule": "Minimum horizontal space of GIL to GATE[A] is 10nm",
+    "layers": [
+      "GATEA",
+      "GIL"
+    ],
+    "process": "freePDK15"
+  },
+  "RULE_GIL009B": {
+    "rule": "Minimum horizontal space of GIL to GATE[B] is 10nm",
+    "layers": [
+      "GATEB",
+      "GIL"
+    ],
+    "process": "freePDK15"
+  },
+  "RULE_GIL010": {
+    "rule": "Minimum horizontal overlap of GIL and AIL2 is 2nm",
+    "layers": [
+      "AIL2",
+      "GIL"
+    ],
+    "process": "freePDK15"
+  },
+  "RULE_GIL011": {
+    "rule": "Minimum vertical extension of AIL2 past GIL is 4nm",
+    "layers": [
+      "AIL2",
+      "GIL"
+    ],
+    "process": "freePDK15"
+  },
+  "RULE_GIL012": {
+    "rule": "GIL may not bend",
+    "layers": [
+      "GIL"
+    ],
+    "process": "freePDK15"
+  },
+  "RULE_V0001a": {
+    "rule": "V0 is a square with 28nm edge length",
+    "layers": [
+      "V0"
+    ],
+    "process": "freePDK15"
+  },
+  "RULE_V0001bA": {
+    "rule": "V0 is a rectangle 28nm x 56nm when enclosed in M1A with width >= 60nm",
+    "layers": [
+      "V0",
+      "M1A"
+    ],
+    "process": "freePDK15"
+  },
+  "RULE_V0001bB": {
+    "rule": "V0 is a rectangle 28nm x 56nm when enclosed in M1B with width >= 60nm",
+    "layers": [
+      "V0",
+      "M1B"
+    ],
+    "process": "freePDK15"
+  },
+  "RULE_V0002GA": {
+    "rule": "Minimum spacing of V0 if runlength exactly = 28nm is 36nm, assuming runlength is the common length between GIL and M1, and GIL is vertical",
+    "layers": [
+      "M1",
+      "V0",
+      "GIL"
+    ],
+    "process": "freePDK15"
+  },
+  "RULE_V0002AA": {
+    "rule": "Minimum spacing of V0 if runlength exactly = 28nm is 36nm, assuming runlength is the common length between AIL2 and M1, and AIL2 is vertical",
+    "layers": [
+      "M1",
+      "V0",
+      "AIL2"
+    ],
+    "process": "freePDK15"
+  },
+  "RULE_V0002GB": {
+    "rule": "Minimum spacing of V0 if runlength exactly = 28nm is 36nm, assuming runlength is the common length between GIL and M1, and GIL is vertical",
+    "layers": [
+      "M1",
+      "V0",
+      "GIL"
+    ],
+    "process": "freePDK15"
+  },
+  "RULE_V0002AB": {
+    "rule": "Minimum spacing of V0 if runlength exactly = 28nm is 36nm, assuming runlength is the common length between AIL2 and M1, and AIL2 is vertical",
+    "layers": [
+      "M1",
+      "V0",
+      "AIL2"
+    ],
+    "process": "freePDK15"
+  },
+  "RULE_V0003GA": {
+    "rule": "Minimum spacing of V0 if runlength < 28nm is 50nm, assuming runlength is the common length between GIL and M1, and GIL is vertical",
+    "layers": [
+      "M1",
+      "V0",
+      "GIL"
+    ],
+    "process": "freePDK15"
+  },
+  "RULE_V0003AA": {
+    "rule": "Minimum spacing of V0 if runlength < 28nm is 50nm, assuming runlength is the common length between AIL2 and M1, and AIL2 is vertical",
+    "layers": [
+      "M1",
+      "V0",
+      "AIL2"
+    ],
+    "process": "freePDK15"
+  },
+  "RULE_V0003GB": {
+    "rule": "Minimum spacing of V0 if runlength < 28nm is 50nm, assuming runlength is the common length between GIL and M1, and GIL is vertical",
+    "layers": [
+      "M1",
+      "V0",
+      "GIL"
+    ],
+    "process": "freePDK15"
+  },
+  "RULE_V0003AB": {
+    "rule": "Minimum spacing of V0 if runlength < 28nm is 50nm, assuming runlength is the common length between AIL2 and M1, and AIL2 is vertical",
+    "layers": [
+      "M1",
+      "V0",
+      "AIL2"
+    ],
+    "process": "freePDK15"
+  },
+  "RULE_V0004": {
+    "rule": "V0 must be inside [AIL2|GIL] and M1[A|B]",
+    "layers": [
+      "M1",
+      "V0",
+      "AIL2",
+      "GIL"
+    ],
+    "process": "freePDK15"
+  },
+  "RULE_V0005a": {
+    "rule": "V0 enclosure by AIL2 in 2 opposite sides, horizontal direction 2nm",
+    "layers": [
+      "V0",
+      "AIL2"
+    ],
+    "process": "freePDK15"
+  },
+  "RULE_V0005b": {
+    "rule": "V0 enclosure by AIL2 in 2 opposite sides, vertical direction 20nm",
+    "layers": [
+      "V0",
+      "AIL2"
+    ],
+    "process": "freePDK15"
+  },
+  "RULE_V0006a": {
+    "rule": "V0 enclosure by (GIL AND AIL2) on 2 opposite sides, horizontal direction 2nm",
+    "layers": [
+      "V0",
+      "AIL2",
+      "GIL"
+    ],
+    "process": "freePDK15"
+  },
+  "RULE_V0006b": {
+    "rule": "V0 enclosure by (GIL AND AIL2) on 2 opposite sides, vertical direction 8nm",
+    "layers": [
+      "V0",
+      "AIL2",
+      "GIL"
+    ],
+    "process": "freePDK15"
+  },
+  "RULE_V0007a": {
+    "rule": "V0 enclosure by (GIL NOT AIL2) on 2 opposite sides, horizontal direction 14nm",
+    "layers": [
+      "V0",
+      "AIL2",
+      "GIL"
+    ],
+    "process": "freePDK15"
+  },
+  "RULE_V0007b": {
+    "rule": "V0 enclosure by (GIL NOT AIL2) on 2 opposite sides, vertical direction 8nm",
+    "layers": [
+      "V0",
+      "AIL2",
+      "GIL"
+    ],
+    "process": "freePDK15"
+  },
+  "RULE_V0008": {
+    "rule": "Min spacing of V0 and AIL2 on different net is 38nm",
+    "layers": [
+      "V0",
+      "AIL2"
+    ],
+    "process": "freePDK15"
+  },
+  "RULE_V0009": {
+    "rule": "Min spacing of V0 and GIL on different net is 38nm",
+    "layers": [
+      "V0",
+      "GIL"
+    ],
+    "process": "freePDK15"
+  },
+  "RULE_V0010": {
+    "rule": "V0 enclosed by GIL may not overlap with (GATE[A|B] over ACT)",
+    "layers": [
+      "V0",
+      "GIL",
+      "ACT"
+    ],
+    "process": "freePDK15"
+  },
+  "RULE_M1001A": {
+    "rule": "M1A width 28nm, 32nm, 40nm, 2.4um (10um is arbitrary)",
+    "layers": [
+      "M1A"
+    ],
+    "process": "freePDK15"
+  },
+  "RULE_M1001B": {
+    "rule": "M1B width 28nm, 32nm, 40nm, 2.4um (10um is arbitrary)",
+    "layers": [
+      "M1B"
+    ],
+    "process": "freePDK15"
+  },
+  "RULE_M1001": {
+    "rule": "M1 minimum width 28nm",
+    "layers": [
+      "M1"
+    ],
+    "process": "freePDK15"
+  },
+  "RULE_M1002A": {
+    "rule": "One of two edges connected to the same vertex must have at least one of 56nm",
+    "layers": [],
+    "process": "freePDK15"
+  },
+  "RULE_M1002B": {
+    "rule": "One of two edges connected to the same vertex must have at least one of 56nm",
+    "layers": [],
+    "process": "freePDK15"
+  },
+  "RULE_M1002": {
+    "rule": "One of two edges connected to the same vertex must have at least one of 56nm",
+    "layers": [],
+    "process": "freePDK15"
+  },
+  "RULE_M1003A": {
+    "rule": "maximum length of M1A for wires with min width 28nm is 1.8um",
+    "layers": [
+      "M1A"
+    ],
+    "process": "freePDK15"
+  },
+  "RULE_M1003B": {
+    "rule": "maximum length of M1B for wires with min width 28nm is 1.8um",
+    "layers": [
+      "M1B"
+    ],
+    "process": "freePDK15"
+  },
+  "RULE_M1003": {
+    "rule": "maximum length of M1 for wires with min width 28nm is 1.8um",
+    "layers": [
+      "M1"
+    ],
+    "process": "freePDK15"
+  },
+  "RULE_M1004A": {
+    "rule": "M1A end-of-line spacing (end-of-line edge defined as edge < 32nm) is 68nm",
+    "layers": [
+      "M1A"
+    ],
+    "process": "freePDK15"
+  },
+  "RULE_M1004B": {
+    "rule": "M1B end-of-line spacing (end-of-line edge defined as edge < 32nm) is 68nm",
+    "layers": [
+      "M1B"
+    ],
+    "process": "freePDK15"
+  },
+  "RULE_M1005A": {
+    "rule": "M1A min space and notch 54nm",
+    "layers": [
+      "M1A"
+    ],
+    "process": "freePDK15"
+  },
+  "RULE_M1005B": {
+    "rule": "M1B min space and notch 54nm",
+    "layers": [
+      "M1B"
+    ],
+    "process": "freePDK15"
+  },
+  "RULE_M1006AB": {
+    "rule": "min spacing of M1A to M1B 36nm",
+    "layers": [
+      "M1A",
+      "M1B"
+    ],
+    "process": "freePDK15"
+  },
+  "RULE_M1006": {
+    "rule": "min spacing of M1 to M1 36nm",
+    "layers": [
+      "M1"
+    ],
+    "process": "freePDK15"
+  },
+  "RULE_M1007AB": {
+    "rule": "End-of-line spacing of M1A to M1B (EOL edge defined as edge < 32nm) is 44nm",
+    "layers": [
+      "M1A",
+      "M1B"
+    ],
+    "process": "freePDK15"
+  },
+  "RULE_M1007": {
+    "rule": "End-of-line spacing of M1 to M1 (EOL edge defined as edge < 32nm) is 44nm",
+    "layers": [
+      "M1"
+    ],
+    "process": "freePDK15"
+  },
+  "RULE_M1008A": {
+    "rule": "Minimum spacing of M1A when M1A is wider than 32nm and longer than 240nm is 68nm",
+    "layers": [
+      "M1A"
+    ],
+    "process": "freePDK15"
+  },
+  "RULE_M1008B": {
+    "rule": "Minimum spacing of M1B when M1B is wider than 32nm and longer than 240nm is 68nm",
+    "layers": [
+      "M1B"
+    ],
+    "process": "freePDK15"
+  },
+  "RULE_M1009A": {
+    "rule": "Minimum spacing of M1A when M1A is wider than 40nm and longer than 240nm is 76nm",
+    "layers": [
+      "M1A"
+    ],
+    "process": "freePDK15"
+  },
+  "RULE_M1009B": {
+    "rule": "Minimum spacing of M1B when M1B is wider than 40nm and longer than 240nm is 76nm",
+    "layers": [
+      "M1B"
+    ],
+    "process": "freePDK15"
+  },
+  "RULE_M1010A": {
+    "rule": "Minimum spacing of M1A when M1A is wider than 64nm and longer than 480nm is 92nm",
+    "layers": [
+      "M1A"
+    ],
+    "process": "freePDK15"
+  },
+  "RULE_M1010B": {
+    "rule": "Minimum spacing of M1B when M1B is wider than 64nm and longer than 480nm is 92nm",
+    "layers": [
+      "M1B"
+    ],
+    "process": "freePDK15"
+  },
+  "RULE_M1011A": {
+    "rule": "Minimum spacing of M1A when M1A is wider than 120nm and longer than 1200nm is 120nm",
+    "layers": [
+      "M1A"
+    ],
+    "process": "freePDK15"
+  },
+  "RULE_M1011B": {
+    "rule": "Minimum spacing of M1B when M1B is wider than 120nm and longer than 1200nm is 120nm",
+    "layers": [
+      "M1B"
+    ],
+    "process": "freePDK15"
+  },
+  "RULE_M1012A": {
+    "rule": "Minimum spacing of M1A when M1A is wider than 240nm and longer than 1800nm is 240nm",
+    "layers": [
+      "M1A"
+    ],
+    "process": "freePDK15"
+  },
+  "RULE_M1012B": {
+    "rule": "Minimum spacing of M1B when M1B is wider than 240nm and longer than 1800nm is 240nm",
+    "layers": [
+      "M1B"
+    ],
+    "process": "freePDK15"
+  },
+  "RULE_M1013A": {
+    "rule": "Minimum spacing of M1A when M1A is wider than 320nm and longer than 2400nm is 320nm",
+    "layers": [
+      "M1A"
+    ],
+    "process": "freePDK15"
+  },
+  "RULE_M1013B": {
+    "rule": "Minimum spacing of M1B when M1B is wider than 320nm and longer than 2400nm is 320nm",
+    "layers": [
+      "M1B"
+    ],
+    "process": "freePDK15"
+  },
+  "RULE_M1014A": {
+    "rule": "Minimum spacing of M1A when M1A is wider than 600nm and longer than 2400nm is 600nm",
+    "layers": [
+      "M1A"
+    ],
+    "process": "freePDK15"
+  },
+  "RULE_M1014B": {
+    "rule": "Minimum spacing of M1B when M1B is wider than 600nm and longer than 2400nm is 600nm",
+    "layers": [
+      "M1B"
+    ],
+    "process": "freePDK15"
+  },
+  "RULE_M1015A": {
+    "rule": "Minimum spacing of M1A to M1B when M1B is wider than 32nm and longer than 240nm is 44nm",
+    "layers": [
+      "M1A",
+      "M1B"
+    ],
+    "process": "freePDK15"
+  },
+  "RULE_M1015B": {
+    "rule": "Minimum spacing of M1B to M1A when M1A is wider than 32nm and longer than 240nm is 44nm",
+    "layers": [
+      "M1A",
+      "M1B"
+    ],
+    "process": "freePDK15"
+  },
+  "RULE_M1016A": {
+    "rule": "Minimum spacing of M1A to M1B when M1B is wider than 40nm and longer than 240nm is 50nm",
+    "layers": [
+      "M1A",
+      "M1B"
+    ],
+    "process": "freePDK15"
+  },
+  "RULE_M1016B": {
+    "rule": "Minimum spacing of M1B to M1A when M1A is wider than 40nm and longer than 240nm is 50nm",
+    "layers": [
+      "M1A",
+      "M1B"
+    ],
+    "process": "freePDK15"
+  },
+  "RULE_M1017A": {
+    "rule": "Minimum spacing of M1A to M1B when M1B is wider than 64nm and longer than 480nm is 60nm",
+    "layers": [
+      "M1A",
+      "M1B"
+    ],
+    "process": "freePDK15"
+  },
+  "RULE_M1017B": {
+    "rule": "Minimum spacing of M1B to M1A when M1A is wider than 64nm and longer than 480nm is 60nm",
+    "layers": [
+      "M1A",
+      "M1B"
+    ],
+    "process": "freePDK15"
+  },
+  "RULE_M1018A": {
+    "rule": "Minimum spacing of M1A to M1B when M1B is wider than 120nm and longer than 1200nm is 78nm",
+    "layers": [
+      "M1A",
+      "M1B"
+    ],
+    "process": "freePDK15"
+  },
+  "RULE_M1018B": {
+    "rule": "Minimum spacing of M1B to M1A when M1A is wider than 120nm and longer than 1200nm is 78nm",
+    "layers": [
+      "M1A",
+      "M1B"
+    ],
+    "process": "freePDK15"
+  },
+  "RULE_M1019A": {
+    "rule": "Minimum spacing of M1A to M1B when M1B is wider than 240nm and longer than 1800nm is 156nm",
+    "layers": [
+      "M1A",
+      "M1B"
+    ],
+    "process": "freePDK15"
+  },
+  "RULE_M1019B": {
+    "rule": "Minimum spacing of M1B to M1A when M1A is wider than 240nm and longer than 1800nm is 156nm",
+    "layers": [
+      "M1A",
+      "M1B"
+    ],
+    "process": "freePDK15"
+  },
+  "RULE_M1020A": {
+    "rule": "Minimum spacing of M1A to M1B when M1B is wider than 320nm and longer than 2400nm is 200nm",
+    "layers": [
+      "M1A",
+      "M1B"
+    ],
+    "process": "freePDK15"
+  },
+  "RULE_M1020B": {
+    "rule": "Minimum spacing of M1B to M1A when M1A is wider than 320nm and longer than 2400nm is 200nm",
+    "layers": [
+      "M1A",
+      "M1B"
+    ],
+    "process": "freePDK15"
+  },
+  "RULE_M1021A": {
+    "rule": "Minimum spacing of M1A to M1B when M1B is wider than 600nm and longer than 2400nm is 400nm",
+    "layers": [
+      "M1A",
+      "M1B"
+    ],
+    "process": "freePDK15"
+  },
+  "RULE_M1021B": {
+    "rule": "Minimum spacing of M1B to M1A when M1A is wider than 600nm and longer than 2400nm is 400nm",
+    "layers": [
+      "M1A",
+      "M1B"
+    ],
+    "process": "freePDK15"
+  },
+  "RULE_M1022": {
+    "rule": "Minimum overlap of M1A and M1B (stitch region length)",
+    "layers": [
+      "M1A",
+      "M1B"
+    ],
+    "process": "freePDK15"
+  },
+  "RULE_M1023A": {
+    "rule": "Allowed enclosures of V0 by M1A are [0.028,0.002], [0.032,0], or [0.01,0.01] on opposite sides",
+    "layers": [
+      "V0",
+      "M1A"
+    ],
+    "process": "freePDK15"
+  },
+  "RULE_M1023B": {
+    "rule": "Allowed enclosures of V0 by M1B are [0.028,0.002], [0.032,0], or [0.01,0.01] on opposite sides",
+    "layers": [
+      "V0",
+      "M1B"
+    ],
+    "process": "freePDK15"
+  },
+  "RULE_M1023": {
+    "rule": "Allowed enclosures of V0 by M1 are [0.028,0.002], [0.032,0], or [0.01,0.01] on opposite sides",
+    "layers": [
+      "M1",
+      "V0"
+    ],
+    "process": "freePDK15"
+  },
+  "RULE_M1024": {
+    "rule": "Allowed enclosures of V0 by M1A-M1B stitches are [0.032,0.002], [0.04,0], or [0.014,0.014] on opposite sides",
+    "layers": [
+      "V0",
+      "M1A",
+      "M1B"
+    ],
+    "process": "freePDK15"
+  },
+  "RULE_M1025A": {
+    "rule": "V0 center must be aligned to wire center (between 2 longest edges)",
+    "layers": [
+      "V0"
+    ],
+    "process": "freePDK15"
+  },
+  "RULE_M1026A": {
+    "rule": "V0 shape must be rectangular if enclosing M1A wire width >= 60nm",
+    "layers": [
+      "V0",
+      "M1A"
+    ],
+    "process": "freePDK15"
+  },
+  "RULE_M1026B": {
+    "rule": "V0 shape must be rectangular if enclosing M1B wire width >= 60nm",
+    "layers": [
+      "V0",
+      "M1B"
+    ],
+    "process": "freePDK15"
+  },
+  "RULE_M1027A": {
+    "rule": "M1A minimum area for rectangular shape is 0.0024um2",
+    "layers": [
+      "M1A"
+    ],
+    "process": "freePDK15"
+  },
+  "RULE_M1027B": {
+    "rule": "M1B minimum area for rectangular shape is 0.0024um2",
+    "layers": [
+      "M1B"
+    ],
+    "process": "freePDK15"
+  },
+  "RULE_M1027": {
+    "rule": "M1 minimum area for rectangular shape is 0.0024um2",
+    "layers": [
+      "M1"
+    ],
+    "process": "freePDK15"
+  },
+  "RULE_M1028A": {
+    "rule": "M1A min area for non-rectangular shape is 0.0036um2",
+    "layers": [
+      "M1A"
+    ],
+    "process": "freePDK15"
+  },
+  "RULE_M1028B": {
+    "rule": "M1B min area for non-rectangular shape is 0.0036um2",
+    "layers": [
+      "M1B"
+    ],
+    "process": "freePDK15"
+  },
+  "RULE_V1001a": {
+    "rule": "V1 is a square with 28nm edge length",
+    "layers": [
+      "V1"
+    ],
+    "process": "freePDK15"
+  },
+  "RULE_V1001b": {
+    "rule": "V1 is a rectangle 28nm x 56nm when enclosed in M1A with width >= 60nm",
+    "layers": [
+      "M1A",
+      "V1"
+    ],
+    "process": "freePDK15"
+  },
+  "RULE_V1001c": {
+    "rule": "V1 is a rectangle 28nm x 56nm when enclosed in M1B with width >= 60nm",
+    "layers": [
+      "M1B",
+      "V1"
+    ],
+    "process": "freePDK15"
+  },
+  "RULE_V1001d": {
+    "rule": "V1 is a rectangle 28nm x 56nm when enclosed in MINT1A with width >= 60nm",
+    "layers": [
+      "MINT1A",
+      "V1"
+    ],
+    "process": "freePDK15"
+  },
+  "RULE_V1001e": {
+    "rule": "V1 is a rectangle 28nm x 56nm when enclosed in MINT1B with width >= 60nm",
+    "layers": [
+      "MINT1B",
+      "V1"
+    ],
+    "process": "freePDK15"
+  },
+  "RULE_V1002A": {
+    "rule": "Minimum spacing of V1 if runlength exactly = 28nm is 36nm, assuming runlength is the common length between M1 and MINT1, and M1 is vertical",
+    "layers": [
+      "M1",
+      "MINT1",
+      "V1"
+    ],
+    "process": "freePDK15"
+  },
+  "RULE_V1002B": {
+    "rule": "Minimum spacing of V1 if runlength exactly = 28nm is 36nm, assuming runlength is the common length between M1 and MINT1, and M1 is vertical",
+    "layers": [
+      "M1",
+      "MINT1",
+      "V1"
+    ],
+    "process": "freePDK15"
+  },
+  "RULE_V1003A": {
+    "rule": "Minimum spacing of V1 if runlength < 28nm is 50nm, assuming runlength is the common length between M1 and MINT1, and M1 is vertical",
+    "layers": [
+      "M1",
+      "MINT1",
+      "V1"
+    ],
+    "process": "freePDK15"
+  },
+  "RULE_V1003B": {
+    "rule": "Minimum spacing of V1 if runlength < 28nm is 50nm, assuming runlength is the common length between M1 and MINT1, and M1 is vertical",
+    "layers": [
+      "M1",
+      "MINT1",
+      "V1"
+    ],
+    "process": "freePDK15"
+  },
+  "RULE_V1004": {
+    "rule": "V1 must be inside (M1A and MINT1A) or (M1B and MINT1B) or (M1A and MINT1B) or (M1B and MINT1A) or (M1 and MINT1)",
+    "layers": [
+      "MINT1B",
+      "V1",
+      "M1",
+      "M1A",
+      "M1B",
+      "MINT1",
+      "MINT1A"
+    ],
+    "process": "freePDK15"
+  },
+  "RULE_V1005A": {
+    "rule": "V1 shape must be rectangular if enclosing M1A wire width >= 60nm",
+    "layers": [
+      "M1A",
+      "V1"
+    ],
+    "process": "freePDK15"
+  },
+  "RULE_V1005B": {
+    "rule": "V1 shape must be rectangular if enclosing M1B wire width >= 60nm",
+    "layers": [
+      "M1B",
+      "V1"
+    ],
+    "process": "freePDK15"
+  },
+  "RULE_VINT1001a": {
+    "rule": "VINT1 is a square with 28nm edge length",
+    "layers": [
+      "VINT1"
+    ],
+    "process": "freePDK15"
+  },
+  "RULE_VINT1001b": {
+    "rule": "VINT1 is a rectangle 28nm x 56nm when enclosed in MINT1A with width >= 60nm",
+    "layers": [
+      "MINT1A",
+      "VINT1"
+    ],
+    "process": "freePDK15"
+  },
+  "RULE_VINT1001c": {
+    "rule": "VINT1 is a rectangle 28nm x 56nm when enclosed in MINT1B with width >= 60nm",
+    "layers": [
+      "MINT1B",
+      "VINT1"
+    ],
+    "process": "freePDK15"
+  },
+  "RULE_VINT1001d": {
+    "rule": "VINT1 is a rectangle 28nm x 56nm when enclosed in MINT2A with width >= 60nm",
+    "layers": [
+      "VINT1",
+      "MINT2A"
+    ],
+    "process": "freePDK15"
+  },
+  "RULE_VINT1001e": {
+    "rule": "VINT1 is a rectangle 28nm x 56nm when enclosed in MINT2B with width >= 60nm",
+    "layers": [
+      "VINT1",
+      "MINT2B"
+    ],
+    "process": "freePDK15"
+  },
+  "RULE_VINT1002A": {
+    "rule": "Minimum spacing of VINT1 if runlength exactly = 28nm is 36nm, assuming runlength is the common length between MINT1 and MINT2, and MINT1 is vertical",
+    "layers": [
+      "MINT1",
+      "VINT1",
+      "MINT2"
+    ],
+    "process": "freePDK15"
+  },
+  "RULE_VINT1002B": {
+    "rule": "Minimum spacing of VINT1 if runlength exactly = 28nm is 36nm, assuming runlength is the common length between MINT1 and MINT2, and MINT1 is vertical",
+    "layers": [
+      "MINT1",
+      "VINT1",
+      "MINT2"
+    ],
+    "process": "freePDK15"
+  },
+  "RULE_VINT1003A": {
+    "rule": "Minimum spacing of VINT1 if runlength < 28nm is 50nm, assuming runlength is the common length between MINT1 and MINT2, and MINT1 is vertical",
+    "layers": [
+      "MINT1",
+      "VINT1",
+      "MINT2"
+    ],
+    "process": "freePDK15"
+  },
+  "RULE_VINT1003B": {
+    "rule": "Minimum spacing of VINT1 if runlength < 28nm is 50nm, assuming runlength is the common length between MINT1 and MINT2, and MINT1 is vertical",
+    "layers": [
+      "MINT1",
+      "VINT1",
+      "MINT2"
+    ],
+    "process": "freePDK15"
+  },
+  "RULE_VINT1004": {
+    "rule": "VINT1 must be inside (MINT1A and MINT2A) or (MINT1B and MINT2B) or (MINT1A and MINT2B) or (MINT1B and MINT2A) or (MINT1 and MINT2)",
+    "layers": [
+      "MINT1B",
+      "MINT2",
+      "VINT1",
+      "MINT2B",
+      "MINT1",
+      "MINT2A",
+      "MINT1A"
+    ],
+    "process": "freePDK15"
+  },
+  "RULE_VINT1005A": {
+    "rule": "VINT1 shape must be rectangular if enclosing MINT1A wire width >= 60nm",
+    "layers": [
+      "MINT1A",
+      "VINT1"
+    ],
+    "process": "freePDK15"
+  },
+  "RULE_VINT1005B": {
+    "rule": "VINT1 shape must be rectangular if enclosing MINT1B wire width >= 60nm",
+    "layers": [
+      "MINT1B",
+      "VINT1"
+    ],
+    "process": "freePDK15"
+  },
+  "RULE_VINT2001a": {
+    "rule": "VINT2 is a square with 28nm edge length",
+    "layers": [
+      "VINT2"
+    ],
+    "process": "freePDK15"
+  },
+  "RULE_VINT2001b": {
+    "rule": "VINT2 is a rectangle 28nm x 56nm when enclosed in MINT2A with width >= 60nm",
+    "layers": [
+      "VINT2",
+      "MINT2A"
+    ],
+    "process": "freePDK15"
+  },
+  "RULE_VINT2001c": {
+    "rule": "VINT2 is a rectangle 28nm x 56nm when enclosed in MINT2B with width >= 60nm",
+    "layers": [
+      "VINT2",
+      "MINT2B"
+    ],
+    "process": "freePDK15"
+  },
+  "RULE_VINT2001d": {
+    "rule": "VINT2 is a rectangle 28nm x 56nm when enclosed in MINT3A with width >= 60nm",
+    "layers": [
+      "VINT2",
+      "MINT3A"
+    ],
+    "process": "freePDK15"
+  },
+  "RULE_VINT2001e": {
+    "rule": "VINT2 is a rectangle 28nm x 56nm when enclosed in MINT3B with width >= 60nm",
+    "layers": [
+      "MINT3B",
+      "VINT2"
+    ],
+    "process": "freePDK15"
+  },
+  "RULE_VINT2002A": {
+    "rule": "Minimum spacing of VINT2 if runlength exactly = 28nm is 36nm, assuming runlength is the common length between MINT2 and MINT3,",
+    "layers": [
+      "MINT3",
+      "VINT2",
+      "MINT2"
+    ],
+    "process": "freePDK15"
+  },
+  "RULE_VINT2002B": {
+    "rule": "Minimum spacing of VINT2 if runlength exactly = 28nm is 36nm, assuming runlength is the common length between MINT2 and MINT3,",
+    "layers": [
+      "MINT3",
+      "VINT2",
+      "MINT2"
+    ],
+    "process": "freePDK15"
+  },
+  "RULE_VINT2003A": {
+    "rule": "Minimum spacing of VINT2 if runlength < 28nm is 50nm, assuming runlength is the common length between MINT2 and MINT3,",
+    "layers": [
+      "MINT3",
+      "VINT2",
+      "MINT2"
+    ],
+    "process": "freePDK15"
+  },
+  "RULE_VINT2003B": {
+    "rule": "Minimum spacing of VINT2 if runlength < 28nm is 50nm, assuming runlength is the common length between MINT2 and MINT3,",
+    "layers": [
+      "MINT3",
+      "VINT2",
+      "MINT2"
+    ],
+    "process": "freePDK15"
+  },
+  "RULE_VINT2004": {
+    "rule": "VINT2 must be inside (MINT2A and MINT3A) or (MINT2B and MINT3B) or (MINT2A and MINT3B) or (MINT2B and MINT3A) or (MINT2 and MINT3)",
+    "layers": [
+      "MINT3",
+      "MINT2",
+      "VINT2",
+      "MINT2B",
+      "MINT2A",
+      "MINT3A",
+      "MINT3B"
+    ],
+    "process": "freePDK15"
+  },
+  "RULE_VINT2005A": {
+    "rule": "VINT2 shape must be rectangular if enclosing MINT2A wire width >= 60nm",
+    "layers": [
+      "VINT2",
+      "MINT2A"
+    ],
+    "process": "freePDK15"
+  },
+  "RULE_VINT2005B": {
+    "rule": "VINT2 shape must be rectangular if enclosing MINT2B wire width >= 40nm",
+    "layers": [
+      "VINT2",
+      "MINT2B"
+    ],
+    "process": "freePDK15"
+  },
+  "RULE_VINT3001a": {
+    "rule": "VINT3 is a square with 28nm edge length",
+    "layers": [
+      "VINT3"
+    ],
+    "process": "freePDK15"
+  },
+  "RULE_VINT3001b": {
+    "rule": "VINT3 is a rectangle 28nm x 56nm when enclosed in MINT3A with width >= 60nm",
+    "layers": [
+      "VINT3",
+      "MINT3A"
+    ],
+    "process": "freePDK15"
+  },
+  "RULE_VINT3001c": {
+    "rule": "VINT3 is a rectangle 28nm x 56nm when enclosed in MINT3B with width >= 60nm",
+    "layers": [
+      "MINT3B",
+      "VINT3"
+    ],
+    "process": "freePDK15"
+  },
+  "RULE_VINT3001d": {
+    "rule": "VINT3 is a rectangle 28nm x 56nm when enclosed in MINT4A with width >= 60nm",
+    "layers": [
+      "MINT4A",
+      "VINT3"
+    ],
+    "process": "freePDK15"
+  },
+  "RULE_VINT3001e": {
+    "rule": "VINT3 is a rectangle 28nm x 56nm when enclosed in MINT4B with width >= 60nm",
+    "layers": [
+      "MINT4B",
+      "VINT3"
+    ],
+    "process": "freePDK15"
+  },
+  "RULE_VINT3002A": {
+    "rule": "Minimum spacing of VINT3 if runlength exactly = 28nm is 36nm, assuming runlength is the common length between MINT3 and MINT4,",
+    "layers": [
+      "MINT3",
+      "VINT3",
+      "MINT4"
+    ],
+    "process": "freePDK15"
+  },
+  "RULE_VINT3002B": {
+    "rule": "Minimum spacing of VINT3 if runlength exactly = 28nm is 36nm",
+    "layers": [
+      "VINT3"
+    ],
+    "process": "freePDK15"
+  },
+  "RULE_VINT3003A": {
+    "rule": "Minimum spacing of VINT3 if runlength < 28nm is 50nm",
+    "layers": [
+      "VINT3"
+    ],
+    "process": "freePDK15"
+  },
+  "RULE_VINT3003B": {
+    "rule": "Minimum spacing of VINT3 if runlength < 28nm is 50nm",
+    "layers": [
+      "VINT3"
+    ],
+    "process": "freePDK15"
+  },
+  "RULE_VINT3004": {
+    "rule": "VINT3 must be inside (MINT3A and MINT4A) or (MINT3B and MINT4B) or (MINT3A and MINT4B) or (MINT3B and MINT4A) or (MINT3 and MINT4)",
+    "layers": [
+      "MINT4B",
+      "MINT3",
+      "MINT4A",
+      "VINT3",
+      "MINT4",
+      "MINT3A",
+      "MINT3B"
+    ],
+    "process": "freePDK15"
+  },
+  "RULE_VINT3005A": {
+    "rule": "VINT3 shape must be rectangular if enclosing MINT3A wire width >= 60nm",
+    "layers": [
+      "VINT3",
+      "MINT3A"
+    ],
+    "process": "freePDK15"
+  },
+  "RULE_VINT3005B": {
+    "rule": "VINT3 shape must be rectangular if enclosing MINT3B wire width >= 60nm",
+    "layers": [
+      "MINT3B",
+      "VINT3"
+    ],
+    "process": "freePDK15"
+  },
+  "RULE_VINT4001a": {
+    "rule": "VINT4 is a square with 28nm edge length",
+    "layers": [
+      "VINT4"
+    ],
+    "process": "freePDK15"
+  },
+  "RULE_VINT4001b": {
+    "rule": "VINT4 is a rectangle 28nm x 56nm when enclosed in MINT4A with width >= 60nm",
+    "layers": [
+      "MINT4A",
+      "VINT4"
+    ],
+    "process": "freePDK15"
+  },
+  "RULE_VINT4001c": {
+    "rule": "VINT4 is a rectangle 28nm x 56nm when enclosed in MINT4B with width >= 60nm",
+    "layers": [
+      "MINT4B",
+      "VINT4"
+    ],
+    "process": "freePDK15"
+  },
+  "RULE_VINT4001d": {
+    "rule": "VINT4 is a rectangle 28nm x 56nm when enclosed in MINT5A with width >= 60nm",
+    "layers": [
+      "MINT5A",
+      "VINT4"
+    ],
+    "process": "freePDK15"
+  },
+  "RULE_VINT4001e": {
+    "rule": "VINT4 is a rectangle 28nm x 56nm when enclosed in MINT5B with width >= 60nm",
+    "layers": [
+      "MINT5B",
+      "VINT4"
+    ],
+    "process": "freePDK15"
+  },
+  "RULE_VINT4002A": {
+    "rule": "Minimum spacing of VINT4 if runlength exactly = 28nm is 36nm",
+    "layers": [
+      "VINT4"
+    ],
+    "process": "freePDK15"
+  },
+  "RULE_VINT4002B": {
+    "rule": "Minimum spacing of VINT4 if runlength exactly = 28nm is 36nm",
+    "layers": [
+      "VINT4"
+    ],
+    "process": "freePDK15"
+  },
+  "RULE_VINT4003A": {
+    "rule": "Minimum spacing of VINT4 if runlength < 28nm is 50nm",
+    "layers": [
+      "VINT4"
+    ],
+    "process": "freePDK15"
+  },
+  "RULE_VINT4003B": {
+    "rule": "Minimum spacing of VINT4 if runlength < 28nm is 50nm",
+    "layers": [
+      "VINT4"
+    ],
+    "process": "freePDK15"
+  },
+  "RULE_VINT4004": {
+    "rule": "VINT4 must be inside (MINT4A and MINT5A) or (MINT4B and MINT5B) or (MINT4A and MINT5B) or (MINT4B and MINT5A) or (MINT4 and MINT5)",
+    "layers": [
+      "MINT4B",
+      "MINT5A",
+      "VINT4",
+      "MINT4A",
+      "MINT5B",
+      "MINT4",
+      "MINT5"
+    ],
+    "process": "freePDK15"
+  },
+  "RULE_VINT4005A": {
+    "rule": "VINT4 shape must be rectangular if enclosing MINT4A wire width >= 60nm",
+    "layers": [
+      "MINT4A",
+      "VINT4"
+    ],
+    "process": "freePDK15"
+  },
+  "RULE_VINT4005B": {
+    "rule": "VINT4 shape must be rectangular if enclosing MINT4B wire width >= 60nm",
+    "layers": [
+      "MINT4B",
+      "VINT4"
+    ],
+    "process": "freePDK15"
+  },
+  "RULE_VINT5001a": {
+    "rule": "VINT5 is a square with 28nm edge length",
+    "layers": [
+      "VINT5"
+    ],
+    "process": "freePDK15"
+  },
+  "RULE_VINT5001b": {
+    "rule": "VINT5 is a rectangle 28nm x 56nm when enclosed in MINT5A with width >= 60nm",
+    "layers": [
+      "MINT5A",
+      "VINT5"
+    ],
+    "process": "freePDK15"
+  },
+  "RULE_VINT5001c": {
+    "rule": "VINT5 is a rectangle 28nm x 56nm when enclosed in MINT5B with width >= 60nm",
+    "layers": [
+      "MINT5B",
+      "VINT5"
+    ],
+    "process": "freePDK15"
+  },
+  "RULE_VINT5001d": {
+    "rule": "VINT5 is a rectangle 28nm x 56nm when enclosed in MSMG1 with width >= 60nm",
+    "layers": [
+      "VINT5",
+      "MSMG1"
+    ],
+    "process": "freePDK15"
+  },
+  "RULE_VINT5002A": {
+    "rule": "Minimum spacing of VINT5 if runlength exactly = 28nm is 36nm",
+    "layers": [
+      "VINT5"
+    ],
+    "process": "freePDK15"
+  },
+  "RULE_VINT5002B": {
+    "rule": "Minimum spacing of VINT5 if runlength exactly = 28nm is 36nm",
+    "layers": [
+      "VINT5"
+    ],
+    "process": "freePDK15"
+  },
+  "RULE_VINT5003A": {
+    "rule": "Minimum spacing of VINT5 if runlength < 28nm is 50nm",
+    "layers": [
+      "VINT5"
+    ],
+    "process": "freePDK15"
+  },
+  "RULE_VINT5003B": {
+    "rule": "Minimum spacing of VINT5 if runlength < 28nm is 50nm",
+    "layers": [
+      "VINT5"
+    ],
+    "process": "freePDK15"
+  },
+  "RULE_VINT5004": {
+    "rule": "VINT5 must be inside (MINT5A and MSMG1) or (MINT5B and MSMG1) or (MINT5 and MSMG1)",
+    "layers": [
+      "MINT5A",
+      "MINT5B",
+      "MSMG1",
+      "MINT5",
+      "VINT5"
+    ],
+    "process": "freePDK15"
+  },
+  "RULE_VINT5005A": {
+    "rule": "VINT5 shape must be rectangular if enclosing MINT5A wire width >= 60nm",
+    "layers": [
+      "MINT5A",
+      "VINT5"
+    ],
+    "process": "freePDK15"
+  },
+  "RULE_VINT5005B": {
+    "rule": "VINT5 shape must be rectangular if enclosing MINT5B wire width >= 60nm",
+    "layers": [
+      "MINT5B",
+      "VINT5"
+    ],
+    "process": "freePDK15"
+  },
+  "RULE_MINT1001A": {
+    "rule": "MINT1A width > 28nm",
+    "layers": [
+      "MINT1A"
+    ],
+    "process": "freePDK15"
+  },
+  "RULE_MINT1001B": {
+    "rule": "MINT1B width > 28nm",
+    "layers": [
+      "MINT1B"
+    ],
+    "process": "freePDK15"
+  },
+  "RULE_MINT1001": {
+    "rule": "MINT1 width > 28nm",
+    "layers": [
+      "MINT1"
+    ],
+    "process": "freePDK15"
+  },
+  "RULE_MINT1002A": {
+    "rule": "One of two edges connected to the same vertex must have at least one of 56nm",
+    "layers": [],
+    "process": "freePDK15"
+  },
+  "RULE_MINT1002B": {
+    "rule": "One of two edges connected to the same vertex must have at least one of 56nm",
+    "layers": [],
+    "process": "freePDK15"
+  },
+  "RULE_MINT1002": {
+    "rule": "One of two edges connected to the same vertex must have at least one of 56nm",
+    "layers": [],
+    "process": "freePDK15"
+  },
+  "RULE_MINT1003A": {
+    "rule": "maximum length of MINT1A for wires with min width 28nm is 1.8um",
+    "layers": [
+      "MINT1A"
+    ],
+    "process": "freePDK15"
+  },
+  "RULE_MINT1003B": {
+    "rule": "maximum length of MINT1B for wires with min width 28nm is 1.8um",
+    "layers": [
+      "MINT1B"
+    ],
+    "process": "freePDK15"
+  },
+  "RULE_MINT1003": {
+    "rule": "maximum length of MINT1 for wires with min width 28nm is 1.8um",
+    "layers": [
+      "MINT1"
+    ],
+    "process": "freePDK15"
+  },
+  "RULE_MINT1004A": {
+    "rule": "MINT1A end-of-line spacing (end-of-line edge defined as edge < 32nm) is 68nm",
+    "layers": [
+      "MINT1A"
+    ],
+    "process": "freePDK15"
+  },
+  "RULE_MINT1004B": {
+    "rule": "MINT1B end-of-line spacing (end-of-line edge defined as edge < 32nm) is 68nm",
+    "layers": [
+      "MINT1B"
+    ],
+    "process": "freePDK15"
+  },
+  "RULE_MINT1005A": {
+    "rule": "MINT1A min space and notch 54nm",
+    "layers": [
+      "MINT1A"
+    ],
+    "process": "freePDK15"
+  },
+  "RULE_MINT1005B": {
+    "rule": "MINT1B min space and notch 54nm",
+    "layers": [
+      "MINT1B"
+    ],
+    "process": "freePDK15"
+  },
+  "RULE_MINT1006AB": {
+    "rule": "min spacing of MINT1A to MINT1B 36nm",
+    "layers": [
+      "MINT1A",
+      "MINT1B"
+    ],
+    "process": "freePDK15"
+  },
+  "RULE_MINT1006": {
+    "rule": "min spacing of MINT1 to MINT1 36nm",
+    "layers": [
+      "MINT1"
+    ],
+    "process": "freePDK15"
+  },
+  "RULE_MINT1007AB": {
+    "rule": "End-of-line spacing of MINT1A to MINT1B (EOL edge defined as edge < 32nm) is 44nm",
+    "layers": [
+      "MINT1A",
+      "MINT1B"
+    ],
+    "process": "freePDK15"
+  },
+  "RULE_MINT1007": {
+    "rule": "End-of-line spacing of MINT1 to MINT1 (EOL edge defined as edge < 32nm) is 44nm",
+    "layers": [
+      "MINT1"
+    ],
+    "process": "freePDK15"
+  },
+  "RULE_MINT1008A": {
+    "rule": "Minimum spacing of MINT1A when MINT1A is wider than 32nm and longer than 240nm is 68nm",
+    "layers": [
+      "MINT1A"
+    ],
+    "process": "freePDK15"
+  },
+  "RULE_MINT1008B": {
+    "rule": "Minimum spacing of MINT1B when MINT1B is wider than 32nm and longer than 240nm is 68nm",
+    "layers": [
+      "MINT1B"
+    ],
+    "process": "freePDK15"
+  },
+  "RULE_MINT1009A": {
+    "rule": "Minimum spacing of MINT1A when MINT1A is wider than 40nm and longer than 240nm is 76nm",
+    "layers": [
+      "MINT1A"
+    ],
+    "process": "freePDK15"
+  },
+  "RULE_MINT1009B": {
+    "rule": "Minimum spacing of MINT1B when MINT1B is wider than 40nm and longer than 240nm is 76nm",
+    "layers": [
+      "MINT1B"
+    ],
+    "process": "freePDK15"
+  },
+  "RULE_MINT1010A": {
+    "rule": "Minimum spacing of MINT1A when MINT1A is wider than 64nm and longer than 480nm is 92nm",
+    "layers": [
+      "MINT1A"
+    ],
+    "process": "freePDK15"
+  },
+  "RULE_MINT1010B": {
+    "rule": "Minimum spacing of MINT1B when MINT1B is wider than 64nm and longer than 480nm is 92nm",
+    "layers": [
+      "MINT1B"
+    ],
+    "process": "freePDK15"
+  },
+  "RULE_MINT1011A": {
+    "rule": "Minimum spacing of MINT1A when MINT1A is wider than 120nm and longer than 1200nm is 120nm",
+    "layers": [
+      "MINT1A"
+    ],
+    "process": "freePDK15"
+  },
+  "RULE_MINT1011B": {
+    "rule": "Minimum spacing of MINT1B when MINT1B is wider than 120nm and longer than 1200nm is 120nm",
+    "layers": [
+      "MINT1B"
+    ],
+    "process": "freePDK15"
+  },
+  "RULE_MINT1012A": {
+    "rule": "Minimum spacing of MINT1A when MINT1A is wider than 240nm and longer than 1800nm is 240nm",
+    "layers": [
+      "MINT1A"
+    ],
+    "process": "freePDK15"
+  },
+  "RULE_MINT1012B": {
+    "rule": "Minimum spacing of MINT1B when MINT1B is wider than 240nm and longer than 1800nm is 240nm",
+    "layers": [
+      "MINT1B"
+    ],
+    "process": "freePDK15"
+  },
+  "RULE_MINT1013A": {
+    "rule": "Minimum spacing of MINT1A when MINT1A is wider than 320nm and longer than 2400nm is 320nm",
+    "layers": [
+      "MINT1A"
+    ],
+    "process": "freePDK15"
+  },
+  "RULE_MINT1013B": {
+    "rule": "Minimum spacing of MINT1B when MINT1B is wider than 320nm and longer than 2400nm is 320nm",
+    "layers": [
+      "MINT1B"
+    ],
+    "process": "freePDK15"
+  },
+  "RULE_MINT1014A": {
+    "rule": "Minimum spacing of MINT1A when MINT1A is wider than 600nm and longer than 2400nm is 600nm",
+    "layers": [
+      "MINT1A"
+    ],
+    "process": "freePDK15"
+  },
+  "RULE_MINT1014B": {
+    "rule": "Minimum spacing of MINT1B when MINT1B is wider than 600nm and longer than 2400nm is 600nm",
+    "layers": [
+      "MINT1B"
+    ],
+    "process": "freePDK15"
+  },
+  "RULE_MINT1015A": {
+    "rule": "Minimum spacing of MINT1A to MINT1B when MINT1B is wider than 32nm and longer than 240nm is 44nm",
+    "layers": [
+      "MINT1A",
+      "MINT1B"
+    ],
+    "process": "freePDK15"
+  },
+  "RULE_MINT1015B": {
+    "rule": "Minimum spacing of MINT1B to MINT1A when MINT1A is wider than 32nm and longer than 240nm is 44nm",
+    "layers": [
+      "MINT1A",
+      "MINT1B"
+    ],
+    "process": "freePDK15"
+  },
+  "RULE_MINT1016A": {
+    "rule": "Minimum spacing of MINT1A to MINT1B when MINT1B is wider than 40nm and longer than 240nm is 50nm",
+    "layers": [
+      "MINT1A",
+      "MINT1B"
+    ],
+    "process": "freePDK15"
+  },
+  "RULE_MINT1016B": {
+    "rule": "Minimum spacing of MINT1B to MINT1A when MINT1A is wider than 40nm and longer than 240nm is 50nm",
+    "layers": [
+      "MINT1A",
+      "MINT1B"
+    ],
+    "process": "freePDK15"
+  },
+  "RULE_MINT1017A": {
+    "rule": "Minimum spacing of MINT1A to MINT1B when MINT1B is wider than 64nm and longer than 480nm is 60nm",
+    "layers": [
+      "MINT1A",
+      "MINT1B"
+    ],
+    "process": "freePDK15"
+  },
+  "RULE_MINT1017B": {
+    "rule": "Minimum spacing of MINT1B to MINT1A when MINT1A is wider than 64nm and longer than 480nm is 60nm",
+    "layers": [
+      "MINT1A",
+      "MINT1B"
+    ],
+    "process": "freePDK15"
+  },
+  "RULE_MINT1018A": {
+    "rule": "Minimum spacing of MINT1A to MINT1B when MINT1B is wider than 120nm and longer than 1200nm is 78nm",
+    "layers": [
+      "MINT1A",
+      "MINT1B"
+    ],
+    "process": "freePDK15"
+  },
+  "RULE_MINT1018B": {
+    "rule": "Minimum spacing of MINT1B to MINT1A when MINT1A is wider than 120nm and longer than 1200nm is 78nm",
+    "layers": [
+      "MINT1A",
+      "MINT1B"
+    ],
+    "process": "freePDK15"
+  },
+  "RULE_MINT1019A": {
+    "rule": "Minimum spacing of MINT1A to MINT1B when MINT1B is wider than 240nm and longer than 1800nm is 156nm",
+    "layers": [
+      "MINT1A",
+      "MINT1B"
+    ],
+    "process": "freePDK15"
+  },
+  "RULE_MINT1019B": {
+    "rule": "Minimum spacing of MINT1B to MINT1A when MINT1A is wider than 240nm and longer than 1800nm is 156nm",
+    "layers": [
+      "MINT1A",
+      "MINT1B"
+    ],
+    "process": "freePDK15"
+  },
+  "RULE_MINT1020A": {
+    "rule": "Minimum spacing of MINT1A to MINT1B when MINT1B is wider than 320nm and longer than 2400nm is 200nm",
+    "layers": [
+      "MINT1A",
+      "MINT1B"
+    ],
+    "process": "freePDK15"
+  },
+  "RULE_MINT1020B": {
+    "rule": "Minimum spacing of MINT1B to MINT1A when MINT1A is wider than 320nm and longer than 2400nm is 200nm",
+    "layers": [
+      "MINT1A",
+      "MINT1B"
+    ],
+    "process": "freePDK15"
+  },
+  "RULE_MINT1021A": {
+    "rule": "Minimum spacing of MINT1A to MINT1B when MINT1B is wider than 600nm and longer than 2400nm is 400nm",
+    "layers": [
+      "MINT1A",
+      "MINT1B"
+    ],
+    "process": "freePDK15"
+  },
+  "RULE_MINT1021B": {
+    "rule": "Minimum spacing of MINT1B to MINT1A when MINT1A is wider than 600nm and longer than 2400nm is 400nm",
+    "layers": [
+      "MINT1A",
+      "MINT1B"
+    ],
+    "process": "freePDK15"
+  },
+  "RULE_MINT1022": {
+    "rule": "Minimum overlap of MINT1A and MINT1B (stitch region length)",
+    "layers": [
+      "MINT1A",
+      "MINT1B"
+    ],
+    "process": "freePDK15"
+  },
+  "RULE_MINT1023A": {
+    "rule": "Allowed enclosures of V1 by MINT1A [0.028,0.002], [0.032,0], or [0.01,0.01] on opposite sides",
+    "layers": [
+      "MINT1A",
+      "V1"
+    ],
+    "process": "freePDK15"
+  },
+  "RULE_MINT1023B": {
+    "rule": "Allowed enclosures of V1 by MINT1B [0.028,0.002], [0.032,0], or [0.01,0.01] on opposite sides",
+    "layers": [
+      "MINT1B",
+      "V1"
+    ],
+    "process": "freePDK15"
+  },
+  "RULE_MINT1023": {
+    "rule": "Allowed enclosures of V1 by MINT1 are [0.028,0.002], [0.032,0], or [0.01,0.01] on opposite sides",
+    "layers": [
+      "MINT1",
+      "V1"
+    ],
+    "process": "freePDK15"
+  },
+  "RULE_MINT1024": {
+    "rule": "Allowed enclosures of V1 by MINT1A-MINT1B stitches",
+    "layers": [
+      "MINT1A",
+      "V1",
+      "MINT1B"
+    ],
+    "process": "freePDK15"
+  },
+  "RULE_MINT1026A": {
+    "rule": "V1 shape must be rectangular if enclosing MINT1A wire width >= 60nm",
+    "layers": [
+      "MINT1A",
+      "V1"
+    ],
+    "process": "freePDK15"
+  },
+  "RULE_MINT1026B": {
+    "rule": "V1 shape must be rectangular if enclosing MINT1B wire width >= 60nm",
+    "layers": [
+      "MINT1B",
+      "V1"
+    ],
+    "process": "freePDK15"
+  },
+  "RULE_MINT1027A": {
+    "rule": "MINT1A minimum area for rectangular shape is 0.0024um2",
+    "layers": [
+      "MINT1A"
+    ],
+    "process": "freePDK15"
+  },
+  "RULE_MINT1027B": {
+    "rule": "MINT1B minimum area for rectangular shape is 0.0024um2",
+    "layers": [
+      "MINT1B"
+    ],
+    "process": "freePDK15"
+  },
+  "RULE_MINT1027": {
+    "rule": "MINT1 minimum area for rectangular shape is 0.0024um2",
+    "layers": [
+      "MINT1"
+    ],
+    "process": "freePDK15"
+  },
+  "RULE_MINT1028A": {
+    "rule": "MINT1A min area for non-rectangular shape is 0.0036um2",
+    "layers": [
+      "MINT1A"
+    ],
+    "process": "freePDK15"
+  },
+  "RULE_MINT1028B": {
+    "rule": "MINT1B min area for non-rectangular shape is 0.0036um2",
+    "layers": [
+      "MINT1B"
+    ],
+    "process": "freePDK15"
+  },
+  "RULE_MINT2001A": {
+    "rule": "MINT2A width > 28nm",
+    "layers": [
+      "MINT2A"
+    ],
+    "process": "freePDK15"
+  },
+  "RULE_MINT2001B": {
+    "rule": "MINT2B width > 28nm",
+    "layers": [
+      "MINT2B"
+    ],
+    "process": "freePDK15"
+  },
+  "RULE_MINT2001": {
+    "rule": "MINT2 width > 28nm",
+    "layers": [
+      "MINT2"
+    ],
+    "process": "freePDK15"
+  },
+  "RULE_MINT2002A": {
+    "rule": "One of two edges connected to the same vertex must have at least one of 56nm",
+    "layers": [],
+    "process": "freePDK15"
+  },
+  "RULE_MINT2002B": {
+    "rule": "One of two edges connected to the same vertex must have at least one of 56nm",
+    "layers": [],
+    "process": "freePDK15"
+  },
+  "RULE_MINT2002": {
+    "rule": "One of two edges connected to the same vertex must have at least one of 56nm",
+    "layers": [],
+    "process": "freePDK15"
+  },
+  "RULE_MINT2003A": {
+    "rule": "maximum length of MINT2A for wires with min width 28nm is 1.8um",
+    "layers": [
+      "MINT2A"
+    ],
+    "process": "freePDK15"
+  },
+  "RULE_MINT2003B": {
+    "rule": "maximum length of MINT2B for wires with min width 28nm is 1.8um",
+    "layers": [
+      "MINT2B"
+    ],
+    "process": "freePDK15"
+  },
+  "RULE_MINT2003": {
+    "rule": "maximum length of MINT2 for wires with min width 28nm is 1.8um",
+    "layers": [
+      "MINT2"
+    ],
+    "process": "freePDK15"
+  },
+  "RULE_MINT2004A": {
+    "rule": "MINT2A end-of-line spacing (end-of-line edge defined as edge < 32nm) is 68nm",
+    "layers": [
+      "MINT2A"
+    ],
+    "process": "freePDK15"
+  },
+  "RULE_MINT2004B": {
+    "rule": "MINT2B end-of-line spacing (end-of-line edge defined as edge < 32nm) is 68nm",
+    "layers": [
+      "MINT2B"
+    ],
+    "process": "freePDK15"
+  },
+  "RULE_MINT2005A": {
+    "rule": "MINT2A min space and notch 54nm",
+    "layers": [
+      "MINT2A"
+    ],
+    "process": "freePDK15"
+  },
+  "RULE_MINT2005B": {
+    "rule": "MINT2B min space and notch 54nm",
+    "layers": [
+      "MINT2B"
+    ],
+    "process": "freePDK15"
+  },
+  "RULE_MINT2006AB": {
+    "rule": "min spacing of MINT2A to MINT2B 36nm",
+    "layers": [
+      "MINT2B",
+      "MINT2A"
+    ],
+    "process": "freePDK15"
+  },
+  "RULE_MINT2006": {
+    "rule": "min spacing of MINT2 to MINT2 36nm",
+    "layers": [
+      "MINT2"
+    ],
+    "process": "freePDK15"
+  },
+  "RULE_MINT2007AB": {
+    "rule": "End-of-line spacing of MINT2A to MINT2B (EOL edge defined as edge < 32nm) is 44nm",
+    "layers": [
+      "MINT2B",
+      "MINT2A"
+    ],
+    "process": "freePDK15"
+  },
+  "RULE_MINT2007": {
+    "rule": "End-of-line spacing of MINT2 to MINT2 (EOL edge defined as edge < 32nm) is 44nm",
+    "layers": [
+      "MINT2"
+    ],
+    "process": "freePDK15"
+  },
+  "RULE_MINT2008A": {
+    "rule": "Minimum spacing of MINT2A when MINT2A is wider than 32nm and longer than 240nm is 68nm",
+    "layers": [
+      "MINT2A"
+    ],
+    "process": "freePDK15"
+  },
+  "RULE_MINT2008B": {
+    "rule": "Minimum spacing of MINT2B when MINT2B is wider than 32nm and longer than 240nm is 68nm",
+    "layers": [
+      "MINT2B"
+    ],
+    "process": "freePDK15"
+  },
+  "RULE_MINT2009A": {
+    "rule": "Minimum spacing of MINT2A when MINT2A is wider than 40nm and longer than 240nm is 76nm",
+    "layers": [
+      "MINT2A"
+    ],
+    "process": "freePDK15"
+  },
+  "RULE_MINT2009B": {
+    "rule": "Minimum spacing of MINT2B when MINT2B is wider than 40nm and longer than 240nm is 76nm",
+    "layers": [
+      "MINT2B"
+    ],
+    "process": "freePDK15"
+  },
+  "RULE_MINT2010A": {
+    "rule": "Minimum spacing of MINT2A when MINT2A is wider than 64nm and longer than 480nm is 92nm",
+    "layers": [
+      "MINT2A"
+    ],
+    "process": "freePDK15"
+  },
+  "RULE_MINT2010B": {
+    "rule": "Minimum spacing of MINT2B when MINT2B is wider than 64nm and longer than 480nm is 92nm",
+    "layers": [
+      "MINT2B"
+    ],
+    "process": "freePDK15"
+  },
+  "RULE_MINT2011A": {
+    "rule": "Minimum spacing of MINT2A when MINT2A is wider than 120nm and longer than 1200nm is 120nm",
+    "layers": [
+      "MINT2A"
+    ],
+    "process": "freePDK15"
+  },
+  "RULE_MINT2011B": {
+    "rule": "Minimum spacing of MINT2B when MINT2B is wider than 120nm and longer than 1200nm is 120nm",
+    "layers": [
+      "MINT2B"
+    ],
+    "process": "freePDK15"
+  },
+  "RULE_MINT2012A": {
+    "rule": "Minimum spacing of MINT2A when MINT2A is wider than 240nm and longer than 1800nm is 240nm",
+    "layers": [
+      "MINT2A"
+    ],
+    "process": "freePDK15"
+  },
+  "RULE_MINT2012B": {
+    "rule": "Minimum spacing of MINT2B when MINT2B is wider than 240nm and longer than 1800nm is 240nm",
+    "layers": [
+      "MINT2B"
+    ],
+    "process": "freePDK15"
+  },
+  "RULE_MINT2013A": {
+    "rule": "Minimum spacing of MINT2A when MINT2A is wider than 320nm and longer than 2400nm is 320nm",
+    "layers": [
+      "MINT2A"
+    ],
+    "process": "freePDK15"
+  },
+  "RULE_MINT2013B": {
+    "rule": "Minimum spacing of MINT2B when MINT2B is wider than 320nm and longer than 2400nm is 320nm",
+    "layers": [
+      "MINT2B"
+    ],
+    "process": "freePDK15"
+  },
+  "RULE_MINT2014A": {
+    "rule": "Minimum spacing of MINT2A when MINT2A is wider than 600nm and longer than 2400nm is 600nm",
+    "layers": [
+      "MINT2A"
+    ],
+    "process": "freePDK15"
+  },
+  "RULE_MINT2014B": {
+    "rule": "Minimum spacing of MINT2B when MINT2B is wider than 600nm and longer than 2400nm is 600nm",
+    "layers": [
+      "MINT2B"
+    ],
+    "process": "freePDK15"
+  },
+  "RULE_MINT2015A": {
+    "rule": "Minimum spacing of MINT2A to MINT2B when MINT2B is wider than 32nm and longer than 240nm is 44nm",
+    "layers": [
+      "MINT2B",
+      "MINT2A"
+    ],
+    "process": "freePDK15"
+  },
+  "RULE_MINT2015B": {
+    "rule": "Minimum spacing of MINT2B to MINT2A when MINT2A is wider than 32nm and longer than 240nm is 44nm",
+    "layers": [
+      "MINT2B",
+      "MINT2A"
+    ],
+    "process": "freePDK15"
+  },
+  "RULE_MINT2016A": {
+    "rule": "Minimum spacing of MINT2A to MINT2B when MINT2B is wider than 40nm and longer than 240nm is 50nm",
+    "layers": [
+      "MINT2B",
+      "MINT2A"
+    ],
+    "process": "freePDK15"
+  },
+  "RULE_MINT2016B": {
+    "rule": "Minimum spacing of MINT2B to MINT2A when MINT2A is wider than 40nm and longer than 240nm is 50nm",
+    "layers": [
+      "MINT2B",
+      "MINT2A"
+    ],
+    "process": "freePDK15"
+  },
+  "RULE_MINT2017A": {
+    "rule": "Minimum spacing of MINT2A to MINT2B when MINT2B is wider than 64nm and longer than 480nm is 60nm",
+    "layers": [
+      "MINT2B",
+      "MINT2A"
+    ],
+    "process": "freePDK15"
+  },
+  "RULE_MINT2017B": {
+    "rule": "Minimum spacing of MINT2B to MINT2A when MINT2A is wider than 64nm and longer than 480nm is 60nm",
+    "layers": [
+      "MINT2B",
+      "MINT2A"
+    ],
+    "process": "freePDK15"
+  },
+  "RULE_MINT2018A": {
+    "rule": "Minimum spacing of MINT2A to MINT2B when MINT2B is wider than 120nm and longer than 1200nm is 78nm",
+    "layers": [
+      "MINT2B",
+      "MINT2A"
+    ],
+    "process": "freePDK15"
+  },
+  "RULE_MINT2018B": {
+    "rule": "Minimum spacing of MINT2B to MINT2A when MINT2A is wider than 120nm and longer than 1200nm is 78nm",
+    "layers": [
+      "MINT2B",
+      "MINT2A"
+    ],
+    "process": "freePDK15"
+  },
+  "RULE_MINT2019A": {
+    "rule": "Minimum spacing of MINT2A to MINT2B when MINT2B is wider than 240nm and longer than 1800nm is 156nm",
+    "layers": [
+      "MINT2B",
+      "MINT2A"
+    ],
+    "process": "freePDK15"
+  },
+  "RULE_MINT2019B": {
+    "rule": "Minimum spacing of MINT2B to MINT2A when MINT2A is wider than 240nm and longer than 1800nm is 156nm",
+    "layers": [
+      "MINT2B",
+      "MINT2A"
+    ],
+    "process": "freePDK15"
+  },
+  "RULE_MINT2020A": {
+    "rule": "Minimum spacing of MINT2A to MINT2B when MINT2B is wider than 320nm and longer than 2400nm is 200nm",
+    "layers": [
+      "MINT2B",
+      "MINT2A"
+    ],
+    "process": "freePDK15"
+  },
+  "RULE_MINT2020B": {
+    "rule": "Minimum spacing of MINT2B to MINT2A when MINT2A is wider than 320nm and longer than 2400nm is 200nm",
+    "layers": [
+      "MINT2B",
+      "MINT2A"
+    ],
+    "process": "freePDK15"
+  },
+  "RULE_MINT2021A": {
+    "rule": "Minimum spacing of MINT2A to MINT2B when MINT2B is wider than 600nm and longer than 2400nm is 400nm",
+    "layers": [
+      "MINT2B",
+      "MINT2A"
+    ],
+    "process": "freePDK15"
+  },
+  "RULE_MINT2021B": {
+    "rule": "Minimum spacing of MINT2B to MINT2A when MINT2A is wider than 600nm and longer than 2400nm is 400nm",
+    "layers": [
+      "MINT2B",
+      "MINT2A"
+    ],
+    "process": "freePDK15"
+  },
+  "RULE_MINT2022": {
+    "rule": "Minimum overlap of MINT2A and MINT2B (stitch region length)",
+    "layers": [
+      "MINT2B",
+      "MINT2A"
+    ],
+    "process": "freePDK15"
+  },
+  "RULE_MINT2023A": {
+    "rule": "Allowed enclosures of VINT1 by MINT2A are [0.028,0.002], [0.032,0], or [0.01,0.01] on opposite sides",
+    "layers": [
+      "VINT1",
+      "MINT2A"
+    ],
+    "process": "freePDK15"
+  },
+  "RULE_MINT2023B": {
+    "rule": "Allowed enclosures of VINT1 by MINT2B are [0.028,0.002], [0.032,0], or [0.01,0.01] on opposite sides",
+    "layers": [
+      "VINT1",
+      "MINT2B"
+    ],
+    "process": "freePDK15"
+  },
+  "RULE_MINT2023": {
+    "rule": "Allowed enclosures of VINT1 by MINT2 are [0.028,0.002], [0.032,0], or [0.01,0.01] on opposite sides",
+    "layers": [
+      "VINT1",
+      "MINT2"
+    ],
+    "process": "freePDK15"
+  },
+  "RULE_MINT2024": {
+    "rule": "Allowed enclosures of VINT1 by MINT2A-MINT2B stitches",
+    "layers": [
+      "VINT1",
+      "MINT2B",
+      "MINT2A"
+    ],
+    "process": "freePDK15"
+  },
+  "RULE_MINT2026A": {
+    "rule": "VINT1 shape must be rectangular if enclosing MINT2A wire width >= 60nm",
+    "layers": [
+      "VINT1",
+      "MINT2A"
+    ],
+    "process": "freePDK15"
+  },
+  "RULE_MINT2026B": {
+    "rule": "VINT1 shape must be rectangular if enclosing MINT2B wire width >= 60nm",
+    "layers": [
+      "VINT1",
+      "MINT2B"
+    ],
+    "process": "freePDK15"
+  },
+  "RULE_MINT2027A": {
+    "rule": "MINT2A minimum area for rectangular shape is 0.0024um2",
+    "layers": [
+      "MINT2A"
+    ],
+    "process": "freePDK15"
+  },
+  "RULE_MINT2027B": {
+    "rule": "MINT2B minimum area for rectangular shape is 0.0024um2",
+    "layers": [
+      "MINT2B"
+    ],
+    "process": "freePDK15"
+  },
+  "RULE_MINT2027": {
+    "rule": "MINT2 minimum area for rectangular shape is 0.0024um2",
+    "layers": [
+      "MINT2"
+    ],
+    "process": "freePDK15"
+  },
+  "RULE_MINT2028A": {
+    "rule": "MINT2A min area for non-rectangular shape is 0.0036um2",
+    "layers": [
+      "MINT2A"
+    ],
+    "process": "freePDK15"
+  },
+  "RULE_MINT2028B": {
+    "rule": "MINT2B min area for non-rectangular shape is 0.0036um2",
+    "layers": [
+      "MINT2B"
+    ],
+    "process": "freePDK15"
+  },
+  "RULE_MINT3001A": {
+    "rule": "MINT3A width > 28nm",
+    "layers": [
+      "MINT3A"
+    ],
+    "process": "freePDK15"
+  },
+  "RULE_MINT3001B": {
+    "rule": "MINT3B width > 28nm",
+    "layers": [
+      "MINT3B"
+    ],
+    "process": "freePDK15"
+  },
+  "RULE_MINT3001": {
+    "rule": "MINT3 width > 28nm",
+    "layers": [
+      "MINT3"
+    ],
+    "process": "freePDK15"
+  },
+  "RULE_MINT3002A": {
+    "rule": "One of two edges connected to the same vertex must have at least one of 56nm",
+    "layers": [],
+    "process": "freePDK15"
+  },
+  "RULE_MINT3002B": {
+    "rule": "One of two edges connected to the same vertex must have at least one of 56nm",
+    "layers": [],
+    "process": "freePDK15"
+  },
+  "RULE_MINT3002": {
+    "rule": "One of two edges connected to the same vertex must have at least one of 56nm",
+    "layers": [],
+    "process": "freePDK15"
+  },
+  "RULE_MINT3003A": {
+    "rule": "maximum length of MINT3A for wires with min width 28nm is 1.8um",
+    "layers": [
+      "MINT3A"
+    ],
+    "process": "freePDK15"
+  },
+  "RULE_MINT3003B": {
+    "rule": "maximum length of MINT3B for wires with min width 28nm is 1.8um",
+    "layers": [
+      "MINT3B"
+    ],
+    "process": "freePDK15"
+  },
+  "RULE_MINT3003": {
+    "rule": "maximum length of MINT3 for wires with min width 28nm is 1.8um",
+    "layers": [
+      "MINT3"
+    ],
+    "process": "freePDK15"
+  },
+  "RULE_MINT3004A": {
+    "rule": "MINT3A end-of-line spacing (end-of-line edge defined as edge < 32nm) is 68nm",
+    "layers": [
+      "MINT3A"
+    ],
+    "process": "freePDK15"
+  },
+  "RULE_MINT3004B": {
+    "rule": "MINT3B end-of-line spacing (end-of-line edge defined as edge < 32nm) is 68nm",
+    "layers": [
+      "MINT3B"
+    ],
+    "process": "freePDK15"
+  },
+  "RULE_MINT3005A": {
+    "rule": "MINT3A min space and notch 54nm",
+    "layers": [
+      "MINT3A"
+    ],
+    "process": "freePDK15"
+  },
+  "RULE_MINT3005B": {
+    "rule": "MINT3B min space and notch 54nm",
+    "layers": [
+      "MINT3B"
+    ],
+    "process": "freePDK15"
+  },
+  "RULE_MINT3006AB": {
+    "rule": "min spacing of MINT3A to MINT3B 36nm",
+    "layers": [
+      "MINT3B",
+      "MINT3A"
+    ],
+    "process": "freePDK15"
+  },
+  "RULE_MINT3006": {
+    "rule": "min spacing of MINT3 to MINT3 36nm",
+    "layers": [
+      "MINT3"
+    ],
+    "process": "freePDK15"
+  },
+  "RULE_MINT3007AB": {
+    "rule": "End-of-line spacing of MINT3A to MINT3B (EOL edge defined as edge < 32nm) is 44nm",
+    "layers": [
+      "MINT3B",
+      "MINT3A"
+    ],
+    "process": "freePDK15"
+  },
+  "RULE_MINT3007": {
+    "rule": "End-of-line spacing of MINT3 to MINT3 (EOL edge defined as edge < 32nm) is 44nm",
+    "layers": [
+      "MINT3"
+    ],
+    "process": "freePDK15"
+  },
+  "RULE_MINT3008A": {
+    "rule": "Minimum spacing of MINT3A when MINT3A is wider than 32nm and longer than 240nm is 68nm",
+    "layers": [
+      "MINT3A"
+    ],
+    "process": "freePDK15"
+  },
+  "RULE_MINT3008B": {
+    "rule": "Minimum spacing of MINT3B when MINT3B is wider than 32nm and longer than 240nm is 68nm",
+    "layers": [
+      "MINT3B"
+    ],
+    "process": "freePDK15"
+  },
+  "RULE_MINT3009A": {
+    "rule": "Minimum spacing of MINT3A when MINT3A is wider than 40nm and longer than 240nm is 76nm",
+    "layers": [
+      "MINT3A"
+    ],
+    "process": "freePDK15"
+  },
+  "RULE_MINT3009B": {
+    "rule": "Minimum spacing of MINT3B when MINT3B is wider than 40nm and longer than 240nm is 76nm",
+    "layers": [
+      "MINT3B"
+    ],
+    "process": "freePDK15"
+  },
+  "RULE_MINT3010A": {
+    "rule": "Minimum spacing of MINT3A when MINT3A is wider than 64nm and longer than 480nm is 92nm",
+    "layers": [
+      "MINT3A"
+    ],
+    "process": "freePDK15"
+  },
+  "RULE_MINT3010B": {
+    "rule": "Minimum spacing of MINT3B when MINT3B is wider than 64nm and longer than 480nm is 92nm",
+    "layers": [
+      "MINT3B"
+    ],
+    "process": "freePDK15"
+  },
+  "RULE_MINT3011A": {
+    "rule": "Minimum spacing of MINT3A when MINT3A is wider than 120nm and longer than 1200nm is 120nm",
+    "layers": [
+      "MINT3A"
+    ],
+    "process": "freePDK15"
+  },
+  "RULE_MINT3011B": {
+    "rule": "Minimum spacing of MINT3B when MINT3B is wider than 120nm and longer than 1200nm is 120nm",
+    "layers": [
+      "MINT3B"
+    ],
+    "process": "freePDK15"
+  },
+  "RULE_MINT3012A": {
+    "rule": "Minimum spacing of MINT3A when MINT3A is wider than 240nm and longer than 1800nm is 240nm",
+    "layers": [
+      "MINT3A"
+    ],
+    "process": "freePDK15"
+  },
+  "RULE_MINT3012B": {
+    "rule": "Minimum spacing of MINT3B when MINT3B is wider than 240nm and longer than 1800nm is 240nm",
+    "layers": [
+      "MINT3B"
+    ],
+    "process": "freePDK15"
+  },
+  "RULE_MINT3013A": {
+    "rule": "Minimum spacing of MINT3A when MINT3A is wider than 320nm and longer than 2400nm is 320nm",
+    "layers": [
+      "MINT3A"
+    ],
+    "process": "freePDK15"
+  },
+  "RULE_MINT3013B": {
+    "rule": "Minimum spacing of MINT3B when MINT3B is wider than 320nm and longer than 2400nm is 320nm",
+    "layers": [
+      "MINT3B"
+    ],
+    "process": "freePDK15"
+  },
+  "RULE_MINT3014A": {
+    "rule": "Minimum spacing of MINT3A when MINT3A is wider than 600nm and longer than 2400nm is 600nm",
+    "layers": [
+      "MINT3A"
+    ],
+    "process": "freePDK15"
+  },
+  "RULE_MINT3014B": {
+    "rule": "Minimum spacing of MINT3B when MINT3B is wider than 600nm and longer than 2400nm is 600nm",
+    "layers": [
+      "MINT3B"
+    ],
+    "process": "freePDK15"
+  },
+  "RULE_MINT3015A": {
+    "rule": "Minimum spacing of MINT3A to MINT3B when MINT3B is wider than 32nm and longer than 240nm is 44nm",
+    "layers": [
+      "MINT3B",
+      "MINT3A"
+    ],
+    "process": "freePDK15"
+  },
+  "RULE_MINT3015B": {
+    "rule": "Minimum spacing of MINT3B to MINT3A when MINT3A is wider than 32nm and longer than 240nm is 44nm",
+    "layers": [
+      "MINT3B",
+      "MINT3A"
+    ],
+    "process": "freePDK15"
+  },
+  "RULE_MINT3016A": {
+    "rule": "Minimum spacing of MINT3A to MINT3B when MINT3B is wider than 40nm and longer than 240nm is 50nm",
+    "layers": [
+      "MINT3B",
+      "MINT3A"
+    ],
+    "process": "freePDK15"
+  },
+  "RULE_MINT3016B": {
+    "rule": "Minimum spacing of MINT3B to MINT3A when MINT3A is wider than 40nm and longer than 240nm is 50nm",
+    "layers": [
+      "MINT3B",
+      "MINT3A"
+    ],
+    "process": "freePDK15"
+  },
+  "RULE_MINT3017A": {
+    "rule": "Minimum spacing of MINT3A to MINT3B when MINT3B is wider than 64nm and longer than 480nm is 60nm",
+    "layers": [
+      "MINT3B",
+      "MINT3A"
+    ],
+    "process": "freePDK15"
+  },
+  "RULE_MINT3017B": {
+    "rule": "Minimum spacing of MINT3B to MINT3A when MINT3A is wider than 64nm and longer than 480nm is 60nm",
+    "layers": [
+      "MINT3B",
+      "MINT3A"
+    ],
+    "process": "freePDK15"
+  },
+  "RULE_MINT3018A": {
+    "rule": "Minimum spacing of MINT3A to MINT3B when MINT3B is wider than 120nm and longer than 1200nm is 78nm",
+    "layers": [
+      "MINT3B",
+      "MINT3A"
+    ],
+    "process": "freePDK15"
+  },
+  "RULE_MINT3018B": {
+    "rule": "Minimum spacing of MINT3B to MINT3A when MINT3A is wider than 120nm and longer than 1200nm is 78nm",
+    "layers": [
+      "MINT3B",
+      "MINT3A"
+    ],
+    "process": "freePDK15"
+  },
+  "RULE_MINT3019A": {
+    "rule": "Minimum spacing of MINT3A to MINT3B when MINT3B is wider than 240nm and longer than 1800nm is 156nm",
+    "layers": [
+      "MINT3B",
+      "MINT3A"
+    ],
+    "process": "freePDK15"
+  },
+  "RULE_MINT3019B": {
+    "rule": "Minimum spacing of MINT3B to MINT3A when MINT3A is wider than 240nm and longer than 1800nm is 156nm",
+    "layers": [
+      "MINT3B",
+      "MINT3A"
+    ],
+    "process": "freePDK15"
+  },
+  "RULE_MINT3020A": {
+    "rule": "Minimum spacing of MINT3A to MINT3B when MINT3B is wider than 320nm and longer than 2400nm is 200nm",
+    "layers": [
+      "MINT3B",
+      "MINT3A"
+    ],
+    "process": "freePDK15"
+  },
+  "RULE_MINT3020B": {
+    "rule": "Minimum spacing of MINT3B to MINT3A when MINT3A is wider than 320nm and longer than 2400nm is 200nm",
+    "layers": [
+      "MINT3B",
+      "MINT3A"
+    ],
+    "process": "freePDK15"
+  },
+  "RULE_MINT3021A": {
+    "rule": "Minimum spacing of MINT3A to MINT3B when MINT3B is wider than 600nm and longer than 2400nm is 400nm",
+    "layers": [
+      "MINT3B",
+      "MINT3A"
+    ],
+    "process": "freePDK15"
+  },
+  "RULE_MINT3021B": {
+    "rule": "Minimum spacing of MINT3B to MINT3A when MINT3A is wider than 600nm and longer than 2400nm is 400nm",
+    "layers": [
+      "MINT3B",
+      "MINT3A"
+    ],
+    "process": "freePDK15"
+  },
+  "RULE_MINT3022": {
+    "rule": "Minimum overlap of MINT3A and MINT3B (stitch region length)",
+    "layers": [
+      "MINT3B",
+      "MINT3A"
+    ],
+    "process": "freePDK15"
+  },
+  "RULE_MINT3023A": {
+    "rule": "Allowed enclosures of VINT2 by MINT3A are [0.028,0.002], [0.032,0], or [0.01,0.01] on opposite sides",
+    "layers": [
+      "VINT2",
+      "MINT3A"
+    ],
+    "process": "freePDK15"
+  },
+  "RULE_MINT3023B": {
+    "rule": "Allowed enclosures of VINT2 by MINT3B are [0.028,0.002], [0.032,0], or [0.01,0.01] on opposite sides",
+    "layers": [
+      "MINT3B",
+      "VINT2"
+    ],
+    "process": "freePDK15"
+  },
+  "RULE_MINT3023": {
+    "rule": "Allowed enclosures of VINT2 by MINT3 are [0.028,0.002], [0.032,0], or [0.01,0.01] on opposite sides",
+    "layers": [
+      "MINT3",
+      "VINT2"
+    ],
+    "process": "freePDK15"
+  },
+  "RULE_MINT3024": {
+    "rule": "Allowed enclosures of VINT2 by MINT3A-MINT3B stitches",
+    "layers": [
+      "MINT3B",
+      "VINT2",
+      "MINT3A"
+    ],
+    "process": "freePDK15"
+  },
+  "RULE_MINT3026A": {
+    "rule": "VINT2 shape must be rectangular if enclosing MINT3A wire width >= 60nm",
+    "layers": [
+      "VINT2",
+      "MINT3A"
+    ],
+    "process": "freePDK15"
+  },
+  "RULE_MINT3026B": {
+    "rule": "VINT2 shape must be rectangular if enclosing MINT3B wire width >= 60nm",
+    "layers": [
+      "MINT3B",
+      "VINT2"
+    ],
+    "process": "freePDK15"
+  },
+  "RULE_MINT3027A": {
+    "rule": "MINT3A minimum area for rectangular shape is 0.0024um2",
+    "layers": [
+      "MINT3A"
+    ],
+    "process": "freePDK15"
+  },
+  "RULE_MINT3027B": {
+    "rule": "MINT3B minimum area for rectangular shape is 0.0024um2",
+    "layers": [
+      "MINT3B"
+    ],
+    "process": "freePDK15"
+  },
+  "RULE_MINT3027": {
+    "rule": "MINT3 minimum area for rectangular shape is 0.0024um2",
+    "layers": [
+      "MINT3"
+    ],
+    "process": "freePDK15"
+  },
+  "RULE_MINT3028A": {
+    "rule": "MINT3A min area for non-rectangular shape is 0.0036um2",
+    "layers": [
+      "MINT3A"
+    ],
+    "process": "freePDK15"
+  },
+  "RULE_MINT3028B": {
+    "rule": "MINT3B min area for non-rectangular shape is 0.0036um2",
+    "layers": [
+      "MINT3B"
+    ],
+    "process": "freePDK15"
+  },
+  "RULE_MINT4001A": {
+    "rule": "MINT4A width > 28nm",
+    "layers": [
+      "MINT4A"
+    ],
+    "process": "freePDK15"
+  },
+  "RULE_MINT4001B": {
+    "rule": "MINT4B width > 28nm",
+    "layers": [
+      "MINT4B"
+    ],
+    "process": "freePDK15"
+  },
+  "RULE_MINT4001": {
+    "rule": "MINT4 width > 28nm",
+    "layers": [
+      "MINT4"
+    ],
+    "process": "freePDK15"
+  },
+  "RULE_MINT4002A": {
+    "rule": "One of two edges connected to the same vertex must have at least one of 56nm",
+    "layers": [],
+    "process": "freePDK15"
+  },
+  "RULE_MINT4002B": {
+    "rule": "One of two edges connected to the same vertex must have at least one of 56nm",
+    "layers": [],
+    "process": "freePDK15"
+  },
+  "RULE_MINT4002": {
+    "rule": "One of two edges connected to the same vertex must have at least one of 56nm",
+    "layers": [],
+    "process": "freePDK15"
+  },
+  "RULE_MINT4003A": {
+    "rule": "maximum length of MINT4A for wires with min width 28nm is 1.8um",
+    "layers": [
+      "MINT4A"
+    ],
+    "process": "freePDK15"
+  },
+  "RULE_MINT4003B": {
+    "rule": "maximum length of MINT4B for wires with min width 28nm is 1.8um",
+    "layers": [
+      "MINT4B"
+    ],
+    "process": "freePDK15"
+  },
+  "RULE_MINT4003": {
+    "rule": "maximum length of MINT4 for wires with min width 28nm is 1.8um",
+    "layers": [
+      "MINT4"
+    ],
+    "process": "freePDK15"
+  },
+  "RULE_MINT4004A": {
+    "rule": "MINT4A end-of-line spacing (end-of-line edge defined as edge < 32nm) is 68nm",
+    "layers": [
+      "MINT4A"
+    ],
+    "process": "freePDK15"
+  },
+  "RULE_MINT4004B": {
+    "rule": "MINT4B end-of-line spacing (end-of-line edge defined as edge < 32nm) is 68nm",
+    "layers": [
+      "MINT4B"
+    ],
+    "process": "freePDK15"
+  },
+  "RULE_MINT4005A": {
+    "rule": "MINT4A min space and notch 54nm",
+    "layers": [
+      "MINT4A"
+    ],
+    "process": "freePDK15"
+  },
+  "RULE_MINT4005B": {
+    "rule": "MINT4B min space and notch 54nm",
+    "layers": [
+      "MINT4B"
+    ],
+    "process": "freePDK15"
+  },
+  "RULE_MINT4006AB": {
+    "rule": "min spacing of MINT4A to MINT4B 36nm",
+    "layers": [
+      "MINT4B",
+      "MINT4A"
+    ],
+    "process": "freePDK15"
+  },
+  "RULE_MINT4006": {
+    "rule": "min spacing of MINT4 to MINT4 36nm",
+    "layers": [
+      "MINT4"
+    ],
+    "process": "freePDK15"
+  },
+  "RULE_MINT4007AB": {
+    "rule": "End-of-line spacing of MINT4A to MINT4B (EOL edge defined as edge < 32nm) is 44nm",
+    "layers": [
+      "MINT4B",
+      "MINT4A"
+    ],
+    "process": "freePDK15"
+  },
+  "RULE_MINT4007": {
+    "rule": "End-of-line spacing of MINT4 to MINT4 (EOL edge defined as edge < 32nm) is 44nm",
+    "layers": [
+      "MINT4"
+    ],
+    "process": "freePDK15"
+  },
+  "RULE_MINT4008A": {
+    "rule": "Minimum spacing of MINT4A when MINT4A is wider than 32nm and longer than 240nm is 68nm",
+    "layers": [
+      "MINT4A"
+    ],
+    "process": "freePDK15"
+  },
+  "RULE_MINT4008B": {
+    "rule": "Minimum spacing of MINT4B when MINT4B is wider than 32nm and longer than 240nm is 68nm",
+    "layers": [
+      "MINT4B"
+    ],
+    "process": "freePDK15"
+  },
+  "RULE_MINT4009A": {
+    "rule": "Minimum spacing of MINT4A when MINT4A is wider than 40nm and longer than 240nm is 76nm",
+    "layers": [
+      "MINT4A"
+    ],
+    "process": "freePDK15"
+  },
+  "RULE_MINT4009B": {
+    "rule": "Minimum spacing of MINT4B when MINT4B is wider than 40nm and longer than 240nm is 76nm",
+    "layers": [
+      "MINT4B"
+    ],
+    "process": "freePDK15"
+  },
+  "RULE_MINT4010A": {
+    "rule": "Minimum spacing of MINT4A when MINT4A is wider than 64nm and longer than 480nm is 92nm",
+    "layers": [
+      "MINT4A"
+    ],
+    "process": "freePDK15"
+  },
+  "RULE_MINT4010B": {
+    "rule": "Minimum spacing of MINT4B when MINT4B is wider than 64nm and longer than 480nm is 92nm",
+    "layers": [
+      "MINT4B"
+    ],
+    "process": "freePDK15"
+  },
+  "RULE_MINT4011A": {
+    "rule": "Minimum spacing of MINT4A when MINT4A is wider than 120nm and longer than 1200nm is 120nm",
+    "layers": [
+      "MINT4A"
+    ],
+    "process": "freePDK15"
+  },
+  "RULE_MINT4011B": {
+    "rule": "Minimum spacing of MINT4B when MINT4B is wider than 120nm and longer than 1200nm is 120nm",
+    "layers": [
+      "MINT4B"
+    ],
+    "process": "freePDK15"
+  },
+  "RULE_MINT4012A": {
+    "rule": "Minimum spacing of MINT4A when MINT4A is wider than 240nm and longer than 1800nm is 240nm",
+    "layers": [
+      "MINT4A"
+    ],
+    "process": "freePDK15"
+  },
+  "RULE_MINT4012B": {
+    "rule": "Minimum spacing of MINT4B when MINT4B is wider than 240nm and longer than 1800nm is 240nm",
+    "layers": [
+      "MINT4B"
+    ],
+    "process": "freePDK15"
+  },
+  "RULE_MINT4013A": {
+    "rule": "Minimum spacing of MINT4A when MINT4A is wider than 320nm and longer than 2400nm is 320nm",
+    "layers": [
+      "MINT4A"
+    ],
+    "process": "freePDK15"
+  },
+  "RULE_MINT4013B": {
+    "rule": "Minimum spacing of MINT4B when MINT4B is wider than 320nm and longer than 2400nm is 320nm",
+    "layers": [
+      "MINT4B"
+    ],
+    "process": "freePDK15"
+  },
+  "RULE_MINT4014A": {
+    "rule": "Minimum spacing of MINT4A when MINT4A is wider than 600nm and longer than 2400nm is 600nm",
+    "layers": [
+      "MINT4A"
+    ],
+    "process": "freePDK15"
+  },
+  "RULE_MINT4014B": {
+    "rule": "Minimum spacing of MINT4B when MINT4B is wider than 600nm and longer than 2400nm is 600nm",
+    "layers": [
+      "MINT4B"
+    ],
+    "process": "freePDK15"
+  },
+  "RULE_MINT4015A": {
+    "rule": "Minimum spacing of MINT4A to MINT4B when MINT4B is wider than 32nm and longer than 240nm is 44nm",
+    "layers": [
+      "MINT4B",
+      "MINT4A"
+    ],
+    "process": "freePDK15"
+  },
+  "RULE_MINT4015B": {
+    "rule": "Minimum spacing of MINT4B to MINT4A when MINT4A is wider than 32nm and longer than 240nm is 44nm",
+    "layers": [
+      "MINT4B",
+      "MINT4A"
+    ],
+    "process": "freePDK15"
+  },
+  "RULE_MINT4016A": {
+    "rule": "Minimum spacing of MINT4A to MINT4B when MINT4B is wider than 40nm and longer than 240nm is 50nm",
+    "layers": [
+      "MINT4B",
+      "MINT4A"
+    ],
+    "process": "freePDK15"
+  },
+  "RULE_MINT4016B": {
+    "rule": "Minimum spacing of MINT4B to MINT4A when MINT4A is wider than 40nm and longer than 240nm is 50nm",
+    "layers": [
+      "MINT4B",
+      "MINT4A"
+    ],
+    "process": "freePDK15"
+  },
+  "RULE_MINT4017A": {
+    "rule": "Minimum spacing of MINT4A to MINT4B when MINT4B is wider than 64nm and longer than 480nm is 60nm",
+    "layers": [
+      "MINT4B",
+      "MINT4A"
+    ],
+    "process": "freePDK15"
+  },
+  "RULE_MINT4017B": {
+    "rule": "Minimum spacing of MINT4B to MINT4A when MINT4A is wider than 64nm and longer than 480nm is 60nm",
+    "layers": [
+      "MINT4B",
+      "MINT4A"
+    ],
+    "process": "freePDK15"
+  },
+  "RULE_MINT4018A": {
+    "rule": "Minimum spacing of MINT4A to MINT4B when MINT4B is wider than 120nm and longer than 1200nm is 78nm",
+    "layers": [
+      "MINT4B",
+      "MINT4A"
+    ],
+    "process": "freePDK15"
+  },
+  "RULE_MINT4018B": {
+    "rule": "Minimum spacing of MINT4B to MINT4A when MINT4A is wider than 120nm and longer than 1200nm is 78nm",
+    "layers": [
+      "MINT4B",
+      "MINT4A"
+    ],
+    "process": "freePDK15"
+  },
+  "RULE_MINT4019A": {
+    "rule": "Minimum spacing of MINT4A to MINT4B when MINT4B is wider than 240nm and longer than 1800nm is 156nm",
+    "layers": [
+      "MINT4B",
+      "MINT4A"
+    ],
+    "process": "freePDK15"
+  },
+  "RULE_MINT4019B": {
+    "rule": "Minimum spacing of MINT4B to MINT4A when MINT4A is wider than 240nm and longer than 1800nm is 156nm",
+    "layers": [
+      "MINT4B",
+      "MINT4A"
+    ],
+    "process": "freePDK15"
+  },
+  "RULE_MINT4020A": {
+    "rule": "Minimum spacing of MINT4A to MINT4B when MINT4B is wider than 320nm and longer than 2400nm is 200nm",
+    "layers": [
+      "MINT4B",
+      "MINT4A"
+    ],
+    "process": "freePDK15"
+  },
+  "RULE_MINT4020B": {
+    "rule": "Minimum spacing of MINT4B to MINT4A when MINT4A is wider than 320nm and longer than 2400nm is 200nm",
+    "layers": [
+      "MINT4B",
+      "MINT4A"
+    ],
+    "process": "freePDK15"
+  },
+  "RULE_MINT4021A": {
+    "rule": "Minimum spacing of MINT4A to MINT4B when MINT4B is wider than 600nm and longer than 2400nm is 400nm",
+    "layers": [
+      "MINT4B",
+      "MINT4A"
+    ],
+    "process": "freePDK15"
+  },
+  "RULE_MINT4021B": {
+    "rule": "Minimum spacing of MINT4B to MINT4A when MINT4A is wider than 600nm and longer than 2400nm is 400nm",
+    "layers": [
+      "MINT4B",
+      "MINT4A"
+    ],
+    "process": "freePDK15"
+  },
+  "RULE_MINT4022": {
+    "rule": "Minimum overlap of MINT4A and MINT4B (stitch region length)",
+    "layers": [
+      "MINT4B",
+      "MINT4A"
+    ],
+    "process": "freePDK15"
+  },
+  "RULE_MINT4023A": {
+    "rule": "Allowed enclosures of VINT3 by MINT4A are [0.028,0.002], [0.032,0], or [0.01,0.01] on opposite sides",
+    "layers": [
+      "MINT4A",
+      "VINT3"
+    ],
+    "process": "freePDK15"
+  },
+  "RULE_MINT4023B": {
+    "rule": "Allowed enclosures of VINT3 by MINT4B are [0.028,0.002], [0.032,0], or [0.01,0.01] on opposite sides",
+    "layers": [
+      "MINT4B",
+      "VINT3"
+    ],
+    "process": "freePDK15"
+  },
+  "RULE_MINT4023": {
+    "rule": "Allowed enclosures of VINT3 by MINT4 are [0.028,0.002], [0.032,0], or [0.01,0.01] on opposite sides",
+    "layers": [
+      "VINT3",
+      "MINT4"
+    ],
+    "process": "freePDK15"
+  },
+  "RULE_MINT4024": {
+    "rule": "Allowed enclosures of VINT3 by MINT4A-MINT4B stitches",
+    "layers": [
+      "MINT4B",
+      "MINT4A",
+      "VINT3"
+    ],
+    "process": "freePDK15"
+  },
+  "RULE_MINT4026A": {
+    "rule": "VINT3 shape must be rectangular if enclosing MINT4A wire width >= 60nm",
+    "layers": [
+      "MINT4A",
+      "VINT3"
+    ],
+    "process": "freePDK15"
+  },
+  "RULE_MINT4026B": {
+    "rule": "VINT3 shape must be rectangular if enclosing MINT4B wire width >= 60nm",
+    "layers": [
+      "MINT4B",
+      "VINT3"
+    ],
+    "process": "freePDK15"
+  },
+  "RULE_MINT4027A": {
+    "rule": "MINT4A minimum area for rectangular shape is 0.0024um2",
+    "layers": [
+      "MINT4A"
+    ],
+    "process": "freePDK15"
+  },
+  "RULE_MINT4027B": {
+    "rule": "MINT4B minimum area for rectangular shape is 0.0024um2",
+    "layers": [
+      "MINT4B"
+    ],
+    "process": "freePDK15"
+  },
+  "RULE_MINT4027": {
+    "rule": "MINT4 minimum area for rectangular shape is 0.0024um2",
+    "layers": [
+      "MINT4"
+    ],
+    "process": "freePDK15"
+  },
+  "RULE_MINT4028A": {
+    "rule": "MINT4A min area for non-rectangular shape is 0.0036um2",
+    "layers": [
+      "MINT4A"
+    ],
+    "process": "freePDK15"
+  },
+  "RULE_MINT4028B": {
+    "rule": "MINT4B min area for non-rectangular shape is 0.0036um2",
+    "layers": [
+      "MINT4B"
+    ],
+    "process": "freePDK15"
+  },
+  "RULE_MINT5001A": {
+    "rule": "MINT5A width > 28nm",
+    "layers": [
+      "MINT5A"
+    ],
+    "process": "freePDK15"
+  },
+  "RULE_MINT5001B": {
+    "rule": "MINT5B width > 28nm",
+    "layers": [
+      "MINT5B"
+    ],
+    "process": "freePDK15"
+  },
+  "RULE_MINT5001": {
+    "rule": "MINT5 width > 28nm",
+    "layers": [
+      "MINT5"
+    ],
+    "process": "freePDK15"
+  },
+  "RULE_MINT5002A": {
+    "rule": "One of two edges connected to the same vertex must have at least one of 56nm",
+    "layers": [],
+    "process": "freePDK15"
+  },
+  "RULE_MINT5002B": {
+    "rule": "One of two edges connected to the same vertex must have at least one of 56nm",
+    "layers": [],
+    "process": "freePDK15"
+  },
+  "RULE_MINT5002": {
+    "rule": "One of two edges connected to the same vertex must have at least one of 56nm",
+    "layers": [],
+    "process": "freePDK15"
+  },
+  "RULE_MINT5003A": {
+    "rule": "maximum length of MINT5A for wires with min width 28nm is 1.8um",
+    "layers": [
+      "MINT5A"
+    ],
+    "process": "freePDK15"
+  },
+  "RULE_MINT5003B": {
+    "rule": "maximum length of MINT5B for wires with min width 28nm is 1.8um",
+    "layers": [
+      "MINT5B"
+    ],
+    "process": "freePDK15"
+  },
+  "RULE_MINT5003": {
+    "rule": "maximum length of MINT5 for wires with min width 28nm is 1.8um",
+    "layers": [
+      "MINT5"
+    ],
+    "process": "freePDK15"
+  },
+  "RULE_MINT5004A": {
+    "rule": "MINT5A end-of-line spacing (end-of-line edge defined as edge < 32nm) is 68nm",
+    "layers": [
+      "MINT5A"
+    ],
+    "process": "freePDK15"
+  },
+  "RULE_MINT5004B": {
+    "rule": "MINT5B end-of-line spacing (end-of-line edge defined as edge < 32nm) is 68nm",
+    "layers": [
+      "MINT5B"
+    ],
+    "process": "freePDK15"
+  },
+  "RULE_MINT5005A": {
+    "rule": "MINT5A min space and notch 54nm",
+    "layers": [
+      "MINT5A"
+    ],
+    "process": "freePDK15"
+  },
+  "RULE_MINT5005B": {
+    "rule": "MINT5B min space and notch 54nm",
+    "layers": [
+      "MINT5B"
+    ],
+    "process": "freePDK15"
+  },
+  "RULE_MINT5006AB": {
+    "rule": "min spacing of MINT5A to MINT5B 36nm",
+    "layers": [
+      "MINT5B",
+      "MINT5A"
+    ],
+    "process": "freePDK15"
+  },
+  "RULE_MINT5006": {
+    "rule": "min spacing of MINT5 to MINT5 36nm",
+    "layers": [
+      "MINT5"
+    ],
+    "process": "freePDK15"
+  },
+  "RULE_MINT5007AB": {
+    "rule": "End-of-line spacing of MINT5A to MINT5B (EOL edge defined as edge < 32nm) is 44nm",
+    "layers": [
+      "MINT5B",
+      "MINT5A"
+    ],
+    "process": "freePDK15"
+  },
+  "RULE_MINT5007": {
+    "rule": "End-of-line spacing of MINT5 to MINT5 (EOL edge defined as edge < 32nm) is 44nm",
+    "layers": [
+      "MINT5"
+    ],
+    "process": "freePDK15"
+  },
+  "RULE_MINT5008A": {
+    "rule": "Minimum spacing of MINT5A when MINT5A is wider than 32nm and longer than 240nm is 68nm",
+    "layers": [
+      "MINT5A"
+    ],
+    "process": "freePDK15"
+  },
+  "RULE_MINT5008B": {
+    "rule": "Minimum spacing of MINT5B when MINT5B is wider than 32nm and longer than 240nm is 68nm",
+    "layers": [
+      "MINT5B"
+    ],
+    "process": "freePDK15"
+  },
+  "RULE_MINT5009A": {
+    "rule": "Minimum spacing of MINT5A when MINT5A is wider than 40nm and longer than 240nm is 76nm",
+    "layers": [
+      "MINT5A"
+    ],
+    "process": "freePDK15"
+  },
+  "RULE_MINT5009B": {
+    "rule": "Minimum spacing of MINT5B when MINT5B is wider than 40nm and longer than 240nm is 76nm",
+    "layers": [
+      "MINT5B"
+    ],
+    "process": "freePDK15"
+  },
+  "RULE_MINT5010A": {
+    "rule": "Minimum spacing of MINT5A when MINT5A is wider than 64nm and longer than 480nm is 92nm",
+    "layers": [
+      "MINT5A"
+    ],
+    "process": "freePDK15"
+  },
+  "RULE_MINT5010B": {
+    "rule": "Minimum spacing of MINT5B when MINT5B is wider than 64nm and longer than 480nm is 92nm",
+    "layers": [
+      "MINT5B"
+    ],
+    "process": "freePDK15"
+  },
+  "RULE_MINT5011A": {
+    "rule": "Minimum spacing of MINT5A when MINT5A is wider than 120nm and longer than 1200nm is 120nm",
+    "layers": [
+      "MINT5A"
+    ],
+    "process": "freePDK15"
+  },
+  "RULE_MINT5011B": {
+    "rule": "Minimum spacing of MINT5B when MINT5B is wider than 120nm and longer than 1200nm is 120nm",
+    "layers": [
+      "MINT5B"
+    ],
+    "process": "freePDK15"
+  },
+  "RULE_MINT5012A": {
+    "rule": "Minimum spacing of MINT5A when MINT5A is wider than 240nm and longer than 1800nm is 240nm",
+    "layers": [
+      "MINT5A"
+    ],
+    "process": "freePDK15"
+  },
+  "RULE_MINT5012B": {
+    "rule": "Minimum spacing of MINT5B when MINT5B is wider than 240nm and longer than 1800nm is 240nm",
+    "layers": [
+      "MINT5B"
+    ],
+    "process": "freePDK15"
+  },
+  "RULE_MINT5013A": {
+    "rule": "Minimum spacing of MINT5A when MINT5A is wider than 320nm and longer than 2400nm is 320nm",
+    "layers": [
+      "MINT5A"
+    ],
+    "process": "freePDK15"
+  },
+  "RULE_MINT5013B": {
+    "rule": "Minimum spacing of MINT5B when MINT5B is wider than 320nm and longer than 2400nm is 320nm",
+    "layers": [
+      "MINT5B"
+    ],
+    "process": "freePDK15"
+  },
+  "RULE_MINT5014A": {
+    "rule": "Minimum spacing of MINT5A when MINT5A is wider than 600nm and longer than 2400nm is 600nm",
+    "layers": [
+      "MINT5A"
+    ],
+    "process": "freePDK15"
+  },
+  "RULE_MINT5014B": {
+    "rule": "Minimum spacing of MINT5B when MINT5B is wider than 600nm and longer than 2400nm is 600nm",
+    "layers": [
+      "MINT5B"
+    ],
+    "process": "freePDK15"
+  },
+  "RULE_MINT5015A": {
+    "rule": "Minimum spacing of MINT5A to MINT5B when MINT5B is wider than 32nm and longer than 240nm is 44nm",
+    "layers": [
+      "MINT5B",
+      "MINT5A"
+    ],
+    "process": "freePDK15"
+  },
+  "RULE_MINT5015B": {
+    "rule": "Minimum spacing of MINT5B to MINT5A when MINT5A is wider than 32nm and longer than 240nm is 44nm",
+    "layers": [
+      "MINT5B",
+      "MINT5A"
+    ],
+    "process": "freePDK15"
+  },
+  "RULE_MINT5016A": {
+    "rule": "Minimum spacing of MINT5A to MINT5B when MINT5B is wider than 40nm and longer than 240nm is 50nm",
+    "layers": [
+      "MINT5B",
+      "MINT5A"
+    ],
+    "process": "freePDK15"
+  },
+  "RULE_MINT5016B": {
+    "rule": "Minimum spacing of MINT5B to MINT5A when MINT5A is wider than 40nm and longer than 240nm is 50nm",
+    "layers": [
+      "MINT5B",
+      "MINT5A"
+    ],
+    "process": "freePDK15"
+  },
+  "RULE_MINT5017A": {
+    "rule": "Minimum spacing of MINT5A to MINT5B when MINT5B is wider than 64nm and longer than 480nm is 60nm",
+    "layers": [
+      "MINT5B",
+      "MINT5A"
+    ],
+    "process": "freePDK15"
+  },
+  "RULE_MINT5017B": {
+    "rule": "Minimum spacing of MINT5B to MINT5A when MINT5A is wider than 64nm and longer than 480nm is 60nm",
+    "layers": [
+      "MINT5B",
+      "MINT5A"
+    ],
+    "process": "freePDK15"
+  },
+  "RULE_MINT5018A": {
+    "rule": "Minimum spacing of MINT5A to MINT5B when MINT5B is wider than 120nm and longer than 1200nm is 78nm",
+    "layers": [
+      "MINT5B",
+      "MINT5A"
+    ],
+    "process": "freePDK15"
+  },
+  "RULE_MINT5018B": {
+    "rule": "Minimum spacing of MINT5B to MINT5A when MINT5A is wider than 120nm and longer than 1200nm is 78nm",
+    "layers": [
+      "MINT5B",
+      "MINT5A"
+    ],
+    "process": "freePDK15"
+  },
+  "RULE_MINT5019A": {
+    "rule": "Minimum spacing of MINT5A to MINT5B when MINT5B is wider than 240nm and longer than 1800nm is 156nm",
+    "layers": [
+      "MINT5B",
+      "MINT5A"
+    ],
+    "process": "freePDK15"
+  },
+  "RULE_MINT5019B": {
+    "rule": "Minimum spacing of MINT5B to MINT5A when MINT5A is wider than 240nm and longer than 1800nm is 156nm",
+    "layers": [
+      "MINT5B",
+      "MINT5A"
+    ],
+    "process": "freePDK15"
+  },
+  "RULE_MINT5020A": {
+    "rule": "Minimum spacing of MINT5A to MINT5B when MINT5B is wider than 320nm and longer than 2400nm is 200nm",
+    "layers": [
+      "MINT5B",
+      "MINT5A"
+    ],
+    "process": "freePDK15"
+  },
+  "RULE_MINT5020B": {
+    "rule": "Minimum spacing of MINT5B to MINT5A when MINT5A is wider than 320nm and longer than 2400nm is 200nm",
+    "layers": [
+      "MINT5B",
+      "MINT5A"
+    ],
+    "process": "freePDK15"
+  },
+  "RULE_MINT5021A": {
+    "rule": "Minimum spacing of MINT5A to MINT5B when MINT5B is wider than 600nm and longer than 2400nm is 400nm",
+    "layers": [
+      "MINT5B",
+      "MINT5A"
+    ],
+    "process": "freePDK15"
+  },
+  "RULE_MINT5021B": {
+    "rule": "Minimum spacing of MINT5B to MINT5A when MINT5A is wider than 600nm and longer than 2400nm is 400nm",
+    "layers": [
+      "MINT5B",
+      "MINT5A"
+    ],
+    "process": "freePDK15"
+  },
+  "RULE_MINT5022": {
+    "rule": "Minimum overlap of MINT5A and MINT5B (stitch region length)",
+    "layers": [
+      "MINT5B",
+      "MINT5A"
+    ],
+    "process": "freePDK15"
+  },
+  "RULE_MINT5023A": {
+    "rule": "Allowed enclosures of VINT4 by MINT5A are [0.028,0.002], [0.032,0], or [0.01,0.01] on opposite sides",
+    "layers": [
+      "MINT5A",
+      "VINT4"
+    ],
+    "process": "freePDK15"
+  },
+  "RULE_MINT5023B": {
+    "rule": "Allowed enclosures of VINT4 by MINT5B are [0.028,0.002], [0.032,0], or [0.01,0.01] on opposite sides",
+    "layers": [
+      "MINT5B",
+      "VINT4"
+    ],
+    "process": "freePDK15"
+  },
+  "RULE_MINT5023": {
+    "rule": "Allowed enclosures of VINT4 by MINT5 are [0.028,0.002], [0.032,0], or [0.01,0.01] on opposite sides",
+    "layers": [
+      "VINT4",
+      "MINT5"
+    ],
+    "process": "freePDK15"
+  },
+  "RULE_MINT5024": {
+    "rule": "Allowed enclosures of VINT4 by MINT5A-MINT5B stitches",
+    "layers": [
+      "MINT5B",
+      "MINT5A",
+      "VINT4"
+    ],
+    "process": "freePDK15"
+  },
+  "RULE_MINT5026A": {
+    "rule": "VINT4 shape must be rectangular if enclosing MINT5A wire width >= 60nm",
+    "layers": [
+      "MINT5A",
+      "VINT4"
+    ],
+    "process": "freePDK15"
+  },
+  "RULE_MINT5026B": {
+    "rule": "VINT4 shape must be rectangular if enclosing MINT5B wire width >= 60nm",
+    "layers": [
+      "MINT5B",
+      "VINT4"
+    ],
+    "process": "freePDK15"
+  },
+  "RULE_MINT5027A": {
+    "rule": "MINT5A minimum area for rectangular shape is 0.0024um2",
+    "layers": [
+      "MINT5A"
+    ],
+    "process": "freePDK15"
+  },
+  "RULE_MINT5027B": {
+    "rule": "MINT5B minimum area for rectangular shape is 0.0024um2",
+    "layers": [
+      "MINT5B"
+    ],
+    "process": "freePDK15"
+  },
+  "RULE_MINT5027": {
+    "rule": "MINT5 minimum area for rectangular shape is 0.0024um2",
+    "layers": [
+      "MINT5"
+    ],
+    "process": "freePDK15"
+  },
+  "RULE_MINT5028A": {
+    "rule": "MINT5A min area for non-rectangular shape is 0.0036um2",
+    "layers": [
+      "MINT5A"
+    ],
+    "process": "freePDK15"
+  },
+  "RULE_MINT5028B": {
+    "rule": "MINT5B min area for non-rectangular shape is 0.0036um2",
+    "layers": [
+      "MINT5B"
+    ],
+    "process": "freePDK15"
+  },
+  "RULE_VSMG1001a": {
+    "rule": "VSMG1 is a square with 56nm edge length",
+    "layers": [
+      "VSMG1"
+    ],
+    "process": "freePDK15"
+  },
+  "RULE_VSMG1001b": {
+    "rule": "VSMG1 is a rectangle 56nm x 112nm when enclosed in MSMG1 with width >= 120nm",
+    "layers": [
+      "VSMG1",
+      "MSMG1"
+    ],
+    "process": "freePDK15"
+  },
+  "RULE_VSMG1001c": {
+    "rule": "VSMG1 is a rectangle 56nm x 112nm when enclosed in MSMG2 with width >= 120nm",
+    "layers": [
+      "MSMG2",
+      "VSMG1"
+    ],
+    "process": "freePDK15"
+  },
+  "RULE_VSMG1002": {
+    "rule": "Minimum spacing of VSMG1 if runlength exactly = 56nm is 72nm",
+    "layers": [
+      "VSMG1"
+    ],
+    "process": "freePDK15"
+  },
+  "RULE_VSMG1003": {
+    "rule": "Minimum spacing of VSMG1 if runlength < 56nm is 100nm",
+    "layers": [
+      "VSMG1"
+    ],
+    "process": "freePDK15"
+  },
+  "RULE_VSMG1004": {
+    "rule": "VSMG1 must be inside (MSMG1 and MSMG2)",
+    "layers": [
+      "MSMG2",
+      "VSMG1",
+      "MSMG1"
+    ],
+    "process": "freePDK15"
+  },
+  "RULE_VSMG1005": {
+    "rule": "VSMG1 shape must be rectangular if enclosing MSMG1 wire width >= 120nm",
+    "layers": [
+      "VSMG1",
+      "MSMG1"
+    ],
+    "process": "freePDK15"
+  },
+  "RULE_VSMG2001a": {
+    "rule": "VSMG2 is a square with 56nm edge length",
+    "layers": [
+      "VSMG2"
+    ],
+    "process": "freePDK15"
+  },
+  "RULE_VSMG2001b": {
+    "rule": "VSMG2 is a rectangle 56nm x 112nm when enclosed in MSMG2 with width >= 120nm",
+    "layers": [
+      "MSMG2",
+      "VSMG2"
+    ],
+    "process": "freePDK15"
+  },
+  "RULE_VSMG2001c": {
+    "rule": "VSMG2 is a rectangle 56nm x 112nm when enclosed in MSMG2 with width >= 120nm",
+    "layers": [
+      "MSMG2",
+      "VSMG2"
+    ],
+    "process": "freePDK15"
+  },
+  "RULE_VSMG2002": {
+    "rule": "Minimum spacing of VSMG2 if runlength exactly = 56nm is 72nm",
+    "layers": [
+      "VSMG2"
+    ],
+    "process": "freePDK15"
+  },
+  "RULE_VSMG2003": {
+    "rule": "Minimum spacing of VSMG2 if runlength < 56nm is 100nm",
+    "layers": [
+      "VSMG2"
+    ],
+    "process": "freePDK15"
+  },
+  "RULE_VSMG2004": {
+    "rule": "VSMG2 must be inside (MSMG2 and MSMG3)",
+    "layers": [
+      "MSMG2",
+      "MSMG3",
+      "VSMG2"
+    ],
+    "process": "freePDK15"
+  },
+  "RULE_VSMG2005": {
+    "rule": "VSMG2 shape must be rectangular if enclosing MSMG2 wire width >= 120nm",
+    "layers": [
+      "MSMG2",
+      "VSMG2"
+    ],
+    "process": "freePDK15"
+  },
+  "RULE_VSMG3001a": {
+    "rule": "VSMG3 is a square with 56nm edge length",
+    "layers": [
+      "VSMG3"
+    ],
+    "process": "freePDK15"
+  },
+  "RULE_VSMG3001b": {
+    "rule": "VSMG3 is a rectangle 56nm x 112nm when enclosed in MSMG3 with width >= 120nm",
+    "layers": [
+      "MSMG3",
+      "VSMG3"
+    ],
+    "process": "freePDK15"
+  },
+  "RULE_VSMG3001c": {
+    "rule": "VSMG3 is a rectangle 56nm x 112nm when enclosed in MSMG3 with width >= 120nm",
+    "layers": [
+      "MSMG3",
+      "VSMG3"
+    ],
+    "process": "freePDK15"
+  },
+  "RULE_VSMG3002": {
+    "rule": "Minimum spacing of VSMG3 if runlength exactly = 56nm is 72nm",
+    "layers": [
+      "VSMG3"
+    ],
+    "process": "freePDK15"
+  },
+  "RULE_VSMG3003": {
+    "rule": "Minimum spacing of VSMG3 if runlength < 56nm is 100nm",
+    "layers": [
+      "VSMG3"
+    ],
+    "process": "freePDK15"
+  },
+  "RULE_VSMG3004": {
+    "rule": "VSMG3 must be inside (MSMG3 and MSMG4)",
+    "layers": [
+      "VSMG3",
+      "MSMG3",
+      "MSMG4"
+    ],
+    "process": "freePDK15"
+  },
+  "RULE_VSMG3005": {
+    "rule": "VSMG3 shape must be rectangular if enclosing MSMG3 wire width >= 120nm",
+    "layers": [
+      "MSMG3",
+      "VSMG3"
+    ],
+    "process": "freePDK15"
+  },
+  "RULE_VSMG4001a": {
+    "rule": "VSMG4 is a square with 56nm edge length",
+    "layers": [
+      "VSMG4"
+    ],
+    "process": "freePDK15"
+  },
+  "RULE_VSMG4001b": {
+    "rule": "VSMG4 is a rectangle 56nm x 112nm when enclosed in MSMG4 with width >= 120nm",
+    "layers": [
+      "MSMG4",
+      "VSMG4"
+    ],
+    "process": "freePDK15"
+  },
+  "RULE_VSMG4001c": {
+    "rule": "VSMG4 is a rectangle 56nm x 112nm when enclosed in MSMG4 with width >= 120nm",
+    "layers": [
+      "MSMG4",
+      "VSMG4"
+    ],
+    "process": "freePDK15"
+  },
+  "RULE_VSMG4002": {
+    "rule": "Minimum spacing of VSMG4 if runlength exactly = 56nm is 72nm",
+    "layers": [
+      "VSMG4"
+    ],
+    "process": "freePDK15"
+  },
+  "RULE_VSMG4003": {
+    "rule": "Minimum spacing of VSMG4 if runlength < 56nm is 100nm",
+    "layers": [
+      "VSMG4"
+    ],
+    "process": "freePDK15"
+  },
+  "RULE_VSMG4004": {
+    "rule": "VSMG4 must be inside (MSMG4 and MSMG5)",
+    "layers": [
+      "MSMG5",
+      "MSMG4",
+      "VSMG4"
+    ],
+    "process": "freePDK15"
+  },
+  "RULE_VSMG4005": {
+    "rule": "VSMG4 shape must be rectangular if enclosing MSMG4 wire width >= 120nm",
+    "layers": [
+      "MSMG4",
+      "VSMG4"
+    ],
+    "process": "freePDK15"
+  },
+  "RULE_VSMG5001a": {
+    "rule": "VSMG5 is a square with 56nm edge length",
+    "layers": [
+      "VSMG5"
+    ],
+    "process": "freePDK15"
+  },
+  "RULE_VSMG5001b": {
+    "rule": "VSMG5 is a rectangle 56nm x 112nm when enclosed in MSMG5 with width >= 120nm",
+    "layers": [
+      "MSMG5",
+      "VSMG5"
+    ],
+    "process": "freePDK15"
+  },
+  "RULE_VSMG5001c": {
+    "rule": "VSMG5 is a rectangle 56nm x 112nm when enclosed in MSMG5 with width >= 120nm",
+    "layers": [
+      "MSMG5",
+      "VSMG5"
+    ],
+    "process": "freePDK15"
+  },
+  "RULE_VSMG5002": {
+    "rule": "Minimum spacing of VSMG5 if runlength exactly = 56nm is 72nm",
+    "layers": [
+      "VSMG5"
+    ],
+    "process": "freePDK15"
+  },
+  "RULE_VSMG5003": {
+    "rule": "Minimum spacing of VSMG5 if runlength < 56nm is 100nm",
+    "layers": [
+      "VSMG5"
+    ],
+    "process": "freePDK15"
+  },
+  "RULE_VSMG5004": {
+    "rule": "VSMG5 must be inside (MSMG5 and MG1)",
+    "layers": [
+      "MSMG5",
+      "MG1",
+      "VSMG5"
+    ],
+    "process": "freePDK15"
+  },
+  "RULE_VSMG5005": {
+    "rule": "VSMG5 shape must be rectangular if enclosing MSMG5 wire width >= 120nm",
+    "layers": [
+      "MSMG5",
+      "VSMG5"
+    ],
+    "process": "freePDK15"
+  },
+  "RULE_MSMG1001": {
+    "rule": "MSMG1 width > 56nm",
+    "layers": [
+      "MSMG1"
+    ],
+    "process": "freePDK15"
+  },
+  "RULE_MSMG1002": {
+    "rule": "One of two edges connected to the same vertex must have at least one of 112nm",
+    "layers": [],
+    "process": "freePDK15"
+  },
+  "RULE_MSMG1003": {
+    "rule": "maximum length of MSMG1 for wires with min width 56nm is 1.92um",
+    "layers": [
+      "MSMG1"
+    ],
+    "process": "freePDK15"
+  },
+  "RULE_MSMG1004": {
+    "rule": "MSMG1 end-of-line spacing (end-of-line edge defined as edge < 64nm) is 136nm",
+    "layers": [
+      "MSMG1"
+    ],
+    "process": "freePDK15"
+  },
+  "RULE_MSMG1005": {
+    "rule": "MSMG1 min space and notch 56nm",
+    "layers": [
+      "MSMG1"
+    ],
+    "process": "freePDK15"
+  },
+  "RULE_MSMG1006": {
+    "rule": "Minimum spacing of MSMG1 when MSMG1 is wider than 64nm and longer than 480nm is 92nm",
+    "layers": [
+      "MSMG1"
+    ],
+    "process": "freePDK15"
+  },
+  "RULE_MSMG1007": {
+    "rule": "Minimum spacing of MSMG1 when MSMG1 is wider than 120nm and longer than 1200nm is 120nm",
+    "layers": [
+      "MSMG1"
+    ],
+    "process": "freePDK15"
+  },
+  "RULE_MSMG1008": {
+    "rule": "Minimum spacing of MSMG1 when MSMG1 is wider than 240nm and longer than 1800nm is 240nm",
+    "layers": [
+      "MSMG1"
+    ],
+    "process": "freePDK15"
+  },
+  "RULE_MSMG1009": {
+    "rule": "Minimum spacing of MSMG1 when MSMG1 is wider than 320nm and longer than 2400nm is 320nm",
+    "layers": [
+      "MSMG1"
+    ],
+    "process": "freePDK15"
+  },
+  "RULE_MSMG1010": {
+    "rule": "Minimum spacing of MSMG1 when MSMG1 is wider than 600nm and longer than 2400nm is 600nm",
+    "layers": [
+      "MSMG1"
+    ],
+    "process": "freePDK15"
+  },
+  "RULE_MSMG1011": {
+    "rule": "Allowed enclosures of VINT5 by MSMG1 are [0.028,0.002], [0.032,0], or [0.01,0.01] on opposite sides",
+    "layers": [
+      "VINT5",
+      "MSMG1"
+    ],
+    "process": "freePDK15"
+  },
+  "RULE_MSMG1013": {
+    "rule": "VINT5 shape must be rectangular if enclosing MSMG1 wire width >= 120nm",
+    "layers": [
+      "VINT5",
+      "MSMG1"
+    ],
+    "process": "freePDK15"
+  },
+  "RULE_MSMG1014": {
+    "rule": "MSMG1 minimum area for rectangular shape is 0.0024um2",
+    "layers": [
+      "MSMG1"
+    ],
+    "process": "freePDK15"
+  },
+  "RULE_MSMG1015": {
+    "rule": "MSMG1 min area for non-rectangular shape is 0.0036um2",
+    "layers": [
+      "MSMG1"
+    ],
+    "process": "freePDK15"
+  },
+  "RULE_MSMG2001": {
+    "rule": "MSMG2 width > 56nm",
+    "layers": [
+      "MSMG2"
+    ],
+    "process": "freePDK15"
+  },
+  "RULE_MSMG2002": {
+    "rule": "One of two edges connected to the same vertex must have at least one of 112nm",
+    "layers": [],
+    "process": "freePDK15"
+  },
+  "RULE_MSMG2003": {
+    "rule": "maximum length of MSMG2 for wires with min width 56nm is 1.92um",
+    "layers": [
+      "MSMG2"
+    ],
+    "process": "freePDK15"
+  },
+  "RULE_MSMG2004": {
+    "rule": "MSMG2 end-of-line spacing (end-of-line edge defined as edge < 64nm) is 136nm",
+    "layers": [
+      "MSMG2"
+    ],
+    "process": "freePDK15"
+  },
+  "RULE_MSMG2005": {
+    "rule": "MSMG2 min space and notch 56nm",
+    "layers": [
+      "MSMG2"
+    ],
+    "process": "freePDK15"
+  },
+  "RULE_MSMG2006": {
+    "rule": "Minimum spacing of MSMG2 when MSMG2 is wider than 64nm and longer than 480nm is 92nm",
+    "layers": [
+      "MSMG2"
+    ],
+    "process": "freePDK15"
+  },
+  "RULE_MSMG2007": {
+    "rule": "Minimum spacing of MSMG2 when MSMG2 is wider than 120nm and longer than 1200nm is 120nm",
+    "layers": [
+      "MSMG2"
+    ],
+    "process": "freePDK15"
+  },
+  "RULE_MSMG2008": {
+    "rule": "Minimum spacing of MSMG2 when MSMG2 is wider than 240nm and longer than 1800nm is 240nm",
+    "layers": [
+      "MSMG2"
+    ],
+    "process": "freePDK15"
+  },
+  "RULE_MSMG2009": {
+    "rule": "Minimum spacing of MSMG2 when MSMG2 is wider than 320nm and longer than 2400nm is 320nm",
+    "layers": [
+      "MSMG2"
+    ],
+    "process": "freePDK15"
+  },
+  "RULE_MSMG2010": {
+    "rule": "Minimum spacing of MSMG2 when MSMG2 is wider than 600nm and longer than 2400nm is 600nm",
+    "layers": [
+      "MSMG2"
+    ],
+    "process": "freePDK15"
+  },
+  "RULE_MSMG2011": {
+    "rule": "Allowed enclosures of VSMG1 by MSMG2 are [0.028,0.002], [0.032,0], or [0.01,0.01] on opposite sides",
+    "layers": [
+      "MSMG2",
+      "VSMG1"
+    ],
+    "process": "freePDK15"
+  },
+  "RULE_MSMG2013": {
+    "rule": "VSMG1 shape must be rectangular if enclosing MSMG2 wire width >= 120nm",
+    "layers": [
+      "MSMG2",
+      "VSMG1"
+    ],
+    "process": "freePDK15"
+  },
+  "RULE_MSMG2014": {
+    "rule": "MSMG2 minimum area for rectangular shape is 0.0024um2",
+    "layers": [
+      "MSMG2"
+    ],
+    "process": "freePDK15"
+  },
+  "RULE_MSMG2015": {
+    "rule": "MSMG2 min area for non-rectangular shape is 0.0036um2",
+    "layers": [
+      "MSMG2"
+    ],
+    "process": "freePDK15"
+  },
+  "RULE_MSMG3001": {
+    "rule": "MSMG3 width > 56nm",
+    "layers": [
+      "MSMG3"
+    ],
+    "process": "freePDK15"
+  },
+  "RULE_MSMG3002": {
+    "rule": "One of two edges connected to the same vertex must have at least one of 112nm",
+    "layers": [],
+    "process": "freePDK15"
+  },
+  "RULE_MSMG3003": {
+    "rule": "maximum length of MSMG3 for wires with min width 56nm is 1.92um",
+    "layers": [
+      "MSMG3"
+    ],
+    "process": "freePDK15"
+  },
+  "RULE_MSMG3004": {
+    "rule": "MSMG3 end-of-line spacing (end-of-line edge defined as edge < 64nm) is 136nm",
+    "layers": [
+      "MSMG3"
+    ],
+    "process": "freePDK15"
+  },
+  "RULE_MSMG3005": {
+    "rule": "MSMG3 min space and notch 56nm",
+    "layers": [
+      "MSMG3"
+    ],
+    "process": "freePDK15"
+  },
+  "RULE_MSMG3006": {
+    "rule": "Minimum spacing of MSMG3 when MSMG3 is wider than 64nm and longer than 480nm is 92nm",
+    "layers": [
+      "MSMG3"
+    ],
+    "process": "freePDK15"
+  },
+  "RULE_MSMG3007": {
+    "rule": "Minimum spacing of MSMG3 when MSMG3 is wider than 120nm and longer than 1200nm is 120nm",
+    "layers": [
+      "MSMG3"
+    ],
+    "process": "freePDK15"
+  },
+  "RULE_MSMG3008": {
+    "rule": "Minimum spacing of MSMG3 when MSMG3 is wider than 240nm and longer than 1800nm is 240nm",
+    "layers": [
+      "MSMG3"
+    ],
+    "process": "freePDK15"
+  },
+  "RULE_MSMG3009": {
+    "rule": "Minimum spacing of MSMG3 when MSMG3 is wider than 320nm and longer than 2400nm is 320nm",
+    "layers": [
+      "MSMG3"
+    ],
+    "process": "freePDK15"
+  },
+  "RULE_MSMG3010": {
+    "rule": "Minimum spacing of MSMG3 when MSMG3 is wider than 600nm and longer than 2400nm is 600nm",
+    "layers": [
+      "MSMG3"
+    ],
+    "process": "freePDK15"
+  },
+  "RULE_MSMG3011": {
+    "rule": "Allowed enclosures of VSMG2 by MSMG3 are [0.028,0.002], [0.032,0], or [0.01,0.01] on opposite sides",
+    "layers": [
+      "MSMG3",
+      "VSMG2"
+    ],
+    "process": "freePDK15"
+  },
+  "RULE_MSMG3013": {
+    "rule": "VSMG2 shape must be rectangular if enclosing MSMG3 wire width >= 120nm",
+    "layers": [
+      "MSMG3",
+      "VSMG2"
+    ],
+    "process": "freePDK15"
+  },
+  "RULE_MSMG3014": {
+    "rule": "MSMG3 minimum area for rectangular shape is 0.0024um2",
+    "layers": [
+      "MSMG3"
+    ],
+    "process": "freePDK15"
+  },
+  "RULE_MSMG3015": {
+    "rule": "MSMG3 min area for non-rectangular shape is 0.0036um2",
+    "layers": [
+      "MSMG3"
+    ],
+    "process": "freePDK15"
+  },
+  "RULE_MSMG4001": {
+    "rule": "MSMG4 width > 56nm",
+    "layers": [
+      "MSMG4"
+    ],
+    "process": "freePDK15"
+  },
+  "RULE_MSMG4002": {
+    "rule": "One of two edges connected to the same vertex must have at least one of 112nm",
+    "layers": [],
+    "process": "freePDK15"
+  },
+  "RULE_MSMG4003": {
+    "rule": "maximum length of MSMG4 for wires with min width 56nm is 1.92um",
+    "layers": [
+      "MSMG4"
+    ],
+    "process": "freePDK15"
+  },
+  "RULE_MSMG4004": {
+    "rule": "MSMG4 end-of-line spacing (end-of-line edge defined as edge < 64nm) is 136nm",
+    "layers": [
+      "MSMG4"
+    ],
+    "process": "freePDK15"
+  },
+  "RULE_MSMG4005": {
+    "rule": "MSMG4 min space and notch 56nm",
+    "layers": [
+      "MSMG4"
+    ],
+    "process": "freePDK15"
+  },
+  "RULE_MSMG4006": {
+    "rule": "Minimum spacing of MSMG4 when MSMG4 is wider than 64nm and longer than 480nm is 92nm",
+    "layers": [
+      "MSMG4"
+    ],
+    "process": "freePDK15"
+  },
+  "RULE_MSMG4007": {
+    "rule": "Minimum spacing of MSMG4 when MSMG4 is wider than 120nm and longer than 1200nm is 120nm",
+    "layers": [
+      "MSMG4"
+    ],
+    "process": "freePDK15"
+  },
+  "RULE_MSMG4008": {
+    "rule": "Minimum spacing of MSMG4 when MSMG4 is wider than 240nm and longer than 1800nm is 240nm",
+    "layers": [
+      "MSMG4"
+    ],
+    "process": "freePDK15"
+  },
+  "RULE_MSMG4009": {
+    "rule": "Minimum spacing of MSMG4 when MSMG4 is wider than 320nm and longer than 2400nm is 320nm",
+    "layers": [
+      "MSMG4"
+    ],
+    "process": "freePDK15"
+  },
+  "RULE_MSMG4010": {
+    "rule": "Minimum spacing of MSMG4 when MSMG4 is wider than 600nm and longer than 2400nm is 600nm",
+    "layers": [
+      "MSMG4"
+    ],
+    "process": "freePDK15"
+  },
+  "RULE_MSMG4011": {
+    "rule": "Allowed enclosures of VSMG3 by MSMG4 are [0.028,0.002], [0.032,0], or [0.01,0.01] on opposite sides",
+    "layers": [
+      "VSMG3",
+      "MSMG4"
+    ],
+    "process": "freePDK15"
+  },
+  "RULE_MSMG4013": {
+    "rule": "VSMG3 shape must be rectangular if enclosing MSMG4 wire width >= 120nm",
+    "layers": [
+      "VSMG3",
+      "MSMG4"
+    ],
+    "process": "freePDK15"
+  },
+  "RULE_MSMG4014": {
+    "rule": "MSMG4 minimum area for rectangular shape is 0.0024um2",
+    "layers": [
+      "MSMG4"
+    ],
+    "process": "freePDK15"
+  },
+  "RULE_MSMG4015": {
+    "rule": "MSMG4 min area for non-rectangular shape is 0.0036um2",
+    "layers": [
+      "MSMG4"
+    ],
+    "process": "freePDK15"
+  },
+  "RULE_MSMG5001": {
+    "rule": "MSMG5 width > 56nm",
+    "layers": [
+      "MSMG5"
+    ],
+    "process": "freePDK15"
+  },
+  "RULE_MSMG5002": {
+    "rule": "One of two edges connected to the same vertex must have at least one of 112nm",
+    "layers": [],
+    "process": "freePDK15"
+  },
+  "RULE_MSMG5003": {
+    "rule": "maximum length of MSMG5 for wires with min width 56nm is 1.92um",
+    "layers": [
+      "MSMG5"
+    ],
+    "process": "freePDK15"
+  },
+  "RULE_MSMG5004": {
+    "rule": "MSMG5 end-of-line spacing (end-of-line edge defined as edge < 64nm) is 136nm",
+    "layers": [
+      "MSMG5"
+    ],
+    "process": "freePDK15"
+  },
+  "RULE_MSMG5005": {
+    "rule": "MSMG5 min space and notch 56nm",
+    "layers": [
+      "MSMG5"
+    ],
+    "process": "freePDK15"
+  },
+  "RULE_MSMG5006": {
+    "rule": "Minimum spacing of MSMG5 when MSMG5 is wider than 64nm and longer than 480nm is 92nm",
+    "layers": [
+      "MSMG5"
+    ],
+    "process": "freePDK15"
+  },
+  "RULE_MSMG5007": {
+    "rule": "Minimum spacing of MSMG5 when MSMG5 is wider than 120nm and longer than 1200nm is 120nm",
+    "layers": [
+      "MSMG5"
+    ],
+    "process": "freePDK15"
+  },
+  "RULE_MSMG5008": {
+    "rule": "Minimum spacing of MSMG5 when MSMG5 is wider than 240nm and longer than 1800nm is 240nm",
+    "layers": [
+      "MSMG5"
+    ],
+    "process": "freePDK15"
+  },
+  "RULE_MSMG5009": {
+    "rule": "Minimum spacing of MSMG5 when MSMG5 is wider than 320nm and longer than 2400nm is 320nm",
+    "layers": [
+      "MSMG5"
+    ],
+    "process": "freePDK15"
+  },
+  "RULE_MSMG5010": {
+    "rule": "Minimum spacing of MSMG5 when MSMG5 is wider than 600nm and longer than 2400nm is 600nm",
+    "layers": [
+      "MSMG5"
+    ],
+    "process": "freePDK15"
+  },
+  "RULE_MSMG5011": {
+    "rule": "Allowed enclosures of VSMG4 by MSMG5 are [0.028,0.002], [0.032,0], or [0.01,0.01] on opposite sides",
+    "layers": [
+      "MSMG5",
+      "VSMG4"
+    ],
+    "process": "freePDK15"
+  },
+  "RULE_MSMG5013": {
+    "rule": "VSMG4 shape must be rectangular if enclosing MSMG5 wire width >= 120nm",
+    "layers": [
+      "MSMG5",
+      "VSMG4"
+    ],
+    "process": "freePDK15"
+  },
+  "RULE_MSMG5014": {
+    "rule": "MSMG5 minimum area for rectangular shape is 0.0024um2",
+    "layers": [
+      "MSMG5"
+    ],
+    "process": "freePDK15"
+  },
+  "RULE_MSMG5015": {
+    "rule": "MSMG5 min area for non-rectangular shape is 0.0036um2",
+    "layers": [
+      "MSMG5"
+    ],
+    "process": "freePDK15"
+  },
+  "RULE_VG1001a": {
+    "rule": "VG1 is a square with 112nm edge length",
+    "layers": [
+      "VG1"
+    ],
+    "process": "freePDK15"
+  },
+  "RULE_VG1001b": {
+    "rule": "VG1 is a rectangle 112nm x 224nm when enclosed in MG1 with width >= 240nm",
+    "layers": [
+      "MG1",
+      "VG1"
+    ],
+    "process": "freePDK15"
+  },
+  "RULE_VG1001c": {
+    "rule": "VG1 is a rectangle 112nm x 224nm when enclosed in MG2 with width >= 240nm",
+    "layers": [
+      "VG1",
+      "MG2"
+    ],
+    "process": "freePDK15"
+  },
+  "RULE_VG1002": {
+    "rule": "Minimum spacing of VG1 if runlength exactly = 112nm is 144nm",
+    "layers": [
+      "VG1"
+    ],
+    "process": "freePDK15"
+  },
+  "RULE_VG1003": {
+    "rule": "Minimum spacing of VG1 if runlength < 112nm is 200nm",
+    "layers": [
+      "VG1"
+    ],
+    "process": "freePDK15"
+  },
+  "RULE_VG1004": {
+    "rule": "VG1 must be inside (MG1 and MG2)",
+    "layers": [
+      "MG1",
+      "VG1",
+      "MG2"
+    ],
+    "process": "freePDK15"
+  },
+  "RULE_VG1005": {
+    "rule": "VG1 shape must be rectangular if enclosing MG1 wire width >= 240nm",
+    "layers": [
+      "MG1",
+      "VG1"
+    ],
+    "process": "freePDK15"
+  },
+  "RULE_MG1001": {
+    "rule": "MG1 width > 112nm",
+    "layers": [
+      "MG1"
+    ],
+    "process": "freePDK15"
+  },
+  "RULE_MG1002": {
+    "rule": "One of two edges connected to the same vertex must have at least one of 224nm",
+    "layers": [],
+    "process": "freePDK15"
+  },
+  "RULE_MG1003": {
+    "rule": "maximum length of MG1 for wires with min width 112nm is 3.84um",
+    "layers": [
+      "MG1"
+    ],
+    "process": "freePDK15"
+  },
+  "RULE_MG1004": {
+    "rule": "MG1 end-of-line spacing (end-of-line edge defined as edge < 128nm) is 272nm",
+    "layers": [
+      "MG1"
+    ],
+    "process": "freePDK15"
+  },
+  "RULE_MG1005": {
+    "rule": "MG1 min space and notch 112nm",
+    "layers": [
+      "MG1"
+    ],
+    "process": "freePDK15"
+  },
+  "RULE_MG1006": {
+    "rule": "Minimum spacing of MG1 when MG1 is wider than 120nm and longer than 1200nm is 120nm",
+    "layers": [
+      "MG1"
+    ],
+    "process": "freePDK15"
+  },
+  "RULE_MG1007": {
+    "rule": "Minimum spacing of MG1 when MG1 is wider than 240nm and longer than 1800nm is 240nm",
+    "layers": [
+      "MG1"
+    ],
+    "process": "freePDK15"
+  },
+  "RULE_MG1008": {
+    "rule": "Minimum spacing of MG1 when MG1 is wider than 320nm and longer than 2400nm is 320nm",
+    "layers": [
+      "MG1"
+    ],
+    "process": "freePDK15"
+  },
+  "RULE_MG1009": {
+    "rule": "Minimum spacing of MG1 when MG1 is wider than 600nm and longer than 2400nm is 600nm",
+    "layers": [
+      "MG1"
+    ],
+    "process": "freePDK15"
+  },
+  "RULE_MG1010": {
+    "rule": "Allowed enclosures of VSMG5 by MG1",
+    "layers": [
+      "MG1",
+      "VSMG5"
+    ],
+    "process": "freePDK15"
+  },
+  "RULE_MG1012": {
+    "rule": "VSMG5 shape must be rectangular if enclosing MG1 wire width >= 240nm",
+    "layers": [
+      "MG1",
+      "VSMG5"
+    ],
+    "process": "freePDK15"
+  },
+  "RULE_MG1013": {
+    "rule": "MG1 minimum area for rectangular shape is 0.0024um2",
+    "layers": [
+      "MG1"
+    ],
+    "process": "freePDK15"
+  },
+  "RULE_MG1014": {
+    "rule": "MG1 min area for non-rectangular shape is 0.0036um2",
+    "layers": [
+      "MG1"
+    ],
+    "process": "freePDK15"
+  },
+  "RULE_MG2001": {
+    "rule": "MG2 width > 112nm",
+    "layers": [
+      "MG2"
+    ],
+    "process": "freePDK15"
+  },
+  "RULE_MG2002": {
+    "rule": "One of two edges connected to the same vertex must have at least one of 224nm",
+    "layers": [],
+    "process": "freePDK15"
+  },
+  "RULE_MG2003": {
+    "rule": "maximum length of MG2 for wires with min width 112nm is 3.84um",
+    "layers": [
+      "MG2"
+    ],
+    "process": "freePDK15"
+  },
+  "RULE_MG2004": {
+    "rule": "MG2 end-of-line spacing (end-of-line edge defined as edge < 128nm) is 272nm",
+    "layers": [
+      "MG2"
+    ],
+    "process": "freePDK15"
+  },
+  "RULE_MG2005": {
+    "rule": "MG2 min space and notch 112nm",
+    "layers": [
+      "MG2"
+    ],
+    "process": "freePDK15"
+  },
+  "RULE_MG2006": {
+    "rule": "Minimum spacing of MG2 when MG2 is wider than 120nm and longer than 1200nm is 120nm",
+    "layers": [
+      "MG2"
+    ],
+    "process": "freePDK15"
+  },
+  "RULE_MG2007": {
+    "rule": "Minimum spacing of MG2 when MG2 is wider than 240nm and longer than 1800nm is 240nm",
+    "layers": [
+      "MG2"
+    ],
+    "process": "freePDK15"
+  },
+  "RULE_MG2008": {
+    "rule": "Minimum spacing of MG2 when MG2 is wider than 320nm and longer than 2400nm is 320nm",
+    "layers": [
+      "MG2"
+    ],
+    "process": "freePDK15"
+  },
+  "RULE_MG2009": {
+    "rule": "Minimum spacing of MG2 when MG2 is wider than 600nm and longer than 2400nm is 600nm",
+    "layers": [
+      "MG2"
+    ],
+    "process": "freePDK15"
+  },
+  "RULE_MG2010": {
+    "rule": "Allowed enclosures of VG1 by MG2",
+    "layers": [
+      "VG1",
+      "MG2"
+    ],
+    "process": "freePDK15"
+  },
+  "RULE_MG2012": {
+    "rule": "VG1 shape must be rectangular if enclosing MG2 wire width >= 240nm",
+    "layers": [
+      "VG1",
+      "MG2"
+    ],
+    "process": "freePDK15"
+  },
+  "RULE_MG2013": {
+    "rule": "MG2 minimum area for rectangular shape is 0.0024um2",
+    "layers": [
+      "MG2"
+    ],
+    "process": "freePDK15"
+  },
+  "RULE_MG2014": {
+    "rule": "MG2 min area for non-rectangular shape is 0.0036um2",
+    "layers": [
+      "MG2"
+    ],
+    "process": "freePDK15"
+  },
+  "RULE_MIS01": {
+    "rule": "Shapes on all layers must be on a 0.5 nm grid",
+    "layers": [],
+    "process": "freePDK15"
+  },
+  "RULE_MIS02A": {
+    "rule": "[ANTENNA] Ratio of Maximum Allowed GATE[A] Area to transistor Gate Area is 100:1",
+    "layers": [
+      "GATEA"
+    ],
+    "process": "freePDK15"
+  },
+  "RULE_MIS02B": {
+    "rule": "[ANTENNA] Ratio of Maximum Allowed GATE[B] Area to transistor Gate Area is 100:1",
+    "layers": [
+      "GATEB"
+    ],
+    "process": "freePDK15"
+  },
+  "WELL.W.1": {
+    "rule": "Minimum horizontal width of WELL is 108 nm.",
+    "layers": [
+      "WELL"
+    ],
+    "process": "asap7"
+  },
+  "WELL.W.2": {
+    "rule": "Minimum vertical width of WELL is 54 nm.",
+    "layers": [
+      "WELL"
+    ],
+    "process": "asap7"
+  },
+  "WELL.S.1": {
+    "rule": "Minimum vertical spacing between WELL layer polygons is 108 nm.",
+    "layers": [
+      "WELL"
+    ],
+    "process": "asap7"
+  },
+  "WELL.S.2": {
+    "rule": "Minimum horizontal spacing between WELL layer polygons is 54 nm.",
+    "layers": [
+      "WELL"
+    ],
+    "process": "asap7"
+  },
+  "WELL.A.1A": {
+    "rule": "Minimum area of WELL is 5832 nm-sq.",
+    "layers": [
+      "WELL"
+    ],
+    "process": "asap7"
+  },
+  "WELL.A.1B": {
+    "rule": "Minimum enclosed area of WELL is 5832 nm-sq.",
+    "layers": [
+      "WELL"
+    ],
+    "process": "asap7"
+  },
+  "WELL.GATE.EX.1": {
+    "rule": "Minimum horizontal extension of WELL past GATE (not cut by GCUT layer) is 7 nm",
+    "layers": [
+      "WELL",
+      "GATE"
+    ],
+    "process": "asap7"
+  },
+  "WELL.GATE.EX.2": {
+    "rule": "Minimum vertical extension of WELL past GATE (not cut by GCUT layer) that does not interact with SRAMDRC, is 7 nm",
+    "layers": [
+      "WELL",
+      "SRAMDRC",
+      "GATE"
+    ],
+    "process": "asap7"
+  },
+  "FIN.W.1": {
+    "rule": "Exact vertical FIN width is 7 nm.",
+    "layers": [
+      "FIN"
+    ],
+    "process": "asap7"
+  },
+  "FIN.W.2": {
+    "rule": "Minimum horizontal FIN width is 108 nm.",
+    "layers": [
+      "FIN"
+    ],
+    "process": "asap7"
+  },
+  "FIN.S.1": {
+    "rule": "Exact vertical FIN pitch is 27 nm.",
+    "layers": [
+      "FIN"
+    ],
+    "process": "asap7"
+  },
+  "FIN.AUX.1": {
+    "rule": "FIN may not bend.",
+    "layers": [
+      "FIN"
+    ],
+    "process": "asap7"
+  },
+  "GATE.W.1": {
+    "rule": "Exact horizontal GATE width is 20 nm.",
+    "layers": [
+      "GATE"
+    ],
+    "process": "asap7"
+  },
+  "GATE.W.2": {
+    "rule": "Minimum vertical GATE width is 40 nm.",
+    "layers": [
+      "GATE"
+    ],
+    "process": "asap7"
+  },
+  "GATE.S.1": {
+    "rule": "Exact horizontal GATE pitch is 54 nm.",
+    "layers": [
+      "GATE"
+    ],
+    "process": "asap7"
+  },
+  "GATE.S.2": {
+    "rule": "Minimum horizontal GATE spacing is 34 nm.",
+    "layers": [
+      "GATE"
+    ],
+    "process": "asap7"
+  },
+  "GATE.S.3": {
+    "rule": "Every GATE (not cut by GCUT and not interacting with the layer SRAMDRC) must have at least one other GATE within 54 nm of its surrounding along the horizontal axis. The spacing being the distance between centers of the two GATE layer polygons.",
+    "layers": [
+      "GATE"
+    ],
+    "process": "asap7"
+  },
+  "GATE.AUX.1": {
+    "rule": "GATE may not bend.",
+    "layers": [
+      "GATE"
+    ],
+    "process": "asap7"
+  },
+  "GATE.AUX.2": {
+    "rule": "GATE may not be discontinuous along the vertical axis. Use GCUT layer to mark cuts in the GATE.",
+    "layers": [
+      "GCUT",
+      "GATE"
+    ],
+    "process": "asap7"
+  },
+  "GATE.ACTIVE.AUX.3": {
+    "rule": "ACTIVE layer vertical edge may not lie inside, or coincide with, the GATE layer.",
+    "layers": [
+      "ACTIVE",
+      "GATE"
+    ],
+    "process": "asap7"
+  },
+  "GATE.ACTIVE.EX.1": {
+    "rule": "Minimum vertical extension of GATE (not cut by GCUT) past ACTIVE is 4 nm.",
+    "layers": [
+      "ACTIVE",
+      "GATE"
+    ],
+    "process": "asap7"
+  },
+  "GATE.ACTIVE.EX.2": {
+    "rule": "Minimum horizontal extension of ACTIVE interacting with GATE (not cut by GCUT layer) past GATE (not cut by GCUT layer) is 25 nm.",
+    "layers": [
+      "ACTIVE",
+      "GATE"
+    ],
+    "process": "asap7"
+  },
+  "GATE.ACTIVE.S.4": {
+    "rule": "Minimum horizontal spacing between ACTIVE and GATE (not cut by GCUT and not interacting with ACTIVE) is 9 nm.",
+    "layers": [
+      "ACTIVE",
+      "GATE"
+    ],
+    "process": "asap7"
+  },
+  "ACTIVE.FIN.EX.1": {
+    "rule": "Minimum vertical extension of ACTIVE past FIN is 10 nm.",
+    "layers": [
+      "ACTIVE",
+      "FIN"
+    ],
+    "process": "asap7"
+  },
+  "ACTIVE.W.1": {
+    "rule": "Minimum vertical width of ACTIVE layer is 27 nm.",
+    "layers": [
+      "ACTIVE"
+    ],
+    "process": "asap7"
+  },
+  "ACTIVE.W.2": {
+    "rule": "ACTIVE layer vertical width increment is an integer multiple of 27 nm.",
+    "layers": [
+      "ACTIVE"
+    ],
+    "process": "asap7"
+  },
+  "ACTIVE.W.3": {
+    "rule": "Minimum horizontal width of ACTIVE is 16 nm.",
+    "layers": [
+      "ACTIVE"
+    ],
+    "process": "asap7"
+  },
+  "ACTIVE.S.1": {
+    "rule": "Minimum vertical spacing of ACTIVE is 27 nm.",
+    "layers": [
+      "ACTIVE"
+    ],
+    "process": "asap7"
+  },
+  "ACTIVE.S.2A": {
+    "rule": "Minimum horizontal spacing between ACTIVE layers forming source/drain regions (of different transistors) on different nets is 92 nm.",
+    "layers": [
+      "ACTIVE"
+    ],
+    "process": "asap7"
+  },
+  "ACTIVE.S.2B": {
+    "rule": "Minimum horizontal spacing of ACTIVE is 38 nm.",
+    "layers": [
+      "ACTIVE"
+    ],
+    "process": "asap7"
+  },
+  "ACTIVE.WELL.S.4": {
+    "rule": "Minimum spacing of ACTIVE (outside the layer SRAMDRC) to WELL is 27 nm.",
+    "layers": [
+      "ACTIVE",
+      "WELL"
+    ],
+    "process": "asap7"
+  },
+  "ACTIVE.WELL.EN.1": {
+    "rule": "Minimum enclosure of ACTIVE (outside the layer SRAMDRC) by WELL is 27 nm.",
+    "layers": [
+      "ACTIVE",
+      "WELL"
+    ],
+    "process": "asap7"
+  },
+  "ACTIVE.A.1A": {
+    "rule": "Minimum area of an ACTIVE layer polygon that does not interact with the layer SRAMDRC is 864 nm-sq.",
+    "layers": [
+      "ACTIVE",
+      "SRAMDRC"
+    ],
+    "process": "asap7"
+  },
+  "ACTIVE.A.1B": {
+    "rule": "Minimum enclosed area of an ACTIVE layer polygon that does not interact with the layer SRAMDRC is 864 nm-sq.",
+    "layers": [
+      "ACTIVE",
+      "SRAMDRC"
+    ],
+    "process": "asap7"
+  },
+  "ACTIVE.AUX.1": {
+    "rule": "ACTIVE must always be enclosed by NSELECT or PSELECT, such that no ACTIVE layer edge(s) coincide with NSELECT or PSELECT layer edge(s).",
+    "layers": [
+      "ACTIVE",
+      "NSELECT",
+      "PSELECT"
+    ],
+    "process": "asap7"
+  },
+  "ACTIVE.AUX.3": {
+    "rule": "A notch in ACTIVE along vertical axis is not allowed.",
+    "layers": [
+      "ACTIVE"
+    ],
+    "process": "asap7"
+  },
+  "ACTIVE.LUP.1": {
+    "rule": "Maximum distance, to prevent latch-up, between ACTIVE forming a MOS device and ACTIVE forming a bulk/substrate contact within the same WELL/substrate is 30 um.",
+    "layers": [
+      "ACTIVE",
+      "WELL"
+    ],
+    "process": "asap7"
+  },
+  "GCUT.W.1": {
+    "rule": "Minimum vertical width of GCUT is 17 nm.",
+    "layers": [
+      "GCUT"
+    ],
+    "process": "asap7"
+  },
+  "GCUT.ACTIVE.S.1": {
+    "rule": "Minimum vertical spacing between GCUT and channel is 4 nm.",
+    "layers": [
+      "GCUT"
+    ],
+    "process": "asap7"
+  },
+  "GCUT.GATE.EX.1": {
+    "rule": "Minimum horizontal extension of GCUT past GATE is 17 nm.",
+    "layers": [
+      "GCUT",
+      "GATE"
+    ],
+    "process": "asap7"
+  },
+  "GCUT.GATE.S.2": {
+    "rule": "Minimum spacing of GCUT to GATE, when the former is not being used to cut a particular polygon drawn using the latter, is 17 nm.",
+    "layers": [
+      "GCUT",
+      "GATE"
+    ],
+    "process": "asap7"
+  },
+  "GCUT.S.3": {
+    "rule": "Minimum vertical spacing between two GCUT layer polygons is 35 nm.",
+    "layers": [
+      "GCUT"
+    ],
+    "process": "asap7"
+  },
+  "GCUT.AUX.1": {
+    "rule": "GCUT layer may not exist without the layer GATE.",
+    "layers": [
+      "GCUT",
+      "GATE"
+    ],
+    "process": "asap7"
+  },
+  "GCUT.AUX.2": {
+    "rule": "GCUT layer vertical edge may not lie inside, or coincide with, the GATE layer.",
+    "layers": [
+      "GCUT",
+      "GATE"
+    ],
+    "process": "asap7"
+  },
+  "GCUT.AUX.3": {
+    "rule": "GCUT may not interact with channel.",
+    "layers": [
+      "GCUT"
+    ],
+    "process": "asap7"
+  },
+  "NSELECT.W.1": {
+    "rule": "Minimum horizontal width of NSELECT is 108 nm.",
+    "layers": [
+      "NSELECT"
+    ],
+    "process": "asap7"
+  },
+  "NSELECT.W.2": {
+    "rule": "Minimum vertical width of NSELECT is 54 nm.",
+    "layers": [
+      "NSELECT"
+    ],
+    "process": "asap7"
+  },
+  "NSELECT.ACTIVE.EN.1": {
+    "rule": "Minimum horizontal enclosure of ACTIVE (not interacting with SRAMDRC) by NSELECT is 46 nm.",
+    "layers": [
+      "ACTIVE",
+      "NSELECT"
+    ],
+    "process": "asap7"
+  },
+  "NSELECT.ACTIVE.EN.2": {
+    "rule": "Minimum vertical enclosure of ACTIVE (not interacting with SRAMDRC) by NSELECT is 27 nm.",
+    "layers": [
+      "ACTIVE",
+      "NSELECT"
+    ],
+    "process": "asap7"
+  },
+  "NSELECT.GATE.EX.1": {
+    "rule": "Minimum horizontal extension of NSELECT past GATE (not cut by GCUT) is 7 nm.",
+    "layers": [
+      "NSELECT",
+      "GATE"
+    ],
+    "process": "asap7"
+  },
+  "NSELECT.GATE.EX.2": {
+    "rule": "Minimum vertical extension of NSELECT past GATE (not cut by GCUT layer) is 7 nm.",
+    "layers": [
+      "NSELECT",
+      "GATE"
+    ],
+    "process": "asap7"
+  },
+  "PSELECT.W.1": {
+    "rule": "Minimum horizontal width of PSELECT is 108 nm.",
+    "layers": [
+      "PSELECT"
+    ],
+    "process": "asap7"
+  },
+  "PSELECT.W.2": {
+    "rule": "Minimum vertical width of PSELECT is 54 nm.",
+    "layers": [
+      "PSELECT"
+    ],
+    "process": "asap7"
+  },
+  "PSELECT.ACTIVE.EN.1": {
+    "rule": "Minimum horizontal enclosure of ACTIVE (not interacting with SRAMDRC) by PSELECT 46 nm.",
+    "layers": [
+      "ACTIVE",
+      "PSELECT"
+    ],
+    "process": "asap7"
+  },
+  "PSELECT.ACTIVE.EN.2": {
+    "rule": "Minimum vertical enclosure of ACTIVE (not interacting with SRAMDRC) by PSELECT is 27 nm.",
+    "layers": [
+      "ACTIVE",
+      "PSELECT"
+    ],
+    "process": "asap7"
+  },
+  "PSELECT.GATE.EX.1": {
+    "rule": "Minimum horizontal extension of PSELECT past GATE (not cut by GCUT) is 7 nm.",
+    "layers": [
+      "PSELECT",
+      "GATE"
+    ],
+    "process": "asap7"
+  },
+  "PSELECT.GATE.EX.2": {
+    "rule": "Minimum vertical extension of PSELECT past GATE (not cut by GCUT layer) is 7 nm.",
+    "layers": [
+      "PSELECT",
+      "GATE"
+    ],
+    "process": "asap7"
+  },
+  "NSELECT.PSELECT.AUX.1": {
+    "rule": "NSELECT and PSELECT may not overlap",
+    "layers": [
+      "NSELECT",
+      "PSELECT"
+    ],
+    "process": "asap7"
+  },
+  "SLVT.W.1": {
+    "rule": "Minimum horizontal width of SLVT is 108 nm.",
+    "layers": [
+      "SLVT"
+    ],
+    "process": "asap7"
+  },
+  "SLVT.W.2": {
+    "rule": "Minimum vertical width of SLVT is 54 nm.",
+    "layers": [
+      "SLVT"
+    ],
+    "process": "asap7"
+  },
+  "SLVT.ACTIVE.EN.1": {
+    "rule": "Minimum horizontal enclosure of ACTIVE (not interacting with SRAMDRC) by SLVT is 46 nm.",
+    "layers": [
+      "ACTIVE",
+      "SLVT"
+    ],
+    "process": "asap7"
+  },
+  "SLVT.ACTIVE.EN.2": {
+    "rule": "Minimum vertical enclosure of ACTIVE (not interacting with SRAMDRC) by SLVT is 27 nm.",
+    "layers": [
+      "ACTIVE",
+      "SLVT"
+    ],
+    "process": "asap7"
+  },
+  "SLVT.GATE.EX.1": {
+    "rule": "Minimum horizontal extension of SLVT past GATE (not cut by GCUT) is 7 nm.",
+    "layers": [
+      "SLVT",
+      "GATE"
+    ],
+    "process": "asap7"
+  },
+  "SLVT.GATE.EX.2": {
+    "rule": "Minimum vertical extension of SLVT past GATE (not cut by GCUT layer) is 7 nm.",
+    "layers": [
+      "SLVT",
+      "GATE"
+    ],
+    "process": "asap7"
+  },
+  "LVT.W.1": {
+    "rule": "Minimum horizontal width of LVT is 108 nm.",
+    "layers": [
+      "LVT"
+    ],
+    "process": "asap7"
+  },
+  "LVT.W.2": {
+    "rule": "Minimum vertical width of LVT is 54 nm.",
+    "layers": [
+      "LVT"
+    ],
+    "process": "asap7"
+  },
+  "LVT.ACTIVE.EN.1": {
+    "rule": "Minimum horizontal enclosure of ACTIVE (not interacting with SRAMDRC) by LVT is 46 nm.",
+    "layers": [
+      "ACTIVE",
+      "LVT"
+    ],
+    "process": "asap7"
+  },
+  "LVT.ACTIVE.EN.2": {
+    "rule": "Minimum vertical enclosure of ACTIVE (not interacting with SRAMDRC) by LVT is 27 nm.",
+    "layers": [
+      "ACTIVE",
+      "LVT"
+    ],
+    "process": "asap7"
+  },
+  "LVT.GATE.EX.1": {
+    "rule": "Minimum horizontal extension of LVT past GATE (not cut by GCUT) is 7 nm.",
+    "layers": [
+      "LVT",
+      "GATE"
+    ],
+    "process": "asap7"
+  },
+  "LVT.GATE.EX.2": {
+    "rule": "Minimum vertical extension of LVT past GATE (not cut by GCUT layer) is 7 nm.",
+    "layers": [
+      "LVT",
+      "GATE"
+    ],
+    "process": "asap7"
+  },
+  "SRAMVT.W.1": {
+    "rule": "Minimum horizontal width of SRAMVT is 108 nm.",
+    "layers": [
+      "SRAMVT"
+    ],
+    "process": "asap7"
+  },
+  "SRAMVT.W.2": {
+    "rule": "Minimum vertical width of SRAMVT is 54 nm.",
+    "layers": [
+      "SRAMVT"
+    ],
+    "process": "asap7"
+  },
+  "SRAMVT.ACTIVE.EN.1": {
+    "rule": "Minimum horizontal enclosure of ACTIVE (not interacting with SRAMDRC) by SRAMVT is 46 nm.",
+    "layers": [
+      "ACTIVE",
+      "SRAMVT"
+    ],
+    "process": "asap7"
+  },
+  "SRAMVT.ACTIVE.EN.2": {
+    "rule": "Minimum vertical enclosure of ACTIVE (not interacting with SRAMDRC) by SRAMVT is 27 nm.",
+    "layers": [
+      "ACTIVE",
+      "SRAMVT"
+    ],
+    "process": "asap7"
+  },
+  "SRAMVT.GATE.EX.1": {
+    "rule": "Minimum horizontal extension of SRAMVT past GATE (not cut by GCUT) is 7 nm.",
+    "layers": [
+      "SRAMVT",
+      "GATE"
+    ],
+    "process": "asap7"
+  },
+  "SRAMVT.GATE.EX.2": {
+    "rule": "Minimum vertical extension of SRAMVT past GATE (not cut by GCUT layer) is 7 nm.",
+    "layers": [
+      "SRAMVT",
+      "GATE"
+    ],
+    "process": "asap7"
+  },
+  "DUMMY.W.1": {
+    "rule": "Width of dummy should be 40 nm",
+    "layers": [
+      "DUMMY"
+    ],
+    "process": "asap7"
+  },
+  "DUMMY.CHANNEL.S.1": {
+    "rule": "DUMMY spacing from CHANNEL in horizontal direction is 24 nm",
+    "layers": [
+      "DUMMY"
+    ],
+    "process": "asap7"
+  },
+  "DUMMY.CHANNEL.AUX.1": {
+    "rule": "DUMMY must exactly overlap active and may not extend beyond it vertically",
+    "layers": [
+      "ACTIVE",
+      "DUMMY"
+    ],
+    "process": "asap7"
+  },
+  "DUMMY.AUX.2": {
+    "rule": "DUMMY must overlap active. DUMMY without active is not allowed",
+    "layers": [
+      "ACTIVE",
+      "DUMMY"
+    ],
+    "process": "asap7"
+  },
+  "SDT.W.1": {
+    "rule": "Minimum horizontal width of SDT is 24 nm.",
+    "layers": [
+      "SDT"
+    ],
+    "process": "asap7"
+  },
+  "SDT.W.2": {
+    "rule": "Minimum vertical width of SDT (not interacting with SRAMDRC) is 27 nm.",
+    "layers": [
+      "SDT"
+    ],
+    "process": "asap7"
+  },
+  "SDT.W.3": {
+    "rule": "SDT (not interacting with SRAMDRC) layer vertical width increment is an integer multiple of 27 nm.",
+    "layers": [
+      "SDT"
+    ],
+    "process": "asap7"
+  },
+  "SDT.S.1": {
+    "rule": "Minimum horizontal spacing between two SDT layer polygons is 30 nm.",
+    "layers": [
+      "SDT"
+    ],
+    "process": "asap7"
+  },
+  "SDT.GATE.S.2": {
+    "rule": "Minimum horizontal spacing between SDT and GATE is 5 nm.",
+    "layers": [
+      "GATE",
+      "SDT"
+    ],
+    "process": "asap7"
+  },
+  "SDT.ACTIVE.OV.1": {
+    "rule": "Minimum vertical overlap between SDT and ACTIVE is 27 nm.",
+    "layers": [
+      "ACTIVE",
+      "SDT"
+    ],
+    "process": "asap7"
+  },
+  "SDT.LISD.OV.2": {
+    "rule": "Minimum vertical overlap between SDT and LISD is 27 nm.",
+    "layers": [
+      "LISD",
+      "SDT"
+    ],
+    "process": "asap7"
+  },
+  "SDT.GATE.AUX.1": {
+    "rule": "SDT and GATE may not overlap or touch.",
+    "layers": [
+      "GATE",
+      "SDT"
+    ],
+    "process": "asap7"
+  },
+  "SDT.ACTIVE.AUX.2": {
+    "rule": "SDT (not interacting with SRAMDRC) horizontal edges must coincide with ACTIVE horizontal edges.",
+    "layers": [
+      "ACTIVE",
+      "SDT"
+    ],
+    "process": "asap7"
+  },
+  "SDT.ACTIVE.AUX.3": {
+    "rule": "SDT may not be entirely outside ACTIVE.",
+    "layers": [
+      "ACTIVE",
+      "SDT"
+    ],
+    "process": "asap7"
+  },
+  "SDT.LISD.AUX.4": {
+    "rule": "SDT must always be inside LISD.",
+    "layers": [
+      "LISD",
+      "SDT"
+    ],
+    "process": "asap7"
+  },
+  "LISD.W.1": {
+    "rule": "Minimum width of LISD is 24 nm.",
+    "layers": [
+      "LISD"
+    ],
+    "process": "asap7"
+  },
+  "LISD.S.1": {
+    "rule": "Minimum (side-to-side) spacing between two LISD layer polygons' edges, when both edges are > 36 nm, is 18 nm.",
+    "layers": [
+      "LISD"
+    ],
+    "process": "asap7"
+  },
+  "LISD.S.2": {
+    "rule": "Minimum (tip-to-side) spacing between two LISD layer polygons' edges, when one edge is <= 36 nm and the other edge is > 36 nm, is 25 nm.",
+    "layers": [
+      "LISD"
+    ],
+    "process": "asap7"
+  },
+  "LISD.S.3": {
+    "rule": "Minimum (tip-to-tip) spacing between two LISD layer polygons' (lying completely outside the layer SRAMDRC) edges, when both edges are >= 24 nm and <= 36 nm, is 27 nm.",
+    "layers": [
+      "LISD"
+    ],
+    "process": "asap7"
+  },
+  "LISD.A.1": {
+    "rule": "Minimum LISD area is 648 nm-sq.",
+    "layers": [
+      "LISD"
+    ],
+    "process": "asap7"
+  },
+  "LIG.W.1": {
+    "rule": "Minimum width of LIG is 16 nm.",
+    "layers": [
+      "LIG"
+    ],
+    "process": "asap7"
+  },
+  "LIG.S.1": {
+    "rule": "Minimum (side-to-side) spacing between two LIG layer polygons' edges, when both edges are > 36 nm, is 18 nm.",
+    "layers": [
+      "LIG"
+    ],
+    "process": "asap7"
+  },
+  "LIG.S.2": {
+    "rule": "Minimum (tip-to-side) spacing between two LIG layer polygons' edges, when one edge is <= 36 nm and the other edge is > 36 nm, is 25 nm.",
+    "layers": [
+      "LIG"
+    ],
+    "process": "asap7"
+  },
+  "LIG.S.3": {
+    "rule": "Minimum (tip-to-tip) spacing between two LIG layer polygons' (lying completely outside the layer SRAMDRC) edges, when both edges are >= 24 nm and <= 36 nm, is 27 nm.",
+    "layers": [
+      "LIG"
+    ],
+    "process": "asap7"
+  },
+  "LIG.S.4": {
+    "rule": "Minimum (tip-to-tip) spacing between two LIG layer polygons' (lying completely outside the layer SRAMDRC) edges, when both edges are < 24 nm, is 31 nm.",
+    "layers": [
+      "LIG"
+    ],
+    "process": "asap7"
+  },
+  "LIG.S.5": {
+    "rule": "Minimum (tip-to-tip) spacing between two LIG layer polygons' (lying completely outside the layer SRAMDRC) edges, when one of the edges is >= 24 nm and <= 36 nm, and the other is < 24 nm, is 31 nm.",
+    "layers": [
+      "LIG"
+    ],
+    "process": "asap7"
+  },
+  "LIG.LISD.S.6": {
+    "rule": "Minimum spacing between LIG and LISD layer polygons not on the same net is 14 nm.",
+    "layers": [
+      "LIG",
+      "LISD"
+    ],
+    "process": "asap7"
+  },
+  "LIG.LISD.S.7": {
+    "rule": "Minimum corner-to-corner spacing between LISD and LIG not on the same net is 15 nm.",
+    "layers": [
+      "LIG",
+      "LISD"
+    ],
+    "process": "asap7"
+  },
+  "LIG.SDT.S.8": {
+    "rule": "Minimum spacing between LIG and SDT layer polygons not on the same net is 14 nm.",
+    "layers": [
+      "LIG",
+      "SDT"
+    ],
+    "process": "asap7"
+  },
+  "LIG.GATE.S.9A": {
+    "rule": "Minimum vertical spacing between LIG and GATE (not cut using GCUT) layer polygons is 14 nm.",
+    "layers": [
+      "LIG",
+      "GATE"
+    ],
+    "process": "asap7"
+  },
+  "LIG.GATE.S.9B": {
+    "rule": "Minimum horizontal spacing between LIG and GATE (not cut using GCUT) layer polygons is 17 nm.",
+    "layers": [
+      "LIG",
+      "GATE"
+    ],
+    "process": "asap7"
+  },
+  "LIG.GATE.S.10": {
+    "rule": "Minimum spacing between LIG and GATE (not cut using GCUT) forming a channel (GATE layer polygon over ACTIVE) is 5 nm.",
+    "layers": [
+      "LIG",
+      "GATE"
+    ],
+    "process": "asap7"
+  },
+  "LIG.GCUT.S.11": {
+    "rule": "Minimum vertical spacing between LIG and GCUT is 5 nm.",
+    "layers": [
+      "LIG",
+      "GCUT"
+    ],
+    "process": "asap7"
+  },
+  "LIG.A.1": {
+    "rule": "Minimum LIG area is 324 nm-sq.",
+    "layers": [
+      "LIG"
+    ],
+    "process": "asap7"
+  },
+  "LIG.LISD.A.2": {
+    "rule": "Minimum area of overlap between LIG and LISD is 128 nm-sq.",
+    "layers": [
+      "LIG",
+      "LISD"
+    ],
+    "process": "asap7"
+  },
+  "LIG.GATE.A.3": {
+    "rule": "Minimum area of overlap between LIG (lying completely outside the layer SRAMDRC) and GATE (not cut using GCUT) is 320 nm-sq.",
+    "layers": [
+      "LIG",
+      "GATE"
+    ],
+    "process": "asap7"
+  },
+  "LIG.GATE.AUX.1": {
+    "rule": "LIG layer (lying completely outside the layer SRAMDRC) vertical edge may not lie inside, or coincide with, the GATE layer.",
+    "layers": [
+      "LIG",
+      "GATE"
+    ],
+    "process": "asap7"
+  },
+  "LIG.GATE.EX.1": {
+    "rule": "Minimum extension of LIG (lying completely outside the layer SRAMDRC) over GATE (not cut using GCUT) on both opposite sides is 1 nm.",
+    "layers": [
+      "LIG",
+      "GATE"
+    ],
+    "process": "asap7"
+  },
+  "LIG.LISD.OV.1": {
+    "rule": "Minimum overlap between LIG and LISD connected together is 8 nm.",
+    "layers": [
+      "LIG",
+      "LISD"
+    ],
+    "process": "asap7"
+  },
+  "V0.W.1": {
+    "rule": "Minimum width of a V0 instance along the length of M1 is 18 nm.",
+    "layers": [
+      "M1",
+      "V0"
+    ],
+    "process": "asap7"
+  },
+  "V0.S.1": {
+    "rule": "Minimum spacing between V0 instances [on the same M1 track | on parallel M1 tracks, if they are not aligned with each other | on parallel M1 tracks, if they are fully or partially aligned with each other], is [18 nm | 27 nm | 18 nm]. NOTE: The lower bound in the last case will be set by M1, precluding any occurrence of V0 instances at a distance smaller than the minimum spacing between M1.",
+    "layers": [
+      "M1",
+      "V0"
+    ],
+    "process": "asap7"
+  },
+  "V0.S.2": {
+    "rule": "Minimum corner-to-corner spacing between two V0 instances——both with a 5 nm M1 end-cap——is 23 nm.",
+    "layers": [
+      "M1",
+      "V0"
+    ],
+    "process": "asap7"
+  },
+  "V0.S.3": {
+    "rule": "Minimum corner-to-corner spacing between two V0 instance——both without a 5 nm M1 end-cap——is 30 nm.",
+    "layers": [
+      "M1",
+      "V0"
+    ],
+    "process": "asap7"
+  },
+  "V0.S.4": {
+    "rule": "Minimum corner-to-corner spacing between two V0 instances——one with and another without, a 5 nm M1 end-cap——is 27 nm.",
+    "layers": [
+      "M1",
+      "V0"
+    ],
+    "process": "asap7"
+  },
+  "V0.M1.EN.1": {
+    "rule": "Minimum enclosure of V0 by M1 on two opposite sides is 5 & 5 nm or 5 & 0 nm.",
+    "layers": [
+      "M1",
+      "V0"
+    ],
+    "process": "asap7"
+  },
+  "V0.LISD.EN.2": {
+    "rule": "Minimum enclosure of V0 (interacting with LISD, but not with LIG) by LISD on at least two opposite sides is 3 nm and such a V0 must lie completely inside LISD.",
+    "layers": [
+      "LISD",
+      "V0"
+    ],
+    "process": "asap7"
+  },
+  "V0.LISD.EN.3": {
+    "rule": "Minimum enclosure of V0 (sharing some, but not all its area with LISD) by LISD (interacting with LIG) on at least two opposite sides is 3 nm and such a V0 does not need to lie completely inside LISD.",
+    "layers": [
+      "LISD",
+      "V0"
+    ],
+    "process": "asap7"
+  },
+  "V0.LIG.EN.4": {
+    "rule": "Minimum enclosure of LIG by V0 (interacting with LIG and not inside LISD) on two opposite sides is 1 nm.",
+    "layers": [
+      "LIG",
+      "V0"
+    ],
+    "process": "asap7"
+  },
+  "V0.LIG.A.1": {
+    "rule": "Minimum area of overlap between V0 (interacting with LIG and not inside LISD) and LIG is 288 nm-sq.",
+    "layers": [
+      "LIG",
+      "V0"
+    ],
+    "process": "asap7"
+  },
+  "V0.AUX.1": {
+    "rule": "V0 must always interact with M1 and [LISD|LIG].",
+    "layers": [
+      "LIG",
+      "M1",
+      "LISD",
+      "V0"
+    ],
+    "process": "asap7"
+  },
+  "V0.LIG.AUX.2": {
+    "rule": "An instance of V0 (interacting with LIG but not inside LIG and not inside LISD) with an edge (parallel to the LIG length) lying inside, or touching LIG, is not permitted.",
+    "layers": [
+      "LIG",
+      "V0"
+    ],
+    "process": "asap7"
+  },
+  "V0.M1.AUX.3": {
+    "rule": "V0 must exactly be the same width as M1 along the direction perpendicular to the M1 length.",
+    "layers": [
+      "M1",
+      "V0"
+    ],
+    "process": "asap7"
+  },
+  "M1.W.1": {
+    "rule": "Minimum width of M1 is 18 nm.",
+    "layers": [
+      "M1"
+    ],
+    "process": "asap7"
+  },
+  "M1.S.1": {
+    "rule": "Minimum (side-to-side) spacing between two M1 layer polygons' edges, when both edges are > 36 nm, is 18 nm.",
+    "layers": [
+      "M1"
+    ],
+    "process": "asap7"
+  },
+  "M1.S.2": {
+    "rule": "Minimum (tip-to-side) spacing between two M1 layer polygons' edges, when one of the edges is <= 36 nm and the other is > 36 nm, is 25 nm.",
+    "layers": [
+      "M1"
+    ],
+    "process": "asap7"
+  },
+  "M1.S.3": {
+    "rule": "Minimum (tip-to-tip) spacing between two M1 layer polygons' edges, when both edges are >= 24 nm and <= 36 nm, is 27 nm.",
+    "layers": [
+      "M1"
+    ],
+    "process": "asap7"
+  },
+  "M1.S.4": {
+    "rule": "Minimum (tip-to-tip) spacing between two M1 layer polygons' edges, when both edges are < 24 nm, is 31 nm.",
+    "layers": [
+      "M1"
+    ],
+    "process": "asap7"
+  },
+  "M1.S.5": {
+    "rule": "Minimum (tip-to-tip) spacing between two M1 layer polygons' edges, when one of the edges is >= 24 nm and <= 36 nm, and the other is < 24 nm, is 31 nm.",
+    "layers": [
+      "M1"
+    ],
+    "process": "asap7"
+  },
+  "M1.S.6": {
+    "rule": "Minimum corner-to-corner spacing between two M1 polygons is 20 nm.",
+    "layers": [
+      "M1"
+    ],
+    "process": "asap7"
+  },
+  "M1.A.1": {
+    "rule": "Minimum M1 area is 504 nm-sq.",
+    "layers": [
+      "M1"
+    ],
+    "process": "asap7"
+  },
+  "M2.W.1": {
+    "rule": "Minimum width of M2 is 18 nm.",
+    "layers": [
+      "M2"
+    ],
+    "process": "asap7"
+  },
+  "M2.S.1": {
+    "rule": "Minimum (side-to-side) spacing between two M2 layer polygons' edges, when both edges are > 36 nm, is 18 nm.",
+    "layers": [
+      "M2"
+    ],
+    "process": "asap7"
+  },
+  "M2.S.2": {
+    "rule": "Minimum (tip-to-side) spacing between two M2 layer polygons' edges, when one of the edges is <= 36 nm and the other is > 36 nm, is 25 nm.",
+    "layers": [
+      "M2"
+    ],
+    "process": "asap7"
+  },
+  "M2.S.3": {
+    "rule": "Minimum (tip-to-tip) spacing between two M2 layer polygons' edges, when both edges are >= 24 nm and <= 36 nm, is 27 nm.",
+    "layers": [
+      "M2"
+    ],
+    "process": "asap7"
+  },
+  "M2.S.4": {
+    "rule": "Minimum (tip-to-tip) spacing between two M2 layer polygons' edges, when both edges are < 24 nm, is 31 nm.",
+    "layers": [
+      "M2"
+    ],
+    "process": "asap7"
+  },
+  "M2.S.5": {
+    "rule": "Minimum (tip-to-tip) spacing between two M2 layer polygons' edges, when one of the edges is >= 24 nm and <= 36 nm, and the other is < 24 nm, is 31 nm.",
+    "layers": [
+      "M2"
+    ],
+    "process": "asap7"
+  },
+  "M2.S.6": {
+    "rule": "Minimum corner-to-corner spacing between two M2 polygons is 20 nm.",
+    "layers": [
+      "M2"
+    ],
+    "process": "asap7"
+  },
+  "M2.A.1": {
+    "rule": "Minimum M2 area is 504 nm-sq.",
+    "layers": [
+      "M2"
+    ],
+    "process": "asap7"
+  },
+  "M3.W.1": {
+    "rule": "Minimum width of M3 is 18 nm.",
+    "layers": [
+      "M3"
+    ],
+    "process": "asap7"
+  },
+  "M3.S.1": {
+    "rule": "Minimum (side-to-side) spacing between two M3 layer polygons' edges, when both edges are > 36 nm, is 18 nm.",
+    "layers": [
+      "M3"
+    ],
+    "process": "asap7"
+  },
+  "M3.S.2": {
+    "rule": "Minimum (tip-to-side) spacing between two M3 layer polygons' edges, when one of the edges is <= 36 nm and the other is > 36 nm, is 25 nm.",
+    "layers": [
+      "M3"
+    ],
+    "process": "asap7"
+  },
+  "M3.S.3": {
+    "rule": "Minimum (tip-to-tip) spacing between two M3 layer polygons' edges, when both edges are >= 24 nm and <= 36 nm, is 27 nm.",
+    "layers": [
+      "M3"
+    ],
+    "process": "asap7"
+  },
+  "M3.S.4": {
+    "rule": "Minimum (tip-to-tip) spacing between two M3 layer polygons' edges, when both edges are < 24 nm, is 31 nm.",
+    "layers": [
+      "M3"
+    ],
+    "process": "asap7"
+  },
+  "M3.S.5": {
+    "rule": "Minimum (tip-to-tip) spacing between two M3 layer polygons' edges, when one of the edges is >= 24 nm and <= 36 nm, and the other is < 24 nm, is 31 nm.",
+    "layers": [
+      "M3"
+    ],
+    "process": "asap7"
+  },
+  "M3.S.6": {
+    "rule": "Minimum corner-to-corner spacing between two M3 polygons is 20 nm.",
+    "layers": [
+      "M3"
+    ],
+    "process": "asap7"
+  },
+  "M3.A.1": {
+    "rule": "Minimum M3 area is 504 nm-sq.",
+    "layers": [
+      "M3"
+    ],
+    "process": "asap7"
+  },
+  "V1.W.1": {
+    "rule": "Minimum width of a V1 instance along the length of M2 is 18 nm.",
+    "layers": [
+      "M2",
+      "V1"
+    ],
+    "process": "asap7"
+  },
+  "V1.S.1": {
+    "rule": "Minimum spacing between V1 instances [on the same M2 track | on parallel M2 tracks, if they are not aligned with each other | on parallel M2 tracks, if they are fully or partially aligned with each other], is [18 nm | 27 nm | 18 nm]. NOTE: The lower bound in the last case will be set by M2, precluding any occurrence of V1 instances at a distance smaller than the minimum spacing between M2.",
+    "layers": [
+      "M2",
+      "V1"
+    ],
+    "process": "asap7"
+  },
+  "V1.S.2": {
+    "rule": "Minimum corner-to-corner spacing between two V1 instances——both with a 5 nm M2 end-cap——is 23 nm.",
+    "layers": [
+      "M2",
+      "V1"
+    ],
+    "process": "asap7"
+  },
+  "V1.S.3": {
+    "rule": "Minimum corner-to-corner spacing between two V1 instances——both without a 5 nm M2 end-cap——is 30 nm.",
+    "layers": [
+      "M2",
+      "V1"
+    ],
+    "process": "asap7"
+  },
+  "V1.S.4": {
+    "rule": "Minimum corner-to-corner spacing between two V1 instances——one with and another without, a 5 nm M2 end-cap——is 27 nm.",
+    "layers": [
+      "M2",
+      "V1"
+    ],
+    "process": "asap7"
+  },
+  "V1.M1.EN.1": {
+    "rule": "Minimum enclosure of V1 by M1 on two opposite sides is 5 & 2 nm.",
+    "layers": [
+      "M1",
+      "V1"
+    ],
+    "process": "asap7"
+  },
+  "V1.M2.EN.2": {
+    "rule": "Minimum enclosure of V1 by M2 on two opposite sides is 5 & 5 nm or 5 & 0 nm.",
+    "layers": [
+      "M2",
+      "V1"
+    ],
+    "process": "asap7"
+  },
+  "V1.AUX.1": {
+    "rule": "V1 must be inside M1 and M2.",
+    "layers": [
+      "M1",
+      "V1",
+      "M2"
+    ],
+    "process": "asap7"
+  },
+  "V1.M2.AUX.2 ": {
+    "rule": "V1 must exactly be the same width as M2 along the direction perpendicular to the M2 length.",
+    "layers": [
+      "M2",
+      "V1"
+    ],
+    "process": "asap7"
+  },
+  "V2.W.1": {
+    "rule": "Minimum width of a V2 instance along the length of M3 is 18 nm.",
+    "layers": [
+      "V2",
+      "M3"
+    ],
+    "process": "asap7"
+  },
+  "V2.S.1": {
+    "rule": "Minimum spacing between V2 instances [on the same M3 track | on parallel M3 tracks, if they are not aligned with each other | on parallel M3 tracks, if they are fully or partially aligned with each other], is [18 nm | 27 nm | 18 nm]. NOTE: The lower bound in the last case will be set by M3, precluding any occurrence of V2 instances at a distance smaller than the minimum spacing between M3.",
+    "layers": [
+      "V2",
+      "M3"
+    ],
+    "process": "asap7"
+  },
+  "V2.S.2": {
+    "rule": "Minimum corner-to-corner spacing between two V2 instances——both with a 5 nm M3 end-cap——is 23 nm.",
+    "layers": [
+      "V2",
+      "M3"
+    ],
+    "process": "asap7"
+  },
+  "V2.S.3": {
+    "rule": "Minimum corner-to-corner spacing between two V2 instances——both without a 5 nm M3 end-cap——is 30 nm.",
+    "layers": [
+      "V2",
+      "M3"
+    ],
+    "process": "asap7"
+  },
+  "V2.S.4": {
+    "rule": "Minimum corner-to-corner spacing between two V2 instances——one with and another without, a 5 nm M3 end-cap——is 27 nm.",
+    "layers": [
+      "V2",
+      "M3"
+    ],
+    "process": "asap7"
+  },
+  "V2.M2.EN.1": {
+    "rule": "Minimum enclosure of V2 by M2 on at least two opposite sides is 5 nm.",
+    "layers": [
+      "M2",
+      "V2"
+    ],
+    "process": "asap7"
+  },
+  "V2.M3.EN.2": {
+    "rule": "Minimum enclosure of V2 by M3 on two opposite sides is 5 & 5 nm or 5 & 0 nm.",
+    "layers": [
+      "V2",
+      "M3"
+    ],
+    "process": "asap7"
+  },
+  "V2.AUX.1": {
+    "rule": "V2 must be inside M2 and M3.",
+    "layers": [
+      "M2",
+      "V2",
+      "M3"
+    ],
+    "process": "asap7"
+  },
+  "V2.M3.AUX.2 ": {
+    "rule": "V2 must exactly be the same width as M3 along the direction perpendicular to the M3 length.",
+    "layers": [
+      "V2",
+      "M3"
+    ],
+    "process": "asap7"
+  },
+  "V3.W.1": {
+    "rule": "Minimum width of a V3 instance along the length of M4 is 18 nm.",
+    "layers": [
+      "M4",
+      "V3"
+    ],
+    "process": "asap7"
+  },
+  "V3.S.1": {
+    "rule": "Minimum spacing between V3 instances [on the same M4 track | on parallel M4 tracks, if they are not aligned with each other | on parallel M4 tracks, if they are fully or partially aligned with each other], is [18 nm | 27 nm | 18 nm]. NOTE: The lower bound in the last case will be set by M4, precluding any occurrence of V3 instances at a distance smaller than the minimum spacing between M4.",
+    "layers": [
+      "M4",
+      "V3"
+    ],
+    "process": "asap7"
+  },
+  "V3.S.2": {
+    "rule": "Minimum corner-to-corner spacing between two V3 instances——both with a 5 nm M4 end-cap——is 23 nm.",
+    "layers": [
+      "M4",
+      "V3"
+    ],
+    "process": "asap7"
+  },
+  "V3.S.3": {
+    "rule": "Minimum corner-to-corner spacing between two V3 instances——both without a 5 nm M4 end-cap——is 30 nm.",
+    "layers": [
+      "M4",
+      "V3"
+    ],
+    "process": "asap7"
+  },
+  "V3.S.4": {
+    "rule": "Minimum corner-to-corner spacing between two V3 instances——one with and another without, a 5 nm M4 end-cap——is 27 nm.",
+    "layers": [
+      "M4",
+      "V3"
+    ],
+    "process": "asap7"
+  },
+  "V3.M3.EN.1": {
+    "rule": "Minimum enclosure of V3 by M3 on at least two opposite sides is 5 nm.",
+    "layers": [
+      "M3",
+      "V3"
+    ],
+    "process": "asap7"
+  },
+  "V3.M4.EN.2": {
+    "rule": "Minimum enclosure of V3 by M4 on at least two opposite sides is 11 nm.",
+    "layers": [
+      "M4",
+      "V3"
+    ],
+    "process": "asap7"
+  },
+  "V3.AUX.1": {
+    "rule": "V3 must be inside M3 and M4.",
+    "layers": [
+      "M3",
+      "M4",
+      "V3"
+    ],
+    "process": "asap7"
+  },
+  "V3.M4.AUX.2 ": {
+    "rule": "V3 must exactly be the same width as M4 along the direction perpendicular to the M4 length.",
+    "layers": [
+      "M4",
+      "V3"
+    ],
+    "process": "asap7"
+  },
+  "M4.W.1": {
+    "rule": "Minimum vertical width of M4 is 24 nm.",
+    "layers": [
+      "M4"
+    ],
+    "process": "asap7"
+  },
+  "M4.W.2": {
+    "rule": "Maximum vertical width of M4 is 480 nm.",
+    "layers": [
+      "M4"
+    ],
+    "process": "asap7"
+  },
+  "M4.W.3": {
+    "rule": "M4 vertical width may not be an even integer multiple of its minimum width.",
+    "layers": [
+      "M4"
+    ],
+    "process": "asap7"
+  },
+  "M4.W.4": {
+    "rule": "M4 vertical width, resulting in the polygon spanning an even number of minimum width routing tracks vertically, is not allowed.",
+    "layers": [
+      "M4"
+    ],
+    "process": "asap7"
+  },
+  "M4.W.5": {
+    "rule": "Minimum horizontal width of M4 is 44 nm.",
+    "layers": [
+      "M4"
+    ],
+    "process": "asap7"
+  },
+  "M4.S.1": {
+    "rule": "Minimum vertical spacing between two M4 layer polygons' edges, regardless of the edge lengths and mask colors, is 24 nm.",
+    "layers": [
+      "M4"
+    ],
+    "process": "asap7"
+  },
+  "M4.S.2": {
+    "rule": "Minimum horizontal spacing between two M4 layer polygons' edges, regardless of the edge lengths and mask colors, is 40 nm.",
+    "layers": [
+      "M4"
+    ],
+    "process": "asap7"
+  },
+  "M4.S.3": {
+    "rule": "Minimum tip-to-tip spacing between two M4 layer polygons——that do not share a parallel run length——on adjacent tracks is 40 nm.",
+    "layers": [
+      "M4"
+    ],
+    "process": "asap7"
+  },
+  "M4.S.4": {
+    "rule": "Minimum tip-to-tip spacing between two M4 layer polygons——that share a parallel run length——on adjacent tracks is 40 nm.",
+    "layers": [
+      "M4"
+    ],
+    "process": "asap7"
+  },
+  "M4.S.5": {
+    "rule": "Minimum parallel run length of two M4 layer polygons on adjacent tracks is 44 nm.",
+    "layers": [
+      "M4"
+    ],
+    "process": "asap7"
+  },
+  "M4.AUX.1": {
+    "rule": "M4 horizontal edges must be at a grid of 24 nm.",
+    "layers": [
+      "M4"
+    ],
+    "process": "asap7"
+  },
+  "M4.AUX.2": {
+    "rule": "Minimum width M4 tracks must lie along the horizontal routing tracks. These tracks are located at a spacing equal to: 2N x minimum metal width + offset from the origin, where N ϵ Z-+.",
+    "layers": [
+      "M4"
+    ],
+    "process": "asap7"
+  },
+  "M4.AUX.3": {
+    "rule": "M4 may not bend.",
+    "layers": [
+      "M4"
+    ],
+    "process": "asap7"
+  },
+  "M4.AUX.4": {
+    "rule": "Outside edge of a wide M4 layer polygon may not touch a routing track edge.",
+    "layers": [
+      "M4"
+    ],
+    "process": "asap7"
+  },
+  "M5.W.1": {
+    "rule": "Minimum horizontal width of M5 is 24 nm.",
+    "layers": [
+      "M5"
+    ],
+    "process": "asap7"
+  },
+  "M5.W.2": {
+    "rule": "Maximum horizontal width of M5 is 480 nm.",
+    "layers": [
+      "M5"
+    ],
+    "process": "asap7"
+  },
+  "M5.W.3": {
+    "rule": "M5 horizontal width may not be an even integer multiple of its minimum width.",
+    "layers": [
+      "M5"
+    ],
+    "process": "asap7"
+  },
+  "M5.W.4": {
+    "rule": "M5 horizontal width, resulting in the polygon spanning an even number of minimum width routing tracks horizontally, is not allowed.",
+    "layers": [
+      "M5"
+    ],
+    "process": "asap7"
+  },
+  "M5.W.5": {
+    "rule": "Minimum vertical width of M5 is 44 nm.",
+    "layers": [
+      "M5"
+    ],
+    "process": "asap7"
+  },
+  "M5.S.1": {
+    "rule": "Minimum horizontal spacing between two M5 layer polygons' edges, regardless of the edge lengths and mask colors, is 24 nm.",
+    "layers": [
+      "M5"
+    ],
+    "process": "asap7"
+  },
+  "M5.S.2": {
+    "rule": "Minimum vertical spacing between two M5 layer polygons' edges, regardless of the edge lengths and mask colors, is 40 nm.",
+    "layers": [
+      "M5"
+    ],
+    "process": "asap7"
+  },
+  "M5.S.3": {
+    "rule": "Minimum tip-to-tip spacing between two M5 layer polygons——that do not share a parallel run length——on adjacent tracks is 40 nm.",
+    "layers": [
+      "M5"
+    ],
+    "process": "asap7"
+  },
+  "M5.S.4": {
+    "rule": "Minimum tip-to-tip spacing between two M5 layer polygons——that share a parallel run length——on adjacent tracks is 40 nm.",
+    "layers": [
+      "M5"
+    ],
+    "process": "asap7"
+  },
+  "M5.S.5": {
+    "rule": "Minimum parallel run length of two M5 layer polygons on adjacent tracks is 44 nm.",
+    "layers": [
+      "M5"
+    ],
+    "process": "asap7"
+  },
+  "M5.AUX.1": {
+    "rule": "M5 vertical edges must be at a grid of 24 nm.",
+    "layers": [
+      "M5"
+    ],
+    "process": "asap7"
+  },
+  "M5.AUX.2": {
+    "rule": "Minimum width M5 tracks must lie along the vertical routing tracks. These tracks are located at a spacing equal to: 2N x minimum metal width + offset from the origin, where N ϵ Z-+.",
+    "layers": [
+      "M5"
+    ],
+    "process": "asap7"
+  },
+  "M5.AUX.3": {
+    "rule": "M5 may not bend.",
+    "layers": [
+      "M5"
+    ],
+    "process": "asap7"
+  },
+  "M5.AUX.4": {
+    "rule": "Outside edge of a wide M5 layer polygon may not touch a routing track edge.",
+    "layers": [
+      "M5"
+    ],
+    "process": "asap7"
+  },
+  "M6.W.1": {
+    "rule": "Minimum vertical width of M6 is 32 nm.",
+    "layers": [
+      "M6"
+    ],
+    "process": "asap7"
+  },
+  "M6.W.2": {
+    "rule": "Maximum vertical width of M6 is 640 nm.",
+    "layers": [
+      "M6"
+    ],
+    "process": "asap7"
+  },
+  "M6.W.3": {
+    "rule": "M6 vertical width may not be an even integer multiple of its minimum width.",
+    "layers": [
+      "M6"
+    ],
+    "process": "asap7"
+  },
+  "M6.W.4": {
+    "rule": "M6 vertical width, resulting in the polygon spanning an even number of minimum width routing tracks vertically, is not allowed.",
+    "layers": [
+      "M6"
+    ],
+    "process": "asap7"
+  },
+  "M6.W.5": {
+    "rule": "Minimum horizontal width of M6 is 44 nm.",
+    "layers": [
+      "M6"
+    ],
+    "process": "asap7"
+  },
+  "M6.S.1": {
+    "rule": "Minimum vertical spacing between two M6 layer polygons' edges, regardless of the edge lengths and mask colors, is 32 nm.",
+    "layers": [
+      "M6"
+    ],
+    "process": "asap7"
+  },
+  "M6.S.2": {
+    "rule": "Minimum horizontal spacing between two M6 layer polygons' edges, regardless of the edge lengths and mask colors, is 40 nm.",
+    "layers": [
+      "M6"
+    ],
+    "process": "asap7"
+  },
+  "M6.S.3": {
+    "rule": "Minimum tip-to-tip spacing between two M6 layer polygons——that do not share a parallel run length——on adjacent tracks is 40 nm.",
+    "layers": [
+      "M6"
+    ],
+    "process": "asap7"
+  },
+  "M6.S.4": {
+    "rule": "Minimum tip-to-tip spacing between two M6 layer polygons——that share a parallel run length——on adjacent tracks is 40 nm.",
+    "layers": [
+      "M6"
+    ],
+    "process": "asap7"
+  },
+  "M6.S.5": {
+    "rule": "Minimum parallel run length of two M6 layer polygons on adjacent tracks is 44 nm.",
+    "layers": [
+      "M6"
+    ],
+    "process": "asap7"
+  },
+  "M6.AUX.1": {
+    "rule": "M6 horizontal edges must be at a grid of 32 nm.",
+    "layers": [
+      "M6"
+    ],
+    "process": "asap7"
+  },
+  "M6.AUX.2": {
+    "rule": "Minimum width M6 tracks must lie along the horizontal routing tracks. These tracks are located at a spacing equal to: 2N x minimum metal width + offset from the origin, where N ϵ Z-+.",
+    "layers": [
+      "M6"
+    ],
+    "process": "asap7"
+  },
+  "M6.AUX.3": {
+    "rule": "M6 may not bend.",
+    "layers": [
+      "M6"
+    ],
+    "process": "asap7"
+  },
+  "M6.AUX.4": {
+    "rule": "Outside edge of a wide M6 layer polygon may not touch a routing track edge.",
+    "layers": [
+      "M6"
+    ],
+    "process": "asap7"
+  },
+  "M7.W.1": {
+    "rule": "Minimum horizontal width of M7 is 32 nm.",
+    "layers": [
+      "M7"
+    ],
+    "process": "asap7"
+  },
+  "M7.W.2": {
+    "rule": "Maximum horizontal width of M7 is 640 nm.",
+    "layers": [
+      "M7"
+    ],
+    "process": "asap7"
+  },
+  "M7.W.3": {
+    "rule": "M7 horizontal width may not be an even integer multiple of its minimum width.",
+    "layers": [
+      "M7"
+    ],
+    "process": "asap7"
+  },
+  "M7.W.4": {
+    "rule": "M7 horizontal width, resulting in the polygon spanning an even number of minimum width routing tracks horizontally, is not allowed.",
+    "layers": [
+      "M7"
+    ],
+    "process": "asap7"
+  },
+  "M7.W.5": {
+    "rule": "Minimum vertical width of M7 is 44 nm.",
+    "layers": [
+      "M7"
+    ],
+    "process": "asap7"
+  },
+  "M7.S.1": {
+    "rule": "Minimum horizontal spacing between two M7 layer polygons' edges, regardless of the edge lengths and mask colors, is 32 nm.",
+    "layers": [
+      "M7"
+    ],
+    "process": "asap7"
+  },
+  "M7.S.2": {
+    "rule": "Minimum vertical spacing between two M7 layer polygons' edges, regardless of the edge lengths and mask colors, is 40 nm.",
+    "layers": [
+      "M7"
+    ],
+    "process": "asap7"
+  },
+  "M7.S.3": {
+    "rule": "Minimum tip-to-tip spacing between two M7 layer polygons——that do not share a parallel run length——on adjacent tracks is 40 nm.",
+    "layers": [
+      "M7"
+    ],
+    "process": "asap7"
+  },
+  "M7.S.4": {
+    "rule": "Minimum tip-to-tip spacing between two M7 layer polygons——that share a parallel run length——on adjacent tracks is 40 nm.",
+    "layers": [
+      "M7"
+    ],
+    "process": "asap7"
+  },
+  "M7.S.5": {
+    "rule": "Minimum parallel run length of two M7 layer polygons on adjacent tracks is 44 nm.",
+    "layers": [
+      "M7"
+    ],
+    "process": "asap7"
+  },
+  "M7.AUX.1": {
+    "rule": "M7 vertical edges must be at a grid of 32 nm.",
+    "layers": [
+      "M7"
+    ],
+    "process": "asap7"
+  },
+  "M7.AUX.2": {
+    "rule": "Minimum width M7 tracks must lie along the vertical routing tracks. These tracks are located at a spacing equal to: 2N x minimum metal width + offset from the origin, where N ϵ Z-+.",
+    "layers": [
+      "M7"
+    ],
+    "process": "asap7"
+  },
+  "M7.AUX.3": {
+    "rule": "M7 may not bend.",
+    "layers": [
+      "M7"
+    ],
+    "process": "asap7"
+  },
+  "M7.AUX.4": {
+    "rule": "Outside edge of a wide M7 layer polygon may not touch a routing track edge.",
+    "layers": [
+      "M7"
+    ],
+    "process": "asap7"
+  },
+  "V4.W.1": {
+    "rule": "Minimum width of a V4 instance along the length of M5 is 24 nm.",
+    "layers": [
+      "V4",
+      "M5"
+    ],
+    "process": "asap7"
+  },
+  "V4.S.1": {
+    "rule": "Minimum spacing between V4 instances on the same net is 33 nm.",
+    "layers": [
+      "V4"
+    ],
+    "process": "asap7"
+  },
+  "V4.S.2": {
+    "rule": "Minimum spacing between V4 instances on different nets is 33 nm.",
+    "layers": [
+      "V4"
+    ],
+    "process": "asap7"
+  },
+  "V4.S.3": {
+    "rule": "Minimum corner-to-corner spacing between two V4 instances is 33 nm.",
+    "layers": [
+      "V4"
+    ],
+    "process": "asap7"
+  },
+  "V4.M4.EN.1": {
+    "rule": "Minimum enclosure of V4 by M4 on at least two opposite sides is 11 nm.",
+    "layers": [
+      "M4",
+      "V4"
+    ],
+    "process": "asap7"
+  },
+  "V4.M5.EN.2": {
+    "rule": "Minimum enclosure of V4 by M5 on two opposite sides is 11 nm.",
+    "layers": [
+      "V4",
+      "M5"
+    ],
+    "process": "asap7"
+  },
+  "V4.AUX.1": {
+    "rule": "V4 must be inside M4 and M5.",
+    "layers": [
+      "M4",
+      "V4",
+      "M5"
+    ],
+    "process": "asap7"
+  },
+  "V4.M5.AUX.2 ": {
+    "rule": "V4 must exactly be the same width as M5 along the direction perpendicular to the M5 length.",
+    "layers": [
+      "V4",
+      "M5"
+    ],
+    "process": "asap7"
+  },
+  "V5.W.1": {
+    "rule": "Minimum width of a V5 instance along the length of M6 is 24 nm.",
+    "layers": [
+      "M6",
+      "V5"
+    ],
+    "process": "asap7"
+  },
+  "V5.S.1": {
+    "rule": "Minimum spacing between V5 instances on the same net is 33 nm.",
+    "layers": [
+      "V5"
+    ],
+    "process": "asap7"
+  },
+  "V5.S.2": {
+    "rule": "Minimum spacing between V5 instances on different nets is 33 nm.",
+    "layers": [
+      "V5"
+    ],
+    "process": "asap7"
+  },
+  "V5.S.3": {
+    "rule": "Minimum corner-to-corner spacing between two V5 instances is 33 nm.",
+    "layers": [
+      "V5"
+    ],
+    "process": "asap7"
+  },
+  "V5.M5.EN.1": {
+    "rule": "Minimum enclosure of V5 by M5 on at least two opposite sides is 11 nm.",
+    "layers": [
+      "M5",
+      "V5"
+    ],
+    "process": "asap7"
+  },
+  "V5.M6.EN.2": {
+    "rule": "Minimum enclosure of V5 by M6 on two opposite sides is 11 nm.",
+    "layers": [
+      "M6",
+      "V5"
+    ],
+    "process": "asap7"
+  },
+  "V5.AUX.1": {
+    "rule": "V5 must be inside M5 and M6.",
+    "layers": [
+      "M6",
+      "M5",
+      "V5"
+    ],
+    "process": "asap7"
+  },
+  "V5.M6.AUX.2 ": {
+    "rule": "V5 must exactly be the same width as M6 along the direction perpendicular to the M6 length.",
+    "layers": [
+      "M6",
+      "V5"
+    ],
+    "process": "asap7"
+  },
+  "V6.W.1": {
+    "rule": "Minimum width of a V6 instance along the length of M7 is 32 nm.",
+    "layers": [
+      "V6",
+      "M7"
+    ],
+    "process": "asap7"
+  },
+  "V6.S.1": {
+    "rule": "Minimum spacing between V6 instances on the same net is 45 nm.",
+    "layers": [
+      "V6"
+    ],
+    "process": "asap7"
+  },
+  "V6.S.2": {
+    "rule": "Minimum spacing between V6 instances on different nets is 45 nm.",
+    "layers": [
+      "V6"
+    ],
+    "process": "asap7"
+  },
+  "V6.S.3": {
+    "rule": "Minimum corner-to-corner spacing between two V6 instances is 45 nm.",
+    "layers": [
+      "V6"
+    ],
+    "process": "asap7"
+  },
+  "V6.M6.EN.1": {
+    "rule": "Minimum enclosure of V6 by M6 on at least two opposite sides is 11 nm.",
+    "layers": [
+      "V6",
+      "M6"
+    ],
+    "process": "asap7"
+  },
+  "V6.M7.EN.2": {
+    "rule": "Minimum enclosure of V6 by M7 on two opposite sides is 11 nm.",
+    "layers": [
+      "V6",
+      "M7"
+    ],
+    "process": "asap7"
+  },
+  "V6.AUX.1": {
+    "rule": "V6 must be inside M6 and M7.",
+    "layers": [
+      "V6",
+      "M6",
+      "M7"
+    ],
+    "process": "asap7"
+  },
+  "V6.M7.AUX.2 ": {
+    "rule": "V6 must exactly be the same width as M7 along the direction perpendicular to the M7 length.",
+    "layers": [
+      "V6",
+      "M7"
+    ],
+    "process": "asap7"
+  },
+  "V7.W.1": {
+    "rule": "Minimum width of a V7 instance along the length of M8 is 32 nm.",
+    "layers": [
+      "V7",
+      "M8"
+    ],
+    "process": "asap7"
+  },
+  "V7.S.1": {
+    "rule": "Minimum spacing between V7 instances on the same net is 45 nm.",
+    "layers": [
+      "V7"
+    ],
+    "process": "asap7"
+  },
+  "V7.S.2": {
+    "rule": "Minimum spacing between V7 instances on different nets is 45 nm.",
+    "layers": [
+      "V7"
+    ],
+    "process": "asap7"
+  },
+  "V7.S.3": {
+    "rule": "Minimum corner-to-corner spacing between two V7 instances is 45 nm.",
+    "layers": [
+      "V7"
+    ],
+    "process": "asap7"
+  },
+  "V7.M7.EN.1": {
+    "rule": "Minimum enclosure of V7 by M7 on at least two opposite sides is 11 nm.",
+    "layers": [
+      "V7",
+      "M7"
+    ],
+    "process": "asap7"
+  },
+  "V7.M8.EN.2": {
+    "rule": "Minimum enclosure of V7 by M8 on two opposite sides is 11 nm.",
+    "layers": [
+      "V7",
+      "M8"
+    ],
+    "process": "asap7"
+  },
+  "V7.AUX.1": {
+    "rule": "V7 must be inside M7 and M8.",
+    "layers": [
+      "V7",
+      "M8",
+      "M7"
+    ],
+    "process": "asap7"
+  },
+  "V7.M8.AUX.2 ": {
+    "rule": "V7 must exactly be the same width as M8 along the direction perpendicular to the M8 length.",
+    "layers": [
+      "V7",
+      "M8"
+    ],
+    "process": "asap7"
+  },
+  "M8.W.1": {
+    "rule": "Minimum width of M8 is 40 nm.",
+    "layers": [
+      "M8"
+    ],
+    "process": "asap7"
+  },
+  "M8.W.2": {
+    "rule": "Minimum width of M8, when its length >= 400 nm and < 1200 nm, is 60 nm.",
+    "layers": [
+      "M8"
+    ],
+    "process": "asap7"
+  },
+  "M8.W.3": {
+    "rule": "Minimum width of M8, when its length >= 1200 nm and < 1800 nm, is 80 nm.",
+    "layers": [
+      "M8"
+    ],
+    "process": "asap7"
+  },
+  "M8.W.4": {
+    "rule": "Minimum width of M8, when its length >= 1800 nm, is 120 nm.",
+    "layers": [
+      "M8"
+    ],
+    "process": "asap7"
+  },
+  "M8.W.5": {
+    "rule": "Maximum width of M8 is 2000 nm.",
+    "layers": [
+      "M8"
+    ],
+    "process": "asap7"
+  },
+  "M8.S.1": {
+    "rule": "Minimum (side-to-side) spacing between two M8 layer polygons' edges, when both edges are >= 80 nm, is 40 nm.",
+    "layers": [
+      "M8"
+    ],
+    "process": "asap7"
+  },
+  "M8.S.2": {
+    "rule": "Minimum (tip-to-side) spacing between two M8 layer polygons' edges, when one of the edges is < 80 nm and the other is >= 80 nm, is 43 nm.",
+    "layers": [
+      "M8"
+    ],
+    "process": "asap7"
+  },
+  "M8.S.3": {
+    "rule": "Minimum (tip-to-tip) spacing between two M8 layer polygons' edges, when both edges are < 80 nm, is 46 nm.",
+    "layers": [
+      "M8"
+    ],
+    "process": "asap7"
+  },
+  "M8.S.4": {
+    "rule": "Minimum spacing between two M8 layer polygons' edges, when one of the edges is >= 60 nm and < 80 nm, is 60 nm.",
+    "layers": [
+      "M8"
+    ],
+    "process": "asap7"
+  },
+  "M8.S.5": {
+    "rule": "Minimum spacing between two M8 layer polygons' edges, when one of the edges is >= 80 nm and < 120 nm, is 80 nm.",
+    "layers": [
+      "M8"
+    ],
+    "process": "asap7"
+  },
+  "M8.S.6": {
+    "rule": "Minimum spacing between two M8 layer polygons' edges, when one of the edges is >= 120 nm and < 500 nm, is 120 nm.",
+    "layers": [
+      "M8"
+    ],
+    "process": "asap7"
+  },
+  "M8.S.7": {
+    "rule": "Minimum spacing between two M8 layer polygons' edges, when one of the edges is >= 500 nm and < 1000 nm, is 500 nm.",
+    "layers": [
+      "M8"
+    ],
+    "process": "asap7"
+  },
+  "M8.S.8": {
+    "rule": "Minimum spacing between two M8 layer polygons' edges, when one of the edges is >= 1000 nm, is 1000 nm.",
+    "layers": [
+      "M8"
+    ],
+    "process": "asap7"
+  },
+  "M8.A.1": {
+    "rule": "Minimum area of M8 is 7520 nm-sq.",
+    "layers": [
+      "M8"
+    ],
+    "process": "asap7"
+  },
+  "M8.L.1 ": {
+    "rule": "Minimum feature length of M8 is 40 nm.",
+    "layers": [
+      "M8"
+    ],
+    "process": "asap7"
+  },
+  "M9.W.1": {
+    "rule": "Minimum width of M9 is 40 nm.",
+    "layers": [
+      "M9"
+    ],
+    "process": "asap7"
+  },
+  "M9.W.2": {
+    "rule": "Minimum width of M9, when its length >= 400 nm and < 1200 nm, is 60 nm.",
+    "layers": [
+      "M9"
+    ],
+    "process": "asap7"
+  },
+  "M9.W.3": {
+    "rule": "Minimum width of M9, when its length >= 1200 nm and < 1800 nm, is 80 nm.",
+    "layers": [
+      "M9"
+    ],
+    "process": "asap7"
+  },
+  "M9.W.4": {
+    "rule": "Minimum width of M9, when its length >= 1800 nm, is 120 nm.",
+    "layers": [
+      "M9"
+    ],
+    "process": "asap7"
+  },
+  "M9.W.5": {
+    "rule": "Maximum width of M9 is 2000 nm.",
+    "layers": [
+      "M9"
+    ],
+    "process": "asap7"
+  },
+  "M9.S.1": {
+    "rule": "Minimum (side-to-side) spacing between two M9 layer polygons' edges, when both edges are >= 80 nm, is 40 nm.",
+    "layers": [
+      "M9"
+    ],
+    "process": "asap7"
+  },
+  "M9.S.2": {
+    "rule": "Minimum (tip-to-side) spacing between two M9 layer polygons' edges, when one of the edges is < 80 nm and the other is >= 80 nm, is 43 nm.",
+    "layers": [
+      "M9"
+    ],
+    "process": "asap7"
+  },
+  "M9.S.3": {
+    "rule": "Minimum (tip-to-tip) spacing between two M9 layer polygons' edges, when both edges are < 80 nm, is 46 nm.",
+    "layers": [
+      "M9"
+    ],
+    "process": "asap7"
+  },
+  "M9.S.4": {
+    "rule": "Minimum spacing between two M9 layer polygons' edges, when one of the edges is >= 60 nm and < 80 nm, is 60 nm.",
+    "layers": [
+      "M9"
+    ],
+    "process": "asap7"
+  },
+  "M9.S.5": {
+    "rule": "Minimum spacing between two M9 layer polygons' edges, when one of the edges is >= 80 nm and < 120 nm, is 80 nm.",
+    "layers": [
+      "M9"
+    ],
+    "process": "asap7"
+  },
+  "M9.S.6": {
+    "rule": "Minimum spacing between two M9 layer polygons' edges, when one of the edges is >= 120 nm and < 500 nm, is 120 nm.",
+    "layers": [
+      "M9"
+    ],
+    "process": "asap7"
+  },
+  "M9.S.7": {
+    "rule": "Minimum spacing between two M9 layer polygons' edges, when one of the edges is >= 500 nm and < 1000 nm, is 500 nm.",
+    "layers": [
+      "M9"
+    ],
+    "process": "asap7"
+  },
+  "M9.S.8": {
+    "rule": "Minimum spacing between two M9 layer polygons' edges, when one of the edges is >= 1000 nm, is 1000 nm.",
+    "layers": [
+      "M9"
+    ],
+    "process": "asap7"
+  },
+  "M9.A.1": {
+    "rule": "Minimum area of M9 is 7520 nm-sq.",
+    "layers": [
+      "M9"
+    ],
+    "process": "asap7"
+  },
+  "M9.L.1 ": {
+    "rule": "Minimum feature length of M9 is 40 nm.",
+    "layers": [
+      "M9"
+    ],
+    "process": "asap7"
+  },
+  "V8.W.1": {
+    "rule": "Exact width of a V8 instance is [40 nm x 40 nm | 40 nm x 120 nm | 120 nm x 40 nm].",
+    "layers": [
+      "V8"
+    ],
+    "process": "asap7"
+  },
+  "V8.S.1": {
+    "rule": "Minimum spacing between two V8 instances is 57 nm.",
+    "layers": [
+      "V8"
+    ],
+    "process": "asap7"
+  },
+  "V8.S.2": {
+    "rule": "Minimum corner-to-corner spacing between V8 instances is 57 nm.",
+    "layers": [
+      "V8"
+    ],
+    "process": "asap7"
+  },
+  "V8.M8.EN.1": {
+    "rule": "Minimum enclosure of V8 by M8 on at least two opposite sides is 20 nm.",
+    "layers": [
+      "M8",
+      "V8"
+    ],
+    "process": "asap7"
+  },
+  "V8.M9.EN.2": {
+    "rule": "Minimum enclosure of V8 by M9 on at least two opposite sides is 20 nm.",
+    "layers": [
+      "M9",
+      "V8"
+    ],
+    "process": "asap7"
+  },
+  "V8.AUX.1": {
+    "rule": "V8 must be inside M8 and M9.",
+    "layers": [
+      "M9",
+      "M8",
+      "V8"
+    ],
+    "process": "asap7"
+  },
+  "V9.W.1": {
+    "rule": "Exact width of a V9 instance is [40 nm x 40 nm | 40 nm x 120 nm | 120 nm x 40 nm].",
+    "layers": [
+      "V9"
+    ],
+    "process": "asap7"
+  },
+  "V9.S.1": {
+    "rule": "Minimum spacing between two V9 instances is 57 nm.",
+    "layers": [
+      "V9"
+    ],
+    "process": "asap7"
+  },
+  "V9.S.2": {
+    "rule": "Minimum corner-to-corner spacing between V9 instances is 57 nm.",
+    "layers": [
+      "V9"
+    ],
+    "process": "asap7"
+  },
+  "V9.M9.EN.1": {
+    "rule": "Minimum enclosure of V9 by M9 on at least two opposite sides is 20 nm.",
+    "layers": [
+      "M9",
+      "V9"
+    ],
+    "process": "asap7"
+  },
+  "V9.PAD.EN.2": {
+    "rule": "Minimum enclosure of V9 by PAD on at least two opposite sides is 20 nm.",
+    "layers": [
+      "V9",
+      "PAD"
+    ],
+    "process": "asap7"
+  },
+  "V9.AUX.1": {
+    "rule": "V9 must be inside M9 and PAD.",
+    "layers": [
+      "M9",
+      "V9",
+      "PAD"
+    ],
+    "process": "asap7"
+  }
+}

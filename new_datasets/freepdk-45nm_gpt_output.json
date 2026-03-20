@@ -1,0 +1,174 @@
+{
+    "Well.4": {
+        "rule": "Min width of well = 0.2",
+        "script": "INTERNAL well < 0.2",
+        "constraints": [
+            "set_min_width(0.2*10**3)\tset_min_height(0.2*10**3)"
+        ]
+    },
+    "Poly.1": {
+        "rule": "Min width of poly = 0.05",
+        "script": "INTERNAL poly < 0.05",
+        "constraints": [
+            "set_min_width(0.05*(10**3)) \t set_min_height(0.05*(10**3))"
+        ]
+    },
+    "Active.1": {
+        "rule": "Minimum width of active = 0.09",
+        "script": "INTERNAL active < 0.09",
+        "constraints": [
+            "set_min_width(90) \t set_min_height(90)"
+        ]
+    },
+    "Implant.4": {
+        "rule": "Minimum width of implant = 0.045",
+        "script": "INTERNAL implant < 0.045",
+        "constraints": [
+            "set_min_width(45) \t set_min_height(45)"
+        ]
+    },
+    "Contact.1": {
+        "rule": "Minimum width of contact = 0.065",
+        "script": "INTERNAL contact < 0.065",
+        "constraints": [
+            "set_min_width(0.065*10**3) \t set_min_height(0.065*10**3)"
+        ]
+    },
+    "Metal1.1": {
+        "rule": "Minimum width of metal1 = 0.065",
+        "script": "INTERNAL metal1 < 0.065",
+        "constraints": [
+            "set_min_width(0.065*10**3) \t set_min_height(0.065*10**3)"
+        ]
+    },
+    "Via1.1": {
+        "rule": "Minimum width of via1 = 0.065",
+        "script": "INTERNAL via1 < 0.065",
+        "constraints": [
+            "set_min_width(65) \t set_min_height(65)"
+        ]
+    },
+    "Metal2.1": {
+        "rule": "Minimum width of metal2 = 0.07",
+        "script": "INTERNAL metal2 < 0.07",
+        "constraints": [
+            "set_min_width(70) \t set_min_height(70)"
+        ]
+    },
+    "Via2.1": {
+        "rule": "Minimum width of via2 = 0.07",
+        "script": "INTERNAL via2 < 0.065",
+        "constraints": [
+            "set_min_width(70) \t set_min_height(70)"
+        ]
+    },
+    "Metal3.1": {
+        "rule": "Minimum width of metal3 = 0.07",
+        "script": "INTERNAL metal3 < 0.07",
+        "constraints": [
+            "set_min_width(70) \t set_min_height(70)"
+        ]
+    },
+    "Via3.1": {
+        "rule": "Minimum width of via3 = 0.07",
+        "script": "INTERNAL via3 < 0.065",
+        "constraints": [
+            "set_min_width(70) \t set_min_height(70)"
+        ]
+    },
+    "Metal4.1": {
+        "rule": "Minimum width of metal4 = 0.14",
+        "script": "INTERNAL metal4 < 0.14",
+        "constraints": [
+            "set_min_width(0.14*10**3)",
+            "set_min_height(0.14*10**3)"
+        ]
+    },
+    "Via4.1": {
+        "rule": "Minimum width of via4 = 0.14",
+        "script": "INTERNAL via4 < 0.14",
+        "constraints": [
+            "set_min_width(140) \t set_min_height(140)"
+        ]
+    },
+    "Metal5.1": {
+        "rule": "Minimum width of metal5 = 0.14",
+        "script": "INTERNAL metal5 < 0.14",
+        "constraints": [
+            "set_min_width(0.14*10**3)\t set_min_height(0.14*10**3)"
+        ]
+    },
+    "Via5.1": {
+        "rule": "Minimum width of via5 = 0.14",
+        "script": "INTERNAL via5 < 0.14",
+        "constraints": [
+            "set_min_width(0.14*1000) \t set_min_height(0.14*1000)"
+        ]
+    },
+    "Metal6.1": {
+        "rule": "Minimum width of metal6 = 0.14",
+        "script": "INTERNAL metal6 < 0.14",
+        "constraints": [
+            "set_min_width(0.14 * (10**3))",
+            "set_min_height(0.14 * (10**3))"
+        ]
+    },
+    "Via6.1": {
+        "rule": "Minimum width of via6 = 0.14",
+        "script": "INTERNAL via6 < 0.14",
+        "constraints": [
+            "set_min_width(140) \t set_min_height(140)"
+        ]
+    },
+    "Metal7.1": {
+        "rule": "Minimum width of metal7 = 0.4",
+        "script": "INTERNAL metal7 < 0.4",
+        "constraints": [
+            "set_min_width(400) \t set_min_height(400)"
+        ]
+    },
+    "Via7.1": {
+        "rule": "Minimum width of via7 = 0.4",
+        "script": "INTERNAL via7 < 0.4",
+        "constraints": [
+            "set_min_width(0.4 * (10**3)) \t set_min_height(0.4 * (10**3))"
+        ]
+    },
+    "Metal8.1": {
+        "rule": "Minimum width of metal8 = 0.4",
+        "script": "INTERNAL metal8 < 0.4",
+        "constraints": [
+            "set_min_width(0.4*(10**3)) \t set_min_height(0.4*(10**3))"
+        ]
+    },
+    "Via8.1": {
+        "rule": "Minimum width of via8 = 0.4",
+        "script": "INTERNAL via8 < 0.4",
+        "constraints": [
+            "set_min_width(0.4*(10**3))  ",
+            "set_min_height(0.4*(10**3))"
+        ]
+    },
+    "Metal9.1": {
+        "rule": "Minimum width of metal9 = 0.8",
+        "script": "INTERNAL metal9 < 0.8",
+        "constraints": [
+            "set_min_width(0.8*(10**3)) \t set_min_height(0.8*(10**3))"
+        ]
+    },
+    "Via9.1": {
+        "rule": "Minimum width of via9 = 0.8",
+        "script": "INTERNAL via9 < 0.8",
+        "constraints": [
+            "set_min_width(800) \t set_min_height(800)"
+        ]
+    },
+    "Metal10.1": {
+        "rule": "Minimum width of metal10 = 0.8",
+        "script": "INTERNAL metal10 < 0.8",
+        "constraints": [
+            "set_min_width(0.8*10**3)",
+            "set_min_height(0.8*10**3)"
+        ]
+    }
+}

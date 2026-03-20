@@ -1,0 +1,4 @@
+wide_M1A = M1A with width <= 0.028 
+d = INT wide_M1A <= 1 opposite 
+d_p = dfm property wide_M1A d overlap abut also [EC1 = EC(d)] > 1.80 
+copy d_p

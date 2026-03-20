@@ -1,0 +1,485 @@
+{
+  "total_correct": 12,
+  "total_examples": 20,
+  "overall_accuracy": 0.6,
+  "per_rule": [
+    {
+      "rule_name": "RULE_NW001",
+      "rule_description": "Minimum spacing of NW (or) PW at different potential is 180nm",
+      "rule_script": "EXTERNAL NW < 0.180 NOT CONNECTED OPPOSITE",
+      "correct": 2,
+      "total": 4,
+      "accuracy": 0.5,
+      "details": [
+        {
+          "idx": 0,
+          "predicted_label": true,
+          "calibre_label": true,
+          "match": true,
+          "pos": {
+            "NW_1": [
+              {
+                "llx": 0,
+                "lly": 0,
+                "urx": 500,
+                "ury": 500
+              }
+            ],
+            "NW_2": [
+              {
+                "llx": 700,
+                "lly": 0,
+                "urx": 1200,
+                "ury": 500
+              }
+            ]
+          }
+        },
+        {
+          "idx": 1,
+          "predicted_label": true,
+          "calibre_label": true,
+          "match": true,
+          "pos": {
+            "NW_1": [
+              {
+                "llx": 0,
+                "lly": 0,
+                "urx": 400,
+                "ury": 400
+              }
+            ],
+            "NW_2": [
+              {
+                "llx": 600,
+                "lly": 0,
+                "urx": 1000,
+                "ury": 400
+              }
+            ]
+          }
+        },
+        {
+          "idx": 2,
+          "predicted_label": false,
+          "calibre_label": true,
+          "match": false,
+          "pos": {
+            "NW_1": [
+              {
+                "llx": 0,
+                "lly": 0,
+                "urx": 500,
+                "ury": 500
+              }
+            ],
+            "NW_2": [
+              {
+                "llx": 350,
+                "lly": 0,
+                "urx": 850,
+                "ury": 500
+              }
+            ]
+          }
+        },
+        {
+          "idx": 3,
+          "predicted_label": false,
+          "calibre_label": true,
+          "match": false,
+          "pos": {
+            "NW_1": [
+              {
+                "llx": 0,
+                "lly": 0,
+                "urx": 300,
+                "ury": 300
+              }
+            ],
+            "NW_2": [
+              {
+                "llx": 200,
+                "lly": 0,
+                "urx": 500,
+                "ury": 300
+              }
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "rule_name": "RULE_NW002",
+      "rule_description": "Minimum spacing of NW (or) PW at same potential is 110nm",
+      "rule_script": "EXTERNAL NW < 0.110 CONNECTED OPPOSITE",
+      "correct": 2,
+      "total": 4,
+      "accuracy": 0.5,
+      "details": [
+        {
+          "idx": 0,
+          "predicted_label": true,
+          "calibre_label": true,
+          "match": true,
+          "pos": {
+            "NW_1": [
+              {
+                "llx": 0,
+                "lly": 0,
+                "urx": 100,
+                "ury": 100
+              }
+            ],
+            "NW_2": [
+              {
+                "llx": 210,
+                "lly": 0,
+                "urx": 310,
+                "ury": 100
+              }
+            ]
+          }
+        },
+        {
+          "idx": 1,
+          "predicted_label": true,
+          "calibre_label": true,
+          "match": true,
+          "pos": {
+            "NW_1": [
+              {
+                "llx": 0,
+                "lly": 0,
+                "urx": 100,
+                "ury": 100
+              }
+            ],
+            "NW_2": [
+              {
+                "llx": 120,
+                "lly": 0,
+                "urx": 220,
+                "ury": 100
+              }
+            ]
+          }
+        },
+        {
+          "idx": 2,
+          "predicted_label": false,
+          "calibre_label": true,
+          "match": false,
+          "pos": {
+            "NW_1": [
+              {
+                "llx": 0,
+                "lly": 0,
+                "urx": 100,
+                "ury": 100
+              }
+            ],
+            "NW_2": [
+              {
+                "llx": 100,
+                "lly": 0,
+                "urx": 200,
+                "ury": 100
+              }
+            ]
+          }
+        },
+        {
+          "idx": 3,
+          "predicted_label": false,
+          "calibre_label": true,
+          "match": false,
+          "pos": {
+            "NW_1": [
+              {
+                "llx": 0,
+                "lly": 0,
+                "urx": 100,
+                "ury": 100
+              }
+            ],
+            "NW_2": [
+              {
+                "llx": 90,
+                "lly": 0,
+                "urx": 190,
+                "ury": 100
+              }
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "rule_name": "RULE_NW003",
+      "rule_description": "Minimum width of NW is 160nm",
+      "rule_script": "INTERNAL NW < 0.160",
+      "correct": 3,
+      "total": 4,
+      "accuracy": 0.75,
+      "details": [
+        {
+          "idx": 0,
+          "predicted_label": true,
+          "calibre_label": false,
+          "match": false,
+          "pos": {
+            "NW_1": [
+              {
+                "llx": 0,
+                "lly": 0,
+                "urx": 200,
+                "ury": 100
+              },
+              {
+                "llx": 300,
+                "lly": 150,
+                "urx": 500,
+                "ury": 350
+              }
+            ]
+          }
+        },
+        {
+          "idx": 1,
+          "predicted_label": true,
+          "calibre_label": true,
+          "match": true,
+          "pos": {
+            "NW_1": [
+              {
+                "llx": 0,
+                "lly": 0,
+                "urx": 180,
+                "ury": 200
+              }
+            ]
+          }
+        },
+        {
+          "idx": 2,
+          "predicted_label": false,
+          "calibre_label": false,
+          "match": true,
+          "pos": {
+            "NW_1": [
+              {
+                "llx": 0,
+                "lly": 0,
+                "urx": 150,
+                "ury": 100
+              }
+            ]
+          }
+        },
+        {
+          "idx": 3,
+          "predicted_label": false,
+          "calibre_label": false,
+          "match": true,
+          "pos": {
+            "NW_1": [
+              {
+                "llx": 0,
+                "lly": 0,
+                "urx": 200,
+                "ury": 120
+              },
+              {
+                "llx": 250,
+                "lly": 50,
+                "urx": 350,
+                "ury": 100
+              }
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "rule_name": "RULE_NW004A",
+      "rule_description": "Minimum area of NW is 0.140 um2",
+      "rule_script": "AREA NW  < 0.140",
+      "correct": 3,
+      "total": 4,
+      "accuracy": 0.75,
+      "details": [
+        {
+          "idx": 0,
+          "predicted_label": true,
+          "calibre_label": false,
+          "match": false,
+          "pos": {
+            "NW_1": [
+              {
+                "llx": 0,
+                "lly": 0,
+                "urx": 200,
+                "ury": 200
+              }
+            ],
+            "NW_2": [
+              {
+                "llx": 300,
+                "lly": 300,
+                "urx": 600,
+                "ury": 450
+              }
+            ]
+          }
+        },
+        {
+          "idx": 1,
+          "predicted_label": true,
+          "calibre_label": true,
+          "match": true,
+          "pos": {
+            "NW_1": [
+              {
+                "llx": 0,
+                "lly": 0,
+                "urx": 400,
+                "ury": 400
+              }
+            ]
+          }
+        },
+        {
+          "idx": 2,
+          "predicted_label": false,
+          "calibre_label": false,
+          "match": true,
+          "pos": {
+            "NW_1": [
+              {
+                "llx": 0,
+                "lly": 0,
+                "urx": 200,
+                "ury": 600
+              }
+            ],
+            "NW_2": [
+              {
+                "llx": 300,
+                "lly": 0,
+                "urx": 310,
+                "ury": 400
+              }
+            ]
+          }
+        },
+        {
+          "idx": 3,
+          "predicted_label": false,
+          "calibre_label": false,
+          "match": true,
+          "pos": {
+            "NW_1": [
+              {
+                "llx": 0,
+                "lly": 0,
+                "urx": 100,
+                "ury": 100
+              }
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "rule_name": "RULE_NW004B",
+      "rule_description": "Minimum enclosed area of NW is 0.140 um2",
+      "rule_script": "HOLES NW < 0.140",
+      "correct": 2,
+      "total": 4,
+      "accuracy": 0.5,
+      "details": [
+        {
+          "idx": 0,
+          "predicted_label": true,
+          "calibre_label": true,
+          "match": true,
+          "pos": {
+            "NW_1": [
+              {
+                "llx": 0,
+                "lly": 0,
+                "urx": 400,
+                "ury": 400
+              }
+            ]
+          }
+        },
+        {
+          "idx": 1,
+          "predicted_label": true,
+          "calibre_label": true,
+          "match": true,
+          "pos": {
+            "NW_1": [
+              {
+                "llx": 0,
+                "lly": 0,
+                "urx": 400,
+                "ury": 400
+              }
+            ],
+            "NW_2": [
+              {
+                "llx": 500,
+                "lly": 500,
+                "urx": 900,
+                "ury": 900
+              }
+            ]
+          }
+        },
+        {
+          "idx": 2,
+          "predicted_label": false,
+          "calibre_label": true,
+          "match": false,
+          "pos": {
+            "NW_1": [
+              {
+                "llx": 0,
+                "lly": 0,
+                "urx": 300,
+                "ury": 300
+              }
+            ]
+          }
+        },
+        {
+          "idx": 3,
+          "predicted_label": false,
+          "calibre_label": true,
+          "match": false,
+          "pos": {
+            "NW_1": [
+              {
+                "llx": 0,
+                "lly": 0,
+                "urx": 350,
+                "ury": 350
+              }
+            ],
+            "NW_2": [
+              {
+                "llx": 400,
+                "lly": 400,
+                "urx": 700,
+                "ury": 350
+              }
+            ]
+          }
+        }
+      ]
+    }
+  ]
+}

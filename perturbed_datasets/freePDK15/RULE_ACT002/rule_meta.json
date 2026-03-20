@@ -1,0 +1,91 @@
+{
+  "rule_name": "RULE_ACT002",
+  "data_name": "freePDK15",
+  "extracted_targets_total": 49,
+  "used_targets": [
+    {
+      "kind": "INTERNAL",
+      "var": "ACT_HORIZONTAL_EDGES",
+      "op": "<",
+      "num_str": "0.048",
+      "decimals": 3,
+      "line_idx": 1,
+      "num_start": 32,
+      "num_end": 37
+    },
+    {
+      "kind": "INTERNAL",
+      "var": "ACT_HORIZONTAL_EDGES",
+      "op": ">",
+      "num_str": "0.048",
+      "decimals": 3,
+      "line_idx": 2,
+      "num_start": 32,
+      "num_end": 37
+    },
+    {
+      "kind": "INTERNAL",
+      "var": "ACT_HORIZONTAL_EDGES",
+      "op": "<",
+      "num_str": "0.088",
+      "decimals": 3,
+      "line_idx": 2,
+      "num_start": 40,
+      "num_end": 45
+    },
+    {
+      "kind": "INTERNAL",
+      "var": "ACT_HORIZONTAL_EDGES",
+      "op": ">",
+      "num_str": "0.088",
+      "decimals": 3,
+      "line_idx": 3,
+      "num_start": 32,
+      "num_end": 37
+    },
+    {
+      "kind": "INTERNAL",
+      "var": "ACT_HORIZONTAL_EDGES",
+      "op": "<",
+      "num_str": "0.128",
+      "decimals": 3,
+      "line_idx": 3,
+      "num_start": 40,
+      "num_end": 45
+    },
+    {
+      "kind": "INTERNAL",
+      "var": "ACT_HORIZONTAL_EDGES",
+      "op": ">",
+      "num_str": "0.128",
+      "decimals": 3,
+      "line_idx": 4,
+      "num_start": 32,
+      "num_end": 37
+    },
+    {
+      "kind": "INTERNAL",
+      "var": "ACT_HORIZONTAL_EDGES",
+      "op": "<",
+      "num_str": "0.168",
+      "decimals": 3,
+      "line_idx": 4,
+      "num_start": 40,
+      "num_end": 45
+    },
+    {
+      "kind": "INTERNAL",
+      "var": "ACT_HORIZONTAL_EDGES",
+      "op": ">",
+      "num_str": "0.168",
+      "decimals": 3,
+      "line_idx": 5,
+      "num_start": 32,
+      "num_end": 37
+    }
+  ],
+  "delta": 0.001,
+  "decomposition_mode": "numeric",
+  "generated_corners_count": 257,
+  "generated_at": "2026-03-19_20-28-23"
+}

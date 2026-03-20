@@ -1,0 +1,81 @@
+{
+  "rule_name": "RULE_GATE001AB",
+  "data_name": "freePDK15",
+  "extracted_targets_total": 7,
+  "used_targets": [
+    {
+      "kind": "INTERNAL",
+      "var": "GATEAB_VERTICAL_EDGES",
+      "op": "<",
+      "num_str": "0.014",
+      "decimals": 3,
+      "line_idx": 0,
+      "num_start": 33,
+      "num_end": 38
+    },
+    {
+      "kind": "INTERNAL",
+      "var": "GATEAB_VERTICAL_EDGES",
+      "op": ">",
+      "num_str": "0.014",
+      "decimals": 3,
+      "line_idx": 1,
+      "num_start": 33,
+      "num_end": 38
+    },
+    {
+      "kind": "INTERNAL",
+      "var": "GATEAB_VERTICAL_EDGES",
+      "op": "<",
+      "num_str": "0.016",
+      "decimals": 3,
+      "line_idx": 1,
+      "num_start": 41,
+      "num_end": 46
+    },
+    {
+      "kind": "INTERNAL",
+      "var": "GATEAB_VERTICAL_EDGES",
+      "op": ">",
+      "num_str": "0.016",
+      "decimals": 3,
+      "line_idx": 2,
+      "num_start": 33,
+      "num_end": 38
+    },
+    {
+      "kind": "INTERNAL",
+      "var": "GATEAB_VERTICAL_EDGES",
+      "op": "<",
+      "num_str": "0.020",
+      "decimals": 3,
+      "line_idx": 2,
+      "num_start": 41,
+      "num_end": 46
+    },
+    {
+      "kind": "INTERNAL",
+      "var": "GATEAB_VERTICAL_EDGES",
+      "op": ">",
+      "num_str": "0.020",
+      "decimals": 3,
+      "line_idx": 3,
+      "num_start": 33,
+      "num_end": 38
+    },
+    {
+      "kind": "INTERNAL",
+      "var": "GATEAB_VERTICAL_EDGES",
+      "op": "<",
+      "num_str": "0.800",
+      "decimals": 3,
+      "line_idx": 3,
+      "num_start": 41,
+      "num_end": 46
+    }
+  ],
+  "delta": 0.001,
+  "decomposition_mode": "numeric",
+  "generated_corners_count": 129,
+  "generated_at": "2026-03-19_20-28-23"
+}

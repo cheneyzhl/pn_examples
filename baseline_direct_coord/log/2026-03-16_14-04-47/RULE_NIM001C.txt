@@ -1,0 +1,53 @@
+======== 规则: RULE_NIM001C ========
+用户问题
+规则描述：Minimum Spacing of NIM is 128nm
+
+请根据上述 DRC 规则，生成若干 layout 正例与反例的矩形坐标,至少两个正例两个反例。
+正例：满足该规则的 layout；反例：违反该规则的 layout。
+
+请输出 JSON，且仅包含以下两个键：
+"examples": 数组，每个元素为一个 layout 例子。每个例子是一个对象，键为层名（带序号，如 NW_1, NW_2），值为矩形列表；每个矩形为 { "llx": 整数, "lly": 整数, "urx": 整数, "ury": 整数 }。
+"labels": 数组，与 examples 一一对应。true 表示该 layout 应通过 DRC（正例），false 表示应违反 DRC（反例）。
+本规则涉及的层名（不含序号）为: ['NIM']。层名格式为 层名_序号，例如 NW_1, NW_2。
+
+大模型回答
+```json
+{
+  "examples": [
+    {
+      "NIM_1": [
+        { "llx": 0, "lly": 0, "urx": 100, "ury": 100 }
+      ],
+      "NIM_2": [
+        { "llx": 228, "lly": 0, "urx": 328, "ury": 100 }
+      ]
+    },
+    {
+      "NIM_1": [
+        { "llx": 0, "lly": 0, "urx": 100, "ury": 100 }
+      ],
+      "NIM_2": [
+        { "llx": 130, "lly": 0, "urx": 230, "ury": 100 }
+      ]
+    },
+    {
+      "NIM_1": [
+        { "llx": 0, "lly": 0, "urx": 100, "ury": 100 }
+      ],
+      "NIM_2": [
+        { "llx": 100, "lly": 0, "urx": 200, "ury": 100 }
+      ]
+    },
+    {
+      "NIM_1": [
+        { "llx": 0, "lly": 0, "urx": 100, "ury": 100 }
+      ],
+      "NIM_2": [
+        { "llx": 50, "lly": 0, "urx": 150, "ury": 100 }
+      ]
+    }
+  ],
+  "labels": [true, true, false, false]
+}
+```
+

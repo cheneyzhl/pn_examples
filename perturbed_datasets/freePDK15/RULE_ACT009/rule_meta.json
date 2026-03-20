@@ -1,0 +1,10 @@
+{
+  "rule_name": "RULE_ACT009",
+  "data_name": "freePDK15",
+  "extracted_targets_total": 0,
+  "used_targets": [],
+  "delta": 0.001,
+  "decomposition_mode": "numeric",
+  "generated_corners_count": 1,
+  "generated_at": "2026-03-19_20-28-23"
+}

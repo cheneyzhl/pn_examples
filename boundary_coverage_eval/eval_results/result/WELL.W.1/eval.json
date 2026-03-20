@@ -1,0 +1,439 @@
+{
+  "rule_name": "WELL.W.1",
+  "rule_description": "Minimum horizontal width of WELL is 108 nm.",
+  "rule_script": "INTERNAL WELL_VE < 0.108",
+  "perturbed_scripts": {
+    "corner_000": "INTERNAL WELL_VE < 0.107\n",
+    "corner_001": "INTERNAL WELL_VE < 0.109\n",
+    "corner_original": "INTERNAL WELL_VE < 0.108\n"
+  },
+  "data_name": "asap7",
+  "judge_mode": "match",
+  "corner_count": 3,
+  "sample_count": 6,
+  "all_corners_match": false,
+  "all_corners_detect": false,
+  "all_corners_ok": true,
+  "per_corner": [
+    {
+      "corner_id": "corner_000",
+      "script_expected_correct": false,
+      "script_predicted_correct": false,
+      "corner_any_mismatch": true,
+      "corner_all_match": false,
+      "corner_ok": true,
+      "samples": [
+        {
+          "idx": 0,
+          "predicted_label": true,
+          "calibre_label": true,
+          "match": true,
+          "error": null,
+          "pos": {
+            "WELL_1": [
+              {
+                "llx": 0,
+                "lly": 0,
+                "urx": 108,
+                "ury": 100
+              }
+            ]
+          }
+        },
+        {
+          "idx": 1,
+          "predicted_label": false,
+          "calibre_label": true,
+          "match": false,
+          "error": null,
+          "pos": {
+            "WELL_1": [
+              {
+                "llx": 0,
+                "lly": 0,
+                "urx": 107,
+                "ury": 100
+              }
+            ]
+          }
+        },
+        {
+          "idx": 2,
+          "predicted_label": true,
+          "calibre_label": true,
+          "match": true,
+          "error": null,
+          "pos": {
+            "WELL_1": [
+              {
+                "llx": 0,
+                "lly": 0,
+                "urx": 108,
+                "ury": 100
+              },
+              {
+                "llx": 200,
+                "lly": 0,
+                "urx": 308,
+                "ury": 100
+              }
+            ]
+          }
+        },
+        {
+          "idx": 3,
+          "predicted_label": false,
+          "calibre_label": true,
+          "match": false,
+          "error": null,
+          "pos": {
+            "WELL_1": [
+              {
+                "llx": 0,
+                "lly": 0,
+                "urx": 108,
+                "ury": 100
+              },
+              {
+                "llx": 200,
+                "lly": 0,
+                "urx": 307,
+                "ury": 100
+              }
+            ]
+          }
+        },
+        {
+          "idx": 4,
+          "predicted_label": true,
+          "calibre_label": true,
+          "match": true,
+          "error": null,
+          "pos": {
+            "WELL_1": [
+              {
+                "llx": 0,
+                "lly": 0,
+                "urx": 108,
+                "ury": 100
+              }
+            ],
+            "FIN_1": [
+              {
+                "llx": 10,
+                "lly": 10,
+                "urx": 20,
+                "ury": 20
+              }
+            ]
+          }
+        },
+        {
+          "idx": 5,
+          "predicted_label": false,
+          "calibre_label": true,
+          "match": false,
+          "error": null,
+          "pos": {
+            "WELL_1": [
+              {
+                "llx": 0,
+                "lly": 0,
+                "urx": 107,
+                "ury": 100
+              }
+            ],
+            "FIN_1": [
+              {
+                "llx": 10,
+                "lly": 10,
+                "urx": 20,
+                "ury": 20
+              }
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "corner_id": "corner_001",
+      "script_expected_correct": false,
+      "script_predicted_correct": false,
+      "corner_any_mismatch": true,
+      "corner_all_match": false,
+      "corner_ok": true,
+      "samples": [
+        {
+          "idx": 0,
+          "predicted_label": true,
+          "calibre_label": false,
+          "match": false,
+          "error": null,
+          "pos": {
+            "WELL_1": [
+              {
+                "llx": 0,
+                "lly": 0,
+                "urx": 108,
+                "ury": 100
+              }
+            ]
+          }
+        },
+        {
+          "idx": 1,
+          "predicted_label": false,
+          "calibre_label": false,
+          "match": true,
+          "error": null,
+          "pos": {
+            "WELL_1": [
+              {
+                "llx": 0,
+                "lly": 0,
+                "urx": 107,
+                "ury": 100
+              }
+            ]
+          }
+        },
+        {
+          "idx": 2,
+          "predicted_label": true,
+          "calibre_label": false,
+          "match": false,
+          "error": null,
+          "pos": {
+            "WELL_1": [
+              {
+                "llx": 0,
+                "lly": 0,
+                "urx": 108,
+                "ury": 100
+              },
+              {
+                "llx": 200,
+                "lly": 0,
+                "urx": 308,
+                "ury": 100
+              }
+            ]
+          }
+        },
+        {
+          "idx": 3,
+          "predicted_label": false,
+          "calibre_label": false,
+          "match": true,
+          "error": null,
+          "pos": {
+            "WELL_1": [
+              {
+                "llx": 0,
+                "lly": 0,
+                "urx": 108,
+                "ury": 100
+              },
+              {
+                "llx": 200,
+                "lly": 0,
+                "urx": 307,
+                "ury": 100
+              }
+            ]
+          }
+        },
+        {
+          "idx": 4,
+          "predicted_label": true,
+          "calibre_label": false,
+          "match": false,
+          "error": null,
+          "pos": {
+            "WELL_1": [
+              {
+                "llx": 0,
+                "lly": 0,
+                "urx": 108,
+                "ury": 100
+              }
+            ],
+            "FIN_1": [
+              {
+                "llx": 10,
+                "lly": 10,
+                "urx": 20,
+                "ury": 20
+              }
+            ]
+          }
+        },
+        {
+          "idx": 5,
+          "predicted_label": false,
+          "calibre_label": false,
+          "match": true,
+          "error": null,
+          "pos": {
+            "WELL_1": [
+              {
+                "llx": 0,
+                "lly": 0,
+                "urx": 107,
+                "ury": 100
+              }
+            ],
+            "FIN_1": [
+              {
+                "llx": 10,
+                "lly": 10,
+                "urx": 20,
+                "ury": 20
+              }
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "corner_id": "corner_original",
+      "script_expected_correct": true,
+      "script_predicted_correct": true,
+      "corner_any_mismatch": false,
+      "corner_all_match": true,
+      "corner_ok": true,
+      "samples": [
+        {
+          "idx": 0,
+          "predicted_label": true,
+          "calibre_label": true,
+          "match": true,
+          "error": null,
+          "pos": {
+            "WELL_1": [
+              {
+                "llx": 0,
+                "lly": 0,
+                "urx": 108,
+                "ury": 100
+              }
+            ]
+          }
+        },
+        {
+          "idx": 1,
+          "predicted_label": false,
+          "calibre_label": false,
+          "match": true,
+          "error": null,
+          "pos": {
+            "WELL_1": [
+              {
+                "llx": 0,
+                "lly": 0,
+                "urx": 107,
+                "ury": 100
+              }
+            ]
+          }
+        },
+        {
+          "idx": 2,
+          "predicted_label": true,
+          "calibre_label": true,
+          "match": true,
+          "error": null,
+          "pos": {
+            "WELL_1": [
+              {
+                "llx": 0,
+                "lly": 0,
+                "urx": 108,
+                "ury": 100
+              },
+              {
+                "llx": 200,
+                "lly": 0,
+                "urx": 308,
+                "ury": 100
+              }
+            ]
+          }
+        },
+        {
+          "idx": 3,
+          "predicted_label": false,
+          "calibre_label": false,
+          "match": true,
+          "error": null,
+          "pos": {
+            "WELL_1": [
+              {
+                "llx": 0,
+                "lly": 0,
+                "urx": 108,
+                "ury": 100
+              },
+              {
+                "llx": 200,
+                "lly": 0,
+                "urx": 307,
+                "ury": 100
+              }
+            ]
+          }
+        },
+        {
+          "idx": 4,
+          "predicted_label": true,
+          "calibre_label": true,
+          "match": true,
+          "error": null,
+          "pos": {
+            "WELL_1": [
+              {
+                "llx": 0,
+                "lly": 0,
+                "urx": 108,
+                "ury": 100
+              }
+            ],
+            "FIN_1": [
+              {
+                "llx": 10,
+                "lly": 10,
+                "urx": 20,
+                "ury": 20
+              }
+            ]
+          }
+        },
+        {
+          "idx": 5,
+          "predicted_label": false,
+          "calibre_label": false,
+          "match": true,
+          "error": null,
+          "pos": {
+            "WELL_1": [
+              {
+                "llx": 0,
+                "lly": 0,
+                "urx": 107,
+                "ury": 100
+              }
+            ],
+            "FIN_1": [
+              {
+                "llx": 10,
+                "lly": 10,
+                "urx": 20,
+                "ury": 20
+              }
+            ]
+          }
+        }
+      ]
+    }
+  ]
+}
