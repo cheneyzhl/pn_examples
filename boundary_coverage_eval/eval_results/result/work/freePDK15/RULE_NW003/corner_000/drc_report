@@ -3,7 +3,7 @@
 ==================================================================================
 === CALIBRE::DRC-H SUMMARY REPORT
 ===
-Execution Date/Time:       Fri Mar 20 14:52:00 2026
+Execution Date/Time:       Fri Mar 20 22:30:36 2026
 Calibre Version:           v2019.3_15.11    Tue Jul 2 12:24:58 PDT 2019
 Rule File Pathname:        /share/home/zenghuanlong/pn_examples/boundary_coverage_eval/eval_results/result/work/freePDK15/RULE_NW003/corner_000/example_5.rul
 Rule File Title:           
@@ -30,7 +30,7 @@ Keep Empty Checks:         YES
 ----------------------------------------------------------------------------------
 --- ORIGINAL LAYER STATISTICS
 ---
-LAYER NW ... TOTAL Original Geometry Count = 1 (1)
+LAYER NW ... TOTAL Original Geometry Count = 2 (2)
 ----------------------------------------------------------------------------------
 --- RULECHECK RESULTS STATISTICS
 ---
@@ -39,7 +39,7 @@ RULECHECK RULE_NW003 ... TOTAL Result Count = 0 (0)
 --- SUMMARY
 ---
 TOTAL CPU Time:                  0
-TOTAL REAL Time:                 27
-TOTAL Original Layer Geometries: 1 (1)
+TOTAL REAL Time:                 31
+TOTAL Original Layer Geometries: 2 (2)
 TOTAL DRC RuleChecks Executed:   1
 TOTAL DRC Results Generated:     0 (0)

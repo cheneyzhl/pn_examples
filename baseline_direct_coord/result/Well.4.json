@@ -2,9 +2,9 @@
   "rule_name": "Well.4",
   "rule_description": "Min width of well = 0.2",
   "rule_script": "INTERNAL well < 0.2",
-  "sample_correct": 8,
-  "sample_total": 14,
-  "accuracy": 0.0,
+  "sample_correct": 4,
+  "sample_total": 4,
+  "accuracy": 1.0,
   "details": [
     {
       "idx": 0,
@@ -40,16 +40,16 @@
     },
     {
       "idx": 2,
-      "predicted_label": true,
-      "calibre_label": true,
+      "predicted_label": false,
+      "calibre_label": false,
       "match": true,
       "pos": {
-        "NWELL_1": [
+        "WELL_1": [
           {
             "llx": 0,
             "lly": 0,
             "urx": 200,
-            "ury": 200
+            "ury": 199
           }
         ]
       }
@@ -57,255 +57,15 @@
     {
       "idx": 3,
       "predicted_label": false,
-      "calibre_label": true,
-      "match": false,
-      "pos": {
-        "NWELL_1": [
-          {
-            "llx": 0,
-            "lly": 0,
-            "urx": 199,
-            "ury": 200
-          }
-        ]
-      }
-    },
-    {
-      "idx": 4,
-      "predicted_label": true,
-      "calibre_label": true,
-      "match": true,
-      "pos": {
-        "PWELL_1": [
-          {
-            "llx": 0,
-            "lly": 0,
-            "urx": 200,
-            "ury": 200
-          }
-        ]
-      }
-    },
-    {
-      "idx": 5,
-      "predicted_label": false,
-      "calibre_label": true,
-      "match": false,
-      "pos": {
-        "PWELL_1": [
-          {
-            "llx": 0,
-            "lly": 0,
-            "urx": 199,
-            "ury": 200
-          }
-        ]
-      }
-    },
-    {
-      "idx": 6,
-      "predicted_label": true,
-      "calibre_label": true,
+      "calibre_label": false,
       "match": true,
       "pos": {
         "WELL_1": [
           {
             "llx": 0,
             "lly": 0,
-            "urx": 200,
-            "ury": 200
-          }
-        ],
-        "NWELL_1": [
-          {
-            "llx": 0,
-            "lly": 0,
-            "urx": 200,
-            "ury": 200
-          }
-        ]
-      }
-    },
-    {
-      "idx": 7,
-      "predicted_label": false,
-      "calibre_label": true,
-      "match": false,
-      "pos": {
-        "WELL_1": [
-          {
-            "llx": 0,
-            "lly": 0,
-            "urx": 200,
-            "ury": 200
-          }
-        ],
-        "NWELL_1": [
-          {
-            "llx": 0,
-            "lly": 0,
             "urx": 199,
-            "ury": 200
-          }
-        ]
-      }
-    },
-    {
-      "idx": 8,
-      "predicted_label": true,
-      "calibre_label": true,
-      "match": true,
-      "pos": {
-        "WELL_1": [
-          {
-            "llx": 0,
-            "lly": 0,
-            "urx": 200,
-            "ury": 200
-          }
-        ],
-        "PWELL_1": [
-          {
-            "llx": 0,
-            "lly": 0,
-            "urx": 200,
-            "ury": 200
-          }
-        ]
-      }
-    },
-    {
-      "idx": 9,
-      "predicted_label": false,
-      "calibre_label": true,
-      "match": false,
-      "pos": {
-        "WELL_1": [
-          {
-            "llx": 0,
-            "lly": 0,
-            "urx": 200,
-            "ury": 200
-          }
-        ],
-        "PWELL_1": [
-          {
-            "llx": 0,
-            "lly": 0,
-            "urx": 199,
-            "ury": 200
-          }
-        ]
-      }
-    },
-    {
-      "idx": 10,
-      "predicted_label": true,
-      "calibre_label": true,
-      "match": true,
-      "pos": {
-        "NWELL_1": [
-          {
-            "llx": 0,
-            "lly": 0,
-            "urx": 200,
-            "ury": 200
-          }
-        ],
-        "PWELL_1": [
-          {
-            "llx": 0,
-            "lly": 0,
-            "urx": 200,
-            "ury": 200
-          }
-        ]
-      }
-    },
-    {
-      "idx": 11,
-      "predicted_label": false,
-      "calibre_label": true,
-      "match": false,
-      "pos": {
-        "NWELL_1": [
-          {
-            "llx": 0,
-            "lly": 0,
-            "urx": 200,
-            "ury": 200
-          }
-        ],
-        "PWELL_1": [
-          {
-            "llx": 0,
-            "lly": 0,
-            "urx": 199,
-            "ury": 200
-          }
-        ]
-      }
-    },
-    {
-      "idx": 12,
-      "predicted_label": true,
-      "calibre_label": true,
-      "match": true,
-      "pos": {
-        "WELL_1": [
-          {
-            "llx": 0,
-            "lly": 0,
-            "urx": 200,
-            "ury": 200
-          }
-        ],
-        "NWELL_1": [
-          {
-            "llx": 0,
-            "lly": 0,
-            "urx": 200,
-            "ury": 200
-          }
-        ],
-        "PWELL_1": [
-          {
-            "llx": 0,
-            "lly": 0,
-            "urx": 200,
-            "ury": 200
-          }
-        ]
-      }
-    },
-    {
-      "idx": 13,
-      "predicted_label": false,
-      "calibre_label": true,
-      "match": false,
-      "pos": {
-        "WELL_1": [
-          {
-            "llx": 0,
-            "lly": 0,
-            "urx": 200,
-            "ury": 200
-          }
-        ],
-        "NWELL_1": [
-          {
-            "llx": 0,
-            "lly": 0,
-            "urx": 200,
-            "ury": 200
-          }
-        ],
-        "PWELL_1": [
-          {
-            "llx": 0,
-            "lly": 0,
-            "urx": 199,
-            "ury": 200
+            "ury": 199
           }
         ]
       }

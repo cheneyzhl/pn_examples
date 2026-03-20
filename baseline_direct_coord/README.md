@@ -88,3 +88,12 @@ python run_baseline.py --free_n 10 --asap_n 10 --freepdk45_n 10 --output summary
 - `"llx"`, `"lly"`, `"urx"`, `"ury"`：整数坐标（与 Z3 求解输出一致）。
 
 `labels` 与 `examples` 一一对应：`true` 表示该 layout 应通过 DRC（正例），`false` 表示应违反 DRC（反例）。验证时用 Calibre 跑该规则，无违规即视为正例，有违规即视为反例，再与模型给出的标签比对。
+
+### 单位与阈值换算约定（用于减少 oracle 低级错误）
+
+为减少模型生成时的单位/量级错配，本目录的生成 prompt 强制约定：
+- `llx/lly/urx/ury` 的单位是 `nm`（1 coordinate unit = 1 nm）
+- 长度（um）= (x_nm 或 y_nm) * `1e-3`
+- 面积（um^2）= (宽_nm * 高_nm) * `1e-6`
+
+当规则描述包含类似 “Minimum area of ... is T um2 / Minimum width ... is T nm”等阈值时，prompt 会要求正例落在通过域、反例落在违规域，并避免生成“实心矩形硬凑 holes/边界”的低级错误。

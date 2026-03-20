@@ -10,10 +10,10 @@
   "data_name": "freepdk-45nm",
   "judge_mode": "match",
   "corner_count": 3,
-  "sample_count": 7,
+  "sample_count": 2,
   "all_corners_match": false,
-  "all_corners_detect": true,
-  "all_corners_ok": false,
+  "all_corners_detect": false,
+  "all_corners_ok": true,
   "per_corner": [
     {
       "corner_id": "corner_000",
@@ -35,7 +35,7 @@
                 "llx": 0,
                 "lly": 0,
                 "urx": 50,
-                "ury": 50
+                "ury": 100
               }
             ]
           }
@@ -43,41 +43,7 @@
         {
           "idx": 1,
           "predicted_label": false,
-          "calibre_label": false,
-          "match": true,
-          "error": null,
-          "pos": {
-            "POLY_1": [
-              {
-                "llx": 0,
-                "lly": 0,
-                "urx": 4,
-                "ury": 50
-              }
-            ]
-          }
-        },
-        {
-          "idx": 2,
-          "predicted_label": false,
-          "calibre_label": false,
-          "match": true,
-          "error": null,
-          "pos": {
-            "POLY_1": [
-              {
-                "llx": 0,
-                "lly": 0,
-                "urx": 50,
-                "ury": 4
-              }
-            ]
-          }
-        },
-        {
-          "idx": 3,
-          "predicted_label": true,
-          "calibre_label": false,
+          "calibre_label": true,
           "match": false,
           "error": null,
           "pos": {
@@ -85,59 +51,8 @@
               {
                 "llx": 0,
                 "lly": 0,
-                "urx": 5,
-                "ury": 50
-              }
-            ]
-          }
-        },
-        {
-          "idx": 4,
-          "predicted_label": true,
-          "calibre_label": false,
-          "match": false,
-          "error": null,
-          "pos": {
-            "POLY_1": [
-              {
-                "llx": 0,
-                "lly": 0,
-                "urx": 50,
-                "ury": 5
-              }
-            ]
-          }
-        },
-        {
-          "idx": 5,
-          "predicted_label": false,
-          "calibre_label": false,
-          "match": true,
-          "error": null,
-          "pos": {
-            "POLY_1": [
-              {
-                "llx": 0,
-                "lly": 0,
-                "urx": 3,
-                "ury": 50
-              }
-            ]
-          }
-        },
-        {
-          "idx": 6,
-          "predicted_label": false,
-          "calibre_label": false,
-          "match": true,
-          "error": null,
-          "pos": {
-            "POLY_1": [
-              {
-                "llx": 0,
-                "lly": 0,
-                "urx": 50,
-                "ury": 3
+                "urx": 49,
+                "ury": 100
               }
             ]
           }
@@ -164,7 +79,7 @@
                 "llx": 0,
                 "lly": 0,
                 "urx": 50,
-                "ury": 50
+                "ury": 100
               }
             ]
           }
@@ -180,93 +95,8 @@
               {
                 "llx": 0,
                 "lly": 0,
-                "urx": 4,
-                "ury": 50
-              }
-            ]
-          }
-        },
-        {
-          "idx": 2,
-          "predicted_label": false,
-          "calibre_label": false,
-          "match": true,
-          "error": null,
-          "pos": {
-            "POLY_1": [
-              {
-                "llx": 0,
-                "lly": 0,
-                "urx": 50,
-                "ury": 4
-              }
-            ]
-          }
-        },
-        {
-          "idx": 3,
-          "predicted_label": true,
-          "calibre_label": false,
-          "match": false,
-          "error": null,
-          "pos": {
-            "POLY_1": [
-              {
-                "llx": 0,
-                "lly": 0,
-                "urx": 5,
-                "ury": 50
-              }
-            ]
-          }
-        },
-        {
-          "idx": 4,
-          "predicted_label": true,
-          "calibre_label": false,
-          "match": false,
-          "error": null,
-          "pos": {
-            "POLY_1": [
-              {
-                "llx": 0,
-                "lly": 0,
-                "urx": 50,
-                "ury": 5
-              }
-            ]
-          }
-        },
-        {
-          "idx": 5,
-          "predicted_label": false,
-          "calibre_label": false,
-          "match": true,
-          "error": null,
-          "pos": {
-            "POLY_1": [
-              {
-                "llx": 0,
-                "lly": 0,
-                "urx": 3,
-                "ury": 50
-              }
-            ]
-          }
-        },
-        {
-          "idx": 6,
-          "predicted_label": false,
-          "calibre_label": false,
-          "match": true,
-          "error": null,
-          "pos": {
-            "POLY_1": [
-              {
-                "llx": 0,
-                "lly": 0,
-                "urx": 50,
-                "ury": 3
+                "urx": 49,
+                "ury": 100
               }
             ]
           }
@@ -276,10 +106,10 @@
     {
       "corner_id": "corner_original",
       "script_expected_correct": true,
-      "script_predicted_correct": false,
-      "corner_any_mismatch": true,
-      "corner_all_match": false,
-      "corner_ok": false,
+      "script_predicted_correct": true,
+      "corner_any_mismatch": false,
+      "corner_all_match": true,
+      "corner_ok": true,
       "samples": [
         {
           "idx": 0,
@@ -293,7 +123,7 @@
                 "llx": 0,
                 "lly": 0,
                 "urx": 50,
-                "ury": 50
+                "ury": 100
               }
             ]
           }
@@ -309,93 +139,8 @@
               {
                 "llx": 0,
                 "lly": 0,
-                "urx": 4,
-                "ury": 50
-              }
-            ]
-          }
-        },
-        {
-          "idx": 2,
-          "predicted_label": false,
-          "calibre_label": false,
-          "match": true,
-          "error": null,
-          "pos": {
-            "POLY_1": [
-              {
-                "llx": 0,
-                "lly": 0,
-                "urx": 50,
-                "ury": 4
-              }
-            ]
-          }
-        },
-        {
-          "idx": 3,
-          "predicted_label": true,
-          "calibre_label": false,
-          "match": false,
-          "error": null,
-          "pos": {
-            "POLY_1": [
-              {
-                "llx": 0,
-                "lly": 0,
-                "urx": 5,
-                "ury": 50
-              }
-            ]
-          }
-        },
-        {
-          "idx": 4,
-          "predicted_label": true,
-          "calibre_label": false,
-          "match": false,
-          "error": null,
-          "pos": {
-            "POLY_1": [
-              {
-                "llx": 0,
-                "lly": 0,
-                "urx": 50,
-                "ury": 5
-              }
-            ]
-          }
-        },
-        {
-          "idx": 5,
-          "predicted_label": false,
-          "calibre_label": false,
-          "match": true,
-          "error": null,
-          "pos": {
-            "POLY_1": [
-              {
-                "llx": 0,
-                "lly": 0,
-                "urx": 3,
-                "ury": 50
-              }
-            ]
-          }
-        },
-        {
-          "idx": 6,
-          "predicted_label": false,
-          "calibre_label": false,
-          "match": true,
-          "error": null,
-          "pos": {
-            "POLY_1": [
-              {
-                "llx": 0,
-                "lly": 0,
-                "urx": 50,
-                "ury": 3
+                "urx": 49,
+                "ury": 100
               }
             ]
           }

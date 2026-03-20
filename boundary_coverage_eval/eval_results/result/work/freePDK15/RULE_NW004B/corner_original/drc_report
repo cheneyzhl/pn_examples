@@ -3,12 +3,12 @@
 ==================================================================================
 === CALIBRE::DRC-H SUMMARY REPORT
 ===
-Execution Date/Time:       Fri Mar 20 15:22:24 2026
+Execution Date/Time:       Fri Mar 20 23:02:56 2026
 Calibre Version:           v2019.3_15.11    Tue Jul 2 12:24:58 PDT 2019
-Rule File Pathname:        /share/home/zenghuanlong/pn_examples/boundary_coverage_eval/eval_results/result/work/freePDK15/RULE_NW004B/corner_original/example_9.rul
+Rule File Pathname:        /share/home/zenghuanlong/pn_examples/boundary_coverage_eval/eval_results/result/work/freePDK15/RULE_NW004B/corner_original/example_7.rul
 Rule File Title:           
 Layout System:             GDS
-Layout Path(s):            /share/home/zenghuanlong/pn_examples/boundary_coverage_eval/eval_results/result/work/freePDK15/RULE_NW004B/gds/example_9.gds
+Layout Path(s):            /share/home/zenghuanlong/pn_examples/boundary_coverage_eval/eval_results/result/work/freePDK15/RULE_NW004B/gds/example_7.gds
 Layout Primary Cell:       TOPCELL
 Current Directory:         /share/home/zenghuanlong/pn_examples/boundary_coverage_eval/eval_results/result/work/freePDK15/RULE_NW004B/corner_original
 User Name:                 zenghuanlong
@@ -39,7 +39,7 @@ RULECHECK RULE_NW004B ... TOTAL Result Count = 0 (0)
 --- SUMMARY
 ---
 TOTAL CPU Time:                  0
-TOTAL REAL Time:                 27
+TOTAL REAL Time:                 30
 TOTAL Original Layer Geometries: 2 (2)
 TOTAL DRC RuleChecks Executed:   1
 TOTAL DRC Results Generated:     0 (0)

@@ -10,7 +10,7 @@
   "data_name": "asap7",
   "judge_mode": "match",
   "corner_count": 3,
-  "sample_count": 2,
+  "sample_count": 7,
   "all_corners_match": false,
   "all_corners_detect": false,
   "all_corners_ok": true,
@@ -51,8 +51,93 @@
               {
                 "llx": 0,
                 "lly": 0,
+                "urx": 71,
+                "ury": 81
+              }
+            ]
+          }
+        },
+        {
+          "idx": 2,
+          "predicted_label": false,
+          "calibre_label": true,
+          "match": false,
+          "error": null,
+          "pos": {
+            "WELL_1": [
+              {
+                "llx": 0,
+                "lly": 0,
                 "urx": 72,
                 "ury": 80
+              }
+            ]
+          }
+        },
+        {
+          "idx": 3,
+          "predicted_label": true,
+          "calibre_label": true,
+          "match": true,
+          "error": null,
+          "pos": {
+            "WELL_1": [
+              {
+                "llx": 0,
+                "lly": 0,
+                "urx": 54,
+                "ury": 108
+              }
+            ]
+          }
+        },
+        {
+          "idx": 4,
+          "predicted_label": false,
+          "calibre_label": true,
+          "match": false,
+          "error": null,
+          "pos": {
+            "WELL_1": [
+              {
+                "llx": 0,
+                "lly": 0,
+                "urx": 54,
+                "ury": 107
+              }
+            ]
+          }
+        },
+        {
+          "idx": 5,
+          "predicted_label": true,
+          "calibre_label": true,
+          "match": true,
+          "error": null,
+          "pos": {
+            "WELL_1": [
+              {
+                "llx": 0,
+                "lly": 0,
+                "urx": 5832,
+                "ury": 1
+              }
+            ]
+          }
+        },
+        {
+          "idx": 6,
+          "predicted_label": false,
+          "calibre_label": true,
+          "match": false,
+          "error": null,
+          "pos": {
+            "WELL_1": [
+              {
+                "llx": 0,
+                "lly": 0,
+                "urx": 5831,
+                "ury": 1
               }
             ]
           }
@@ -95,8 +180,93 @@
               {
                 "llx": 0,
                 "lly": 0,
+                "urx": 71,
+                "ury": 81
+              }
+            ]
+          }
+        },
+        {
+          "idx": 2,
+          "predicted_label": false,
+          "calibre_label": false,
+          "match": true,
+          "error": null,
+          "pos": {
+            "WELL_1": [
+              {
+                "llx": 0,
+                "lly": 0,
                 "urx": 72,
                 "ury": 80
+              }
+            ]
+          }
+        },
+        {
+          "idx": 3,
+          "predicted_label": true,
+          "calibre_label": false,
+          "match": false,
+          "error": null,
+          "pos": {
+            "WELL_1": [
+              {
+                "llx": 0,
+                "lly": 0,
+                "urx": 54,
+                "ury": 108
+              }
+            ]
+          }
+        },
+        {
+          "idx": 4,
+          "predicted_label": false,
+          "calibre_label": false,
+          "match": true,
+          "error": null,
+          "pos": {
+            "WELL_1": [
+              {
+                "llx": 0,
+                "lly": 0,
+                "urx": 54,
+                "ury": 107
+              }
+            ]
+          }
+        },
+        {
+          "idx": 5,
+          "predicted_label": true,
+          "calibre_label": false,
+          "match": false,
+          "error": null,
+          "pos": {
+            "WELL_1": [
+              {
+                "llx": 0,
+                "lly": 0,
+                "urx": 5832,
+                "ury": 1
+              }
+            ]
+          }
+        },
+        {
+          "idx": 6,
+          "predicted_label": false,
+          "calibre_label": false,
+          "match": true,
+          "error": null,
+          "pos": {
+            "WELL_1": [
+              {
+                "llx": 0,
+                "lly": 0,
+                "urx": 5831,
+                "ury": 1
               }
             ]
           }
@@ -139,8 +309,93 @@
               {
                 "llx": 0,
                 "lly": 0,
+                "urx": 71,
+                "ury": 81
+              }
+            ]
+          }
+        },
+        {
+          "idx": 2,
+          "predicted_label": false,
+          "calibre_label": false,
+          "match": true,
+          "error": null,
+          "pos": {
+            "WELL_1": [
+              {
+                "llx": 0,
+                "lly": 0,
                 "urx": 72,
                 "ury": 80
+              }
+            ]
+          }
+        },
+        {
+          "idx": 3,
+          "predicted_label": true,
+          "calibre_label": true,
+          "match": true,
+          "error": null,
+          "pos": {
+            "WELL_1": [
+              {
+                "llx": 0,
+                "lly": 0,
+                "urx": 54,
+                "ury": 108
+              }
+            ]
+          }
+        },
+        {
+          "idx": 4,
+          "predicted_label": false,
+          "calibre_label": false,
+          "match": true,
+          "error": null,
+          "pos": {
+            "WELL_1": [
+              {
+                "llx": 0,
+                "lly": 0,
+                "urx": 54,
+                "ury": 107
+              }
+            ]
+          }
+        },
+        {
+          "idx": 5,
+          "predicted_label": true,
+          "calibre_label": true,
+          "match": true,
+          "error": null,
+          "pos": {
+            "WELL_1": [
+              {
+                "llx": 0,
+                "lly": 0,
+                "urx": 5832,
+                "ury": 1
+              }
+            ]
+          }
+        },
+        {
+          "idx": 6,
+          "predicted_label": false,
+          "calibre_label": false,
+          "match": true,
+          "error": null,
+          "pos": {
+            "WELL_1": [
+              {
+                "llx": 0,
+                "lly": 0,
+                "urx": 5831,
+                "ury": 1
               }
             ]
           }

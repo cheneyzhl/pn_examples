@@ -10,10 +10,10 @@
   "data_name": "freepdk-45nm",
   "judge_mode": "match",
   "corner_count": 3,
-  "sample_count": 14,
+  "sample_count": 4,
   "all_corners_match": false,
-  "all_corners_detect": true,
-  "all_corners_ok": false,
+  "all_corners_detect": false,
+  "all_corners_ok": true,
   "per_corner": [
     {
       "corner_id": "corner_000",
@@ -59,17 +59,17 @@
         },
         {
           "idx": 2,
-          "predicted_label": true,
+          "predicted_label": false,
           "calibre_label": true,
-          "match": true,
+          "match": false,
           "error": null,
           "pos": {
-            "NWELL_1": [
+            "WELL_1": [
               {
                 "llx": 0,
                 "lly": 0,
                 "urx": 200,
-                "ury": 200
+                "ury": 199
               }
             ]
           }
@@ -81,262 +81,12 @@
           "match": false,
           "error": null,
           "pos": {
-            "NWELL_1": [
-              {
-                "llx": 0,
-                "lly": 0,
-                "urx": 199,
-                "ury": 200
-              }
-            ]
-          }
-        },
-        {
-          "idx": 4,
-          "predicted_label": true,
-          "calibre_label": true,
-          "match": true,
-          "error": null,
-          "pos": {
-            "PWELL_1": [
-              {
-                "llx": 0,
-                "lly": 0,
-                "urx": 200,
-                "ury": 200
-              }
-            ]
-          }
-        },
-        {
-          "idx": 5,
-          "predicted_label": false,
-          "calibre_label": true,
-          "match": false,
-          "error": null,
-          "pos": {
-            "PWELL_1": [
-              {
-                "llx": 0,
-                "lly": 0,
-                "urx": 199,
-                "ury": 200
-              }
-            ]
-          }
-        },
-        {
-          "idx": 6,
-          "predicted_label": true,
-          "calibre_label": true,
-          "match": true,
-          "error": null,
-          "pos": {
             "WELL_1": [
               {
                 "llx": 0,
                 "lly": 0,
-                "urx": 200,
-                "ury": 200
-              }
-            ],
-            "NWELL_1": [
-              {
-                "llx": 0,
-                "lly": 0,
-                "urx": 200,
-                "ury": 200
-              }
-            ]
-          }
-        },
-        {
-          "idx": 7,
-          "predicted_label": false,
-          "calibre_label": true,
-          "match": false,
-          "error": null,
-          "pos": {
-            "WELL_1": [
-              {
-                "llx": 0,
-                "lly": 0,
-                "urx": 200,
-                "ury": 200
-              }
-            ],
-            "NWELL_1": [
-              {
-                "llx": 0,
-                "lly": 0,
                 "urx": 199,
-                "ury": 200
-              }
-            ]
-          }
-        },
-        {
-          "idx": 8,
-          "predicted_label": true,
-          "calibre_label": true,
-          "match": true,
-          "error": null,
-          "pos": {
-            "WELL_1": [
-              {
-                "llx": 0,
-                "lly": 0,
-                "urx": 200,
-                "ury": 200
-              }
-            ],
-            "PWELL_1": [
-              {
-                "llx": 0,
-                "lly": 0,
-                "urx": 200,
-                "ury": 200
-              }
-            ]
-          }
-        },
-        {
-          "idx": 9,
-          "predicted_label": false,
-          "calibre_label": true,
-          "match": false,
-          "error": null,
-          "pos": {
-            "WELL_1": [
-              {
-                "llx": 0,
-                "lly": 0,
-                "urx": 200,
-                "ury": 200
-              }
-            ],
-            "PWELL_1": [
-              {
-                "llx": 0,
-                "lly": 0,
-                "urx": 199,
-                "ury": 200
-              }
-            ]
-          }
-        },
-        {
-          "idx": 10,
-          "predicted_label": true,
-          "calibre_label": true,
-          "match": true,
-          "error": null,
-          "pos": {
-            "NWELL_1": [
-              {
-                "llx": 0,
-                "lly": 0,
-                "urx": 200,
-                "ury": 200
-              }
-            ],
-            "PWELL_1": [
-              {
-                "llx": 0,
-                "lly": 0,
-                "urx": 200,
-                "ury": 200
-              }
-            ]
-          }
-        },
-        {
-          "idx": 11,
-          "predicted_label": false,
-          "calibre_label": true,
-          "match": false,
-          "error": null,
-          "pos": {
-            "NWELL_1": [
-              {
-                "llx": 0,
-                "lly": 0,
-                "urx": 200,
-                "ury": 200
-              }
-            ],
-            "PWELL_1": [
-              {
-                "llx": 0,
-                "lly": 0,
-                "urx": 199,
-                "ury": 200
-              }
-            ]
-          }
-        },
-        {
-          "idx": 12,
-          "predicted_label": true,
-          "calibre_label": true,
-          "match": true,
-          "error": null,
-          "pos": {
-            "WELL_1": [
-              {
-                "llx": 0,
-                "lly": 0,
-                "urx": 200,
-                "ury": 200
-              }
-            ],
-            "NWELL_1": [
-              {
-                "llx": 0,
-                "lly": 0,
-                "urx": 200,
-                "ury": 200
-              }
-            ],
-            "PWELL_1": [
-              {
-                "llx": 0,
-                "lly": 0,
-                "urx": 200,
-                "ury": 200
-              }
-            ]
-          }
-        },
-        {
-          "idx": 13,
-          "predicted_label": false,
-          "calibre_label": true,
-          "match": false,
-          "error": null,
-          "pos": {
-            "WELL_1": [
-              {
-                "llx": 0,
-                "lly": 0,
-                "urx": 200,
-                "ury": 200
-              }
-            ],
-            "NWELL_1": [
-              {
-                "llx": 0,
-                "lly": 0,
-                "urx": 200,
-                "ury": 200
-              }
-            ],
-            "PWELL_1": [
-              {
-                "llx": 0,
-                "lly": 0,
-                "urx": 199,
-                "ury": 200
+                "ury": 199
               }
             ]
           }
@@ -387,17 +137,17 @@
         },
         {
           "idx": 2,
-          "predicted_label": true,
-          "calibre_label": true,
+          "predicted_label": false,
+          "calibre_label": false,
           "match": true,
           "error": null,
           "pos": {
-            "NWELL_1": [
+            "WELL_1": [
               {
                 "llx": 0,
                 "lly": 0,
                 "urx": 200,
-                "ury": 200
+                "ury": 199
               }
             ]
           }
@@ -405,82 +155,6 @@
         {
           "idx": 3,
           "predicted_label": false,
-          "calibre_label": true,
-          "match": false,
-          "error": null,
-          "pos": {
-            "NWELL_1": [
-              {
-                "llx": 0,
-                "lly": 0,
-                "urx": 199,
-                "ury": 200
-              }
-            ]
-          }
-        },
-        {
-          "idx": 4,
-          "predicted_label": true,
-          "calibre_label": true,
-          "match": true,
-          "error": null,
-          "pos": {
-            "PWELL_1": [
-              {
-                "llx": 0,
-                "lly": 0,
-                "urx": 200,
-                "ury": 200
-              }
-            ]
-          }
-        },
-        {
-          "idx": 5,
-          "predicted_label": false,
-          "calibre_label": true,
-          "match": false,
-          "error": null,
-          "pos": {
-            "PWELL_1": [
-              {
-                "llx": 0,
-                "lly": 0,
-                "urx": 199,
-                "ury": 200
-              }
-            ]
-          }
-        },
-        {
-          "idx": 6,
-          "predicted_label": true,
-          "calibre_label": false,
-          "match": false,
-          "error": null,
-          "pos": {
-            "WELL_1": [
-              {
-                "llx": 0,
-                "lly": 0,
-                "urx": 200,
-                "ury": 200
-              }
-            ],
-            "NWELL_1": [
-              {
-                "llx": 0,
-                "lly": 0,
-                "urx": 200,
-                "ury": 200
-              }
-            ]
-          }
-        },
-        {
-          "idx": 7,
-          "predicted_label": false,
           "calibre_label": false,
           "match": true,
           "error": null,
@@ -489,182 +163,8 @@
               {
                 "llx": 0,
                 "lly": 0,
-                "urx": 200,
-                "ury": 200
-              }
-            ],
-            "NWELL_1": [
-              {
-                "llx": 0,
-                "lly": 0,
                 "urx": 199,
-                "ury": 200
-              }
-            ]
-          }
-        },
-        {
-          "idx": 8,
-          "predicted_label": true,
-          "calibre_label": false,
-          "match": false,
-          "error": null,
-          "pos": {
-            "WELL_1": [
-              {
-                "llx": 0,
-                "lly": 0,
-                "urx": 200,
-                "ury": 200
-              }
-            ],
-            "PWELL_1": [
-              {
-                "llx": 0,
-                "lly": 0,
-                "urx": 200,
-                "ury": 200
-              }
-            ]
-          }
-        },
-        {
-          "idx": 9,
-          "predicted_label": false,
-          "calibre_label": false,
-          "match": true,
-          "error": null,
-          "pos": {
-            "WELL_1": [
-              {
-                "llx": 0,
-                "lly": 0,
-                "urx": 200,
-                "ury": 200
-              }
-            ],
-            "PWELL_1": [
-              {
-                "llx": 0,
-                "lly": 0,
-                "urx": 199,
-                "ury": 200
-              }
-            ]
-          }
-        },
-        {
-          "idx": 10,
-          "predicted_label": true,
-          "calibre_label": true,
-          "match": true,
-          "error": null,
-          "pos": {
-            "NWELL_1": [
-              {
-                "llx": 0,
-                "lly": 0,
-                "urx": 200,
-                "ury": 200
-              }
-            ],
-            "PWELL_1": [
-              {
-                "llx": 0,
-                "lly": 0,
-                "urx": 200,
-                "ury": 200
-              }
-            ]
-          }
-        },
-        {
-          "idx": 11,
-          "predicted_label": false,
-          "calibre_label": true,
-          "match": false,
-          "error": null,
-          "pos": {
-            "NWELL_1": [
-              {
-                "llx": 0,
-                "lly": 0,
-                "urx": 200,
-                "ury": 200
-              }
-            ],
-            "PWELL_1": [
-              {
-                "llx": 0,
-                "lly": 0,
-                "urx": 199,
-                "ury": 200
-              }
-            ]
-          }
-        },
-        {
-          "idx": 12,
-          "predicted_label": true,
-          "calibre_label": false,
-          "match": false,
-          "error": null,
-          "pos": {
-            "WELL_1": [
-              {
-                "llx": 0,
-                "lly": 0,
-                "urx": 200,
-                "ury": 200
-              }
-            ],
-            "NWELL_1": [
-              {
-                "llx": 0,
-                "lly": 0,
-                "urx": 200,
-                "ury": 200
-              }
-            ],
-            "PWELL_1": [
-              {
-                "llx": 0,
-                "lly": 0,
-                "urx": 200,
-                "ury": 200
-              }
-            ]
-          }
-        },
-        {
-          "idx": 13,
-          "predicted_label": false,
-          "calibre_label": false,
-          "match": true,
-          "error": null,
-          "pos": {
-            "WELL_1": [
-              {
-                "llx": 0,
-                "lly": 0,
-                "urx": 200,
-                "ury": 200
-              }
-            ],
-            "NWELL_1": [
-              {
-                "llx": 0,
-                "lly": 0,
-                "urx": 200,
-                "ury": 200
-              }
-            ],
-            "PWELL_1": [
-              {
-                "llx": 0,
-                "lly": 0,
-                "urx": 199,
-                "ury": 200
+                "ury": 199
               }
             ]
           }
@@ -674,10 +174,10 @@
     {
       "corner_id": "corner_original",
       "script_expected_correct": true,
-      "script_predicted_correct": false,
-      "corner_any_mismatch": true,
-      "corner_all_match": false,
-      "corner_ok": false,
+      "script_predicted_correct": true,
+      "corner_any_mismatch": false,
+      "corner_all_match": true,
+      "corner_ok": true,
       "samples": [
         {
           "idx": 0,
@@ -715,17 +215,17 @@
         },
         {
           "idx": 2,
-          "predicted_label": true,
-          "calibre_label": true,
+          "predicted_label": false,
+          "calibre_label": false,
           "match": true,
           "error": null,
           "pos": {
-            "NWELL_1": [
+            "WELL_1": [
               {
                 "llx": 0,
                 "lly": 0,
                 "urx": 200,
-                "ury": 200
+                "ury": 199
               }
             ]
           }
@@ -733,58 +233,7 @@
         {
           "idx": 3,
           "predicted_label": false,
-          "calibre_label": true,
-          "match": false,
-          "error": null,
-          "pos": {
-            "NWELL_1": [
-              {
-                "llx": 0,
-                "lly": 0,
-                "urx": 199,
-                "ury": 200
-              }
-            ]
-          }
-        },
-        {
-          "idx": 4,
-          "predicted_label": true,
-          "calibre_label": true,
-          "match": true,
-          "error": null,
-          "pos": {
-            "PWELL_1": [
-              {
-                "llx": 0,
-                "lly": 0,
-                "urx": 200,
-                "ury": 200
-              }
-            ]
-          }
-        },
-        {
-          "idx": 5,
-          "predicted_label": false,
-          "calibre_label": true,
-          "match": false,
-          "error": null,
-          "pos": {
-            "PWELL_1": [
-              {
-                "llx": 0,
-                "lly": 0,
-                "urx": 199,
-                "ury": 200
-              }
-            ]
-          }
-        },
-        {
-          "idx": 6,
-          "predicted_label": true,
-          "calibre_label": true,
+          "calibre_label": false,
           "match": true,
           "error": null,
           "pos": {
@@ -792,207 +241,8 @@
               {
                 "llx": 0,
                 "lly": 0,
-                "urx": 200,
-                "ury": 200
-              }
-            ],
-            "NWELL_1": [
-              {
-                "llx": 0,
-                "lly": 0,
-                "urx": 200,
-                "ury": 200
-              }
-            ]
-          }
-        },
-        {
-          "idx": 7,
-          "predicted_label": false,
-          "calibre_label": true,
-          "match": false,
-          "error": null,
-          "pos": {
-            "WELL_1": [
-              {
-                "llx": 0,
-                "lly": 0,
-                "urx": 200,
-                "ury": 200
-              }
-            ],
-            "NWELL_1": [
-              {
-                "llx": 0,
-                "lly": 0,
                 "urx": 199,
-                "ury": 200
-              }
-            ]
-          }
-        },
-        {
-          "idx": 8,
-          "predicted_label": true,
-          "calibre_label": true,
-          "match": true,
-          "error": null,
-          "pos": {
-            "WELL_1": [
-              {
-                "llx": 0,
-                "lly": 0,
-                "urx": 200,
-                "ury": 200
-              }
-            ],
-            "PWELL_1": [
-              {
-                "llx": 0,
-                "lly": 0,
-                "urx": 200,
-                "ury": 200
-              }
-            ]
-          }
-        },
-        {
-          "idx": 9,
-          "predicted_label": false,
-          "calibre_label": true,
-          "match": false,
-          "error": null,
-          "pos": {
-            "WELL_1": [
-              {
-                "llx": 0,
-                "lly": 0,
-                "urx": 200,
-                "ury": 200
-              }
-            ],
-            "PWELL_1": [
-              {
-                "llx": 0,
-                "lly": 0,
-                "urx": 199,
-                "ury": 200
-              }
-            ]
-          }
-        },
-        {
-          "idx": 10,
-          "predicted_label": true,
-          "calibre_label": true,
-          "match": true,
-          "error": null,
-          "pos": {
-            "NWELL_1": [
-              {
-                "llx": 0,
-                "lly": 0,
-                "urx": 200,
-                "ury": 200
-              }
-            ],
-            "PWELL_1": [
-              {
-                "llx": 0,
-                "lly": 0,
-                "urx": 200,
-                "ury": 200
-              }
-            ]
-          }
-        },
-        {
-          "idx": 11,
-          "predicted_label": false,
-          "calibre_label": true,
-          "match": false,
-          "error": null,
-          "pos": {
-            "NWELL_1": [
-              {
-                "llx": 0,
-                "lly": 0,
-                "urx": 200,
-                "ury": 200
-              }
-            ],
-            "PWELL_1": [
-              {
-                "llx": 0,
-                "lly": 0,
-                "urx": 199,
-                "ury": 200
-              }
-            ]
-          }
-        },
-        {
-          "idx": 12,
-          "predicted_label": true,
-          "calibre_label": true,
-          "match": true,
-          "error": null,
-          "pos": {
-            "WELL_1": [
-              {
-                "llx": 0,
-                "lly": 0,
-                "urx": 200,
-                "ury": 200
-              }
-            ],
-            "NWELL_1": [
-              {
-                "llx": 0,
-                "lly": 0,
-                "urx": 200,
-                "ury": 200
-              }
-            ],
-            "PWELL_1": [
-              {
-                "llx": 0,
-                "lly": 0,
-                "urx": 200,
-                "ury": 200
-              }
-            ]
-          }
-        },
-        {
-          "idx": 13,
-          "predicted_label": false,
-          "calibre_label": true,
-          "match": false,
-          "error": null,
-          "pos": {
-            "WELL_1": [
-              {
-                "llx": 0,
-                "lly": 0,
-                "urx": 200,
-                "ury": 200
-              }
-            ],
-            "NWELL_1": [
-              {
-                "llx": 0,
-                "lly": 0,
-                "urx": 200,
-                "ury": 200
-              }
-            ],
-            "PWELL_1": [
-              {
-                "llx": 0,
-                "lly": 0,
-                "urx": 199,
-                "ury": 200
+                "ury": 199
               }
             ]
           }

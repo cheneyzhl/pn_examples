@@ -3,12 +3,12 @@
 ==================================================================================
 === CALIBRE::DRC-H SUMMARY REPORT
 ===
-Execution Date/Time:       Fri Mar 20 15:43:46 2026
+Execution Date/Time:       Fri Mar 20 23:23:35 2026
 Calibre Version:           v2019.3_15.11    Tue Jul 2 12:24:58 PDT 2019
-Rule File Pathname:        /share/home/zenghuanlong/pn_examples/boundary_coverage_eval/eval_results/result/work/asap7/WELL.W.2/corner_original/example_7.rul
+Rule File Pathname:        /share/home/zenghuanlong/pn_examples/boundary_coverage_eval/eval_results/result/work/asap7/WELL.W.2/corner_original/example_5.rul
 Rule File Title:           
 Layout System:             GDS
-Layout Path(s):            /share/home/zenghuanlong/pn_examples/boundary_coverage_eval/eval_results/result/work/asap7/WELL.W.2/gds/example_7.gds
+Layout Path(s):            /share/home/zenghuanlong/pn_examples/boundary_coverage_eval/eval_results/result/work/asap7/WELL.W.2/gds/example_5.gds
 Layout Primary Cell:       TOPCELL
 Current Directory:         /share/home/zenghuanlong/pn_examples/boundary_coverage_eval/eval_results/result/work/asap7/WELL.W.2/corner_original
 User Name:                 zenghuanlong
@@ -34,7 +34,7 @@ LAYER GCUT ...... TOTAL Original Geometry Count = 0 (0)
 LAYER GATE ...... TOTAL Original Geometry Count = 0 (0)
 LAYER SRAMDRC ... TOTAL Original Geometry Count = 0 (0)
 LAYER ACTIVE .... TOTAL Original Geometry Count = 0 (0)
-LAYER WELL ...... TOTAL Original Geometry Count = 2 (2)
+LAYER WELL ...... TOTAL Original Geometry Count = 1 (1)
 LAYER NSELECT ... TOTAL Original Geometry Count = 0 (0)
 LAYER PSELECT ... TOTAL Original Geometry Count = 0 (0)
 LAYER SLVT ...... TOTAL Original Geometry Count = 0 (0)
@@ -94,7 +94,7 @@ RULECHECK SRAM.LIG.GATE.OV.2 ......... TOTAL Result Count = 0 (0)
 --- SUMMARY
 ---
 TOTAL CPU Time:                  0
-TOTAL REAL Time:                 27
-TOTAL Original Layer Geometries: 2 (2)
+TOTAL REAL Time:                 28
+TOTAL Original Layer Geometries: 1 (1)
 TOTAL DRC RuleChecks Executed:   26
 TOTAL DRC Results Generated:     1 (1)

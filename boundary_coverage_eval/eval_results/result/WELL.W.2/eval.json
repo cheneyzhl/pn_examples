@@ -10,7 +10,7 @@
   "data_name": "asap7",
   "judge_mode": "match",
   "corner_count": 3,
-  "sample_count": 8,
+  "sample_count": 6,
   "all_corners_match": false,
   "all_corners_detect": true,
   "all_corners_ok": false,
@@ -120,52 +120,6 @@
                 "llx": 0,
                 "lly": 0,
                 "urx": 53,
-                "ury": 53
-              }
-            ]
-          }
-        },
-        {
-          "idx": 6,
-          "predicted_label": true,
-          "calibre_label": true,
-          "match": true,
-          "error": null,
-          "pos": {
-            "WELL_1": [
-              {
-                "llx": 0,
-                "lly": 0,
-                "urx": 100,
-                "ury": 54
-              },
-              {
-                "llx": 200,
-                "lly": 0,
-                "urx": 300,
-                "ury": 54
-              }
-            ]
-          }
-        },
-        {
-          "idx": 7,
-          "predicted_label": false,
-          "calibre_label": true,
-          "match": false,
-          "error": null,
-          "pos": {
-            "WELL_1": [
-              {
-                "llx": 0,
-                "lly": 0,
-                "urx": 100,
-                "ury": 54
-              },
-              {
-                "llx": 200,
-                "lly": 0,
-                "urx": 300,
                 "ury": 53
               }
             ]
@@ -282,52 +236,6 @@
               }
             ]
           }
-        },
-        {
-          "idx": 6,
-          "predicted_label": true,
-          "calibre_label": false,
-          "match": false,
-          "error": null,
-          "pos": {
-            "WELL_1": [
-              {
-                "llx": 0,
-                "lly": 0,
-                "urx": 100,
-                "ury": 54
-              },
-              {
-                "llx": 200,
-                "lly": 0,
-                "urx": 300,
-                "ury": 54
-              }
-            ]
-          }
-        },
-        {
-          "idx": 7,
-          "predicted_label": false,
-          "calibre_label": false,
-          "match": true,
-          "error": null,
-          "pos": {
-            "WELL_1": [
-              {
-                "llx": 0,
-                "lly": 0,
-                "urx": 100,
-                "ury": 54
-              },
-              {
-                "llx": 200,
-                "lly": 0,
-                "urx": 300,
-                "ury": 53
-              }
-            ]
-          }
         }
       ]
     },
@@ -436,52 +344,6 @@
                 "llx": 0,
                 "lly": 0,
                 "urx": 53,
-                "ury": 53
-              }
-            ]
-          }
-        },
-        {
-          "idx": 6,
-          "predicted_label": true,
-          "calibre_label": true,
-          "match": true,
-          "error": null,
-          "pos": {
-            "WELL_1": [
-              {
-                "llx": 0,
-                "lly": 0,
-                "urx": 100,
-                "ury": 54
-              },
-              {
-                "llx": 200,
-                "lly": 0,
-                "urx": 300,
-                "ury": 54
-              }
-            ]
-          }
-        },
-        {
-          "idx": 7,
-          "predicted_label": false,
-          "calibre_label": false,
-          "match": true,
-          "error": null,
-          "pos": {
-            "WELL_1": [
-              {
-                "llx": 0,
-                "lly": 0,
-                "urx": 100,
-                "ury": 54
-              },
-              {
-                "llx": 200,
-                "lly": 0,
-                "urx": 300,
                 "ury": 53
               }
             ]

@@ -2,8 +2,8 @@
   "rule_name": "WELL.A.1A",
   "rule_description": "Minimum area of WELL is 5832 nm-sq.",
   "rule_script": "AREA WELL  < 0.005832",
-  "sample_correct": 2,
-  "sample_total": 2,
+  "sample_correct": 7,
+  "sample_total": 7,
   "accuracy": 1.0,
   "details": [
     {
@@ -32,8 +32,88 @@
           {
             "llx": 0,
             "lly": 0,
+            "urx": 71,
+            "ury": 81
+          }
+        ]
+      }
+    },
+    {
+      "idx": 2,
+      "predicted_label": false,
+      "calibre_label": false,
+      "match": true,
+      "pos": {
+        "WELL_1": [
+          {
+            "llx": 0,
+            "lly": 0,
             "urx": 72,
             "ury": 80
+          }
+        ]
+      }
+    },
+    {
+      "idx": 3,
+      "predicted_label": true,
+      "calibre_label": true,
+      "match": true,
+      "pos": {
+        "WELL_1": [
+          {
+            "llx": 0,
+            "lly": 0,
+            "urx": 54,
+            "ury": 108
+          }
+        ]
+      }
+    },
+    {
+      "idx": 4,
+      "predicted_label": false,
+      "calibre_label": false,
+      "match": true,
+      "pos": {
+        "WELL_1": [
+          {
+            "llx": 0,
+            "lly": 0,
+            "urx": 54,
+            "ury": 107
+          }
+        ]
+      }
+    },
+    {
+      "idx": 5,
+      "predicted_label": true,
+      "calibre_label": true,
+      "match": true,
+      "pos": {
+        "WELL_1": [
+          {
+            "llx": 0,
+            "lly": 0,
+            "urx": 5832,
+            "ury": 1
+          }
+        ]
+      }
+    },
+    {
+      "idx": 6,
+      "predicted_label": false,
+      "calibre_label": false,
+      "match": true,
+      "pos": {
+        "WELL_1": [
+          {
+            "llx": 0,
+            "lly": 0,
+            "urx": 5831,
+            "ury": 1
           }
         ]
       }

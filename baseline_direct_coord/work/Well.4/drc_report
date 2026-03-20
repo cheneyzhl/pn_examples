@@ -3,12 +3,12 @@
 ==================================================================================
 === CALIBRE::DRC-H SUMMARY REPORT
 ===
-Execution Date/Time:       Thu Mar 19 22:15:32 2026
+Execution Date/Time:       Fri Mar 20 22:18:41 2026
 Calibre Version:           v2019.3_15.11    Tue Jul 2 12:24:58 PDT 2019
-Rule File Pathname:        /share/home/zenghuanlong/pn_examples/baseline_direct_coord/work/Well.4/example_13.rul
+Rule File Pathname:        /share/home/zenghuanlong/pn_examples/baseline_direct_coord/work/Well.4/example_3.rul
 Rule File Title:           
 Layout System:             GDS
-Layout Path(s):            /share/home/zenghuanlong/pn_examples/baseline_direct_coord/work/Well.4/example_13.gds
+Layout Path(s):            /share/home/zenghuanlong/pn_examples/baseline_direct_coord/work/Well.4/example_3.gds
 Layout Primary Cell:       TOPCELL
 Current Directory:         /share/home/zenghuanlong/pn_examples/baseline_direct_coord/work/Well.4
 User Name:                 zenghuanlong
@@ -61,7 +61,7 @@ LAYER diode ..... TOTAL Original Geometry Count = 0 (0)
 ----------------------------------------------------------------------------------
 --- RULECHECK RESULTS STATISTICS
 ---
-RULECHECK Well.4 ............ TOTAL Result Count = 0 (0)
+RULECHECK Well.4 ............ TOTAL Result Count = 2 (2)
 RULECHECK Grid.1 ............ TOTAL Result Count = 0 (0)
 RULECHECK Grid.2 ............ TOTAL Result Count = 0 (0)
 RULECHECK Grid.3 ............ TOTAL Result Count = 0 (0)
@@ -106,4 +106,4 @@ TOTAL CPU Time:                  0
 TOTAL REAL Time:                 27
 TOTAL Original Layer Geometries: 1 (1)
 TOTAL DRC RuleChecks Executed:   38
-TOTAL DRC Results Generated:     0 (0)
+TOTAL DRC Results Generated:     2 (2)

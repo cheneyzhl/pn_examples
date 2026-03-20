@@ -3,12 +3,12 @@
 ==================================================================================
 === CALIBRE::DRC-H SUMMARY REPORT
 ===
-Execution Date/Time:       Fri Mar 20 16:01:10 2026
+Execution Date/Time:       Fri Mar 20 23:40:17 2026
 Calibre Version:           v2019.3_15.11    Tue Jul 2 12:24:58 PDT 2019
-Rule File Pathname:        /share/home/zenghuanlong/pn_examples/boundary_coverage_eval/eval_results/result/work/freepdk-45nm/Well.4/corner_001/example_13.rul
+Rule File Pathname:        /share/home/zenghuanlong/pn_examples/boundary_coverage_eval/eval_results/result/work/freepdk-45nm/Well.4/corner_001/example_3.rul
 Rule File Title:           
 Layout System:             GDS
-Layout Path(s):            /share/home/zenghuanlong/pn_examples/boundary_coverage_eval/eval_results/result/work/freepdk-45nm/Well.4/gds/example_13.gds
+Layout Path(s):            /share/home/zenghuanlong/pn_examples/boundary_coverage_eval/eval_results/result/work/freepdk-45nm/Well.4/gds/example_3.gds
 Layout Primary Cell:       TOPCELL
 Current Directory:         /share/home/zenghuanlong/pn_examples/boundary_coverage_eval/eval_results/result/work/freepdk-45nm/Well.4/corner_001
 User Name:                 zenghuanlong
@@ -103,7 +103,7 @@ RULECHECK Antenna.metal10 ... TOTAL Result Count = 0 (0)
 --- SUMMARY
 ---
 TOTAL CPU Time:                  0
-TOTAL REAL Time:                 27
+TOTAL REAL Time:                 30
 TOTAL Original Layer Geometries: 1 (1)
 TOTAL DRC RuleChecks Executed:   38
 TOTAL DRC Results Generated:     2 (2)

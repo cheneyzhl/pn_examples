@@ -10,7 +10,7 @@
   "data_name": "asap7",
   "judge_mode": "match",
   "corner_count": 3,
-  "sample_count": 6,
+  "sample_count": 4,
   "all_corners_match": false,
   "all_corners_detect": false,
   "all_corners_ok": true,
@@ -70,7 +70,9 @@
                 "lly": 0,
                 "urx": 108,
                 "ury": 100
-              },
+              }
+            ],
+            "WELL_2": [
               {
                 "llx": 200,
                 "lly": 0,
@@ -93,62 +95,14 @@
                 "lly": 0,
                 "urx": 108,
                 "ury": 100
-              },
+              }
+            ],
+            "WELL_2": [
               {
                 "llx": 200,
                 "lly": 0,
                 "urx": 307,
                 "ury": 100
-              }
-            ]
-          }
-        },
-        {
-          "idx": 4,
-          "predicted_label": true,
-          "calibre_label": true,
-          "match": true,
-          "error": null,
-          "pos": {
-            "WELL_1": [
-              {
-                "llx": 0,
-                "lly": 0,
-                "urx": 108,
-                "ury": 100
-              }
-            ],
-            "FIN_1": [
-              {
-                "llx": 10,
-                "lly": 10,
-                "urx": 20,
-                "ury": 20
-              }
-            ]
-          }
-        },
-        {
-          "idx": 5,
-          "predicted_label": false,
-          "calibre_label": true,
-          "match": false,
-          "error": null,
-          "pos": {
-            "WELL_1": [
-              {
-                "llx": 0,
-                "lly": 0,
-                "urx": 107,
-                "ury": 100
-              }
-            ],
-            "FIN_1": [
-              {
-                "llx": 10,
-                "lly": 10,
-                "urx": 20,
-                "ury": 20
               }
             ]
           }
@@ -210,7 +164,9 @@
                 "lly": 0,
                 "urx": 108,
                 "ury": 100
-              },
+              }
+            ],
+            "WELL_2": [
               {
                 "llx": 200,
                 "lly": 0,
@@ -233,62 +189,14 @@
                 "lly": 0,
                 "urx": 108,
                 "ury": 100
-              },
+              }
+            ],
+            "WELL_2": [
               {
                 "llx": 200,
                 "lly": 0,
                 "urx": 307,
                 "ury": 100
-              }
-            ]
-          }
-        },
-        {
-          "idx": 4,
-          "predicted_label": true,
-          "calibre_label": false,
-          "match": false,
-          "error": null,
-          "pos": {
-            "WELL_1": [
-              {
-                "llx": 0,
-                "lly": 0,
-                "urx": 108,
-                "ury": 100
-              }
-            ],
-            "FIN_1": [
-              {
-                "llx": 10,
-                "lly": 10,
-                "urx": 20,
-                "ury": 20
-              }
-            ]
-          }
-        },
-        {
-          "idx": 5,
-          "predicted_label": false,
-          "calibre_label": false,
-          "match": true,
-          "error": null,
-          "pos": {
-            "WELL_1": [
-              {
-                "llx": 0,
-                "lly": 0,
-                "urx": 107,
-                "ury": 100
-              }
-            ],
-            "FIN_1": [
-              {
-                "llx": 10,
-                "lly": 10,
-                "urx": 20,
-                "ury": 20
               }
             ]
           }
@@ -350,7 +258,9 @@
                 "lly": 0,
                 "urx": 108,
                 "ury": 100
-              },
+              }
+            ],
+            "WELL_2": [
               {
                 "llx": 200,
                 "lly": 0,
@@ -373,62 +283,14 @@
                 "lly": 0,
                 "urx": 108,
                 "ury": 100
-              },
+              }
+            ],
+            "WELL_2": [
               {
                 "llx": 200,
                 "lly": 0,
                 "urx": 307,
                 "ury": 100
-              }
-            ]
-          }
-        },
-        {
-          "idx": 4,
-          "predicted_label": true,
-          "calibre_label": true,
-          "match": true,
-          "error": null,
-          "pos": {
-            "WELL_1": [
-              {
-                "llx": 0,
-                "lly": 0,
-                "urx": 108,
-                "ury": 100
-              }
-            ],
-            "FIN_1": [
-              {
-                "llx": 10,
-                "lly": 10,
-                "urx": 20,
-                "ury": 20
-              }
-            ]
-          }
-        },
-        {
-          "idx": 5,
-          "predicted_label": false,
-          "calibre_label": false,
-          "match": true,
-          "error": null,
-          "pos": {
-            "WELL_1": [
-              {
-                "llx": 0,
-                "lly": 0,
-                "urx": 107,
-                "ury": 100
-              }
-            ],
-            "FIN_1": [
-              {
-                "llx": 10,
-                "lly": 10,
-                "urx": 20,
-                "ury": 20
               }
             ]
           }

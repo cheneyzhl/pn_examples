@@ -24,6 +24,8 @@ def get_example_format_spec(layer_list: List[str]) -> str:
         "值为矩形列表；每个矩形为 { \\\"llx\\\": 整数, \\\"lly\\\": 整数, \\\"urx\\\": 整数, \\\"ury\\\": 整数 }。\\n"
         "\"labels\": 数组，与 examples 一一对应。true 表示该 layout 应通过 DRC（正例），false 表示应违反 DRC（反例）。\\n"
         f"本规则涉及的层名（不含序号）为: {layer_list}。层名格式为 层名_序号，例如 NW_1, NW_2。\\n"
+        "坐标单位约定（必须遵守，避免单位错误）：你给出的 llx/lly/urx/ury 的数值单位是 nm（1 coordinate unit = 1 nm）。\\n"
+        "因此：长度（um）= (x_nm 或 y_nm) * 1e-3；面积（um^2）= (宽_nm * 高_nm) * 1e-6。\\n"
         "请特别关注边界 / corner case：对于规则中的每一个条件变量（例如宽度、间距、面积等阈值条件），"
         "先分析有哪些布尔条件（如 >=T / >T / ==T / <T 等），再枚举这些条件的所有组合（若有 3 个独立条件，则有 2^3=8 种组合）。"
         "对于每一种组合，请至少给出 1 个恰好满足所有条件的正例（刚好通过边界），以及 1 个恰好违反该组合中至少一个关键条件的反例（刚好不通过）。"
@@ -142,6 +144,7 @@ def ask_llm_for_examples(
         "正例：满足该规则的 layout；反例：违反该规则的 layout。\n"
         "要求：先在心中分析出规则中涉及的所有条件变量，再将这些条件视为若干布尔变量，枚举它们的所有组合；"
         "对于每一种组合，至少给出 1 个恰好满足条件边界的正例和 1 个恰好违反边界的反例。\n"
+        "在输出 JSON 前，请对每个正/反例重新用“单位约定 + 阈值判定”做自检，确保满足：正例=通过域，反例=违规域。自检失败则不要输出。"
         "{}"
     ).format(rule_description, get_example_format_spec(layer_list))
     response_text = _call_chat_api(base_url, api_key, model, prompt)

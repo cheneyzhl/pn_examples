@@ -2,8 +2,8 @@
   "rule_name": "Active.1",
   "rule_description": "Minimum width of active = 0.09",
   "rule_script": "INTERNAL active < 0.09",
-  "sample_correct": 2,
-  "sample_total": 2,
+  "sample_correct": 6,
+  "sample_total": 6,
   "accuracy": 1.0,
   "details": [
     {
@@ -34,6 +34,70 @@
             "lly": 0,
             "urx": 89,
             "ury": 100
+          }
+        ]
+      }
+    },
+    {
+      "idx": 2,
+      "predicted_label": true,
+      "calibre_label": true,
+      "match": true,
+      "pos": {
+        "ACTIVE_1": [
+          {
+            "llx": 0,
+            "lly": 0,
+            "urx": 90,
+            "ury": 90
+          }
+        ]
+      }
+    },
+    {
+      "idx": 3,
+      "predicted_label": false,
+      "calibre_label": false,
+      "match": true,
+      "pos": {
+        "ACTIVE_1": [
+          {
+            "llx": 0,
+            "lly": 0,
+            "urx": 89,
+            "ury": 89
+          }
+        ]
+      }
+    },
+    {
+      "idx": 4,
+      "predicted_label": true,
+      "calibre_label": true,
+      "match": true,
+      "pos": {
+        "ACTIVE_1": [
+          {
+            "llx": 0,
+            "lly": 0,
+            "urx": 100,
+            "ury": 90
+          }
+        ]
+      }
+    },
+    {
+      "idx": 5,
+      "predicted_label": false,
+      "calibre_label": false,
+      "match": true,
+      "pos": {
+        "ACTIVE_1": [
+          {
+            "llx": 0,
+            "lly": 0,
+            "urx": 100,
+            "ury": 89
           }
         ]
       }

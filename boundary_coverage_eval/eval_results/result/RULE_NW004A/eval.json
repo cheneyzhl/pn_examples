@@ -26,16 +26,16 @@
         {
           "idx": 0,
           "predicted_label": true,
-          "calibre_label": false,
-          "match": false,
+          "calibre_label": true,
+          "match": true,
           "error": null,
           "pos": {
             "NW_1": [
               {
                 "llx": 0,
                 "lly": 0,
-                "urx": 40,
-                "ury": 35
+                "urx": 374,
+                "ury": 374
               }
             ]
           }
@@ -43,16 +43,16 @@
         {
           "idx": 1,
           "predicted_label": false,
-          "calibre_label": false,
-          "match": true,
+          "calibre_label": true,
+          "match": false,
           "error": null,
           "pos": {
             "NW_1": [
               {
                 "llx": 0,
                 "lly": 0,
-                "urx": 39,
-                "ury": 35
+                "urx": 373,
+                "ury": 373
               }
             ]
           }
@@ -60,16 +60,16 @@
         {
           "idx": 2,
           "predicted_label": true,
-          "calibre_label": false,
-          "match": false,
+          "calibre_label": true,
+          "match": true,
           "error": null,
           "pos": {
             "NW_1": [
               {
                 "llx": 0,
                 "lly": 0,
-                "urx": 20,
-                "ury": 70
+                "urx": 200,
+                "ury": 700
               }
             ]
           }
@@ -77,24 +77,7 @@
         {
           "idx": 3,
           "predicted_label": false,
-          "calibre_label": false,
-          "match": true,
-          "error": null,
-          "pos": {
-            "NW_1": [
-              {
-                "llx": 0,
-                "lly": 0,
-                "urx": 20,
-                "ury": 69
-              }
-            ]
-          }
-        },
-        {
-          "idx": 4,
-          "predicted_label": true,
-          "calibre_label": false,
+          "calibre_label": true,
           "match": false,
           "error": null,
           "pos": {
@@ -102,16 +85,16 @@
               {
                 "llx": 0,
                 "lly": 0,
-                "urx": 37,
-                "ury": 38
+                "urx": 200,
+                "ury": 699
               }
             ]
           }
         },
         {
-          "idx": 5,
-          "predicted_label": false,
-          "calibre_label": false,
+          "idx": 4,
+          "predicted_label": true,
+          "calibre_label": true,
           "match": true,
           "error": null,
           "pos": {
@@ -119,8 +102,25 @@
               {
                 "llx": 0,
                 "lly": 0,
-                "urx": 37,
-                "ury": 37
+                "urx": 1000,
+                "ury": 140
+              }
+            ]
+          }
+        },
+        {
+          "idx": 5,
+          "predicted_label": false,
+          "calibre_label": true,
+          "match": false,
+          "error": null,
+          "pos": {
+            "NW_1": [
+              {
+                "llx": 0,
+                "lly": 0,
+                "urx": 1000,
+                "ury": 139
               }
             ]
           }
@@ -146,8 +146,8 @@
               {
                 "llx": 0,
                 "lly": 0,
-                "urx": 40,
-                "ury": 35
+                "urx": 374,
+                "ury": 374
               }
             ]
           }
@@ -163,8 +163,8 @@
               {
                 "llx": 0,
                 "lly": 0,
-                "urx": 39,
-                "ury": 35
+                "urx": 373,
+                "ury": 373
               }
             ]
           }
@@ -180,8 +180,8 @@
               {
                 "llx": 0,
                 "lly": 0,
-                "urx": 20,
-                "ury": 70
+                "urx": 200,
+                "ury": 700
               }
             ]
           }
@@ -197,8 +197,8 @@
               {
                 "llx": 0,
                 "lly": 0,
-                "urx": 20,
-                "ury": 69
+                "urx": 200,
+                "ury": 699
               }
             ]
           }
@@ -214,8 +214,8 @@
               {
                 "llx": 0,
                 "lly": 0,
-                "urx": 37,
-                "ury": 38
+                "urx": 1000,
+                "ury": 140
               }
             ]
           }
@@ -231,8 +231,8 @@
               {
                 "llx": 0,
                 "lly": 0,
-                "urx": 37,
-                "ury": 37
+                "urx": 1000,
+                "ury": 139
               }
             ]
           }
@@ -258,8 +258,8 @@
               {
                 "llx": 0,
                 "lly": 0,
-                "urx": 40,
-                "ury": 35
+                "urx": 374,
+                "ury": 374
               }
             ]
           }
@@ -275,8 +275,8 @@
               {
                 "llx": 0,
                 "lly": 0,
-                "urx": 39,
-                "ury": 35
+                "urx": 373,
+                "ury": 373
               }
             ]
           }
@@ -284,16 +284,16 @@
         {
           "idx": 2,
           "predicted_label": true,
-          "calibre_label": false,
-          "match": false,
+          "calibre_label": true,
+          "match": true,
           "error": null,
           "pos": {
             "NW_1": [
               {
                 "llx": 0,
                 "lly": 0,
-                "urx": 20,
-                "ury": 70
+                "urx": 200,
+                "ury": 700
               }
             ]
           }
@@ -309,8 +309,8 @@
               {
                 "llx": 0,
                 "lly": 0,
-                "urx": 20,
-                "ury": 69
+                "urx": 200,
+                "ury": 699
               }
             ]
           }
@@ -318,16 +318,16 @@
         {
           "idx": 4,
           "predicted_label": true,
-          "calibre_label": false,
-          "match": false,
+          "calibre_label": true,
+          "match": true,
           "error": null,
           "pos": {
             "NW_1": [
               {
                 "llx": 0,
                 "lly": 0,
-                "urx": 37,
-                "ury": 38
+                "urx": 1000,
+                "ury": 140
               }
             ]
           }
@@ -343,8 +343,8 @@
               {
                 "llx": 0,
                 "lly": 0,
-                "urx": 37,
-                "ury": 37
+                "urx": 1000,
+                "ury": 139
               }
             ]
           }

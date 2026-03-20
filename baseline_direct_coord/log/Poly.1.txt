@@ -5,92 +5,59 @@
 请根据上述 DRC 规则，系统性地生成覆盖所有边界情况（corner case）的 layout 正例与反例的矩形坐标。
 正例：满足该规则的 layout；反例：违反该规则的 layout。
 要求：先在心中分析出规则中涉及的所有条件变量，再将这些条件视为若干布尔变量，枚举它们的所有组合；对于每一种组合，至少给出 1 个恰好满足条件边界的正例和 1 个恰好违反边界的反例。
-请输出 JSON，且仅包含以下两个键：\n"examples": 数组，每个元素为一个 layout 例子。每个例子是一个对象，键为层名（带序号，如 NW_1, NW_2），值为矩形列表；每个矩形为 { \"llx\": 整数, \"lly\": 整数, \"urx\": 整数, \"ury\": 整数 }。\n"labels": 数组，与 examples 一一对应。true 表示该 layout 应通过 DRC（正例），false 表示应违反 DRC（反例）。\n本规则涉及的层名（不含序号）为: ['NWELL', 'PWELL', 'ACTIVE', 'NIMPLANT', 'PIMPLANT', 'VTG', 'VTH', 'POLY', 'CONTACT', 'METAL1', 'VIA1', 'METAL2', 'VIA2', 'METAL3', 'VIA3', 'METAL4', 'VIA4', 'METAL5', 'VIA5', 'METAL6', 'VIA6', 'METAL7', 'VIA7', 'METAL8', 'VIA8', 'METAL9', 'VIA9', 'METAL10', 'WELL', 'GATE', 'IMPLANT', 'FIELDPOLY', 'VT', 'CONTACTENC1', 'CONTACTENC', 'DIODE']。层名格式为 层名_序号，例如 NW_1, NW_2。\n请特别关注边界 / corner case：对于规则中的每一个条件变量（例如宽度、间距、面积等阈值条件），先分析有哪些布尔条件（如 >=T / >T / ==T / <T 等），再枚举这些条件的所有组合（若有 3 个独立条件，则有 2^3=8 种组合）。对于每一种组合，请至少给出 1 个恰好满足所有条件的正例（刚好通过边界），以及 1 个恰好违反该组合中至少一个关键条件的反例（刚好不通过）。
+在输出 JSON 前，请对每个正/反例重新用“单位约定 + 阈值判定”做自检，确保满足：正例=通过域，反例=违规域。自检失败则不要输出。请输出 JSON，且仅包含以下两个键：\n"examples": 数组，每个元素为一个 layout 例子。每个例子是一个对象，键为层名（带序号，如 NW_1, NW_2），值为矩形列表；每个矩形为 { \"llx\": 整数, \"lly\": 整数, \"urx\": 整数, \"ury\": 整数 }。\n"labels": 数组，与 examples 一一对应。true 表示该 layout 应通过 DRC（正例），false 表示应违反 DRC（反例）。\n本规则涉及的层名（不含序号）为: ['NWELL', 'PWELL', 'ACTIVE', 'NIMPLANT', 'PIMPLANT', 'VTG', 'VTH', 'POLY', 'CONTACT', 'METAL1', 'VIA1', 'METAL2', 'VIA2', 'METAL3', 'VIA3', 'METAL4', 'VIA4', 'METAL5', 'VIA5', 'METAL6', 'VIA6', 'METAL7', 'VIA7', 'METAL8', 'VIA8', 'METAL9', 'VIA9', 'METAL10', 'WELL', 'GATE', 'IMPLANT', 'FIELDPOLY', 'VT', 'CONTACTENC1', 'CONTACTENC', 'DIODE']。层名格式为 层名_序号，例如 NW_1, NW_2。\n坐标单位约定（必须遵守，避免单位错误）：你给出的 llx/lly/urx/ury 的数值单位是 nm（1 coordinate unit = 1 nm）。\n因此：长度（um）= (x_nm 或 y_nm) * 1e-3；面积（um^2）= (宽_nm * 高_nm) * 1e-6。\n请特别关注边界 / corner case：对于规则中的每一个条件变量（例如宽度、间距、面积等阈值条件），先分析有哪些布尔条件（如 >=T / >T / ==T / <T 等），再枚举这些条件的所有组合（若有 3 个独立条件，则有 2^3=8 种组合）。对于每一种组合，请至少给出 1 个恰好满足所有条件的正例（刚好通过边界），以及 1 个恰好违反该组合中至少一个关键条件的反例（刚好不通过）。
 
 大模型回答
+### 分析规则
+
+规则描述为 "Min width of poly = 0.05"，即 POLY 层的最小宽度为 0.05 um（50 nm）。这是一个简单的单条件规则，只需要检查 POLY 层的矩形宽度是否满足最小宽度要求。
+
+### 条件变量
+
+1. POLY 层的宽度（width）：
+   - 条件：width >= 50 nm（正例）
+   - 违反条件：width < 50 nm（反例）
+
+### 边界情况
+
+由于这是一个单条件规则，边界情况只有两种：
+1. POLY 宽度刚好等于 50 nm（正例）
+2. POLY 宽度刚好小于 50 nm（反例）
+
+### 生成正例和反例
+
+#### 正例：
+- POLY 宽度 = 50 nm（刚好满足最小宽度）
+- 示例：POLY_1 的矩形宽度为 50 nm，高度可以任意（这里设为 100 nm）
+
+#### 反例：
+- POLY 宽度 = 49 nm（刚好不满足最小宽度）
+- 示例：POLY_1 的矩形宽度为 49 nm，高度可以任意（这里设为 100 nm）
+
+### 自检
+
+- 正例：
+  - 宽度 = 50 nm = 0.05 um，满足 width >= 0.05 um
+- 反例：
+  - 宽度 = 49 nm = 0.049 um，不满足 width >= 0.05 um
+
+### JSON 输出
+
 ```json
 {
   "examples": [
     {
       "POLY_1": [
-        {
-          "llx": 0,
-          "lly": 0,
-          "urx": 50,
-          "ury": 50
-        }
+        { "llx": 0, "lly": 0, "urx": 50, "ury": 100 }
       ]
     },
     {
       "POLY_1": [
-        {
-          "llx": 0,
-          "lly": 0,
-          "urx": 4,
-          "ury": 50
-        }
-      ]
-    },
-    {
-      "POLY_1": [
-        {
-          "llx": 0,
-          "lly": 0,
-          "urx": 50,
-          "ury": 4
-        }
-      ]
-    },
-    {
-      "POLY_1": [
-        {
-          "llx": 0,
-          "lly": 0,
-          "urx": 5,
-          "ury": 50
-        }
-      ]
-    },
-    {
-      "POLY_1": [
-        {
-          "llx": 0,
-          "lly": 0,
-          "urx": 50,
-          "ury": 5
-        }
-      ]
-    },
-    {
-      "POLY_1": [
-        {
-          "llx": 0,
-          "lly": 0,
-          "urx": 3,
-          "ury": 50
-        }
-      ]
-    },
-    {
-      "POLY_1": [
-        {
-          "llx": 0,
-          "lly": 0,
-          "urx": 50,
-          "ury": 3
-        }
+        { "llx": 0, "lly": 0, "urx": 49, "ury": 100 }
       ]
     }
   ],
-  "labels": [
-    true,
-    false,
-    false,
-    true,
-    true,
-    false,
-    false
-  ]
+  "labels": [true, false]
 }
 ```
 

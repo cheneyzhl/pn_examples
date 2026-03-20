@@ -1,5 +1,5 @@
 {
-  "raw_response": "```json\n{\n  \"examples\": [\n    {\n      \"WELL_1\": [\n        { \"llx\": 0, \"lly\": 0, \"urx\": 200, \"ury\": 200 }\n      ]\n    },\n    {\n      \"WELL_1\": [\n        { \"llx\": 0, \"lly\": 0, \"urx\": 199, \"ury\": 200 }\n      ]\n    },\n    {\n      \"NWELL_1\": [\n        { \"llx\": 0, \"lly\": 0, \"urx\": 200, \"ury\": 200 }\n      ]\n    },\n    {\n      \"NWELL_1\": [\n        { \"llx\": 0, \"lly\": 0, \"urx\": 199, \"ury\": 200 }\n      ]\n    },\n    {\n      \"PWELL_1\": [\n        { \"llx\": 0, \"lly\": 0, \"urx\": 200, \"ury\": 200 }\n      ]\n    },\n    {\n      \"PWELL_1\": [\n        { \"llx\": 0, \"lly\": 0, \"urx\": 199, \"ury\": 200 }\n      ]\n    },\n    {\n      \"WELL_1\": [\n        { \"llx\": 0, \"lly\": 0, \"urx\": 200, \"ury\": 200 }\n      ],\n      \"NWELL_1\": [\n        { \"llx\": 0, \"lly\": 0, \"urx\": 200, \"ury\": 200 }\n      ]\n    },\n    {\n      \"WELL_1\": [\n        { \"llx\": 0, \"lly\": 0, \"urx\": 200, \"ury\": 200 }\n      ],\n      \"NWELL_1\": [\n        { \"llx\": 0, \"lly\": 0, \"urx\": 199, \"ury\": 200 }\n      ]\n    },\n    {\n      \"WELL_1\": [\n        { \"llx\": 0, \"lly\": 0, \"urx\": 200, \"ury\": 200 }\n      ],\n      \"PWELL_1\": [\n        { \"llx\": 0, \"lly\": 0, \"urx\": 200, \"ury\": 200 }\n      ]\n    },\n    {\n      \"WELL_1\": [\n        { \"llx\": 0, \"lly\": 0, \"urx\": 200, \"ury\": 200 }\n      ],\n      \"PWELL_1\": [\n        { \"llx\": 0, \"lly\": 0, \"urx\": 199, \"ury\": 200 }\n      ]\n    },\n    {\n      \"NWELL_1\": [\n        { \"llx\": 0, \"lly\": 0, \"urx\": 200, \"ury\": 200 }\n      ],\n      \"PWELL_1\": [\n        { \"llx\": 0, \"lly\": 0, \"urx\": 200, \"ury\": 200 }\n      ]\n    },\n    {\n      \"NWELL_1\": [\n        { \"llx\": 0, \"lly\": 0, \"urx\": 200, \"ury\": 200 }\n      ],\n      \"PWELL_1\": [\n        { \"llx\": 0, \"lly\": 0, \"urx\": 199, \"ury\": 200 }\n      ]\n    },\n    {\n      \"WELL_1\": [\n        { \"llx\": 0, \"lly\": 0, \"urx\": 200, \"ury\": 200 }\n      ],\n      \"NWELL_1\": [\n        { \"llx\": 0, \"lly\": 0, \"urx\": 200, \"ury\": 200 }\n      ],\n      \"PWELL_1\": [\n        { \"llx\": 0, \"lly\": 0, \"urx\": 200, \"ury\": 200 }\n      ]\n    },\n    {\n      \"WELL_1\": [\n        { \"llx\": 0, \"lly\": 0, \"urx\": 200, \"ury\": 200 }\n      ],\n      \"NWELL_1\": [\n        { \"llx\": 0, \"lly\": 0, \"urx\": 200, \"ury\": 200 }\n      ],\n      \"PWELL_1\": [\n        { \"llx\": 0, \"lly\": 0, \"urx\": 199, \"ury\": 200 }\n      ]\n    }\n  ],\n  \"labels\": [\n    true,\n    false,\n    true,\n    false,\n    true,\n    false,\n    true,\n    false,\n    true,\n    false,\n    true,\n    false,\n    true,\n    false\n  ]\n}\n```",
+  "raw_response": "```json\n{\n  \"examples\": [\n    {\n      \"WELL_1\": [\n        {\n          \"llx\": 0,\n          \"lly\": 0,\n          \"urx\": 200,\n          \"ury\": 200\n        }\n      ]\n    },\n    {\n      \"WELL_1\": [\n        {\n          \"llx\": 0,\n          \"lly\": 0,\n          \"urx\": 199,\n          \"ury\": 200\n        }\n      ]\n    },\n    {\n      \"WELL_1\": [\n        {\n          \"llx\": 0,\n          \"lly\": 0,\n          \"urx\": 200,\n          \"ury\": 199\n        }\n      ]\n    },\n    {\n      \"WELL_1\": [\n        {\n          \"llx\": 0,\n          \"lly\": 0,\n          \"urx\": 199,\n          \"ury\": 199\n        }\n      ]\n    }\n  ],\n  \"labels\": [\n    true,\n    false,\n    false,\n    false\n  ]\n}\n```",
   "examples": [
     {
       "WELL_1": [
@@ -22,42 +22,12 @@
       ]
     },
     {
-      "NWELL_1": [
+      "WELL_1": [
         {
           "llx": 0,
           "lly": 0,
           "urx": 200,
-          "ury": 200
-        }
-      ]
-    },
-    {
-      "NWELL_1": [
-        {
-          "llx": 0,
-          "lly": 0,
-          "urx": 199,
-          "ury": 200
-        }
-      ]
-    },
-    {
-      "PWELL_1": [
-        {
-          "llx": 0,
-          "lly": 0,
-          "urx": 200,
-          "ury": 200
-        }
-      ]
-    },
-    {
-      "PWELL_1": [
-        {
-          "llx": 0,
-          "lly": 0,
-          "urx": 199,
-          "ury": 200
+          "ury": 199
         }
       ]
     },
@@ -66,158 +36,8 @@
         {
           "llx": 0,
           "lly": 0,
-          "urx": 200,
-          "ury": 200
-        }
-      ],
-      "NWELL_1": [
-        {
-          "llx": 0,
-          "lly": 0,
-          "urx": 200,
-          "ury": 200
-        }
-      ]
-    },
-    {
-      "WELL_1": [
-        {
-          "llx": 0,
-          "lly": 0,
-          "urx": 200,
-          "ury": 200
-        }
-      ],
-      "NWELL_1": [
-        {
-          "llx": 0,
-          "lly": 0,
           "urx": 199,
-          "ury": 200
-        }
-      ]
-    },
-    {
-      "WELL_1": [
-        {
-          "llx": 0,
-          "lly": 0,
-          "urx": 200,
-          "ury": 200
-        }
-      ],
-      "PWELL_1": [
-        {
-          "llx": 0,
-          "lly": 0,
-          "urx": 200,
-          "ury": 200
-        }
-      ]
-    },
-    {
-      "WELL_1": [
-        {
-          "llx": 0,
-          "lly": 0,
-          "urx": 200,
-          "ury": 200
-        }
-      ],
-      "PWELL_1": [
-        {
-          "llx": 0,
-          "lly": 0,
-          "urx": 199,
-          "ury": 200
-        }
-      ]
-    },
-    {
-      "NWELL_1": [
-        {
-          "llx": 0,
-          "lly": 0,
-          "urx": 200,
-          "ury": 200
-        }
-      ],
-      "PWELL_1": [
-        {
-          "llx": 0,
-          "lly": 0,
-          "urx": 200,
-          "ury": 200
-        }
-      ]
-    },
-    {
-      "NWELL_1": [
-        {
-          "llx": 0,
-          "lly": 0,
-          "urx": 200,
-          "ury": 200
-        }
-      ],
-      "PWELL_1": [
-        {
-          "llx": 0,
-          "lly": 0,
-          "urx": 199,
-          "ury": 200
-        }
-      ]
-    },
-    {
-      "WELL_1": [
-        {
-          "llx": 0,
-          "lly": 0,
-          "urx": 200,
-          "ury": 200
-        }
-      ],
-      "NWELL_1": [
-        {
-          "llx": 0,
-          "lly": 0,
-          "urx": 200,
-          "ury": 200
-        }
-      ],
-      "PWELL_1": [
-        {
-          "llx": 0,
-          "lly": 0,
-          "urx": 200,
-          "ury": 200
-        }
-      ]
-    },
-    {
-      "WELL_1": [
-        {
-          "llx": 0,
-          "lly": 0,
-          "urx": 200,
-          "ury": 200
-        }
-      ],
-      "NWELL_1": [
-        {
-          "llx": 0,
-          "lly": 0,
-          "urx": 200,
-          "ury": 200
-        }
-      ],
-      "PWELL_1": [
-        {
-          "llx": 0,
-          "lly": 0,
-          "urx": 199,
-          "ury": 200
+          "ury": 199
         }
       ]
     }
@@ -225,17 +45,7 @@
   "labels": [
     true,
     false,
-    true,
     false,
-    true,
-    false,
-    true,
-    false,
-    true,
-    false,
-    true,
-    false,
-    true,
     false
   ]
 }
