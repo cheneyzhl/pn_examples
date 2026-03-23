@@ -2,15 +2,14 @@
   "rule_name": "RULE_NW004B",
   "rule_description": "Minimum enclosed area of NW is 0.140 um2",
   "rule_script": "HOLES NW < 0.140",
-  "sample_correct": 4,
-  "sample_total": 8,
-  "accuracy": 0.0,
+  "calibre_skipped": true,
+  "sample_correct": null,
+  "sample_total": null,
+  "accuracy": null,
   "details": [
     {
       "idx": 0,
       "predicted_label": true,
-      "calibre_label": true,
-      "match": true,
       "pos": {
         "NW_1": [
           {
@@ -25,8 +24,6 @@
     {
       "idx": 1,
       "predicted_label": false,
-      "calibre_label": true,
-      "match": false,
       "pos": {
         "NW_1": [
           {
@@ -41,15 +38,13 @@
     {
       "idx": 2,
       "predicted_label": true,
-      "calibre_label": true,
-      "match": true,
       "pos": {
         "NW_1": [
           {
             "llx": 0,
             "lly": 0,
-            "urx": 200,
-            "ury": 700
+            "urx": 500,
+            "ury": 280
           }
         ]
       }
@@ -57,15 +52,13 @@
     {
       "idx": 3,
       "predicted_label": false,
-      "calibre_label": true,
-      "match": false,
       "pos": {
         "NW_1": [
           {
             "llx": 0,
             "lly": 0,
-            "urx": 199,
-            "ury": 700
+            "urx": 500,
+            "ury": 279
           }
         ]
       }
@@ -73,15 +66,13 @@
     {
       "idx": 4,
       "predicted_label": true,
-      "calibre_label": true,
-      "match": true,
       "pos": {
         "NW_1": [
           {
             "llx": 0,
             "lly": 0,
-            "urx": 700,
-            "ury": 200
+            "urx": 280,
+            "ury": 500
           }
         ]
       }
@@ -89,15 +80,13 @@
     {
       "idx": 5,
       "predicted_label": false,
-      "calibre_label": true,
-      "match": false,
       "pos": {
         "NW_1": [
           {
             "llx": 0,
             "lly": 0,
-            "urx": 700,
-            "ury": 199
+            "urx": 279,
+            "ury": 500
           }
         ]
       }
@@ -105,21 +94,13 @@
     {
       "idx": 6,
       "predicted_label": true,
-      "calibre_label": true,
-      "match": true,
       "pos": {
         "NW_1": [
           {
             "llx": 0,
             "lly": 0,
-            "urx": 374,
-            "ury": 374
-          },
-          {
-            "llx": 400,
-            "lly": 0,
-            "urx": 774,
-            "ury": 374
+            "urx": 1000,
+            "ury": 140
           }
         ]
       }
@@ -127,21 +108,41 @@
     {
       "idx": 7,
       "predicted_label": false,
-      "calibre_label": true,
-      "match": false,
       "pos": {
         "NW_1": [
           {
             "llx": 0,
             "lly": 0,
-            "urx": 373,
-            "ury": 373
-          },
+            "urx": 1000,
+            "ury": 139
+          }
+        ]
+      }
+    },
+    {
+      "idx": 8,
+      "predicted_label": true,
+      "pos": {
+        "NW_1": [
           {
-            "llx": 400,
+            "llx": 0,
             "lly": 0,
-            "urx": 773,
-            "ury": 373
+            "urx": 140,
+            "ury": 1000
+          }
+        ]
+      }
+    },
+    {
+      "idx": 9,
+      "predicted_label": false,
+      "pos": {
+        "NW_1": [
+          {
+            "llx": 0,
+            "lly": 0,
+            "urx": 139,
+            "ury": 1000
           }
         ]
       }

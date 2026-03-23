@@ -1,0 +1,29 @@
+{
+  "raw_response": "### 规则分析\n\n规则描述为 \"MINT2 width > 28nm\"，即 MINT2 层的宽度必须大于 28 nm。这是一个简单的单层宽度检查，不涉及其他层或复杂的条件。因此，我们只需要考虑 MINT2 层的宽度是否满足 > 28 nm 的条件。\n\n### 条件变量\n- 条件变量：MINT2 的宽度（`width`）。\n  - 布尔条件：`width > 28`。\n\n### 组合枚举\n由于只有一个条件变量，只有两种组合：\n1. `width > 28`（正例）\n2. `width <= 28`（反例）\n\n### 正例和反例设计\n- 正例：MINT2 的宽度刚好大于 28 nm（例如 29 nm）。\n- 反例：MINT2 的宽度刚好等于或小于 28 nm（例如 28 nm 或 27 nm）。\n\n### 自检\n- 正例：宽度 = 29 nm > 28 nm，满足规则。\n- 反例：宽度 = 28 nm <= 28 nm，违反规则。\n\n### JSON 输出\n```json\n{\n  \"examples\": [\n    {\n      \"MINT2_1\": [\n        { \"llx\": 0, \"lly\": 0, \"urx\": 29, \"ury\": 100 }\n      ]\n    },\n    {\n      \"MINT2_1\": [\n        { \"llx\": 0, \"lly\": 0, \"urx\": 28, \"ury\": 100 }\n      ]\n    }\n  ],\n  \"labels\": [true, false]\n}\n```\n\n### 说明\n- 正例：MINT2_1 的宽度为 29 nm（urx - llx = 29 - 0 = 29 nm > 28 nm），满足规则。\n- 反例：MINT2_1 的宽度为 28 nm（urx - llx = 28 - 0 = 28 nm <= 28 nm），违反规则。",
+  "examples": [
+    {
+      "MINT2_1": [
+        {
+          "llx": 0,
+          "lly": 0,
+          "urx": 29,
+          "ury": 100
+        }
+      ]
+    },
+    {
+      "MINT2_1": [
+        {
+          "llx": 0,
+          "lly": 0,
+          "urx": 28,
+          "ury": 100
+        }
+      ]
+    }
+  ],
+  "labels": [
+    true,
+    false
+  ]
+}

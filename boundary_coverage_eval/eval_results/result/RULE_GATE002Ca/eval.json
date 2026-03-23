@@ -1,0 +1,95 @@
+{
+  "rule_name": "RULE_GATE002Ca",
+  "rule_description": "Minimum horizontal length of GATEC is 128nm shape is oriented horizonatally",
+  "rule_script": "vert_edges = GATEC ANGLE == 90 \nhor_edges = GATEC ANGLE == 0 \nvert_edges_int = INT vert_edges < 1 \nhor_edges_int = INT hor_edges < 1 \nvert_polygons = DFM PROPERTY GATEC hor_edges_int vert_edges_int OVERLAP MULTI [check1 = EW(vert_edges_int) - EW(hor_edges_int)] < 0 \nhor_polygons = DFM PROPERTY GATEC hor_edges_int vert_edges_int OVERLAP MULTI [check2 = EW(vert_edges_int) - EW(hor_edges_int)] > 0 \nvert_edges_hor_pol = hor_polygons angle == 90 \nINT vert_edges_hor_pol < 0.128",
+  "perturbed_scripts": {
+    "corner_000": "vert_edges = GATEC ANGLE == 90 \nhor_edges = GATEC ANGLE == 0 \nvert_edges_int = INT vert_edges < 1 \nhor_edges_int = INT hor_edges < 1 \nvert_polygons = DFM PROPERTY GATEC hor_edges_int vert_edges_int OVERLAP MULTI [check1 = EW(vert_edges_int) - EW(hor_edges_int)] < 0 \nhor_polygons = DFM PROPERTY GATEC hor_edges_int vert_edges_int OVERLAP MULTI [check2 = EW(vert_edges_int) - EW(hor_edges_int)] > 0 \nvert_edges_hor_pol = hor_polygons angle == 90 \nINT vert_edges_hor_pol < 0.128\n"
+  },
+  "data_name": "freePDK15",
+  "judge_mode": "match",
+  "corner_count": 1,
+  "sample_count": 4,
+  "all_corners_match": false,
+  "all_corners_detect": true,
+  "all_corners_ok": false,
+  "per_corner": [
+    {
+      "corner_id": "corner_000",
+      "script_expected_correct": true,
+      "script_predicted_correct": false,
+      "corner_any_mismatch": true,
+      "corner_all_match": false,
+      "corner_ok": false,
+      "samples": [
+        {
+          "idx": 0,
+          "predicted_label": true,
+          "calibre_label": true,
+          "match": true,
+          "error": null,
+          "pos": {
+            "GATEC_1": [
+              {
+                "llx": 0,
+                "lly": 0,
+                "urx": 128,
+                "ury": 64
+              }
+            ]
+          }
+        },
+        {
+          "idx": 1,
+          "predicted_label": false,
+          "calibre_label": true,
+          "match": false,
+          "error": null,
+          "pos": {
+            "GATEC_1": [
+              {
+                "llx": 0,
+                "lly": 0,
+                "urx": 128,
+                "ury": 129
+              }
+            ]
+          }
+        },
+        {
+          "idx": 2,
+          "predicted_label": false,
+          "calibre_label": false,
+          "match": true,
+          "error": null,
+          "pos": {
+            "GATEC_1": [
+              {
+                "llx": 0,
+                "lly": 0,
+                "urx": 127,
+                "ury": 64
+              }
+            ]
+          }
+        },
+        {
+          "idx": 3,
+          "predicted_label": false,
+          "calibre_label": true,
+          "match": false,
+          "error": null,
+          "pos": {
+            "GATEC_1": [
+              {
+                "llx": 0,
+                "lly": 0,
+                "urx": 127,
+                "ury": 128
+              }
+            ]
+          }
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,62 @@
+{
+  "raw_response": "### 规则分析\n\n规则描述：**M7 horizontal width may not be an even integer multiple of its minimum width.**\n\n1. **条件变量**：\n   - `M7` 的水平宽度（`width = urx - llx`）。\n   - `M7` 的最小宽度（`min_width`，假设为 `W_min`，具体值需要根据工艺确定，这里假设 `W_min = 10 nm`）。\n   - 规则要求：`width` 不能是 `W_min` 的偶数倍，即 `width ≠ 2 * k * W_min`，其中 `k` 是正整数。\n\n2. **布尔条件**：\n   - `width` 是 `W_min` 的偶数倍：`width % (2 * W_min) == 0`。\n   - `width` 不是 `W_min` 的偶数倍：`width % (2 * W_min) != 0`。\n\n3. **组合**：\n   - 只有一种条件需要检查，因此只需要考虑 `width` 是否为 `W_min` 的偶数倍。\n\n### 正例和反例设计\n\n#### 正例（`labels: true`）：\n- `width` 不是 `W_min` 的偶数倍：\n  - `width = W_min`（奇数倍，`k=0.5`，但 `k` 必须是整数，所以 `width = W_min` 是允许的）。\n  - `width = 3 * W_min`（奇数倍）。\n  - `width = 1.5 * W_min`（非整数倍，假设允许非整数倍）。\n\n#### 反例（`labels: false`）：\n- `width` 是 `W_min` 的偶数倍：\n  - `width = 2 * W_min`（`k=1`）。\n  - `width = 4 * W_min`（`k=2`）。\n\n### 单位约定和阈值判定\n- 单位：`nm`。\n- 假设 `W_min = 10 nm`。\n- 自检：\n  - 正例：`width % 20 != 0`。\n  - 反例：`width % 20 == 0`。\n\n### JSON 输出\n\n```json\n{\n  \"examples\": [\n    {\n      \"M7_1\": [\n        { \"llx\": 0, \"lly\": 0, \"urx\": 10, \"ury\": 10 }\n      ]\n    },\n    {\n      \"M7_1\": [\n        { \"llx\": 0, \"lly\": 0, \"urx\": 30, \"ury\": 10 }\n      ]\n    },\n    {\n      \"M7_1\": [\n        { \"llx\": 0, \"lly\": 0, \"urx\": 15, \"ury\": 10 }\n      ]\n    },\n    {\n      \"M7_1\": [\n        { \"llx\": 0, \"lly\": 0, \"urx\": 20, \"ury\": 10 }\n      ]\n    },\n    {\n      \"M7_1\": [\n        { \"llx\": 0, \"lly\": 0, \"urx\": 40, \"ury\": 10 }\n      ]\n    }\n  ],\n  \"labels\": [\n    true,\n    true,\n    true,\n    false,\n    false\n  ]\n}\n```\n\n### 自检验证\n1. 正例：\n   - `width = 10`：`10 % 20 = 10 ≠ 0` → 通过。\n   - `width = 30`：`30 % 20 = 10 ≠ 0` → 通过。\n   - `width = 15`：`15 % 20 = 15 ≠ 0` → 通过。\n2. 反例：\n   - `width = 20`：`20 % 20 = 0` → 违反。\n   - `width = 40`：`40 % 20 = 0` → 违反。\n\n### 说明\n- 前三个例子是正例，`width` 不是 `W_min` 的偶数倍。\n- 后两个例子是反例，`width` 是 `W_min` 的偶数倍。\n- 假设 `W_min = 10 nm`，如果实际工艺的 `W_min` 不同，需要调整数值。",
+  "examples": [
+    {
+      "M7_1": [
+        {
+          "llx": 0,
+          "lly": 0,
+          "urx": 10,
+          "ury": 10
+        }
+      ]
+    },
+    {
+      "M7_1": [
+        {
+          "llx": 0,
+          "lly": 0,
+          "urx": 30,
+          "ury": 10
+        }
+      ]
+    },
+    {
+      "M7_1": [
+        {
+          "llx": 0,
+          "lly": 0,
+          "urx": 15,
+          "ury": 10
+        }
+      ]
+    },
+    {
+      "M7_1": [
+        {
+          "llx": 0,
+          "lly": 0,
+          "urx": 20,
+          "ury": 10
+        }
+      ]
+    },
+    {
+      "M7_1": [
+        {
+          "llx": 0,
+          "lly": 0,
+          "urx": 40,
+          "ury": 10
+        }
+      ]
+    }
+  ],
+  "labels": [
+    true,
+    true,
+    true,
+    false,
+    false
+  ]
+}

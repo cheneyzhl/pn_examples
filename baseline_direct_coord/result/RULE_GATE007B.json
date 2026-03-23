@@ -1,0 +1,39 @@
+{
+  "rule_name": "RULE_GATE007B",
+  "rule_description": "Minimum length of Gate B (vertical edge, gate C ignored) 200nm",
+  "rule_script": "LENGTH GATEB_vertical_edges < 0.200",
+  "calibre_skipped": true,
+  "sample_correct": null,
+  "sample_total": null,
+  "accuracy": null,
+  "details": [
+    {
+      "idx": 0,
+      "predicted_label": true,
+      "pos": {
+        "GATEB_1": [
+          {
+            "llx": 0,
+            "lly": 0,
+            "urx": 50,
+            "ury": 200
+          }
+        ]
+      }
+    },
+    {
+      "idx": 1,
+      "predicted_label": false,
+      "pos": {
+        "GATEB_1": [
+          {
+            "llx": 0,
+            "lly": 0,
+            "urx": 50,
+            "ury": 199
+          }
+        ]
+      }
+    }
+  ]
+}

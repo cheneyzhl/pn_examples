@@ -1,0 +1,107 @@
+{
+  "rule_name": "RULE_ACT008A",
+  "rule_description": "Minimum area of ACT is 0.004608 um2",
+  "rule_script": "AREA ACT  < 0.004608",
+  "calibre_skipped": true,
+  "sample_correct": null,
+  "sample_total": null,
+  "accuracy": null,
+  "details": [
+    {
+      "idx": 0,
+      "predicted_label": true,
+      "pos": {
+        "ACT_1": [
+          {
+            "llx": 0,
+            "lly": 0,
+            "urx": 68,
+            "ury": 68
+          }
+        ]
+      }
+    },
+    {
+      "idx": 1,
+      "predicted_label": false,
+      "pos": {
+        "ACT_1": [
+          {
+            "llx": 0,
+            "lly": 0,
+            "urx": 67,
+            "ury": 68
+          }
+        ]
+      }
+    },
+    {
+      "idx": 2,
+      "predicted_label": false,
+      "pos": {
+        "ACT_1": [
+          {
+            "llx": 0,
+            "lly": 0,
+            "urx": 68,
+            "ury": 67
+          }
+        ]
+      }
+    },
+    {
+      "idx": 3,
+      "predicted_label": false,
+      "pos": {
+        "ACT_1": [
+          {
+            "llx": 0,
+            "lly": 0,
+            "urx": 67,
+            "ury": 67
+          }
+        ]
+      }
+    },
+    {
+      "idx": 4,
+      "predicted_label": true,
+      "pos": {
+        "ACT_1": [
+          {
+            "llx": 0,
+            "lly": 0,
+            "urx": 68,
+            "ury": 68
+          },
+          {
+            "llx": 100,
+            "lly": 100,
+            "urx": 168,
+            "ury": 168
+          }
+        ]
+      }
+    },
+    {
+      "idx": 5,
+      "predicted_label": false,
+      "pos": {
+        "ACT_1": [
+          {
+            "llx": 0,
+            "lly": 0,
+            "urx": 68,
+            "ury": 68
+          },
+          {
+            "llx": 100,
+            "lly": 100,
+            "urx": 167,
+            "ury": 168
+          }
+        ]
+      }
+    }
+  ]
+}

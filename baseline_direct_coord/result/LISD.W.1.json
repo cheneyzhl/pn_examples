@@ -1,0 +1,95 @@
+{
+  "rule_name": "LISD.W.1",
+  "rule_description": "LISD.W.1 Minimum width of LISD is 24 nm.",
+  "rule_script": "INTERNAL LISD < 0.024",
+  "calibre_skipped": true,
+  "sample_correct": null,
+  "sample_total": null,
+  "accuracy": null,
+  "details": [
+    {
+      "idx": 0,
+      "predicted_label": true,
+      "pos": {
+        "LISD_1": [
+          {
+            "llx": 0,
+            "lly": 0,
+            "urx": 24,
+            "ury": 100
+          }
+        ]
+      }
+    },
+    {
+      "idx": 1,
+      "predicted_label": false,
+      "pos": {
+        "LISD_1": [
+          {
+            "llx": 0,
+            "lly": 0,
+            "urx": 23,
+            "ury": 100
+          }
+        ]
+      }
+    },
+    {
+      "idx": 2,
+      "predicted_label": true,
+      "pos": {
+        "LISD_1": [
+          {
+            "llx": 0,
+            "lly": 0,
+            "urx": 24,
+            "ury": 24
+          }
+        ]
+      }
+    },
+    {
+      "idx": 3,
+      "predicted_label": false,
+      "pos": {
+        "LISD_1": [
+          {
+            "llx": 0,
+            "lly": 0,
+            "urx": 23,
+            "ury": 23
+          }
+        ]
+      }
+    },
+    {
+      "idx": 4,
+      "predicted_label": true,
+      "pos": {
+        "LISD_1": [
+          {
+            "llx": 0,
+            "lly": 0,
+            "urx": 100,
+            "ury": 24
+          }
+        ]
+      }
+    },
+    {
+      "idx": 5,
+      "predicted_label": false,
+      "pos": {
+        "LISD_1": [
+          {
+            "llx": 0,
+            "lly": 0,
+            "urx": 100,
+            "ury": 23
+          }
+        ]
+      }
+    }
+  ]
+}

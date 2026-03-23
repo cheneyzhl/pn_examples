@@ -1,0 +1,73 @@
+{
+  "raw_response": "```json\n{\n  \"examples\": [\n    {\n      \"ACTIVE_1\": [\n        {\n          \"llx\": 0,\n          \"lly\": 0,\n          \"urx\": 100,\n          \"ury\": 27\n        }\n      ]\n    },\n    {\n      \"ACTIVE_1\": [\n        {\n          \"llx\": 0,\n          \"lly\": 0,\n          \"urx\": 100,\n          \"ury\": 26\n        }\n      ]\n    },\n    {\n      \"ACTIVE_1\": [\n        {\n          \"llx\": 0,\n          \"lly\": 0,\n          \"urx\": 27,\n          \"ury\": 100\n        }\n      ]\n    },\n    {\n      \"ACTIVE_1\": [\n        {\n          \"llx\": 0,\n          \"lly\": 0,\n          \"urx\": 26,\n          \"ury\": 100\n        }\n      ]\n    },\n    {\n      \"ACTIVE_1\": [\n        {\n          \"llx\": 0,\n          \"lly\": 0,\n          \"urx\": 27,\n          \"ury\": 27\n        }\n      ]\n    },\n    {\n      \"ACTIVE_1\": [\n        {\n          \"llx\": 0,\n          \"lly\": 0,\n          \"urx\": 26,\n          \"ury\": 26\n        }\n      ]\n    }\n  ],\n  \"labels\": [\n    true,\n    false,\n    true,\n    false,\n    true,\n    false\n  ]\n}\n```",
+  "examples": [
+    {
+      "ACTIVE_1": [
+        {
+          "llx": 0,
+          "lly": 0,
+          "urx": 100,
+          "ury": 27
+        }
+      ]
+    },
+    {
+      "ACTIVE_1": [
+        {
+          "llx": 0,
+          "lly": 0,
+          "urx": 100,
+          "ury": 26
+        }
+      ]
+    },
+    {
+      "ACTIVE_1": [
+        {
+          "llx": 0,
+          "lly": 0,
+          "urx": 27,
+          "ury": 100
+        }
+      ]
+    },
+    {
+      "ACTIVE_1": [
+        {
+          "llx": 0,
+          "lly": 0,
+          "urx": 26,
+          "ury": 100
+        }
+      ]
+    },
+    {
+      "ACTIVE_1": [
+        {
+          "llx": 0,
+          "lly": 0,
+          "urx": 27,
+          "ury": 27
+        }
+      ]
+    },
+    {
+      "ACTIVE_1": [
+        {
+          "llx": 0,
+          "lly": 0,
+          "urx": 26,
+          "ury": 26
+        }
+      ]
+    }
+  ],
+  "labels": [
+    true,
+    false,
+    true,
+    false,
+    true,
+    false
+  ]
+}

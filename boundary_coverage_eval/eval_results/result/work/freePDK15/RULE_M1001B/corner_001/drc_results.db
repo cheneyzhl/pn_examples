@@ -1,0 +1,6 @@
+TOPCELL 5000
+RULE_M1001B
+0 0 3 Mar 23 03:22:53 2026                     
+Rule File Pathname: /share/home/zenghuanlong/pn_examples/boundary_coverage_eval/eval_results/result/work/freePDK15/RULE_M1001B/corner_001/example_7.rul
+RULE_M1001B
+M1B width 28nm, 32nm, 40nm, 2.4um (10um is arbitrary)

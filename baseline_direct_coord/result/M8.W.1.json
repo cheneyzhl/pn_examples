@@ -1,0 +1,95 @@
+{
+  "rule_name": "M8.W.1",
+  "rule_description": "Minimum width of M8 is 40 nm.",
+  "rule_script": "INTERNAL M8 < 0.040",
+  "calibre_skipped": true,
+  "sample_correct": null,
+  "sample_total": null,
+  "accuracy": null,
+  "details": [
+    {
+      "idx": 0,
+      "predicted_label": true,
+      "pos": {
+        "M8_1": [
+          {
+            "llx": 0,
+            "lly": 0,
+            "urx": 40,
+            "ury": 100
+          }
+        ]
+      }
+    },
+    {
+      "idx": 1,
+      "predicted_label": false,
+      "pos": {
+        "M8_1": [
+          {
+            "llx": 0,
+            "lly": 0,
+            "urx": 39,
+            "ury": 100
+          }
+        ]
+      }
+    },
+    {
+      "idx": 2,
+      "predicted_label": true,
+      "pos": {
+        "M8_1": [
+          {
+            "llx": 0,
+            "lly": 0,
+            "urx": 40,
+            "ury": 40
+          }
+        ]
+      }
+    },
+    {
+      "idx": 3,
+      "predicted_label": false,
+      "pos": {
+        "M8_1": [
+          {
+            "llx": 0,
+            "lly": 0,
+            "urx": 39,
+            "ury": 39
+          }
+        ]
+      }
+    },
+    {
+      "idx": 4,
+      "predicted_label": true,
+      "pos": {
+        "M8_1": [
+          {
+            "llx": 0,
+            "lly": 0,
+            "urx": 100,
+            "ury": 40
+          }
+        ]
+      }
+    },
+    {
+      "idx": 5,
+      "predicted_label": false,
+      "pos": {
+        "M8_1": [
+          {
+            "llx": 0,
+            "lly": 0,
+            "urx": 100,
+            "ury": 39
+          }
+        ]
+      }
+    }
+  ]
+}

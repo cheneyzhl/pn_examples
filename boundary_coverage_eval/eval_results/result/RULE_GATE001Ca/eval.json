@@ -1,0 +1,147 @@
+{
+  "rule_name": "RULE_GATE001Ca",
+  "rule_description": "Exact vertical width of GATEC is 32nm (1 is arbitrary large value) shape is oriented horizonally",
+  "rule_script": "vert_edges = GATEC ANGLE == 90 \nhor_edges = GATEC ANGLE == 0 \nvert_edges_int = INT vert_edges < 1 \nhor_edges_int = INT hor_edges < 1 \nvert_polygons = DFM PROPERTY GATEC hor_edges_int vert_edges_int OVERLAP MULTI [check1 = EW(vert_edges_int) - EW(hor_edges_int)] < 0 \nhor_polygons = DFM PROPERTY GATEC hor_edges_int vert_edges_int OVERLAP MULTI [check2 = EW(vert_edges_int) - EW(hor_edges_int)] > 0 \nhor_edges_hor_pol = hor_polygons angle == 0 \nINT hor_edges_hor_pol > 0 < 0.032 \nINT hor_edges_hor_pol > 0.032 < 1",
+  "perturbed_scripts": {
+    "corner_000": "vert_edges = GATEC ANGLE == 90 \nhor_edges = GATEC ANGLE == 0 \nvert_edges_int = INT vert_edges < 1 \nhor_edges_int = INT hor_edges < 1 \nvert_polygons = DFM PROPERTY GATEC hor_edges_int vert_edges_int OVERLAP MULTI [check1 = EW(vert_edges_int) - EW(hor_edges_int)] < 0 \nhor_polygons = DFM PROPERTY GATEC hor_edges_int vert_edges_int OVERLAP MULTI [check2 = EW(vert_edges_int) - EW(hor_edges_int)] > 0 \nhor_edges_hor_pol = hor_polygons angle == 0 \nINT hor_edges_hor_pol > 0 < 0.032 \nINT hor_edges_hor_pol > 0.032 < 1\n"
+  },
+  "data_name": "freePDK15",
+  "judge_mode": "match",
+  "corner_count": 1,
+  "sample_count": 6,
+  "all_corners_match": true,
+  "all_corners_detect": false,
+  "all_corners_ok": true,
+  "per_corner": [
+    {
+      "corner_id": "corner_000",
+      "script_expected_correct": true,
+      "script_predicted_correct": true,
+      "corner_any_mismatch": false,
+      "corner_all_match": true,
+      "corner_ok": true,
+      "samples": [
+        {
+          "idx": 0,
+          "predicted_label": true,
+          "calibre_label": true,
+          "match": true,
+          "error": null,
+          "pos": {
+            "GATEC_1": [
+              {
+                "llx": 0,
+                "lly": 0,
+                "urx": 100,
+                "ury": 32
+              }
+            ]
+          }
+        },
+        {
+          "idx": 1,
+          "predicted_label": false,
+          "calibre_label": false,
+          "match": true,
+          "error": null,
+          "pos": {
+            "GATEC_1": [
+              {
+                "llx": 0,
+                "lly": 0,
+                "urx": 100,
+                "ury": 31
+              }
+            ]
+          }
+        },
+        {
+          "idx": 2,
+          "predicted_label": false,
+          "calibre_label": false,
+          "match": true,
+          "error": null,
+          "pos": {
+            "GATEC_1": [
+              {
+                "llx": 0,
+                "lly": 0,
+                "urx": 100,
+                "ury": 33
+              }
+            ]
+          }
+        },
+        {
+          "idx": 3,
+          "predicted_label": true,
+          "calibre_label": true,
+          "match": true,
+          "error": null,
+          "pos": {
+            "GATEC_1": [
+              {
+                "llx": 0,
+                "lly": 0,
+                "urx": 100,
+                "ury": 32
+              },
+              {
+                "llx": 200,
+                "lly": 0,
+                "urx": 300,
+                "ury": 32
+              }
+            ]
+          }
+        },
+        {
+          "idx": 4,
+          "predicted_label": false,
+          "calibre_label": false,
+          "match": true,
+          "error": null,
+          "pos": {
+            "GATEC_1": [
+              {
+                "llx": 0,
+                "lly": 0,
+                "urx": 100,
+                "ury": 32
+              },
+              {
+                "llx": 200,
+                "lly": 0,
+                "urx": 300,
+                "ury": 31
+              }
+            ]
+          }
+        },
+        {
+          "idx": 5,
+          "predicted_label": false,
+          "calibre_label": false,
+          "match": true,
+          "error": null,
+          "pos": {
+            "GATEC_1": [
+              {
+                "llx": 0,
+                "lly": 0,
+                "urx": 100,
+                "ury": 32
+              },
+              {
+                "llx": 200,
+                "lly": 0,
+                "urx": 300,
+                "ury": 33
+              }
+            ]
+          }
+        }
+      ]
+    }
+  ]
+}

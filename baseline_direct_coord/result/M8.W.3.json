@@ -1,0 +1,95 @@
+{
+  "rule_name": "M8.W.3",
+  "rule_description": "Minimum width of M8, when its length >= 1200 nm and < 1800 nm, is 80 nm.",
+  "rule_script": "X = LENGTH M8 >=1.2 < 1.8 \nY = M8 WITH EDGE X \nINTERNAL Y < 0.080",
+  "calibre_skipped": true,
+  "sample_correct": null,
+  "sample_total": null,
+  "accuracy": null,
+  "details": [
+    {
+      "idx": 0,
+      "predicted_label": true,
+      "pos": {
+        "M8_1": [
+          {
+            "llx": 0,
+            "lly": 0,
+            "urx": 1200,
+            "ury": 80
+          }
+        ]
+      }
+    },
+    {
+      "idx": 1,
+      "predicted_label": false,
+      "pos": {
+        "M8_1": [
+          {
+            "llx": 0,
+            "lly": 0,
+            "urx": 1200,
+            "ury": 79
+          }
+        ]
+      }
+    },
+    {
+      "idx": 2,
+      "predicted_label": true,
+      "pos": {
+        "M8_1": [
+          {
+            "llx": 0,
+            "lly": 0,
+            "urx": 1199,
+            "ury": 79
+          }
+        ]
+      }
+    },
+    {
+      "idx": 3,
+      "predicted_label": true,
+      "pos": {
+        "M8_1": [
+          {
+            "llx": 0,
+            "lly": 0,
+            "urx": 1800,
+            "ury": 79
+          }
+        ]
+      }
+    },
+    {
+      "idx": 4,
+      "predicted_label": true,
+      "pos": {
+        "M8_1": [
+          {
+            "llx": 0,
+            "lly": 0,
+            "urx": 1799,
+            "ury": 80
+          }
+        ]
+      }
+    },
+    {
+      "idx": 5,
+      "predicted_label": false,
+      "pos": {
+        "M8_1": [
+          {
+            "llx": 0,
+            "lly": 0,
+            "urx": 1799,
+            "ury": 79
+          }
+        ]
+      }
+    }
+  ]
+}

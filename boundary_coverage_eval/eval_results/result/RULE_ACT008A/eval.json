@@ -1,0 +1,391 @@
+{
+  "rule_name": "RULE_ACT008A",
+  "rule_description": "Minimum area of ACT is 0.004608 um2",
+  "rule_script": "AREA ACT  < 0.004608",
+  "perturbed_scripts": {
+    "corner_000": "AREA ACT  < 0.003608\n",
+    "corner_001": "AREA ACT  < 0.005608\n",
+    "corner_original": "AREA ACT  < 0.004608\n"
+  },
+  "data_name": "freePDK15",
+  "judge_mode": "match",
+  "corner_count": 3,
+  "sample_count": 6,
+  "all_corners_match": false,
+  "all_corners_detect": false,
+  "all_corners_ok": true,
+  "per_corner": [
+    {
+      "corner_id": "corner_000",
+      "script_expected_correct": false,
+      "script_predicted_correct": false,
+      "corner_any_mismatch": true,
+      "corner_all_match": false,
+      "corner_ok": true,
+      "samples": [
+        {
+          "idx": 0,
+          "predicted_label": true,
+          "calibre_label": true,
+          "match": true,
+          "error": null,
+          "pos": {
+            "ACT_1": [
+              {
+                "llx": 0,
+                "lly": 0,
+                "urx": 68,
+                "ury": 68
+              }
+            ]
+          }
+        },
+        {
+          "idx": 1,
+          "predicted_label": false,
+          "calibre_label": true,
+          "match": false,
+          "error": null,
+          "pos": {
+            "ACT_1": [
+              {
+                "llx": 0,
+                "lly": 0,
+                "urx": 67,
+                "ury": 68
+              }
+            ]
+          }
+        },
+        {
+          "idx": 2,
+          "predicted_label": false,
+          "calibre_label": true,
+          "match": false,
+          "error": null,
+          "pos": {
+            "ACT_1": [
+              {
+                "llx": 0,
+                "lly": 0,
+                "urx": 68,
+                "ury": 67
+              }
+            ]
+          }
+        },
+        {
+          "idx": 3,
+          "predicted_label": false,
+          "calibre_label": true,
+          "match": false,
+          "error": null,
+          "pos": {
+            "ACT_1": [
+              {
+                "llx": 0,
+                "lly": 0,
+                "urx": 67,
+                "ury": 67
+              }
+            ]
+          }
+        },
+        {
+          "idx": 4,
+          "predicted_label": true,
+          "calibre_label": true,
+          "match": true,
+          "error": null,
+          "pos": {
+            "ACT_1": [
+              {
+                "llx": 0,
+                "lly": 0,
+                "urx": 68,
+                "ury": 68
+              },
+              {
+                "llx": 100,
+                "lly": 100,
+                "urx": 168,
+                "ury": 168
+              }
+            ]
+          }
+        },
+        {
+          "idx": 5,
+          "predicted_label": false,
+          "calibre_label": true,
+          "match": false,
+          "error": null,
+          "pos": {
+            "ACT_1": [
+              {
+                "llx": 0,
+                "lly": 0,
+                "urx": 68,
+                "ury": 68
+              },
+              {
+                "llx": 100,
+                "lly": 100,
+                "urx": 167,
+                "ury": 168
+              }
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "corner_id": "corner_001",
+      "script_expected_correct": false,
+      "script_predicted_correct": false,
+      "corner_any_mismatch": true,
+      "corner_all_match": false,
+      "corner_ok": true,
+      "samples": [
+        {
+          "idx": 0,
+          "predicted_label": true,
+          "calibre_label": false,
+          "match": false,
+          "error": null,
+          "pos": {
+            "ACT_1": [
+              {
+                "llx": 0,
+                "lly": 0,
+                "urx": 68,
+                "ury": 68
+              }
+            ]
+          }
+        },
+        {
+          "idx": 1,
+          "predicted_label": false,
+          "calibre_label": false,
+          "match": true,
+          "error": null,
+          "pos": {
+            "ACT_1": [
+              {
+                "llx": 0,
+                "lly": 0,
+                "urx": 67,
+                "ury": 68
+              }
+            ]
+          }
+        },
+        {
+          "idx": 2,
+          "predicted_label": false,
+          "calibre_label": false,
+          "match": true,
+          "error": null,
+          "pos": {
+            "ACT_1": [
+              {
+                "llx": 0,
+                "lly": 0,
+                "urx": 68,
+                "ury": 67
+              }
+            ]
+          }
+        },
+        {
+          "idx": 3,
+          "predicted_label": false,
+          "calibre_label": false,
+          "match": true,
+          "error": null,
+          "pos": {
+            "ACT_1": [
+              {
+                "llx": 0,
+                "lly": 0,
+                "urx": 67,
+                "ury": 67
+              }
+            ]
+          }
+        },
+        {
+          "idx": 4,
+          "predicted_label": true,
+          "calibre_label": false,
+          "match": false,
+          "error": null,
+          "pos": {
+            "ACT_1": [
+              {
+                "llx": 0,
+                "lly": 0,
+                "urx": 68,
+                "ury": 68
+              },
+              {
+                "llx": 100,
+                "lly": 100,
+                "urx": 168,
+                "ury": 168
+              }
+            ]
+          }
+        },
+        {
+          "idx": 5,
+          "predicted_label": false,
+          "calibre_label": false,
+          "match": true,
+          "error": null,
+          "pos": {
+            "ACT_1": [
+              {
+                "llx": 0,
+                "lly": 0,
+                "urx": 68,
+                "ury": 68
+              },
+              {
+                "llx": 100,
+                "lly": 100,
+                "urx": 167,
+                "ury": 168
+              }
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "corner_id": "corner_original",
+      "script_expected_correct": true,
+      "script_predicted_correct": true,
+      "corner_any_mismatch": false,
+      "corner_all_match": true,
+      "corner_ok": true,
+      "samples": [
+        {
+          "idx": 0,
+          "predicted_label": true,
+          "calibre_label": true,
+          "match": true,
+          "error": null,
+          "pos": {
+            "ACT_1": [
+              {
+                "llx": 0,
+                "lly": 0,
+                "urx": 68,
+                "ury": 68
+              }
+            ]
+          }
+        },
+        {
+          "idx": 1,
+          "predicted_label": false,
+          "calibre_label": false,
+          "match": true,
+          "error": null,
+          "pos": {
+            "ACT_1": [
+              {
+                "llx": 0,
+                "lly": 0,
+                "urx": 67,
+                "ury": 68
+              }
+            ]
+          }
+        },
+        {
+          "idx": 2,
+          "predicted_label": false,
+          "calibre_label": false,
+          "match": true,
+          "error": null,
+          "pos": {
+            "ACT_1": [
+              {
+                "llx": 0,
+                "lly": 0,
+                "urx": 68,
+                "ury": 67
+              }
+            ]
+          }
+        },
+        {
+          "idx": 3,
+          "predicted_label": false,
+          "calibre_label": false,
+          "match": true,
+          "error": null,
+          "pos": {
+            "ACT_1": [
+              {
+                "llx": 0,
+                "lly": 0,
+                "urx": 67,
+                "ury": 67
+              }
+            ]
+          }
+        },
+        {
+          "idx": 4,
+          "predicted_label": true,
+          "calibre_label": true,
+          "match": true,
+          "error": null,
+          "pos": {
+            "ACT_1": [
+              {
+                "llx": 0,
+                "lly": 0,
+                "urx": 68,
+                "ury": 68
+              },
+              {
+                "llx": 100,
+                "lly": 100,
+                "urx": 168,
+                "ury": 168
+              }
+            ]
+          }
+        },
+        {
+          "idx": 5,
+          "predicted_label": false,
+          "calibre_label": false,
+          "match": true,
+          "error": null,
+          "pos": {
+            "ACT_1": [
+              {
+                "llx": 0,
+                "lly": 0,
+                "urx": 68,
+                "ury": 68
+              },
+              {
+                "llx": 100,
+                "lly": 100,
+                "urx": 167,
+                "ury": 168
+              }
+            ]
+          }
+        }
+      ]
+    }
+  ]
+}

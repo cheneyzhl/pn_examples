@@ -1,0 +1,67 @@
+{
+  "raw_response": "```json\n{\n  \"examples\": [\n    {\n      \"GIL_1\": [\n        {\n          \"llx\": 0,\n          \"lly\": 0,\n          \"urx\": 56,\n          \"ury\": 10\n        }\n      ]\n    },\n    {\n      \"GIL_1\": [\n        {\n          \"llx\": 0,\n          \"lly\": 0,\n          \"urx\": 55,\n          \"ury\": 10\n        }\n      ]\n    },\n    {\n      \"GIL_1\": [\n        {\n          \"llx\": 0,\n          \"lly\": 0,\n          \"urx\": 56,\n          \"ury\": 10\n        }\n      ],\n      \"GIL_2\": [\n        {\n          \"llx\": 100,\n          \"lly\": 0,\n          \"urx\": 156,\n          \"ury\": 10\n        }\n      ]\n    },\n    {\n      \"GIL_1\": [\n        {\n          \"llx\": 0,\n          \"lly\": 0,\n          \"urx\": 55,\n          \"ury\": 10\n        }\n      ],\n      \"GIL_2\": [\n        {\n          \"llx\": 100,\n          \"lly\": 0,\n          \"urx\": 155,\n          \"ury\": 10\n        }\n      ]\n    }\n  ],\n  \"labels\": [\n    true,\n    false,\n    true,\n    false\n  ]\n}\n```",
+  "examples": [
+    {
+      "GIL_1": [
+        {
+          "llx": 0,
+          "lly": 0,
+          "urx": 56,
+          "ury": 10
+        }
+      ]
+    },
+    {
+      "GIL_1": [
+        {
+          "llx": 0,
+          "lly": 0,
+          "urx": 55,
+          "ury": 10
+        }
+      ]
+    },
+    {
+      "GIL_1": [
+        {
+          "llx": 0,
+          "lly": 0,
+          "urx": 56,
+          "ury": 10
+        }
+      ],
+      "GIL_2": [
+        {
+          "llx": 100,
+          "lly": 0,
+          "urx": 156,
+          "ury": 10
+        }
+      ]
+    },
+    {
+      "GIL_1": [
+        {
+          "llx": 0,
+          "lly": 0,
+          "urx": 55,
+          "ury": 10
+        }
+      ],
+      "GIL_2": [
+        {
+          "llx": 100,
+          "lly": 0,
+          "urx": 155,
+          "ury": 10
+        }
+      ]
+    }
+  ],
+  "labels": [
+    true,
+    false,
+    true,
+    false
+  ]
+}

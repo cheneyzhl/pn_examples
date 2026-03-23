@@ -1,0 +1,64 @@
+{
+  "raw_response": "```json\n{\n  \"examples\": [\n    {\n      \"GCUT_1\": [\n        { \"llx\": 100, \"lly\": 100, \"urx\": 200, \"ury\": 200 }\n      ],\n      \"ACTIVE_1\": [\n        { \"llx\": 300, \"lly\": 100, \"urx\": 400, \"ury\": 200 }\n      ]\n    },\n    {\n      \"GCUT_1\": [\n        { \"llx\": 100, \"lly\": 100, \"urx\": 200, \"ury\": 200 }\n      ],\n      \"ACTIVE_1\": [\n        { \"llx\": 201, \"lly\": 100, \"urx\": 300, \"ury\": 200 }\n      ]\n    },\n    {\n      \"GCUT_1\": [\n        { \"llx\": 100, \"lly\": 100, \"urx\": 200, \"ury\": 200 }\n      ],\n      \"ACTIVE_1\": [\n        { \"llx\": 200, \"lly\": 100, \"urx\": 300, \"ury\": 200 }\n      ]\n    }\n  ],\n  \"labels\": [\n    true,\n    true,\n    false\n  ]\n}\n```",
+  "examples": [
+    {
+      "GCUT_1": [
+        {
+          "llx": 100,
+          "lly": 100,
+          "urx": 200,
+          "ury": 200
+        }
+      ],
+      "ACTIVE_1": [
+        {
+          "llx": 300,
+          "lly": 100,
+          "urx": 400,
+          "ury": 200
+        }
+      ]
+    },
+    {
+      "GCUT_1": [
+        {
+          "llx": 100,
+          "lly": 100,
+          "urx": 200,
+          "ury": 200
+        }
+      ],
+      "ACTIVE_1": [
+        {
+          "llx": 201,
+          "lly": 100,
+          "urx": 300,
+          "ury": 200
+        }
+      ]
+    },
+    {
+      "GCUT_1": [
+        {
+          "llx": 100,
+          "lly": 100,
+          "urx": 200,
+          "ury": 200
+        }
+      ],
+      "ACTIVE_1": [
+        {
+          "llx": 200,
+          "lly": 100,
+          "urx": 300,
+          "ury": 200
+        }
+      ]
+    }
+  ],
+  "labels": [
+    true,
+    true,
+    false
+  ]
+}

@@ -1,0 +1,29 @@
+{
+  "raw_response": "```json\n{\n  \"examples\": [\n    {\n      \"GATEA_1\": [\n        {\n          \"llx\": 0,\n          \"lly\": 0,\n          \"urx\": 50,\n          \"ury\": 200\n        }\n      ]\n    },\n    {\n      \"GATEA_1\": [\n        {\n          \"llx\": 0,\n          \"lly\": 0,\n          \"urx\": 50,\n          \"ury\": 199\n        }\n      ]\n    }\n  ],\n  \"labels\": [\n    true,\n    false\n  ]\n}\n```",
+  "examples": [
+    {
+      "GATEA_1": [
+        {
+          "llx": 0,
+          "lly": 0,
+          "urx": 50,
+          "ury": 200
+        }
+      ]
+    },
+    {
+      "GATEA_1": [
+        {
+          "llx": 0,
+          "lly": 0,
+          "urx": 50,
+          "ury": 199
+        }
+      ]
+    }
+  ],
+  "labels": [
+    true,
+    false
+  ]
+}

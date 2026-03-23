@@ -1,0 +1,107 @@
+{
+  "rule_name": "RULE_PIM007A",
+  "rule_description": "Minimum area of PIM is 0.049 um2",
+  "rule_script": "AREA PIM  < 0.049",
+  "calibre_skipped": true,
+  "sample_correct": null,
+  "sample_total": null,
+  "accuracy": null,
+  "details": [
+    {
+      "idx": 0,
+      "predicted_label": true,
+      "pos": {
+        "PIM_1": [
+          {
+            "llx": 0,
+            "lly": 0,
+            "urx": 70,
+            "ury": 70
+          }
+        ]
+      }
+    },
+    {
+      "idx": 1,
+      "predicted_label": false,
+      "pos": {
+        "PIM_1": [
+          {
+            "llx": 0,
+            "lly": 0,
+            "urx": 69,
+            "ury": 69
+          }
+        ]
+      }
+    },
+    {
+      "idx": 2,
+      "predicted_label": true,
+      "pos": {
+        "PIM_1": [
+          {
+            "llx": 0,
+            "lly": 0,
+            "urx": 70,
+            "ury": 70
+          },
+          {
+            "llx": 100,
+            "lly": 100,
+            "urx": 170,
+            "ury": 170
+          }
+        ]
+      }
+    },
+    {
+      "idx": 3,
+      "predicted_label": false,
+      "pos": {
+        "PIM_1": [
+          {
+            "llx": 0,
+            "lly": 0,
+            "urx": 70,
+            "ury": 70
+          },
+          {
+            "llx": 100,
+            "lly": 100,
+            "urx": 169,
+            "ury": 169
+          }
+        ]
+      }
+    },
+    {
+      "idx": 4,
+      "predicted_label": true,
+      "pos": {
+        "PIM_1": [
+          {
+            "llx": 0,
+            "lly": 0,
+            "urx": 100,
+            "ury": 49
+          }
+        ]
+      }
+    },
+    {
+      "idx": 5,
+      "predicted_label": false,
+      "pos": {
+        "PIM_1": [
+          {
+            "llx": 0,
+            "lly": 0,
+            "urx": 100,
+            "ury": 48
+          }
+        ]
+      }
+    }
+  ]
+}

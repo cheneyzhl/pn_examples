@@ -1,0 +1,85 @@
+{
+  "raw_response": "```json\n{\n  \"examples\": [\n    {\n      \"PIM_1\": [\n        {\n          \"llx\": 0,\n          \"lly\": 0,\n          \"urx\": 70,\n          \"ury\": 70\n        }\n      ]\n    },\n    {\n      \"PIM_1\": [\n        {\n          \"llx\": 0,\n          \"lly\": 0,\n          \"urx\": 69,\n          \"ury\": 69\n        }\n      ]\n    },\n    {\n      \"PIM_1\": [\n        {\n          \"llx\": 0,\n          \"lly\": 0,\n          \"urx\": 70,\n          \"ury\": 70\n        },\n        {\n          \"llx\": 100,\n          \"lly\": 100,\n          \"urx\": 170,\n          \"ury\": 170\n        }\n      ]\n    },\n    {\n      \"PIM_1\": [\n        {\n          \"llx\": 0,\n          \"lly\": 0,\n          \"urx\": 70,\n          \"ury\": 70\n        },\n        {\n          \"llx\": 100,\n          \"lly\": 100,\n          \"urx\": 169,\n          \"ury\": 169\n        }\n      ]\n    },\n    {\n      \"PIM_1\": [\n        {\n          \"llx\": 0,\n          \"lly\": 0,\n          \"urx\": 100,\n          \"ury\": 49\n        }\n      ]\n    },\n    {\n      \"PIM_1\": [\n        {\n          \"llx\": 0,\n          \"lly\": 0,\n          \"urx\": 100,\n          \"ury\": 48\n        }\n      ]\n    }\n  ],\n  \"labels\": [\n    true,\n    false,\n    true,\n    false,\n    true,\n    false\n  ]\n}\n```",
+  "examples": [
+    {
+      "PIM_1": [
+        {
+          "llx": 0,
+          "lly": 0,
+          "urx": 70,
+          "ury": 70
+        }
+      ]
+    },
+    {
+      "PIM_1": [
+        {
+          "llx": 0,
+          "lly": 0,
+          "urx": 69,
+          "ury": 69
+        }
+      ]
+    },
+    {
+      "PIM_1": [
+        {
+          "llx": 0,
+          "lly": 0,
+          "urx": 70,
+          "ury": 70
+        },
+        {
+          "llx": 100,
+          "lly": 100,
+          "urx": 170,
+          "ury": 170
+        }
+      ]
+    },
+    {
+      "PIM_1": [
+        {
+          "llx": 0,
+          "lly": 0,
+          "urx": 70,
+          "ury": 70
+        },
+        {
+          "llx": 100,
+          "lly": 100,
+          "urx": 169,
+          "ury": 169
+        }
+      ]
+    },
+    {
+      "PIM_1": [
+        {
+          "llx": 0,
+          "lly": 0,
+          "urx": 100,
+          "ury": 49
+        }
+      ]
+    },
+    {
+      "PIM_1": [
+        {
+          "llx": 0,
+          "lly": 0,
+          "urx": 100,
+          "ury": 48
+        }
+      ]
+    }
+  ],
+  "labels": [
+    true,
+    false,
+    true,
+    false,
+    true,
+    false
+  ]
+}

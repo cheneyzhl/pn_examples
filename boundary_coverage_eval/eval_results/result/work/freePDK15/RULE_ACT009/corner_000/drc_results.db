@@ -1,0 +1,7 @@
+TOPCELL 5000
+RULE_ACT009
+0 0 4 Mar 22 03:06:54 2026                     
+Rule File Pathname: /share/home/zenghuanlong/pn_examples/boundary_coverage_eval/eval_results/result/work/freePDK15/RULE_ACT009/corner_000/example_5.rul
+RULE_ACT009
+Maximum distance between ACT forming a MOS device and ACT forming a bulk/substrate
+contact within the same well/substrate is 30um, to prevent latch up

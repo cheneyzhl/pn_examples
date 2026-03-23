@@ -1,0 +1,9 @@
+TOPCELL 5000
+RULE_AIL2006
+1 1 3 Mar 23 02:37:01 2026                     
+Rule File Pathname: /share/home/zenghuanlong/pn_examples/boundary_coverage_eval/eval_results/result/work/freePDK15/RULE_AIL2006/corner_original/example_3.rul
+RULE_AIL2006
+Vertical length of AIL2 is 68nm
+e 1 2
+1000 0 1500 0
+1000 335 1500 335

@@ -1,0 +1,160 @@
+{
+  "rule_name": "RULE_GATE008B",
+  "rule_description": "(gateb not gatec) maximum distance to neighbor shape 236nm",
+  "rule_script": "GateBnotC = GATEB NOT GATEC \nx = SIZE GateBnotC BY 0.237 \nGATEB NOT x",
+  "perturbed_scripts": {
+    "corner_000": "GateBnotC = GATEB NOT GATEC \nx = SIZE GateBnotC BY 0.237 \nGATEB NOT x\n"
+  },
+  "data_name": "freePDK15",
+  "judge_mode": "match",
+  "corner_count": 1,
+  "sample_count": 5,
+  "all_corners_match": false,
+  "all_corners_detect": true,
+  "all_corners_ok": false,
+  "per_corner": [
+    {
+      "corner_id": "corner_000",
+      "script_expected_correct": true,
+      "script_predicted_correct": false,
+      "corner_any_mismatch": true,
+      "corner_all_match": false,
+      "corner_ok": false,
+      "samples": [
+        {
+          "idx": 0,
+          "predicted_label": true,
+          "calibre_label": true,
+          "match": true,
+          "error": null,
+          "pos": {
+            "GATEB_1": [
+              {
+                "llx": 0,
+                "lly": 0,
+                "urx": 100,
+                "ury": 100
+              }
+            ],
+            "GATEB_2": [
+              {
+                "llx": 235,
+                "lly": 0,
+                "urx": 335,
+                "ury": 100
+              }
+            ]
+          }
+        },
+        {
+          "idx": 1,
+          "predicted_label": false,
+          "calibre_label": true,
+          "match": false,
+          "error": null,
+          "pos": {
+            "GATEB_1": [
+              {
+                "llx": 0,
+                "lly": 0,
+                "urx": 100,
+                "ury": 100
+              }
+            ],
+            "GATEB_2": [
+              {
+                "llx": 236,
+                "lly": 0,
+                "urx": 336,
+                "ury": 100
+              }
+            ]
+          }
+        },
+        {
+          "idx": 2,
+          "predicted_label": true,
+          "calibre_label": true,
+          "match": true,
+          "error": null,
+          "pos": {
+            "GATEB_1": [
+              {
+                "llx": 0,
+                "lly": 0,
+                "urx": 100,
+                "ury": 100
+              }
+            ],
+            "GATEC_1": [
+              {
+                "llx": 50,
+                "lly": 50,
+                "urx": 150,
+                "ury": 150
+              }
+            ],
+            "GATEB_2": [
+              {
+                "llx": 500,
+                "lly": 0,
+                "urx": 600,
+                "ury": 100
+              }
+            ]
+          }
+        },
+        {
+          "idx": 3,
+          "predicted_label": true,
+          "calibre_label": true,
+          "match": true,
+          "error": null,
+          "pos": {
+            "GATEB_1": [
+              {
+                "llx": 0,
+                "lly": 0,
+                "urx": 100,
+                "ury": 100
+              }
+            ],
+            "GATEB_2": [
+              {
+                "llx": 0,
+                "lly": 235,
+                "urx": 100,
+                "ury": 335
+              }
+            ]
+          }
+        },
+        {
+          "idx": 4,
+          "predicted_label": false,
+          "calibre_label": true,
+          "match": false,
+          "error": null,
+          "pos": {
+            "GATEB_1": [
+              {
+                "llx": 0,
+                "lly": 0,
+                "urx": 100,
+                "ury": 100
+              }
+            ],
+            "GATEB_2": [
+              {
+                "llx": 0,
+                "lly": 236,
+                "urx": 100,
+                "ury": 336
+              }
+            ]
+          }
+        }
+      ]
+    }
+  ]
+}

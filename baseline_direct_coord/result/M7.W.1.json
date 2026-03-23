@@ -1,0 +1,107 @@
+{
+  "rule_name": "M7.W.1",
+  "rule_description": "Minimum horizontal width of M7 is 32 nm.",
+  "rule_script": "INTERNAL M7_VE < VAR_M7_1X",
+  "calibre_skipped": true,
+  "sample_correct": null,
+  "sample_total": null,
+  "accuracy": null,
+  "details": [
+    {
+      "idx": 0,
+      "predicted_label": true,
+      "pos": {
+        "M7_1": [
+          {
+            "llx": 0,
+            "lly": 0,
+            "urx": 32,
+            "ury": 100
+          }
+        ]
+      }
+    },
+    {
+      "idx": 1,
+      "predicted_label": false,
+      "pos": {
+        "M7_1": [
+          {
+            "llx": 0,
+            "lly": 0,
+            "urx": 31,
+            "ury": 100
+          }
+        ]
+      }
+    },
+    {
+      "idx": 2,
+      "predicted_label": true,
+      "pos": {
+        "M7_1": [
+          {
+            "llx": 0,
+            "lly": 0,
+            "urx": 32,
+            "ury": 32
+          }
+        ]
+      }
+    },
+    {
+      "idx": 3,
+      "predicted_label": false,
+      "pos": {
+        "M7_1": [
+          {
+            "llx": 0,
+            "lly": 0,
+            "urx": 31,
+            "ury": 31
+          }
+        ]
+      }
+    },
+    {
+      "idx": 4,
+      "predicted_label": true,
+      "pos": {
+        "M7_1": [
+          {
+            "llx": 0,
+            "lly": 0,
+            "urx": 32,
+            "ury": 32
+          },
+          {
+            "llx": 40,
+            "lly": 0,
+            "urx": 72,
+            "ury": 32
+          }
+        ]
+      }
+    },
+    {
+      "idx": 5,
+      "predicted_label": false,
+      "pos": {
+        "M7_1": [
+          {
+            "llx": 0,
+            "lly": 0,
+            "urx": 31,
+            "ury": 31
+          },
+          {
+            "llx": 40,
+            "lly": 0,
+            "urx": 71,
+            "ury": 31
+          }
+        ]
+      }
+    }
+  ]
+}

@@ -1,0 +1,155 @@
+{
+  "rule_name": "WELL.A.1B",
+  "rule_description": "Minimum enclosed area of WELL is 5832 nm-sq.",
+  "rule_script": "HOLES WELL < 0.005832",
+  "calibre_skipped": true,
+  "sample_correct": null,
+  "sample_total": null,
+  "accuracy": null,
+  "details": [
+    {
+      "idx": 0,
+      "predicted_label": true,
+      "pos": {
+        "WELL_1": [
+          {
+            "llx": 0,
+            "lly": 0,
+            "urx": 76,
+            "ury": 76
+          }
+        ]
+      }
+    },
+    {
+      "idx": 1,
+      "predicted_label": false,
+      "pos": {
+        "WELL_1": [
+          {
+            "llx": 0,
+            "lly": 0,
+            "urx": 75,
+            "ury": 75
+          }
+        ]
+      }
+    },
+    {
+      "idx": 2,
+      "predicted_label": true,
+      "pos": {
+        "WELL_1": [
+          {
+            "llx": 0,
+            "lly": 0,
+            "urx": 76,
+            "ury": 76
+          }
+        ],
+        "WELL_2": [
+          {
+            "llx": 100,
+            "lly": 100,
+            "urx": 176,
+            "ury": 176
+          }
+        ]
+      }
+    },
+    {
+      "idx": 3,
+      "predicted_label": false,
+      "pos": {
+        "WELL_1": [
+          {
+            "llx": 0,
+            "lly": 0,
+            "urx": 76,
+            "ury": 76
+          }
+        ],
+        "WELL_2": [
+          {
+            "llx": 100,
+            "lly": 100,
+            "urx": 175,
+            "ury": 175
+          }
+        ]
+      }
+    },
+    {
+      "idx": 4,
+      "predicted_label": true,
+      "pos": {
+        "WELL_1": [
+          {
+            "llx": 0,
+            "lly": 0,
+            "urx": 108,
+            "ury": 54
+          }
+        ]
+      }
+    },
+    {
+      "idx": 5,
+      "predicted_label": false,
+      "pos": {
+        "WELL_1": [
+          {
+            "llx": 0,
+            "lly": 0,
+            "urx": 107,
+            "ury": 54
+          }
+        ]
+      }
+    },
+    {
+      "idx": 6,
+      "predicted_label": true,
+      "pos": {
+        "WELL_1": [
+          {
+            "llx": 0,
+            "lly": 0,
+            "urx": 76,
+            "ury": 76
+          }
+        ],
+        "WELL_2": [
+          {
+            "llx": 100,
+            "lly": 100,
+            "urx": 108,
+            "ury": 154
+          }
+        ]
+      }
+    },
+    {
+      "idx": 7,
+      "predicted_label": false,
+      "pos": {
+        "WELL_1": [
+          {
+            "llx": 0,
+            "lly": 0,
+            "urx": 76,
+            "ury": 76
+          }
+        ],
+        "WELL_2": [
+          {
+            "llx": 100,
+            "lly": 100,
+            "urx": 107,
+            "ury": 154
+          }
+        ]
+      }
+    }
+  ]
+}

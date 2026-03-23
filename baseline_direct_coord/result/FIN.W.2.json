@@ -1,0 +1,83 @@
+{
+  "rule_name": "FIN.W.2",
+  "rule_description": "Minimum horizontal FIN width is 108 nm.",
+  "rule_script": "INTERNAL FIN_VE < 0.108",
+  "calibre_skipped": true,
+  "sample_correct": null,
+  "sample_total": null,
+  "accuracy": null,
+  "details": [
+    {
+      "idx": 0,
+      "predicted_label": true,
+      "pos": {
+        "FIN_1": [
+          {
+            "llx": 0,
+            "lly": 0,
+            "urx": 108,
+            "ury": 50
+          }
+        ]
+      }
+    },
+    {
+      "idx": 1,
+      "predicted_label": false,
+      "pos": {
+        "FIN_1": [
+          {
+            "llx": 0,
+            "lly": 0,
+            "urx": 107,
+            "ury": 50
+          }
+        ]
+      }
+    },
+    {
+      "idx": 2,
+      "predicted_label": true,
+      "pos": {
+        "FIN_1": [
+          {
+            "llx": 0,
+            "lly": 0,
+            "urx": 108,
+            "ury": 50
+          }
+        ],
+        "FIN_2": [
+          {
+            "llx": 200,
+            "lly": 0,
+            "urx": 308,
+            "ury": 50
+          }
+        ]
+      }
+    },
+    {
+      "idx": 3,
+      "predicted_label": false,
+      "pos": {
+        "FIN_1": [
+          {
+            "llx": 0,
+            "lly": 0,
+            "urx": 108,
+            "ury": 50
+          }
+        ],
+        "FIN_2": [
+          {
+            "llx": 200,
+            "lly": 0,
+            "urx": 307,
+            "ury": 50
+          }
+        ]
+      }
+    }
+  ]
+}

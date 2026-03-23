@@ -1,0 +1,83 @@
+{
+  "rule_name": "RULE_PIM001A",
+  "rule_description": "Minimum width of PIM is 128nm",
+  "rule_script": "INTERNAL PIM <0.128",
+  "calibre_skipped": true,
+  "sample_correct": null,
+  "sample_total": null,
+  "accuracy": null,
+  "details": [
+    {
+      "idx": 0,
+      "predicted_label": true,
+      "pos": {
+        "PIM_1": [
+          {
+            "llx": 0,
+            "lly": 0,
+            "urx": 128,
+            "ury": 100
+          }
+        ]
+      }
+    },
+    {
+      "idx": 1,
+      "predicted_label": false,
+      "pos": {
+        "PIM_1": [
+          {
+            "llx": 0,
+            "lly": 0,
+            "urx": 127,
+            "ury": 100
+          }
+        ]
+      }
+    },
+    {
+      "idx": 2,
+      "predicted_label": true,
+      "pos": {
+        "PIM_1": [
+          {
+            "llx": 0,
+            "lly": 0,
+            "urx": 128,
+            "ury": 100
+          }
+        ],
+        "PIM_2": [
+          {
+            "llx": 200,
+            "lly": 0,
+            "urx": 328,
+            "ury": 100
+          }
+        ]
+      }
+    },
+    {
+      "idx": 3,
+      "predicted_label": false,
+      "pos": {
+        "PIM_1": [
+          {
+            "llx": 0,
+            "lly": 0,
+            "urx": 128,
+            "ury": 100
+          }
+        ],
+        "PIM_2": [
+          {
+            "llx": 200,
+            "lly": 0,
+            "urx": 327,
+            "ury": 100
+          }
+        ]
+      }
+    }
+  ]
+}

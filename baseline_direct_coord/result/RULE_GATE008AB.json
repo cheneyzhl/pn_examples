@@ -1,0 +1,115 @@
+{
+  "rule_name": "RULE_GATE008AB",
+  "rule_description": "(gateAB not gatec) maximum distance to neighbor shape 236nm",
+  "rule_script": "GateABnotC = GATEAB NOT GATEC \nx = SIZE GateABnotC BY 0.237 \nGATEAB NOT x",
+  "calibre_skipped": true,
+  "sample_correct": null,
+  "sample_total": null,
+  "accuracy": null,
+  "details": [
+    {
+      "idx": 0,
+      "predicted_label": true,
+      "pos": {
+        "GATEAB_1": [
+          {
+            "llx": 0,
+            "lly": 0,
+            "urx": 100,
+            "ury": 100
+          }
+        ],
+        "ACT_1": [
+          {
+            "llx": 336,
+            "lly": 0,
+            "urx": 436,
+            "ury": 100
+          }
+        ]
+      }
+    },
+    {
+      "idx": 1,
+      "predicted_label": false,
+      "pos": {
+        "GATEAB_1": [
+          {
+            "llx": 0,
+            "lly": 0,
+            "urx": 100,
+            "ury": 100
+          }
+        ],
+        "ACT_1": [
+          {
+            "llx": 337,
+            "lly": 0,
+            "urx": 437,
+            "ury": 100
+          }
+        ]
+      }
+    },
+    {
+      "idx": 2,
+      "predicted_label": false,
+      "pos": {
+        "GATEAB_1": [
+          {
+            "llx": 0,
+            "lly": 0,
+            "urx": 100,
+            "ury": 100
+          }
+        ],
+        "GATEC_1": [
+          {
+            "llx": 50,
+            "lly": 50,
+            "urx": 150,
+            "ury": 150
+          }
+        ],
+        "ACT_1": [
+          {
+            "llx": 336,
+            "lly": 0,
+            "urx": 436,
+            "ury": 100
+          }
+        ]
+      }
+    },
+    {
+      "idx": 3,
+      "predicted_label": false,
+      "pos": {
+        "GATEAB_1": [
+          {
+            "llx": 0,
+            "lly": 0,
+            "urx": 100,
+            "ury": 100
+          }
+        ],
+        "GATEC_1": [
+          {
+            "llx": 50,
+            "lly": 50,
+            "urx": 150,
+            "ury": 150
+          }
+        ],
+        "ACT_1": [
+          {
+            "llx": 337,
+            "lly": 0,
+            "urx": 437,
+            "ury": 100
+          }
+        ]
+      }
+    }
+  ]
+}

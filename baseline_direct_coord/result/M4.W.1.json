@@ -1,0 +1,95 @@
+{
+  "rule_name": "M4.W.1",
+  "rule_description": "Minimum vertical width of M4 is 24 nm.",
+  "rule_script": "INTERNAL M4_HE < VAR_M4_1X",
+  "calibre_skipped": true,
+  "sample_correct": null,
+  "sample_total": null,
+  "accuracy": null,
+  "details": [
+    {
+      "idx": 0,
+      "predicted_label": true,
+      "pos": {
+        "M4_1": [
+          {
+            "llx": 0,
+            "lly": 0,
+            "urx": 100,
+            "ury": 24
+          }
+        ]
+      }
+    },
+    {
+      "idx": 1,
+      "predicted_label": false,
+      "pos": {
+        "M4_1": [
+          {
+            "llx": 0,
+            "lly": 0,
+            "urx": 100,
+            "ury": 23
+          }
+        ]
+      }
+    },
+    {
+      "idx": 2,
+      "predicted_label": true,
+      "pos": {
+        "M4_1": [
+          {
+            "llx": 0,
+            "lly": 0,
+            "urx": 24,
+            "ury": 100
+          }
+        ]
+      }
+    },
+    {
+      "idx": 3,
+      "predicted_label": false,
+      "pos": {
+        "M4_1": [
+          {
+            "llx": 0,
+            "lly": 0,
+            "urx": 23,
+            "ury": 100
+          }
+        ]
+      }
+    },
+    {
+      "idx": 4,
+      "predicted_label": true,
+      "pos": {
+        "M4_1": [
+          {
+            "llx": 0,
+            "lly": 0,
+            "urx": 24,
+            "ury": 24
+          }
+        ]
+      }
+    },
+    {
+      "idx": 5,
+      "predicted_label": false,
+      "pos": {
+        "M4_1": [
+          {
+            "llx": 0,
+            "lly": 0,
+            "urx": 23,
+            "ury": 23
+          }
+        ]
+      }
+    }
+  ]
+}

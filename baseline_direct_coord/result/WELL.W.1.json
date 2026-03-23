@@ -2,15 +2,14 @@
   "rule_name": "WELL.W.1",
   "rule_description": "Minimum horizontal width of WELL is 108 nm.",
   "rule_script": "INTERNAL WELL_VE < 0.108",
-  "sample_correct": 4,
-  "sample_total": 4,
-  "accuracy": 1.0,
+  "calibre_skipped": true,
+  "sample_correct": null,
+  "sample_total": null,
+  "accuracy": null,
   "details": [
     {
       "idx": 0,
       "predicted_label": true,
-      "calibre_label": true,
-      "match": true,
       "pos": {
         "WELL_1": [
           {
@@ -25,8 +24,6 @@
     {
       "idx": 1,
       "predicted_label": false,
-      "calibre_label": false,
-      "match": true,
       "pos": {
         "WELL_1": [
           {
@@ -41,22 +38,12 @@
     {
       "idx": 2,
       "predicted_label": true,
-      "calibre_label": true,
-      "match": true,
       "pos": {
         "WELL_1": [
           {
             "llx": 0,
             "lly": 0,
-            "urx": 108,
-            "ury": 100
-          }
-        ],
-        "WELL_2": [
-          {
-            "llx": 200,
-            "lly": 0,
-            "urx": 308,
+            "urx": 200,
             "ury": 100
           }
         ]
@@ -65,8 +52,6 @@
     {
       "idx": 3,
       "predicted_label": false,
-      "calibre_label": false,
-      "match": true,
       "pos": {
         "WELL_1": [
           {

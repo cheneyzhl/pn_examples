@@ -1,0 +1,95 @@
+{
+  "rule_name": "M1.W.1",
+  "rule_description": "Minimum width of M1 is 18 nm.",
+  "rule_script": "INTERNAL M1 < 0.018",
+  "calibre_skipped": true,
+  "sample_correct": null,
+  "sample_total": null,
+  "accuracy": null,
+  "details": [
+    {
+      "idx": 0,
+      "predicted_label": true,
+      "pos": {
+        "M1_1": [
+          {
+            "llx": 0,
+            "lly": 0,
+            "urx": 18,
+            "ury": 100
+          }
+        ]
+      }
+    },
+    {
+      "idx": 1,
+      "predicted_label": false,
+      "pos": {
+        "M1_1": [
+          {
+            "llx": 0,
+            "lly": 0,
+            "urx": 17,
+            "ury": 100
+          }
+        ]
+      }
+    },
+    {
+      "idx": 2,
+      "predicted_label": true,
+      "pos": {
+        "M1_1": [
+          {
+            "llx": 0,
+            "lly": 0,
+            "urx": 18,
+            "ury": 18
+          }
+        ]
+      }
+    },
+    {
+      "idx": 3,
+      "predicted_label": false,
+      "pos": {
+        "M1_1": [
+          {
+            "llx": 0,
+            "lly": 0,
+            "urx": 17,
+            "ury": 17
+          }
+        ]
+      }
+    },
+    {
+      "idx": 4,
+      "predicted_label": true,
+      "pos": {
+        "M1_1": [
+          {
+            "llx": 0,
+            "lly": 0,
+            "urx": 100,
+            "ury": 18
+          }
+        ]
+      }
+    },
+    {
+      "idx": 5,
+      "predicted_label": false,
+      "pos": {
+        "M1_1": [
+          {
+            "llx": 0,
+            "lly": 0,
+            "urx": 100,
+            "ury": 17
+          }
+        ]
+      }
+    }
+  ]
+}

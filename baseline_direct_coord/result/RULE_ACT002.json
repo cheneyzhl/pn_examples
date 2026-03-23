@@ -1,0 +1,119 @@
+{
+  "rule_name": "RULE_ACT002",
+  "rule_description": "Minimum Incremental vertical width of ACT layer is 40nm",
+  "rule_script": "ACT_HORIZONTAL_EDGES = ACT ANGLE == 0 \nINTERNAL ACT_HORIZONTAL_EDGES < 0.048 \nINTERNAL ACT_HORIZONTAL_EDGES > 0.048 < 0.088 \nINTERNAL ACT_HORIZONTAL_EDGES > 0.088 < 0.128 \nINTERNAL ACT_HORIZONTAL_EDGES > 0.128 < 0.168 \nINTERNAL ACT_HORIZONTAL_EDGES > 0.168 < 0.208 \nINTERNAL ACT_HORIZONTAL_EDGES > 0.208 < 0.248 \nINTERNAL ACT_HORIZONTAL_EDGES > 0.248 < 0.288 \nINTERNAL ACT_HORIZONTAL_EDGES > 0.288 < 0.328 \nINTERNAL ACT_HORIZONTAL_EDGES > 0.328 < 0.368 \nINTERNAL ACT_HORIZONTAL_EDGES > 0.368 < 0.408 \nINTERNAL ACT_HORIZONTAL_EDGES > 0.408 < 0.448 \nINTERNAL ACT_HORIZONTAL_EDGES > 0.448 < 0.488 \nINTERNAL ACT_HORIZONTAL_EDGES > 0.488 < 0.528 \nINTERNAL ACT_HORIZONTAL_EDGES > 0.528 < 0.568 \nINTERNAL ACT_HORIZONTAL_EDGES > 0.568 < 0.608 \nINTERNAL ACT_HORIZONTAL_EDGES > 0.608 < 0.648 \nINTERNAL ACT_HORIZONTAL_EDGES > 0.648 < 0.688 \nINTERNAL ACT_HORIZONTAL_EDGES > 0.688 < 0.728 \nINTERNAL ACT_HORIZONTAL_EDGES > 0.728 < 0.768 \nINTERNAL ACT_HORIZONTAL_EDGES > 0.768 < 0.808 \nINTERNAL ACT_HORIZONTAL_EDGES > 0.808 < 0.848 \nINTERNAL ACT_HORIZONTAL_EDGES > 0.848 < 0.888 \nINTERNAL ACT_HORIZONTAL_EDGES > 0.888 < 0.928 \nINTERNAL ACT_HORIZONTAL_EDGES > 0.928 < 0.968 \nINTERNAL ACT_HORIZONTAL_EDGES > 0.968 < 1.008",
+  "calibre_skipped": true,
+  "sample_correct": null,
+  "sample_total": null,
+  "accuracy": null,
+  "details": [
+    {
+      "idx": 0,
+      "predicted_label": true,
+      "pos": {
+        "ACT_1": [
+          {
+            "llx": 0,
+            "lly": 0,
+            "urx": 100,
+            "ury": 40
+          }
+        ]
+      }
+    },
+    {
+      "idx": 1,
+      "predicted_label": false,
+      "pos": {
+        "ACT_1": [
+          {
+            "llx": 0,
+            "lly": 0,
+            "urx": 100,
+            "ury": 39
+          }
+        ]
+      }
+    },
+    {
+      "idx": 2,
+      "predicted_label": true,
+      "pos": {
+        "ACT_1": [
+          {
+            "llx": 0,
+            "lly": 0,
+            "urx": 100,
+            "ury": 40
+          },
+          {
+            "llx": 200,
+            "lly": 0,
+            "urx": 300,
+            "ury": 40
+          }
+        ]
+      }
+    },
+    {
+      "idx": 3,
+      "predicted_label": false,
+      "pos": {
+        "ACT_1": [
+          {
+            "llx": 0,
+            "lly": 0,
+            "urx": 100,
+            "ury": 40
+          },
+          {
+            "llx": 200,
+            "lly": 0,
+            "urx": 300,
+            "ury": 39
+          }
+        ]
+      }
+    },
+    {
+      "idx": 4,
+      "predicted_label": true,
+      "pos": {
+        "ACT_1": [
+          {
+            "llx": 0,
+            "lly": 0,
+            "urx": 100,
+            "ury": 40
+          },
+          {
+            "llx": 0,
+            "lly": 50,
+            "urx": 100,
+            "ury": 90
+          }
+        ]
+      }
+    },
+    {
+      "idx": 5,
+      "predicted_label": false,
+      "pos": {
+        "ACT_1": [
+          {
+            "llx": 0,
+            "lly": 0,
+            "urx": 100,
+            "ury": 40
+          },
+          {
+            "llx": 0,
+            "lly": 50,
+            "urx": 100,
+            "ury": 89
+          }
+        ]
+      }
+    }
+  ]
+}

@@ -1,0 +1,84 @@
+{
+  "raw_response": "```json\n{\n  \"examples\": [\n    {\n      \"GATEA_1\": [\n        {\n          \"llx\": 0,\n          \"lly\": 0,\n          \"urx\": 20,\n          \"ury\": 10\n        }\n      ]\n    },\n    {\n      \"GATEA_1\": [\n        {\n          \"llx\": 0,\n          \"lly\": 0,\n          \"urx\": 16,\n          \"ury\": 10\n        }\n      ]\n    },\n    {\n      \"GATEA_1\": [\n        {\n          \"llx\": 0,\n          \"lly\": 0,\n          \"urx\": 14,\n          \"ury\": 10\n        }\n      ]\n    },\n    {\n      \"GATEA_1\": [\n        {\n          \"llx\": 0,\n          \"lly\": 0,\n          \"urx\": 19,\n          \"ury\": 10\n        }\n      ]\n    },\n    {\n      \"GATEA_1\": [\n        {\n          \"llx\": 0,\n          \"lly\": 0,\n          \"urx\": 21,\n          \"ury\": 10\n        }\n      ]\n    },\n    {\n      \"GATEA_1\": [\n        {\n          \"llx\": 0,\n          \"lly\": 0,\n          \"urx\": 15,\n          \"ury\": 10\n        }\n      ]\n    },\n    {\n      \"GATEA_1\": [\n        {\n          \"llx\": 0,\n          \"lly\": 0,\n          \"urx\": 13,\n          \"ury\": 10\n        }\n      ]\n    }\n  ],\n  \"labels\": [\n    true,\n    true,\n    true,\n    false,\n    false,\n    false,\n    false\n  ]\n}\n```",
+  "examples": [
+    {
+      "GATEA_1": [
+        {
+          "llx": 0,
+          "lly": 0,
+          "urx": 20,
+          "ury": 10
+        }
+      ]
+    },
+    {
+      "GATEA_1": [
+        {
+          "llx": 0,
+          "lly": 0,
+          "urx": 16,
+          "ury": 10
+        }
+      ]
+    },
+    {
+      "GATEA_1": [
+        {
+          "llx": 0,
+          "lly": 0,
+          "urx": 14,
+          "ury": 10
+        }
+      ]
+    },
+    {
+      "GATEA_1": [
+        {
+          "llx": 0,
+          "lly": 0,
+          "urx": 19,
+          "ury": 10
+        }
+      ]
+    },
+    {
+      "GATEA_1": [
+        {
+          "llx": 0,
+          "lly": 0,
+          "urx": 21,
+          "ury": 10
+        }
+      ]
+    },
+    {
+      "GATEA_1": [
+        {
+          "llx": 0,
+          "lly": 0,
+          "urx": 15,
+          "ury": 10
+        }
+      ]
+    },
+    {
+      "GATEA_1": [
+        {
+          "llx": 0,
+          "lly": 0,
+          "urx": 13,
+          "ury": 10
+        }
+      ]
+    }
+  ],
+  "labels": [
+    true,
+    true,
+    true,
+    false,
+    false,
+    false,
+    false
+  ]
+}

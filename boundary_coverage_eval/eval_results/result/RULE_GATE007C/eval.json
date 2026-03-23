@@ -1,0 +1,177 @@
+{
+  "rule_name": "RULE_GATE007C",
+  "rule_description": "GATEC shape bottom or top must be aligned if distance < 192nm",
+  "rule_script": "ext_region = EXT GATEC < 0.192 REGION \nangled_edges = ANGLE ext_region >0 <90 \nangled_regions = ext_region WITH EDGE angled_edges \nGATEC INTERACT angled_regions",
+  "perturbed_scripts": {
+    "corner_000": "ext_region = EXT GATEC < 0.192 REGION \nangled_edges = ANGLE ext_region >0 <90 \nangled_regions = ext_region WITH EDGE angled_edges \nGATEC INTERACT angled_regions\n"
+  },
+  "data_name": "freePDK15",
+  "judge_mode": "match",
+  "corner_count": 1,
+  "sample_count": 6,
+  "all_corners_match": false,
+  "all_corners_detect": true,
+  "all_corners_ok": false,
+  "per_corner": [
+    {
+      "corner_id": "corner_000",
+      "script_expected_correct": true,
+      "script_predicted_correct": false,
+      "corner_any_mismatch": true,
+      "corner_all_match": false,
+      "corner_ok": false,
+      "samples": [
+        {
+          "idx": 0,
+          "predicted_label": true,
+          "calibre_label": true,
+          "match": true,
+          "error": null,
+          "pos": {
+            "GATEC_1": [
+              {
+                "llx": 0,
+                "lly": 0,
+                "urx": 100,
+                "ury": 50
+              }
+            ],
+            "GATEC_2": [
+              {
+                "llx": 0,
+                "lly": 50,
+                "urx": 100,
+                "ury": 100
+              }
+            ]
+          }
+        },
+        {
+          "idx": 1,
+          "predicted_label": false,
+          "calibre_label": true,
+          "match": false,
+          "error": null,
+          "pos": {
+            "GATEC_1": [
+              {
+                "llx": 0,
+                "lly": 0,
+                "urx": 100,
+                "ury": 50
+              }
+            ],
+            "GATEC_2": [
+              {
+                "llx": 0,
+                "lly": 191,
+                "urx": 100,
+                "ury": 241
+              }
+            ]
+          }
+        },
+        {
+          "idx": 2,
+          "predicted_label": true,
+          "calibre_label": true,
+          "match": true,
+          "error": null,
+          "pos": {
+            "GATEC_1": [
+              {
+                "llx": 0,
+                "lly": 0,
+                "urx": 100,
+                "ury": 50
+              }
+            ],
+            "GATEC_2": [
+              {
+                "llx": 0,
+                "lly": 192,
+                "urx": 100,
+                "ury": 242
+              }
+            ]
+          }
+        },
+        {
+          "idx": 3,
+          "predicted_label": true,
+          "calibre_label": true,
+          "match": true,
+          "error": null,
+          "pos": {
+            "GATEC_1": [
+              {
+                "llx": 0,
+                "lly": 0,
+                "urx": 100,
+                "ury": 50
+              }
+            ],
+            "GATEC_2": [
+              {
+                "llx": 50,
+                "lly": 50,
+                "urx": 150,
+                "ury": 100
+              }
+            ]
+          }
+        },
+        {
+          "idx": 4,
+          "predicted_label": false,
+          "calibre_label": false,
+          "match": true,
+          "error": null,
+          "pos": {
+            "GATEC_1": [
+              {
+                "llx": 0,
+                "lly": 0,
+                "urx": 100,
+                "ury": 50
+              }
+            ],
+            "GATEC_2": [
+              {
+                "llx": 50,
+                "lly": 191,
+                "urx": 150,
+                "ury": 241
+              }
+            ]
+          }
+        },
+        {
+          "idx": 5,
+          "predicted_label": true,
+          "calibre_label": false,
+          "match": false,
+          "error": null,
+          "pos": {
+            "GATEC_1": [
+              {
+                "llx": 0,
+                "lly": 0,
+                "urx": 100,
+                "ury": 50
+              }
+            ],
+            "GATEC_2": [
+              {
+                "llx": 50,
+                "lly": 192,
+                "urx": 150,
+                "ury": 242
+              }
+            ]
+          }
+        }
+      ]
+    }
+  ]
+}

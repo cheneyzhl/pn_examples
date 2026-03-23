@@ -1,0 +1,457 @@
+{
+  "rule_name": "RULE_M1001A",
+  "rule_description": "M1A width 28nm, 32nm, 40nm, 2.4um (10um is arbitrary)",
+  "rule_script": "INTERNAL M1A < 0.028",
+  "perturbed_scripts": {
+    "corner_000": "INTERNAL M1A < 0.027\n",
+    "corner_001": "INTERNAL M1A < 0.029\n",
+    "corner_original": "INTERNAL M1A < 0.028\n"
+  },
+  "data_name": "freePDK15",
+  "judge_mode": "match",
+  "corner_count": 3,
+  "sample_count": 8,
+  "all_corners_match": false,
+  "all_corners_detect": true,
+  "all_corners_ok": false,
+  "per_corner": [
+    {
+      "corner_id": "corner_000",
+      "script_expected_correct": false,
+      "script_predicted_correct": false,
+      "corner_any_mismatch": true,
+      "corner_all_match": false,
+      "corner_ok": true,
+      "samples": [
+        {
+          "idx": 0,
+          "predicted_label": true,
+          "calibre_label": true,
+          "match": true,
+          "error": null,
+          "pos": {
+            "M1A_1": [
+              {
+                "llx": 0,
+                "lly": 0,
+                "urx": 28,
+                "ury": 100
+              }
+            ]
+          }
+        },
+        {
+          "idx": 1,
+          "predicted_label": false,
+          "calibre_label": true,
+          "match": false,
+          "error": null,
+          "pos": {
+            "M1A_1": [
+              {
+                "llx": 0,
+                "lly": 0,
+                "urx": 27,
+                "ury": 100
+              }
+            ]
+          }
+        },
+        {
+          "idx": 2,
+          "predicted_label": true,
+          "calibre_label": true,
+          "match": true,
+          "error": null,
+          "pos": {
+            "M1A_1": [
+              {
+                "llx": 0,
+                "lly": 0,
+                "urx": 32,
+                "ury": 100
+              }
+            ]
+          }
+        },
+        {
+          "idx": 3,
+          "predicted_label": false,
+          "calibre_label": true,
+          "match": false,
+          "error": null,
+          "pos": {
+            "M1A_1": [
+              {
+                "llx": 0,
+                "lly": 0,
+                "urx": 31,
+                "ury": 100
+              }
+            ]
+          }
+        },
+        {
+          "idx": 4,
+          "predicted_label": true,
+          "calibre_label": true,
+          "match": true,
+          "error": null,
+          "pos": {
+            "M1A_1": [
+              {
+                "llx": 0,
+                "lly": 0,
+                "urx": 40,
+                "ury": 100
+              }
+            ]
+          }
+        },
+        {
+          "idx": 5,
+          "predicted_label": false,
+          "calibre_label": true,
+          "match": false,
+          "error": null,
+          "pos": {
+            "M1A_1": [
+              {
+                "llx": 0,
+                "lly": 0,
+                "urx": 39,
+                "ury": 100
+              }
+            ]
+          }
+        },
+        {
+          "idx": 6,
+          "predicted_label": true,
+          "calibre_label": true,
+          "match": true,
+          "error": null,
+          "pos": {
+            "M1A_1": [
+              {
+                "llx": 0,
+                "lly": 0,
+                "urx": 2400,
+                "ury": 100
+              }
+            ]
+          }
+        },
+        {
+          "idx": 7,
+          "predicted_label": false,
+          "calibre_label": true,
+          "match": false,
+          "error": null,
+          "pos": {
+            "M1A_1": [
+              {
+                "llx": 0,
+                "lly": 0,
+                "urx": 2399,
+                "ury": 100
+              }
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "corner_id": "corner_001",
+      "script_expected_correct": false,
+      "script_predicted_correct": false,
+      "corner_any_mismatch": true,
+      "corner_all_match": false,
+      "corner_ok": true,
+      "samples": [
+        {
+          "idx": 0,
+          "predicted_label": true,
+          "calibre_label": false,
+          "match": false,
+          "error": null,
+          "pos": {
+            "M1A_1": [
+              {
+                "llx": 0,
+                "lly": 0,
+                "urx": 28,
+                "ury": 100
+              }
+            ]
+          }
+        },
+        {
+          "idx": 1,
+          "predicted_label": false,
+          "calibre_label": false,
+          "match": true,
+          "error": null,
+          "pos": {
+            "M1A_1": [
+              {
+                "llx": 0,
+                "lly": 0,
+                "urx": 27,
+                "ury": 100
+              }
+            ]
+          }
+        },
+        {
+          "idx": 2,
+          "predicted_label": true,
+          "calibre_label": true,
+          "match": true,
+          "error": null,
+          "pos": {
+            "M1A_1": [
+              {
+                "llx": 0,
+                "lly": 0,
+                "urx": 32,
+                "ury": 100
+              }
+            ]
+          }
+        },
+        {
+          "idx": 3,
+          "predicted_label": false,
+          "calibre_label": true,
+          "match": false,
+          "error": null,
+          "pos": {
+            "M1A_1": [
+              {
+                "llx": 0,
+                "lly": 0,
+                "urx": 31,
+                "ury": 100
+              }
+            ]
+          }
+        },
+        {
+          "idx": 4,
+          "predicted_label": true,
+          "calibre_label": true,
+          "match": true,
+          "error": null,
+          "pos": {
+            "M1A_1": [
+              {
+                "llx": 0,
+                "lly": 0,
+                "urx": 40,
+                "ury": 100
+              }
+            ]
+          }
+        },
+        {
+          "idx": 5,
+          "predicted_label": false,
+          "calibre_label": true,
+          "match": false,
+          "error": null,
+          "pos": {
+            "M1A_1": [
+              {
+                "llx": 0,
+                "lly": 0,
+                "urx": 39,
+                "ury": 100
+              }
+            ]
+          }
+        },
+        {
+          "idx": 6,
+          "predicted_label": true,
+          "calibre_label": true,
+          "match": true,
+          "error": null,
+          "pos": {
+            "M1A_1": [
+              {
+                "llx": 0,
+                "lly": 0,
+                "urx": 2400,
+                "ury": 100
+              }
+            ]
+          }
+        },
+        {
+          "idx": 7,
+          "predicted_label": false,
+          "calibre_label": true,
+          "match": false,
+          "error": null,
+          "pos": {
+            "M1A_1": [
+              {
+                "llx": 0,
+                "lly": 0,
+                "urx": 2399,
+                "ury": 100
+              }
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "corner_id": "corner_original",
+      "script_expected_correct": true,
+      "script_predicted_correct": false,
+      "corner_any_mismatch": true,
+      "corner_all_match": false,
+      "corner_ok": false,
+      "samples": [
+        {
+          "idx": 0,
+          "predicted_label": true,
+          "calibre_label": true,
+          "match": true,
+          "error": null,
+          "pos": {
+            "M1A_1": [
+              {
+                "llx": 0,
+                "lly": 0,
+                "urx": 28,
+                "ury": 100
+              }
+            ]
+          }
+        },
+        {
+          "idx": 1,
+          "predicted_label": false,
+          "calibre_label": false,
+          "match": true,
+          "error": null,
+          "pos": {
+            "M1A_1": [
+              {
+                "llx": 0,
+                "lly": 0,
+                "urx": 27,
+                "ury": 100
+              }
+            ]
+          }
+        },
+        {
+          "idx": 2,
+          "predicted_label": true,
+          "calibre_label": true,
+          "match": true,
+          "error": null,
+          "pos": {
+            "M1A_1": [
+              {
+                "llx": 0,
+                "lly": 0,
+                "urx": 32,
+                "ury": 100
+              }
+            ]
+          }
+        },
+        {
+          "idx": 3,
+          "predicted_label": false,
+          "calibre_label": true,
+          "match": false,
+          "error": null,
+          "pos": {
+            "M1A_1": [
+              {
+                "llx": 0,
+                "lly": 0,
+                "urx": 31,
+                "ury": 100
+              }
+            ]
+          }
+        },
+        {
+          "idx": 4,
+          "predicted_label": true,
+          "calibre_label": true,
+          "match": true,
+          "error": null,
+          "pos": {
+            "M1A_1": [
+              {
+                "llx": 0,
+                "lly": 0,
+                "urx": 40,
+                "ury": 100
+              }
+            ]
+          }
+        },
+        {
+          "idx": 5,
+          "predicted_label": false,
+          "calibre_label": true,
+          "match": false,
+          "error": null,
+          "pos": {
+            "M1A_1": [
+              {
+                "llx": 0,
+                "lly": 0,
+                "urx": 39,
+                "ury": 100
+              }
+            ]
+          }
+        },
+        {
+          "idx": 6,
+          "predicted_label": true,
+          "calibre_label": true,
+          "match": true,
+          "error": null,
+          "pos": {
+            "M1A_1": [
+              {
+                "llx": 0,
+                "lly": 0,
+                "urx": 2400,
+                "ury": 100
+              }
+            ]
+          }
+        },
+        {
+          "idx": 7,
+          "predicted_label": false,
+          "calibre_label": true,
+          "match": false,
+          "error": null,
+          "pos": {
+            "M1A_1": [
+              {
+                "llx": 0,
+                "lly": 0,
+                "urx": 2399,
+                "ury": 100
+              }
+            ]
+          }
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,63 @@
+{
+  "raw_response": "```json\n{\n  \"examples\": [\n    {\n      \"LIG_1\": [\n        {\n          \"llx\": 0,\n          \"lly\": 0,\n          \"urx\": 18,\n          \"ury\": 18\n        }\n      ]\n    },\n    {\n      \"LIG_1\": [\n        {\n          \"llx\": 0,\n          \"lly\": 0,\n          \"urx\": 17,\n          \"ury\": 19\n        }\n      ]\n    },\n    {\n      \"LIG_1\": [\n        {\n          \"llx\": 0,\n          \"lly\": 0,\n          \"urx\": 18,\n          \"ury\": 18\n        },\n        {\n          \"llx\": 20,\n          \"lly\": 0,\n          \"urx\": 38,\n          \"ury\": 18\n        }\n      ]\n    },\n    {\n      \"LIG_1\": [\n        {\n          \"llx\": 0,\n          \"lly\": 0,\n          \"urx\": 18,\n          \"ury\": 18\n        },\n        {\n          \"llx\": 20,\n          \"lly\": 0,\n          \"urx\": 37,\n          \"ury\": 18\n        }\n      ]\n    }\n  ],\n  \"labels\": [\n    true,\n    false,\n    true,\n    false\n  ]\n}\n```",
+  "examples": [
+    {
+      "LIG_1": [
+        {
+          "llx": 0,
+          "lly": 0,
+          "urx": 18,
+          "ury": 18
+        }
+      ]
+    },
+    {
+      "LIG_1": [
+        {
+          "llx": 0,
+          "lly": 0,
+          "urx": 17,
+          "ury": 19
+        }
+      ]
+    },
+    {
+      "LIG_1": [
+        {
+          "llx": 0,
+          "lly": 0,
+          "urx": 18,
+          "ury": 18
+        },
+        {
+          "llx": 20,
+          "lly": 0,
+          "urx": 38,
+          "ury": 18
+        }
+      ]
+    },
+    {
+      "LIG_1": [
+        {
+          "llx": 0,
+          "lly": 0,
+          "urx": 18,
+          "ury": 18
+        },
+        {
+          "llx": 20,
+          "lly": 0,
+          "urx": 37,
+          "ury": 18
+        }
+      ]
+    }
+  ],
+  "labels": [
+    true,
+    false,
+    true,
+    false
+  ]
+}

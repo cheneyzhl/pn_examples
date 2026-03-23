@@ -1,0 +1,95 @@
+{
+  "rule_name": "RULE_M1027",
+  "rule_description": "M1 minimum area for rectangular shape is 0.0024um2",
+  "rule_script": "rect_M1 = RECTANGLE M1 \nAREA rect_M1 < 0.0024",
+  "calibre_skipped": true,
+  "sample_correct": null,
+  "sample_total": null,
+  "accuracy": null,
+  "details": [
+    {
+      "idx": 0,
+      "predicted_label": true,
+      "pos": {
+        "M1_1": [
+          {
+            "llx": 0,
+            "lly": 0,
+            "urx": 2000,
+            "ury": 1200
+          }
+        ]
+      }
+    },
+    {
+      "idx": 1,
+      "predicted_label": false,
+      "pos": {
+        "M1_1": [
+          {
+            "llx": 0,
+            "lly": 0,
+            "urx": 2000,
+            "ury": 1199
+          }
+        ]
+      }
+    },
+    {
+      "idx": 2,
+      "predicted_label": true,
+      "pos": {
+        "M1_1": [
+          {
+            "llx": 0,
+            "lly": 0,
+            "urx": 1200,
+            "ury": 2000
+          }
+        ]
+      }
+    },
+    {
+      "idx": 3,
+      "predicted_label": false,
+      "pos": {
+        "M1_1": [
+          {
+            "llx": 0,
+            "lly": 0,
+            "urx": 1199,
+            "ury": 2000
+          }
+        ]
+      }
+    },
+    {
+      "idx": 4,
+      "predicted_label": true,
+      "pos": {
+        "M1_1": [
+          {
+            "llx": 0,
+            "lly": 0,
+            "urx": 1600,
+            "ury": 1500
+          }
+        ]
+      }
+    },
+    {
+      "idx": 5,
+      "predicted_label": false,
+      "pos": {
+        "M1_1": [
+          {
+            "llx": 0,
+            "lly": 0,
+            "urx": 1599,
+            "ury": 1500
+          }
+        ]
+      }
+    }
+  ]
+}

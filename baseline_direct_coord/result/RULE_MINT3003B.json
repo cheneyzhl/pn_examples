@@ -1,0 +1,81 @@
+{
+  "rule_name": "RULE_MINT3003B",
+  "rule_description": "maximum length of MINT3B for wires with min width 28nm is 1.8um",
+  "rule_script": "wide_MINT3B = MINT3B with width <= 0.028 \nd = INT wide_MINT3B <= 1 opposite \nd_p = dfm property wide_MINT3B d overlap abut also [EC1 = EC(d)] > 1.80 \ncopy d_p",
+  "calibre_skipped": true,
+  "sample_correct": null,
+  "sample_total": null,
+  "accuracy": null,
+  "details": [
+    {
+      "idx": 0,
+      "predicted_label": true,
+      "pos": {
+        "MINT3B_1": [
+          {
+            "llx": 0,
+            "lly": 0,
+            "urx": 28,
+            "ury": 1800
+          }
+        ]
+      }
+    },
+    {
+      "idx": 1,
+      "predicted_label": false,
+      "pos": {
+        "MINT3B_1": [
+          {
+            "llx": 0,
+            "lly": 0,
+            "urx": 28,
+            "ury": 1801
+          }
+        ]
+      }
+    },
+    {
+      "idx": 2,
+      "predicted_label": false,
+      "pos": {
+        "MINT3B_1": [
+          {
+            "llx": 0,
+            "lly": 0,
+            "urx": 27,
+            "ury": 1800
+          }
+        ]
+      }
+    },
+    {
+      "idx": 3,
+      "predicted_label": true,
+      "pos": {
+        "MINT3B_1": [
+          {
+            "llx": 0,
+            "lly": 0,
+            "urx": 29,
+            "ury": 1800
+          }
+        ]
+      }
+    },
+    {
+      "idx": 4,
+      "predicted_label": true,
+      "pos": {
+        "MINT3B_1": [
+          {
+            "llx": 0,
+            "lly": 0,
+            "urx": 28,
+            "ury": 1799
+          }
+        ]
+      }
+    }
+  ]
+}

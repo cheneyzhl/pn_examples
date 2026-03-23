@@ -1,0 +1,95 @@
+{
+  "raw_response": "### 规则分析\n\n给定的DRC规则是：**Exact horizontal width of GATE [B] is 20, 16 or 14 nm**。  \n这意味着：\n1. GATE [B] 的宽度必须严格等于 20 nm、16 nm 或 14 nm。\n2. 其他宽度（如 19 nm、15 nm、13 nm 等）都是不允许的。\n\n### 条件变量\n- 宽度条件：`width == 20 || width == 16 || width == 14`。\n  - 这是一个单一条件，但可以分解为：\n    - `width == 20`（正例）\n    - `width == 16`（正例）\n    - `width == 14`（正例）\n    - `width != 20 && width != 16 && width != 14`（反例）\n\n### 边界情况\n我们需要覆盖以下情况：\n1. 正例：\n   - 宽度 = 20 nm\n   - 宽度 = 16 nm\n   - 宽度 = 14 nm\n2. 反例：\n   - 宽度接近但不等于 20/16/14 nm（如 19 nm、15 nm、13 nm）\n   - 宽度远小于或远大于 20/16/14 nm（如 10 nm、30 nm）\n\n### 生成正例和反例\n#### 正例\n1. 宽度 = 20 nm：\n   - `GATEB_1`: `{ \"llx\": 0, \"lly\": 0, \"urx\": 20, \"ury\": 10 }`（宽度 = 20 nm）\n2. 宽度 = 16 nm：\n   - `GATEB_1`: `{ \"llx\": 0, \"lly\": 0, \"urx\": 16, \"ury\": 10 }`（宽度 = 16 nm）\n3. 宽度 = 14 nm：\n   - `GATEB_1`: `{ \"llx\": 0, \"lly\": 0, \"urx\": 14, \"ury\": 10 }`（宽度 = 14 nm）\n\n#### 反例\n1. 宽度 = 19 nm（接近 20 nm 但不等于）：\n   - `GATEB_1`: `{ \"llx\": 0, \"lly\": 0, \"urx\": 19, \"ury\": 10 }`（宽度 = 19 nm）\n2. 宽度 = 15 nm（接近 16 nm 但不等于）：\n   - `GATEB_1`: `{ \"llx\": 0, \"lly\": 0, \"urx\": 15, \"ury\": 10 }`（宽度 = 15 nm）\n3. 宽度 = 13 nm（接近 14 nm 但不等于）：\n   - `GATEB_1`: `{ \"llx\": 0, \"lly\": 0, \"urx\": 13, \"ury\": 10 }`（宽度 = 13 nm）\n4. 宽度 = 10 nm（远小于 14 nm）：\n   - `GATEB_1`: `{ \"llx\": 0, \"lly\": 0, \"urx\": 10, \"ury\": 10 }`（宽度 = 10 nm）\n5. 宽度 = 30 nm（远大于 20 nm）：\n   - `GATEB_1`: `{ \"llx\": 0, \"lly\": 0, \"urx\": 30, \"ury\": 10 }`（宽度 = 30 nm）\n\n### 自检\n- 正例：\n  - 宽度 = 20 nm：`20 == 20` ✔️\n  - 宽度 = 16 nm：`16 == 16` ✔️\n  - 宽度 = 14 nm：`14 == 14` ✔️\n- 反例：\n  - 宽度 = 19 nm：`19 != 20 && 19 != 16 && 19 != 14` ✔️\n  - 宽度 = 15 nm：`15 != 20 && 15 != 16 && 15 != 14` ✔️\n  - 宽度 = 13 nm：`13 != 20 && 13 != 16 && 13 != 14` ✔️\n  - 宽度 = 10 nm：`10 != 20 && 10 != 16 && 10 != 14` ✔️\n  - 宽度 = 30 nm：`30 != 20 && 30 != 16 && 30 != 14` ✔️\n\n### JSON 输出\n```json\n{\n  \"examples\": [\n    {\n      \"GATEB_1\": [\n        { \"llx\": 0, \"lly\": 0, \"urx\": 20, \"ury\": 10 }\n      ]\n    },\n    {\n      \"GATEB_1\": [\n        { \"llx\": 0, \"lly\": 0, \"urx\": 16, \"ury\": 10 }\n      ]\n    },\n    {\n      \"GATEB_1\": [\n        { \"llx\": 0, \"lly\": 0, \"urx\": 14, \"ury\": 10 }\n      ]\n    },\n    {\n      \"GATEB_1\": [\n        { \"llx\": 0, \"lly\": 0, \"urx\": 19, \"ury\": 10 }\n      ]\n    },\n    {\n      \"GATEB_1\": [\n        { \"llx\": 0, \"lly\": 0, \"urx\": 15, \"ury\": 10 }\n      ]\n    },\n    {\n      \"GATEB_1\": [\n        { \"llx\": 0, \"lly\": 0, \"urx\": 13, \"ury\": 10 }\n      ]\n    },\n    {\n      \"GATEB_1\": [\n        { \"llx\": 0, \"lly\": 0, \"urx\": 10, \"ury\": 10 }\n      ]\n    },\n    {\n      \"GATEB_1\": [\n        { \"llx\": 0, \"lly\": 0, \"urx\": 30, \"ury\": 10 }\n      ]\n    }\n  ],\n  \"labels\": [\n    true,\n    true,\n    true,\n    false,\n    false,\n    false,\n    false,\n    false\n  ]\n}\n```",
+  "examples": [
+    {
+      "GATEB_1": [
+        {
+          "llx": 0,
+          "lly": 0,
+          "urx": 20,
+          "ury": 10
+        }
+      ]
+    },
+    {
+      "GATEB_1": [
+        {
+          "llx": 0,
+          "lly": 0,
+          "urx": 16,
+          "ury": 10
+        }
+      ]
+    },
+    {
+      "GATEB_1": [
+        {
+          "llx": 0,
+          "lly": 0,
+          "urx": 14,
+          "ury": 10
+        }
+      ]
+    },
+    {
+      "GATEB_1": [
+        {
+          "llx": 0,
+          "lly": 0,
+          "urx": 19,
+          "ury": 10
+        }
+      ]
+    },
+    {
+      "GATEB_1": [
+        {
+          "llx": 0,
+          "lly": 0,
+          "urx": 15,
+          "ury": 10
+        }
+      ]
+    },
+    {
+      "GATEB_1": [
+        {
+          "llx": 0,
+          "lly": 0,
+          "urx": 13,
+          "ury": 10
+        }
+      ]
+    },
+    {
+      "GATEB_1": [
+        {
+          "llx": 0,
+          "lly": 0,
+          "urx": 10,
+          "ury": 10
+        }
+      ]
+    },
+    {
+      "GATEB_1": [
+        {
+          "llx": 0,
+          "lly": 0,
+          "urx": 30,
+          "ury": 10
+        }
+      ]
+    }
+  ],
+  "labels": [
+    true,
+    true,
+    true,
+    false,
+    false,
+    false,
+    false,
+    false
+  ]
+}

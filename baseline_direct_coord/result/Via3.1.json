@@ -1,0 +1,97 @@
+{
+  "rule_name": "Via3.1",
+  "rule_description": "Minimum width of via3 = 0.07",
+  "rule_script": "INTERNAL via3 < 0.065",
+  "calibre_skipped": true,
+  "sample_correct": null,
+  "sample_total": null,
+  "accuracy": null,
+  "details": [
+    {
+      "idx": 0,
+      "predicted_label": true,
+      "pos": {
+        "VIA3_1": [
+          {
+            "llx": 0,
+            "lly": 0,
+            "urx": 70,
+            "ury": 70
+          }
+        ]
+      }
+    },
+    {
+      "idx": 1,
+      "predicted_label": false,
+      "pos": {
+        "VIA3_1": [
+          {
+            "llx": 0,
+            "lly": 0,
+            "urx": 69,
+            "ury": 70
+          }
+        ]
+      }
+    },
+    {
+      "idx": 2,
+      "predicted_label": false,
+      "pos": {
+        "VIA3_1": [
+          {
+            "llx": 0,
+            "lly": 0,
+            "urx": 70,
+            "ury": 69
+          }
+        ]
+      }
+    },
+    {
+      "idx": 3,
+      "predicted_label": true,
+      "pos": {
+        "VIA3_1": [
+          {
+            "llx": 0,
+            "lly": 0,
+            "urx": 70,
+            "ury": 70
+          }
+        ],
+        "VIA3_2": [
+          {
+            "llx": 100,
+            "lly": 0,
+            "urx": 170,
+            "ury": 70
+          }
+        ]
+      }
+    },
+    {
+      "idx": 4,
+      "predicted_label": false,
+      "pos": {
+        "VIA3_1": [
+          {
+            "llx": 0,
+            "lly": 0,
+            "urx": 70,
+            "ury": 70
+          }
+        ],
+        "VIA3_2": [
+          {
+            "llx": 100,
+            "lly": 0,
+            "urx": 169,
+            "ury": 70
+          }
+        ]
+      }
+    }
+  ]
+}

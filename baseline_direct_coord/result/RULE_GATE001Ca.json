@@ -1,0 +1,113 @@
+{
+  "rule_name": "RULE_GATE001Ca",
+  "rule_description": "Exact vertical width of GATEC is 32nm (1 is arbitrary large value) shape is oriented horizonally",
+  "rule_script": "vert_edges = GATEC ANGLE == 90 \nhor_edges = GATEC ANGLE == 0 \nvert_edges_int = INT vert_edges < 1 \nhor_edges_int = INT hor_edges < 1 \nvert_polygons = DFM PROPERTY GATEC hor_edges_int vert_edges_int OVERLAP MULTI [check1 = EW(vert_edges_int) - EW(hor_edges_int)] < 0 \nhor_polygons = DFM PROPERTY GATEC hor_edges_int vert_edges_int OVERLAP MULTI [check2 = EW(vert_edges_int) - EW(hor_edges_int)] > 0 \nhor_edges_hor_pol = hor_polygons angle == 0 \nINT hor_edges_hor_pol > 0 < 0.032 \nINT hor_edges_hor_pol > 0.032 < 1",
+  "calibre_skipped": true,
+  "sample_correct": null,
+  "sample_total": null,
+  "accuracy": null,
+  "details": [
+    {
+      "idx": 0,
+      "predicted_label": true,
+      "pos": {
+        "GATEC_1": [
+          {
+            "llx": 0,
+            "lly": 0,
+            "urx": 100,
+            "ury": 32
+          }
+        ]
+      }
+    },
+    {
+      "idx": 1,
+      "predicted_label": false,
+      "pos": {
+        "GATEC_1": [
+          {
+            "llx": 0,
+            "lly": 0,
+            "urx": 100,
+            "ury": 31
+          }
+        ]
+      }
+    },
+    {
+      "idx": 2,
+      "predicted_label": false,
+      "pos": {
+        "GATEC_1": [
+          {
+            "llx": 0,
+            "lly": 0,
+            "urx": 100,
+            "ury": 33
+          }
+        ]
+      }
+    },
+    {
+      "idx": 3,
+      "predicted_label": true,
+      "pos": {
+        "GATEC_1": [
+          {
+            "llx": 0,
+            "lly": 0,
+            "urx": 100,
+            "ury": 32
+          },
+          {
+            "llx": 200,
+            "lly": 0,
+            "urx": 300,
+            "ury": 32
+          }
+        ]
+      }
+    },
+    {
+      "idx": 4,
+      "predicted_label": false,
+      "pos": {
+        "GATEC_1": [
+          {
+            "llx": 0,
+            "lly": 0,
+            "urx": 100,
+            "ury": 32
+          },
+          {
+            "llx": 200,
+            "lly": 0,
+            "urx": 300,
+            "ury": 31
+          }
+        ]
+      }
+    },
+    {
+      "idx": 5,
+      "predicted_label": false,
+      "pos": {
+        "GATEC_1": [
+          {
+            "llx": 0,
+            "lly": 0,
+            "urx": 100,
+            "ury": 32
+          },
+          {
+            "llx": 200,
+            "lly": 0,
+            "urx": 300,
+            "ury": 33
+          }
+        ]
+      }
+    }
+  ]
+}

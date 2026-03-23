@@ -1,0 +1,84 @@
+{
+  "raw_response": "```json\n{\n  \"examples\": [\n    {\n      \"M3_1\": [\n        {\n          \"llx\": 0,\n          \"lly\": 0,\n          \"urx\": 24,\n          \"ury\": 21\n        }\n      ]\n    },\n    {\n      \"M3_1\": [\n        {\n          \"llx\": 0,\n          \"lly\": 0,\n          \"urx\": 23,\n          \"ury\": 21\n        }\n      ]\n    },\n    {\n      \"M3_1\": [\n        {\n          \"llx\": 0,\n          \"lly\": 0,\n          \"urx\": 24,\n          \"ury\": 20\n        }\n      ]\n    },\n    {\n      \"M3_1\": [\n        {\n          \"llx\": 0,\n          \"lly\": 0,\n          \"urx\": 504,\n          \"ury\": 1\n        }\n      ]\n    },\n    {\n      \"M3_1\": [\n        {\n          \"llx\": 0,\n          \"lly\": 0,\n          \"urx\": 503,\n          \"ury\": 1\n        }\n      ]\n    },\n    {\n      \"M3_1\": [\n        {\n          \"llx\": 0,\n          \"lly\": 0,\n          \"urx\": 22,\n          \"ury\": 22\n        }\n      ]\n    },\n    {\n      \"M3_1\": [\n        {\n          \"llx\": 0,\n          \"lly\": 0,\n          \"urx\": 21,\n          \"ury\": 23\n        }\n      ]\n    }\n  ],\n  \"labels\": [\n    true,\n    false,\n    false,\n    true,\n    false,\n    true,\n    false\n  ]\n}\n```",
+  "examples": [
+    {
+      "M3_1": [
+        {
+          "llx": 0,
+          "lly": 0,
+          "urx": 24,
+          "ury": 21
+        }
+      ]
+    },
+    {
+      "M3_1": [
+        {
+          "llx": 0,
+          "lly": 0,
+          "urx": 23,
+          "ury": 21
+        }
+      ]
+    },
+    {
+      "M3_1": [
+        {
+          "llx": 0,
+          "lly": 0,
+          "urx": 24,
+          "ury": 20
+        }
+      ]
+    },
+    {
+      "M3_1": [
+        {
+          "llx": 0,
+          "lly": 0,
+          "urx": 504,
+          "ury": 1
+        }
+      ]
+    },
+    {
+      "M3_1": [
+        {
+          "llx": 0,
+          "lly": 0,
+          "urx": 503,
+          "ury": 1
+        }
+      ]
+    },
+    {
+      "M3_1": [
+        {
+          "llx": 0,
+          "lly": 0,
+          "urx": 22,
+          "ury": 22
+        }
+      ]
+    },
+    {
+      "M3_1": [
+        {
+          "llx": 0,
+          "lly": 0,
+          "urx": 21,
+          "ury": 23
+        }
+      ]
+    }
+  ],
+  "labels": [
+    true,
+    false,
+    false,
+    true,
+    false,
+    true,
+    false
+  ]
+}

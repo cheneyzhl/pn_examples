@@ -1,0 +1,139 @@
+{
+  "raw_response": "```json\n{\n  \"examples\": [\n    {\n      \"LISD_1\": [\n        {\n          \"llx\": 0,\n          \"lly\": 0,\n          \"urx\": 36,\n          \"ury\": 18\n        }\n      ]\n    },\n    {\n      \"LISD_1\": [\n        {\n          \"llx\": 0,\n          \"lly\": 0,\n          \"urx\": 35,\n          \"ury\": 18\n        }\n      ]\n    },\n    {\n      \"LISD_1\": [\n        {\n          \"llx\": 0,\n          \"lly\": 0,\n          \"urx\": 18,\n          \"ury\": 36\n        }\n      ]\n    },\n    {\n      \"LISD_1\": [\n        {\n          \"llx\": 0,\n          \"lly\": 0,\n          \"urx\": 18,\n          \"ury\": 35\n        }\n      ]\n    },\n    {\n      \"LISD_1\": [\n        {\n          \"llx\": 0,\n          \"lly\": 0,\n          \"urx\": 27,\n          \"ury\": 24\n        }\n      ]\n    },\n    {\n      \"LISD_1\": [\n        {\n          \"llx\": 0,\n          \"lly\": 0,\n          \"urx\": 26,\n          \"ury\": 24\n        }\n      ]\n    },\n    {\n      \"LISD_1\": [\n        {\n          \"llx\": 0,\n          \"lly\": 0,\n          \"urx\": 24,\n          \"ury\": 27\n        }\n      ]\n    },\n    {\n      \"LISD_1\": [\n        {\n          \"llx\": 0,\n          \"lly\": 0,\n          \"urx\": 24,\n          \"ury\": 26\n        }\n      ]\n    },\n    {\n      \"LISD_1\": [\n        {\n          \"llx\": 0,\n          \"lly\": 0,\n          \"urx\": 648,\n          \"ury\": 1\n        }\n      ]\n    },\n    {\n      \"LISD_1\": [\n        {\n          \"llx\": 0,\n          \"lly\": 0,\n          \"urx\": 647,\n          \"ury\": 1\n        }\n      ]\n    },\n    {\n      \"LISD_1\": [\n        {\n          \"llx\": 0,\n          \"lly\": 0,\n          \"urx\": 1,\n          \"ury\": 648\n        }\n      ]\n    },\n    {\n      \"LISD_1\": [\n        {\n          \"llx\": 0,\n          \"lly\": 0,\n          \"urx\": 1,\n          \"ury\": 647\n        }\n      ]\n    }\n  ],\n  \"labels\": [\n    true,\n    false,\n    true,\n    false,\n    true,\n    false,\n    true,\n    false,\n    true,\n    false,\n    true,\n    false\n  ]\n}\n```",
+  "examples": [
+    {
+      "LISD_1": [
+        {
+          "llx": 0,
+          "lly": 0,
+          "urx": 36,
+          "ury": 18
+        }
+      ]
+    },
+    {
+      "LISD_1": [
+        {
+          "llx": 0,
+          "lly": 0,
+          "urx": 35,
+          "ury": 18
+        }
+      ]
+    },
+    {
+      "LISD_1": [
+        {
+          "llx": 0,
+          "lly": 0,
+          "urx": 18,
+          "ury": 36
+        }
+      ]
+    },
+    {
+      "LISD_1": [
+        {
+          "llx": 0,
+          "lly": 0,
+          "urx": 18,
+          "ury": 35
+        }
+      ]
+    },
+    {
+      "LISD_1": [
+        {
+          "llx": 0,
+          "lly": 0,
+          "urx": 27,
+          "ury": 24
+        }
+      ]
+    },
+    {
+      "LISD_1": [
+        {
+          "llx": 0,
+          "lly": 0,
+          "urx": 26,
+          "ury": 24
+        }
+      ]
+    },
+    {
+      "LISD_1": [
+        {
+          "llx": 0,
+          "lly": 0,
+          "urx": 24,
+          "ury": 27
+        }
+      ]
+    },
+    {
+      "LISD_1": [
+        {
+          "llx": 0,
+          "lly": 0,
+          "urx": 24,
+          "ury": 26
+        }
+      ]
+    },
+    {
+      "LISD_1": [
+        {
+          "llx": 0,
+          "lly": 0,
+          "urx": 648,
+          "ury": 1
+        }
+      ]
+    },
+    {
+      "LISD_1": [
+        {
+          "llx": 0,
+          "lly": 0,
+          "urx": 647,
+          "ury": 1
+        }
+      ]
+    },
+    {
+      "LISD_1": [
+        {
+          "llx": 0,
+          "lly": 0,
+          "urx": 1,
+          "ury": 648
+        }
+      ]
+    },
+    {
+      "LISD_1": [
+        {
+          "llx": 0,
+          "lly": 0,
+          "urx": 1,
+          "ury": 647
+        }
+      ]
+    }
+  ],
+  "labels": [
+    true,
+    false,
+    true,
+    false,
+    true,
+    false,
+    true,
+    false,
+    true,
+    false,
+    true,
+    false
+  ]
+}

@@ -1,0 +1,51 @@
+{
+  "raw_response": "### 规则分析\n\n给定的DRC规则是：\"maximum length of MINT2 for wires with min width 28nm is 1.8um\"。\n\n这意味着：\n1. **层名**：MINT2（可以是MINT2A或MINT2B，但规则没有区分，我们假设是MINT2_1）\n2. **条件变量**：\n   - 线宽（width）：必须 ≥ 28nm\n   - 线长（length）：必须 ≤ 1.8um（即1800nm）\n\n### 布尔条件\n1. 宽度条件：width ≥ 28nm\n2. 长度条件：length ≤ 1800nm\n\n因此，所有可能的组合（2个布尔条件，每个条件有满足/不满足两种情况）：\n1. 宽度满足（≥28nm），长度满足（≤1800nm）→ 正例\n2. 宽度满足（≥28nm），长度不满足（>1800nm）→ 反例\n3. 宽度不满足（<28nm），长度满足（≤1800nm）→ 反例\n4. 宽度不满足（<28nm），长度不满足（>1800nm）→ 反例\n\n### 正例和反例设计\n对于每种组合，设计一个正例和一个反例。\n\n#### 组合1：宽度满足，长度满足\n- 正例：MINT2_1的宽度=28nm，长度=1800nm\n  - 矩形：{ \"llx\": 0, \"lly\": 0, \"urx\": 28, \"ury\": 1800 }\n  - 自检：width=28nm (≥28nm), length=1800nm (≤1800nm) → 通过\n- 反例：MINT2_1的宽度=28nm，长度=1801nm\n  - 矩形：{ \"llx\": 0, \"lly\": 0, \"urx\": 28, \"ury\": 1801 }\n  - 自检：width=28nm (≥28nm), length=1801nm (>1800nm) → 违规\n\n#### 组合2：宽度满足，长度不满足\n- 正例：MINT2_1的宽度=28nm，长度=1800nm（同组合1正例）\n- 反例：MINT2_1的宽度=28nm，长度=1801nm（同组合1反例）\n\n#### 组合3：宽度不满足，长度满足\n- 正例：MINT2_1的宽度=28nm，长度=1800nm（同组合1正例）\n- 反例：MINT2_1的宽度=27nm，长度=1800nm\n  - 矩形：{ \"llx\": 0, \"lly\": 0, \"urx\": 27, \"ury\": 1800 }\n  - 自检：width=27nm (<28nm), length=1800nm (≤1800nm) → 违规\n\n#### 组合4：宽度不满足，长度不满足\n- 正例：MINT2_1的宽度=28nm，长度=1800nm（同组合1正例）\n- 反例：MINT2_1的宽度=27nm，长度=1801nm\n  - 矩形：{ \"llx\": 0, \"lly\": 0, \"urx\": 27, \"ury\": 1801 }\n  - 自检：width=27nm (<28nm), length=1801nm (>1800nm) → 违规\n\n### 最终JSON输出\n```json\n{\n  \"examples\": [\n    {\n      \"MINT2_1\": [\n        { \"llx\": 0, \"lly\": 0, \"urx\": 28, \"ury\": 1800 }\n      ]\n    },\n    {\n      \"MINT2_1\": [\n        { \"llx\": 0, \"lly\": 0, \"urx\": 28, \"ury\": 1801 }\n      ]\n    },\n    {\n      \"MINT2_1\": [\n        { \"llx\": 0, \"lly\": 0, \"urx\": 27, \"ury\": 1800 }\n      ]\n    },\n    {\n      \"MINT2_1\": [\n        { \"llx\": 0, \"lly\": 0, \"urx\": 27, \"ury\": 1801 }\n      ]\n    }\n  ],\n  \"labels\": [\n    true,\n    false,\n    false,\n    false\n  ]\n}\n```",
+  "examples": [
+    {
+      "MINT2_1": [
+        {
+          "llx": 0,
+          "lly": 0,
+          "urx": 28,
+          "ury": 1800
+        }
+      ]
+    },
+    {
+      "MINT2_1": [
+        {
+          "llx": 0,
+          "lly": 0,
+          "urx": 28,
+          "ury": 1801
+        }
+      ]
+    },
+    {
+      "MINT2_1": [
+        {
+          "llx": 0,
+          "lly": 0,
+          "urx": 27,
+          "ury": 1800
+        }
+      ]
+    },
+    {
+      "MINT2_1": [
+        {
+          "llx": 0,
+          "lly": 0,
+          "urx": 27,
+          "ury": 1801
+        }
+      ]
+    }
+  ],
+  "labels": [
+    true,
+    false,
+    false,
+    false
+  ]
+}

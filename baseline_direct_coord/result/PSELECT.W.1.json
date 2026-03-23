@@ -1,0 +1,81 @@
+{
+  "rule_name": "PSELECT.W.1",
+  "rule_description": "Minimum horizontal width of PSELECT is 108 nm.",
+  "rule_script": "INTERNAL PSELECT_VE < 0.108 OPPOSITE",
+  "calibre_skipped": true,
+  "sample_correct": null,
+  "sample_total": null,
+  "accuracy": null,
+  "details": [
+    {
+      "idx": 0,
+      "predicted_label": true,
+      "pos": {
+        "PSELECT_1": [
+          {
+            "llx": 0,
+            "lly": 0,
+            "urx": 108,
+            "ury": 100
+          }
+        ]
+      }
+    },
+    {
+      "idx": 1,
+      "predicted_label": false,
+      "pos": {
+        "PSELECT_1": [
+          {
+            "llx": 0,
+            "lly": 0,
+            "urx": 107,
+            "ury": 100
+          }
+        ]
+      }
+    },
+    {
+      "idx": 2,
+      "predicted_label": true,
+      "pos": {
+        "PSELECT_1": [
+          {
+            "llx": 0,
+            "lly": 0,
+            "urx": 200,
+            "ury": 100
+          }
+        ]
+      }
+    },
+    {
+      "idx": 3,
+      "predicted_label": true,
+      "pos": {
+        "PSELECT_1": [
+          {
+            "llx": 0,
+            "lly": 0,
+            "urx": 108,
+            "ury": 108
+          }
+        ]
+      }
+    },
+    {
+      "idx": 4,
+      "predicted_label": false,
+      "pos": {
+        "PSELECT_1": [
+          {
+            "llx": 0,
+            "lly": 0,
+            "urx": 107,
+            "ury": 107
+          }
+        ]
+      }
+    }
+  ]
+}

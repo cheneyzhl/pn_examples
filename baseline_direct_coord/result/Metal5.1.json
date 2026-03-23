@@ -1,0 +1,39 @@
+{
+  "rule_name": "Metal5.1",
+  "rule_description": "Minimum width of metal5 = 0.14",
+  "rule_script": "INTERNAL metal5 < 0.14",
+  "calibre_skipped": true,
+  "sample_correct": null,
+  "sample_total": null,
+  "accuracy": null,
+  "details": [
+    {
+      "idx": 0,
+      "predicted_label": true,
+      "pos": {
+        "METAL5_1": [
+          {
+            "llx": 0,
+            "lly": 0,
+            "urx": 140,
+            "ury": 100
+          }
+        ]
+      }
+    },
+    {
+      "idx": 1,
+      "predicted_label": false,
+      "pos": {
+        "METAL5_1": [
+          {
+            "llx": 0,
+            "lly": 0,
+            "urx": 139,
+            "ury": 100
+          }
+        ]
+      }
+    }
+  ]
+}

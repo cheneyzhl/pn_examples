@@ -1,0 +1,67 @@
+{
+  "rule_name": "RULE_M1003B",
+  "rule_description": "maximum length of M1B for wires with min width 28nm is 1.8um",
+  "rule_script": "wide_M1B = M1B with width <= 0.028 \nd = INT wide_M1B <= 1 opposite \nd_p = dfm property wide_M1B d overlap abut also [EC1 = EC(d)] > 1.80 \ncopy d_p",
+  "calibre_skipped": true,
+  "sample_correct": null,
+  "sample_total": null,
+  "accuracy": null,
+  "details": [
+    {
+      "idx": 0,
+      "predicted_label": true,
+      "pos": {
+        "M1B_1": [
+          {
+            "llx": 0,
+            "lly": 0,
+            "urx": 1800,
+            "ury": 28
+          }
+        ]
+      }
+    },
+    {
+      "idx": 1,
+      "predicted_label": false,
+      "pos": {
+        "M1B_1": [
+          {
+            "llx": 0,
+            "lly": 0,
+            "urx": 1801,
+            "ury": 28
+          }
+        ]
+      }
+    },
+    {
+      "idx": 2,
+      "predicted_label": false,
+      "pos": {
+        "M1B_1": [
+          {
+            "llx": 0,
+            "lly": 0,
+            "urx": 1800,
+            "ury": 27
+          }
+        ]
+      }
+    },
+    {
+      "idx": 3,
+      "predicted_label": true,
+      "pos": {
+        "M1B_1": [
+          {
+            "llx": 0,
+            "lly": 0,
+            "urx": 1800,
+            "ury": 29
+          }
+        ]
+      }
+    }
+  ]
+}

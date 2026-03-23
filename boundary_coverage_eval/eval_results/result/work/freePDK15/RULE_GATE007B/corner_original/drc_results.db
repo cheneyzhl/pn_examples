@@ -1,0 +1,10 @@
+TOPCELL 5000
+RULE_GATE007B
+2 2 3 Mar 22 18:12:48 2026                     
+Rule File Pathname: /share/home/zenghuanlong/pn_examples/boundary_coverage_eval/eval_results/result/work/freePDK15/RULE_GATE007B/corner_original/example_1.rul
+RULE_GATE007B
+Minimum length of Gate B (vertical edge, gate C ignored) 200nm
+e 1 1
+0 0 0 995
+e 2 1
+250 0 250 995

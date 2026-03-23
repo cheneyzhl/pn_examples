@@ -1,0 +1,99 @@
+{
+  "rule_name": "RULE_MINT2002A",
+  "rule_description": "One of two edges connected to the same vertex must have at least one of 56nm",
+  "rule_script": "x = CONVEX EDGE MINT2A ANGLE1==90 ANGLE2==90 WITH LENGTH < 0.056 \nINT x < 0.001 ABUT",
+  "calibre_skipped": true,
+  "sample_correct": null,
+  "sample_total": null,
+  "accuracy": null,
+  "details": [
+    {
+      "idx": 0,
+      "predicted_label": true,
+      "pos": {
+        "M1_1": [
+          {
+            "llx": 0,
+            "lly": 0,
+            "urx": 56,
+            "ury": 56
+          }
+        ],
+        "M1_2": [
+          {
+            "llx": 56,
+            "lly": 56,
+            "urx": 112,
+            "ury": 0
+          }
+        ]
+      }
+    },
+    {
+      "idx": 1,
+      "predicted_label": true,
+      "pos": {
+        "M1_1": [
+          {
+            "llx": 0,
+            "lly": 0,
+            "urx": 56,
+            "ury": 56
+          }
+        ],
+        "M1_2": [
+          {
+            "llx": 56,
+            "lly": 56,
+            "urx": 111,
+            "ury": 0
+          }
+        ]
+      }
+    },
+    {
+      "idx": 2,
+      "predicted_label": true,
+      "pos": {
+        "M1_1": [
+          {
+            "llx": 0,
+            "lly": 0,
+            "urx": 55,
+            "ury": 55
+          }
+        ],
+        "M1_2": [
+          {
+            "llx": 55,
+            "lly": 55,
+            "urx": 111,
+            "ury": 0
+          }
+        ]
+      }
+    },
+    {
+      "idx": 3,
+      "predicted_label": false,
+      "pos": {
+        "M1_1": [
+          {
+            "llx": 0,
+            "lly": 0,
+            "urx": 55,
+            "ury": 55
+          }
+        ],
+        "M1_2": [
+          {
+            "llx": 55,
+            "lly": 55,
+            "urx": 110,
+            "ury": 0
+          }
+        ]
+      }
+    }
+  ]
+}

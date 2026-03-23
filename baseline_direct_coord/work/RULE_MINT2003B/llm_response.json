@@ -1,0 +1,51 @@
+{
+  "raw_response": "```json\n{\n  \"examples\": [\n    {\n      \"MINT2B_1\": [\n        {\n          \"llx\": 0,\n          \"lly\": 0,\n          \"urx\": 1800,\n          \"ury\": 28\n        }\n      ]\n    },\n    {\n      \"MINT2B_1\": [\n        {\n          \"llx\": 0,\n          \"lly\": 0,\n          \"urx\": 1801,\n          \"ury\": 28\n        }\n      ]\n    },\n    {\n      \"MINT2B_1\": [\n        {\n          \"llx\": 0,\n          \"lly\": 0,\n          \"urx\": 1800,\n          \"ury\": 27\n        }\n      ]\n    },\n    {\n      \"MINT2B_1\": [\n        {\n          \"llx\": 0,\n          \"lly\": 0,\n          \"urx\": 1800,\n          \"ury\": 29\n        }\n      ]\n    }\n  ],\n  \"labels\": [\n    true,\n    false,\n    false,\n    true\n  ]\n}\n```",
+  "examples": [
+    {
+      "MINT2B_1": [
+        {
+          "llx": 0,
+          "lly": 0,
+          "urx": 1800,
+          "ury": 28
+        }
+      ]
+    },
+    {
+      "MINT2B_1": [
+        {
+          "llx": 0,
+          "lly": 0,
+          "urx": 1801,
+          "ury": 28
+        }
+      ]
+    },
+    {
+      "MINT2B_1": [
+        {
+          "llx": 0,
+          "lly": 0,
+          "urx": 1800,
+          "ury": 27
+        }
+      ]
+    },
+    {
+      "MINT2B_1": [
+        {
+          "llx": 0,
+          "lly": 0,
+          "urx": 1800,
+          "ury": 29
+        }
+      ]
+    }
+  ],
+  "labels": [
+    true,
+    false,
+    false,
+    true
+  ]
+}

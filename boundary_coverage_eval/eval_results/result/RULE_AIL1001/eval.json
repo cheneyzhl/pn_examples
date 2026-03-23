@@ -1,0 +1,289 @@
+{
+  "rule_name": "RULE_AIL1001",
+  "rule_description": "Horizontal Width of AIL1 is 28nm",
+  "rule_script": "AIL1_VERTICAL_EDGES = AIL1 ANGLE == 90 \nINTERNAL AIL1_VERTICAL_EDGES < 0.028",
+  "perturbed_scripts": {
+    "corner_000": "AIL1_VERTICAL_EDGES = AIL1 ANGLE == 90\nINTERNAL AIL1_VERTICAL_EDGES < 0.027\n",
+    "corner_001": "AIL1_VERTICAL_EDGES = AIL1 ANGLE == 90\nINTERNAL AIL1_VERTICAL_EDGES < 0.029\n",
+    "corner_original": "AIL1_VERTICAL_EDGES = AIL1 ANGLE == 90 \nINTERNAL AIL1_VERTICAL_EDGES < 0.028\n"
+  },
+  "data_name": "freePDK15",
+  "judge_mode": "match",
+  "corner_count": 3,
+  "sample_count": 4,
+  "all_corners_match": false,
+  "all_corners_detect": false,
+  "all_corners_ok": true,
+  "per_corner": [
+    {
+      "corner_id": "corner_000",
+      "script_expected_correct": false,
+      "script_predicted_correct": false,
+      "corner_any_mismatch": true,
+      "corner_all_match": false,
+      "corner_ok": true,
+      "samples": [
+        {
+          "idx": 0,
+          "predicted_label": true,
+          "calibre_label": true,
+          "match": true,
+          "error": null,
+          "pos": {
+            "AIL1_1": [
+              {
+                "llx": 0,
+                "lly": 0,
+                "urx": 28,
+                "ury": 100
+              }
+            ]
+          }
+        },
+        {
+          "idx": 1,
+          "predicted_label": false,
+          "calibre_label": true,
+          "match": false,
+          "error": null,
+          "pos": {
+            "AIL1_1": [
+              {
+                "llx": 0,
+                "lly": 0,
+                "urx": 27,
+                "ury": 100
+              }
+            ]
+          }
+        },
+        {
+          "idx": 2,
+          "predicted_label": true,
+          "calibre_label": true,
+          "match": true,
+          "error": null,
+          "pos": {
+            "AIL1_1": [
+              {
+                "llx": 0,
+                "lly": 0,
+                "urx": 28,
+                "ury": 100
+              },
+              {
+                "llx": 30,
+                "lly": 0,
+                "urx": 58,
+                "ury": 100
+              }
+            ]
+          }
+        },
+        {
+          "idx": 3,
+          "predicted_label": false,
+          "calibre_label": false,
+          "match": true,
+          "error": null,
+          "pos": {
+            "AIL1_1": [
+              {
+                "llx": 0,
+                "lly": 0,
+                "urx": 28,
+                "ury": 100
+              },
+              {
+                "llx": 29,
+                "lly": 0,
+                "urx": 55,
+                "ury": 100
+              }
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "corner_id": "corner_001",
+      "script_expected_correct": false,
+      "script_predicted_correct": false,
+      "corner_any_mismatch": true,
+      "corner_all_match": false,
+      "corner_ok": true,
+      "samples": [
+        {
+          "idx": 0,
+          "predicted_label": true,
+          "calibre_label": false,
+          "match": false,
+          "error": null,
+          "pos": {
+            "AIL1_1": [
+              {
+                "llx": 0,
+                "lly": 0,
+                "urx": 28,
+                "ury": 100
+              }
+            ]
+          }
+        },
+        {
+          "idx": 1,
+          "predicted_label": false,
+          "calibre_label": false,
+          "match": true,
+          "error": null,
+          "pos": {
+            "AIL1_1": [
+              {
+                "llx": 0,
+                "lly": 0,
+                "urx": 27,
+                "ury": 100
+              }
+            ]
+          }
+        },
+        {
+          "idx": 2,
+          "predicted_label": true,
+          "calibre_label": false,
+          "match": false,
+          "error": null,
+          "pos": {
+            "AIL1_1": [
+              {
+                "llx": 0,
+                "lly": 0,
+                "urx": 28,
+                "ury": 100
+              },
+              {
+                "llx": 30,
+                "lly": 0,
+                "urx": 58,
+                "ury": 100
+              }
+            ]
+          }
+        },
+        {
+          "idx": 3,
+          "predicted_label": false,
+          "calibre_label": false,
+          "match": true,
+          "error": null,
+          "pos": {
+            "AIL1_1": [
+              {
+                "llx": 0,
+                "lly": 0,
+                "urx": 28,
+                "ury": 100
+              },
+              {
+                "llx": 29,
+                "lly": 0,
+                "urx": 55,
+                "ury": 100
+              }
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "corner_id": "corner_original",
+      "script_expected_correct": true,
+      "script_predicted_correct": true,
+      "corner_any_mismatch": false,
+      "corner_all_match": true,
+      "corner_ok": true,
+      "samples": [
+        {
+          "idx": 0,
+          "predicted_label": true,
+          "calibre_label": true,
+          "match": true,
+          "error": null,
+          "pos": {
+            "AIL1_1": [
+              {
+                "llx": 0,
+                "lly": 0,
+                "urx": 28,
+                "ury": 100
+              }
+            ]
+          }
+        },
+        {
+          "idx": 1,
+          "predicted_label": false,
+          "calibre_label": false,
+          "match": true,
+          "error": null,
+          "pos": {
+            "AIL1_1": [
+              {
+                "llx": 0,
+                "lly": 0,
+                "urx": 27,
+                "ury": 100
+              }
+            ]
+          }
+        },
+        {
+          "idx": 2,
+          "predicted_label": true,
+          "calibre_label": true,
+          "match": true,
+          "error": null,
+          "pos": {
+            "AIL1_1": [
+              {
+                "llx": 0,
+                "lly": 0,
+                "urx": 28,
+                "ury": 100
+              },
+              {
+                "llx": 30,
+                "lly": 0,
+                "urx": 58,
+                "ury": 100
+              }
+            ]
+          }
+        },
+        {
+          "idx": 3,
+          "predicted_label": false,
+          "calibre_label": false,
+          "match": true,
+          "error": null,
+          "pos": {
+            "AIL1_1": [
+              {
+                "llx": 0,
+                "lly": 0,
+                "urx": 28,
+                "ury": 100
+              },
+              {
+                "llx": 29,
+                "lly": 0,
+                "urx": 55,
+                "ury": 100
+              }
+            ]
+          }
+        }
+      ]
+    }
+  ]
+}

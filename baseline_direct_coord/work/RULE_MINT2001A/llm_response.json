@@ -1,0 +1,29 @@
+{
+  "raw_response": "### 规则分析\n\n规则描述：`MINT2A width > 28nm`  \n- 这是一个简单的宽度检查规则，仅涉及 `MINT2A` 层的宽度。\n- 条件变量：`MINT2A` 的宽度（`width`）。\n- 布尔条件：`width > 28`（宽度必须严格大于 28 nm）。\n- 由于只有一个条件变量，只有两种情况：\n  1. `width > 28`（正例）\n  2. `width <= 28`（反例）\n\n### 正例和反例设计\n- 正例：`MINT2A` 的宽度刚好大于 28 nm（例如 29 nm）。\n- 反例：`MINT2A` 的宽度刚好小于或等于 28 nm（例如 28 nm 或 27 nm）。\n\n### 自检\n- 正例：宽度 = 29 nm > 28 nm，满足规则。\n- 反例：宽度 = 28 nm <= 28 nm，违反规则。\n\n### JSON 输出\n```json\n{\n  \"examples\": [\n    {\n      \"MINT2A_1\": [\n        { \"llx\": 0, \"lly\": 0, \"urx\": 29, \"ury\": 100 }\n      ]\n    },\n    {\n      \"MINT2A_1\": [\n        { \"llx\": 0, \"lly\": 0, \"urx\": 28, \"ury\": 100 }\n      ]\n    }\n  ],\n  \"labels\": [true, false]\n}\n```\n\n### 说明\n1. 正例：`MINT2A_1` 的宽度为 29 nm（`urx - llx = 29`），满足 `width > 28`。\n2. 反例：`MINT2A_1` 的宽度为 28 nm（`urx - llx = 28`），违反 `width > 28`。\n\n### 其他可能的变体\n如果需要更复杂的例子（例如多矩形或多层），可以进一步扩展，但当前规则仅涉及 `MINT2A` 的宽度，因此简单矩形足以覆盖所有边界情况。",
+  "examples": [
+    {
+      "MINT2A_1": [
+        {
+          "llx": 0,
+          "lly": 0,
+          "urx": 29,
+          "ury": 100
+        }
+      ]
+    },
+    {
+      "MINT2A_1": [
+        {
+          "llx": 0,
+          "lly": 0,
+          "urx": 28,
+          "ury": 100
+        }
+      ]
+    }
+  ],
+  "labels": [
+    true,
+    false
+  ]
+}

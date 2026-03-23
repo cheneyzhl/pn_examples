@@ -1,0 +1,103 @@
+{
+  "per_rule": [
+    {
+      "rule_name": "RULE_M1002",
+      "rule_description": "One of two edges connected to the same vertex must have at least one of 56nm",
+      "rule_script": "x = CONVEX EDGE M1 ANGLE1==90 ANGLE2==90 WITH LENGTH < 0.056 \nINT x < 0.001 ABUT",
+      "calibre_skipped": true,
+      "sample_correct": null,
+      "sample_total": null,
+      "accuracy": null,
+      "details": [
+        {
+          "idx": 0,
+          "predicted_label": true,
+          "pos": {
+            "M1_1": [
+              {
+                "llx": 0,
+                "lly": -5,
+                "urx": 56,
+                "ury": 5
+              }
+            ],
+            "M1_2": [
+              {
+                "llx": -5,
+                "lly": 0,
+                "urx": 5,
+                "ury": 56
+              }
+            ]
+          }
+        },
+        {
+          "idx": 1,
+          "predicted_label": true,
+          "pos": {
+            "M1_1": [
+              {
+                "llx": 0,
+                "lly": -5,
+                "urx": 56,
+                "ury": 5
+              }
+            ],
+            "M1_2": [
+              {
+                "llx": -5,
+                "lly": 0,
+                "urx": 5,
+                "ury": 55
+              }
+            ]
+          }
+        },
+        {
+          "idx": 2,
+          "predicted_label": true,
+          "pos": {
+            "M1_1": [
+              {
+                "llx": 0,
+                "lly": -5,
+                "urx": 55,
+                "ury": 5
+              }
+            ],
+            "M1_2": [
+              {
+                "llx": -5,
+                "lly": 0,
+                "urx": 5,
+                "ury": 56
+              }
+            ]
+          }
+        },
+        {
+          "idx": 3,
+          "predicted_label": false,
+          "pos": {
+            "M1_1": [
+              {
+                "llx": 0,
+                "lly": -5,
+                "urx": 55,
+                "ury": 5
+              }
+            ],
+            "M1_2": [
+              {
+                "llx": -5,
+                "lly": 0,
+                "urx": 5,
+                "ury": 55
+              }
+            ]
+          }
+        }
+      ]
+    }
+  ]
+}

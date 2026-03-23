@@ -1,0 +1,39 @@
+{
+  "rule_name": "SLVT.W.2",
+  "rule_description": "Minimum vertical width of SLVT is 54 nm.",
+  "rule_script": "INTERNAL SLVT_HE < 0.054 OPPOSITE",
+  "calibre_skipped": true,
+  "sample_correct": null,
+  "sample_total": null,
+  "accuracy": null,
+  "details": [
+    {
+      "idx": 0,
+      "predicted_label": true,
+      "pos": {
+        "SLVT_1": [
+          {
+            "llx": 0,
+            "lly": 0,
+            "urx": 100,
+            "ury": 54
+          }
+        ]
+      }
+    },
+    {
+      "idx": 1,
+      "predicted_label": false,
+      "pos": {
+        "SLVT_1": [
+          {
+            "llx": 0,
+            "lly": 0,
+            "urx": 100,
+            "ury": 53
+          }
+        ]
+      }
+    }
+  ]
+}

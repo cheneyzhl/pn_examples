@@ -1,0 +1,39 @@
+{
+  "rule_name": "RULE_MINT3001",
+  "rule_description": "MINT3 width > 28nm",
+  "rule_script": "INTERNAL MINT3 < 0.028",
+  "calibre_skipped": true,
+  "sample_correct": null,
+  "sample_total": null,
+  "accuracy": null,
+  "details": [
+    {
+      "idx": 0,
+      "predicted_label": true,
+      "pos": {
+        "MINT3_1": [
+          {
+            "llx": 0,
+            "lly": 0,
+            "urx": 29,
+            "ury": 100
+          }
+        ]
+      }
+    },
+    {
+      "idx": 1,
+      "predicted_label": false,
+      "pos": {
+        "MINT3_1": [
+          {
+            "llx": 0,
+            "lly": 0,
+            "urx": 28,
+            "ury": 100
+          }
+        ]
+      }
+    }
+  ]
+}

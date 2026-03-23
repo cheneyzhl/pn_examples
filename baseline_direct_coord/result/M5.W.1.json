@@ -1,0 +1,107 @@
+{
+  "rule_name": "M5.W.1",
+  "rule_description": "Minimum horizontal width of M5 is 24 nm.",
+  "rule_script": "INTERNAL M5_VE < VAR_M5_1X",
+  "calibre_skipped": true,
+  "sample_correct": null,
+  "sample_total": null,
+  "accuracy": null,
+  "details": [
+    {
+      "idx": 0,
+      "predicted_label": true,
+      "pos": {
+        "M5_1": [
+          {
+            "llx": 0,
+            "lly": 0,
+            "urx": 24,
+            "ury": 100
+          }
+        ]
+      }
+    },
+    {
+      "idx": 1,
+      "predicted_label": false,
+      "pos": {
+        "M5_1": [
+          {
+            "llx": 0,
+            "lly": 0,
+            "urx": 23,
+            "ury": 100
+          }
+        ]
+      }
+    },
+    {
+      "idx": 2,
+      "predicted_label": true,
+      "pos": {
+        "M5_1": [
+          {
+            "llx": 0,
+            "lly": 0,
+            "urx": 24,
+            "ury": 24
+          }
+        ]
+      }
+    },
+    {
+      "idx": 3,
+      "predicted_label": false,
+      "pos": {
+        "M5_1": [
+          {
+            "llx": 0,
+            "lly": 0,
+            "urx": 23,
+            "ury": 23
+          }
+        ]
+      }
+    },
+    {
+      "idx": 4,
+      "predicted_label": true,
+      "pos": {
+        "M5_1": [
+          {
+            "llx": 0,
+            "lly": 0,
+            "urx": 24,
+            "ury": 24
+          },
+          {
+            "llx": 30,
+            "lly": 0,
+            "urx": 54,
+            "ury": 24
+          }
+        ]
+      }
+    },
+    {
+      "idx": 5,
+      "predicted_label": false,
+      "pos": {
+        "M5_1": [
+          {
+            "llx": 0,
+            "lly": 0,
+            "urx": 24,
+            "ury": 24
+          },
+          {
+            "llx": 30,
+            "lly": 0,
+            "urx": 53,
+            "ury": 24
+          }
+        ]
+      }
+    }
+  ]
+}

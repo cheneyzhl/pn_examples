@@ -1,0 +1,109 @@
+======== 规则: RULE_GATE002Ca ========
+用户问题
+规则描述：Minimum horizontal length of GATEC is 128nm shape is oriented horizonatally
+
+请根据上述 DRC 规则，系统性地生成覆盖所有边界情况（corner case）的 layout 正例与反例的矩形坐标。
+正例：满足该规则的 layout；反例：违反该规则的 layout。
+要求：先在心中分析出规则中涉及的所有条件变量，再将这些条件视为若干布尔变量，枚举它们的所有组合；对于每一种组合，至少给出 1 个恰好满足条件边界的正例和 1 个恰好违反边界的反例。
+在输出 JSON 前，请对每个正/反例重新用“单位约定 + 阈值判定”做自检，确保满足：正例=通过域，反例=违规域。自检失败则不要输出。请输出 JSON，且仅包含以下两个键：\n"examples": 数组，每个元素为一个 layout 例子。每个例子是一个对象，键为层名（带序号，如 NW_1, NW_2），值为矩形列表；每个矩形为 { \"llx\": 整数, \"lly\": 整数, \"urx\": 整数, \"ury\": 整数 }。\n"labels": 数组，与 examples 一一对应。true 表示该 layout 应通过 DRC（正例），false 表示应违反 DRC（反例）。\n本规则涉及的层名（不含序号）为: ['NW', 'ACT', 'VTH', 'VTL', 'THKOX', 'NIM', 'PIM', 'GATEA', 'GATEB', 'GATEC', 'GATEAB', 'AIL1', 'AIL2', 'GIL', 'V0', 'M1A', 'M1B', 'V1', 'MINT1A', 'MINT2A', 'MINT3A', 'MINT4A', 'MINT5A', 'MINT1B', 'MINT2B', 'MINT3B', 'MINT4B', 'MINT5B', 'VINT1', 'VINT2', 'VINT3', 'VINT4', 'MSMG1', 'MSMG2', 'MSMG3', 'MSMG4', 'MSMG5', 'VSMG1', 'VSMG2', 'VSMG3', 'VSMG4', 'VSMG5', 'MG1', 'MG2', 'VG1', 'RECTV0', 'RECTV1', 'NCONT', 'VINT5', 'M1', 'MINT1', 'MINT2', 'MINT3', 'MINT4', 'MINT5', 'PRBOUNDARY']。层名格式为 层名_序号，例如 NW_1, NW_2。\n坐标单位约定（必须遵守，避免单位错误）：你给出的 llx/lly/urx/ury 的数值单位是 nm（1 coordinate unit = 1 nm）。\n因此：长度（um）= (x_nm 或 y_nm) * 1e-3；面积（um^2）= (宽_nm * 高_nm) * 1e-6。\n请特别关注边界 / corner case：对于规则中的每一个条件变量（例如宽度、间距、面积等阈值条件），先分析有哪些布尔条件（如 >=T / >T / ==T / <T 等），再枚举这些条件的所有组合（若有 3 个独立条件，则有 2^3=8 种组合）。对于每一种组合，请至少给出 1 个恰好满足所有条件的正例（刚好通过边界），以及 1 个恰好违反该组合中至少一个关键条件的反例（刚好不通过）。
+
+大模型回答
+### 规则分析
+
+给定的DRC规则是："Minimum horizontal length of GATEC is 128nm shape is oriented horizontally"。
+
+这意味着：
+1. **层**：GATEC（GATEC_1, GATEC_2, ...）
+2. **条件**：
+   - 矩形的**水平长度（width）**必须 >= 128 nm。
+   - 矩形必须是**水平方向**的（即 width >= height）。
+
+### 条件变量
+1. 水平长度（width）：
+   - `width >= 128 nm`（满足）
+   - `width < 128 nm`（违反）
+2. 方向：
+   - 水平方向（width >= height）（满足）
+   - 垂直方向（width < height）（违反）
+
+### 组合枚举
+共有2个条件变量，每个变量有2种状态，因此共有4种组合：
+
+1. `width >= 128 nm` 且 `width >= height`（满足规则）
+2. `width >= 128 nm` 且 `width < height`（违反方向）
+3. `width < 128 nm` 且 `width >= height`（违反长度）
+4. `width < 128 nm` 且 `width < height`（违反长度和方向）
+
+### 正例和反例设计
+对于每种组合，设计一个正例和一个反例：
+
+#### 组合1：`width >= 128 nm` 且 `width >= height`（满足规则）
+- 正例：GATEC_1的矩形宽度=128 nm，高度=64 nm（刚好满足长度和方向）。
+- 反例：无（因为这是满足规则的组合，反例属于其他组合）。
+
+#### 组合2：`width >= 128 nm` 且 `width < height`（违反方向）
+- 正例：无（因为方向违反）。
+- 反例：GATEC_1的矩形宽度=128 nm，高度=129 nm（满足长度但方向违反）。
+
+#### 组合3：`width < 128 nm` 且 `width >= height`（违反长度）
+- 正例：无（因为长度违反）。
+- 反例：GATEC_1的矩形宽度=127 nm，高度=64 nm（方向满足但长度违反）。
+
+#### 组合4：`width < 128 nm` 且 `width < height`（违反长度和方向）
+- 正例：无（因为长度和方向都违反）。
+- 反例：GATEC_1的矩形宽度=127 nm，高度=128 nm（长度和方向都违反）。
+
+### 最终例子
+从组合1、2、4生成正例和反例（组合3的反例与组合4类似，可以合并）：
+
+#### 正例（组合1）：
+- GATEC_1: { "llx": 0, "lly": 0, "urx": 128, "ury": 64 }  
+  （width=128 nm >= 128 nm, height=64 nm <= width，满足）
+
+#### 反例1（组合2）：
+- GATEC_1: { "llx": 0, "lly": 0, "urx": 128, "ury": 129 }  
+  （width=128 nm >= 128 nm, height=129 nm > width，方向违反）
+
+#### 反例2（组合3）：
+- GATEC_1: { "llx": 0, "lly": 0, "urx": 127, "ury": 64 }  
+  （width=127 nm < 128 nm, height=64 nm <= width，长度违反）
+
+#### 反例3（组合4）：
+- GATEC_1: { "llx": 0, "lly": 0, "urx": 127, "ury": 128 }  
+  （width=127 nm < 128 nm, height=128 nm > width，长度和方向违反）
+
+### 自检
+- 正例：width=128 >= 128, height=64 <= 128 → 通过。
+- 反例1：width=128 >= 128, height=129 > 128 → 方向违反。
+- 反例2：width=127 < 128, height=64 <= 127 → 长度违反。
+- 反例3：width=127 < 128, height=128 > 127 → 长度和方向违反。
+
+### JSON输出
+```json
+{
+  "examples": [
+    {
+      "GATEC_1": [
+        { "llx": 0, "lly": 0, "urx": 128, "ury": 64 }
+      ]
+    },
+    {
+      "GATEC_1": [
+        { "llx": 0, "lly": 0, "urx": 128, "ury": 129 }
+      ]
+    },
+    {
+      "GATEC_1": [
+        { "llx": 0, "lly": 0, "urx": 127, "ury": 64 }
+      ]
+    },
+    {
+      "GATEC_1": [
+        { "llx": 0, "lly": 0, "urx": 127, "ury": 128 }
+      ]
+    }
+  ],
+  "labels": [true, false, false, false]
+}
+```
+

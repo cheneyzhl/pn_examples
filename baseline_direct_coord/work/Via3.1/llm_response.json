@@ -1,0 +1,78 @@
+{
+  "raw_response": "```json\n{\n  \"examples\": [\n    {\n      \"VIA3_1\": [\n        {\n          \"llx\": 0,\n          \"lly\": 0,\n          \"urx\": 70,\n          \"ury\": 70\n        }\n      ]\n    },\n    {\n      \"VIA3_1\": [\n        {\n          \"llx\": 0,\n          \"lly\": 0,\n          \"urx\": 69,\n          \"ury\": 70\n        }\n      ]\n    },\n    {\n      \"VIA3_1\": [\n        {\n          \"llx\": 0,\n          \"lly\": 0,\n          \"urx\": 70,\n          \"ury\": 69\n        }\n      ]\n    },\n    {\n      \"VIA3_1\": [\n        {\n          \"llx\": 0,\n          \"lly\": 0,\n          \"urx\": 70,\n          \"ury\": 70\n        }\n      ],\n      \"VIA3_2\": [\n        {\n          \"llx\": 100,\n          \"lly\": 0,\n          \"urx\": 170,\n          \"ury\": 70\n        }\n      ]\n    },\n    {\n      \"VIA3_1\": [\n        {\n          \"llx\": 0,\n          \"lly\": 0,\n          \"urx\": 70,\n          \"ury\": 70\n        }\n      ],\n      \"VIA3_2\": [\n        {\n          \"llx\": 100,\n          \"lly\": 0,\n          \"urx\": 169,\n          \"ury\": 70\n        }\n      ]\n    }\n  ],\n  \"labels\": [\n    true,\n    false,\n    false,\n    true,\n    false\n  ]\n}\n```",
+  "examples": [
+    {
+      "VIA3_1": [
+        {
+          "llx": 0,
+          "lly": 0,
+          "urx": 70,
+          "ury": 70
+        }
+      ]
+    },
+    {
+      "VIA3_1": [
+        {
+          "llx": 0,
+          "lly": 0,
+          "urx": 69,
+          "ury": 70
+        }
+      ]
+    },
+    {
+      "VIA3_1": [
+        {
+          "llx": 0,
+          "lly": 0,
+          "urx": 70,
+          "ury": 69
+        }
+      ]
+    },
+    {
+      "VIA3_1": [
+        {
+          "llx": 0,
+          "lly": 0,
+          "urx": 70,
+          "ury": 70
+        }
+      ],
+      "VIA3_2": [
+        {
+          "llx": 100,
+          "lly": 0,
+          "urx": 170,
+          "ury": 70
+        }
+      ]
+    },
+    {
+      "VIA3_1": [
+        {
+          "llx": 0,
+          "lly": 0,
+          "urx": 70,
+          "ury": 70
+        }
+      ],
+      "VIA3_2": [
+        {
+          "llx": 100,
+          "lly": 0,
+          "urx": 169,
+          "ury": 70
+        }
+      ]
+    }
+  ],
+  "labels": [
+    true,
+    false,
+    false,
+    true,
+    false
+  ]
+}

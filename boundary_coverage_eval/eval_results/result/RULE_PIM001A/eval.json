@@ -1,0 +1,301 @@
+{
+  "rule_name": "RULE_PIM001A",
+  "rule_description": "Minimum width of PIM is 128nm",
+  "rule_script": "INTERNAL PIM <0.128",
+  "perturbed_scripts": {
+    "corner_000": "INTERNAL PIM <0.127\n",
+    "corner_001": "INTERNAL PIM <0.129\n",
+    "corner_original": "INTERNAL PIM <0.128\n"
+  },
+  "data_name": "freePDK15",
+  "judge_mode": "match",
+  "corner_count": 3,
+  "sample_count": 4,
+  "all_corners_match": false,
+  "all_corners_detect": true,
+  "all_corners_ok": false,
+  "per_corner": [
+    {
+      "corner_id": "corner_000",
+      "script_expected_correct": false,
+      "script_predicted_correct": false,
+      "corner_any_mismatch": true,
+      "corner_all_match": false,
+      "corner_ok": true,
+      "samples": [
+        {
+          "idx": 0,
+          "predicted_label": true,
+          "calibre_label": false,
+          "match": false,
+          "error": null,
+          "pos": {
+            "PIM_1": [
+              {
+                "llx": 0,
+                "lly": 0,
+                "urx": 128,
+                "ury": 100
+              }
+            ]
+          }
+        },
+        {
+          "idx": 1,
+          "predicted_label": false,
+          "calibre_label": false,
+          "match": true,
+          "error": null,
+          "pos": {
+            "PIM_1": [
+              {
+                "llx": 0,
+                "lly": 0,
+                "urx": 127,
+                "ury": 100
+              }
+            ]
+          }
+        },
+        {
+          "idx": 2,
+          "predicted_label": true,
+          "calibre_label": false,
+          "match": false,
+          "error": null,
+          "pos": {
+            "PIM_1": [
+              {
+                "llx": 0,
+                "lly": 0,
+                "urx": 128,
+                "ury": 100
+              }
+            ],
+            "PIM_2": [
+              {
+                "llx": 200,
+                "lly": 0,
+                "urx": 328,
+                "ury": 100
+              }
+            ]
+          }
+        },
+        {
+          "idx": 3,
+          "predicted_label": false,
+          "calibre_label": false,
+          "match": true,
+          "error": null,
+          "pos": {
+            "PIM_1": [
+              {
+                "llx": 0,
+                "lly": 0,
+                "urx": 128,
+                "ury": 100
+              }
+            ],
+            "PIM_2": [
+              {
+                "llx": 200,
+                "lly": 0,
+                "urx": 327,
+                "ury": 100
+              }
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "corner_id": "corner_001",
+      "script_expected_correct": false,
+      "script_predicted_correct": false,
+      "corner_any_mismatch": true,
+      "corner_all_match": false,
+      "corner_ok": true,
+      "samples": [
+        {
+          "idx": 0,
+          "predicted_label": true,
+          "calibre_label": false,
+          "match": false,
+          "error": null,
+          "pos": {
+            "PIM_1": [
+              {
+                "llx": 0,
+                "lly": 0,
+                "urx": 128,
+                "ury": 100
+              }
+            ]
+          }
+        },
+        {
+          "idx": 1,
+          "predicted_label": false,
+          "calibre_label": false,
+          "match": true,
+          "error": null,
+          "pos": {
+            "PIM_1": [
+              {
+                "llx": 0,
+                "lly": 0,
+                "urx": 127,
+                "ury": 100
+              }
+            ]
+          }
+        },
+        {
+          "idx": 2,
+          "predicted_label": true,
+          "calibre_label": false,
+          "match": false,
+          "error": null,
+          "pos": {
+            "PIM_1": [
+              {
+                "llx": 0,
+                "lly": 0,
+                "urx": 128,
+                "ury": 100
+              }
+            ],
+            "PIM_2": [
+              {
+                "llx": 200,
+                "lly": 0,
+                "urx": 328,
+                "ury": 100
+              }
+            ]
+          }
+        },
+        {
+          "idx": 3,
+          "predicted_label": false,
+          "calibre_label": false,
+          "match": true,
+          "error": null,
+          "pos": {
+            "PIM_1": [
+              {
+                "llx": 0,
+                "lly": 0,
+                "urx": 128,
+                "ury": 100
+              }
+            ],
+            "PIM_2": [
+              {
+                "llx": 200,
+                "lly": 0,
+                "urx": 327,
+                "ury": 100
+              }
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "corner_id": "corner_original",
+      "script_expected_correct": true,
+      "script_predicted_correct": false,
+      "corner_any_mismatch": true,
+      "corner_all_match": false,
+      "corner_ok": false,
+      "samples": [
+        {
+          "idx": 0,
+          "predicted_label": true,
+          "calibre_label": false,
+          "match": false,
+          "error": null,
+          "pos": {
+            "PIM_1": [
+              {
+                "llx": 0,
+                "lly": 0,
+                "urx": 128,
+                "ury": 100
+              }
+            ]
+          }
+        },
+        {
+          "idx": 1,
+          "predicted_label": false,
+          "calibre_label": false,
+          "match": true,
+          "error": null,
+          "pos": {
+            "PIM_1": [
+              {
+                "llx": 0,
+                "lly": 0,
+                "urx": 127,
+                "ury": 100
+              }
+            ]
+          }
+        },
+        {
+          "idx": 2,
+          "predicted_label": true,
+          "calibre_label": false,
+          "match": false,
+          "error": null,
+          "pos": {
+            "PIM_1": [
+              {
+                "llx": 0,
+                "lly": 0,
+                "urx": 128,
+                "ury": 100
+              }
+            ],
+            "PIM_2": [
+              {
+                "llx": 200,
+                "lly": 0,
+                "urx": 328,
+                "ury": 100
+              }
+            ]
+          }
+        },
+        {
+          "idx": 3,
+          "predicted_label": false,
+          "calibre_label": false,
+          "match": true,
+          "error": null,
+          "pos": {
+            "PIM_1": [
+              {
+                "llx": 0,
+                "lly": 0,
+                "urx": 128,
+                "ury": 100
+              }
+            ],
+            "PIM_2": [
+              {
+                "llx": 200,
+                "lly": 0,
+                "urx": 327,
+                "ury": 100
+              }
+            ]
+          }
+        }
+      ]
+    }
+  ]
+}

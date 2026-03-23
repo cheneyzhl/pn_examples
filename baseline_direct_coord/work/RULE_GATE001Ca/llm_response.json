@@ -1,0 +1,91 @@
+{
+  "raw_response": "```json\n{\n  \"examples\": [\n    {\n      \"GATEC_1\": [\n        {\n          \"llx\": 0,\n          \"lly\": 0,\n          \"urx\": 100,\n          \"ury\": 32\n        }\n      ]\n    },\n    {\n      \"GATEC_1\": [\n        {\n          \"llx\": 0,\n          \"lly\": 0,\n          \"urx\": 100,\n          \"ury\": 31\n        }\n      ]\n    },\n    {\n      \"GATEC_1\": [\n        {\n          \"llx\": 0,\n          \"lly\": 0,\n          \"urx\": 100,\n          \"ury\": 33\n        }\n      ]\n    },\n    {\n      \"GATEC_1\": [\n        {\n          \"llx\": 0,\n          \"lly\": 0,\n          \"urx\": 100,\n          \"ury\": 32\n        },\n        {\n          \"llx\": 200,\n          \"lly\": 0,\n          \"urx\": 300,\n          \"ury\": 32\n        }\n      ]\n    },\n    {\n      \"GATEC_1\": [\n        {\n          \"llx\": 0,\n          \"lly\": 0,\n          \"urx\": 100,\n          \"ury\": 32\n        },\n        {\n          \"llx\": 200,\n          \"lly\": 0,\n          \"urx\": 300,\n          \"ury\": 31\n        }\n      ]\n    },\n    {\n      \"GATEC_1\": [\n        {\n          \"llx\": 0,\n          \"lly\": 0,\n          \"urx\": 100,\n          \"ury\": 32\n        },\n        {\n          \"llx\": 200,\n          \"lly\": 0,\n          \"urx\": 300,\n          \"ury\": 33\n        }\n      ]\n    }\n  ],\n  \"labels\": [\n    true,\n    false,\n    false,\n    true,\n    false,\n    false\n  ]\n}\n```",
+  "examples": [
+    {
+      "GATEC_1": [
+        {
+          "llx": 0,
+          "lly": 0,
+          "urx": 100,
+          "ury": 32
+        }
+      ]
+    },
+    {
+      "GATEC_1": [
+        {
+          "llx": 0,
+          "lly": 0,
+          "urx": 100,
+          "ury": 31
+        }
+      ]
+    },
+    {
+      "GATEC_1": [
+        {
+          "llx": 0,
+          "lly": 0,
+          "urx": 100,
+          "ury": 33
+        }
+      ]
+    },
+    {
+      "GATEC_1": [
+        {
+          "llx": 0,
+          "lly": 0,
+          "urx": 100,
+          "ury": 32
+        },
+        {
+          "llx": 200,
+          "lly": 0,
+          "urx": 300,
+          "ury": 32
+        }
+      ]
+    },
+    {
+      "GATEC_1": [
+        {
+          "llx": 0,
+          "lly": 0,
+          "urx": 100,
+          "ury": 32
+        },
+        {
+          "llx": 200,
+          "lly": 0,
+          "urx": 300,
+          "ury": 31
+        }
+      ]
+    },
+    {
+      "GATEC_1": [
+        {
+          "llx": 0,
+          "lly": 0,
+          "urx": 100,
+          "ury": 32
+        },
+        {
+          "llx": 200,
+          "lly": 0,
+          "urx": 300,
+          "ury": 33
+        }
+      ]
+    }
+  ],
+  "labels": [
+    true,
+    false,
+    false,
+    true,
+    false,
+    false
+  ]
+}

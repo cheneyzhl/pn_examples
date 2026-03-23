@@ -1,0 +1,151 @@
+{
+  "rule_name": "RULE_GATE007B",
+  "rule_description": "Minimum length of Gate B (vertical edge, gate C ignored) 200nm",
+  "rule_script": "LENGTH GATEB_vertical_edges < 0.200",
+  "perturbed_scripts": {
+    "corner_000": "LENGTH GATEB_vertical_edges < 0.199\n",
+    "corner_001": "LENGTH GATEB_vertical_edges < 0.201\n",
+    "corner_original": "LENGTH GATEB_vertical_edges < 0.200\n"
+  },
+  "data_name": "freePDK15",
+  "judge_mode": "match",
+  "corner_count": 3,
+  "sample_count": 2,
+  "all_corners_match": false,
+  "all_corners_detect": false,
+  "all_corners_ok": true,
+  "per_corner": [
+    {
+      "corner_id": "corner_000",
+      "script_expected_correct": false,
+      "script_predicted_correct": false,
+      "corner_any_mismatch": true,
+      "corner_all_match": false,
+      "corner_ok": true,
+      "samples": [
+        {
+          "idx": 0,
+          "predicted_label": true,
+          "calibre_label": true,
+          "match": true,
+          "error": null,
+          "pos": {
+            "GATEB_1": [
+              {
+                "llx": 0,
+                "lly": 0,
+                "urx": 50,
+                "ury": 200
+              }
+            ]
+          }
+        },
+        {
+          "idx": 1,
+          "predicted_label": false,
+          "calibre_label": true,
+          "match": false,
+          "error": null,
+          "pos": {
+            "GATEB_1": [
+              {
+                "llx": 0,
+                "lly": 0,
+                "urx": 50,
+                "ury": 199
+              }
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "corner_id": "corner_001",
+      "script_expected_correct": false,
+      "script_predicted_correct": false,
+      "corner_any_mismatch": true,
+      "corner_all_match": false,
+      "corner_ok": true,
+      "samples": [
+        {
+          "idx": 0,
+          "predicted_label": true,
+          "calibre_label": false,
+          "match": false,
+          "error": null,
+          "pos": {
+            "GATEB_1": [
+              {
+                "llx": 0,
+                "lly": 0,
+                "urx": 50,
+                "ury": 200
+              }
+            ]
+          }
+        },
+        {
+          "idx": 1,
+          "predicted_label": false,
+          "calibre_label": false,
+          "match": true,
+          "error": null,
+          "pos": {
+            "GATEB_1": [
+              {
+                "llx": 0,
+                "lly": 0,
+                "urx": 50,
+                "ury": 199
+              }
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "corner_id": "corner_original",
+      "script_expected_correct": true,
+      "script_predicted_correct": true,
+      "corner_any_mismatch": false,
+      "corner_all_match": true,
+      "corner_ok": true,
+      "samples": [
+        {
+          "idx": 0,
+          "predicted_label": true,
+          "calibre_label": true,
+          "match": true,
+          "error": null,
+          "pos": {
+            "GATEB_1": [
+              {
+                "llx": 0,
+                "lly": 0,
+                "urx": 50,
+                "ury": 200
+              }
+            ]
+          }
+        },
+        {
+          "idx": 1,
+          "predicted_label": false,
+          "calibre_label": false,
+          "match": true,
+          "error": null,
+          "pos": {
+            "GATEB_1": [
+              {
+                "llx": 0,
+                "lly": 0,
+                "urx": 50,
+                "ury": 199
+              }
+            ]
+          }
+        }
+      ]
+    }
+  ]
+}

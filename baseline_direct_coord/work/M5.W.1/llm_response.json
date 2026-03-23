@@ -1,0 +1,85 @@
+{
+  "raw_response": "```json\n{\n  \"examples\": [\n    {\n      \"M5_1\": [\n        {\n          \"llx\": 0,\n          \"lly\": 0,\n          \"urx\": 24,\n          \"ury\": 100\n        }\n      ]\n    },\n    {\n      \"M5_1\": [\n        {\n          \"llx\": 0,\n          \"lly\": 0,\n          \"urx\": 23,\n          \"ury\": 100\n        }\n      ]\n    },\n    {\n      \"M5_1\": [\n        {\n          \"llx\": 0,\n          \"lly\": 0,\n          \"urx\": 24,\n          \"ury\": 24\n        }\n      ]\n    },\n    {\n      \"M5_1\": [\n        {\n          \"llx\": 0,\n          \"lly\": 0,\n          \"urx\": 23,\n          \"ury\": 23\n        }\n      ]\n    },\n    {\n      \"M5_1\": [\n        {\n          \"llx\": 0,\n          \"lly\": 0,\n          \"urx\": 24,\n          \"ury\": 24\n        },\n        {\n          \"llx\": 30,\n          \"lly\": 0,\n          \"urx\": 54,\n          \"ury\": 24\n        }\n      ]\n    },\n    {\n      \"M5_1\": [\n        {\n          \"llx\": 0,\n          \"lly\": 0,\n          \"urx\": 24,\n          \"ury\": 24\n        },\n        {\n          \"llx\": 30,\n          \"lly\": 0,\n          \"urx\": 53,\n          \"ury\": 24\n        }\n      ]\n    }\n  ],\n  \"labels\": [\n    true,\n    false,\n    true,\n    false,\n    true,\n    false\n  ]\n}\n```",
+  "examples": [
+    {
+      "M5_1": [
+        {
+          "llx": 0,
+          "lly": 0,
+          "urx": 24,
+          "ury": 100
+        }
+      ]
+    },
+    {
+      "M5_1": [
+        {
+          "llx": 0,
+          "lly": 0,
+          "urx": 23,
+          "ury": 100
+        }
+      ]
+    },
+    {
+      "M5_1": [
+        {
+          "llx": 0,
+          "lly": 0,
+          "urx": 24,
+          "ury": 24
+        }
+      ]
+    },
+    {
+      "M5_1": [
+        {
+          "llx": 0,
+          "lly": 0,
+          "urx": 23,
+          "ury": 23
+        }
+      ]
+    },
+    {
+      "M5_1": [
+        {
+          "llx": 0,
+          "lly": 0,
+          "urx": 24,
+          "ury": 24
+        },
+        {
+          "llx": 30,
+          "lly": 0,
+          "urx": 54,
+          "ury": 24
+        }
+      ]
+    },
+    {
+      "M5_1": [
+        {
+          "llx": 0,
+          "lly": 0,
+          "urx": 24,
+          "ury": 24
+        },
+        {
+          "llx": 30,
+          "lly": 0,
+          "urx": 53,
+          "ury": 24
+        }
+      ]
+    }
+  ],
+  "labels": [
+    true,
+    false,
+    true,
+    false,
+    true,
+    false
+  ]
+}

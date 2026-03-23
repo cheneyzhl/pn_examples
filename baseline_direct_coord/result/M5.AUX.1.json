@@ -1,0 +1,67 @@
+{
+  "rule_name": "M5.AUX.1",
+  "rule_description": "M5 vertical edges must be at a grid of 24 nm.",
+  "rule_script": "OFFGRID M5 VAR_M5_1X_DBU 1 OFFSET VAR_M5_XOFFSET 0 HINT",
+  "calibre_skipped": true,
+  "sample_correct": null,
+  "sample_total": null,
+  "accuracy": null,
+  "details": [
+    {
+      "idx": 0,
+      "predicted_label": true,
+      "pos": {
+        "M5_1": [
+          {
+            "llx": 24,
+            "lly": 0,
+            "urx": 48,
+            "ury": 100
+          }
+        ]
+      }
+    },
+    {
+      "idx": 1,
+      "predicted_label": false,
+      "pos": {
+        "M5_1": [
+          {
+            "llx": 24,
+            "lly": 0,
+            "urx": 50,
+            "ury": 100
+          }
+        ]
+      }
+    },
+    {
+      "idx": 2,
+      "predicted_label": false,
+      "pos": {
+        "M5_1": [
+          {
+            "llx": 25,
+            "lly": 0,
+            "urx": 48,
+            "ury": 100
+          }
+        ]
+      }
+    },
+    {
+      "idx": 3,
+      "predicted_label": false,
+      "pos": {
+        "M5_1": [
+          {
+            "llx": 25,
+            "lly": 0,
+            "urx": 50,
+            "ury": 100
+          }
+        ]
+      }
+    }
+  ]
+}

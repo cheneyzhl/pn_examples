@@ -1,0 +1,12 @@
+TOPCELL 5000
+RULE_AIL1001
+2 2 3 Mar 23 02:15:07 2026                     
+Rule File Pathname: /share/home/zenghuanlong/pn_examples/boundary_coverage_eval/eval_results/result/work/freePDK15/RULE_AIL1001/corner_001/example_3.rul
+RULE_AIL1001
+Horizontal Width of AIL1 is 28nm
+e 1 2
+0 0 0 500
+140 0 140 500
+e 2 2
+145 0 145 500
+275 0 275 500

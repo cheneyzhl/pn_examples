@@ -1,0 +1,85 @@
+{
+  "raw_response": "```json\n{\n  \"examples\": [\n    {\n      \"M7_1\": [\n        {\n          \"llx\": 0,\n          \"lly\": 0,\n          \"urx\": 32,\n          \"ury\": 100\n        }\n      ]\n    },\n    {\n      \"M7_1\": [\n        {\n          \"llx\": 0,\n          \"lly\": 0,\n          \"urx\": 31,\n          \"ury\": 100\n        }\n      ]\n    },\n    {\n      \"M7_1\": [\n        {\n          \"llx\": 0,\n          \"lly\": 0,\n          \"urx\": 32,\n          \"ury\": 32\n        }\n      ]\n    },\n    {\n      \"M7_1\": [\n        {\n          \"llx\": 0,\n          \"lly\": 0,\n          \"urx\": 31,\n          \"ury\": 31\n        }\n      ]\n    },\n    {\n      \"M7_1\": [\n        {\n          \"llx\": 0,\n          \"lly\": 0,\n          \"urx\": 32,\n          \"ury\": 32\n        },\n        {\n          \"llx\": 40,\n          \"lly\": 0,\n          \"urx\": 72,\n          \"ury\": 32\n        }\n      ]\n    },\n    {\n      \"M7_1\": [\n        {\n          \"llx\": 0,\n          \"lly\": 0,\n          \"urx\": 31,\n          \"ury\": 31\n        },\n        {\n          \"llx\": 40,\n          \"lly\": 0,\n          \"urx\": 71,\n          \"ury\": 31\n        }\n      ]\n    }\n  ],\n  \"labels\": [\n    true,\n    false,\n    true,\n    false,\n    true,\n    false\n  ]\n}\n```",
+  "examples": [
+    {
+      "M7_1": [
+        {
+          "llx": 0,
+          "lly": 0,
+          "urx": 32,
+          "ury": 100
+        }
+      ]
+    },
+    {
+      "M7_1": [
+        {
+          "llx": 0,
+          "lly": 0,
+          "urx": 31,
+          "ury": 100
+        }
+      ]
+    },
+    {
+      "M7_1": [
+        {
+          "llx": 0,
+          "lly": 0,
+          "urx": 32,
+          "ury": 32
+        }
+      ]
+    },
+    {
+      "M7_1": [
+        {
+          "llx": 0,
+          "lly": 0,
+          "urx": 31,
+          "ury": 31
+        }
+      ]
+    },
+    {
+      "M7_1": [
+        {
+          "llx": 0,
+          "lly": 0,
+          "urx": 32,
+          "ury": 32
+        },
+        {
+          "llx": 40,
+          "lly": 0,
+          "urx": 72,
+          "ury": 32
+        }
+      ]
+    },
+    {
+      "M7_1": [
+        {
+          "llx": 0,
+          "lly": 0,
+          "urx": 31,
+          "ury": 31
+        },
+        {
+          "llx": 40,
+          "lly": 0,
+          "urx": 71,
+          "ury": 31
+        }
+      ]
+    }
+  ],
+  "labels": [
+    true,
+    false,
+    true,
+    false,
+    true,
+    false
+  ]
+}

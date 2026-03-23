@@ -1,0 +1,63 @@
+{
+  "raw_response": "```json\n{\n  \"examples\": [\n    {\n      \"M7_1\": [\n        {\n          \"llx\": 0,\n          \"lly\": 0,\n          \"urx\": 640,\n          \"ury\": 100\n        }\n      ]\n    },\n    {\n      \"M7_1\": [\n        {\n          \"llx\": 0,\n          \"lly\": 0,\n          \"urx\": 641,\n          \"ury\": 100\n        }\n      ]\n    },\n    {\n      \"M7_1\": [\n        {\n          \"llx\": 0,\n          \"lly\": 0,\n          \"urx\": 640,\n          \"ury\": 100\n        },\n        {\n          \"llx\": 641,\n          \"lly\": 0,\n          \"urx\": 1281,\n          \"ury\": 100\n        }\n      ]\n    },\n    {\n      \"M7_1\": [\n        {\n          \"llx\": 0,\n          \"lly\": 0,\n          \"urx\": 640,\n          \"ury\": 100\n        },\n        {\n          \"llx\": 640,\n          \"lly\": 0,\n          \"urx\": 1280,\n          \"ury\": 100\n        }\n      ]\n    }\n  ],\n  \"labels\": [\n    true,\n    false,\n    true,\n    false\n  ]\n}\n```",
+  "examples": [
+    {
+      "M7_1": [
+        {
+          "llx": 0,
+          "lly": 0,
+          "urx": 640,
+          "ury": 100
+        }
+      ]
+    },
+    {
+      "M7_1": [
+        {
+          "llx": 0,
+          "lly": 0,
+          "urx": 641,
+          "ury": 100
+        }
+      ]
+    },
+    {
+      "M7_1": [
+        {
+          "llx": 0,
+          "lly": 0,
+          "urx": 640,
+          "ury": 100
+        },
+        {
+          "llx": 641,
+          "lly": 0,
+          "urx": 1281,
+          "ury": 100
+        }
+      ]
+    },
+    {
+      "M7_1": [
+        {
+          "llx": 0,
+          "lly": 0,
+          "urx": 640,
+          "ury": 100
+        },
+        {
+          "llx": 640,
+          "lly": 0,
+          "urx": 1280,
+          "ury": 100
+        }
+      ]
+    }
+  ],
+  "labels": [
+    true,
+    false,
+    true,
+    false
+  ]
+}

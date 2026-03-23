@@ -1,0 +1,73 @@
+{
+  "raw_response": "```json\n{\n  \"examples\": [\n    {\n      \"METAL6_1\": [\n        {\n          \"llx\": 0,\n          \"lly\": 0,\n          \"urx\": 140,\n          \"ury\": 1000\n        }\n      ]\n    },\n    {\n      \"METAL6_1\": [\n        {\n          \"llx\": 0,\n          \"lly\": 0,\n          \"urx\": 139,\n          \"ury\": 1000\n        }\n      ]\n    },\n    {\n      \"METAL6_1\": [\n        {\n          \"llx\": 0,\n          \"lly\": 0,\n          \"urx\": 1000,\n          \"ury\": 140\n        }\n      ]\n    },\n    {\n      \"METAL6_1\": [\n        {\n          \"llx\": 0,\n          \"lly\": 0,\n          \"urx\": 1000,\n          \"ury\": 139\n        }\n      ]\n    },\n    {\n      \"METAL6_1\": [\n        {\n          \"llx\": 0,\n          \"lly\": 0,\n          \"urx\": 140,\n          \"ury\": 140\n        }\n      ]\n    },\n    {\n      \"METAL6_1\": [\n        {\n          \"llx\": 0,\n          \"lly\": 0,\n          \"urx\": 139,\n          \"ury\": 139\n        }\n      ]\n    }\n  ],\n  \"labels\": [\n    true,\n    false,\n    true,\n    false,\n    true,\n    false\n  ]\n}\n```",
+  "examples": [
+    {
+      "METAL6_1": [
+        {
+          "llx": 0,
+          "lly": 0,
+          "urx": 140,
+          "ury": 1000
+        }
+      ]
+    },
+    {
+      "METAL6_1": [
+        {
+          "llx": 0,
+          "lly": 0,
+          "urx": 139,
+          "ury": 1000
+        }
+      ]
+    },
+    {
+      "METAL6_1": [
+        {
+          "llx": 0,
+          "lly": 0,
+          "urx": 1000,
+          "ury": 140
+        }
+      ]
+    },
+    {
+      "METAL6_1": [
+        {
+          "llx": 0,
+          "lly": 0,
+          "urx": 1000,
+          "ury": 139
+        }
+      ]
+    },
+    {
+      "METAL6_1": [
+        {
+          "llx": 0,
+          "lly": 0,
+          "urx": 140,
+          "ury": 140
+        }
+      ]
+    },
+    {
+      "METAL6_1": [
+        {
+          "llx": 0,
+          "lly": 0,
+          "urx": 139,
+          "ury": 139
+        }
+      ]
+    }
+  ],
+  "labels": [
+    true,
+    false,
+    true,
+    false,
+    true,
+    false
+  ]
+}

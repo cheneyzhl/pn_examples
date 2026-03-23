@@ -1,0 +1,95 @@
+{
+  "rule_name": "M4.W.3",
+  "rule_description": "M4 vertical width may not be an even integer multiple of its minimum width.",
+  "rule_script": "INTERNAL M4_HE ==  2*VAR_M4_1X REGION OPPOSITE PARALLEL ONLY PROJ > 0 \nINTERNAL M4_HE ==  4*VAR_M4_1X REGION OPPOSITE PARALLEL ONLY PROJ > 0 \nINTERNAL M4_HE ==  6*VAR_M4_1X REGION OPPOSITE PARALLEL ONLY PROJ > 0 \nINTERNAL M4_HE ==  8*VAR_M4_1X REGION OPPOSITE PARALLEL ONLY PROJ > 0 \nINTERNAL M4_HE == 10*VAR_M4_1X REGION OPPOSITE PARALLEL ONLY PROJ > 0 \nINTERNAL M4_HE == 12*VAR_M4_1X REGION OPPOSITE PARALLEL ONLY PROJ > 0 \nINTERNAL M4_HE == 14*VAR_M4_1X REGION OPPOSITE PARALLEL ONLY PROJ > 0 \nINTERNAL M4_HE == 16*VAR_M4_1X REGION OPPOSITE PARALLEL ONLY PROJ > 0 \nINTERNAL M4_HE == 18*VAR_M4_1X REGION OPPOSITE PARALLEL ONLY PROJ > 0 \nINTERNAL M4_HE == 20*VAR_M4_1X REGION OPPOSITE PARALLEL ONLY PROJ > 0",
+  "calibre_skipped": true,
+  "sample_correct": null,
+  "sample_total": null,
+  "accuracy": null,
+  "details": [
+    {
+      "idx": 0,
+      "predicted_label": true,
+      "pos": {
+        "M4_1": [
+          {
+            "llx": 0,
+            "lly": 0,
+            "urx": 100,
+            "ury": 101
+          }
+        ]
+      }
+    },
+    {
+      "idx": 1,
+      "predicted_label": false,
+      "pos": {
+        "M4_1": [
+          {
+            "llx": 0,
+            "lly": 0,
+            "urx": 100,
+            "ury": 100
+          }
+        ]
+      }
+    },
+    {
+      "idx": 2,
+      "predicted_label": true,
+      "pos": {
+        "M4_1": [
+          {
+            "llx": 0,
+            "lly": 0,
+            "urx": 100,
+            "ury": 201
+          }
+        ]
+      }
+    },
+    {
+      "idx": 3,
+      "predicted_label": false,
+      "pos": {
+        "M4_1": [
+          {
+            "llx": 0,
+            "lly": 0,
+            "urx": 100,
+            "ury": 200
+          }
+        ]
+      }
+    },
+    {
+      "idx": 4,
+      "predicted_label": true,
+      "pos": {
+        "M4_1": [
+          {
+            "llx": 0,
+            "lly": 0,
+            "urx": 100,
+            "ury": 99
+          }
+        ]
+      }
+    },
+    {
+      "idx": 5,
+      "predicted_label": true,
+      "pos": {
+        "M4_1": [
+          {
+            "llx": 0,
+            "lly": 0,
+            "urx": 100,
+            "ury": 102
+          }
+        ]
+      }
+    }
+  ]
+}

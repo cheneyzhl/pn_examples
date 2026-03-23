@@ -117,9 +117,11 @@ def run_baseline(
     rules: List[Dict[str, Any]],
     log_dir: str = "",
     result_dir: str = "",
+    skip_calibre: bool = False,
 ) -> Dict[str, Any]:
     """
     对每条规则：调用 Agent 获取正/反例坐标与标签，再用 Calibre 验证并统计正确率。
+    skip_calibre 为 True 时仅保留大模型生成与日志/结果 JSON，不调用 Calibre；不计算 accuracy。
 
     log_dir: 若非空，先在该目录下按时间戳创建子目录，再在该子目录下以规则名记录该规则的对话日志
              （用户问题 + 大模型回答），txt 格式，便于多线程并行时区分不同规则。
@@ -255,6 +257,45 @@ def run_baseline(
         elif len(examples) > len(labels):
             examples = examples[: len(labels)]
 
+        # 从 .rul 中解析出 DRC 脚本（规则块中除两个 @ 行以外的部分）
+        rule_script = ""
+        if new_meta and new_meta.get("script"):
+            rule_script = new_meta.get("script", "")
+        else:
+            try:
+                with open(base_script_path, "r", encoding="utf-8", errors="replace") as f:
+                    rule_script = extract_rule_script_from_rul(f.read(), rule_name)
+            except Exception as e:
+                logger.warning("解析 rule_script 失败: %s", e)
+
+        if skip_calibre:
+            rule_count += 1
+            details = [
+                {"idx": i, "predicted_label": labels[i], "pos": examples[i]}
+                for i in range(len(examples))
+            ]
+            rule_result = {
+                "rule_name": rule_name,
+                "rule_description": rule_desc,
+                "rule_script": rule_script,
+                "calibre_skipped": True,
+                "sample_correct": None,
+                "sample_total": None,
+                "accuracy": None,
+                "details": details,
+            }
+            per_rule_results.append(rule_result)
+            if result_dir:
+                try:
+                    out_path = os.path.join(result_dir, f"{rule_name}.json")
+                    with open(out_path, "w", encoding="utf-8") as f:
+                        json.dump(rule_result, f, ensure_ascii=False, indent=2)
+                    logger.info("规则 %s 结果已写入 %s（未跑 Calibre）", rule_name, out_path)
+                except Exception as e:
+                    logger.warning("写入规则 %s 结果失败: %s", rule_name, e)
+            logger.info("规则 %s: 已跳过 Calibre，样本数=%d", rule_name, len(examples))
+            continue
+
         # 3) Calibre 验证
         correct, total, details = verify_examples(
             rule_name=rule_name,
@@ -275,22 +316,11 @@ def run_baseline(
             if idx is not None and 0 <= idx < len(examples):
                 d["pos"] = examples[idx]
 
-        # 从 .rul 中解析出 DRC 脚本（规则块中除两个 @ 行以外的部分）
-        rule_script = ""
-        # 若 new_datasets 中提供了脚本，优先使用；否则退回到从 .rul 中解析
-        if new_meta and new_meta.get("script"):
-            rule_script = new_meta.get("script", "")
-        else:
-            try:
-                with open(base_script_path, "r", encoding="utf-8", errors="replace") as f:
-                    rule_script = extract_rule_script_from_rul(f.read(), rule_name)
-            except Exception as e:
-                logger.warning("解析 rule_script 失败: %s", e)
-
         rule_result = {
             "rule_name": rule_name,
             "rule_description": rule_desc,
             "rule_script": rule_script,
+            "calibre_skipped": False,
             "sample_correct": correct,
             "sample_total": total,
             "accuracy": 1.0 if rule_correct else 0.0,
@@ -313,11 +343,20 @@ def run_baseline(
             rule_correct,
         )
 
+    if skip_calibre:
+        return {
+            "correct_rules": None,
+            "total_rules": rule_count,
+            "overall_accuracy": None,
+            "calibre_skipped": True,
+            "per_rule": per_rule_results,
+        }
     overall_accuracy = (rule_correct_count / rule_count) if rule_count else 0.0
     return {
         "correct_rules": rule_correct_count,
         "total_rules": rule_count,
         "overall_accuracy": round(overall_accuracy, 4),
+        "calibre_skipped": False,
         "per_rule": per_rule_results,
     }
 
@@ -336,6 +375,11 @@ def main():
     parser.add_argument("--freepdk45_n", type=int, default=100, help="当使用 new_datasets 时，选取 freepdk-45nm_gpt_output.json 前 N 条（0 表示全部）")
     parser.add_argument("--log_dir", type=str, default="", help="对话日志根目录，默认 log/")
     parser.add_argument("--result_dir", type=str, default="", help="按规则输出结果 JSON 的目录，默认 result/")
+    parser.add_argument(
+        "--llm_only",
+        action="store_true",
+        help="仅调用大模型生成正/反例并写日志与 result；跳过 Calibre，不计算 overall_accuracy",
+    )
     args = parser.parse_args()
 
     base_rul_path = args.base_rul or config.BASE_RUL_PATH
@@ -350,17 +394,20 @@ def main():
     script_dir = os.path.dirname(os.path.abspath(__file__))
     log_dir = args.log_dir or os.path.join(script_dir, "log")
     result_dir = args.result_dir or os.path.join(script_dir, "result")
+    skip_calibre = args.llm_only
 
     if not base_rul_path or not os.path.isfile(base_rul_path):
         logger.error("请配置有效的 base_rul 路径（当前: %s）", base_rul_path)
         sys.exit(1)
 
     total_result = {
-        "correct_rules": 0,
+        "correct_rules": None if skip_calibre else 0,
         "total_rules": 0,
-        "overall_accuracy": 0.0,
+        "overall_accuracy": None if skip_calibre else 0.0,
         "per_rule": [],
     }
+    if skip_calibre:
+        total_result["calibre_skipped"] = True
 
     # 情况 1：未显式指定 rules，默认从 new_datasets 跑三个工艺
     if not rules_path:
@@ -383,8 +430,10 @@ def main():
                 rules=free_rules,
                 log_dir=log_dir,
                 result_dir=result_dir,
+                skip_calibre=skip_calibre,
             )
-            total_result["correct_rules"] += free_result["correct_rules"]
+            if not skip_calibre:
+                total_result["correct_rules"] += free_result["correct_rules"]
             total_result["total_rules"] += free_result["total_rules"]
             total_result["per_rule"].extend(free_result["per_rule"])
 
@@ -407,8 +456,10 @@ def main():
                 rules=asap_rules,
                 log_dir=log_dir,
                 result_dir=result_dir,
+                skip_calibre=skip_calibre,
             )
-            total_result["correct_rules"] += asap_result["correct_rules"]
+            if not skip_calibre:
+                total_result["correct_rules"] += asap_result["correct_rules"]
             total_result["total_rules"] += asap_result["total_rules"]
             total_result["per_rule"].extend(asap_result["per_rule"])
 
@@ -431,12 +482,16 @@ def main():
                 rules=fp45_rules,
                 log_dir=log_dir,
                 result_dir=result_dir,
+                skip_calibre=skip_calibre,
             )
-            total_result["correct_rules"] += fp45_result["correct_rules"]
+            if not skip_calibre:
+                total_result["correct_rules"] += fp45_result["correct_rules"]
             total_result["total_rules"] += fp45_result["total_rules"]
             total_result["per_rule"].extend(fp45_result["per_rule"])
 
-        if total_result["total_rules"] > 0:
+        if skip_calibre:
+            total_result["overall_accuracy"] = None
+        elif total_result["total_rules"] > 0:
             total_result["overall_accuracy"] = round(
                 total_result["correct_rules"] / total_result["total_rules"], 4
             )
@@ -470,8 +525,10 @@ def main():
                     rules=free_rules,
                     log_dir=log_dir,
                     result_dir=result_dir,
+                    skip_calibre=skip_calibre,
                 )
-                total_result["correct_rules"] += free_result["correct_rules"]
+                if not skip_calibre:
+                    total_result["correct_rules"] += free_result["correct_rules"]
                 total_result["total_rules"] += free_result["total_rules"]
                 total_result["per_rule"].extend(free_result["per_rule"])
 
@@ -486,12 +543,16 @@ def main():
                     rules=asap_rules,
                     log_dir=log_dir,
                     result_dir=result_dir,
+                    skip_calibre=skip_calibre,
                 )
-                total_result["correct_rules"] += asap_result["correct_rules"]
+                if not skip_calibre:
+                    total_result["correct_rules"] += asap_result["correct_rules"]
                 total_result["total_rules"] += asap_result["total_rules"]
                 total_result["per_rule"].extend(asap_result["per_rule"])
 
-            if total_result["total_rules"] > 0:
+            if skip_calibre:
+                total_result["overall_accuracy"] = None
+            elif total_result["total_rules"] > 0:
                 total_result["overall_accuracy"] = round(
                     total_result["correct_rules"] / total_result["total_rules"], 4
                 )
@@ -514,15 +575,22 @@ def main():
                 rules=rules,
                 log_dir=log_dir,
                 result_dir=result_dir,
+                skip_calibre=skip_calibre,
             )
             total_result = result
 
-    logger.info(
-        "Baseline 汇总: correct_rules=%d, total_rules=%d, accuracy=%.2f%%",
-        total_result["correct_rules"],
-        total_result["total_rules"],
-        total_result["overall_accuracy"] * 100,
-    )
+    if total_result.get("overall_accuracy") is not None:
+        logger.info(
+            "Baseline 汇总: correct_rules=%d, total_rules=%d, accuracy=%.2f%%",
+            total_result["correct_rules"],
+            total_result["total_rules"],
+            total_result["overall_accuracy"] * 100,
+        )
+    else:
+        logger.info(
+            "Baseline 汇总（已跳过 Calibre）: total_rules=%s",
+            total_result.get("total_rules"),
+        )
 
     if args.output:
         with open(args.output, "w", encoding="utf-8") as f:

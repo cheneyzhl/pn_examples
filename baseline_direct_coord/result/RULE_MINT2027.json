@@ -1,0 +1,39 @@
+{
+  "rule_name": "RULE_MINT2027",
+  "rule_description": "MINT2 minimum area for rectangular shape is 0.0024um2",
+  "rule_script": "rect_MINT2 = RECTANGLE MINT2 \nAREA rect_MINT2 < 0.0024",
+  "calibre_skipped": true,
+  "sample_correct": null,
+  "sample_total": null,
+  "accuracy": null,
+  "details": [
+    {
+      "idx": 0,
+      "predicted_label": true,
+      "pos": {
+        "MINT2_1": [
+          {
+            "llx": 0,
+            "lly": 0,
+            "urx": 60,
+            "ury": 40
+          }
+        ]
+      }
+    },
+    {
+      "idx": 1,
+      "predicted_label": false,
+      "pos": {
+        "MINT2_1": [
+          {
+            "llx": 0,
+            "lly": 0,
+            "urx": 60,
+            "ury": 39
+          }
+        ]
+      }
+    }
+  ]
+}

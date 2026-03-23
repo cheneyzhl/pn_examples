@@ -1,0 +1,73 @@
+{
+  "raw_response": "```json\n{\n  \"examples\": [\n    {\n      \"MINT2A_1\": [\n        {\n          \"llx\": 0,\n          \"lly\": 0,\n          \"urx\": 2000,\n          \"ury\": 1200\n        }\n      ]\n    },\n    {\n      \"MINT2A_1\": [\n        {\n          \"llx\": 0,\n          \"lly\": 0,\n          \"urx\": 2000,\n          \"ury\": 1199\n        }\n      ]\n    },\n    {\n      \"MINT2A_1\": [\n        {\n          \"llx\": 0,\n          \"lly\": 0,\n          \"urx\": 1200,\n          \"ury\": 2000\n        }\n      ]\n    },\n    {\n      \"MINT2A_1\": [\n        {\n          \"llx\": 0,\n          \"lly\": 0,\n          \"urx\": 1199,\n          \"ury\": 2000\n        }\n      ]\n    },\n    {\n      \"MINT2A_1\": [\n        {\n          \"llx\": 0,\n          \"lly\": 0,\n          \"urx\": 1549,\n          \"ury\": 1549\n        }\n      ]\n    },\n    {\n      \"MINT2A_1\": [\n        {\n          \"llx\": 0,\n          \"lly\": 0,\n          \"urx\": 1549,\n          \"ury\": 1548\n        }\n      ]\n    }\n  ],\n  \"labels\": [\n    true,\n    false,\n    true,\n    false,\n    true,\n    false\n  ]\n}\n```",
+  "examples": [
+    {
+      "MINT2A_1": [
+        {
+          "llx": 0,
+          "lly": 0,
+          "urx": 2000,
+          "ury": 1200
+        }
+      ]
+    },
+    {
+      "MINT2A_1": [
+        {
+          "llx": 0,
+          "lly": 0,
+          "urx": 2000,
+          "ury": 1199
+        }
+      ]
+    },
+    {
+      "MINT2A_1": [
+        {
+          "llx": 0,
+          "lly": 0,
+          "urx": 1200,
+          "ury": 2000
+        }
+      ]
+    },
+    {
+      "MINT2A_1": [
+        {
+          "llx": 0,
+          "lly": 0,
+          "urx": 1199,
+          "ury": 2000
+        }
+      ]
+    },
+    {
+      "MINT2A_1": [
+        {
+          "llx": 0,
+          "lly": 0,
+          "urx": 1549,
+          "ury": 1549
+        }
+      ]
+    },
+    {
+      "MINT2A_1": [
+        {
+          "llx": 0,
+          "lly": 0,
+          "urx": 1549,
+          "ury": 1548
+        }
+      ]
+    }
+  ],
+  "labels": [
+    true,
+    false,
+    true,
+    false,
+    true,
+    false
+  ]
+}

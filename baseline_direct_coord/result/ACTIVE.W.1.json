@@ -1,0 +1,95 @@
+{
+  "rule_name": "ACTIVE.W.1",
+  "rule_description": "Minimum vertical width of ACTIVE layer is 27 nm.",
+  "rule_script": "INTERNAL ACTIVE_HE < 0.027",
+  "calibre_skipped": true,
+  "sample_correct": null,
+  "sample_total": null,
+  "accuracy": null,
+  "details": [
+    {
+      "idx": 0,
+      "predicted_label": true,
+      "pos": {
+        "ACTIVE_1": [
+          {
+            "llx": 0,
+            "lly": 0,
+            "urx": 100,
+            "ury": 27
+          }
+        ]
+      }
+    },
+    {
+      "idx": 1,
+      "predicted_label": false,
+      "pos": {
+        "ACTIVE_1": [
+          {
+            "llx": 0,
+            "lly": 0,
+            "urx": 100,
+            "ury": 26
+          }
+        ]
+      }
+    },
+    {
+      "idx": 2,
+      "predicted_label": true,
+      "pos": {
+        "ACTIVE_1": [
+          {
+            "llx": 0,
+            "lly": 0,
+            "urx": 27,
+            "ury": 100
+          }
+        ]
+      }
+    },
+    {
+      "idx": 3,
+      "predicted_label": false,
+      "pos": {
+        "ACTIVE_1": [
+          {
+            "llx": 0,
+            "lly": 0,
+            "urx": 26,
+            "ury": 100
+          }
+        ]
+      }
+    },
+    {
+      "idx": 4,
+      "predicted_label": true,
+      "pos": {
+        "ACTIVE_1": [
+          {
+            "llx": 0,
+            "lly": 0,
+            "urx": 27,
+            "ury": 27
+          }
+        ]
+      }
+    },
+    {
+      "idx": 5,
+      "predicted_label": false,
+      "pos": {
+        "ACTIVE_1": [
+          {
+            "llx": 0,
+            "lly": 0,
+            "urx": 26,
+            "ury": 26
+          }
+        ]
+      }
+    }
+  ]
+}

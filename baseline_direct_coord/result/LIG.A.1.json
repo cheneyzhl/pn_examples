@@ -1,0 +1,79 @@
+{
+  "rule_name": "LIG.A.1",
+  "rule_description": "LIG.A.1 Minimum LIG area is 324 nm-sq.",
+  "rule_script": "AREA LIG < 0.000324",
+  "calibre_skipped": true,
+  "sample_correct": null,
+  "sample_total": null,
+  "accuracy": null,
+  "details": [
+    {
+      "idx": 0,
+      "predicted_label": true,
+      "pos": {
+        "LIG_1": [
+          {
+            "llx": 0,
+            "lly": 0,
+            "urx": 18,
+            "ury": 18
+          }
+        ]
+      }
+    },
+    {
+      "idx": 1,
+      "predicted_label": false,
+      "pos": {
+        "LIG_1": [
+          {
+            "llx": 0,
+            "lly": 0,
+            "urx": 17,
+            "ury": 19
+          }
+        ]
+      }
+    },
+    {
+      "idx": 2,
+      "predicted_label": true,
+      "pos": {
+        "LIG_1": [
+          {
+            "llx": 0,
+            "lly": 0,
+            "urx": 18,
+            "ury": 18
+          },
+          {
+            "llx": 20,
+            "lly": 0,
+            "urx": 38,
+            "ury": 18
+          }
+        ]
+      }
+    },
+    {
+      "idx": 3,
+      "predicted_label": false,
+      "pos": {
+        "LIG_1": [
+          {
+            "llx": 0,
+            "lly": 0,
+            "urx": 18,
+            "ury": 18
+          },
+          {
+            "llx": 20,
+            "lly": 0,
+            "urx": 37,
+            "ury": 18
+          }
+        ]
+      }
+    }
+  ]
+}

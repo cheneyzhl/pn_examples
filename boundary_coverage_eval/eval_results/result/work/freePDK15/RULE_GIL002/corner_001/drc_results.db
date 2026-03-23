@@ -1,0 +1,12 @@
+TOPCELL 5000
+RULE_GIL002
+2 2 3 Mar 23 02:52:17 2026                     
+Rule File Pathname: /share/home/zenghuanlong/pn_examples/boundary_coverage_eval/eval_results/result/work/freePDK15/RULE_GIL002/corner_001/example_3.rul
+RULE_GIL001B
+Minimum horizontal length of GIL is 56nm
+e 1 2
+0 0 0 50
+275 0 275 50
+e 2 2
+500 0 500 50
+775 0 775 50

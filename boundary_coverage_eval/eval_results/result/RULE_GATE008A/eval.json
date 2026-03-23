@@ -1,0 +1,127 @@
+{
+  "rule_name": "RULE_GATE008A",
+  "rule_description": "(gatea not gatec) maximum distance to neighbor shape on same design mask is 236nm",
+  "rule_script": "GateAnotC = GATEA NOT GATEC \nx = SIZE GateAnotC BY 0.237 \nGATEA NOT x",
+  "perturbed_scripts": {
+    "corner_000": "GateAnotC = GATEA NOT GATEC \nx = SIZE GateAnotC BY 0.237 \nGATEA NOT x\n"
+  },
+  "data_name": "freePDK15",
+  "judge_mode": "match",
+  "corner_count": 1,
+  "sample_count": 4,
+  "all_corners_match": false,
+  "all_corners_detect": true,
+  "all_corners_ok": false,
+  "per_corner": [
+    {
+      "corner_id": "corner_000",
+      "script_expected_correct": true,
+      "script_predicted_correct": false,
+      "corner_any_mismatch": true,
+      "corner_all_match": false,
+      "corner_ok": false,
+      "samples": [
+        {
+          "idx": 0,
+          "predicted_label": true,
+          "calibre_label": true,
+          "match": true,
+          "error": null,
+          "pos": {
+            "GATEA_1": [
+              {
+                "llx": 0,
+                "lly": 0,
+                "urx": 100,
+                "ury": 100
+              }
+            ],
+            "GATEA_2": [
+              {
+                "llx": 336,
+                "lly": 0,
+                "urx": 436,
+                "ury": 100
+              }
+            ]
+          }
+        },
+        {
+          "idx": 1,
+          "predicted_label": false,
+          "calibre_label": true,
+          "match": false,
+          "error": null,
+          "pos": {
+            "GATEA_1": [
+              {
+                "llx": 0,
+                "lly": 0,
+                "urx": 100,
+                "ury": 100
+              }
+            ],
+            "GATEA_2": [
+              {
+                "llx": 337,
+                "lly": 0,
+                "urx": 437,
+                "ury": 100
+              }
+            ]
+          }
+        },
+        {
+          "idx": 2,
+          "predicted_label": true,
+          "calibre_label": true,
+          "match": true,
+          "error": null,
+          "pos": {
+            "GATEA_1": [
+              {
+                "llx": 0,
+                "lly": 0,
+                "urx": 100,
+                "ury": 100
+              }
+            ]
+          }
+        },
+        {
+          "idx": 3,
+          "predicted_label": false,
+          "calibre_label": true,
+          "match": false,
+          "error": null,
+          "pos": {
+            "GATEA_1": [
+              {
+                "llx": 0,
+                "lly": 0,
+                "urx": 100,
+                "ury": 100
+              }
+            ],
+            "GATEA_2": [
+              {
+                "llx": 336,
+                "lly": 0,
+                "urx": 436,
+                "ury": 100
+              }
+            ],
+            "GATEA_3": [
+              {
+                "llx": 737,
+                "lly": 0,
+                "urx": 837,
+                "ury": 100
+              }
+            ]
+          }
+        }
+      ]
+    }
+  ]
+}

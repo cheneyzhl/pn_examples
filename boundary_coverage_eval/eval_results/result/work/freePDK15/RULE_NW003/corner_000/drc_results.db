@@ -1,6 +1,12 @@
 TOPCELL 5000
 RULE_NW003
-0 0 3 Mar 20 22:31:08 2026                     
-Rule File Pathname: /share/home/zenghuanlong/pn_examples/boundary_coverage_eval/eval_results/result/work/freePDK15/RULE_NW003/corner_000/example_5.rul
+2 2 3 Mar 21 11:05:03 2026                     
+Rule File Pathname: /share/home/zenghuanlong/pn_examples/boundary_coverage_eval/eval_results/result/work/freePDK15/RULE_NW003/corner_000/example_3.rul
 RULE_NW003
 Minimum width of NW is 160nm
+e 1 2
+0 0 800 0
+0 500 800 500
+e 2 2
+1000 0 1795 0
+1000 500 1795 500

@@ -1,0 +1,67 @@
+{
+  "raw_response": "```json\n{\n  \"examples\": [\n    {\n      \"AIL2_1\": [\n        {\n          \"llx\": 0,\n          \"lly\": 0,\n          \"urx\": 100,\n          \"ury\": 68\n        }\n      ]\n    },\n    {\n      \"AIL2_1\": [\n        {\n          \"llx\": 0,\n          \"lly\": 0,\n          \"urx\": 100,\n          \"ury\": 67\n        }\n      ]\n    },\n    {\n      \"AIL2_1\": [\n        {\n          \"llx\": 0,\n          \"lly\": 0,\n          \"urx\": 100,\n          \"ury\": 68\n        }\n      ],\n      \"AIL2_2\": [\n        {\n          \"llx\": 200,\n          \"lly\": 0,\n          \"urx\": 300,\n          \"ury\": 68\n        }\n      ]\n    },\n    {\n      \"AIL2_1\": [\n        {\n          \"llx\": 0,\n          \"lly\": 0,\n          \"urx\": 100,\n          \"ury\": 68\n        }\n      ],\n      \"AIL2_2\": [\n        {\n          \"llx\": 200,\n          \"lly\": 0,\n          \"urx\": 300,\n          \"ury\": 67\n        }\n      ]\n    }\n  ],\n  \"labels\": [\n    true,\n    false,\n    true,\n    false\n  ]\n}\n```",
+  "examples": [
+    {
+      "AIL2_1": [
+        {
+          "llx": 0,
+          "lly": 0,
+          "urx": 100,
+          "ury": 68
+        }
+      ]
+    },
+    {
+      "AIL2_1": [
+        {
+          "llx": 0,
+          "lly": 0,
+          "urx": 100,
+          "ury": 67
+        }
+      ]
+    },
+    {
+      "AIL2_1": [
+        {
+          "llx": 0,
+          "lly": 0,
+          "urx": 100,
+          "ury": 68
+        }
+      ],
+      "AIL2_2": [
+        {
+          "llx": 200,
+          "lly": 0,
+          "urx": 300,
+          "ury": 68
+        }
+      ]
+    },
+    {
+      "AIL2_1": [
+        {
+          "llx": 0,
+          "lly": 0,
+          "urx": 100,
+          "ury": 68
+        }
+      ],
+      "AIL2_2": [
+        {
+          "llx": 200,
+          "lly": 0,
+          "urx": 300,
+          "ury": 67
+        }
+      ]
+    }
+  ],
+  "labels": [
+    true,
+    false,
+    true,
+    false
+  ]
+}

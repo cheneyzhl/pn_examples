@@ -1,0 +1,96 @@
+{
+  "raw_response": "```json\n{\n  \"examples\": [\n    {\n      \"M6_1\": [\n        {\n          \"llx\": 0,\n          \"lly\": 0,\n          \"urx\": 1000,\n          \"ury\": 640\n        }\n      ]\n    },\n    {\n      \"M6_1\": [\n        {\n          \"llx\": 0,\n          \"lly\": 0,\n          \"urx\": 1000,\n          \"ury\": 641\n        }\n      ]\n    },\n    {\n      \"M6_1\": [\n        {\n          \"llx\": 0,\n          \"lly\": 0,\n          \"urx\": 1000,\n          \"ury\": 639\n        }\n      ]\n    },\n    {\n      \"M6_1\": [\n        {\n          \"llx\": 0,\n          \"lly\": 0,\n          \"urx\": 1000,\n          \"ury\": 0\n        }\n      ]\n    },\n    {\n      \"M6_1\": [\n        {\n          \"llx\": 0,\n          \"lly\": 0,\n          \"urx\": 1000,\n          \"ury\": 1\n        }\n      ]\n    },\n    {\n      \"M6_1\": [\n        {\n          \"llx\": 0,\n          \"lly\": 0,\n          \"urx\": 1000,\n          \"ury\": 639\n        },\n        {\n          \"llx\": 0,\n          \"lly\": 1000,\n          \"urx\": 1000,\n          \"ury\": 1639\n        }\n      ]\n    },\n    {\n      \"M6_1\": [\n        {\n          \"llx\": 0,\n          \"lly\": 0,\n          \"urx\": 1000,\n          \"ury\": 640\n        },\n        {\n          \"llx\": 0,\n          \"lly\": 1000,\n          \"urx\": 1000,\n          \"ury\": 1640\n        }\n      ]\n    }\n  ],\n  \"labels\": [\n    true,\n    false,\n    true,\n    true,\n    true,\n    true,\n    false\n  ]\n}\n```",
+  "examples": [
+    {
+      "M6_1": [
+        {
+          "llx": 0,
+          "lly": 0,
+          "urx": 1000,
+          "ury": 640
+        }
+      ]
+    },
+    {
+      "M6_1": [
+        {
+          "llx": 0,
+          "lly": 0,
+          "urx": 1000,
+          "ury": 641
+        }
+      ]
+    },
+    {
+      "M6_1": [
+        {
+          "llx": 0,
+          "lly": 0,
+          "urx": 1000,
+          "ury": 639
+        }
+      ]
+    },
+    {
+      "M6_1": [
+        {
+          "llx": 0,
+          "lly": 0,
+          "urx": 1000,
+          "ury": 0
+        }
+      ]
+    },
+    {
+      "M6_1": [
+        {
+          "llx": 0,
+          "lly": 0,
+          "urx": 1000,
+          "ury": 1
+        }
+      ]
+    },
+    {
+      "M6_1": [
+        {
+          "llx": 0,
+          "lly": 0,
+          "urx": 1000,
+          "ury": 639
+        },
+        {
+          "llx": 0,
+          "lly": 1000,
+          "urx": 1000,
+          "ury": 1639
+        }
+      ]
+    },
+    {
+      "M6_1": [
+        {
+          "llx": 0,
+          "lly": 0,
+          "urx": 1000,
+          "ury": 640
+        },
+        {
+          "llx": 0,
+          "lly": 1000,
+          "urx": 1000,
+          "ury": 1640
+        }
+      ]
+    }
+  ],
+  "labels": [
+    true,
+    false,
+    true,
+    true,
+    true,
+    true,
+    false
+  ]
+}

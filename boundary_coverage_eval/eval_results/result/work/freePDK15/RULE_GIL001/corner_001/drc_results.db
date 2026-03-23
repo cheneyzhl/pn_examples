@@ -1,0 +1,12 @@
+TOPCELL 5000
+RULE_GIL001
+2 2 3 Mar 23 02:42:32 2026                     
+Rule File Pathname: /share/home/zenghuanlong/pn_examples/boundary_coverage_eval/eval_results/result/work/freePDK15/RULE_GIL001/corner_001/example_3.rul
+RULE_GIL001A
+Minimum vertical width of GIL is 44nm
+e 1 2
+0 0 500 0
+0 220 500 220
+e 2 2
+1000 0 1500 0
+1000 215 1500 215

@@ -1,0 +1,257 @@
+{
+  "rule_name": "RULE_ACT009",
+  "rule_description": "Maximum distance between ACT forming a MOS device and ACT forming a bulk/substrate contact within the same well/substrate is 30um, to prevent latch up",
+  "rule_script": "ACT_MOS_DEV_A = GATEA AND ACT \nACT_MOS_DEV_B = GATEB AND ACT \n \nACT_CONTACT = AIL1 AND ACT \nNTAP = NW AND NIM \nAIL1_NTAP = ACT_CONTACT AND NTAP \nAIL1_PTAP = ACT_CONTACT AND PIM \na = AIL1_NTAP SIZE BY 30 \nACT_MOS_DEV_A NOT INSIDE a \nACT_MOS_DEV_B NOT INSIDE a \nb = AIL1_PTAP SIZE BY 30 \nACT_MOS_DEV_A NOT INSIDE b \nACT_MOS_DEV_B NOT INSIDE b",
+  "perturbed_scripts": {
+    "corner_000": "ACT_MOS_DEV_A = GATEA AND ACT \nACT_MOS_DEV_B = GATEB AND ACT \n \nACT_CONTACT = AIL1 AND ACT \nNTAP = NW AND NIM \nAIL1_NTAP = ACT_CONTACT AND NTAP \nAIL1_PTAP = ACT_CONTACT AND PIM \na = AIL1_NTAP SIZE BY 30 \nACT_MOS_DEV_A NOT INSIDE a \nACT_MOS_DEV_B NOT INSIDE a \nb = AIL1_PTAP SIZE BY 30 \nACT_MOS_DEV_A NOT INSIDE b \nACT_MOS_DEV_B NOT INSIDE b\n"
+  },
+  "data_name": "freePDK15",
+  "judge_mode": "match",
+  "corner_count": 1,
+  "sample_count": 6,
+  "all_corners_match": false,
+  "all_corners_detect": true,
+  "all_corners_ok": false,
+  "per_corner": [
+    {
+      "corner_id": "corner_000",
+      "script_expected_correct": true,
+      "script_predicted_correct": false,
+      "corner_any_mismatch": true,
+      "corner_all_match": false,
+      "corner_ok": false,
+      "samples": [
+        {
+          "idx": 0,
+          "predicted_label": true,
+          "calibre_label": true,
+          "match": true,
+          "error": null,
+          "pos": {
+            "NW_1": [
+              {
+                "llx": 0,
+                "lly": 0,
+                "urx": 100000,
+                "ury": 100000
+              }
+            ],
+            "ACT_1": [
+              {
+                "llx": 10000,
+                "lly": 10000,
+                "urx": 20000,
+                "ury": 20000
+              }
+            ],
+            "ACT_2": [
+              {
+                "llx": 40000,
+                "lly": 10000,
+                "urx": 50000,
+                "ury": 20000
+              }
+            ]
+          }
+        },
+        {
+          "idx": 1,
+          "predicted_label": false,
+          "calibre_label": true,
+          "match": false,
+          "error": null,
+          "pos": {
+            "NW_1": [
+              {
+                "llx": 0,
+                "lly": 0,
+                "urx": 100000,
+                "ury": 100000
+              }
+            ],
+            "ACT_1": [
+              {
+                "llx": 10000,
+                "lly": 10000,
+                "urx": 20000,
+                "ury": 20000
+              }
+            ],
+            "ACT_2": [
+              {
+                "llx": 50000,
+                "lly": 10000,
+                "urx": 60000,
+                "ury": 20000
+              }
+            ]
+          }
+        },
+        {
+          "idx": 2,
+          "predicted_label": true,
+          "calibre_label": true,
+          "match": true,
+          "error": null,
+          "pos": {
+            "NW_1": [
+              {
+                "llx": 0,
+                "lly": 0,
+                "urx": 100000,
+                "ury": 100000
+              }
+            ],
+            "ACT_1": [
+              {
+                "llx": 10000,
+                "lly": 10000,
+                "urx": 20000,
+                "ury": 20000
+              }
+            ],
+            "ACT_2": [
+              {
+                "llx": 40000,
+                "lly": 10000,
+                "urx": 50000,
+                "ury": 20000
+              }
+            ],
+            "VTH_1": [
+              {
+                "llx": 10000,
+                "lly": 10000,
+                "urx": 20000,
+                "ury": 20000
+              }
+            ]
+          }
+        },
+        {
+          "idx": 3,
+          "predicted_label": false,
+          "calibre_label": true,
+          "match": false,
+          "error": null,
+          "pos": {
+            "NW_1": [
+              {
+                "llx": 0,
+                "lly": 0,
+                "urx": 100000,
+                "ury": 100000
+              }
+            ],
+            "ACT_1": [
+              {
+                "llx": 10000,
+                "lly": 10000,
+                "urx": 20000,
+                "ury": 20000
+              }
+            ],
+            "ACT_2": [
+              {
+                "llx": 50000,
+                "lly": 10000,
+                "urx": 60000,
+                "ury": 20000
+              }
+            ],
+            "VTH_1": [
+              {
+                "llx": 10000,
+                "lly": 10000,
+                "urx": 20000,
+                "ury": 20000
+              }
+            ]
+          }
+        },
+        {
+          "idx": 4,
+          "predicted_label": true,
+          "calibre_label": true,
+          "match": true,
+          "error": null,
+          "pos": {
+            "NW_1": [
+              {
+                "llx": 0,
+                "lly": 0,
+                "urx": 100000,
+                "ury": 100000
+              }
+            ],
+            "ACT_1": [
+              {
+                "llx": 10000,
+                "lly": 10000,
+                "urx": 20000,
+                "ury": 20000
+              }
+            ],
+            "ACT_2": [
+              {
+                "llx": 40000,
+                "lly": 10000,
+                "urx": 50000,
+                "ury": 20000
+              }
+            ],
+            "VTL_1": [
+              {
+                "llx": 10000,
+                "lly": 10000,
+                "urx": 20000,
+                "ury": 20000
+              }
+            ]
+          }
+        },
+        {
+          "idx": 5,
+          "predicted_label": false,
+          "calibre_label": true,
+          "match": false,
+          "error": null,
+          "pos": {
+            "NW_1": [
+              {
+                "llx": 0,
+                "lly": 0,
+                "urx": 100000,
+                "ury": 100000
+              }
+            ],
+            "ACT_1": [
+              {
+                "llx": 10000,
+                "lly": 10000,
+                "urx": 20000,
+                "ury": 20000
+              }
+            ],
+            "ACT_2": [
+              {
+                "llx": 50000,
+                "lly": 10000,
+                "urx": 60000,
+                "ury": 20000
+              }
+            ],
+            "VTL_1": [
+              {
+                "llx": 10000,
+                "lly": 10000,
+                "urx": 20000,
+                "ury": 20000
+              }
+            ]
+          }
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,95 @@
+{
+  "rule_name": "M6.W.5",
+  "rule_description": "Minimum horizontal width of M6 is 44 nm.",
+  "rule_script": "INTERNAL M6_VE < VAR_BLOCK_MASK_T2T",
+  "calibre_skipped": true,
+  "sample_correct": null,
+  "sample_total": null,
+  "accuracy": null,
+  "details": [
+    {
+      "idx": 0,
+      "predicted_label": true,
+      "pos": {
+        "M6_1": [
+          {
+            "llx": 0,
+            "lly": 0,
+            "urx": 44,
+            "ury": 100
+          }
+        ]
+      }
+    },
+    {
+      "idx": 1,
+      "predicted_label": false,
+      "pos": {
+        "M6_1": [
+          {
+            "llx": 0,
+            "lly": 0,
+            "urx": 43,
+            "ury": 100
+          }
+        ]
+      }
+    },
+    {
+      "idx": 2,
+      "predicted_label": true,
+      "pos": {
+        "M6_1": [
+          {
+            "llx": 0,
+            "lly": 0,
+            "urx": 44,
+            "ury": 44
+          }
+        ]
+      }
+    },
+    {
+      "idx": 3,
+      "predicted_label": false,
+      "pos": {
+        "M6_1": [
+          {
+            "llx": 0,
+            "lly": 0,
+            "urx": 43,
+            "ury": 43
+          }
+        ]
+      }
+    },
+    {
+      "idx": 4,
+      "predicted_label": true,
+      "pos": {
+        "M6_1": [
+          {
+            "llx": 0,
+            "lly": 0,
+            "urx": 100,
+            "ury": 44
+          }
+        ]
+      }
+    },
+    {
+      "idx": 5,
+      "predicted_label": false,
+      "pos": {
+        "M6_1": [
+          {
+            "llx": 0,
+            "lly": 0,
+            "urx": 100,
+            "ury": 43
+          }
+        ]
+      }
+    }
+  ]
+}

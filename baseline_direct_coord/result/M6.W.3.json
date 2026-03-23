@@ -1,0 +1,95 @@
+{
+  "rule_name": "M6.W.3",
+  "rule_description": "M6 vertical width may not be an even integer multiple of its minimum width.",
+  "rule_script": "INTERNAL M6_HE ==  2*VAR_M6_1X REGION OPPOSITE PARALLEL ONLY PROJ > 0 \nINTERNAL M6_HE ==  4*VAR_M6_1X REGION OPPOSITE PARALLEL ONLY PROJ > 0 \nINTERNAL M6_HE ==  6*VAR_M6_1X REGION OPPOSITE PARALLEL ONLY PROJ > 0 \nINTERNAL M6_HE ==  8*VAR_M6_1X REGION OPPOSITE PARALLEL ONLY PROJ > 0 \nINTERNAL M6_HE == 10*VAR_M6_1X REGION OPPOSITE PARALLEL ONLY PROJ > 0 \nINTERNAL M6_HE == 12*VAR_M6_1X REGION OPPOSITE PARALLEL ONLY PROJ > 0 \nINTERNAL M6_HE == 14*VAR_M6_1X REGION OPPOSITE PARALLEL ONLY PROJ > 0 \nINTERNAL M6_HE == 16*VAR_M6_1X REGION OPPOSITE PARALLEL ONLY PROJ > 0 \nINTERNAL M6_HE == 18*VAR_M6_1X REGION OPPOSITE PARALLEL ONLY PROJ > 0 \nINTERNAL M6_HE == 20*VAR_M6_1X REGION OPPOSITE PARALLEL ONLY PROJ > 0",
+  "calibre_skipped": true,
+  "sample_correct": null,
+  "sample_total": null,
+  "accuracy": null,
+  "details": [
+    {
+      "idx": 0,
+      "predicted_label": true,
+      "pos": {
+        "M6_1": [
+          {
+            "llx": 0,
+            "lly": 0,
+            "urx": 100,
+            "ury": 101
+          }
+        ]
+      }
+    },
+    {
+      "idx": 1,
+      "predicted_label": false,
+      "pos": {
+        "M6_1": [
+          {
+            "llx": 0,
+            "lly": 0,
+            "urx": 100,
+            "ury": 100
+          }
+        ]
+      }
+    },
+    {
+      "idx": 2,
+      "predicted_label": true,
+      "pos": {
+        "M6_1": [
+          {
+            "llx": 0,
+            "lly": 0,
+            "urx": 100,
+            "ury": 201
+          }
+        ]
+      }
+    },
+    {
+      "idx": 3,
+      "predicted_label": false,
+      "pos": {
+        "M6_1": [
+          {
+            "llx": 0,
+            "lly": 0,
+            "urx": 100,
+            "ury": 200
+          }
+        ]
+      }
+    },
+    {
+      "idx": 4,
+      "predicted_label": true,
+      "pos": {
+        "M6_1": [
+          {
+            "llx": 0,
+            "lly": 0,
+            "urx": 100,
+            "ury": 99
+          }
+        ]
+      }
+    },
+    {
+      "idx": 5,
+      "predicted_label": true,
+      "pos": {
+        "M6_1": [
+          {
+            "llx": 0,
+            "lly": 0,
+            "urx": 100,
+            "ury": 102
+          }
+        ]
+      }
+    }
+  ]
+}

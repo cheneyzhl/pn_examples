@@ -1,5 +1,5 @@
 {
-  "raw_response": "```json\n{\n  \"examples\": [\n    {\n      \"NW_1\": [\n        {\n          \"llx\": 0,\n          \"lly\": 0,\n          \"urx\": 160,\n          \"ury\": 200\n        }\n      ]\n    },\n    {\n      \"NW_1\": [\n        {\n          \"llx\": 0,\n          \"lly\": 0,\n          \"urx\": 159,\n          \"ury\": 200\n        }\n      ]\n    },\n    {\n      \"NW_1\": [\n        {\n          \"llx\": 0,\n          \"lly\": 0,\n          \"urx\": 160,\n          \"ury\": 160\n        }\n      ]\n    },\n    {\n      \"NW_1\": [\n        {\n          \"llx\": 0,\n          \"lly\": 0,\n          \"urx\": 159,\n          \"ury\": 159\n        }\n      ]\n    },\n    {\n      \"NW_1\": [\n        {\n          \"llx\": 0,\n          \"lly\": 0,\n          \"urx\": 160,\n          \"ury\": 160\n        },\n        {\n          \"llx\": 200,\n          \"lly\": 0,\n          \"urx\": 360,\n          \"ury\": 160\n        }\n      ]\n    },\n    {\n      \"NW_1\": [\n        {\n          \"llx\": 0,\n          \"lly\": 0,\n          \"urx\": 160,\n          \"ury\": 160\n        },\n        {\n          \"llx\": 200,\n          \"lly\": 0,\n          \"urx\": 359,\n          \"ury\": 160\n        }\n      ]\n    }\n  ],\n  \"labels\": [\n    true,\n    false,\n    true,\n    false,\n    true,\n    false\n  ]\n}\n```",
+  "raw_response": "```json\n{\n  \"examples\": [\n    {\n      \"NW_1\": [\n        {\n          \"llx\": 0,\n          \"lly\": 0,\n          \"urx\": 160,\n          \"ury\": 100\n        }\n      ]\n    },\n    {\n      \"NW_1\": [\n        {\n          \"llx\": 0,\n          \"lly\": 0,\n          \"urx\": 159,\n          \"ury\": 100\n        }\n      ]\n    },\n    {\n      \"NW_1\": [\n        {\n          \"llx\": 0,\n          \"lly\": 0,\n          \"urx\": 160,\n          \"ury\": 100\n        }\n      ],\n      \"NW_2\": [\n        {\n          \"llx\": 200,\n          \"lly\": 0,\n          \"urx\": 360,\n          \"ury\": 100\n        }\n      ]\n    },\n    {\n      \"NW_1\": [\n        {\n          \"llx\": 0,\n          \"lly\": 0,\n          \"urx\": 160,\n          \"ury\": 100\n        }\n      ],\n      \"NW_2\": [\n        {\n          \"llx\": 200,\n          \"lly\": 0,\n          \"urx\": 359,\n          \"ury\": 100\n        }\n      ]\n    }\n  ],\n  \"labels\": [\n    true,\n    false,\n    true,\n    false\n  ]\n}\n```",
   "examples": [
     {
       "NW_1": [
@@ -7,7 +7,7 @@
           "llx": 0,
           "lly": 0,
           "urx": 160,
-          "ury": 200
+          "ury": 100
         }
       ]
     },
@@ -17,7 +17,7 @@
           "llx": 0,
           "lly": 0,
           "urx": 159,
-          "ury": 200
+          "ury": 100
         }
       ]
     },
@@ -27,33 +27,15 @@
           "llx": 0,
           "lly": 0,
           "urx": 160,
-          "ury": 160
+          "ury": 100
         }
-      ]
-    },
-    {
-      "NW_1": [
-        {
-          "llx": 0,
-          "lly": 0,
-          "urx": 159,
-          "ury": 159
-        }
-      ]
-    },
-    {
-      "NW_1": [
-        {
-          "llx": 0,
-          "lly": 0,
-          "urx": 160,
-          "ury": 160
-        },
+      ],
+      "NW_2": [
         {
           "llx": 200,
           "lly": 0,
           "urx": 360,
-          "ury": 160
+          "ury": 100
         }
       ]
     },
@@ -63,20 +45,20 @@
           "llx": 0,
           "lly": 0,
           "urx": 160,
-          "ury": 160
-        },
+          "ury": 100
+        }
+      ],
+      "NW_2": [
         {
           "llx": 200,
           "lly": 0,
           "urx": 359,
-          "ury": 160
+          "ury": 100
         }
       ]
     }
   ],
   "labels": [
-    true,
-    false,
     true,
     false,
     true,

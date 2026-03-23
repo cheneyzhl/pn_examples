@@ -1,5 +1,5 @@
 {
-  "raw_response": "```json\n{\n  \"examples\": [\n    {\n      \"WELL_1\": [\n        {\n          \"llx\": 0,\n          \"lly\": 0,\n          \"urx\": 108,\n          \"ury\": 100\n        }\n      ]\n    },\n    {\n      \"WELL_1\": [\n        {\n          \"llx\": 0,\n          \"lly\": 0,\n          \"urx\": 107,\n          \"ury\": 100\n        }\n      ]\n    },\n    {\n      \"WELL_1\": [\n        {\n          \"llx\": 0,\n          \"lly\": 0,\n          \"urx\": 108,\n          \"ury\": 100\n        }\n      ],\n      \"WELL_2\": [\n        {\n          \"llx\": 200,\n          \"lly\": 0,\n          \"urx\": 308,\n          \"ury\": 100\n        }\n      ]\n    },\n    {\n      \"WELL_1\": [\n        {\n          \"llx\": 0,\n          \"lly\": 0,\n          \"urx\": 108,\n          \"ury\": 100\n        }\n      ],\n      \"WELL_2\": [\n        {\n          \"llx\": 200,\n          \"lly\": 0,\n          \"urx\": 307,\n          \"ury\": 100\n        }\n      ]\n    }\n  ],\n  \"labels\": [\n    true,\n    false,\n    true,\n    false\n  ]\n}\n```",
+  "raw_response": "根据给定的DRC规则\"Minimum horizontal width of WELL is 108 nm\"，我们需要分析并生成相应的正例和反例。这个规则只涉及WELL层的水平宽度，因此我们只需要考虑WELL层的矩形宽度是否满足最小宽度要求。\n\n### 分析条件变量：\n1. WELL层的水平宽度（urx - llx）是否 >= 108 nm\n\n### 布尔条件：\n- 条件A: WELL宽度 >= 108 nm (满足规则)\n- 条件B: WELL宽度 < 108 nm (违反规则)\n\n### 组合枚举：\n由于只有一个条件变量，只有两种组合：\n1. 满足条件A\n2. 满足条件B\n\n### 生成例子：\n\n```json\n{\n  \"examples\": [\n    {\n      \"WELL_1\": [\n        {\n          \"llx\": 0,\n          \"lly\": 0,\n          \"urx\": 108,\n          \"ury\": 100\n        }\n      ]\n    },\n    {\n      \"WELL_1\": [\n        {\n          \"llx\": 0,\n          \"lly\": 0,\n          \"urx\": 107,\n          \"ury\": 100\n        }\n      ]\n    },\n    {\n      \"WELL_1\": [\n        {\n          \"llx\": 0,\n          \"lly\": 0,\n          \"urx\": 200,\n          \"ury\": 100\n        }\n      ]\n    },\n    {\n      \"WELL_1\": [\n        {\n          \"llx\": 0,\n          \"lly\": 0,\n          \"urx\": 108,\n          \"ury\": 100\n        }\n      ],\n      \"WELL_2\": [\n        {\n          \"llx\": 200,\n          \"lly\": 0,\n          \"urx\": 307,\n          \"ury\": 100\n        }\n      ]\n    }\n  ],\n  \"labels\": [\n    true,\n    false,\n    true,\n    false\n  ]\n}\n```\n\n### 自检说明：\n1. 第一个例子：WELL宽度=108-0=108 nm，刚好满足规则（正例）\n2. 第二个例子：WELL宽度=107-0=107 nm < 108 nm，违反规则（反例）\n3. 第三个例子：WELL宽度=200-0=200 nm > 108 nm，满足规则（正例）\n4. 第四个例子：WELL_1宽度=108 nm（满足），但WELL_2宽度=307-200=107 nm < 108 nm（违反），整体为反例\n\n所有例子都通过了自检，正例都满足宽度>=108 nm，反例都至少有一个WELL宽度<108 nm。",
   "examples": [
     {
       "WELL_1": [
@@ -26,15 +26,7 @@
         {
           "llx": 0,
           "lly": 0,
-          "urx": 108,
-          "ury": 100
-        }
-      ],
-      "WELL_2": [
-        {
-          "llx": 200,
-          "lly": 0,
-          "urx": 308,
+          "urx": 200,
           "ury": 100
         }
       ]

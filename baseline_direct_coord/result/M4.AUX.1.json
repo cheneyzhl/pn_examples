@@ -1,0 +1,135 @@
+{
+  "rule_name": "M4.AUX.1",
+  "rule_description": "M4 horizontal edges must be at a grid of 24 nm.",
+  "rule_script": "OFFGRID M4 1 VAR_M4_1X_DBU OFFSET 0 VAR_M4_YOFFSET HINT",
+  "calibre_skipped": true,
+  "sample_correct": null,
+  "sample_total": null,
+  "accuracy": null,
+  "details": [
+    {
+      "idx": 0,
+      "predicted_label": true,
+      "pos": {
+        "M4_1": [
+          {
+            "llx": 0,
+            "lly": 0,
+            "urx": 24,
+            "ury": 24
+          }
+        ]
+      }
+    },
+    {
+      "idx": 1,
+      "predicted_label": false,
+      "pos": {
+        "M4_1": [
+          {
+            "llx": 0,
+            "lly": 0,
+            "urx": 23,
+            "ury": 24
+          }
+        ]
+      }
+    },
+    {
+      "idx": 2,
+      "predicted_label": true,
+      "pos": {
+        "M4_1": [
+          {
+            "llx": 24,
+            "lly": 0,
+            "urx": 48,
+            "ury": 24
+          }
+        ]
+      }
+    },
+    {
+      "idx": 3,
+      "predicted_label": false,
+      "pos": {
+        "M4_1": [
+          {
+            "llx": 24,
+            "lly": 0,
+            "urx": 47,
+            "ury": 24
+          }
+        ]
+      }
+    },
+    {
+      "idx": 4,
+      "predicted_label": true,
+      "pos": {
+        "M4_1": [
+          {
+            "llx": 0,
+            "lly": 0,
+            "urx": 48,
+            "ury": 24
+          }
+        ]
+      }
+    },
+    {
+      "idx": 5,
+      "predicted_label": false,
+      "pos": {
+        "M4_1": [
+          {
+            "llx": 0,
+            "lly": 0,
+            "urx": 49,
+            "ury": 24
+          }
+        ]
+      }
+    },
+    {
+      "idx": 6,
+      "predicted_label": true,
+      "pos": {
+        "M4_1": [
+          {
+            "llx": 0,
+            "lly": 0,
+            "urx": 24,
+            "ury": 24
+          },
+          {
+            "llx": 24,
+            "lly": 0,
+            "urx": 48,
+            "ury": 24
+          }
+        ]
+      }
+    },
+    {
+      "idx": 7,
+      "predicted_label": false,
+      "pos": {
+        "M4_1": [
+          {
+            "llx": 0,
+            "lly": 0,
+            "urx": 24,
+            "ury": 24
+          },
+          {
+            "llx": 23,
+            "lly": 0,
+            "urx": 47,
+            "ury": 24
+          }
+        ]
+      }
+    }
+  ]
+}

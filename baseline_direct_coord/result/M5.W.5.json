@@ -1,0 +1,39 @@
+{
+  "rule_name": "M5.W.5",
+  "rule_description": "Minimum vertical width of M5 is 44 nm.",
+  "rule_script": "INTERNAL M5_HE < VAR_BLOCK_MASK_T2T",
+  "calibre_skipped": true,
+  "sample_correct": null,
+  "sample_total": null,
+  "accuracy": null,
+  "details": [
+    {
+      "idx": 0,
+      "predicted_label": true,
+      "pos": {
+        "M5_1": [
+          {
+            "llx": 0,
+            "lly": 0,
+            "urx": 100,
+            "ury": 44
+          }
+        ]
+      }
+    },
+    {
+      "idx": 1,
+      "predicted_label": false,
+      "pos": {
+        "M5_1": [
+          {
+            "llx": 0,
+            "lly": 0,
+            "urx": 100,
+            "ury": 43
+          }
+        ]
+      }
+    }
+  ]
+}

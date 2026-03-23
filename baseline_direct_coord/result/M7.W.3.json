@@ -1,0 +1,81 @@
+{
+  "rule_name": "M7.W.3",
+  "rule_description": "M7 horizontal width may not be an even integer multiple of its minimum width.",
+  "rule_script": "INTERNAL M7_VE ==  2*VAR_M7_1X REGION OPPOSITE PARALLEL ONLY PROJ > 0 \nINTERNAL M7_VE ==  4*VAR_M7_1X REGION OPPOSITE PARALLEL ONLY PROJ > 0 \nINTERNAL M7_VE ==  6*VAR_M7_1X REGION OPPOSITE PARALLEL ONLY PROJ > 0 \nINTERNAL M7_VE ==  8*VAR_M7_1X REGION OPPOSITE PARALLEL ONLY PROJ > 0 \nINTERNAL M7_VE == 10*VAR_M7_1X REGION OPPOSITE PARALLEL ONLY PROJ > 0 \nINTERNAL M7_VE == 12*VAR_M7_1X REGION OPPOSITE PARALLEL ONLY PROJ > 0 \nINTERNAL M7_VE == 14*VAR_M7_1X REGION OPPOSITE PARALLEL ONLY PROJ > 0 \nINTERNAL M7_VE == 16*VAR_M7_1X REGION OPPOSITE PARALLEL ONLY PROJ > 0 \nINTERNAL M7_VE == 18*VAR_M7_1X REGION OPPOSITE PARALLEL ONLY PROJ > 0 \nINTERNAL M7_VE == 20*VAR_M7_1X REGION OPPOSITE PARALLEL ONLY PROJ > 0",
+  "calibre_skipped": true,
+  "sample_correct": null,
+  "sample_total": null,
+  "accuracy": null,
+  "details": [
+    {
+      "idx": 0,
+      "predicted_label": true,
+      "pos": {
+        "M7_1": [
+          {
+            "llx": 0,
+            "lly": 0,
+            "urx": 10,
+            "ury": 10
+          }
+        ]
+      }
+    },
+    {
+      "idx": 1,
+      "predicted_label": true,
+      "pos": {
+        "M7_1": [
+          {
+            "llx": 0,
+            "lly": 0,
+            "urx": 30,
+            "ury": 10
+          }
+        ]
+      }
+    },
+    {
+      "idx": 2,
+      "predicted_label": true,
+      "pos": {
+        "M7_1": [
+          {
+            "llx": 0,
+            "lly": 0,
+            "urx": 15,
+            "ury": 10
+          }
+        ]
+      }
+    },
+    {
+      "idx": 3,
+      "predicted_label": false,
+      "pos": {
+        "M7_1": [
+          {
+            "llx": 0,
+            "lly": 0,
+            "urx": 20,
+            "ury": 10
+          }
+        ]
+      }
+    },
+    {
+      "idx": 4,
+      "predicted_label": false,
+      "pos": {
+        "M7_1": [
+          {
+            "llx": 0,
+            "lly": 0,
+            "urx": 40,
+            "ury": 10
+          }
+        ]
+      }
+    }
+  ]
+}

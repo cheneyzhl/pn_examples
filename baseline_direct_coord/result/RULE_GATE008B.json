@@ -1,0 +1,129 @@
+{
+  "rule_name": "RULE_GATE008B",
+  "rule_description": "(gateb not gatec) maximum distance to neighbor shape 236nm",
+  "rule_script": "GateBnotC = GATEB NOT GATEC \nx = SIZE GateBnotC BY 0.237 \nGATEB NOT x",
+  "calibre_skipped": true,
+  "sample_correct": null,
+  "sample_total": null,
+  "accuracy": null,
+  "details": [
+    {
+      "idx": 0,
+      "predicted_label": true,
+      "pos": {
+        "GATEB_1": [
+          {
+            "llx": 0,
+            "lly": 0,
+            "urx": 100,
+            "ury": 100
+          }
+        ],
+        "GATEB_2": [
+          {
+            "llx": 235,
+            "lly": 0,
+            "urx": 335,
+            "ury": 100
+          }
+        ]
+      }
+    },
+    {
+      "idx": 1,
+      "predicted_label": false,
+      "pos": {
+        "GATEB_1": [
+          {
+            "llx": 0,
+            "lly": 0,
+            "urx": 100,
+            "ury": 100
+          }
+        ],
+        "GATEB_2": [
+          {
+            "llx": 236,
+            "lly": 0,
+            "urx": 336,
+            "ury": 100
+          }
+        ]
+      }
+    },
+    {
+      "idx": 2,
+      "predicted_label": true,
+      "pos": {
+        "GATEB_1": [
+          {
+            "llx": 0,
+            "lly": 0,
+            "urx": 100,
+            "ury": 100
+          }
+        ],
+        "GATEC_1": [
+          {
+            "llx": 50,
+            "lly": 50,
+            "urx": 150,
+            "ury": 150
+          }
+        ],
+        "GATEB_2": [
+          {
+            "llx": 500,
+            "lly": 0,
+            "urx": 600,
+            "ury": 100
+          }
+        ]
+      }
+    },
+    {
+      "idx": 3,
+      "predicted_label": true,
+      "pos": {
+        "GATEB_1": [
+          {
+            "llx": 0,
+            "lly": 0,
+            "urx": 100,
+            "ury": 100
+          }
+        ],
+        "GATEB_2": [
+          {
+            "llx": 0,
+            "lly": 235,
+            "urx": 100,
+            "ury": 335
+          }
+        ]
+      }
+    },
+    {
+      "idx": 4,
+      "predicted_label": false,
+      "pos": {
+        "GATEB_1": [
+          {
+            "llx": 0,
+            "lly": 0,
+            "urx": 100,
+            "ury": 100
+          }
+        ],
+        "GATEB_2": [
+          {
+            "llx": 0,
+            "lly": 236,
+            "urx": 100,
+            "ury": 336
+          }
+        ]
+      }
+    }
+  ]
+}

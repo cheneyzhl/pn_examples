@@ -1,0 +1,19 @@
+{
+  "data_name": "",
+  "judge_mode": "match",
+  "total_rules_evaluated": 0,
+  "passed_rules_by_judge_mode": 0,
+  "boundary_coverage_accuracy": 0.0,
+  "boundary_coverage_accuracy_match": 0.0,
+  "boundary_coverage_accuracy_detect": 0.0,
+  "details": [],
+  "skipped_rules": [
+    {
+      "rule_name": "RULE_M1002",
+      "data_name": "freePDK15",
+      "reason": "Rule RULE_M1002 has samples with missing pos at idx [0, 1]. Only coordinates (pos) and labels from baseline summary/result are supported.",
+      "type": "missing_pos"
+    }
+  ],
+  "skipped_rule_count": 1
+}

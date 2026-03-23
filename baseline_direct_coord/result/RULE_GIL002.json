@@ -1,0 +1,83 @@
+{
+  "rule_name": "RULE_GIL002",
+  "rule_description": "Minimum horizontal length of GIL is 56nm",
+  "rule_script": "ALL_VERT_EDGES = ANGLE GIL == 90 \nINTERNAL ALL_VERT_EDGES < 0.056",
+  "calibre_skipped": true,
+  "sample_correct": null,
+  "sample_total": null,
+  "accuracy": null,
+  "details": [
+    {
+      "idx": 0,
+      "predicted_label": true,
+      "pos": {
+        "GIL_1": [
+          {
+            "llx": 0,
+            "lly": 0,
+            "urx": 56,
+            "ury": 10
+          }
+        ]
+      }
+    },
+    {
+      "idx": 1,
+      "predicted_label": false,
+      "pos": {
+        "GIL_1": [
+          {
+            "llx": 0,
+            "lly": 0,
+            "urx": 55,
+            "ury": 10
+          }
+        ]
+      }
+    },
+    {
+      "idx": 2,
+      "predicted_label": true,
+      "pos": {
+        "GIL_1": [
+          {
+            "llx": 0,
+            "lly": 0,
+            "urx": 56,
+            "ury": 10
+          }
+        ],
+        "GIL_2": [
+          {
+            "llx": 100,
+            "lly": 0,
+            "urx": 156,
+            "ury": 10
+          }
+        ]
+      }
+    },
+    {
+      "idx": 3,
+      "predicted_label": false,
+      "pos": {
+        "GIL_1": [
+          {
+            "llx": 0,
+            "lly": 0,
+            "urx": 55,
+            "ury": 10
+          }
+        ],
+        "GIL_2": [
+          {
+            "llx": 100,
+            "lly": 0,
+            "urx": 155,
+            "ury": 10
+          }
+        ]
+      }
+    }
+  ]
+}

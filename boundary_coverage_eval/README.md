@@ -70,10 +70,7 @@ python generate_perturbed_drc_scripts.py --all_datasets --output_dir ../perturbe
 **方式 A：使用 baseline summary（与 run_baseline.py --output 对齐）**
 适用于 `python run_baseline.py --free_n 10 --asap_n 10 --freepdk45_n 10 --output summary_10_10_10.json` 的输出：
 ```bash
-python check_boundary_coverage.py \
-  --baseline_summary ../baseline_direct_coord/summary_1_1_1.json \
-  --generated_scripts_dir ../perturbed_datasets \
-  --output_dir eval_results
+python check_boundary_coverage.py  --baseline_summary ../baseline_direct_coord/summary_10_10_10.json   --generated_scripts_dir ../perturbed_datasets   --output_dir eval_results
 ```
 会自动从 new_datasets 推断每条规则所属 data_name。仅从 summary 读取 pos 与 predicted_label，GDS 与 .rul 在本项目内生成。
 
@@ -85,6 +82,19 @@ python check_boundary_coverage.py --data_name freePDK15 \
   --output_dir eval_results_free
 ```
 同样仅从 result JSON 读取 pos 与 predicted_label，GDS 与 .rul 在本项目内仿 baseline_direct_coord 生成。
+
+### 断点续测（`--skip_existing` / `--resume`）
+
+可以**保留已有输出**再继续测，无需从头跑：
+
+| 选项 | 作用 |
+|------|------|
+| `--skip_existing` | 若 `output_dir/result/<rule_name>/eval.json` **已存在**，则跳过该规则（整条规则级续跑）。 |
+| `--resume` | 等价于 `--skip_existing`，并额外启用 **corner 级断点**：对尚未写出 `eval.json` 的规则，从 `result/<rule_name>/eval.checkpoint.json` 恢复已完成的 corner，只跑剩余 corner；每完成一个 corner 会更新断点，规则全部完成后删除断点并写入 `eval.json`。 |
+
+**增量汇总**：每处理完一条规则（含被 skip 的），都会刷新根目录 `summary.json`，避免进程中途被 kill 时只有部分 `eval.json`、却没有汇总。
+
+**注意**：若更换了 baseline、扰动数据集或某规则的 corner 列表/样本索引与断点不一致，程序会丢弃不兼容的 `eval.checkpoint.json` 并从头跑该规则。不想续 corner 时不要用 `--resume`，仅用 `--skip_existing` 即可。
 
 ---
 
@@ -119,6 +129,23 @@ python check_boundary_coverage.py --data_name freePDK15 \
 
 若 corner 的 `meta.json` 中无 `script_expected_correct` 字段（旧格式），该 corner 将不参与覆盖判定，`corner_ok` 为 `null`。需重新运行 `generate_perturbed_drc_scripts.py` 生成新的 perturbed_datasets。
 
+### 4. 中途停止后如何接着跑？
+
+1. **已跑完若干条规则**（每条都有 `eval.json`）：用**相同** `--output_dir`、`--baseline_summary`（或 `--baseline_result_dir`）等参数，加上 `--skip_existing` 或 `--resume`，会跳过已有 `eval.json` 的规则，只跑剩余规则。  
+2. **停在一条规则中间**（该条尚无 `eval.json`，但可能有 `eval.checkpoint.json`）：加上 `--resume`，会从断点继续跑该规则未完成的 corner。  
+3. 若希望某条规则**完全重跑**，先删除对应的 `result/<rule_name>/eval.json`（以及如有）`eval.checkpoint.json`。
+
+### 5. baseline 某条规则缺少 `pos` 会怎样？
+
+默认会**跳过该规则并继续后续规则**，不会整批中断。控制参数：
+
+- `--skip_rules_with_missing_pos`（默认开启）：遇到 `details[idx].pos` 缺失/为空时，记录到 `summary.json` 的 `skipped_rules` 并继续。
+- `--fail_on_missing_pos`：遇到缺失 `pos` 立即报错退出（用于严格模式排查数据问题）。
+
+输出里会新增：
+- `skipped_rules`：被跳过规则及原因；
+- `skipped_rule_count`：跳过规则数量。
+
 ---
 
 ## 输出目录与 eval.json 字段说明
@@ -127,10 +154,11 @@ python check_boundary_coverage.py --data_name freePDK15 \
 
 ```
 output_dir/
-├── summary.json          # 汇总（总规则数、通过数、accuracy 等）
+├── summary.json          # 汇总（总规则数、通过数、accuracy 等；每完成一条规则会刷新）
 └── result/
     └── <rule_name>/
-        └── eval.json     # 单规则详细结果
+        ├── eval.json              # 单规则详细结果（该规则全部 corner 跑完后写出）
+        └── eval.checkpoint.json   # 可选：仅使用 --resume 且该规则未完成时出现，corner 级断点
 ```
 
 ### eval.json 字段（result/\<rule_name\>/eval.json）

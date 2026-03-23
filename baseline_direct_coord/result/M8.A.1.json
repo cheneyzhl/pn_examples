@@ -1,0 +1,39 @@
+{
+  "rule_name": "M8.A.1",
+  "rule_description": "Minimum area of M8 is 7520 nm-sq.",
+  "rule_script": "AREA M8 < 0.007520",
+  "calibre_skipped": true,
+  "sample_correct": null,
+  "sample_total": null,
+  "accuracy": null,
+  "details": [
+    {
+      "idx": 0,
+      "predicted_label": true,
+      "pos": {
+        "M8_1": [
+          {
+            "llx": 0,
+            "lly": 0,
+            "urx": 80,
+            "ury": 94
+          }
+        ]
+      }
+    },
+    {
+      "idx": 1,
+      "predicted_label": false,
+      "pos": {
+        "M8_1": [
+          {
+            "llx": 0,
+            "lly": 0,
+            "urx": 73,
+            "ury": 103
+          }
+        ]
+      }
+    }
+  ]
+}

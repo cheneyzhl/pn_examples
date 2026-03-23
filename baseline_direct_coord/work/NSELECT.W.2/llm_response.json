@@ -1,0 +1,67 @@
+{
+  "raw_response": "根据给定的DRC规则\"Minimum vertical width of NSELECT is 54 nm\"，我们需要系统性地生成覆盖所有边界情况的正例和反例。以下是分析过程和生成的JSON：\n\n分析：\n1. 该规则只涉及NSELECT层的垂直尺寸（高度）\n2. 只有一个布尔条件：NSELECT的垂直高度 >= 54nm\n3. 因此只需要考虑两种情况：\n   - 情况1：高度 = 54nm（正例）\n   - 情况2：高度 = 53nm（反例）\n\n```json\n{\n  \"examples\": [\n    {\n      \"NSELECT_1\": [\n        {\n          \"llx\": 0,\n          \"lly\": 0,\n          \"urx\": 100,\n          \"ury\": 54\n        }\n      ]\n    },\n    {\n      \"NSELECT_1\": [\n        {\n          \"llx\": 0,\n          \"lly\": 0,\n          \"urx\": 100,\n          \"ury\": 53\n        }\n      ]\n    },\n    {\n      \"NSELECT_1\": [\n        {\n          \"llx\": 0,\n          \"lly\": 0,\n          \"urx\": 100,\n          \"ury\": 54\n        }\n      ],\n      \"NSELECT_2\": [\n        {\n          \"llx\": 200,\n          \"lly\": 0,\n          \"urx\": 300,\n          \"ury\": 54\n        }\n      ]\n    },\n    {\n      \"NSELECT_1\": [\n        {\n          \"llx\": 0,\n          \"lly\": 0,\n          \"urx\": 100,\n          \"ury\": 54\n        }\n      ],\n      \"NSELECT_2\": [\n        {\n          \"llx\": 200,\n          \"lly\": 0,\n          \"urx\": 300,\n          \"ury\": 53\n        }\n      ]\n    }\n  ],\n  \"labels\": [\n    true,\n    false,\n    true,\n    false\n  ]\n}\n```\n\n自检说明：\n1. 第一个例子：NSELECT高度=54nm（刚好满足最小宽度要求）- 正例\n2. 第二个例子：NSELECT高度=53nm（比最小值小1nm）- 反例\n3. 第三个例子：两个NSELECT，高度都是54nm - 正例\n4. 第四个例子：一个NSELECT高度54nm，另一个53nm - 反例（因为第二个NSELECT违规）\n\n所有例子都通过了自检，正例都满足高度>=54nm，反例都违反了这个条件。",
+  "examples": [
+    {
+      "NSELECT_1": [
+        {
+          "llx": 0,
+          "lly": 0,
+          "urx": 100,
+          "ury": 54
+        }
+      ]
+    },
+    {
+      "NSELECT_1": [
+        {
+          "llx": 0,
+          "lly": 0,
+          "urx": 100,
+          "ury": 53
+        }
+      ]
+    },
+    {
+      "NSELECT_1": [
+        {
+          "llx": 0,
+          "lly": 0,
+          "urx": 100,
+          "ury": 54
+        }
+      ],
+      "NSELECT_2": [
+        {
+          "llx": 200,
+          "lly": 0,
+          "urx": 300,
+          "ury": 54
+        }
+      ]
+    },
+    {
+      "NSELECT_1": [
+        {
+          "llx": 0,
+          "lly": 0,
+          "urx": 100,
+          "ury": 54
+        }
+      ],
+      "NSELECT_2": [
+        {
+          "llx": 200,
+          "lly": 0,
+          "urx": 300,
+          "ury": 53
+        }
+      ]
+    }
+  ],
+  "labels": [
+    true,
+    false,
+    true,
+    false
+  ]
+}

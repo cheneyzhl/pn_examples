@@ -1,0 +1,83 @@
+{
+  "raw_response": "### 规则分析\n\n给定的DRC规则是：`(gatea not gatec) maximum distance to neighbor shape on same design mask is 236nm`。我们需要理解并分解这个规则：\n\n1. **条件变量**：\n   - `gatea not gatec`：这意味着我们关注的是`GATEA`层，但不包括`GATEC`层。即，规则适用于`GATEA`层的形状，而不考虑`GATEC`层的形状。\n   - `maximum distance to neighbor shape on same design mask is 236nm`：这是指在同一个设计掩模（same design mask）上，`GATEA`层的形状与其相邻形状之间的最大距离不能超过236nm。这里的“相邻形状”可以理解为`GATEA`层中其他形状的最小间距。\n\n2. **布尔条件**：\n   - 对于`GATEA`层的任意两个形状，它们之间的最小距离必须满足：\n     - 正例：距离 ≤ 236nm（满足规则）\n     - 反例：距离 > 236nm（违反规则）\n\n3. **层名**：\n   - 规则中明确提到的层是`GATEA`和`GATEC`，但`GATEC`是被排除的，因此我们只需要关注`GATEA`层的形状。\n\n### 组合枚举\n\n由于规则的核心是`GATEA`层形状之间的最小距离，我们可以将问题简化为：\n- 条件：`GATEA`层中任意两个形状的最小距离 ≤ 236nm。\n- 布尔条件：\n  - 情况1：存在两个`GATEA`形状，其距离 ≤ 236nm（正例）。\n  - 情况2：存在两个`GATEA`形状，其距离 > 236nm（反例）。\n\n### 正例和反例设计\n\n#### 正例1：\n- 两个`GATEA`形状，间距刚好为236nm。\n  - `GATEA_1`: { \"llx\": 0, \"lly\": 0, \"urx\": 100, \"ury\": 100 }\n  - `GATEA_2`: { \"llx\": 336, \"lly\": 0, \"urx\": 436, \"ury\": 100 }\n  - 间距 = 336 - 100 = 236nm（刚好满足）。\n\n#### 反例1：\n- 两个`GATEA`形状，间距为237nm（刚好超过236nm）。\n  - `GATEA_1`: { \"llx\": 0, \"lly\": 0, \"urx\": 100, \"ury\": 100 }\n  - `GATEA_2`: { \"llx\": 337, \"lly\": 0, \"urx\": 437, \"ury\": 100 }\n  - 间距 = 337 - 100 = 237nm（违反）。\n\n#### 正例2：\n- 单个`GATEA`形状（无相邻形状，默认满足规则）。\n  - `GATEA_1`: { \"llx\": 0, \"lly\": 0, \"urx\": 100, \"ury\": 100 }\n\n#### 反例2：\n- 三个`GATEA`形状，其中一对间距为236nm，另一对间距为237nm。\n  - `GATEA_1`: { \"llx\": 0, \"lly\": 0, \"urx\": 100, \"ury\": 100 }\n  - `GATEA_2`: { \"llx\": 336, \"lly\": 0, \"urx\": 436, \"ury\": 100 } （间距236nm）\n  - `GATEA_3`: { \"llx\": 737, \"lly\": 0, \"urx\": 837, \"ury\": 100 } （与`GATEA_2`间距301nm > 236nm）\n  - 虽然有一对满足，但另一对违反，整体违反规则。\n\n### 自检\n- 正例1：间距=236nm ≤ 236nm → 通过。\n- 反例1：间距=237nm > 236nm → 违反。\n- 正例2：无相邻形状 → 通过。\n- 反例2：存在一对间距>236nm → 违反。\n\n### 最终JSON输出\n```json\n{\n  \"examples\": [\n    {\n      \"GATEA_1\": [{ \"llx\": 0, \"lly\": 0, \"urx\": 100, \"ury\": 100 }],\n      \"GATEA_2\": [{ \"llx\": 336, \"lly\": 0, \"urx\": 436, \"ury\": 100 }]\n    },\n    {\n      \"GATEA_1\": [{ \"llx\": 0, \"lly\": 0, \"urx\": 100, \"ury\": 100 }],\n      \"GATEA_2\": [{ \"llx\": 337, \"lly\": 0, \"urx\": 437, \"ury\": 100 }]\n    },\n    {\n      \"GATEA_1\": [{ \"llx\": 0, \"lly\": 0, \"urx\": 100, \"ury\": 100 }]\n    },\n    {\n      \"GATEA_1\": [{ \"llx\": 0, \"lly\": 0, \"urx\": 100, \"ury\": 100 }],\n      \"GATEA_2\": [{ \"llx\": 336, \"lly\": 0, \"urx\": 436, \"ury\": 100 }],\n      \"GATEA_3\": [{ \"llx\": 737, \"lly\": 0, \"urx\": 837, \"ury\": 100 }]\n    }\n  ],\n  \"labels\": [true, false, true, false]\n}\n```",
+  "examples": [
+    {
+      "GATEA_1": [
+        {
+          "llx": 0,
+          "lly": 0,
+          "urx": 100,
+          "ury": 100
+        }
+      ],
+      "GATEA_2": [
+        {
+          "llx": 336,
+          "lly": 0,
+          "urx": 436,
+          "ury": 100
+        }
+      ]
+    },
+    {
+      "GATEA_1": [
+        {
+          "llx": 0,
+          "lly": 0,
+          "urx": 100,
+          "ury": 100
+        }
+      ],
+      "GATEA_2": [
+        {
+          "llx": 337,
+          "lly": 0,
+          "urx": 437,
+          "ury": 100
+        }
+      ]
+    },
+    {
+      "GATEA_1": [
+        {
+          "llx": 0,
+          "lly": 0,
+          "urx": 100,
+          "ury": 100
+        }
+      ]
+    },
+    {
+      "GATEA_1": [
+        {
+          "llx": 0,
+          "lly": 0,
+          "urx": 100,
+          "ury": 100
+        }
+      ],
+      "GATEA_2": [
+        {
+          "llx": 336,
+          "lly": 0,
+          "urx": 436,
+          "ury": 100
+        }
+      ],
+      "GATEA_3": [
+        {
+          "llx": 737,
+          "lly": 0,
+          "urx": 837,
+          "ury": 100
+        }
+      ]
+    }
+  ],
+  "labels": [
+    true,
+    false,
+    true,
+    false
+  ]
+}

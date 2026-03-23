@@ -1,0 +1,83 @@
+{
+  "rule_name": "RULE_AIL2001",
+  "rule_description": "Horizontal width of AIL2 is 24nm",
+  "rule_script": "AIL2_VERTICAL_EDGES = AIL2 ANGLE == 90 \nINTERNAL AIL2_VERTICAL_EDGES < 0.024",
+  "calibre_skipped": true,
+  "sample_correct": null,
+  "sample_total": null,
+  "accuracy": null,
+  "details": [
+    {
+      "idx": 0,
+      "predicted_label": true,
+      "pos": {
+        "AIL2_1": [
+          {
+            "llx": 0,
+            "lly": 0,
+            "urx": 24,
+            "ury": 10
+          }
+        ]
+      }
+    },
+    {
+      "idx": 1,
+      "predicted_label": false,
+      "pos": {
+        "AIL2_1": [
+          {
+            "llx": 0,
+            "lly": 0,
+            "urx": 23,
+            "ury": 10
+          }
+        ]
+      }
+    },
+    {
+      "idx": 2,
+      "predicted_label": true,
+      "pos": {
+        "AIL2_1": [
+          {
+            "llx": 0,
+            "lly": 0,
+            "urx": 24,
+            "ury": 10
+          }
+        ],
+        "AIL2_2": [
+          {
+            "llx": 25,
+            "lly": 0,
+            "urx": 49,
+            "ury": 10
+          }
+        ]
+      }
+    },
+    {
+      "idx": 3,
+      "predicted_label": false,
+      "pos": {
+        "AIL2_1": [
+          {
+            "llx": 0,
+            "lly": 0,
+            "urx": 24,
+            "ury": 10
+          }
+        ],
+        "AIL2_2": [
+          {
+            "llx": 24,
+            "lly": 0,
+            "urx": 48,
+            "ury": 10
+          }
+        ]
+      }
+    }
+  ]
+}

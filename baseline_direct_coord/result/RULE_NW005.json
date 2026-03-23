@@ -1,0 +1,103 @@
+{
+  "rule_name": "RULE_NW005",
+  "rule_description": "NW Must be orthogonal",
+  "rule_script": "ANGLE NW >0 <90",
+  "calibre_skipped": true,
+  "sample_correct": null,
+  "sample_total": null,
+  "accuracy": null,
+  "details": [
+    {
+      "idx": 0,
+      "predicted_label": true,
+      "pos": {
+        "NW_1": [
+          {
+            "llx": 0,
+            "lly": 0,
+            "urx": 1000,
+            "ury": 500
+          }
+        ]
+      }
+    },
+    {
+      "idx": 1,
+      "predicted_label": false,
+      "pos": {
+        "NW_1": [
+          {
+            "llx": 0,
+            "lly": 0,
+            "urx": 1000,
+            "ury": 500
+          },
+          {
+            "llx": 1000,
+            "lly": 0,
+            "urx": 1500,
+            "ury": 1000
+          }
+        ]
+      }
+    },
+    {
+      "idx": 2,
+      "predicted_label": false,
+      "pos": {
+        "NW_1": [
+          {
+            "llx": 0,
+            "lly": 0,
+            "urx": 707,
+            "ury": 707
+          }
+        ]
+      }
+    },
+    {
+      "idx": 3,
+      "predicted_label": false,
+      "pos": {
+        "NW_1": [
+          {
+            "llx": 0,
+            "lly": 0,
+            "urx": 1000,
+            "ury": 0
+          },
+          {
+            "llx": 1000,
+            "lly": 0,
+            "urx": 1000,
+            "ury": 500
+          },
+          {
+            "llx": 1000,
+            "lly": 500,
+            "urx": 500,
+            "ury": 500
+          },
+          {
+            "llx": 500,
+            "lly": 500,
+            "urx": 500,
+            "ury": 1000
+          },
+          {
+            "llx": 500,
+            "lly": 1000,
+            "urx": 0,
+            "ury": 1000
+          },
+          {
+            "llx": 0,
+            "lly": 1000,
+            "urx": 0,
+            "ury": 0
+          }
+        ]
+      }
+    }
+  ]
+}

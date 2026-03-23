@@ -1,0 +1,62 @@
+{
+  "raw_response": "### 规则分析\n\n规则描述：\"M5 horizontal width may not be an even integer multiple of its minimum width.\"\n\n1. **条件变量**:\n   - `M5` 的水平宽度（`width`）。\n   - `M5` 的最小宽度（`min_width`）。\n   - 宽度是否为最小宽度的偶数倍（`width == 2 * k * min_width`，其中 `k` 是正整数）。\n\n2. **布尔条件**:\n   - `width` 是 `min_width` 的偶数倍（`width % (2 * min_width) == 0`）。\n   - `width` 不是 `min_width` 的偶数倍（`width % (2 * min_width) != 0`）。\n\n3. **规则要求**:\n   - 不允许 `width` 是 `min_width` 的偶数倍（即 `width % (2 * min_width) != 0`）。\n   - 因此：\n     - 正例：`width` 不是 `min_width` 的偶数倍。\n     - 反例：`width` 是 `min_width` 的偶数倍。\n\n4. **边界情况**:\n   - `width` 刚好是 `min_width` 的偶数倍（反例）。\n   - `width` 刚好是 `min_width` 的奇数倍（正例）。\n   - `width` 刚好是 `min_width` 的非整数倍（正例）。\n   - `width` 刚好是 `min_width` 的 1 倍（正例，因为 1 是奇数）。\n   - `width` 刚好是 `min_width` 的 2 倍（反例，因为 2 是偶数）。\n\n### 假设 `min_width` 的值\n由于规则中未明确 `min_width` 的具体值，我们假设 `min_width = 10 nm`（常见的最小宽度）。  \n（注：如果 `min_width` 是其他值，可以按比例缩放坐标。）\n\n### 正例和反例设计\n#### 正例（满足规则）：\n1. `width = 10 nm`（`1 * min_width`，奇数倍）：\n   - `M5` 矩形：`{ \"llx\": 0, \"lly\": 0, \"urx\": 10, \"ury\": 10 }`。\n2. `width = 30 nm`（`3 * min_width`，奇数倍）：\n   - `M5` 矩形：`{ \"llx\": 0, \"lly\": 0, \"urx\": 30, \"ury\": 10 }`。\n3. `width = 15 nm`（`1.5 * min_width`，非整数倍）：\n   - `M5` 矩形：`{ \"llx\": 0, \"lly\": 0, \"urx\": 15, \"ury\": 10 }`。\n\n#### 反例（违反规则）：\n1. `width = 20 nm`（`2 * min_width`，偶数倍）：\n   - `M5` 矩形：`{ \"llx\": 0, \"lly\": 0, \"urx\": 20, \"ury\": 10 }`。\n2. `width = 40 nm`（`4 * min_width`，偶数倍）：\n   - `M5` 矩形：`{ \"llx\": 0, \"lly\": 0, \"urx\": 40, \"ury\": 10 }`。\n\n### 自检\n- 正例 1：`width = 10`，`10 % (2 * 10) = 10 % 20 = 10 != 0`，满足规则。\n- 正例 2：`width = 30`，`30 % 20 = 10 != 0`，满足规则。\n- 正例 3：`width = 15`，`15 % 20 = 15 != 0`，满足规则。\n- 反例 1：`width = 20`，`20 % 20 = 0`，违反规则。\n- 反例 2：`width = 40`，`40 % 20 = 0`，违反规则。\n\n### JSON 输出\n```json\n{\n  \"examples\": [\n    {\n      \"M5_1\": [\n        { \"llx\": 0, \"lly\": 0, \"urx\": 10, \"ury\": 10 }\n      ]\n    },\n    {\n      \"M5_1\": [\n        { \"llx\": 0, \"lly\": 0, \"urx\": 30, \"ury\": 10 }\n      ]\n    },\n    {\n      \"M5_1\": [\n        { \"llx\": 0, \"lly\": 0, \"urx\": 15, \"ury\": 10 }\n      ]\n    },\n    {\n      \"M5_1\": [\n        { \"llx\": 0, \"lly\": 0, \"urx\": 20, \"ury\": 10 }\n      ]\n    },\n    {\n      \"M5_1\": [\n        { \"llx\": 0, \"lly\": 0, \"urx\": 40, \"ury\": 10 }\n      ]\n    }\n  ],\n  \"labels\": [\n    true,\n    true,\n    true,\n    false,\n    false\n  ]\n}\n```",
+  "examples": [
+    {
+      "M5_1": [
+        {
+          "llx": 0,
+          "lly": 0,
+          "urx": 10,
+          "ury": 10
+        }
+      ]
+    },
+    {
+      "M5_1": [
+        {
+          "llx": 0,
+          "lly": 0,
+          "urx": 30,
+          "ury": 10
+        }
+      ]
+    },
+    {
+      "M5_1": [
+        {
+          "llx": 0,
+          "lly": 0,
+          "urx": 15,
+          "ury": 10
+        }
+      ]
+    },
+    {
+      "M5_1": [
+        {
+          "llx": 0,
+          "lly": 0,
+          "urx": 20,
+          "ury": 10
+        }
+      ]
+    },
+    {
+      "M5_1": [
+        {
+          "llx": 0,
+          "lly": 0,
+          "urx": 40,
+          "ury": 10
+        }
+      ]
+    }
+  ],
+  "labels": [
+    true,
+    true,
+    true,
+    false,
+    false
+  ]
+}

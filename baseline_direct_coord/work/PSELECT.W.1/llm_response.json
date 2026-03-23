@@ -1,0 +1,62 @@
+{
+  "raw_response": "# Analysis of DRC Rule\n\nThe given rule is: \"Minimum horizontal width of PSELECT is 108 nm\"\n\nThis is a simple width check rule for the PSELECT layer. The analysis is straightforward:\n\n1. There's only one condition variable: horizontal width of PSELECT shapes\n2. The condition is: width >= 108 nm (minimum width rules are inclusive)\n\nSince there's only one condition, there are only 2 cases to consider:\n- Case 1: width >= 108 nm (passes)\n- Case 2: width < 108 nm (fails)\n\n# Generated Examples\n\n```json\n{\n  \"examples\": [\n    {\n      \"PSELECT_1\": [\n        {\n          \"llx\": 0,\n          \"lly\": 0,\n          \"urx\": 108,\n          \"ury\": 100\n        }\n      ]\n    },\n    {\n      \"PSELECT_1\": [\n        {\n          \"llx\": 0,\n          \"lly\": 0,\n          \"urx\": 107,\n          \"ury\": 100\n        }\n      ]\n    },\n    {\n      \"PSELECT_1\": [\n        {\n          \"llx\": 0,\n          \"lly\": 0,\n          \"urx\": 200,\n          \"ury\": 100\n        }\n      ]\n    },\n    {\n      \"PSELECT_1\": [\n        {\n          \"llx\": 0,\n          \"lly\": 0,\n          \"urx\": 108,\n          \"ury\": 108\n        }\n      ]\n    },\n    {\n      \"PSELECT_1\": [\n        {\n          \"llx\": 0,\n          \"lly\": 0,\n          \"urx\": 107,\n          \"ury\": 107\n        }\n      ]\n    }\n  ],\n  \"labels\": [\n    true,\n    false,\n    true,\n    true,\n    false\n  ]\n}\n```\n\n# Self-Verification\n\n1. First example (108x100):\n   - Horizontal width = 108 - 0 = 108 nm (>= 108) → PASS\n2. Second example (107x100):\n   - Horizontal width = 107 - 0 = 107 nm (< 108) → FAIL\n3. Third example (200x100):\n   - Horizontal width = 200 - 0 = 200 nm (>= 108) → PASS\n4. Fourth example (108x108):\n   - Horizontal width = 108 - 0 = 108 nm (>= 108) → PASS\n5. Fifth example (107x107):\n   - Horizontal width = 107 - 0 = 107 nm (< 108) → FAIL\n\nAll examples pass the self-check verification. The examples cover:\n- Exactly minimum width (108nm) - passes\n- Just below minimum width (107nm) - fails\n- Well above minimum width (200nm) - passes\n- Square shape at minimum width (108x108) - passes\n- Square shape just below minimum width (107x107) - fails",
+  "examples": [
+    {
+      "PSELECT_1": [
+        {
+          "llx": 0,
+          "lly": 0,
+          "urx": 108,
+          "ury": 100
+        }
+      ]
+    },
+    {
+      "PSELECT_1": [
+        {
+          "llx": 0,
+          "lly": 0,
+          "urx": 107,
+          "ury": 100
+        }
+      ]
+    },
+    {
+      "PSELECT_1": [
+        {
+          "llx": 0,
+          "lly": 0,
+          "urx": 200,
+          "ury": 100
+        }
+      ]
+    },
+    {
+      "PSELECT_1": [
+        {
+          "llx": 0,
+          "lly": 0,
+          "urx": 108,
+          "ury": 108
+        }
+      ]
+    },
+    {
+      "PSELECT_1": [
+        {
+          "llx": 0,
+          "lly": 0,
+          "urx": 107,
+          "ury": 107
+        }
+      ]
+    }
+  ],
+  "labels": [
+    true,
+    false,
+    true,
+    true,
+    false
+  ]
+}

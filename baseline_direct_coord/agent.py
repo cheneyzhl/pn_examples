@@ -115,21 +115,6 @@ def ask_llm_for_examples(
 ) -> tuple[List[Dict[str, Any]], List[bool]]:
     """
     根据规则的自然语言描述，请求大模型生成正/反例矩形坐标及标签。
-
-    Args:
-        rule_description: 规则的自然语言描述。
-        layer_list: 该规则涉及的层名列表（如 ["NW"]）。
-        api_key: 大模型 API Key。
-        rule_name: 规则名（可选，便于日志）。
-        base_url: API base URL（OpenAI 兼容）。
-        model: 模型名。
-        log_fp: 若提供，将用户问题与大模型回答写入该文件（txt，每轮：用户问题 + 换行 + 大模型回答）。
-        save_response_path: 若提供，将大模型原始回答与解析后的 examples/labels 写入该 JSON 文件，便于查看中间结果。
-
-    Returns:
-        (examples, labels):
-          - examples: 列表，每项为 { "LAYER_1": [ {llx,lly,urx,ury}, ... ], ... }
-          - labels: 列表，与 examples 等长，True=正例，False=反例。
     """
     if not api_key:
         logger.warning("API_KEY 未配置，返回空正反例列表。")
@@ -189,16 +174,8 @@ def ask_llm_for_examples(
 def parse_llm_response_to_examples_labels(response_text: str) -> tuple[List[Dict[str, Any]], List[bool]]:
     """
     将大模型返回的文本解析为 (examples, labels)。
-    若响应为纯 JSON，可直接 json.loads；若包含 markdown 代码块，需先提取 JSON 字符串。
-
-    Args:
-        response_text: 大模型返回的原始文本。
-
-    Returns:
-        (examples, labels)，解析失败时返回 ([], [])。
     """
     text = response_text.strip()
-    # 尝试去掉 markdown 代码块
     if "```json" in text:
         start = text.find("```json") + len("```json")
         end = text.find("```", start)
@@ -223,13 +200,23 @@ def parse_llm_response_to_examples_labels(response_text: str) -> tuple[List[Dict
         return [], []
 
 
+def _is_single_rect_dict(obj: Any) -> bool:
+    """判断是否为单个矩形对象（与矩形列表相对）。"""
+    if not isinstance(obj, dict):
+        return False
+    return all(k in obj for k in ("llx", "lly", "urx", "ury"))
+
+
 def normalize_example_coords(example: Dict[str, Any]) -> Dict[str, Any]:
     """
     确保每个矩形为整数且包含 llx, lly, urx, ury。
     层名中的后缀（如 _1, _2）保留，与 generate_layout 的键格式一致。
+    若某层值为单个矩形 dict（常见模型输出），自动包成单元素列表，避免整例被清空。
     """
     out = {}
     for layer_key, rects in example.items():
+        if _is_single_rect_dict(rects):
+            rects = [rects]
         if not isinstance(rects, list):
             continue
         out_rects = []
@@ -248,3 +235,4 @@ def normalize_example_coords(example: Dict[str, Any]) -> Dict[str, Any]:
         if out_rects:
             out[layer_key] = out_rects
     return out
+

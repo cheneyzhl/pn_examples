@@ -1,0 +1,67 @@
+{
+  "rule_name": "M9.W.4",
+  "rule_description": "Minimum width of M9, when its length >= 1800 nm, is 120 nm.",
+  "rule_script": "X = LENGTH M9 >=1.8 \nY = M9 WITH EDGE X \nINTERNAL Y < 0.12",
+  "calibre_skipped": true,
+  "sample_correct": null,
+  "sample_total": null,
+  "accuracy": null,
+  "details": [
+    {
+      "idx": 0,
+      "predicted_label": true,
+      "pos": {
+        "M9_1": [
+          {
+            "llx": 0,
+            "lly": 0,
+            "urx": 1800,
+            "ury": 120
+          }
+        ]
+      }
+    },
+    {
+      "idx": 1,
+      "predicted_label": false,
+      "pos": {
+        "M9_1": [
+          {
+            "llx": 0,
+            "lly": 0,
+            "urx": 1800,
+            "ury": 119
+          }
+        ]
+      }
+    },
+    {
+      "idx": 2,
+      "predicted_label": true,
+      "pos": {
+        "M9_1": [
+          {
+            "llx": 0,
+            "lly": 0,
+            "urx": 1799,
+            "ury": 100
+          }
+        ]
+      }
+    },
+    {
+      "idx": 3,
+      "predicted_label": false,
+      "pos": {
+        "M9_1": [
+          {
+            "llx": 0,
+            "lly": 0,
+            "urx": 1799,
+            "ury": 120
+          }
+        ]
+      }
+    }
+  ]
+}

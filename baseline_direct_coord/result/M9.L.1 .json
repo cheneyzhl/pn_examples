@@ -1,0 +1,93 @@
+{
+  "rule_name": "M9.L.1 ",
+  "rule_description": "Minimum feature length of M9 is 40 nm.",
+  "rule_script": "CONVEX EDGE M9 ANGLE1 == 90 ANGLE2 > 90 WITH LENGTH < 0.040",
+  "calibre_skipped": true,
+  "sample_correct": null,
+  "sample_total": null,
+  "accuracy": null,
+  "details": [
+    {
+      "idx": 0,
+      "predicted_label": true,
+      "pos": {
+        "M9_1": [
+          {
+            "llx": 0,
+            "lly": 0,
+            "urx": 40,
+            "ury": 40
+          }
+        ]
+      }
+    },
+    {
+      "idx": 1,
+      "predicted_label": false,
+      "pos": {
+        "M9_1": [
+          {
+            "llx": 0,
+            "lly": 0,
+            "urx": 39,
+            "ury": 40
+          }
+        ]
+      }
+    },
+    {
+      "idx": 2,
+      "predicted_label": false,
+      "pos": {
+        "M9_1": [
+          {
+            "llx": 0,
+            "lly": 0,
+            "urx": 40,
+            "ury": 39
+          }
+        ]
+      }
+    },
+    {
+      "idx": 3,
+      "predicted_label": true,
+      "pos": {
+        "M9_1": [
+          {
+            "llx": 0,
+            "lly": 0,
+            "urx": 40,
+            "ury": 40
+          },
+          {
+            "llx": 50,
+            "lly": 0,
+            "urx": 90,
+            "ury": 40
+          }
+        ]
+      }
+    },
+    {
+      "idx": 4,
+      "predicted_label": false,
+      "pos": {
+        "M9_1": [
+          {
+            "llx": 0,
+            "lly": 0,
+            "urx": 40,
+            "ury": 40
+          },
+          {
+            "llx": 50,
+            "lly": 0,
+            "urx": 89,
+            "ury": 40
+          }
+        ]
+      }
+    }
+  ]
+}

@@ -1,0 +1,74 @@
+{
+  "raw_response": "```json\n{\n  \"examples\": [\n    {\n      \"VIA9_1\": [\n        {\n          \"llx\": 0,\n          \"lly\": 0,\n          \"urx\": 800,\n          \"ury\": 800\n        }\n      ]\n    },\n    {\n      \"VIA9_1\": [\n        {\n          \"llx\": 0,\n          \"lly\": 0,\n          \"urx\": 799,\n          \"ury\": 800\n        }\n      ]\n    },\n    {\n      \"VIA9_1\": [\n        {\n          \"llx\": 0,\n          \"lly\": 0,\n          \"urx\": 800,\n          \"ury\": 799\n        }\n      ]\n    },\n    {\n      \"VIA9_1\": [\n        {\n          \"llx\": 0,\n          \"lly\": 0,\n          \"urx\": 800,\n          \"ury\": 800\n        },\n        {\n          \"llx\": 1000,\n          \"lly\": 0,\n          \"urx\": 1800,\n          \"ury\": 800\n        }\n      ]\n    },\n    {\n      \"VIA9_1\": [\n        {\n          \"llx\": 0,\n          \"lly\": 0,\n          \"urx\": 800,\n          \"ury\": 800\n        },\n        {\n          \"llx\": 1000,\n          \"lly\": 0,\n          \"urx\": 1799,\n          \"ury\": 800\n        }\n      ]\n    }\n  ],\n  \"labels\": [\n    true,\n    false,\n    false,\n    true,\n    false\n  ]\n}\n```",
+  "examples": [
+    {
+      "VIA9_1": [
+        {
+          "llx": 0,
+          "lly": 0,
+          "urx": 800,
+          "ury": 800
+        }
+      ]
+    },
+    {
+      "VIA9_1": [
+        {
+          "llx": 0,
+          "lly": 0,
+          "urx": 799,
+          "ury": 800
+        }
+      ]
+    },
+    {
+      "VIA9_1": [
+        {
+          "llx": 0,
+          "lly": 0,
+          "urx": 800,
+          "ury": 799
+        }
+      ]
+    },
+    {
+      "VIA9_1": [
+        {
+          "llx": 0,
+          "lly": 0,
+          "urx": 800,
+          "ury": 800
+        },
+        {
+          "llx": 1000,
+          "lly": 0,
+          "urx": 1800,
+          "ury": 800
+        }
+      ]
+    },
+    {
+      "VIA9_1": [
+        {
+          "llx": 0,
+          "lly": 0,
+          "urx": 800,
+          "ury": 800
+        },
+        {
+          "llx": 1000,
+          "lly": 0,
+          "urx": 1799,
+          "ury": 800
+        }
+      ]
+    }
+  ],
+  "labels": [
+    true,
+    false,
+    false,
+    true,
+    false
+  ]
+}

@@ -1,0 +1,74 @@
+{
+  "raw_response": "```json\n{\n  \"examples\": [\n    {\n      \"FIN_1\": [\n        {\n          \"llx\": 0,\n          \"lly\": 0,\n          \"urx\": 7,\n          \"ury\": 100\n        }\n      ]\n    },\n    {\n      \"FIN_1\": [\n        {\n          \"llx\": 0,\n          \"lly\": 0,\n          \"urx\": 6,\n          \"ury\": 100\n        }\n      ]\n    },\n    {\n      \"FIN_1\": [\n        {\n          \"llx\": 0,\n          \"lly\": 0,\n          \"urx\": 8,\n          \"ury\": 100\n        }\n      ]\n    },\n    {\n      \"FIN_1\": [\n        {\n          \"llx\": 0,\n          \"lly\": 0,\n          \"urx\": 7,\n          \"ury\": 100\n        },\n        {\n          \"llx\": 8,\n          \"lly\": 0,\n          \"urx\": 15,\n          \"ury\": 100\n        }\n      ]\n    },\n    {\n      \"FIN_1\": [\n        {\n          \"llx\": 0,\n          \"lly\": 0,\n          \"urx\": 7,\n          \"ury\": 100\n        },\n        {\n          \"llx\": 7,\n          \"lly\": 0,\n          \"urx\": 14,\n          \"ury\": 100\n        }\n      ]\n    }\n  ],\n  \"labels\": [\n    true,\n    false,\n    false,\n    true,\n    false\n  ]\n}\n```",
+  "examples": [
+    {
+      "FIN_1": [
+        {
+          "llx": 0,
+          "lly": 0,
+          "urx": 7,
+          "ury": 100
+        }
+      ]
+    },
+    {
+      "FIN_1": [
+        {
+          "llx": 0,
+          "lly": 0,
+          "urx": 6,
+          "ury": 100
+        }
+      ]
+    },
+    {
+      "FIN_1": [
+        {
+          "llx": 0,
+          "lly": 0,
+          "urx": 8,
+          "ury": 100
+        }
+      ]
+    },
+    {
+      "FIN_1": [
+        {
+          "llx": 0,
+          "lly": 0,
+          "urx": 7,
+          "ury": 100
+        },
+        {
+          "llx": 8,
+          "lly": 0,
+          "urx": 15,
+          "ury": 100
+        }
+      ]
+    },
+    {
+      "FIN_1": [
+        {
+          "llx": 0,
+          "lly": 0,
+          "urx": 7,
+          "ury": 100
+        },
+        {
+          "llx": 7,
+          "lly": 0,
+          "urx": 14,
+          "ury": 100
+        }
+      ]
+    }
+  ],
+  "labels": [
+    true,
+    false,
+    false,
+    true,
+    false
+  ]
+}

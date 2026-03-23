@@ -1,0 +1,83 @@
+{
+  "rule_name": "RULE_MINT4001A",
+  "rule_description": "MINT4A width > 28nm",
+  "rule_script": "INTERNAL MINT4A < 0.028",
+  "calibre_skipped": true,
+  "sample_correct": null,
+  "sample_total": null,
+  "accuracy": null,
+  "details": [
+    {
+      "idx": 0,
+      "predicted_label": true,
+      "pos": {
+        "MINT4A_1": [
+          {
+            "llx": 0,
+            "lly": 0,
+            "urx": 29,
+            "ury": 100
+          }
+        ]
+      }
+    },
+    {
+      "idx": 1,
+      "predicted_label": false,
+      "pos": {
+        "MINT4A_1": [
+          {
+            "llx": 0,
+            "lly": 0,
+            "urx": 28,
+            "ury": 100
+          }
+        ]
+      }
+    },
+    {
+      "idx": 2,
+      "predicted_label": true,
+      "pos": {
+        "MINT4A_1": [
+          {
+            "llx": 0,
+            "lly": 0,
+            "urx": 28,
+            "ury": 100
+          }
+        ],
+        "MINT4A_2": [
+          {
+            "llx": 29,
+            "lly": 0,
+            "urx": 57,
+            "ury": 100
+          }
+        ]
+      }
+    },
+    {
+      "idx": 3,
+      "predicted_label": false,
+      "pos": {
+        "MINT4A_1": [
+          {
+            "llx": 0,
+            "lly": 0,
+            "urx": 28,
+            "ury": 100
+          }
+        ],
+        "MINT4A_2": [
+          {
+            "llx": 28,
+            "lly": 0,
+            "urx": 56,
+            "ury": 100
+          }
+        ]
+      }
+    }
+  ]
+}

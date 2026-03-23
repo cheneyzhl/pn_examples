@@ -1,0 +1,12 @@
+TOPCELL 5000
+RULE_ACT004
+2 2 3 Mar 22 02:41:13 2026                     
+Rule File Pathname: /share/home/zenghuanlong/pn_examples/boundary_coverage_eval/eval_results/result/work/freePDK15/RULE_ACT004/corner_001/example_3.rul
+RULE_ACT004
+Minimum horizontal width of ACT is 96nm
+e 1 2
+0 0 0 500
+475 0 475 500
+e 2 2
+1000 0 1000 500
+1480 0 1480 500

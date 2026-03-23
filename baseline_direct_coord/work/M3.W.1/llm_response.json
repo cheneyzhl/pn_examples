@@ -1,0 +1,29 @@
+{
+  "raw_response": "根据给定的DRC规则\"Minimum width of M3 is 18 nm\"，我们需要系统性地生成覆盖所有边界情况的正例和反例。这个规则只涉及一个条件变量：M3层的宽度必须≥18nm。\n\n### 分析：\n1. 条件变量：M3层的宽度（width）\n2. 布尔条件：width ≥ 18nm（通过）或 width < 18nm（违反）\n\n### 组合枚举：\n由于只有一个条件变量，只有两种组合：\n1. width ≥ 18nm（正例）\n2. width < 18nm（反例）\n\n### 自检：\n- 正例：宽度正好是18nm（边界值）\n- 反例：宽度正好是17nm（刚好违反）\n\n### JSON输出：\n\n```json\n{\n  \"examples\": [\n    {\n      \"M3_1\": [\n        {\n          \"llx\": 0,\n          \"lly\": 0,\n          \"urx\": 18,\n          \"ury\": 100\n        }\n      ]\n    },\n    {\n      \"M3_1\": [\n        {\n          \"llx\": 0,\n          \"lly\": 0,\n          \"urx\": 17,\n          \"ury\": 100\n        }\n      ]\n    }\n  ],\n  \"labels\": [\n    true,\n    false\n  ]\n}\n```\n\n### 自检验证：\n1. 第一个例子（正例）：\n   - 宽度 = urx - llx = 18 - 0 = 18nm ≥ 18nm → 通过\n2. 第二个例子（反例）：\n   - 宽度 = urx - llx = 17 - 0 = 17nm < 18nm → 违反\n\n两个例子都满足自检要求。",
+  "examples": [
+    {
+      "M3_1": [
+        {
+          "llx": 0,
+          "lly": 0,
+          "urx": 18,
+          "ury": 100
+        }
+      ]
+    },
+    {
+      "M3_1": [
+        {
+          "llx": 0,
+          "lly": 0,
+          "urx": 17,
+          "ury": 100
+        }
+      ]
+    }
+  ],
+  "labels": [
+    true,
+    false
+  ]
+}

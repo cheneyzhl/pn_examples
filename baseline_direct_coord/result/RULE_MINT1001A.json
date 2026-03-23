@@ -1,0 +1,39 @@
+{
+  "rule_name": "RULE_MINT1001A",
+  "rule_description": "MINT1A width > 28nm",
+  "rule_script": "INTERNAL MINT1A < 0.028",
+  "calibre_skipped": true,
+  "sample_correct": null,
+  "sample_total": null,
+  "accuracy": null,
+  "details": [
+    {
+      "idx": 0,
+      "predicted_label": true,
+      "pos": {
+        "MINT1A_1": [
+          {
+            "llx": 0,
+            "lly": 0,
+            "urx": 29,
+            "ury": 10
+          }
+        ]
+      }
+    },
+    {
+      "idx": 1,
+      "predicted_label": false,
+      "pos": {
+        "MINT1A_1": [
+          {
+            "llx": 0,
+            "lly": 0,
+            "urx": 28,
+            "ury": 10
+          }
+        ]
+      }
+    }
+  ]
+}

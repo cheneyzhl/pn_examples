@@ -80,11 +80,33 @@
           "ury": 1
         }
       ]
+    },
+    {
+      "WELL_1": [
+        {
+          "llx": 0,
+          "lly": 0,
+          "urx": 1,
+          "ury": 5832
+        }
+      ]
+    },
+    {
+      "WELL_1": [
+        {
+          "llx": 0,
+          "lly": 0,
+          "urx": 1,
+          "ury": 5831
+        }
+      ]
     }
   ],
   "labels": [
     true,
     false,
+    false,
+    true,
     false,
     true,
     false,

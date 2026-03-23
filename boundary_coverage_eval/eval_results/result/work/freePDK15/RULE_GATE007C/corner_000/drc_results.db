@@ -1,0 +1,16 @@
+TOPCELL 5000
+RULE_GATE007C
+2 2 3 Mar 23 01:21:49 2026                     
+Rule File Pathname: /share/home/zenghuanlong/pn_examples/boundary_coverage_eval/eval_results/result/work/freePDK15/RULE_GATE007C/corner_000/example_5.rul
+RULE_GATE007C
+GATEC shape bottom or top must be aligned if distance < 192nm
+p 1 4
+0 0
+500 0
+500 250
+0 250
+p 2 4
+250 960
+750 960
+750 1210
+250 1210

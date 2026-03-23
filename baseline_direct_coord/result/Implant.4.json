@@ -1,0 +1,95 @@
+{
+  "rule_name": "Implant.4",
+  "rule_description": "Minimum width of implant = 0.045",
+  "rule_script": "INTERNAL implant < 0.045",
+  "calibre_skipped": true,
+  "sample_correct": null,
+  "sample_total": null,
+  "accuracy": null,
+  "details": [
+    {
+      "idx": 0,
+      "predicted_label": true,
+      "pos": {
+        "IMPLANT_1": [
+          {
+            "llx": 0,
+            "lly": 0,
+            "urx": 45,
+            "ury": 100
+          }
+        ]
+      }
+    },
+    {
+      "idx": 1,
+      "predicted_label": false,
+      "pos": {
+        "IMPLANT_1": [
+          {
+            "llx": 0,
+            "lly": 0,
+            "urx": 44,
+            "ury": 100
+          }
+        ]
+      }
+    },
+    {
+      "idx": 2,
+      "predicted_label": true,
+      "pos": {
+        "IMPLANT_1": [
+          {
+            "llx": 0,
+            "lly": 0,
+            "urx": 45,
+            "ury": 45
+          }
+        ]
+      }
+    },
+    {
+      "idx": 3,
+      "predicted_label": false,
+      "pos": {
+        "IMPLANT_1": [
+          {
+            "llx": 0,
+            "lly": 0,
+            "urx": 44,
+            "ury": 44
+          }
+        ]
+      }
+    },
+    {
+      "idx": 4,
+      "predicted_label": true,
+      "pos": {
+        "IMPLANT_1": [
+          {
+            "llx": 0,
+            "lly": 0,
+            "urx": 100,
+            "ury": 45
+          }
+        ]
+      }
+    },
+    {
+      "idx": 5,
+      "predicted_label": false,
+      "pos": {
+        "IMPLANT_1": [
+          {
+            "llx": 0,
+            "lly": 0,
+            "urx": 100,
+            "ury": 44
+          }
+        ]
+      }
+    }
+  ]
+}

@@ -1,0 +1,93 @@
+{
+  "rule_name": "Via8.1",
+  "rule_description": "Minimum width of via8 = 0.4",
+  "rule_script": "INTERNAL via8 < 0.4",
+  "calibre_skipped": true,
+  "sample_correct": null,
+  "sample_total": null,
+  "accuracy": null,
+  "details": [
+    {
+      "idx": 0,
+      "predicted_label": true,
+      "pos": {
+        "VIA8_1": [
+          {
+            "llx": 0,
+            "lly": 0,
+            "urx": 400,
+            "ury": 400
+          }
+        ]
+      }
+    },
+    {
+      "idx": 1,
+      "predicted_label": false,
+      "pos": {
+        "VIA8_1": [
+          {
+            "llx": 0,
+            "lly": 0,
+            "urx": 399,
+            "ury": 400
+          }
+        ]
+      }
+    },
+    {
+      "idx": 2,
+      "predicted_label": false,
+      "pos": {
+        "VIA8_1": [
+          {
+            "llx": 0,
+            "lly": 0,
+            "urx": 400,
+            "ury": 399
+          }
+        ]
+      }
+    },
+    {
+      "idx": 3,
+      "predicted_label": true,
+      "pos": {
+        "VIA8_1": [
+          {
+            "llx": 0,
+            "lly": 0,
+            "urx": 400,
+            "ury": 400
+          },
+          {
+            "llx": 500,
+            "lly": 0,
+            "urx": 900,
+            "ury": 400
+          }
+        ]
+      }
+    },
+    {
+      "idx": 4,
+      "predicted_label": false,
+      "pos": {
+        "VIA8_1": [
+          {
+            "llx": 0,
+            "lly": 0,
+            "urx": 399,
+            "ury": 400
+          },
+          {
+            "llx": 500,
+            "lly": 0,
+            "urx": 900,
+            "ury": 400
+          }
+        ]
+      }
+    }
+  ]
+}

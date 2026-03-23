@@ -1,0 +1,39 @@
+{
+  "rule_name": "SRAMVT.W.2",
+  "rule_description": "Minimum vertical width of SRAMVT is 54 nm.",
+  "rule_script": "INTERNAL SRAMVT_HE < 0.054 OPPOSITE",
+  "calibre_skipped": true,
+  "sample_correct": null,
+  "sample_total": null,
+  "accuracy": null,
+  "details": [
+    {
+      "idx": 0,
+      "predicted_label": true,
+      "pos": {
+        "SRAMVT_1": [
+          {
+            "llx": 0,
+            "lly": 0,
+            "urx": 100,
+            "ury": 54
+          }
+        ]
+      }
+    },
+    {
+      "idx": 1,
+      "predicted_label": false,
+      "pos": {
+        "SRAMVT_1": [
+          {
+            "llx": 0,
+            "lly": 0,
+            "urx": 100,
+            "ury": 53
+          }
+        ]
+      }
+    }
+  ]
+}

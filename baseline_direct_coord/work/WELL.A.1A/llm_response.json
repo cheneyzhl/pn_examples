@@ -1,5 +1,5 @@
 {
-  "raw_response": "```json\n{\n  \"examples\": [\n    {\n      \"WELL_1\": [\n        {\n          \"llx\": 0,\n          \"lly\": 0,\n          \"urx\": 72,\n          \"ury\": 81\n        }\n      ]\n    },\n    {\n      \"WELL_1\": [\n        {\n          \"llx\": 0,\n          \"lly\": 0,\n          \"urx\": 71,\n          \"ury\": 81\n        }\n      ]\n    },\n    {\n      \"WELL_1\": [\n        {\n          \"llx\": 0,\n          \"lly\": 0,\n          \"urx\": 72,\n          \"ury\": 80\n        }\n      ]\n    },\n    {\n      \"WELL_1\": [\n        {\n          \"llx\": 0,\n          \"lly\": 0,\n          \"urx\": 54,\n          \"ury\": 108\n        }\n      ]\n    },\n    {\n      \"WELL_1\": [\n        {\n          \"llx\": 0,\n          \"lly\": 0,\n          \"urx\": 54,\n          \"ury\": 107\n        }\n      ]\n    },\n    {\n      \"WELL_1\": [\n        {\n          \"llx\": 0,\n          \"lly\": 0,\n          \"urx\": 5832,\n          \"ury\": 1\n        }\n      ]\n    },\n    {\n      \"WELL_1\": [\n        {\n          \"llx\": 0,\n          \"lly\": 0,\n          \"urx\": 5831,\n          \"ury\": 1\n        }\n      ]\n    }\n  ],\n  \"labels\": [\n    true,\n    false,\n    false,\n    true,\n    false,\n    true,\n    false\n  ]\n}\n```",
+  "raw_response": "```json\n{\n  \"examples\": [\n    {\n      \"WELL_1\": [\n        {\n          \"llx\": 0,\n          \"lly\": 0,\n          \"urx\": 72,\n          \"ury\": 81\n        }\n      ]\n    },\n    {\n      \"WELL_1\": [\n        {\n          \"llx\": 0,\n          \"lly\": 0,\n          \"urx\": 71,\n          \"ury\": 81\n        }\n      ]\n    },\n    {\n      \"WELL_1\": [\n        {\n          \"llx\": 0,\n          \"lly\": 0,\n          \"urx\": 72,\n          \"ury\": 80\n        }\n      ]\n    },\n    {\n      \"WELL_1\": [\n        {\n          \"llx\": 0,\n          \"lly\": 0,\n          \"urx\": 54,\n          \"ury\": 108\n        }\n      ]\n    },\n    {\n      \"WELL_1\": [\n        {\n          \"llx\": 0,\n          \"lly\": 0,\n          \"urx\": 54,\n          \"ury\": 107\n        }\n      ]\n    },\n    {\n      \"WELL_1\": [\n        {\n          \"llx\": 0,\n          \"lly\": 0,\n          \"urx\": 5832,\n          \"ury\": 1\n        }\n      ]\n    },\n    {\n      \"WELL_1\": [\n        {\n          \"llx\": 0,\n          \"lly\": 0,\n          \"urx\": 5831,\n          \"ury\": 1\n        }\n      ]\n    },\n    {\n      \"WELL_1\": [\n        {\n          \"llx\": 0,\n          \"lly\": 0,\n          \"urx\": 1,\n          \"ury\": 5832\n        }\n      ]\n    },\n    {\n      \"WELL_1\": [\n        {\n          \"llx\": 0,\n          \"lly\": 0,\n          \"urx\": 1,\n          \"ury\": 5831\n        }\n      ]\n    }\n  ],\n  \"labels\": [\n    true,\n    false,\n    false,\n    true,\n    false,\n    true,\n    false,\n    true,\n    false\n  ]\n}\n```",
   "examples": [
     {
       "WELL_1": [
@@ -70,11 +70,33 @@
           "ury": 1
         }
       ]
+    },
+    {
+      "WELL_1": [
+        {
+          "llx": 0,
+          "lly": 0,
+          "urx": 1,
+          "ury": 5832
+        }
+      ]
+    },
+    {
+      "WELL_1": [
+        {
+          "llx": 0,
+          "lly": 0,
+          "urx": 1,
+          "ury": 5831
+        }
+      ]
     }
   ],
   "labels": [
     true,
     false,
+    false,
+    true,
     false,
     true,
     false,

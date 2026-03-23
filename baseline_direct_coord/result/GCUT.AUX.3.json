@@ -1,0 +1,77 @@
+{
+  "rule_name": "GCUT.AUX.3",
+  "rule_description": "GCUT.AUX.3 GCUT may not interact with channel.",
+  "rule_script": "GCUT INTERACT CHANNELR",
+  "calibre_skipped": true,
+  "sample_correct": null,
+  "sample_total": null,
+  "accuracy": null,
+  "details": [
+    {
+      "idx": 0,
+      "predicted_label": true,
+      "pos": {
+        "GCUT_1": [
+          {
+            "llx": 100,
+            "lly": 100,
+            "urx": 200,
+            "ury": 200
+          }
+        ],
+        "ACTIVE_1": [
+          {
+            "llx": 300,
+            "lly": 100,
+            "urx": 400,
+            "ury": 200
+          }
+        ]
+      }
+    },
+    {
+      "idx": 1,
+      "predicted_label": true,
+      "pos": {
+        "GCUT_1": [
+          {
+            "llx": 100,
+            "lly": 100,
+            "urx": 200,
+            "ury": 200
+          }
+        ],
+        "ACTIVE_1": [
+          {
+            "llx": 201,
+            "lly": 100,
+            "urx": 300,
+            "ury": 200
+          }
+        ]
+      }
+    },
+    {
+      "idx": 2,
+      "predicted_label": false,
+      "pos": {
+        "GCUT_1": [
+          {
+            "llx": 100,
+            "lly": 100,
+            "urx": 200,
+            "ury": 200
+          }
+        ],
+        "ACTIVE_1": [
+          {
+            "llx": 200,
+            "lly": 100,
+            "urx": 300,
+            "ury": 200
+          }
+        ]
+      }
+    }
+  ]
+}

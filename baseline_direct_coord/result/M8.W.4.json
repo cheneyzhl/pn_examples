@@ -1,0 +1,81 @@
+{
+  "rule_name": "M8.W.4",
+  "rule_description": "Minimum width of M8, when its length >= 1800 nm, is 120 nm.",
+  "rule_script": "X = LENGTH M8 >=1.8 \nY = M8 WITH EDGE X \nINTERNAL Y < 0.12",
+  "calibre_skipped": true,
+  "sample_correct": null,
+  "sample_total": null,
+  "accuracy": null,
+  "details": [
+    {
+      "idx": 0,
+      "predicted_label": true,
+      "pos": {
+        "M8_1": [
+          {
+            "llx": 0,
+            "lly": 0,
+            "urx": 120,
+            "ury": 1800
+          }
+        ]
+      }
+    },
+    {
+      "idx": 1,
+      "predicted_label": false,
+      "pos": {
+        "M8_1": [
+          {
+            "llx": 0,
+            "lly": 0,
+            "urx": 119,
+            "ury": 1800
+          }
+        ]
+      }
+    },
+    {
+      "idx": 2,
+      "predicted_label": false,
+      "pos": {
+        "M8_1": [
+          {
+            "llx": 0,
+            "lly": 0,
+            "urx": 120,
+            "ury": 1799
+          }
+        ]
+      }
+    },
+    {
+      "idx": 3,
+      "predicted_label": true,
+      "pos": {
+        "M8_1": [
+          {
+            "llx": 0,
+            "lly": 0,
+            "urx": 120,
+            "ury": 1800
+          }
+        ]
+      }
+    },
+    {
+      "idx": 4,
+      "predicted_label": false,
+      "pos": {
+        "M8_1": [
+          {
+            "llx": 0,
+            "lly": 0,
+            "urx": 121,
+            "ury": 1799
+          }
+        ]
+      }
+    }
+  ]
+}

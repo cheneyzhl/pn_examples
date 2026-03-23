@@ -1,0 +1,39 @@
+{
+  "rule_name": "Metal10.1",
+  "rule_description": "Minimum width of metal10 = 0.8",
+  "rule_script": "INTERNAL metal10 < 0.8",
+  "calibre_skipped": true,
+  "sample_correct": null,
+  "sample_total": null,
+  "accuracy": null,
+  "details": [
+    {
+      "idx": 0,
+      "predicted_label": true,
+      "pos": {
+        "METAL10_1": [
+          {
+            "llx": 0,
+            "lly": 0,
+            "urx": 800,
+            "ury": 1000
+          }
+        ]
+      }
+    },
+    {
+      "idx": 1,
+      "predicted_label": false,
+      "pos": {
+        "METAL10_1": [
+          {
+            "llx": 0,
+            "lly": 0,
+            "urx": 799,
+            "ury": 1000
+          }
+        ]
+      }
+    }
+  ]
+}

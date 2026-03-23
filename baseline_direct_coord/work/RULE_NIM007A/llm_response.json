@@ -1,0 +1,29 @@
+{
+  "raw_response": "```json\n{\n  \"examples\": [\n    {\n      \"NIM_1\": [\n        {\n          \"llx\": 0,\n          \"lly\": 0,\n          \"urx\": 70,\n          \"ury\": 70\n        }\n      ]\n    },\n    {\n      \"NIM_1\": [\n        {\n          \"llx\": 0,\n          \"lly\": 0,\n          \"urx\": 69,\n          \"ury\": 69\n        }\n      ]\n    }\n  ],\n  \"labels\": [\n    true,\n    false\n  ]\n}\n```",
+  "examples": [
+    {
+      "NIM_1": [
+        {
+          "llx": 0,
+          "lly": 0,
+          "urx": 70,
+          "ury": 70
+        }
+      ]
+    },
+    {
+      "NIM_1": [
+        {
+          "llx": 0,
+          "lly": 0,
+          "urx": 69,
+          "ury": 69
+        }
+      ]
+    }
+  ],
+  "labels": [
+    true,
+    false
+  ]
+}

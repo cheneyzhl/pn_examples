@@ -1,0 +1,11 @@
+TOPCELL 5000
+RULE_ACT008A
+1 1 3 Mar 22 02:56:39 2026                     
+Rule File Pathname: /share/home/zenghuanlong/pn_examples/boundary_coverage_eval/eval_results/result/work/freePDK15/RULE_ACT008A/corner_original/example_5.rul
+RULE_ACT008A
+Minimum area of ACT is 0.004608 um2
+p 1 4
+500 500
+835 500
+835 840
+500 840

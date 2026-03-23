@@ -1,0 +1,39 @@
+{
+  "rule_name": "Via1.1",
+  "rule_description": "Minimum width of via1 = 0.065",
+  "rule_script": "INTERNAL via1 < 0.065",
+  "calibre_skipped": true,
+  "sample_correct": null,
+  "sample_total": null,
+  "accuracy": null,
+  "details": [
+    {
+      "idx": 0,
+      "predicted_label": true,
+      "pos": {
+        "VIA1_1": [
+          {
+            "llx": 0,
+            "lly": 0,
+            "urx": 65,
+            "ury": 65
+          }
+        ]
+      }
+    },
+    {
+      "idx": 1,
+      "predicted_label": false,
+      "pos": {
+        "VIA1_1": [
+          {
+            "llx": 0,
+            "lly": 0,
+            "urx": 64,
+            "ury": 64
+          }
+        ]
+      }
+    }
+  ]
+}

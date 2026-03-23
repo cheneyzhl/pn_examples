@@ -1,0 +1,95 @@
+{
+  "rule_name": "RULE_NIM007B",
+  "rule_description": "Minimum enclosed area of NIM is 0.049 um2",
+  "rule_script": "HOLES NIM < 0.049",
+  "calibre_skipped": true,
+  "sample_correct": null,
+  "sample_total": null,
+  "accuracy": null,
+  "details": [
+    {
+      "idx": 0,
+      "predicted_label": true,
+      "pos": {
+        "NIM_1": [
+          {
+            "llx": 0,
+            "lly": 0,
+            "urx": 221,
+            "ury": 221
+          }
+        ]
+      }
+    },
+    {
+      "idx": 1,
+      "predicted_label": false,
+      "pos": {
+        "NIM_1": [
+          {
+            "llx": 0,
+            "lly": 0,
+            "urx": 220,
+            "ury": 220
+          }
+        ]
+      }
+    },
+    {
+      "idx": 2,
+      "predicted_label": false,
+      "pos": {
+        "NIM_1": [
+          {
+            "llx": 0,
+            "lly": 0,
+            "urx": 221,
+            "ury": 220
+          }
+        ]
+      }
+    },
+    {
+      "idx": 3,
+      "predicted_label": false,
+      "pos": {
+        "NIM_1": [
+          {
+            "llx": 0,
+            "lly": 0,
+            "urx": 220,
+            "ury": 221
+          }
+        ]
+      }
+    },
+    {
+      "idx": 4,
+      "predicted_label": true,
+      "pos": {
+        "NIM_1": [
+          {
+            "llx": 0,
+            "lly": 0,
+            "urx": 700,
+            "ury": 70
+          }
+        ]
+      }
+    },
+    {
+      "idx": 5,
+      "predicted_label": false,
+      "pos": {
+        "NIM_1": [
+          {
+            "llx": 0,
+            "lly": 0,
+            "urx": 700,
+            "ury": 69
+          }
+        ]
+      }
+    }
+  ]
+}

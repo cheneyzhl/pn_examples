@@ -1,0 +1,29 @@
+{
+  "raw_response": "```json\n{\n  \"examples\": [\n    {\n      \"VIA6_1\": [\n        {\n          \"llx\": 0,\n          \"lly\": 0,\n          \"urx\": 140,\n          \"ury\": 140\n        }\n      ]\n    },\n    {\n      \"VIA6_1\": [\n        {\n          \"llx\": 0,\n          \"lly\": 0,\n          \"urx\": 139,\n          \"ury\": 139\n        }\n      ]\n    }\n  ],\n  \"labels\": [\n    true,\n    false\n  ]\n}\n```",
+  "examples": [
+    {
+      "VIA6_1": [
+        {
+          "llx": 0,
+          "lly": 0,
+          "urx": 140,
+          "ury": 140
+        }
+      ]
+    },
+    {
+      "VIA6_1": [
+        {
+          "llx": 0,
+          "lly": 0,
+          "urx": 139,
+          "ury": 139
+        }
+      ]
+    }
+  ],
+  "labels": [
+    true,
+    false
+  ]
+}

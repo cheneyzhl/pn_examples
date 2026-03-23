@@ -1,0 +1,95 @@
+{
+  "rule_name": "Metal8.1",
+  "rule_description": "Minimum width of metal8 = 0.4",
+  "rule_script": "INTERNAL metal8 < 0.4",
+  "calibre_skipped": true,
+  "sample_correct": null,
+  "sample_total": null,
+  "accuracy": null,
+  "details": [
+    {
+      "idx": 0,
+      "predicted_label": true,
+      "pos": {
+        "METAL8_1": [
+          {
+            "llx": 0,
+            "lly": 0,
+            "urx": 400,
+            "ury": 500
+          }
+        ]
+      }
+    },
+    {
+      "idx": 1,
+      "predicted_label": false,
+      "pos": {
+        "METAL8_1": [
+          {
+            "llx": 0,
+            "lly": 0,
+            "urx": 399,
+            "ury": 500
+          }
+        ]
+      }
+    },
+    {
+      "idx": 2,
+      "predicted_label": true,
+      "pos": {
+        "METAL8_1": [
+          {
+            "llx": 0,
+            "lly": 0,
+            "urx": 400,
+            "ury": 400
+          }
+        ]
+      }
+    },
+    {
+      "idx": 3,
+      "predicted_label": false,
+      "pos": {
+        "METAL8_1": [
+          {
+            "llx": 0,
+            "lly": 0,
+            "urx": 399,
+            "ury": 399
+          }
+        ]
+      }
+    },
+    {
+      "idx": 4,
+      "predicted_label": true,
+      "pos": {
+        "METAL8_1": [
+          {
+            "llx": 0,
+            "lly": 0,
+            "urx": 400,
+            "ury": 1000
+          }
+        ]
+      }
+    },
+    {
+      "idx": 5,
+      "predicted_label": false,
+      "pos": {
+        "METAL8_1": [
+          {
+            "llx": 0,
+            "lly": 0,
+            "urx": 399,
+            "ury": 1000
+          }
+        ]
+      }
+    }
+  ]
+}

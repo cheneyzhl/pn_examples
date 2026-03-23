@@ -1,0 +1,39 @@
+{
+  "rule_name": "M6.W.1",
+  "rule_description": "Minimum vertical width of M6 is 32 nm.",
+  "rule_script": "INTERNAL M6_HE < VAR_M6_1X",
+  "calibre_skipped": true,
+  "sample_correct": null,
+  "sample_total": null,
+  "accuracy": null,
+  "details": [
+    {
+      "idx": 0,
+      "predicted_label": true,
+      "pos": {
+        "M6_1": [
+          {
+            "llx": 0,
+            "lly": 0,
+            "urx": 100,
+            "ury": 32
+          }
+        ]
+      }
+    },
+    {
+      "idx": 1,
+      "predicted_label": false,
+      "pos": {
+        "M6_1": [
+          {
+            "llx": 0,
+            "lly": 0,
+            "urx": 100,
+            "ury": 31
+          }
+        ]
+      }
+    }
+  ]
+}

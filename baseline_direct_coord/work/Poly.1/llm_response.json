@@ -1,5 +1,5 @@
 {
-  "raw_response": "### 分析规则\n\n规则描述为 \"Min width of poly = 0.05\"，即 POLY 层的最小宽度为 0.05 um（50 nm）。这是一个简单的单条件规则，只需要检查 POLY 层的矩形宽度是否满足最小宽度要求。\n\n### 条件变量\n\n1. POLY 层的宽度（width）：\n   - 条件：width >= 50 nm（正例）\n   - 违反条件：width < 50 nm（反例）\n\n### 边界情况\n\n由于这是一个单条件规则，边界情况只有两种：\n1. POLY 宽度刚好等于 50 nm（正例）\n2. POLY 宽度刚好小于 50 nm（反例）\n\n### 生成正例和反例\n\n#### 正例：\n- POLY 宽度 = 50 nm（刚好满足最小宽度）\n- 示例：POLY_1 的矩形宽度为 50 nm，高度可以任意（这里设为 100 nm）\n\n#### 反例：\n- POLY 宽度 = 49 nm（刚好不满足最小宽度）\n- 示例：POLY_1 的矩形宽度为 49 nm，高度可以任意（这里设为 100 nm）\n\n### 自检\n\n- 正例：\n  - 宽度 = 50 nm = 0.05 um，满足 width >= 0.05 um\n- 反例：\n  - 宽度 = 49 nm = 0.049 um，不满足 width >= 0.05 um\n\n### JSON 输出\n\n```json\n{\n  \"examples\": [\n    {\n      \"POLY_1\": [\n        { \"llx\": 0, \"lly\": 0, \"urx\": 50, \"ury\": 100 }\n      ]\n    },\n    {\n      \"POLY_1\": [\n        { \"llx\": 0, \"lly\": 0, \"urx\": 49, \"ury\": 100 }\n      ]\n    }\n  ],\n  \"labels\": [true, false]\n}\n```",
+  "raw_response": "```json\n{\n  \"examples\": [\n    {\n      \"POLY_1\": [\n        {\n          \"llx\": 0,\n          \"lly\": 0,\n          \"urx\": 50,\n          \"ury\": 100\n        }\n      ]\n    },\n    {\n      \"POLY_1\": [\n        {\n          \"llx\": 0,\n          \"lly\": 0,\n          \"urx\": 49,\n          \"ury\": 100\n        }\n      ]\n    },\n    {\n      \"POLY_1\": [\n        {\n          \"llx\": 0,\n          \"lly\": 0,\n          \"urx\": 50,\n          \"ury\": 50\n        }\n      ]\n    },\n    {\n      \"POLY_1\": [\n        {\n          \"llx\": 0,\n          \"lly\": 0,\n          \"urx\": 49,\n          \"ury\": 49\n        }\n      ]\n    },\n    {\n      \"POLY_1\": [\n        {\n          \"llx\": 0,\n          \"lly\": 0,\n          \"urx\": 100,\n          \"ury\": 50\n        }\n      ]\n    },\n    {\n      \"POLY_1\": [\n        {\n          \"llx\": 0,\n          \"lly\": 0,\n          \"urx\": 100,\n          \"ury\": 49\n        }\n      ]\n    }\n  ],\n  \"labels\": [\n    true,\n    false,\n    true,\n    false,\n    true,\n    false\n  ]\n}\n```",
   "examples": [
     {
       "POLY_1": [
@@ -20,9 +20,53 @@
           "ury": 100
         }
       ]
+    },
+    {
+      "POLY_1": [
+        {
+          "llx": 0,
+          "lly": 0,
+          "urx": 50,
+          "ury": 50
+        }
+      ]
+    },
+    {
+      "POLY_1": [
+        {
+          "llx": 0,
+          "lly": 0,
+          "urx": 49,
+          "ury": 49
+        }
+      ]
+    },
+    {
+      "POLY_1": [
+        {
+          "llx": 0,
+          "lly": 0,
+          "urx": 100,
+          "ury": 50
+        }
+      ]
+    },
+    {
+      "POLY_1": [
+        {
+          "llx": 0,
+          "lly": 0,
+          "urx": 100,
+          "ury": 49
+        }
+      ]
     }
   ],
   "labels": [
+    true,
+    false,
+    true,
+    false,
     true,
     false
   ]

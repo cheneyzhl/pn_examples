@@ -1,0 +1,591 @@
+{
+  "rule_name": "RULE_NW005",
+  "rule_description": "NW Must be orthogonal",
+  "rule_script": "ANGLE NW >0 <90",
+  "perturbed_scripts": {
+    "corner_000": "ANGLE NW >0.000 <89.999\n",
+    "corner_001": "ANGLE NW >0.001 <89.999\n",
+    "corner_002": "ANGLE NW >0.000 <90.001\n",
+    "corner_003": "ANGLE NW >0.001 <90.001\n",
+    "corner_original": "ANGLE NW >0 <90\n"
+  },
+  "data_name": "freePDK15",
+  "judge_mode": "match",
+  "corner_count": 5,
+  "sample_count": 4,
+  "all_corners_match": false,
+  "all_corners_detect": true,
+  "all_corners_ok": false,
+  "per_corner": [
+    {
+      "corner_id": "corner_000",
+      "script_expected_correct": false,
+      "script_predicted_correct": false,
+      "corner_any_mismatch": true,
+      "corner_all_match": false,
+      "corner_ok": true,
+      "samples": [
+        {
+          "idx": 0,
+          "predicted_label": true,
+          "calibre_label": true,
+          "match": true,
+          "error": null,
+          "pos": {
+            "NW_1": [
+              {
+                "llx": 0,
+                "lly": 0,
+                "urx": 1000,
+                "ury": 500
+              }
+            ]
+          }
+        },
+        {
+          "idx": 1,
+          "predicted_label": false,
+          "calibre_label": true,
+          "match": false,
+          "error": null,
+          "pos": {
+            "NW_1": [
+              {
+                "llx": 0,
+                "lly": 0,
+                "urx": 1000,
+                "ury": 500
+              },
+              {
+                "llx": 1000,
+                "lly": 0,
+                "urx": 1500,
+                "ury": 1000
+              }
+            ]
+          }
+        },
+        {
+          "idx": 2,
+          "predicted_label": false,
+          "calibre_label": true,
+          "match": false,
+          "error": null,
+          "pos": {
+            "NW_1": [
+              {
+                "llx": 0,
+                "lly": 0,
+                "urx": 707,
+                "ury": 707
+              }
+            ]
+          }
+        },
+        {
+          "idx": 3,
+          "predicted_label": false,
+          "calibre_label": null,
+          "match": false,
+          "error": "Command 'calibre -drc -hier -turbo -hyper /share/home/zenghuanlong/pn_examples/boundary_coverage_eval/eval_results/result/work/freePDK15/RULE_NW005/corner_000/example_3.rul' returned non-zero exit status 4.",
+          "pos": {
+            "NW_1": [
+              {
+                "llx": 0,
+                "lly": 0,
+                "urx": 1000,
+                "ury": 0
+              },
+              {
+                "llx": 1000,
+                "lly": 0,
+                "urx": 1000,
+                "ury": 500
+              },
+              {
+                "llx": 1000,
+                "lly": 500,
+                "urx": 500,
+                "ury": 500
+              },
+              {
+                "llx": 500,
+                "lly": 500,
+                "urx": 500,
+                "ury": 1000
+              },
+              {
+                "llx": 500,
+                "lly": 1000,
+                "urx": 0,
+                "ury": 1000
+              },
+              {
+                "llx": 0,
+                "lly": 1000,
+                "urx": 0,
+                "ury": 0
+              }
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "corner_id": "corner_001",
+      "script_expected_correct": false,
+      "script_predicted_correct": false,
+      "corner_any_mismatch": true,
+      "corner_all_match": false,
+      "corner_ok": true,
+      "samples": [
+        {
+          "idx": 0,
+          "predicted_label": true,
+          "calibre_label": true,
+          "match": true,
+          "error": null,
+          "pos": {
+            "NW_1": [
+              {
+                "llx": 0,
+                "lly": 0,
+                "urx": 1000,
+                "ury": 500
+              }
+            ]
+          }
+        },
+        {
+          "idx": 1,
+          "predicted_label": false,
+          "calibre_label": true,
+          "match": false,
+          "error": null,
+          "pos": {
+            "NW_1": [
+              {
+                "llx": 0,
+                "lly": 0,
+                "urx": 1000,
+                "ury": 500
+              },
+              {
+                "llx": 1000,
+                "lly": 0,
+                "urx": 1500,
+                "ury": 1000
+              }
+            ]
+          }
+        },
+        {
+          "idx": 2,
+          "predicted_label": false,
+          "calibre_label": true,
+          "match": false,
+          "error": null,
+          "pos": {
+            "NW_1": [
+              {
+                "llx": 0,
+                "lly": 0,
+                "urx": 707,
+                "ury": 707
+              }
+            ]
+          }
+        },
+        {
+          "idx": 3,
+          "predicted_label": false,
+          "calibre_label": null,
+          "match": false,
+          "error": "Command 'calibre -drc -hier -turbo -hyper /share/home/zenghuanlong/pn_examples/boundary_coverage_eval/eval_results/result/work/freePDK15/RULE_NW005/corner_001/example_3.rul' returned non-zero exit status 4.",
+          "pos": {
+            "NW_1": [
+              {
+                "llx": 0,
+                "lly": 0,
+                "urx": 1000,
+                "ury": 0
+              },
+              {
+                "llx": 1000,
+                "lly": 0,
+                "urx": 1000,
+                "ury": 500
+              },
+              {
+                "llx": 1000,
+                "lly": 500,
+                "urx": 500,
+                "ury": 500
+              },
+              {
+                "llx": 500,
+                "lly": 500,
+                "urx": 500,
+                "ury": 1000
+              },
+              {
+                "llx": 500,
+                "lly": 1000,
+                "urx": 0,
+                "ury": 1000
+              },
+              {
+                "llx": 0,
+                "lly": 1000,
+                "urx": 0,
+                "ury": 0
+              }
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "corner_id": "corner_002",
+      "script_expected_correct": false,
+      "script_predicted_correct": false,
+      "corner_any_mismatch": true,
+      "corner_all_match": false,
+      "corner_ok": true,
+      "samples": [
+        {
+          "idx": 0,
+          "predicted_label": true,
+          "calibre_label": null,
+          "match": false,
+          "error": "Command 'calibre -drc -hier -turbo -hyper /share/home/zenghuanlong/pn_examples/boundary_coverage_eval/eval_results/result/work/freePDK15/RULE_NW005/corner_002/example_0.rul' returned non-zero exit status 4.",
+          "pos": {
+            "NW_1": [
+              {
+                "llx": 0,
+                "lly": 0,
+                "urx": 1000,
+                "ury": 500
+              }
+            ]
+          }
+        },
+        {
+          "idx": 1,
+          "predicted_label": false,
+          "calibre_label": null,
+          "match": false,
+          "error": "Command 'calibre -drc -hier -turbo -hyper /share/home/zenghuanlong/pn_examples/boundary_coverage_eval/eval_results/result/work/freePDK15/RULE_NW005/corner_002/example_1.rul' returned non-zero exit status 4.",
+          "pos": {
+            "NW_1": [
+              {
+                "llx": 0,
+                "lly": 0,
+                "urx": 1000,
+                "ury": 500
+              },
+              {
+                "llx": 1000,
+                "lly": 0,
+                "urx": 1500,
+                "ury": 1000
+              }
+            ]
+          }
+        },
+        {
+          "idx": 2,
+          "predicted_label": false,
+          "calibre_label": null,
+          "match": false,
+          "error": "Command 'calibre -drc -hier -turbo -hyper /share/home/zenghuanlong/pn_examples/boundary_coverage_eval/eval_results/result/work/freePDK15/RULE_NW005/corner_002/example_2.rul' returned non-zero exit status 4.",
+          "pos": {
+            "NW_1": [
+              {
+                "llx": 0,
+                "lly": 0,
+                "urx": 707,
+                "ury": 707
+              }
+            ]
+          }
+        },
+        {
+          "idx": 3,
+          "predicted_label": false,
+          "calibre_label": null,
+          "match": false,
+          "error": "Command 'calibre -drc -hier -turbo -hyper /share/home/zenghuanlong/pn_examples/boundary_coverage_eval/eval_results/result/work/freePDK15/RULE_NW005/corner_002/example_3.rul' returned non-zero exit status 4.",
+          "pos": {
+            "NW_1": [
+              {
+                "llx": 0,
+                "lly": 0,
+                "urx": 1000,
+                "ury": 0
+              },
+              {
+                "llx": 1000,
+                "lly": 0,
+                "urx": 1000,
+                "ury": 500
+              },
+              {
+                "llx": 1000,
+                "lly": 500,
+                "urx": 500,
+                "ury": 500
+              },
+              {
+                "llx": 500,
+                "lly": 500,
+                "urx": 500,
+                "ury": 1000
+              },
+              {
+                "llx": 500,
+                "lly": 1000,
+                "urx": 0,
+                "ury": 1000
+              },
+              {
+                "llx": 0,
+                "lly": 1000,
+                "urx": 0,
+                "ury": 0
+              }
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "corner_id": "corner_003",
+      "script_expected_correct": false,
+      "script_predicted_correct": false,
+      "corner_any_mismatch": true,
+      "corner_all_match": false,
+      "corner_ok": true,
+      "samples": [
+        {
+          "idx": 0,
+          "predicted_label": true,
+          "calibre_label": null,
+          "match": false,
+          "error": "Command 'calibre -drc -hier -turbo -hyper /share/home/zenghuanlong/pn_examples/boundary_coverage_eval/eval_results/result/work/freePDK15/RULE_NW005/corner_003/example_0.rul' returned non-zero exit status 4.",
+          "pos": {
+            "NW_1": [
+              {
+                "llx": 0,
+                "lly": 0,
+                "urx": 1000,
+                "ury": 500
+              }
+            ]
+          }
+        },
+        {
+          "idx": 1,
+          "predicted_label": false,
+          "calibre_label": null,
+          "match": false,
+          "error": "Command 'calibre -drc -hier -turbo -hyper /share/home/zenghuanlong/pn_examples/boundary_coverage_eval/eval_results/result/work/freePDK15/RULE_NW005/corner_003/example_1.rul' returned non-zero exit status 4.",
+          "pos": {
+            "NW_1": [
+              {
+                "llx": 0,
+                "lly": 0,
+                "urx": 1000,
+                "ury": 500
+              },
+              {
+                "llx": 1000,
+                "lly": 0,
+                "urx": 1500,
+                "ury": 1000
+              }
+            ]
+          }
+        },
+        {
+          "idx": 2,
+          "predicted_label": false,
+          "calibre_label": null,
+          "match": false,
+          "error": "Command 'calibre -drc -hier -turbo -hyper /share/home/zenghuanlong/pn_examples/boundary_coverage_eval/eval_results/result/work/freePDK15/RULE_NW005/corner_003/example_2.rul' returned non-zero exit status 4.",
+          "pos": {
+            "NW_1": [
+              {
+                "llx": 0,
+                "lly": 0,
+                "urx": 707,
+                "ury": 707
+              }
+            ]
+          }
+        },
+        {
+          "idx": 3,
+          "predicted_label": false,
+          "calibre_label": null,
+          "match": false,
+          "error": "Command 'calibre -drc -hier -turbo -hyper /share/home/zenghuanlong/pn_examples/boundary_coverage_eval/eval_results/result/work/freePDK15/RULE_NW005/corner_003/example_3.rul' returned non-zero exit status 4.",
+          "pos": {
+            "NW_1": [
+              {
+                "llx": 0,
+                "lly": 0,
+                "urx": 1000,
+                "ury": 0
+              },
+              {
+                "llx": 1000,
+                "lly": 0,
+                "urx": 1000,
+                "ury": 500
+              },
+              {
+                "llx": 1000,
+                "lly": 500,
+                "urx": 500,
+                "ury": 500
+              },
+              {
+                "llx": 500,
+                "lly": 500,
+                "urx": 500,
+                "ury": 1000
+              },
+              {
+                "llx": 500,
+                "lly": 1000,
+                "urx": 0,
+                "ury": 1000
+              },
+              {
+                "llx": 0,
+                "lly": 1000,
+                "urx": 0,
+                "ury": 0
+              }
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "corner_id": "corner_original",
+      "script_expected_correct": true,
+      "script_predicted_correct": false,
+      "corner_any_mismatch": true,
+      "corner_all_match": false,
+      "corner_ok": false,
+      "samples": [
+        {
+          "idx": 0,
+          "predicted_label": true,
+          "calibre_label": true,
+          "match": true,
+          "error": null,
+          "pos": {
+            "NW_1": [
+              {
+                "llx": 0,
+                "lly": 0,
+                "urx": 1000,
+                "ury": 500
+              }
+            ]
+          }
+        },
+        {
+          "idx": 1,
+          "predicted_label": false,
+          "calibre_label": true,
+          "match": false,
+          "error": null,
+          "pos": {
+            "NW_1": [
+              {
+                "llx": 0,
+                "lly": 0,
+                "urx": 1000,
+                "ury": 500
+              },
+              {
+                "llx": 1000,
+                "lly": 0,
+                "urx": 1500,
+                "ury": 1000
+              }
+            ]
+          }
+        },
+        {
+          "idx": 2,
+          "predicted_label": false,
+          "calibre_label": true,
+          "match": false,
+          "error": null,
+          "pos": {
+            "NW_1": [
+              {
+                "llx": 0,
+                "lly": 0,
+                "urx": 707,
+                "ury": 707
+              }
+            ]
+          }
+        },
+        {
+          "idx": 3,
+          "predicted_label": false,
+          "calibre_label": null,
+          "match": false,
+          "error": "Command 'calibre -drc -hier -turbo -hyper /share/home/zenghuanlong/pn_examples/boundary_coverage_eval/eval_results/result/work/freePDK15/RULE_NW005/corner_original/example_3.rul' returned non-zero exit status 4.",
+          "pos": {
+            "NW_1": [
+              {
+                "llx": 0,
+                "lly": 0,
+                "urx": 1000,
+                "ury": 0
+              },
+              {
+                "llx": 1000,
+                "lly": 0,
+                "urx": 1000,
+                "ury": 500
+              },
+              {
+                "llx": 1000,
+                "lly": 500,
+                "urx": 500,
+                "ury": 500
+              },
+              {
+                "llx": 500,
+                "lly": 500,
+                "urx": 500,
+                "ury": 1000
+              },
+              {
+                "llx": 500,
+                "lly": 1000,
+                "urx": 0,
+                "ury": 1000
+              },
+              {
+                "llx": 0,
+                "lly": 1000,
+                "urx": 0,
+                "ury": 0
+              }
+            ]
+          }
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,74 @@
+{
+  "raw_response": "```json\n{\n  \"examples\": [\n    {\n      \"M4_1\": [\n        {\n          \"llx\": 0,\n          \"lly\": 0,\n          \"urx\": 1000,\n          \"ury\": 480\n        }\n      ]\n    },\n    {\n      \"M4_1\": [\n        {\n          \"llx\": 0,\n          \"lly\": 0,\n          \"urx\": 1000,\n          \"ury\": 481\n        }\n      ]\n    },\n    {\n      \"M4_1\": [\n        {\n          \"llx\": 0,\n          \"lly\": 0,\n          \"urx\": 1000,\n          \"ury\": 479\n        }\n      ]\n    },\n    {\n      \"M4_1\": [\n        {\n          \"llx\": 0,\n          \"lly\": 0,\n          \"urx\": 1000,\n          \"ury\": 480\n        },\n        {\n          \"llx\": 2000,\n          \"lly\": 0,\n          \"urx\": 3000,\n          \"ury\": 480\n        }\n      ]\n    },\n    {\n      \"M4_1\": [\n        {\n          \"llx\": 0,\n          \"lly\": 0,\n          \"urx\": 1000,\n          \"ury\": 480\n        },\n        {\n          \"llx\": 2000,\n          \"lly\": 0,\n          \"urx\": 3000,\n          \"ury\": 481\n        }\n      ]\n    }\n  ],\n  \"labels\": [\n    true,\n    false,\n    true,\n    true,\n    false\n  ]\n}\n```",
+  "examples": [
+    {
+      "M4_1": [
+        {
+          "llx": 0,
+          "lly": 0,
+          "urx": 1000,
+          "ury": 480
+        }
+      ]
+    },
+    {
+      "M4_1": [
+        {
+          "llx": 0,
+          "lly": 0,
+          "urx": 1000,
+          "ury": 481
+        }
+      ]
+    },
+    {
+      "M4_1": [
+        {
+          "llx": 0,
+          "lly": 0,
+          "urx": 1000,
+          "ury": 479
+        }
+      ]
+    },
+    {
+      "M4_1": [
+        {
+          "llx": 0,
+          "lly": 0,
+          "urx": 1000,
+          "ury": 480
+        },
+        {
+          "llx": 2000,
+          "lly": 0,
+          "urx": 3000,
+          "ury": 480
+        }
+      ]
+    },
+    {
+      "M4_1": [
+        {
+          "llx": 0,
+          "lly": 0,
+          "urx": 1000,
+          "ury": 480
+        },
+        {
+          "llx": 2000,
+          "lly": 0,
+          "urx": 3000,
+          "ury": 481
+        }
+      ]
+    }
+  ],
+  "labels": [
+    true,
+    false,
+    true,
+    true,
+    false
+  ]
+}

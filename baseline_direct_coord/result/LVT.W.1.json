@@ -1,0 +1,95 @@
+{
+  "rule_name": "LVT.W.1",
+  "rule_description": "Minimum horizontal width of LVT is 108 nm.",
+  "rule_script": "INTERNAL LVT_VE < 0.108 OPPOSITE",
+  "calibre_skipped": true,
+  "sample_correct": null,
+  "sample_total": null,
+  "accuracy": null,
+  "details": [
+    {
+      "idx": 0,
+      "predicted_label": true,
+      "pos": {
+        "LVT_1": [
+          {
+            "llx": 0,
+            "lly": 0,
+            "urx": 108,
+            "ury": 100
+          }
+        ]
+      }
+    },
+    {
+      "idx": 1,
+      "predicted_label": false,
+      "pos": {
+        "LVT_1": [
+          {
+            "llx": 0,
+            "lly": 0,
+            "urx": 107,
+            "ury": 100
+          }
+        ]
+      }
+    },
+    {
+      "idx": 2,
+      "predicted_label": true,
+      "pos": {
+        "LVT_1": [
+          {
+            "llx": 0,
+            "lly": 0,
+            "urx": 108,
+            "ury": 108
+          }
+        ]
+      }
+    },
+    {
+      "idx": 3,
+      "predicted_label": false,
+      "pos": {
+        "LVT_1": [
+          {
+            "llx": 0,
+            "lly": 0,
+            "urx": 107,
+            "ury": 107
+          }
+        ]
+      }
+    },
+    {
+      "idx": 4,
+      "predicted_label": true,
+      "pos": {
+        "LVT_1": [
+          {
+            "llx": 0,
+            "lly": 0,
+            "urx": 200,
+            "ury": 108
+          }
+        ]
+      }
+    },
+    {
+      "idx": 5,
+      "predicted_label": false,
+      "pos": {
+        "LVT_1": [
+          {
+            "llx": 0,
+            "lly": 0,
+            "urx": 200,
+            "ury": 107
+          }
+        ]
+      }
+    }
+  ]
+}

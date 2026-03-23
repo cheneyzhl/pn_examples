@@ -1,0 +1,12 @@
+TOPCELL 5000
+RULE_PIM001A
+2 2 3 Mar 23 01:34:42 2026                     
+Rule File Pathname: /share/home/zenghuanlong/pn_examples/boundary_coverage_eval/eval_results/result/work/freePDK15/RULE_PIM001A/corner_000/example_3.rul
+RULE_PIM001A
+Minimum width of PIM is 128nm
+e 1 2
+0 0 640 0
+0 500 640 500
+e 2 2
+1000 0 1635 0
+1000 500 1635 500

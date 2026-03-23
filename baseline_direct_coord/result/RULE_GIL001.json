@@ -1,0 +1,83 @@
+{
+  "rule_name": "RULE_GIL001",
+  "rule_description": "Minimum vertical width of GIL is 44nm",
+  "rule_script": "ALL_HORIZ_EDGES = ANGLE GIL == 0 \nINTERNAL ALL_HORIZ_EDGES < 0.044",
+  "calibre_skipped": true,
+  "sample_correct": null,
+  "sample_total": null,
+  "accuracy": null,
+  "details": [
+    {
+      "idx": 0,
+      "predicted_label": true,
+      "pos": {
+        "GIL_1": [
+          {
+            "llx": 0,
+            "lly": 0,
+            "urx": 100,
+            "ury": 44
+          }
+        ]
+      }
+    },
+    {
+      "idx": 1,
+      "predicted_label": false,
+      "pos": {
+        "GIL_1": [
+          {
+            "llx": 0,
+            "lly": 0,
+            "urx": 100,
+            "ury": 43
+          }
+        ]
+      }
+    },
+    {
+      "idx": 2,
+      "predicted_label": true,
+      "pos": {
+        "GIL_1": [
+          {
+            "llx": 0,
+            "lly": 0,
+            "urx": 100,
+            "ury": 44
+          }
+        ],
+        "GIL_2": [
+          {
+            "llx": 200,
+            "lly": 0,
+            "urx": 300,
+            "ury": 44
+          }
+        ]
+      }
+    },
+    {
+      "idx": 3,
+      "predicted_label": false,
+      "pos": {
+        "GIL_1": [
+          {
+            "llx": 0,
+            "lly": 0,
+            "urx": 100,
+            "ury": 44
+          }
+        ],
+        "GIL_2": [
+          {
+            "llx": 200,
+            "lly": 0,
+            "urx": 300,
+            "ury": 43
+          }
+        ]
+      }
+    }
+  ]
+}

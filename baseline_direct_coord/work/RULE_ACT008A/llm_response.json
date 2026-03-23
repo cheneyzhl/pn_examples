@@ -1,0 +1,85 @@
+{
+  "raw_response": "```json\n{\n  \"examples\": [\n    {\n      \"ACT_1\": [\n        {\n          \"llx\": 0,\n          \"lly\": 0,\n          \"urx\": 68,\n          \"ury\": 68\n        }\n      ]\n    },\n    {\n      \"ACT_1\": [\n        {\n          \"llx\": 0,\n          \"lly\": 0,\n          \"urx\": 67,\n          \"ury\": 68\n        }\n      ]\n    },\n    {\n      \"ACT_1\": [\n        {\n          \"llx\": 0,\n          \"lly\": 0,\n          \"urx\": 68,\n          \"ury\": 67\n        }\n      ]\n    },\n    {\n      \"ACT_1\": [\n        {\n          \"llx\": 0,\n          \"lly\": 0,\n          \"urx\": 67,\n          \"ury\": 67\n        }\n      ]\n    },\n    {\n      \"ACT_1\": [\n        {\n          \"llx\": 0,\n          \"lly\": 0,\n          \"urx\": 68,\n          \"ury\": 68\n        },\n        {\n          \"llx\": 100,\n          \"lly\": 100,\n          \"urx\": 168,\n          \"ury\": 168\n        }\n      ]\n    },\n    {\n      \"ACT_1\": [\n        {\n          \"llx\": 0,\n          \"lly\": 0,\n          \"urx\": 68,\n          \"ury\": 68\n        },\n        {\n          \"llx\": 100,\n          \"lly\": 100,\n          \"urx\": 167,\n          \"ury\": 168\n        }\n      ]\n    }\n  ],\n  \"labels\": [\n    true,\n    false,\n    false,\n    false,\n    true,\n    false\n  ]\n}\n```",
+  "examples": [
+    {
+      "ACT_1": [
+        {
+          "llx": 0,
+          "lly": 0,
+          "urx": 68,
+          "ury": 68
+        }
+      ]
+    },
+    {
+      "ACT_1": [
+        {
+          "llx": 0,
+          "lly": 0,
+          "urx": 67,
+          "ury": 68
+        }
+      ]
+    },
+    {
+      "ACT_1": [
+        {
+          "llx": 0,
+          "lly": 0,
+          "urx": 68,
+          "ury": 67
+        }
+      ]
+    },
+    {
+      "ACT_1": [
+        {
+          "llx": 0,
+          "lly": 0,
+          "urx": 67,
+          "ury": 67
+        }
+      ]
+    },
+    {
+      "ACT_1": [
+        {
+          "llx": 0,
+          "lly": 0,
+          "urx": 68,
+          "ury": 68
+        },
+        {
+          "llx": 100,
+          "lly": 100,
+          "urx": 168,
+          "ury": 168
+        }
+      ]
+    },
+    {
+      "ACT_1": [
+        {
+          "llx": 0,
+          "lly": 0,
+          "urx": 68,
+          "ury": 68
+        },
+        {
+          "llx": 100,
+          "lly": 100,
+          "urx": 167,
+          "ury": 168
+        }
+      ]
+    }
+  ],
+  "labels": [
+    true,
+    false,
+    false,
+    false,
+    true,
+    false
+  ]
+}

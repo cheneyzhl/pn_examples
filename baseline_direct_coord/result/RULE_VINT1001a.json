@@ -1,0 +1,81 @@
+{
+  "rule_name": "RULE_VINT1001a",
+  "rule_description": "VINT1 is a square with 28nm edge length",
+  "rule_script": "RECTANGLE VINT1 != 0.028 BY != 0.028 ASPECT ==1",
+  "calibre_skipped": true,
+  "sample_correct": null,
+  "sample_total": null,
+  "accuracy": null,
+  "details": [
+    {
+      "idx": 0,
+      "predicted_label": true,
+      "pos": {
+        "VINT1_1": [
+          {
+            "llx": 0,
+            "lly": 0,
+            "urx": 28,
+            "ury": 28
+          }
+        ]
+      }
+    },
+    {
+      "idx": 1,
+      "predicted_label": false,
+      "pos": {
+        "VINT1_1": [
+          {
+            "llx": 0,
+            "lly": 0,
+            "urx": 27,
+            "ury": 28
+          }
+        ]
+      }
+    },
+    {
+      "idx": 2,
+      "predicted_label": false,
+      "pos": {
+        "VINT1_1": [
+          {
+            "llx": 0,
+            "lly": 0,
+            "urx": 28,
+            "ury": 27
+          }
+        ]
+      }
+    },
+    {
+      "idx": 3,
+      "predicted_label": true,
+      "pos": {
+        "VINT1_1": [
+          {
+            "llx": 0,
+            "lly": 0,
+            "urx": 29,
+            "ury": 28
+          }
+        ]
+      }
+    },
+    {
+      "idx": 4,
+      "predicted_label": true,
+      "pos": {
+        "VINT1_1": [
+          {
+            "llx": 0,
+            "lly": 0,
+            "urx": 28,
+            "ury": 29
+          }
+        ]
+      }
+    }
+  ]
+}

@@ -1,0 +1,97 @@
+{
+  "raw_response": "```json\n{\n  \"examples\": [\n    {\n      \"ACT_1\": [\n        {\n          \"llx\": 0,\n          \"lly\": 0,\n          \"urx\": 100,\n          \"ury\": 40\n        }\n      ]\n    },\n    {\n      \"ACT_1\": [\n        {\n          \"llx\": 0,\n          \"lly\": 0,\n          \"urx\": 100,\n          \"ury\": 39\n        }\n      ]\n    },\n    {\n      \"ACT_1\": [\n        {\n          \"llx\": 0,\n          \"lly\": 0,\n          \"urx\": 100,\n          \"ury\": 40\n        },\n        {\n          \"llx\": 200,\n          \"lly\": 0,\n          \"urx\": 300,\n          \"ury\": 40\n        }\n      ]\n    },\n    {\n      \"ACT_1\": [\n        {\n          \"llx\": 0,\n          \"lly\": 0,\n          \"urx\": 100,\n          \"ury\": 40\n        },\n        {\n          \"llx\": 200,\n          \"lly\": 0,\n          \"urx\": 300,\n          \"ury\": 39\n        }\n      ]\n    },\n    {\n      \"ACT_1\": [\n        {\n          \"llx\": 0,\n          \"lly\": 0,\n          \"urx\": 100,\n          \"ury\": 40\n        },\n        {\n          \"llx\": 0,\n          \"lly\": 50,\n          \"urx\": 100,\n          \"ury\": 90\n        }\n      ]\n    },\n    {\n      \"ACT_1\": [\n        {\n          \"llx\": 0,\n          \"lly\": 0,\n          \"urx\": 100,\n          \"ury\": 40\n        },\n        {\n          \"llx\": 0,\n          \"lly\": 50,\n          \"urx\": 100,\n          \"ury\": 89\n        }\n      ]\n    }\n  ],\n  \"labels\": [\n    true,\n    false,\n    true,\n    false,\n    true,\n    false\n  ]\n}\n```",
+  "examples": [
+    {
+      "ACT_1": [
+        {
+          "llx": 0,
+          "lly": 0,
+          "urx": 100,
+          "ury": 40
+        }
+      ]
+    },
+    {
+      "ACT_1": [
+        {
+          "llx": 0,
+          "lly": 0,
+          "urx": 100,
+          "ury": 39
+        }
+      ]
+    },
+    {
+      "ACT_1": [
+        {
+          "llx": 0,
+          "lly": 0,
+          "urx": 100,
+          "ury": 40
+        },
+        {
+          "llx": 200,
+          "lly": 0,
+          "urx": 300,
+          "ury": 40
+        }
+      ]
+    },
+    {
+      "ACT_1": [
+        {
+          "llx": 0,
+          "lly": 0,
+          "urx": 100,
+          "ury": 40
+        },
+        {
+          "llx": 200,
+          "lly": 0,
+          "urx": 300,
+          "ury": 39
+        }
+      ]
+    },
+    {
+      "ACT_1": [
+        {
+          "llx": 0,
+          "lly": 0,
+          "urx": 100,
+          "ury": 40
+        },
+        {
+          "llx": 0,
+          "lly": 50,
+          "urx": 100,
+          "ury": 90
+        }
+      ]
+    },
+    {
+      "ACT_1": [
+        {
+          "llx": 0,
+          "lly": 0,
+          "urx": 100,
+          "ury": 40
+        },
+        {
+          "llx": 0,
+          "lly": 50,
+          "urx": 100,
+          "ury": 89
+        }
+      ]
+    }
+  ],
+  "labels": [
+    true,
+    false,
+    true,
+    false,
+    true,
+    false
+  ]
+}

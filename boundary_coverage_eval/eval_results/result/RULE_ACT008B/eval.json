@@ -1,0 +1,253 @@
+{
+  "rule_name": "RULE_ACT008B",
+  "rule_description": "Minimum enclosed area of ACT is 0.004608 um2",
+  "rule_script": "HOLES ACT < 0.004608",
+  "perturbed_scripts": {
+    "corner_000": "HOLES ACT < 0.003608\n",
+    "corner_001": "HOLES ACT < 0.005608\n",
+    "corner_original": "HOLES ACT < 0.004608\n"
+  },
+  "data_name": "freePDK15",
+  "judge_mode": "match",
+  "corner_count": 3,
+  "sample_count": 4,
+  "all_corners_match": false,
+  "all_corners_detect": true,
+  "all_corners_ok": false,
+  "per_corner": [
+    {
+      "corner_id": "corner_000",
+      "script_expected_correct": false,
+      "script_predicted_correct": false,
+      "corner_any_mismatch": true,
+      "corner_all_match": false,
+      "corner_ok": true,
+      "samples": [
+        {
+          "idx": 0,
+          "predicted_label": true,
+          "calibre_label": true,
+          "match": true,
+          "error": null,
+          "pos": {
+            "ACT_1": [
+              {
+                "llx": 0,
+                "lly": 0,
+                "urx": 48,
+                "ury": 96
+              }
+            ]
+          }
+        },
+        {
+          "idx": 1,
+          "predicted_label": false,
+          "calibre_label": true,
+          "match": false,
+          "error": null,
+          "pos": {
+            "ACT_1": [
+              {
+                "llx": 0,
+                "lly": 0,
+                "urx": 1,
+                "ury": 4607
+              }
+            ]
+          }
+        },
+        {
+          "idx": 2,
+          "predicted_label": true,
+          "calibre_label": true,
+          "match": true,
+          "error": null,
+          "pos": {
+            "ACT_1": [
+              {
+                "llx": 0,
+                "lly": 0,
+                "urx": 100,
+                "ury": 100
+              }
+            ]
+          }
+        },
+        {
+          "idx": 3,
+          "predicted_label": false,
+          "calibre_label": true,
+          "match": false,
+          "error": null,
+          "pos": {
+            "ACT_1": [
+              {
+                "llx": 0,
+                "lly": 0,
+                "urx": 1,
+                "ury": 1
+              }
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "corner_id": "corner_001",
+      "script_expected_correct": false,
+      "script_predicted_correct": false,
+      "corner_any_mismatch": true,
+      "corner_all_match": false,
+      "corner_ok": true,
+      "samples": [
+        {
+          "idx": 0,
+          "predicted_label": true,
+          "calibre_label": true,
+          "match": true,
+          "error": null,
+          "pos": {
+            "ACT_1": [
+              {
+                "llx": 0,
+                "lly": 0,
+                "urx": 48,
+                "ury": 96
+              }
+            ]
+          }
+        },
+        {
+          "idx": 1,
+          "predicted_label": false,
+          "calibre_label": true,
+          "match": false,
+          "error": null,
+          "pos": {
+            "ACT_1": [
+              {
+                "llx": 0,
+                "lly": 0,
+                "urx": 1,
+                "ury": 4607
+              }
+            ]
+          }
+        },
+        {
+          "idx": 2,
+          "predicted_label": true,
+          "calibre_label": true,
+          "match": true,
+          "error": null,
+          "pos": {
+            "ACT_1": [
+              {
+                "llx": 0,
+                "lly": 0,
+                "urx": 100,
+                "ury": 100
+              }
+            ]
+          }
+        },
+        {
+          "idx": 3,
+          "predicted_label": false,
+          "calibre_label": true,
+          "match": false,
+          "error": null,
+          "pos": {
+            "ACT_1": [
+              {
+                "llx": 0,
+                "lly": 0,
+                "urx": 1,
+                "ury": 1
+              }
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "corner_id": "corner_original",
+      "script_expected_correct": true,
+      "script_predicted_correct": false,
+      "corner_any_mismatch": true,
+      "corner_all_match": false,
+      "corner_ok": false,
+      "samples": [
+        {
+          "idx": 0,
+          "predicted_label": true,
+          "calibre_label": true,
+          "match": true,
+          "error": null,
+          "pos": {
+            "ACT_1": [
+              {
+                "llx": 0,
+                "lly": 0,
+                "urx": 48,
+                "ury": 96
+              }
+            ]
+          }
+        },
+        {
+          "idx": 1,
+          "predicted_label": false,
+          "calibre_label": true,
+          "match": false,
+          "error": null,
+          "pos": {
+            "ACT_1": [
+              {
+                "llx": 0,
+                "lly": 0,
+                "urx": 1,
+                "ury": 4607
+              }
+            ]
+          }
+        },
+        {
+          "idx": 2,
+          "predicted_label": true,
+          "calibre_label": true,
+          "match": true,
+          "error": null,
+          "pos": {
+            "ACT_1": [
+              {
+                "llx": 0,
+                "lly": 0,
+                "urx": 100,
+                "ury": 100
+              }
+            ]
+          }
+        },
+        {
+          "idx": 3,
+          "predicted_label": false,
+          "calibre_label": true,
+          "match": false,
+          "error": null,
+          "pos": {
+            "ACT_1": [
+              {
+                "llx": 0,
+                "lly": 0,
+                "urx": 1,
+                "ury": 1
+              }
+            ]
+          }
+        }
+      ]
+    }
+  ]
+}

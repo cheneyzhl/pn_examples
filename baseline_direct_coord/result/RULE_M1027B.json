@@ -1,0 +1,9 @@
+{
+  "rule_name": "RULE_M1027B",
+  "rule_description": "M1B minimum area for rectangular shape is 0.0024um2",
+  "rule_script": "rect_M1B = RECTANGLE M1B\nAREA rect_M1B < 0.0024",
+  "sample_correct": 0,
+  "sample_total": 0,
+  "accuracy": 0.0,
+  "message": "no examples from agent"
+}

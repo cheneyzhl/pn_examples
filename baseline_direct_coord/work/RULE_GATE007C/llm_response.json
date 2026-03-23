@@ -1,0 +1,121 @@
+{
+  "raw_response": "```json\n{\n  \"examples\": [\n    {\n      \"GATEC_1\": [\n        { \"llx\": 0, \"lly\": 0, \"urx\": 100, \"ury\": 50 }\n      ],\n      \"GATEC_2\": [\n        { \"llx\": 0, \"lly\": 50, \"urx\": 100, \"ury\": 100 }\n      ]\n    },\n    {\n      \"GATEC_1\": [\n        { \"llx\": 0, \"lly\": 0, \"urx\": 100, \"ury\": 50 }\n      ],\n      \"GATEC_2\": [\n        { \"llx\": 0, \"lly\": 191, \"urx\": 100, \"ury\": 241 }\n      ]\n    },\n    {\n      \"GATEC_1\": [\n        { \"llx\": 0, \"lly\": 0, \"urx\": 100, \"ury\": 50 }\n      ],\n      \"GATEC_2\": [\n        { \"llx\": 0, \"lly\": 192, \"urx\": 100, \"ury\": 242 }\n      ]\n    },\n    {\n      \"GATEC_1\": [\n        { \"llx\": 0, \"lly\": 0, \"urx\": 100, \"ury\": 50 }\n      ],\n      \"GATEC_2\": [\n        { \"llx\": 50, \"lly\": 50, \"urx\": 150, \"ury\": 100 }\n      ]\n    },\n    {\n      \"GATEC_1\": [\n        { \"llx\": 0, \"lly\": 0, \"urx\": 100, \"ury\": 50 }\n      ],\n      \"GATEC_2\": [\n        { \"llx\": 50, \"lly\": 191, \"urx\": 150, \"ury\": 241 }\n      ]\n    },\n    {\n      \"GATEC_1\": [\n        { \"llx\": 0, \"lly\": 0, \"urx\": 100, \"ury\": 50 }\n      ],\n      \"GATEC_2\": [\n        { \"llx\": 50, \"lly\": 192, \"urx\": 150, \"ury\": 242 }\n      ]\n    }\n  ],\n  \"labels\": [\n    true,\n    false,\n    true,\n    true,\n    false,\n    true\n  ]\n}\n```",
+  "examples": [
+    {
+      "GATEC_1": [
+        {
+          "llx": 0,
+          "lly": 0,
+          "urx": 100,
+          "ury": 50
+        }
+      ],
+      "GATEC_2": [
+        {
+          "llx": 0,
+          "lly": 50,
+          "urx": 100,
+          "ury": 100
+        }
+      ]
+    },
+    {
+      "GATEC_1": [
+        {
+          "llx": 0,
+          "lly": 0,
+          "urx": 100,
+          "ury": 50
+        }
+      ],
+      "GATEC_2": [
+        {
+          "llx": 0,
+          "lly": 191,
+          "urx": 100,
+          "ury": 241
+        }
+      ]
+    },
+    {
+      "GATEC_1": [
+        {
+          "llx": 0,
+          "lly": 0,
+          "urx": 100,
+          "ury": 50
+        }
+      ],
+      "GATEC_2": [
+        {
+          "llx": 0,
+          "lly": 192,
+          "urx": 100,
+          "ury": 242
+        }
+      ]
+    },
+    {
+      "GATEC_1": [
+        {
+          "llx": 0,
+          "lly": 0,
+          "urx": 100,
+          "ury": 50
+        }
+      ],
+      "GATEC_2": [
+        {
+          "llx": 50,
+          "lly": 50,
+          "urx": 150,
+          "ury": 100
+        }
+      ]
+    },
+    {
+      "GATEC_1": [
+        {
+          "llx": 0,
+          "lly": 0,
+          "urx": 100,
+          "ury": 50
+        }
+      ],
+      "GATEC_2": [
+        {
+          "llx": 50,
+          "lly": 191,
+          "urx": 150,
+          "ury": 241
+        }
+      ]
+    },
+    {
+      "GATEC_1": [
+        {
+          "llx": 0,
+          "lly": 0,
+          "urx": 100,
+          "ury": 50
+        }
+      ],
+      "GATEC_2": [
+        {
+          "llx": 50,
+          "lly": 192,
+          "urx": 150,
+          "ury": 242
+        }
+      ]
+    }
+  ],
+  "labels": [
+    true,
+    false,
+    true,
+    true,
+    false,
+    true
+  ]
+}

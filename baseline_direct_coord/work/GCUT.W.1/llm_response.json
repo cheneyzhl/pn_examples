@@ -1,0 +1,73 @@
+{
+  "raw_response": "```json\n{\n  \"examples\": [\n    {\n      \"GCUT_1\": [\n        {\n          \"llx\": 0,\n          \"lly\": 0,\n          \"urx\": 50,\n          \"ury\": 17\n        }\n      ]\n    },\n    {\n      \"GCUT_1\": [\n        {\n          \"llx\": 0,\n          \"lly\": 0,\n          \"urx\": 50,\n          \"ury\": 16\n        }\n      ]\n    },\n    {\n      \"GCUT_1\": [\n        {\n          \"llx\": 0,\n          \"lly\": 0,\n          \"urx\": 17,\n          \"ury\": 50\n        }\n      ]\n    },\n    {\n      \"GCUT_1\": [\n        {\n          \"llx\": 0,\n          \"lly\": 0,\n          \"urx\": 16,\n          \"ury\": 50\n        }\n      ]\n    },\n    {\n      \"GCUT_1\": [\n        {\n          \"llx\": 0,\n          \"lly\": 0,\n          \"urx\": 17,\n          \"ury\": 17\n        }\n      ]\n    },\n    {\n      \"GCUT_1\": [\n        {\n          \"llx\": 0,\n          \"lly\": 0,\n          \"urx\": 16,\n          \"ury\": 16\n        }\n      ]\n    }\n  ],\n  \"labels\": [\n    true,\n    false,\n    true,\n    false,\n    true,\n    false\n  ]\n}\n```",
+  "examples": [
+    {
+      "GCUT_1": [
+        {
+          "llx": 0,
+          "lly": 0,
+          "urx": 50,
+          "ury": 17
+        }
+      ]
+    },
+    {
+      "GCUT_1": [
+        {
+          "llx": 0,
+          "lly": 0,
+          "urx": 50,
+          "ury": 16
+        }
+      ]
+    },
+    {
+      "GCUT_1": [
+        {
+          "llx": 0,
+          "lly": 0,
+          "urx": 17,
+          "ury": 50
+        }
+      ]
+    },
+    {
+      "GCUT_1": [
+        {
+          "llx": 0,
+          "lly": 0,
+          "urx": 16,
+          "ury": 50
+        }
+      ]
+    },
+    {
+      "GCUT_1": [
+        {
+          "llx": 0,
+          "lly": 0,
+          "urx": 17,
+          "ury": 17
+        }
+      ]
+    },
+    {
+      "GCUT_1": [
+        {
+          "llx": 0,
+          "lly": 0,
+          "urx": 16,
+          "ury": 16
+        }
+      ]
+    }
+  ],
+  "labels": [
+    true,
+    false,
+    true,
+    false,
+    true,
+    false
+  ]
+}

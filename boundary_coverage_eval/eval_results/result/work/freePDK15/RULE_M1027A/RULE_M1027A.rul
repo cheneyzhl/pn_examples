@@ -1,0 +1,221 @@
+
+
+
+
+LAYOUT SYSTEM 			GDSII
+LAYOUT PATH 			"./test.gds"
+LAYOUT PRIMARY 			TOPCELL
+DRC SUMMARY REPORT 		drc_report
+DRC RESULTS DATABASE 		drc_results.db
+DRC INCREMENTAL CONNECT YES
+
+PRECISION			5000
+LAYOUT PRECISION 		1000
+LAYOUT MAGNIFY			AUTO
+RESOLUTION			1
+layer	NW	0	//	N-Well
+layer	ACT	1	//	Active area for fin definition
+layer	VTH	2	//	High Threshold adjust mask
+layer	VTL	3	//	Low Threshold adjust mask
+layer	THKOX	4	//	Thick-Oxide adjust mask
+layer	NIM	5	//	N-implant
+layer	PIM	6	//	P-implant
+layer	GATEA	7	//	Gate metal, Color A
+layer	GATEB	8	//	Gate metal, Color B
+layer	GATEC	9	//	Gate metal Cut
+layer   GATEAB  10 	//  	whole gate metal (without double patterning assuming coloring is done later)
+layer	AIL1	11	//	Active Interconnect Layer, level 1
+layer	AIL2	12	//	Active Interconnect Layer, level 2
+layer	GIL	13	//	Gate Interconnect Layer
+layer	V0	14	//	Via Zero, connecting to first level of interconnect metal
+layer	M1A	15	//	First Level of Interconnect Metal, Color A
+layer	M1B	16	//	First Level of Interconnect Metal, Color B
+layer	V1	17	//	Via connecting M1 to next higher level of metal MINT1
+layer	MINT1A	18	//	Intermediate metal, Color A, n=1
+layer	MINT2A	19	//	Intermediate metal, Color A, n=2
+layer	MINT3A	20	//	Intermediate metal, Color A, n=3
+layer	MINT4A	21	//	Intermediate metal, Color A, n=4
+layer	MINT5A	22	//	Intermediate metal, Color A, n=5
+layer	MINT1B	23	//	Intermediate metal, Color B, n=1
+layer	MINT2B	24	//	Intermediate metal, Color B, n=2
+layer	MINT3B	25	//	Intermediate metal, Color B, n=3
+layer	MINT4B	26	//	Intermediate metal, Color B, n=4
+layer	MINT5B	27	//	Intermediate metal, Color B, n=5
+layer	VINT1	28	//	Via connecting MINT1 to next higher level of metal MINT2
+layer	VINT2	29	//	Via connecting MINT2 to next higher level of metal MINT3
+layer	VINT3	30	//	Via connecting MINT3 to next higher level of metal MINT4
+layer	VINT4	31	//	Via connecting MINT4 to next higher level of metal MINT5
+layer	MSMG1	32	//	Semi-global metal, n=1
+layer	MSMG2	33	//	Semi-global metal, n=2
+layer	MSMG3	34	//	Semi-global metal, n=3
+layer	MSMG4	35	//	Semi-global metal, n=4
+layer	MSMG5	36	//	Semi-global metal, n=5
+layer	VSMG1	37	//	Via connecting MSMG1 to next higher level of metal MSMG2
+layer	VSMG2	38	//	Via connecting MSMG2 to next higher level of metal MSMG3
+layer	VSMG3	39	//	Via connecting MSMG3 to next higher level of metal MSMG4
+layer	VSMG4	40	//	Via connecting MSMG4 to next higher level of metal MSMG5
+layer	VSMG5	41	//	Via connecting MSMG5 to next higher level of metal MSMG6
+layer	MG1	42	//	Global metal, n=1
+layer	MG2	43	//	Global metal, n=2
+layer	VG1	44	//	Via connecting MG1 to next higher level of metal MG2
+layer	RECTV0	45	//	Rectangular Vias
+layer	RECTV1	46	//	Rectangular Vias //XXX RECTn changed to RECTV1
+layer	NCONT	47	//	Rectangular Vias
+layer   VINT5 	48	// 	Via connecting MINT5 to next higher level of metal MSMG1
+layer	M1	49	//	First Level of Interconnect Metal, Non-Colored
+layer	MINT1	50	//	Intermediate metal, Non-Colored, n=1
+layer	MINT2	51	//	Intermediate metal, Non-Colored, n=2
+layer	MINT3	52	//	Intermediate metal, Non-Colored, n=3
+layer	MINT4	53	//	Intermediate metal, Non-Colored, n=4
+layer	MINT5	54	//	Intermediate metal, Non-Colored, n=5
+layer  prBoundary 200 //
+
+/*======================================================================================== 
+
+THE FOLLOWING CONNECTIVITY IS PRESUMED "RELATED TO LAYERS STATED RULES"
+
+____________________________________ ______________________________________________________________________________________________________ MG2
+                                    |
+                                    |VG1
+____________________________________|______ _______________________________________________________________________________________________ MG1
+					   |
+ 					   |VSMG5
+___________________________________________|_______ _______________________________________________________________________________________ MSMG5
+						   |
+						   |VSMG4
+___________________________________________________|_______ _______________________________________________________________________________ MSMG4
+							   |
+							   |VSMG3
+___________________________________________________________|_______ _______________________________________________________________________ MSMG3
+                                                                   |
+                                                                   |VSMG2
+___________________________________________________________________|______ ________________________________________________________________ MSMG2
+                                                                          |
+                                                                          |VSMG1
+__________________________________________________________________________|______ _________________________________________________________ MSMG1
+                                                                                 |
+									         |VINT5
+_________________________________________________________________________________|_____ ___________________________________________________ MINT5[A|B]
+		                                                                       |
+		                                                                       | VINT4
+_______________________________________________________________________________________|_______ ___________________________________________ MINT4[A|B]
+			                                                                       |
+			                                                                       | VINT3
+_______________________________________________________________________________________________|_______ ___________________________________ MINT3[A|B]
+				                                                                       |
+				                                                                       | VINT2
+_______________________________________________________________________________________________________|_______ ___________________________ MINT2[A|B]
+					                                                                       |
+			                                                                                       | VINT1
+_______________________________________________________________________________________________________________|_______ ___________________ MINT1[A|B]
+						                                                                       |
+						                                                                       | V1
+_______________________________________________________________________________________________________________________|_______ ____________ M1[A|B]
+							                                                                       |
+				   			        						               | V0
+______ ______ _______ _______ ______ ______ ______ _______ _______ ______ ______ _______ _______ _______ _______ _______ ______|____________ GIL|AIL2
+______|______|______|_______|_______|______|______|_______|_______|______|______|_______|_______|_______|_______|_______|______|____________ GATE[A|B]
+
+
+===========================================================================================*/
+
+PW 		= (EXTENTS NW) NOT NW 	// P-Well assumed to be where NW is not found
+CHANNEL_A       = GATEA AND ACT
+CHANNEL_B	= GATEB AND ACT
+CHANNEL_AB	= GATEAB AND ACT
+
+N_GATE_A	= CHANNEL_A AND NIM	// N Gates at pattern "Color" A
+P_GATE_A	= CHANNEL_A AND PIM	// P Gates at pattern "Color" A
+N_GATE_B	= CHANNEL_B AND NIM	// N Gates at pattern "Color" B
+P_GATE_B	= CHANNEL_B AND PIM	// P Gates at pattern "Color" B
+N_GATE_AB	= CHANNEL_AB AND NIM	// N Gates at pattern "Color" AB
+P_GATE_AB	= CHANNEL_AB AND PIM	// P Gates at pattern "Color" AB
+
+N_EXT_N_GATE_A  = NIM NOT N_GATE_A 
+P_EXT_P_GATE_A  = PIM NOT P_GATE_A
+N_EXT_N_GATE_B  = NIM NOT N_GATE_B
+P_EXT_P_GATE_B  = PIM NOT P_GATE_B 
+N_EXT_N_GATE_AB = NIM NOT N_GATE_AB 
+P_EXT_P_GATE_AB = PIM NOT P_GATE_AB
+
+AIL_OVERLAP     = AIL1 AND AIL2
+
+N_SD_A		= NIM NOT CHANNEL_A	// N SD for GATE A
+P_SD_A		= PIM NOT CHANNEL_A	// P SD for GATE A
+N_SD_B		= NIM NOT CHANNEL_B	// N SD for GATE B
+P_SD_B		= PIM NOT CHANNEL_B	// P SD for GATE B
+N_SD_AB		= NIM NOT CHANNEL_AB	// N SD for GATE AB
+P_SD_AB		= PIM NOT CHANNEL_AB	// P SD for GATE AB
+
+NW_MAG 		= MAGNIFY NW BY 0.8 
+
+ CONNECT NCONT NW
+ CONNECT NCONT NW_MAG
+ CONNECT GATEA GIL
+ CONNECT N_GATE_A GIL
+ CONNECT P_GATE_A GIL
+ CONNECT M1A GIL BY V0
+ CONNECT MINT1A M1A BY V1
+ CONNECT MINT2A MINT1A BY VINT1
+ CONNECT MINT3A MINT2A BY VINT2
+ CONNECT MINT4A MINT3A BY VINT3
+ CONNECT MINT5A MINT4A BY VINT4
+ CONNECT MSMG1 MINT5A BY VINT5
+ CONNECT GATEB GIL
+ CONNECT N_GATE_B GIL
+ CONNECT P_GATE_B GIL
+ CONNECT M1B GIL BY V0
+ CONNECT MINT1B M1B BY V1
+ CONNECT MINT2B MINT1B BY VINT1
+ CONNECT MINT3B MINT2B BY VINT2
+ CONNECT MINT4B MINT3B BY VINT3
+ CONNECT MINT5B MINT4B BY VINT4
+ CONNECT MSMG1 MINT5B BY VINT5
+ CONNECT M1 GIL BY V0
+ CONNECT MINT1 M1 BY V1
+ CONNECT MINT2 MINT1 BY VINT1
+ CONNECT MINT3 MINT2 BY VINT2
+ CONNECT MINT4 MINT3 BY VINT3
+ CONNECT MINT5 MINT4 BY VINT4
+ CONNECT MSMG1 MINT5 BY VINT5
+ CONNECT AIL2 M1A BY V0
+ CONNECT AIL2 M1B BY V0
+ CONNECT AIL2 M1 BY V0
+ CONNECT AIL1 AIL2
+ CONNECT AIL2 GIL
+ CONNECT MSMG2 MSMG1 BY VSMG1
+ CONNECT MSMG3 MSMG2 BY VSMG2
+ CONNECT MSMG4 MSMG3 BY VSMG3
+ CONNECT MSMG5 MSMG4 BY VSMG4
+ CONNECT MG1 MSMG5 BY VSMG5
+ CONNECT MG2 MG1 BY VG1
+
+
+
+
+
+
+
+GATEA_vertical_edges = GATEA ANGLE ==90
+GATEA_horizontal_edges = GATEA ANGLE ==0
+GATEB_vertical_edges = GATEB ANGLE ==90
+GATEB_horizonatl_edges = GATEB ANGLE ==0
+
+
+GATEAB_HORIZONTAL_EDGES = GATEAB ANGLE == 0
+GATEAB_VERTICAL_EDGES = GATEAB ANGLE == 90
+
+
+
+
+ 
+
+
+RULE_M1027A{
+@ RULE_M1027A
+@ M1A minimum area for rectangular shape is 0.0024um2
+rect_M1A = RECTANGLE M1A
+AREA rect_M1A < 0.0024
+}
+
+

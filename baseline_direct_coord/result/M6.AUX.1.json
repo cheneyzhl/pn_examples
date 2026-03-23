@@ -1,0 +1,67 @@
+{
+  "rule_name": "M6.AUX.1",
+  "rule_description": "M6 horizontal edges must be at a grid of 32 nm.",
+  "rule_script": "OFFGRID M6 1 VAR_M6_1X_DBU OFFSET 0 VAR_M6_YOFFSET HINT",
+  "calibre_skipped": true,
+  "sample_correct": null,
+  "sample_total": null,
+  "accuracy": null,
+  "details": [
+    {
+      "idx": 0,
+      "predicted_label": true,
+      "pos": {
+        "M6_1": [
+          {
+            "llx": 0,
+            "lly": 0,
+            "urx": 100,
+            "ury": 32
+          }
+        ]
+      }
+    },
+    {
+      "idx": 1,
+      "predicted_label": false,
+      "pos": {
+        "M6_1": [
+          {
+            "llx": 0,
+            "lly": 1,
+            "urx": 100,
+            "ury": 32
+          }
+        ]
+      }
+    },
+    {
+      "idx": 2,
+      "predicted_label": false,
+      "pos": {
+        "M6_1": [
+          {
+            "llx": 0,
+            "lly": 0,
+            "urx": 100,
+            "ury": 31
+          }
+        ]
+      }
+    },
+    {
+      "idx": 3,
+      "predicted_label": false,
+      "pos": {
+        "M6_1": [
+          {
+            "llx": 0,
+            "lly": 1,
+            "urx": 100,
+            "ury": 31
+          }
+        ]
+      }
+    }
+  ]
+}

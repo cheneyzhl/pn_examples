@@ -1,0 +1,51 @@
+{
+  "raw_response": "```json\n{\n  \"examples\": [\n    {\n      \"M9_1\": [\n        {\n          \"llx\": 0,\n          \"lly\": 0,\n          \"urx\": 1800,\n          \"ury\": 120\n        }\n      ]\n    },\n    {\n      \"M9_1\": [\n        {\n          \"llx\": 0,\n          \"lly\": 0,\n          \"urx\": 1800,\n          \"ury\": 119\n        }\n      ]\n    },\n    {\n      \"M9_1\": [\n        {\n          \"llx\": 0,\n          \"lly\": 0,\n          \"urx\": 1799,\n          \"ury\": 100\n        }\n      ]\n    },\n    {\n      \"M9_1\": [\n        {\n          \"llx\": 0,\n          \"lly\": 0,\n          \"urx\": 1799,\n          \"ury\": 120\n        }\n      ]\n    }\n  ],\n  \"labels\": [\n    true,\n    false,\n    true,\n    false\n  ]\n}\n```",
+  "examples": [
+    {
+      "M9_1": [
+        {
+          "llx": 0,
+          "lly": 0,
+          "urx": 1800,
+          "ury": 120
+        }
+      ]
+    },
+    {
+      "M9_1": [
+        {
+          "llx": 0,
+          "lly": 0,
+          "urx": 1800,
+          "ury": 119
+        }
+      ]
+    },
+    {
+      "M9_1": [
+        {
+          "llx": 0,
+          "lly": 0,
+          "urx": 1799,
+          "ury": 100
+        }
+      ]
+    },
+    {
+      "M9_1": [
+        {
+          "llx": 0,
+          "lly": 0,
+          "urx": 1799,
+          "ury": 120
+        }
+      ]
+    }
+  ],
+  "labels": [
+    true,
+    false,
+    true,
+    false
+  ]
+}

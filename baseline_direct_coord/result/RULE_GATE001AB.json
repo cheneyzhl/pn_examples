@@ -1,0 +1,109 @@
+{
+  "rule_name": "RULE_GATE001AB",
+  "rule_description": "Exact horizontal width of GATE [AB] is 20, 16 or 14 nm",
+  "rule_script": "INTERNAL GATEAB_VERTICAL_EDGES < 0.014 \nINTERNAL GATEAB_VERTICAL_EDGES > 0.014 < 0.016 \nINTERNAL GATEAB_VERTICAL_EDGES > 0.016 < 0.020 \nINTERNAL GATEAB_VERTICAL_EDGES > 0.020 < 0.800",
+  "calibre_skipped": true,
+  "sample_correct": null,
+  "sample_total": null,
+  "accuracy": null,
+  "details": [
+    {
+      "idx": 0,
+      "predicted_label": true,
+      "pos": {
+        "GATEAB_1": [
+          {
+            "llx": 0,
+            "lly": 0,
+            "urx": 20,
+            "ury": 10
+          }
+        ]
+      }
+    },
+    {
+      "idx": 1,
+      "predicted_label": true,
+      "pos": {
+        "GATEAB_1": [
+          {
+            "llx": 0,
+            "lly": 0,
+            "urx": 16,
+            "ury": 10
+          }
+        ]
+      }
+    },
+    {
+      "idx": 2,
+      "predicted_label": true,
+      "pos": {
+        "GATEAB_1": [
+          {
+            "llx": 0,
+            "lly": 0,
+            "urx": 14,
+            "ury": 10
+          }
+        ]
+      }
+    },
+    {
+      "idx": 3,
+      "predicted_label": false,
+      "pos": {
+        "GATEAB_1": [
+          {
+            "llx": 0,
+            "lly": 0,
+            "urx": 19,
+            "ury": 10
+          }
+        ]
+      }
+    },
+    {
+      "idx": 4,
+      "predicted_label": false,
+      "pos": {
+        "GATEAB_1": [
+          {
+            "llx": 0,
+            "lly": 0,
+            "urx": 21,
+            "ury": 10
+          }
+        ]
+      }
+    },
+    {
+      "idx": 5,
+      "predicted_label": false,
+      "pos": {
+        "GATEAB_1": [
+          {
+            "llx": 0,
+            "lly": 0,
+            "urx": 15,
+            "ury": 10
+          }
+        ]
+      }
+    },
+    {
+      "idx": 6,
+      "predicted_label": false,
+      "pos": {
+        "GATEAB_1": [
+          {
+            "llx": 0,
+            "lly": 0,
+            "urx": 13,
+            "ury": 10
+          }
+        ]
+      }
+    }
+  ]
+}

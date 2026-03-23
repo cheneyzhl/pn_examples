@@ -1,0 +1,62 @@
+{
+  "raw_response": "```json\n{\n  \"examples\": [\n    {\n      \"VINT1_1\": [\n        {\n          \"llx\": 0,\n          \"lly\": 0,\n          \"urx\": 28,\n          \"ury\": 28\n        }\n      ]\n    },\n    {\n      \"VINT1_1\": [\n        {\n          \"llx\": 0,\n          \"lly\": 0,\n          \"urx\": 27,\n          \"ury\": 28\n        }\n      ]\n    },\n    {\n      \"VINT1_1\": [\n        {\n          \"llx\": 0,\n          \"lly\": 0,\n          \"urx\": 28,\n          \"ury\": 27\n        }\n      ]\n    },\n    {\n      \"VINT1_1\": [\n        {\n          \"llx\": 0,\n          \"lly\": 0,\n          \"urx\": 29,\n          \"ury\": 28\n        }\n      ]\n    },\n    {\n      \"VINT1_1\": [\n        {\n          \"llx\": 0,\n          \"lly\": 0,\n          \"urx\": 28,\n          \"ury\": 29\n        }\n      ]\n    }\n  ],\n  \"labels\": [\n    true,\n    false,\n    false,\n    true,\n    true\n  ]\n}\n```",
+  "examples": [
+    {
+      "VINT1_1": [
+        {
+          "llx": 0,
+          "lly": 0,
+          "urx": 28,
+          "ury": 28
+        }
+      ]
+    },
+    {
+      "VINT1_1": [
+        {
+          "llx": 0,
+          "lly": 0,
+          "urx": 27,
+          "ury": 28
+        }
+      ]
+    },
+    {
+      "VINT1_1": [
+        {
+          "llx": 0,
+          "lly": 0,
+          "urx": 28,
+          "ury": 27
+        }
+      ]
+    },
+    {
+      "VINT1_1": [
+        {
+          "llx": 0,
+          "lly": 0,
+          "urx": 29,
+          "ury": 28
+        }
+      ]
+    },
+    {
+      "VINT1_1": [
+        {
+          "llx": 0,
+          "lly": 0,
+          "urx": 28,
+          "ury": 29
+        }
+      ]
+    }
+  ],
+  "labels": [
+    true,
+    false,
+    false,
+    true,
+    true
+  ]
+}

@@ -1,0 +1,99 @@
+{
+  "rule_name": "RULE_GATE008A",
+  "rule_description": "(gatea not gatec) maximum distance to neighbor shape on same design mask is 236nm",
+  "rule_script": "GateAnotC = GATEA NOT GATEC \nx = SIZE GateAnotC BY 0.237 \nGATEA NOT x",
+  "calibre_skipped": true,
+  "sample_correct": null,
+  "sample_total": null,
+  "accuracy": null,
+  "details": [
+    {
+      "idx": 0,
+      "predicted_label": true,
+      "pos": {
+        "GATEA_1": [
+          {
+            "llx": 0,
+            "lly": 0,
+            "urx": 100,
+            "ury": 100
+          }
+        ],
+        "GATEA_2": [
+          {
+            "llx": 336,
+            "lly": 0,
+            "urx": 436,
+            "ury": 100
+          }
+        ]
+      }
+    },
+    {
+      "idx": 1,
+      "predicted_label": false,
+      "pos": {
+        "GATEA_1": [
+          {
+            "llx": 0,
+            "lly": 0,
+            "urx": 100,
+            "ury": 100
+          }
+        ],
+        "GATEA_2": [
+          {
+            "llx": 337,
+            "lly": 0,
+            "urx": 437,
+            "ury": 100
+          }
+        ]
+      }
+    },
+    {
+      "idx": 2,
+      "predicted_label": true,
+      "pos": {
+        "GATEA_1": [
+          {
+            "llx": 0,
+            "lly": 0,
+            "urx": 100,
+            "ury": 100
+          }
+        ]
+      }
+    },
+    {
+      "idx": 3,
+      "predicted_label": false,
+      "pos": {
+        "GATEA_1": [
+          {
+            "llx": 0,
+            "lly": 0,
+            "urx": 100,
+            "ury": 100
+          }
+        ],
+        "GATEA_2": [
+          {
+            "llx": 336,
+            "lly": 0,
+            "urx": 436,
+            "ury": 100
+          }
+        ],
+        "GATEA_3": [
+          {
+            "llx": 737,
+            "lly": 0,
+            "urx": 837,
+            "ury": 100
+          }
+        ]
+      }
+    }
+  ]
+}

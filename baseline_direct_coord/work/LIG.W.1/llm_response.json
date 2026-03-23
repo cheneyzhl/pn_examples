@@ -1,0 +1,73 @@
+{
+  "raw_response": "```json\n{\n  \"examples\": [\n    {\n      \"LIG_1\": [\n        {\n          \"llx\": 0,\n          \"lly\": 0,\n          \"urx\": 16,\n          \"ury\": 20\n        }\n      ]\n    },\n    {\n      \"LIG_1\": [\n        {\n          \"llx\": 0,\n          \"lly\": 0,\n          \"urx\": 15,\n          \"ury\": 20\n        }\n      ]\n    },\n    {\n      \"LIG_1\": [\n        {\n          \"llx\": 0,\n          \"lly\": 0,\n          \"urx\": 16,\n          \"ury\": 16\n        }\n      ]\n    },\n    {\n      \"LIG_1\": [\n        {\n          \"llx\": 0,\n          \"lly\": 0,\n          \"urx\": 15,\n          \"ury\": 15\n        }\n      ]\n    },\n    {\n      \"LIG_1\": [\n        {\n          \"llx\": 0,\n          \"lly\": 0,\n          \"urx\": 20,\n          \"ury\": 16\n        }\n      ]\n    },\n    {\n      \"LIG_1\": [\n        {\n          \"llx\": 0,\n          \"lly\": 0,\n          \"urx\": 20,\n          \"ury\": 15\n        }\n      ]\n    }\n  ],\n  \"labels\": [\n    true,\n    false,\n    true,\n    false,\n    true,\n    false\n  ]\n}\n```",
+  "examples": [
+    {
+      "LIG_1": [
+        {
+          "llx": 0,
+          "lly": 0,
+          "urx": 16,
+          "ury": 20
+        }
+      ]
+    },
+    {
+      "LIG_1": [
+        {
+          "llx": 0,
+          "lly": 0,
+          "urx": 15,
+          "ury": 20
+        }
+      ]
+    },
+    {
+      "LIG_1": [
+        {
+          "llx": 0,
+          "lly": 0,
+          "urx": 16,
+          "ury": 16
+        }
+      ]
+    },
+    {
+      "LIG_1": [
+        {
+          "llx": 0,
+          "lly": 0,
+          "urx": 15,
+          "ury": 15
+        }
+      ]
+    },
+    {
+      "LIG_1": [
+        {
+          "llx": 0,
+          "lly": 0,
+          "urx": 20,
+          "ury": 16
+        }
+      ]
+    },
+    {
+      "LIG_1": [
+        {
+          "llx": 0,
+          "lly": 0,
+          "urx": 20,
+          "ury": 15
+        }
+      ]
+    }
+  ],
+  "labels": [
+    true,
+    false,
+    true,
+    false,
+    true,
+    false
+  ]
+}

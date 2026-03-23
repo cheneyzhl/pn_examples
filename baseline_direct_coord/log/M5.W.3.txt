@@ -1,0 +1,102 @@
+======== 规则: M5.W.3 ========
+用户问题
+规则描述：M5 horizontal width may not be an even integer multiple of its minimum width.
+
+请根据上述 DRC 规则，系统性地生成覆盖所有边界情况（corner case）的 layout 正例与反例的矩形坐标。
+正例：满足该规则的 layout；反例：违反该规则的 layout。
+要求：先在心中分析出规则中涉及的所有条件变量，再将这些条件视为若干布尔变量，枚举它们的所有组合；对于每一种组合，至少给出 1 个恰好满足条件边界的正例和 1 个恰好违反边界的反例。
+在输出 JSON 前，请对每个正/反例重新用“单位约定 + 阈值判定”做自检，确保满足：正例=通过域，反例=违规域。自检失败则不要输出。请输出 JSON，且仅包含以下两个键：\n"examples": 数组，每个元素为一个 layout 例子。每个例子是一个对象，键为层名（带序号，如 NW_1, NW_2），值为矩形列表；每个矩形为 { \"llx\": 整数, \"lly\": 整数, \"urx\": 整数, \"ury\": 整数 }。\n"labels": 数组，与 examples 一一对应。true 表示该 layout 应通过 DRC（正例），false 表示应违反 DRC（反例）。\n本规则涉及的层名（不含序号）为: ['WELL', 'FIN', 'GATE', 'GCUT', 'ACTIVE', 'SDT', 'NSELECT', 'PSELECT', 'SLVT', 'LVT', 'SRAMDRC', 'SRAMVT', 'DUMMY', 'LIG', 'LISD', 'V0', 'M1', 'V1', 'M2', 'V2', 'M3', 'V3', 'M4', 'V4', 'M5', 'V5', 'M6', 'V6', 'M7', 'V7', 'M8', 'V8', 'M9', 'V9', 'PAD', 'BOUNDARY']。层名格式为 层名_序号，例如 NW_1, NW_2。\n坐标单位约定（必须遵守，避免单位错误）：你给出的 llx/lly/urx/ury 的数值单位是 nm（1 coordinate unit = 1 nm）。\n因此：长度（um）= (x_nm 或 y_nm) * 1e-3；面积（um^2）= (宽_nm * 高_nm) * 1e-6。\n请特别关注边界 / corner case：对于规则中的每一个条件变量（例如宽度、间距、面积等阈值条件），先分析有哪些布尔条件（如 >=T / >T / ==T / <T 等），再枚举这些条件的所有组合（若有 3 个独立条件，则有 2^3=8 种组合）。对于每一种组合，请至少给出 1 个恰好满足所有条件的正例（刚好通过边界），以及 1 个恰好违反该组合中至少一个关键条件的反例（刚好不通过）。
+
+大模型回答
+### 规则分析
+
+规则描述："M5 horizontal width may not be an even integer multiple of its minimum width."
+
+1. **条件变量**:
+   - `M5` 的水平宽度（`width`）。
+   - `M5` 的最小宽度（`min_width`）。
+   - 宽度是否为最小宽度的偶数倍（`width == 2 * k * min_width`，其中 `k` 是正整数）。
+
+2. **布尔条件**:
+   - `width` 是 `min_width` 的偶数倍（`width % (2 * min_width) == 0`）。
+   - `width` 不是 `min_width` 的偶数倍（`width % (2 * min_width) != 0`）。
+
+3. **规则要求**:
+   - 不允许 `width` 是 `min_width` 的偶数倍（即 `width % (2 * min_width) != 0`）。
+   - 因此：
+     - 正例：`width` 不是 `min_width` 的偶数倍。
+     - 反例：`width` 是 `min_width` 的偶数倍。
+
+4. **边界情况**:
+   - `width` 刚好是 `min_width` 的偶数倍（反例）。
+   - `width` 刚好是 `min_width` 的奇数倍（正例）。
+   - `width` 刚好是 `min_width` 的非整数倍（正例）。
+   - `width` 刚好是 `min_width` 的 1 倍（正例，因为 1 是奇数）。
+   - `width` 刚好是 `min_width` 的 2 倍（反例，因为 2 是偶数）。
+
+### 假设 `min_width` 的值
+由于规则中未明确 `min_width` 的具体值，我们假设 `min_width = 10 nm`（常见的最小宽度）。  
+（注：如果 `min_width` 是其他值，可以按比例缩放坐标。）
+
+### 正例和反例设计
+#### 正例（满足规则）：
+1. `width = 10 nm`（`1 * min_width`，奇数倍）：
+   - `M5` 矩形：`{ "llx": 0, "lly": 0, "urx": 10, "ury": 10 }`。
+2. `width = 30 nm`（`3 * min_width`，奇数倍）：
+   - `M5` 矩形：`{ "llx": 0, "lly": 0, "urx": 30, "ury": 10 }`。
+3. `width = 15 nm`（`1.5 * min_width`，非整数倍）：
+   - `M5` 矩形：`{ "llx": 0, "lly": 0, "urx": 15, "ury": 10 }`。
+
+#### 反例（违反规则）：
+1. `width = 20 nm`（`2 * min_width`，偶数倍）：
+   - `M5` 矩形：`{ "llx": 0, "lly": 0, "urx": 20, "ury": 10 }`。
+2. `width = 40 nm`（`4 * min_width`，偶数倍）：
+   - `M5` 矩形：`{ "llx": 0, "lly": 0, "urx": 40, "ury": 10 }`。
+
+### 自检
+- 正例 1：`width = 10`，`10 % (2 * 10) = 10 % 20 = 10 != 0`，满足规则。
+- 正例 2：`width = 30`，`30 % 20 = 10 != 0`，满足规则。
+- 正例 3：`width = 15`，`15 % 20 = 15 != 0`，满足规则。
+- 反例 1：`width = 20`，`20 % 20 = 0`，违反规则。
+- 反例 2：`width = 40`，`40 % 20 = 0`，违反规则。
+
+### JSON 输出
+```json
+{
+  "examples": [
+    {
+      "M5_1": [
+        { "llx": 0, "lly": 0, "urx": 10, "ury": 10 }
+      ]
+    },
+    {
+      "M5_1": [
+        { "llx": 0, "lly": 0, "urx": 30, "ury": 10 }
+      ]
+    },
+    {
+      "M5_1": [
+        { "llx": 0, "lly": 0, "urx": 15, "ury": 10 }
+      ]
+    },
+    {
+      "M5_1": [
+        { "llx": 0, "lly": 0, "urx": 20, "ury": 10 }
+      ]
+    },
+    {
+      "M5_1": [
+        { "llx": 0, "lly": 0, "urx": 40, "ury": 10 }
+      ]
+    }
+  ],
+  "labels": [
+    true,
+    true,
+    true,
+    false,
+    false
+  ]
+}
+```
+

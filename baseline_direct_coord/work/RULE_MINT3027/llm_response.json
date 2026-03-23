@@ -1,0 +1,29 @@
+{
+  "raw_response": "根据给定的DRC规则\"MINT3 minimum area for rectangular shape is 0.0024um²\"，我们需要分析并生成满足和违反该规则的正例和反例。以下是分析过程和生成的JSON：\n\n分析：\n1. 规则仅涉及MINT3层（矩形）面积约束\n2. 面积阈值：0.0024um² = 2400nm²\n3. 条件变量：面积（area)\n   - 面积 ≥ 2400nm² (正例)\n   - 面积 < 2400nm² (反例)\n4. 由于只有一个条件变量，只有2种情况需要覆盖\n\n生成的例子将包含：\n1. 一个面积刚好等于2400nm²的正例\n2. 一个面积刚好小于2400nm²的反例\n\n```json\n{\n  \"examples\": [\n    {\n      \"MINT3_1\": [\n        {\n          \"llx\": 0,\n          \"lly\": 0,\n          \"urx\": 60,\n          \"ury\": 40\n        }\n      ]\n    },\n    {\n      \"MINT3_1\": [\n        {\n          \"llx\": 0,\n          \"lly\": 0,\n          \"urx\": 59,\n          \"ury\": 40\n        }\n      ]\n    }\n  ],\n  \"labels\": [\n    true,\n    false\n  ]\n}\n```\n\n自检说明：\n1. 正例：60nm × 40nm = 2400nm² (刚好满足0.0024um²)\n2. 反例：59nm × 40nm = 2360nm² (2360 < 2400，违反规则)\n\n注意：所有坐标值都使用nm单位，符合1 coordinate unit = 1 nm的约定。",
+  "examples": [
+    {
+      "MINT3_1": [
+        {
+          "llx": 0,
+          "lly": 0,
+          "urx": 60,
+          "ury": 40
+        }
+      ]
+    },
+    {
+      "MINT3_1": [
+        {
+          "llx": 0,
+          "lly": 0,
+          "urx": 59,
+          "ury": 40
+        }
+      ]
+    }
+  ],
+  "labels": [
+    true,
+    false
+  ]
+}

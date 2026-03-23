@@ -1,0 +1,95 @@
+{
+  "rule_name": "Metal6.1",
+  "rule_description": "Minimum width of metal6 = 0.14",
+  "rule_script": "INTERNAL metal6 < 0.14",
+  "calibre_skipped": true,
+  "sample_correct": null,
+  "sample_total": null,
+  "accuracy": null,
+  "details": [
+    {
+      "idx": 0,
+      "predicted_label": true,
+      "pos": {
+        "METAL6_1": [
+          {
+            "llx": 0,
+            "lly": 0,
+            "urx": 140,
+            "ury": 1000
+          }
+        ]
+      }
+    },
+    {
+      "idx": 1,
+      "predicted_label": false,
+      "pos": {
+        "METAL6_1": [
+          {
+            "llx": 0,
+            "lly": 0,
+            "urx": 139,
+            "ury": 1000
+          }
+        ]
+      }
+    },
+    {
+      "idx": 2,
+      "predicted_label": true,
+      "pos": {
+        "METAL6_1": [
+          {
+            "llx": 0,
+            "lly": 0,
+            "urx": 1000,
+            "ury": 140
+          }
+        ]
+      }
+    },
+    {
+      "idx": 3,
+      "predicted_label": false,
+      "pos": {
+        "METAL6_1": [
+          {
+            "llx": 0,
+            "lly": 0,
+            "urx": 1000,
+            "ury": 139
+          }
+        ]
+      }
+    },
+    {
+      "idx": 4,
+      "predicted_label": true,
+      "pos": {
+        "METAL6_1": [
+          {
+            "llx": 0,
+            "lly": 0,
+            "urx": 140,
+            "ury": 140
+          }
+        ]
+      }
+    },
+    {
+      "idx": 5,
+      "predicted_label": false,
+      "pos": {
+        "METAL6_1": [
+          {
+            "llx": 0,
+            "lly": 0,
+            "urx": 139,
+            "ury": 139
+          }
+        ]
+      }
+    }
+  ]
+}

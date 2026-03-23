@@ -1,0 +1,19 @@
+{
+  "per_rule": [
+    {
+      "rule_name": "RULE_M1002",
+      "details": [
+        {
+          "idx": 0,
+          "predicted_label": true,
+          "pos": {}
+        },
+        {
+          "idx": 1,
+          "predicted_label": false,
+          "pos": {}
+        }
+      ]
+    }
+  ]
+}

@@ -2,15 +2,14 @@
   "rule_name": "WELL.W.2",
   "rule_description": "Minimum vertical width of WELL is 54 nm.",
   "rule_script": "INTERNAL WELL_HE < 0.054",
-  "sample_correct": 5,
-  "sample_total": 6,
-  "accuracy": 0.0,
+  "calibre_skipped": true,
+  "sample_correct": null,
+  "sample_total": null,
+  "accuracy": null,
   "details": [
     {
       "idx": 0,
       "predicted_label": true,
-      "calibre_label": true,
-      "match": true,
       "pos": {
         "WELL_1": [
           {
@@ -25,8 +24,6 @@
     {
       "idx": 1,
       "predicted_label": false,
-      "calibre_label": false,
-      "match": true,
       "pos": {
         "WELL_1": [
           {
@@ -41,8 +38,6 @@
     {
       "idx": 2,
       "predicted_label": true,
-      "calibre_label": true,
-      "match": true,
       "pos": {
         "WELL_1": [
           {
@@ -57,8 +52,6 @@
     {
       "idx": 3,
       "predicted_label": false,
-      "calibre_label": true,
-      "match": false,
       "pos": {
         "WELL_1": [
           {
@@ -73,8 +66,6 @@
     {
       "idx": 4,
       "predicted_label": true,
-      "calibre_label": true,
-      "match": true,
       "pos": {
         "WELL_1": [
           {
@@ -89,8 +80,6 @@
     {
       "idx": 5,
       "predicted_label": false,
-      "calibre_label": false,
-      "match": true,
       "pos": {
         "WELL_1": [
           {

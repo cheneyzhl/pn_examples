@@ -1,0 +1,93 @@
+{
+  "rule_name": "FIN.W.1",
+  "rule_description": "Exact vertical FIN width is 7 nm.",
+  "rule_script": "INTERNAL FIN_HE < 0.007 \nINTERNAL FIN_HE > 0.007 < 0.5",
+  "calibre_skipped": true,
+  "sample_correct": null,
+  "sample_total": null,
+  "accuracy": null,
+  "details": [
+    {
+      "idx": 0,
+      "predicted_label": true,
+      "pos": {
+        "FIN_1": [
+          {
+            "llx": 0,
+            "lly": 0,
+            "urx": 7,
+            "ury": 100
+          }
+        ]
+      }
+    },
+    {
+      "idx": 1,
+      "predicted_label": false,
+      "pos": {
+        "FIN_1": [
+          {
+            "llx": 0,
+            "lly": 0,
+            "urx": 6,
+            "ury": 100
+          }
+        ]
+      }
+    },
+    {
+      "idx": 2,
+      "predicted_label": false,
+      "pos": {
+        "FIN_1": [
+          {
+            "llx": 0,
+            "lly": 0,
+            "urx": 8,
+            "ury": 100
+          }
+        ]
+      }
+    },
+    {
+      "idx": 3,
+      "predicted_label": true,
+      "pos": {
+        "FIN_1": [
+          {
+            "llx": 0,
+            "lly": 0,
+            "urx": 7,
+            "ury": 100
+          },
+          {
+            "llx": 8,
+            "lly": 0,
+            "urx": 15,
+            "ury": 100
+          }
+        ]
+      }
+    },
+    {
+      "idx": 4,
+      "predicted_label": false,
+      "pos": {
+        "FIN_1": [
+          {
+            "llx": 0,
+            "lly": 0,
+            "urx": 7,
+            "ury": 100
+          },
+          {
+            "llx": 7,
+            "lly": 0,
+            "urx": 14,
+            "ury": 100
+          }
+        ]
+      }
+    }
+  ]
+}

@@ -1,0 +1,73 @@
+{
+  "raw_response": "```json\n{\n  \"examples\": [\n    {\n      \"M9_1\": [\n        {\n          \"llx\": 0,\n          \"lly\": 0,\n          \"urx\": 7520,\n          \"ury\": 1\n        }\n      ]\n    },\n    {\n      \"M9_1\": [\n        {\n          \"llx\": 0,\n          \"lly\": 0,\n          \"urx\": 7519,\n          \"ury\": 1\n        }\n      ]\n    },\n    {\n      \"M9_1\": [\n        {\n          \"llx\": 0,\n          \"lly\": 0,\n          \"urx\": 80,\n          \"ury\": 94\n        }\n      ]\n    },\n    {\n      \"M9_1\": [\n        {\n          \"llx\": 0,\n          \"lly\": 0,\n          \"urx\": 80,\n          \"ury\": 93\n        }\n      ]\n    },\n    {\n      \"M9_1\": [\n        {\n          \"llx\": 0,\n          \"lly\": 0,\n          \"urx\": 752,\n          \"ury\": 10\n        }\n      ]\n    },\n    {\n      \"M9_1\": [\n        {\n          \"llx\": 0,\n          \"lly\": 0,\n          \"urx\": 752,\n          \"ury\": 9\n        }\n      ]\n    }\n  ],\n  \"labels\": [\n    true,\n    false,\n    true,\n    false,\n    true,\n    false\n  ]\n}\n```",
+  "examples": [
+    {
+      "M9_1": [
+        {
+          "llx": 0,
+          "lly": 0,
+          "urx": 7520,
+          "ury": 1
+        }
+      ]
+    },
+    {
+      "M9_1": [
+        {
+          "llx": 0,
+          "lly": 0,
+          "urx": 7519,
+          "ury": 1
+        }
+      ]
+    },
+    {
+      "M9_1": [
+        {
+          "llx": 0,
+          "lly": 0,
+          "urx": 80,
+          "ury": 94
+        }
+      ]
+    },
+    {
+      "M9_1": [
+        {
+          "llx": 0,
+          "lly": 0,
+          "urx": 80,
+          "ury": 93
+        }
+      ]
+    },
+    {
+      "M9_1": [
+        {
+          "llx": 0,
+          "lly": 0,
+          "urx": 752,
+          "ury": 10
+        }
+      ]
+    },
+    {
+      "M9_1": [
+        {
+          "llx": 0,
+          "lly": 0,
+          "urx": 752,
+          "ury": 9
+        }
+      ]
+    }
+  ],
+  "labels": [
+    true,
+    false,
+    true,
+    false,
+    true,
+    false
+  ]
+}

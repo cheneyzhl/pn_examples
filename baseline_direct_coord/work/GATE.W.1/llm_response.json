@@ -1,0 +1,62 @@
+{
+  "raw_response": "```json\n{\n  \"examples\": [\n    {\n      \"GATE_1\": [\n        {\n          \"llx\": 0,\n          \"lly\": 0,\n          \"urx\": 20,\n          \"ury\": 10\n        }\n      ]\n    },\n    {\n      \"GATE_1\": [\n        {\n          \"llx\": 0,\n          \"lly\": 0,\n          \"urx\": 19,\n          \"ury\": 10\n        }\n      ]\n    },\n    {\n      \"GATE_1\": [\n        {\n          \"llx\": 0,\n          \"lly\": 0,\n          \"urx\": 21,\n          \"ury\": 10\n        }\n      ]\n    },\n    {\n      \"GATE_1\": [\n        {\n          \"llx\": 0,\n          \"lly\": 0,\n          \"urx\": 20,\n          \"ury\": 20\n        }\n      ]\n    },\n    {\n      \"GATE_1\": [\n        {\n          \"llx\": 0,\n          \"lly\": 0,\n          \"urx\": 20,\n          \"ury\": 5\n        }\n      ]\n    }\n  ],\n  \"labels\": [\n    true,\n    false,\n    false,\n    true,\n    true\n  ]\n}\n```",
+  "examples": [
+    {
+      "GATE_1": [
+        {
+          "llx": 0,
+          "lly": 0,
+          "urx": 20,
+          "ury": 10
+        }
+      ]
+    },
+    {
+      "GATE_1": [
+        {
+          "llx": 0,
+          "lly": 0,
+          "urx": 19,
+          "ury": 10
+        }
+      ]
+    },
+    {
+      "GATE_1": [
+        {
+          "llx": 0,
+          "lly": 0,
+          "urx": 21,
+          "ury": 10
+        }
+      ]
+    },
+    {
+      "GATE_1": [
+        {
+          "llx": 0,
+          "lly": 0,
+          "urx": 20,
+          "ury": 20
+        }
+      ]
+    },
+    {
+      "GATE_1": [
+        {
+          "llx": 0,
+          "lly": 0,
+          "urx": 20,
+          "ury": 5
+        }
+      ]
+    }
+  ],
+  "labels": [
+    true,
+    false,
+    false,
+    true,
+    true
+  ]
+}

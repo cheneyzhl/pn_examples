@@ -1,0 +1,10 @@
+TOPCELL 5000
+RULE_GATE001Ca
+1 1 4 Mar 23 01:12:55 2026                     
+Rule File Pathname: /share/home/zenghuanlong/pn_examples/boundary_coverage_eval/eval_results/result/work/freePDK15/RULE_GATE001Ca/corner_000/example_5.rul
+RULE_GATE001Ca
+Exact vertical width of GATEC is 32nm (1 is arbitrary large value)
+shape is oriented horizonally
+e 1 2
+1000 0 1500 0
+1000 165 1500 165

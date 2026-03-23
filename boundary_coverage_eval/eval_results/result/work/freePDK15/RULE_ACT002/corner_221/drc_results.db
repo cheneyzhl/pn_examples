@@ -1,0 +1,12 @@
+TOPCELL 5000
+RULE_ACT002
+2 2 3 Mar 22 00:23:41 2026                     
+Rule File Pathname: /share/home/zenghuanlong/pn_examples/boundary_coverage_eval/eval_results/result/work/freePDK15/RULE_ACT002/corner_221/example_5.rul
+RULE_ACT002
+Minimum Incremental vertical width of ACT layer is 40nm
+e 1 2
+0 0 500 0
+0 200 500 200
+e 2 2
+0 250 500 250
+0 445 500 445

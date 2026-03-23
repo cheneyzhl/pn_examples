@@ -1,0 +1,62 @@
+{
+  "raw_response": "```json\n{\n  \"examples\": [\n    {\n      \"M8_1\": [\n        {\n          \"llx\": 0,\n          \"lly\": 0,\n          \"urx\": 120,\n          \"ury\": 1800\n        }\n      ]\n    },\n    {\n      \"M8_1\": [\n        {\n          \"llx\": 0,\n          \"lly\": 0,\n          \"urx\": 119,\n          \"ury\": 1800\n        }\n      ]\n    },\n    {\n      \"M8_1\": [\n        {\n          \"llx\": 0,\n          \"lly\": 0,\n          \"urx\": 120,\n          \"ury\": 1799\n        }\n      ]\n    },\n    {\n      \"M8_1\": [\n        {\n          \"llx\": 0,\n          \"lly\": 0,\n          \"urx\": 120,\n          \"ury\": 1800\n        }\n      ]\n    },\n    {\n      \"M8_1\": [\n        {\n          \"llx\": 0,\n          \"lly\": 0,\n          \"urx\": 121,\n          \"ury\": 1799\n        }\n      ]\n    }\n  ],\n  \"labels\": [\n    true,\n    false,\n    false,\n    true,\n    false\n  ]\n}\n```",
+  "examples": [
+    {
+      "M8_1": [
+        {
+          "llx": 0,
+          "lly": 0,
+          "urx": 120,
+          "ury": 1800
+        }
+      ]
+    },
+    {
+      "M8_1": [
+        {
+          "llx": 0,
+          "lly": 0,
+          "urx": 119,
+          "ury": 1800
+        }
+      ]
+    },
+    {
+      "M8_1": [
+        {
+          "llx": 0,
+          "lly": 0,
+          "urx": 120,
+          "ury": 1799
+        }
+      ]
+    },
+    {
+      "M8_1": [
+        {
+          "llx": 0,
+          "lly": 0,
+          "urx": 120,
+          "ury": 1800
+        }
+      ]
+    },
+    {
+      "M8_1": [
+        {
+          "llx": 0,
+          "lly": 0,
+          "urx": 121,
+          "ury": 1799
+        }
+      ]
+    }
+  ],
+  "labels": [
+    true,
+    false,
+    false,
+    true,
+    false
+  ]
+}

@@ -2,15 +2,14 @@
   "rule_name": "Well.4",
   "rule_description": "Min width of well = 0.2",
   "rule_script": "INTERNAL well < 0.2",
-  "sample_correct": 4,
-  "sample_total": 4,
-  "accuracy": 1.0,
+  "calibre_skipped": true,
+  "sample_correct": null,
+  "sample_total": null,
+  "accuracy": null,
   "details": [
     {
       "idx": 0,
       "predicted_label": true,
-      "calibre_label": true,
-      "match": true,
       "pos": {
         "WELL_1": [
           {
@@ -25,8 +24,6 @@
     {
       "idx": 1,
       "predicted_label": false,
-      "calibre_label": false,
-      "match": true,
       "pos": {
         "WELL_1": [
           {
@@ -41,8 +38,6 @@
     {
       "idx": 2,
       "predicted_label": false,
-      "calibre_label": false,
-      "match": true,
       "pos": {
         "WELL_1": [
           {
@@ -57,8 +52,6 @@
     {
       "idx": 3,
       "predicted_label": false,
-      "calibre_label": false,
-      "match": true,
       "pos": {
         "WELL_1": [
           {

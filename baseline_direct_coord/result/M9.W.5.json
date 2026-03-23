@@ -1,0 +1,39 @@
+{
+  "rule_name": "M9.W.5",
+  "rule_description": "Maximum width of M9 is 2000 nm.",
+  "rule_script": "INTERNAL M9 > 2.000 < 10.0",
+  "calibre_skipped": true,
+  "sample_correct": null,
+  "sample_total": null,
+  "accuracy": null,
+  "details": [
+    {
+      "idx": 0,
+      "predicted_label": true,
+      "pos": {
+        "M9_1": [
+          {
+            "llx": 0,
+            "lly": 0,
+            "urx": 2000,
+            "ury": 1000
+          }
+        ]
+      }
+    },
+    {
+      "idx": 1,
+      "predicted_label": false,
+      "pos": {
+        "M9_1": [
+          {
+            "llx": 0,
+            "lly": 0,
+            "urx": 2001,
+            "ury": 1000
+          }
+        ]
+      }
+    }
+  ]
+}

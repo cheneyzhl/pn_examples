@@ -1,0 +1,123 @@
+{
+  "rule_name": "RULE_M1001B",
+  "rule_description": "M1B width 28nm, 32nm, 40nm, 2.4um (10um is arbitrary)",
+  "rule_script": "INTERNAL M1B < 0.028",
+  "calibre_skipped": true,
+  "sample_correct": null,
+  "sample_total": null,
+  "accuracy": null,
+  "details": [
+    {
+      "idx": 0,
+      "predicted_label": true,
+      "pos": {
+        "M1B_1": [
+          {
+            "llx": 0,
+            "lly": 0,
+            "urx": 28,
+            "ury": 28
+          }
+        ]
+      }
+    },
+    {
+      "idx": 1,
+      "predicted_label": false,
+      "pos": {
+        "M1B_1": [
+          {
+            "llx": 0,
+            "lly": 0,
+            "urx": 27,
+            "ury": 27
+          }
+        ]
+      }
+    },
+    {
+      "idx": 2,
+      "predicted_label": true,
+      "pos": {
+        "M1B_1": [
+          {
+            "llx": 0,
+            "lly": 0,
+            "urx": 32,
+            "ury": 32
+          }
+        ]
+      }
+    },
+    {
+      "idx": 3,
+      "predicted_label": false,
+      "pos": {
+        "M1B_1": [
+          {
+            "llx": 0,
+            "lly": 0,
+            "urx": 31,
+            "ury": 31
+          }
+        ]
+      }
+    },
+    {
+      "idx": 4,
+      "predicted_label": true,
+      "pos": {
+        "M1B_1": [
+          {
+            "llx": 0,
+            "lly": 0,
+            "urx": 40,
+            "ury": 40
+          }
+        ]
+      }
+    },
+    {
+      "idx": 5,
+      "predicted_label": false,
+      "pos": {
+        "M1B_1": [
+          {
+            "llx": 0,
+            "lly": 0,
+            "urx": 39,
+            "ury": 39
+          }
+        ]
+      }
+    },
+    {
+      "idx": 6,
+      "predicted_label": true,
+      "pos": {
+        "M1B_1": [
+          {
+            "llx": 0,
+            "lly": 0,
+            "urx": 2400,
+            "ury": 2400
+          }
+        ]
+      }
+    },
+    {
+      "idx": 7,
+      "predicted_label": false,
+      "pos": {
+        "M1B_1": [
+          {
+            "llx": 0,
+            "lly": 0,
+            "urx": 2399,
+            "ury": 2399
+          }
+        ]
+      }
+    }
+  ]
+}

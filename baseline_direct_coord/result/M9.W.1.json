@@ -1,0 +1,39 @@
+{
+  "rule_name": "M9.W.1",
+  "rule_description": "Minimum width of M9 is 40 nm.",
+  "rule_script": "INTERNAL M9 < 0.040",
+  "calibre_skipped": true,
+  "sample_correct": null,
+  "sample_total": null,
+  "accuracy": null,
+  "details": [
+    {
+      "idx": 0,
+      "predicted_label": true,
+      "pos": {
+        "M9_1": [
+          {
+            "llx": 0,
+            "lly": 0,
+            "urx": 40,
+            "ury": 100
+          }
+        ]
+      }
+    },
+    {
+      "idx": 1,
+      "predicted_label": false,
+      "pos": {
+        "M9_1": [
+          {
+            "llx": 0,
+            "lly": 0,
+            "urx": 39,
+            "ury": 100
+          }
+        ]
+      }
+    }
+  ]
+}

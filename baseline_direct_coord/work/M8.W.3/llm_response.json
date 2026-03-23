@@ -1,0 +1,73 @@
+{
+  "raw_response": "### 规则分析\n\n给定的DRC规则是：**\"Minimum width of M8, when its length >= 1200 nm and < 1800 nm, is 80 nm.\"**\n\n从这条规则中可以分解出以下条件变量和布尔条件：\n\n1. **M8的长度（length）**：\n   - 条件1：length >= 1200 nm\n   - 条件2：length < 1800 nm\n   - 这两个条件可以组合为：1200 nm <= length < 1800 nm\n\n2. **M8的宽度（width）**：\n   - 条件3：width >= 80 nm（当满足条件1和条件2时）\n\n因此，完整的规则逻辑是：\n- 如果 `1200 <= length < 1800`，则 `width >= 80`；\n- 否则（`length < 1200` 或 `length >= 1800`），`width` 无限制（但实际DRC中通常有其他默认规则，这里暂不考虑）。\n\n### 布尔条件组合\n我们需要枚举 `length` 和 `width` 的所有边界情况。具体组合如下：\n\n1. **组合1**：`length` 满足 `1200 <= length < 1800`，`width` 满足 `width >= 80` → 正例\n2. **组合2**：`length` 满足 `1200 <= length < 1800`，`width` 不满足 `width >= 80`（即 `width < 80`） → 反例\n3. **组合3**：`length` 不满足 `1200 <= length < 1800`（即 `length < 1200` 或 `length >= 1800`），`width` 任意 → 正例（因为规则不限制）\n\n注意：\n- 对于组合3，规则不限制 `width`，因此无论 `width` 是多少都是正例。但为了展示边界情况，可以分别给出 `width >= 80` 和 `width < 80` 的例子。\n- 需要覆盖 `length` 的边界值：1200 nm 和 1800 nm。\n\n### 正例和反例设计\n以下是具体的正例和反例设计：\n\n#### 正例1：满足 `1200 <= length < 1800` 且 `width >= 80`\n- `length = 1200`（刚好等于下限），`width = 80`（刚好等于下限）\n- M8 矩形：`{ \"llx\": 0, \"lly\": 0, \"urx\": 1200, \"ury\": 80 }`\n\n#### 反例1：满足 `1200 <= length < 1800` 但 `width < 80`\n- `length = 1200`，`width = 79`（刚好比下限小1）\n- M8 矩形：`{ \"llx\": 0, \"lly\": 0, \"urx\": 1200, \"ury\": 79 }`\n\n#### 正例2：`length < 1200`，`width` 任意（这里选 `width < 80`）\n- `length = 1199`，`width = 79`（`length` 不满足规则条件，`width` 无限制）\n- M8 矩形：`{ \"llx\": 0, \"lly\": 0, \"urx\": 1199, \"ury\": 79 }`\n\n#### 正例3：`length >= 1800`，`width` 任意（这里选 `width < 80`）\n- `length = 1800`，`width = 79`（`length` 不满足规则条件，`width` 无限制）\n- M8 矩形：`{ \"llx\": 0, \"lly\": 0, \"urx\": 1800, \"ury\": 79 }`\n\n#### 正例4：`1200 <= length < 1800` 且 `width > 大于下限`\n- `length = 1799`，`width = 80`（`length` 接近上限，`width` 等于下限）\n- M8 矩形：`{ \"llx\": 0, \"lly\": 0, \"urx\": 1799, \"ury\": 80 }`\n\n#### 反例2：`1200 <= length < 1800` 且 `width` 略小于下限\n- `length = 1799`，`width = 79`（`length` 接近上限，`width` 比下限小1）\n- M8 矩形：`{ \"llx\": 0, \"lly\": 0, \"urx\": 1799, \"ury\": 79 }`\n\n### 自检\n对每个例子进行自检：\n1. 正例1：`length = 1200`（>= 1200 且 < 1800），`width = 80`（>= 80）→ 满足规则。\n2. 反例1：`length = 1200`（>= 1200 且 < 1800），`width = 79`（< 80）→ 违反规则。\n3. 正例2：`length = 1199`（< 1200），`width = 79`（无限制）→ 满足规则（规则不限制）。\n4. 正例3：`length = 1800`（>= 1800），`width = 79`（无限制）→ 满足规则（规则不限制）。\n5. 正例4：`length = 1799`（>= 1200 且 < 1800），`width = 80`（>= 80）→ 满足规则。\n6. 反例2：`length = 1799`（>= 1200 且 < 1800），`width = 79`（< 80）→ 违反规则。\n\n### JSON 输出\n```json\n{\n  \"examples\": [\n    {\n      \"M8_1\": [\n        { \"llx\": 0, \"lly\": 0, \"urx\": 1200, \"ury\": 80 }\n      ]\n    },\n    {\n      \"M8_1\": [\n        { \"llx\": 0, \"lly\": 0, \"urx\": 1200, \"ury\": 79 }\n      ]\n    },\n    {\n      \"M8_1\": [\n        { \"llx\": 0, \"lly\": 0, \"urx\": 1199, \"ury\": 79 }\n      ]\n    },\n    {\n      \"M8_1\": [\n        { \"llx\": 0, \"lly\": 0, \"urx\": 1800, \"ury\": 79 }\n      ]\n    },\n    {\n      \"M8_1\": [\n        { \"llx\": 0, \"lly\": 0, \"urx\": 1799, \"ury\": 80 }\n      ]\n    },\n    {\n      \"M8_1\": [\n        { \"llx\": 0, \"lly\": 0, \"urx\": 1799, \"ury\": 79 }\n      ]\n    }\n  ],\n  \"labels\": [\n    true,\n    false,\n    true,\n    true,\n    true,\n    false\n  ]\n}\n```",
+  "examples": [
+    {
+      "M8_1": [
+        {
+          "llx": 0,
+          "lly": 0,
+          "urx": 1200,
+          "ury": 80
+        }
+      ]
+    },
+    {
+      "M8_1": [
+        {
+          "llx": 0,
+          "lly": 0,
+          "urx": 1200,
+          "ury": 79
+        }
+      ]
+    },
+    {
+      "M8_1": [
+        {
+          "llx": 0,
+          "lly": 0,
+          "urx": 1199,
+          "ury": 79
+        }
+      ]
+    },
+    {
+      "M8_1": [
+        {
+          "llx": 0,
+          "lly": 0,
+          "urx": 1800,
+          "ury": 79
+        }
+      ]
+    },
+    {
+      "M8_1": [
+        {
+          "llx": 0,
+          "lly": 0,
+          "urx": 1799,
+          "ury": 80
+        }
+      ]
+    },
+    {
+      "M8_1": [
+        {
+          "llx": 0,
+          "lly": 0,
+          "urx": 1799,
+          "ury": 79
+        }
+      ]
+    }
+  ],
+  "labels": [
+    true,
+    false,
+    true,
+    true,
+    true,
+    false
+  ]
+}

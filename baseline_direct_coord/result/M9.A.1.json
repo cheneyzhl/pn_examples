@@ -1,0 +1,95 @@
+{
+  "rule_name": "M9.A.1",
+  "rule_description": "Minimum area of M9 is 7520 nm-sq.",
+  "rule_script": "AREA M9 < 0.007520",
+  "calibre_skipped": true,
+  "sample_correct": null,
+  "sample_total": null,
+  "accuracy": null,
+  "details": [
+    {
+      "idx": 0,
+      "predicted_label": true,
+      "pos": {
+        "M9_1": [
+          {
+            "llx": 0,
+            "lly": 0,
+            "urx": 7520,
+            "ury": 1
+          }
+        ]
+      }
+    },
+    {
+      "idx": 1,
+      "predicted_label": false,
+      "pos": {
+        "M9_1": [
+          {
+            "llx": 0,
+            "lly": 0,
+            "urx": 7519,
+            "ury": 1
+          }
+        ]
+      }
+    },
+    {
+      "idx": 2,
+      "predicted_label": true,
+      "pos": {
+        "M9_1": [
+          {
+            "llx": 0,
+            "lly": 0,
+            "urx": 80,
+            "ury": 94
+          }
+        ]
+      }
+    },
+    {
+      "idx": 3,
+      "predicted_label": false,
+      "pos": {
+        "M9_1": [
+          {
+            "llx": 0,
+            "lly": 0,
+            "urx": 80,
+            "ury": 93
+          }
+        ]
+      }
+    },
+    {
+      "idx": 4,
+      "predicted_label": true,
+      "pos": {
+        "M9_1": [
+          {
+            "llx": 0,
+            "lly": 0,
+            "urx": 752,
+            "ury": 10
+          }
+        ]
+      }
+    },
+    {
+      "idx": 5,
+      "predicted_label": false,
+      "pos": {
+        "M9_1": [
+          {
+            "llx": 0,
+            "lly": 0,
+            "urx": 752,
+            "ury": 9
+          }
+        ]
+      }
+    }
+  ]
+}

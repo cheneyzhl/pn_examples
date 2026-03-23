@@ -1,0 +1,39 @@
+{
+  "rule_name": "RULE_PIM007B",
+  "rule_description": "Minimum enclosed area of PIM is 0.049 um2",
+  "rule_script": "HOLES PIM < 0.049",
+  "calibre_skipped": true,
+  "sample_correct": null,
+  "sample_total": null,
+  "accuracy": null,
+  "details": [
+    {
+      "idx": 0,
+      "predicted_label": true,
+      "pos": {
+        "PIM_1": [
+          {
+            "llx": 0,
+            "lly": 0,
+            "urx": 221,
+            "ury": 221
+          }
+        ]
+      }
+    },
+    {
+      "idx": 1,
+      "predicted_label": false,
+      "pos": {
+        "PIM_1": [
+          {
+            "llx": 0,
+            "lly": 0,
+            "urx": 220,
+            "ury": 220
+          }
+        ]
+      }
+    }
+  ]
+}

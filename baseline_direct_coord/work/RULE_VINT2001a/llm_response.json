@@ -1,0 +1,62 @@
+{
+  "raw_response": "### 规则分析\n\n规则描述为：\"VINT2 is a square with 28nm edge length\"。这意味着：\n\n1. **形状要求**：VINT2 必须是一个正方形。\n2. **尺寸要求**：正方形的边长必须恰好为 28 nm。\n\n### 条件变量\n\n从规则中可以提取以下布尔条件：\n1. **形状是否为正方形**：`is_square`（True 表示是正方形，False 表示不是正方形）。\n2. **边长是否为 28 nm**：`is_edge_28nm`（True 表示边长是 28 nm，False 表示不是）。\n\n### 组合枚举\n\n共有 2 个布尔条件，因此有 4 种组合：\n\n1. `is_square = True`, `is_edge_28nm = True`：正例（满足规则）。\n2. `is_square = True`, `is_edge_28nm = False`：反例（边长不为 28 nm）。\n3. `is_square = False`, `is_edge_28nm = True`：反例（不是正方形）。\n4. `is_square = False`, `is_edge_28nm = False`：反例（既不是正方形，边长也不为 28 nm）。\n\n### 正例和反例设计\n\n#### 正例（满足规则）：\n- 形状为正方形。\n- 边长为 28 nm。\n\n#### 反例：\n1. 形状为正方形，边长不为 28 nm：\n   - 边长 > 28 nm（如 29 nm）。\n   - 边长 < 28 nm（如 27 nm）。\n2. 形状不是正方形，边长为 28 nm：\n   - 长方形，一边为 28 nm，另一边不为 28 nm（如 28 nm × 27 nm）。\n3. 形状不是正方形，边长不为 28 nm：\n   - 长方形，两边均不为 28 nm（如 27 nm × 29 nm）。\n\n### 自检\n- 正例：边长为 28 nm 的正方形，满足规则。\n- 反例：\n  - 边长不为 28 nm 的正方形：违反尺寸要求。\n  - 非正方形：违反形状要求。\n  - 非正方形且边长不为 28 nm：违反形状和尺寸要求。\n\n### JSON 输出\n\n```json\n{\n  \"examples\": [\n    {\n      \"VINT2_1\": [\n        { \"llx\": 0, \"lly\": 0, \"urx\": 28, \"ury\": 28 }\n      ]\n    },\n    {\n      \"VINT2_1\": [\n        { \"llx\": 0, \"lly\": 0, \"urx\": 29, \"ury\": 29 }\n      ]\n    },\n    {\n      \"VINT2_1\": [\n        { \"llx\": 0, \"lly\": 0, \"urx\": 27, \"ury\": 27 }\n      ]\n    },\n    {\n      \"VINT2_1\": [\n        { \"llx\": 0, \"lly\": 0, \"urx\": 28, \"ury\": 27 }\n      ]\n    },\n    {\n      \"VINT2_1\": [\n        { \"llx\": 0, \"lly\": 0, \"urx\": 27, \"ury\": 29 }\n      ]\n    }\n  ],\n  \"labels\": [\n    true,\n    false,\n    false,\n    false,\n    false\n  ]\n}\n```\n\n### 说明\n- 第一个例子是正例：VINT2 是边长为 28 nm 的正方形。\n- 第二个例子是反例：VINT2 是正方形，但边长为 29 nm（>28 nm）。\n- 第三个例子是反例：VINT2 是正方形，但边长为 27 nm（<28 nm）。\n- 第四个例子是反例：VINT2 不是正方形（28 nm × 27 nm），但一边为 28 nm。\n- 第五个例子是反例：VINT2 不是正方形（27 nm × 29 nm），且边长均不为 28 nm。",
+  "examples": [
+    {
+      "VINT2_1": [
+        {
+          "llx": 0,
+          "lly": 0,
+          "urx": 28,
+          "ury": 28
+        }
+      ]
+    },
+    {
+      "VINT2_1": [
+        {
+          "llx": 0,
+          "lly": 0,
+          "urx": 29,
+          "ury": 29
+        }
+      ]
+    },
+    {
+      "VINT2_1": [
+        {
+          "llx": 0,
+          "lly": 0,
+          "urx": 27,
+          "ury": 27
+        }
+      ]
+    },
+    {
+      "VINT2_1": [
+        {
+          "llx": 0,
+          "lly": 0,
+          "urx": 28,
+          "ury": 27
+        }
+      ]
+    },
+    {
+      "VINT2_1": [
+        {
+          "llx": 0,
+          "lly": 0,
+          "urx": 27,
+          "ury": 29
+        }
+      ]
+    }
+  ],
+  "labels": [
+    true,
+    false,
+    false,
+    false,
+    false
+  ]
+}

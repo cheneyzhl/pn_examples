@@ -1,0 +1,39 @@
+{
+  "rule_name": "RULE_AIL1005",
+  "rule_description": "Minimum Vertical length of AIL1 is 58nm",
+  "rule_script": "AIL1_HORIZONTAL_EDGES = AIL1 ANGLE == 0 \nINTERNAL AIL1_HORIZONTAL_EDGES < 0.058",
+  "calibre_skipped": true,
+  "sample_correct": null,
+  "sample_total": null,
+  "accuracy": null,
+  "details": [
+    {
+      "idx": 0,
+      "predicted_label": true,
+      "pos": {
+        "AIL1_1": [
+          {
+            "llx": 0,
+            "lly": 0,
+            "urx": 100,
+            "ury": 58
+          }
+        ]
+      }
+    },
+    {
+      "idx": 1,
+      "predicted_label": false,
+      "pos": {
+        "AIL1_1": [
+          {
+            "llx": 0,
+            "lly": 0,
+            "urx": 100,
+            "ury": 57
+          }
+        ]
+      }
+    }
+  ]
+}

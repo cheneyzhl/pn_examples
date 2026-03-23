@@ -1,0 +1,140 @@
+{
+  "data_name": "",
+  "judge_mode": "match",
+  "total_rules_evaluated": 1,
+  "passed_rules_by_judge_mode": 0,
+  "boundary_coverage_accuracy": 0.0,
+  "boundary_coverage_accuracy_match": 0.0,
+  "boundary_coverage_accuracy_detect": 1.0,
+  "details": [
+    {
+      "rule_name": "RULE_M1002",
+      "rule_description": "One of two edges connected to the same vertex must have at least one of 56nm",
+      "rule_script": "x = CONVEX EDGE M1 ANGLE1==90 ANGLE2==90 WITH LENGTH < 0.056 \nINT x < 0.001 ABUT",
+      "perturbed_scripts": {
+        "corner_000": "x = CONVEX EDGE M1 ANGLE1==90 ANGLE2==90 WITH LENGTH < 0.056 \nINT x < 0.001 ABUT\n"
+      },
+      "data_name": "freePDK15",
+      "judge_mode": "match",
+      "corner_count": 1,
+      "sample_count": 4,
+      "all_corners_match": false,
+      "all_corners_detect": true,
+      "all_corners_ok": false,
+      "per_corner": [
+        {
+          "corner_id": "corner_000",
+          "script_expected_correct": true,
+          "script_predicted_correct": false,
+          "corner_any_mismatch": true,
+          "corner_all_match": false,
+          "corner_ok": false,
+          "samples": [
+            {
+              "idx": 0,
+              "predicted_label": true,
+              "calibre_label": true,
+              "match": true,
+              "error": null,
+              "pos": {
+                "M1_1": [
+                  {
+                    "llx": 0,
+                    "lly": -5,
+                    "urx": 56,
+                    "ury": 5
+                  }
+                ],
+                "M1_2": [
+                  {
+                    "llx": -5,
+                    "lly": 0,
+                    "urx": 5,
+                    "ury": 56
+                  }
+                ]
+              }
+            },
+            {
+              "idx": 1,
+              "predicted_label": true,
+              "calibre_label": false,
+              "match": false,
+              "error": null,
+              "pos": {
+                "M1_1": [
+                  {
+                    "llx": 0,
+                    "lly": -5,
+                    "urx": 56,
+                    "ury": 5
+                  }
+                ],
+                "M1_2": [
+                  {
+                    "llx": -5,
+                    "lly": 0,
+                    "urx": 5,
+                    "ury": 55
+                  }
+                ]
+              }
+            },
+            {
+              "idx": 2,
+              "predicted_label": true,
+              "calibre_label": false,
+              "match": false,
+              "error": null,
+              "pos": {
+                "M1_1": [
+                  {
+                    "llx": 0,
+                    "lly": -5,
+                    "urx": 55,
+                    "ury": 5
+                  }
+                ],
+                "M1_2": [
+                  {
+                    "llx": -5,
+                    "lly": 0,
+                    "urx": 5,
+                    "ury": 56
+                  }
+                ]
+              }
+            },
+            {
+              "idx": 3,
+              "predicted_label": false,
+              "calibre_label": false,
+              "match": true,
+              "error": null,
+              "pos": {
+                "M1_1": [
+                  {
+                    "llx": 0,
+                    "lly": -5,
+                    "urx": 55,
+                    "ury": 5
+                  }
+                ],
+                "M1_2": [
+                  {
+                    "llx": -5,
+                    "lly": 0,
+                    "urx": 5,
+                    "ury": 55
+                  }
+                ]
+              }
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "skipped_rules": [],
+  "skipped_rule_count": 0
+}

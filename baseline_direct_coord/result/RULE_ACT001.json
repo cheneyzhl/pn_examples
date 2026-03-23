@@ -1,0 +1,147 @@
+{
+  "rule_name": "RULE_ACT001",
+  "rule_description": "Minimum vertical width of ACT layer is 48nm",
+  "rule_script": "ACT_HORIZONTAL_EDGES = ACT ANGLE == 0 \nINTERNAL ACT_HORIZONTAL_EDGES < 0.048",
+  "calibre_skipped": true,
+  "sample_correct": null,
+  "sample_total": null,
+  "accuracy": null,
+  "details": [
+    {
+      "idx": 0,
+      "predicted_label": true,
+      "pos": {
+        "ACT_1": [
+          {
+            "llx": 0,
+            "lly": 0,
+            "urx": 100,
+            "ury": 48
+          }
+        ]
+      }
+    },
+    {
+      "idx": 1,
+      "predicted_label": false,
+      "pos": {
+        "ACT_1": [
+          {
+            "llx": 0,
+            "lly": 0,
+            "urx": 100,
+            "ury": 47
+          }
+        ]
+      }
+    },
+    {
+      "idx": 2,
+      "predicted_label": true,
+      "pos": {
+        "ACT_1": [
+          {
+            "llx": 0,
+            "lly": 0,
+            "urx": 100,
+            "ury": 48
+          },
+          {
+            "llx": 200,
+            "lly": 0,
+            "urx": 300,
+            "ury": 48
+          }
+        ]
+      }
+    },
+    {
+      "idx": 3,
+      "predicted_label": false,
+      "pos": {
+        "ACT_1": [
+          {
+            "llx": 0,
+            "lly": 0,
+            "urx": 100,
+            "ury": 48
+          },
+          {
+            "llx": 200,
+            "lly": 0,
+            "urx": 300,
+            "ury": 47
+          }
+        ]
+      }
+    },
+    {
+      "idx": 4,
+      "predicted_label": true,
+      "pos": {
+        "ACT_1": [
+          {
+            "llx": 0,
+            "lly": 0,
+            "urx": 48,
+            "ury": 100
+          }
+        ]
+      }
+    },
+    {
+      "idx": 5,
+      "predicted_label": false,
+      "pos": {
+        "ACT_1": [
+          {
+            "llx": 0,
+            "lly": 0,
+            "urx": 47,
+            "ury": 100
+          }
+        ]
+      }
+    },
+    {
+      "idx": 6,
+      "predicted_label": false,
+      "pos": {
+        "ACT_1": [
+          {
+            "llx": 0,
+            "lly": 0,
+            "urx": 48,
+            "ury": 100
+          },
+          {
+            "llx": 0,
+            "lly": 200,
+            "urx": 47,
+            "ury": 300
+          }
+        ]
+      }
+    },
+    {
+      "idx": 7,
+      "predicted_label": true,
+      "pos": {
+        "ACT_1": [
+          {
+            "llx": 0,
+            "lly": 0,
+            "urx": 48,
+            "ury": 100
+          },
+          {
+            "llx": 0,
+            "lly": 200,
+            "urx": 48,
+            "ury": 300
+          }
+        ]
+      }
+    }
+  ]
+}

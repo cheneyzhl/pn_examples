@@ -1,0 +1,39 @@
+{
+  "rule_name": "Metal3.1",
+  "rule_description": "Minimum width of metal3 = 0.07",
+  "rule_script": "INTERNAL metal3 < 0.07",
+  "calibre_skipped": true,
+  "sample_correct": null,
+  "sample_total": null,
+  "accuracy": null,
+  "details": [
+    {
+      "idx": 0,
+      "predicted_label": true,
+      "pos": {
+        "METAL3_1": [
+          {
+            "llx": 0,
+            "lly": 0,
+            "urx": 70,
+            "ury": 100
+          }
+        ]
+      }
+    },
+    {
+      "idx": 1,
+      "predicted_label": false,
+      "pos": {
+        "METAL3_1": [
+          {
+            "llx": 0,
+            "lly": 0,
+            "urx": 69,
+            "ury": 100
+          }
+        ]
+      }
+    }
+  ]
+}

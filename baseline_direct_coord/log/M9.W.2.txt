@@ -1,0 +1,81 @@
+======== 规则: M9.W.2 ========
+用户问题
+规则描述：Minimum width of M9, when its length >= 400 nm and < 1200 nm, is 60 nm.
+
+请根据上述 DRC 规则，系统性地生成覆盖所有边界情况（corner case）的 layout 正例与反例的矩形坐标。
+正例：满足该规则的 layout；反例：违反该规则的 layout。
+要求：先在心中分析出规则中涉及的所有条件变量，再将这些条件视为若干布尔变量，枚举它们的所有组合；对于每一种组合，至少给出 1 个恰好满足条件边界的正例和 1 个恰好违反边界的反例。
+在输出 JSON 前，请对每个正/反例重新用“单位约定 + 阈值判定”做自检，确保满足：正例=通过域，反例=违规域。自检失败则不要输出。请输出 JSON，且仅包含以下两个键：\n"examples": 数组，每个元素为一个 layout 例子。每个例子是一个对象，键为层名（带序号，如 NW_1, NW_2），值为矩形列表；每个矩形为 { \"llx\": 整数, \"lly\": 整数, \"urx\": 整数, \"ury\": 整数 }。\n"labels": 数组，与 examples 一一对应。true 表示该 layout 应通过 DRC（正例），false 表示应违反 DRC（反例）。\n本规则涉及的层名（不含序号）为: ['WELL', 'FIN', 'GATE', 'GCUT', 'ACTIVE', 'SDT', 'NSELECT', 'PSELECT', 'SLVT', 'LVT', 'SRAMDRC', 'SRAMVT', 'DUMMY', 'LIG', 'LISD', 'V0', 'M1', 'V1', 'M2', 'V2', 'M3', 'V3', 'M4', 'V4', 'M5', 'V5', 'M6', 'V6', 'M7', 'V7', 'M8', 'V8', 'M9', 'V9', 'PAD', 'BOUNDARY']。层名格式为 层名_序号，例如 NW_1, NW_2。\n坐标单位约定（必须遵守，避免单位错误）：你给出的 llx/lly/urx/ury 的数值单位是 nm（1 coordinate unit = 1 nm）。\n因此：长度（um）= (x_nm 或 y_nm) * 1e-3；面积（um^2）= (宽_nm * 高_nm) * 1e-6。\n请特别关注边界 / corner case：对于规则中的每一个条件变量（例如宽度、间距、面积等阈值条件），先分析有哪些布尔条件（如 >=T / >T / ==T / <T 等），再枚举这些条件的所有组合（若有 3 个独立条件，则有 2^3=8 种组合）。对于每一种组合，请至少给出 1 个恰好满足所有条件的正例（刚好通过边界），以及 1 个恰好违反该组合中至少一个关键条件的反例（刚好不通过）。
+
+大模型回答
+### 规则分析
+
+给定的DRC规则是：**Minimum width of M9, when its length >= 400 nm and < 1200 nm, is 60 nm**。
+
+#### 条件变量：
+1. **M9的长度（length）**：定义为矩形的较长边（假设length是矩形的x方向或y方向中较大的那个）。
+   - 条件1：length >= 400 nm
+   - 条件2：length < 1200 nm
+2. **M9的宽度（width）**：定义为矩形的较短边。
+   - 条件3：width >= 60 nm（当条件1和条件2同时满足时）
+
+#### 布尔条件组合：
+- 条件1和条件2是独立的，条件3依赖于条件1和条件2。
+- 因此，我们需要考虑以下组合：
+  1. length >= 400 nm && length < 1200 nm && width >= 60 nm（正例）
+  2. length >= 400 nm && length < 1200 nm && width < 60 nm（反例）
+  3. length < 400 nm（不触发规则，width可以是任意值，正例）
+  4. length >= 1200 nm（不触发规则，width可以是任意值，正例）
+
+#### 正例和反例设计：
+- 对于组合1（正例）：
+  - length刚好在[400, 1200)范围内，width刚好是60 nm。
+  - 例如：length = 400 nm, width = 60 nm。
+- 对于组合1（反例）：
+  - length刚好在[400, 1200)范围内，width刚好是59 nm（略小于60 nm）。
+  - 例如：length = 400 nm, width = 59 nm。
+- 对于组合3（正例）：
+  - length刚好是399 nm（略小于400 nm），width可以是任意值（例如10 nm）。
+- 对于组合4（正例）：
+  - length刚好是1200 nm，width可以是任意值（例如10 nm）。
+
+### 自检：
+- 正例1：length = 400 nm >= 400 nm && length = 400 nm < 1200 nm && width = 60 nm >= 60 nm → 通过。
+- 反例1：length = 400 nm >= 400 nm && length = 400 nm < 1200 nm && width = 59 nm < 60 nm → 违反。
+- 正例2：length = 399 nm < 400 nm → 不触发规则，通过。
+- 正例3：length = 1200 nm >= 1200 nm → 不触发规则，通过。
+
+### JSON输出：
+```json
+{
+  "examples": [
+    {
+      "M9_1": [
+        { "llx": 0, "lly": 0, "urx": 400, "ury": 60 }
+      ]
+    },
+    {
+      "M9_1": [
+        { "llx": 0, "lly": 0, "urx": 400, "ury": 59 }
+      ]
+    },
+    {
+      "M9_1": [
+        { "llx": 0, "lly": 0, "urx": 399, "ury": 10 }
+      ]
+    },
+    {
+      "M9_1": [
+        { "llx": 0, "lly": 0, "urx": 1200, "ury": 10 }
+      ]
+    }
+  ],
+  "labels": [
+    true,
+    false,
+    true,
+    true
+  ]
+}
+```
+

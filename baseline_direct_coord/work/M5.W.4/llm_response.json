@@ -1,0 +1,73 @@
+{
+  "raw_response": "根据给定的DRC规则\"M5 horizontal width, resulting in the polygon spanning an even number of minimum width routing tracks horizontally, is not allowed\"，我们需要分析并生成相应的正例和反例。\n\n### 规则分析：\n1. 该规则针对M5层的水平宽度\n2. 关键条件：M5层的水平宽度不能跨越偶数个最小布线轨道\n3. 假设最小布线轨道宽度为T（单位：nm）\n4. 需要满足：M5水平宽度 ≠ n×T，其中n为偶数\n\n### 条件变量：\n1. 水平宽度是否为最小布线轨道宽度的偶数倍\n\n### 边界情况枚举：\n1. 水平宽度为奇数倍最小布线轨道宽度（正例）\n2. 水平宽度为偶数倍最小布线轨道宽度（反例）\n\n### 单位约定：\n- 坐标单位为nm\n- 假设最小布线轨道宽度T=40nm（典型值，实际应根据工艺确定）\n\n```json\n{\n  \"examples\": [\n    {\n      \"M5_1\": [\n        {\n          \"llx\": 0,\n          \"lly\": 0,\n          \"urx\": 40,\n          \"ury\": 100\n        }\n      ]\n    },\n    {\n      \"M5_1\": [\n        {\n          \"llx\": 0,\n          \"lly\": 0,\n          \"urx\": 80,\n          \"ury\": 100\n        }\n      ]\n    },\n    {\n      \"M5_1\": [\n        {\n          \"llx\": 0,\n          \"lly\": 0,\n          \"urx\": 120,\n          \"ury\": 100\n        }\n      ]\n    },\n    {\n      \"M5_1\": [\n        {\n          \"llx\": 0,\n          \"lly\": 0,\n          \"urx\": 160,\n          \"ury\": 100\n        }\n      ]\n    },\n    {\n      \"M5_1\": [\n        {\n          \"llx\": 0,\n          \"lly\": 0,\n          \"urx\": 41,\n          \"ury\": 100\n        }\n      ]\n    },\n    {\n      \"M5_1\": [\n        {\n          \"llx\": 0,\n          \"lly\": 0,\n          \"urx\": 39,\n          \"ury\": 100\n        }\n      ]\n    }\n  ],\n  \"labels\": [\n    true,\n    false,\n    true,\n    false,\n    true,\n    true\n  ]\n}\n```\n\n### 自检说明：\n1. 第一个例子：宽度=40nm（1×T，奇数倍）→ 正例\n2. 第二个例子：宽度=80nm（2×T，偶数倍）→ 反例\n3. 第三个例子：宽度=120nm（3×T，奇数倍）→ 正例\n4. 第四个例子：宽度=160nm（4×T，偶数倍）→ 反例\n5. 第五个例子：宽度=41nm（非整数倍）→ 正例\n6. 第六个例子：宽度=39nm（非整数倍）→ 正例\n\n所有例子都满足：正例=通过域，反例=违规域。",
+  "examples": [
+    {
+      "M5_1": [
+        {
+          "llx": 0,
+          "lly": 0,
+          "urx": 40,
+          "ury": 100
+        }
+      ]
+    },
+    {
+      "M5_1": [
+        {
+          "llx": 0,
+          "lly": 0,
+          "urx": 80,
+          "ury": 100
+        }
+      ]
+    },
+    {
+      "M5_1": [
+        {
+          "llx": 0,
+          "lly": 0,
+          "urx": 120,
+          "ury": 100
+        }
+      ]
+    },
+    {
+      "M5_1": [
+        {
+          "llx": 0,
+          "lly": 0,
+          "urx": 160,
+          "ury": 100
+        }
+      ]
+    },
+    {
+      "M5_1": [
+        {
+          "llx": 0,
+          "lly": 0,
+          "urx": 41,
+          "ury": 100
+        }
+      ]
+    },
+    {
+      "M5_1": [
+        {
+          "llx": 0,
+          "lly": 0,
+          "urx": 39,
+          "ury": 100
+        }
+      ]
+    }
+  ],
+  "labels": [
+    true,
+    false,
+    true,
+    false,
+    true,
+    true
+  ]
+}

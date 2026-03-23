@@ -173,6 +173,69 @@ def _ensure_full_eval_format(
     return _enrich_eval_json(eval_data, rule_name, data_name, baseline_rule_result, rule_generated_scripts_dir, new_datasets_dir)
 
 
+CHECKPOINT_VERSION = 1
+
+
+def _checkpoint_path(output_rule_dir: str) -> str:
+    return os.path.join(os.path.abspath(output_rule_dir), "eval.checkpoint.json")
+
+
+def _load_corner_checkpoint(path: str) -> Optional[Dict[str, Any]]:
+    if not os.path.isfile(path):
+        return None
+    try:
+        return _load_json(path)
+    except Exception:
+        return None
+
+
+def _checkpoint_compatible(
+    ckpt: Dict[str, Any],
+    rule_name: str,
+    data_name: str,
+    idx_list: List[int],
+    corner_ids: List[str],
+) -> bool:
+    if not isinstance(ckpt, dict):
+        return False
+    if ckpt.get("version") != CHECKPOINT_VERSION:
+        return False
+    return (
+        ckpt.get("rule_name") == rule_name
+        and ckpt.get("data_name") == data_name
+        and ckpt.get("idx_list") == idx_list
+        and ckpt.get("corner_ids") == corner_ids
+    )
+
+
+def _save_corner_checkpoint(
+    path: str,
+    rule_name: str,
+    data_name: str,
+    idx_list: List[int],
+    corner_ids: List[str],
+    per_corner: List[Dict[str, Any]],
+) -> None:
+    payload = {
+        "version": CHECKPOINT_VERSION,
+        "rule_name": rule_name,
+        "data_name": data_name,
+        "idx_list": idx_list,
+        "corner_ids": corner_ids,
+        "per_corner": per_corner,
+    }
+    with open(path, "w", encoding="utf-8") as f:
+        json.dump(payload, f, ensure_ascii=False, indent=2)
+
+
+def _remove_checkpoint(path: str) -> None:
+    try:
+        if os.path.isfile(path):
+            os.remove(path)
+    except OSError:
+        pass
+
+
 def run_detection_for_rule(
     rule_name: str,
     data_name: str,
@@ -184,6 +247,7 @@ def run_detection_for_rule(
     new_datasets_dir: str = "",
     drc_report_name: str = "drc_report",
     skip_existing: bool = False,
+    resume_corner_checkpoint: bool = False,
 ) -> Dict[str, Any]:
     """
     仅支持从 baseline summary/result 导入正反例的 pos 与 predicted_label，在本项目内仿 baseline_direct_coord
@@ -209,6 +273,10 @@ def run_detection_for_rule(
     corner_ids = _get_corner_ids(rule_generated_scripts_dir)
     if not corner_ids:
         raise ValueError(f"No corner_* dirs found for rule={rule_name} under {rule_generated_scripts_dir}")
+
+    ckpt_path = _checkpoint_path(output_rule_dir)
+    if not resume_corner_checkpoint:
+        _remove_checkpoint(ckpt_path)
 
     # 读取 baseline 样本与标签（仅支持从输入获取 pos 与 predicted_label，不读取 baseline work 目录）
     if isinstance(baseline_rule_result, str):
@@ -249,12 +317,39 @@ def run_detection_for_rule(
         generate_layout(pos_by_idx[idx], layer_dict, gds_path)
 
     per_corner: List[Dict[str, Any]] = []
+    completed_from_ckpt: Dict[str, Dict[str, Any]] = {}
+    if resume_corner_checkpoint:
+        ckpt = _load_corner_checkpoint(ckpt_path)
+        if ckpt and _checkpoint_compatible(ckpt, rule_name, data_name, idx_list, corner_ids):
+            for pc in ckpt.get("per_corner", []):
+                cid = pc.get("corner_id")
+                if isinstance(cid, str) and cid:
+                    samples = pc.get("samples", [])
+                    if isinstance(samples, list) and len(samples) == len(idx_list):
+                        completed_from_ckpt[cid] = pc
+        elif ckpt is not None and os.path.isfile(ckpt_path):
+            # 与当前任务不一致的旧断点，避免误续
+            _remove_checkpoint(ckpt_path)
+        if completed_from_ckpt:
+            print(
+                f"[resume] {rule_name}: 从断点恢复 {len(completed_from_ckpt)}/{len(corner_ids)} corners，"
+                f"将继续剩余 corner"
+            )
 
     # 对每个 corner：
     # 1) patch base_rule_template -> corner_rule_template.rul
     # 2) 对每个样本：edit_script_path 设定 LAYOUT PATH -> example_{idx}.rul，然后跑 calibre，读 drc_report，和 predicted_label 比较
     for corner_id in corner_ids:
         corner_script_dir = os.path.join(rule_generated_scripts_dir, corner_id)
+        if corner_id in completed_from_ckpt:
+            try:
+                corner_script_body = _read_corner_script_body(corner_script_dir)
+                perturbed_scripts[corner_id] = corner_script_body
+            except Exception:
+                pass
+            per_corner.append(completed_from_ckpt[corner_id])
+            continue
+
         corner_dir = os.path.join(rule_work_dir, corner_id)
         corner_dir_abs = os.path.abspath(os.path.normpath(corner_dir))
         os.makedirs(corner_dir_abs, exist_ok=True)
@@ -346,6 +441,12 @@ def run_detection_for_rule(
                 "samples": corner_sample_results,
             }
         )
+        if resume_corner_checkpoint:
+            _save_corner_checkpoint(
+                ckpt_path, rule_name, data_name, idx_list, corner_ids, per_corner
+            )
+
+    _remove_checkpoint(ckpt_path)
 
     # 以规则为单位：仅对已知 script_expected_correct 的 corner 做 coverage 判定
     corners_with_expected = [c for c in per_corner if c.get("script_expected_correct") is not None]
@@ -397,6 +498,37 @@ def _build_rule_to_data_name_map(new_datasets_dir: str) -> Dict[str, str]:
     return mapping
 
 
+def _write_summary_json(
+    output_dir: str,
+    args: Any,
+    results: List[Dict[str, Any]],
+    correct_by_judge: int,
+    match_passed: int,
+    detect_passed: int,
+    skipped_rules: Optional[List[Dict[str, Any]]] = None,
+) -> None:
+    """每条规则完成后写入 summary.json，便于中断后续跑仍能保留已完成的汇总。"""
+    total = len(results)
+    accuracy = (correct_by_judge / total) if total > 0 else 0.0
+    accuracy_match = (match_passed / total) if total > 0 else 0.0
+    accuracy_detect = (detect_passed / total) if total > 0 else 0.0
+    summary = {
+        "data_name": args.data_name,
+        "judge_mode": args.judge_mode,
+        "total_rules_evaluated": total,
+        "passed_rules_by_judge_mode": correct_by_judge,
+        "boundary_coverage_accuracy": accuracy,
+        "boundary_coverage_accuracy_match": accuracy_match,
+        "boundary_coverage_accuracy_detect": accuracy_detect,
+        "details": results,
+        "skipped_rules": skipped_rules or [],
+        "skipped_rule_count": len(skipped_rules or []),
+    }
+    path = os.path.join(output_dir, "summary.json")
+    with open(path, "w", encoding="utf-8") as f:
+        json.dump(summary, f, ensure_ascii=False, indent=2)
+
+
 def main():
     parser = argparse.ArgumentParser(description="Check boundary coverage using baseline pos/labels and perturbed DRC scripts.")
     parser.add_argument("--data_name", type=str, choices=["freePDK15", "asap7", "freepdk-45nm"], default="",
@@ -409,15 +541,35 @@ def main():
     parser.add_argument("--judge_mode", type=str, choices=["detect", "match"], default="match")
     parser.add_argument("--drc_report_name", type=str, default="drc_report")
     parser.add_argument("--max_rules", type=int, default=0, help="0 means all")
-    parser.add_argument("--skip_existing", action="store_true", help="Skip if outputs exist.")
+    parser.add_argument("--skip_existing", action="store_true", help="若 result/<rule>/eval.json 已存在则跳过该规则（仅规则级）。")
+    parser.add_argument(
+        "--resume",
+        action="store_true",
+        help="断点续测：等价于 --skip_existing，并在单条规则内用 eval.checkpoint.json 续跑未完成的 corner。",
+    )
+    parser.add_argument(
+        "--skip_rules_with_missing_pos",
+        action="store_true",
+        default=True,
+        help="当 baseline 样本缺失 pos 时，跳过该规则并继续后续规则（默认开启）。",
+    )
+    parser.add_argument(
+        "--fail_on_missing_pos",
+        action="store_true",
+        help="与 --skip_rules_with_missing_pos 相反：遇到缺失 pos 立即报错退出。",
+    )
     args = parser.parse_args()
 
     from config import BASELINE_RESULT_DIR, BASE_RUL_PATHS, NEW_DATASETS_DIR
+
+    if args.resume:
+        args.skip_existing = True
 
     output_dir = args.output_dir
     os.makedirs(output_dir, exist_ok=True)
 
     results: List[Dict[str, Any]] = []
+    skipped_rules: List[Dict[str, Any]] = []
     correct_by_judge = 0
     match_passed = 0
     detect_passed = 0
@@ -457,6 +609,7 @@ def main():
             skip = args.skip_existing and os.path.isfile(out_rule_json)
             print(f"[{'skip' if skip else 'run'}] ({i}/{len(rule_tasks)}) {rule_name}")
             if skip:
+                _remove_checkpoint(_checkpoint_path(out_rule_dir))
                 eval_json = _load_json(out_rule_json)
                 eval_json = _enrich_eval_json(
                     eval_json, rule_name, data_name, baseline_rule_result,
@@ -467,22 +620,39 @@ def main():
                     json.dump(eval_json, f, ensure_ascii=False, indent=2)
                 results.append(eval_json)
             if not skip:
-                res = run_detection_for_rule(
-                    rule_name=rule_name,
-                    data_name=data_name,
-                    base_rul_path=base_rul_path,
-                    baseline_rule_result=baseline_rule_result,
-                    rule_generated_scripts_dir=rule_generated_scripts_dir,
-                    output_rule_dir=out_rule_dir,
-                    judge_mode=args.judge_mode,
-                    new_datasets_dir=NEW_DATASETS_DIR,
-                    drc_report_name=args.drc_report_name,
-                    skip_existing=args.skip_existing,
-                )
-                os.makedirs(out_rule_dir, exist_ok=True)
-                with open(out_rule_json, "w", encoding="utf-8") as f:
-                    json.dump(res, f, ensure_ascii=False, indent=2)
-                results.append(res)
+                try:
+                    res = run_detection_for_rule(
+                        rule_name=rule_name,
+                        data_name=data_name,
+                        base_rul_path=base_rul_path,
+                        baseline_rule_result=baseline_rule_result,
+                        rule_generated_scripts_dir=rule_generated_scripts_dir,
+                        output_rule_dir=out_rule_dir,
+                        judge_mode=args.judge_mode,
+                        new_datasets_dir=NEW_DATASETS_DIR,
+                        drc_report_name=args.drc_report_name,
+                        skip_existing=args.skip_existing,
+                        resume_corner_checkpoint=args.resume,
+                    )
+                    os.makedirs(out_rule_dir, exist_ok=True)
+                    with open(out_rule_json, "w", encoding="utf-8") as f:
+                        json.dump(res, f, ensure_ascii=False, indent=2)
+                    results.append(res)
+                except ValueError as e:
+                    msg = str(e)
+                    is_missing_pos = "missing pos at idx" in msg
+                    if is_missing_pos and args.skip_rules_with_missing_pos and not args.fail_on_missing_pos:
+                        print(f"[WARN] skip {rule_name}: {msg}")
+                        skipped_rules.append(
+                            {
+                                "rule_name": rule_name,
+                                "data_name": data_name,
+                                "reason": msg,
+                                "type": "missing_pos",
+                            }
+                        )
+                    else:
+                        raise
 
             if results:
                 last = results[-1]
@@ -492,6 +662,9 @@ def main():
                     match_passed += 1
                 if last.get("all_corners_detect"):
                     detect_passed += 1
+            _write_summary_json(
+                output_dir, args, results, correct_by_judge, match_passed, detect_passed, skipped_rules
+            )
 
     else:
         data_name = args.data_name or "freePDK15"
@@ -525,6 +698,7 @@ def main():
             skip = args.skip_existing and os.path.isfile(out_rule_json)
             print(f"[{'skip' if skip else 'run'}] {rule_name}")
             if skip:
+                _remove_checkpoint(_checkpoint_path(out_rule_dir))
                 eval_json = _load_json(out_rule_json)
                 eval_json = _enrich_eval_json(
                     eval_json, rule_name, data_name, baseline_path,
@@ -535,22 +709,39 @@ def main():
                     json.dump(eval_json, f, ensure_ascii=False, indent=2)
                 results.append(eval_json)
             else:
-                res = run_detection_for_rule(
-                    rule_name=rule_name,
-                    data_name=data_name,
-                    base_rul_path=base_rul_path,
-                    baseline_rule_result=baseline_path,
-                    rule_generated_scripts_dir=rule_generated_scripts_dir,
-                    output_rule_dir=out_rule_dir,
-                    judge_mode=args.judge_mode,
-                    new_datasets_dir=NEW_DATASETS_DIR,
-                    drc_report_name=args.drc_report_name,
-                    skip_existing=args.skip_existing,
-                )
-                os.makedirs(out_rule_dir, exist_ok=True)
-                with open(out_rule_json, "w", encoding="utf-8") as f:
-                    json.dump(res, f, ensure_ascii=False, indent=2)
-                results.append(res)
+                try:
+                    res = run_detection_for_rule(
+                        rule_name=rule_name,
+                        data_name=data_name,
+                        base_rul_path=base_rul_path,
+                        baseline_rule_result=baseline_path,
+                        rule_generated_scripts_dir=rule_generated_scripts_dir,
+                        output_rule_dir=out_rule_dir,
+                        judge_mode=args.judge_mode,
+                        new_datasets_dir=NEW_DATASETS_DIR,
+                        drc_report_name=args.drc_report_name,
+                        skip_existing=args.skip_existing,
+                        resume_corner_checkpoint=args.resume,
+                    )
+                    os.makedirs(out_rule_dir, exist_ok=True)
+                    with open(out_rule_json, "w", encoding="utf-8") as f:
+                        json.dump(res, f, ensure_ascii=False, indent=2)
+                    results.append(res)
+                except ValueError as e:
+                    msg = str(e)
+                    is_missing_pos = "missing pos at idx" in msg
+                    if is_missing_pos and args.skip_rules_with_missing_pos and not args.fail_on_missing_pos:
+                        print(f"[WARN] skip {rule_name}: {msg}")
+                        skipped_rules.append(
+                            {
+                                "rule_name": rule_name,
+                                "data_name": data_name,
+                                "reason": msg,
+                                "type": "missing_pos",
+                            }
+                        )
+                    else:
+                        raise
 
             if results:
                 last = results[-1]
@@ -560,26 +751,15 @@ def main():
                     match_passed += 1
                 if last.get("all_corners_detect"):
                     detect_passed += 1
+            _write_summary_json(
+                output_dir, args, results, correct_by_judge, match_passed, detect_passed, skipped_rules
+            )
 
     total = len(results)
     accuracy = (correct_by_judge / total) if total > 0 else 0.0
-    accuracy_match = (match_passed / total) if total > 0 else 0.0
-    accuracy_detect = (detect_passed / total) if total > 0 else 0.0
-
-    summary = {
-        "data_name": args.data_name,
-        "judge_mode": args.judge_mode,
-        "total_rules_evaluated": total,
-        "passed_rules_by_judge_mode": correct_by_judge,
-        "boundary_coverage_accuracy": accuracy,
-        "boundary_coverage_accuracy_match": accuracy_match,
-        "boundary_coverage_accuracy_detect": accuracy_detect,
-        "details": results,
-    }
-
-    with open(os.path.join(output_dir, "summary.json"), "w", encoding="utf-8") as f:
-        json.dump(summary, f, ensure_ascii=False, indent=2)
-
+    _write_summary_json(
+        output_dir, args, results, correct_by_judge, match_passed, detect_passed, skipped_rules
+    )
     print(f"[OK] Completed. accuracy={accuracy} ({correct_by_judge}/{total})")
 
 

@@ -1,0 +1,6 @@
+TOPCELL 5000
+RULE_GATE008AB
+0 0 3 Mar 23 01:08:23 2026                     
+Rule File Pathname: /share/home/zenghuanlong/pn_examples/boundary_coverage_eval/eval_results/result/work/freePDK15/RULE_GATE008AB/corner_000/example_3.rul
+RULE_GATE008AB  
+(gateAB not gatec) maximum distance to neighbor shape 236nm

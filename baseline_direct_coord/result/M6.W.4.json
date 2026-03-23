@@ -1,0 +1,95 @@
+{
+  "rule_name": "M6.W.4",
+  "rule_description": "M6 vertical width, resulting in the polygon spanning an even number of minimum width routing tracks vertically, is not allowed.",
+  "rule_script": "INTERNAL M6_HE ==  3*VAR_M6_1X REGION OPPOSITE PARALLEL ONLY PROJ > 0 \nINTERNAL M6_HE ==  7*VAR_M6_1X REGION OPPOSITE PARALLEL ONLY PROJ > 0 \nINTERNAL M6_HE == 11*VAR_M6_1X REGION OPPOSITE PARALLEL ONLY PROJ > 0 \nINTERNAL M6_HE == 15*VAR_M6_1X REGION OPPOSITE PARALLEL ONLY PROJ > 0 \nINTERNAL M6_HE == 19*VAR_M6_1X REGION OPPOSITE PARALLEL ONLY PROJ > 0",
+  "calibre_skipped": true,
+  "sample_correct": null,
+  "sample_total": null,
+  "accuracy": null,
+  "details": [
+    {
+      "idx": 0,
+      "predicted_label": true,
+      "pos": {
+        "M6_1": [
+          {
+            "llx": 0,
+            "lly": 0,
+            "urx": 100,
+            "ury": 200
+          }
+        ]
+      }
+    },
+    {
+      "idx": 1,
+      "predicted_label": false,
+      "pos": {
+        "M6_1": [
+          {
+            "llx": 0,
+            "lly": 0,
+            "urx": 100,
+            "ury": 201
+          }
+        ]
+      }
+    },
+    {
+      "idx": 2,
+      "predicted_label": false,
+      "pos": {
+        "M6_1": [
+          {
+            "llx": 0,
+            "lly": 0,
+            "urx": 100,
+            "ury": 199
+          }
+        ]
+      }
+    },
+    {
+      "idx": 3,
+      "predicted_label": true,
+      "pos": {
+        "M6_1": [
+          {
+            "llx": 0,
+            "lly": 0,
+            "urx": 100,
+            "ury": 400
+          }
+        ]
+      }
+    },
+    {
+      "idx": 4,
+      "predicted_label": false,
+      "pos": {
+        "M6_1": [
+          {
+            "llx": 0,
+            "lly": 0,
+            "urx": 100,
+            "ury": 401
+          }
+        ]
+      }
+    },
+    {
+      "idx": 5,
+      "predicted_label": false,
+      "pos": {
+        "M6_1": [
+          {
+            "llx": 0,
+            "lly": 0,
+            "urx": 100,
+            "ury": 399
+          }
+        ]
+      }
+    }
+  ]
+}

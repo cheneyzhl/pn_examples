@@ -1,0 +1,143 @@
+{
+  "rule_name": "RULE_GATE007C",
+  "rule_description": "GATEC shape bottom or top must be aligned if distance < 192nm",
+  "rule_script": "ext_region = EXT GATEC < 0.192 REGION \nangled_edges = ANGLE ext_region >0 <90 \nangled_regions = ext_region WITH EDGE angled_edges \nGATEC INTERACT angled_regions",
+  "calibre_skipped": true,
+  "sample_correct": null,
+  "sample_total": null,
+  "accuracy": null,
+  "details": [
+    {
+      "idx": 0,
+      "predicted_label": true,
+      "pos": {
+        "GATEC_1": [
+          {
+            "llx": 0,
+            "lly": 0,
+            "urx": 100,
+            "ury": 50
+          }
+        ],
+        "GATEC_2": [
+          {
+            "llx": 0,
+            "lly": 50,
+            "urx": 100,
+            "ury": 100
+          }
+        ]
+      }
+    },
+    {
+      "idx": 1,
+      "predicted_label": false,
+      "pos": {
+        "GATEC_1": [
+          {
+            "llx": 0,
+            "lly": 0,
+            "urx": 100,
+            "ury": 50
+          }
+        ],
+        "GATEC_2": [
+          {
+            "llx": 0,
+            "lly": 191,
+            "urx": 100,
+            "ury": 241
+          }
+        ]
+      }
+    },
+    {
+      "idx": 2,
+      "predicted_label": true,
+      "pos": {
+        "GATEC_1": [
+          {
+            "llx": 0,
+            "lly": 0,
+            "urx": 100,
+            "ury": 50
+          }
+        ],
+        "GATEC_2": [
+          {
+            "llx": 0,
+            "lly": 192,
+            "urx": 100,
+            "ury": 242
+          }
+        ]
+      }
+    },
+    {
+      "idx": 3,
+      "predicted_label": true,
+      "pos": {
+        "GATEC_1": [
+          {
+            "llx": 0,
+            "lly": 0,
+            "urx": 100,
+            "ury": 50
+          }
+        ],
+        "GATEC_2": [
+          {
+            "llx": 50,
+            "lly": 50,
+            "urx": 150,
+            "ury": 100
+          }
+        ]
+      }
+    },
+    {
+      "idx": 4,
+      "predicted_label": false,
+      "pos": {
+        "GATEC_1": [
+          {
+            "llx": 0,
+            "lly": 0,
+            "urx": 100,
+            "ury": 50
+          }
+        ],
+        "GATEC_2": [
+          {
+            "llx": 50,
+            "lly": 191,
+            "urx": 150,
+            "ury": 241
+          }
+        ]
+      }
+    },
+    {
+      "idx": 5,
+      "predicted_label": true,
+      "pos": {
+        "GATEC_1": [
+          {
+            "llx": 0,
+            "lly": 0,
+            "urx": 100,
+            "ury": 50
+          }
+        ],
+        "GATEC_2": [
+          {
+            "llx": 50,
+            "lly": 192,
+            "urx": 150,
+            "ury": 242
+          }
+        ]
+      }
+    }
+  ]
+}

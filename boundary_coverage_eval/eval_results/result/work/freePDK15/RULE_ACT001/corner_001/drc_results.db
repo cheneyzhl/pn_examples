@@ -1,0 +1,6 @@
+TOPCELL 5000
+RULE_ACT001
+0 0 3 Mar 21 11:55:10 2026                     
+Rule File Pathname: /share/home/zenghuanlong/pn_examples/boundary_coverage_eval/eval_results/result/work/freePDK15/RULE_ACT001/corner_001/example_7.rul
+RULE_ACT001
+Minimum vertical width of ACT layer is 48nm

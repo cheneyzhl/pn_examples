@@ -2,22 +2,21 @@
   "rule_name": "RULE_NW003",
   "rule_description": "Minimum width of NW is 160nm",
   "rule_script": "INTERNAL NW < 0.160",
-  "sample_correct": 6,
-  "sample_total": 6,
-  "accuracy": 1.0,
+  "calibre_skipped": true,
+  "sample_correct": null,
+  "sample_total": null,
+  "accuracy": null,
   "details": [
     {
       "idx": 0,
       "predicted_label": true,
-      "calibre_label": true,
-      "match": true,
       "pos": {
         "NW_1": [
           {
             "llx": 0,
             "lly": 0,
             "urx": 160,
-            "ury": 200
+            "ury": 100
           }
         ]
       }
@@ -25,15 +24,13 @@
     {
       "idx": 1,
       "predicted_label": false,
-      "calibre_label": false,
-      "match": true,
       "pos": {
         "NW_1": [
           {
             "llx": 0,
             "lly": 0,
             "urx": 159,
-            "ury": 200
+            "ury": 100
           }
         ]
       }
@@ -41,15 +38,21 @@
     {
       "idx": 2,
       "predicted_label": true,
-      "calibre_label": true,
-      "match": true,
       "pos": {
         "NW_1": [
           {
             "llx": 0,
             "lly": 0,
             "urx": 160,
-            "ury": 160
+            "ury": 100
+          }
+        ],
+        "NW_2": [
+          {
+            "llx": 200,
+            "lly": 0,
+            "urx": 360,
+            "ury": 100
           }
         ]
       }
@@ -57,59 +60,21 @@
     {
       "idx": 3,
       "predicted_label": false,
-      "calibre_label": false,
-      "match": true,
-      "pos": {
-        "NW_1": [
-          {
-            "llx": 0,
-            "lly": 0,
-            "urx": 159,
-            "ury": 159
-          }
-        ]
-      }
-    },
-    {
-      "idx": 4,
-      "predicted_label": true,
-      "calibre_label": true,
-      "match": true,
       "pos": {
         "NW_1": [
           {
             "llx": 0,
             "lly": 0,
             "urx": 160,
-            "ury": 160
-          },
-          {
-            "llx": 200,
-            "lly": 0,
-            "urx": 360,
-            "ury": 160
+            "ury": 100
           }
-        ]
-      }
-    },
-    {
-      "idx": 5,
-      "predicted_label": false,
-      "calibre_label": false,
-      "match": true,
-      "pos": {
-        "NW_1": [
-          {
-            "llx": 0,
-            "lly": 0,
-            "urx": 160,
-            "ury": 160
-          },
+        ],
+        "NW_2": [
           {
             "llx": 200,
             "lly": 0,
             "urx": 359,
-            "ury": 160
+            "ury": 100
           }
         ]
       }

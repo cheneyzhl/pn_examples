@@ -1,0 +1,6 @@
+TOPCELL 5000
+RULE_GATE001A
+0 0 3 Mar 22 07:59:31 2026                     
+Rule File Pathname: /share/home/zenghuanlong/pn_examples/boundary_coverage_eval/eval_results/result/work/freePDK15/RULE_GATE001A/corner_080/example_6.rul
+RULE_GATE001A
+Exact horizontal width of GATE [A] is 20, 16 or 14 nm

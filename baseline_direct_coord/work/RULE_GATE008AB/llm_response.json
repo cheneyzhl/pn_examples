@@ -1,0 +1,99 @@
+{
+  "raw_response": "### 规则分析\n\n首先，我们需要理解给定的DRC规则：`(gateAB not gatec) maximum distance to neighbor shape 236nm`。这条规则可以分解为以下几个部分：\n\n1. **gateAB not gatec**：这意味着我们关注的是`GATEAB`层上的图形，但不包括与`GATEC`层重叠的部分。换句话说，`GATEAB`图形必须不与`GATEC`图形重叠。\n2. **maximum distance to neighbor shape 236nm**：`GATEAB`图形（不包括与`GATEC`重叠的部分）到相邻图形的最大距离不能超过236nm。这里的“相邻图形”可以理解为其他层的图形（如`ACT`, `VTH`, `VTL`等）。\n\n### 条件变量\n\n根据规则，我们可以提取以下条件变量：\n\n1. `GATEAB`与`GATEC`是否重叠：\n   - `overlap`: `GATEAB`与`GATEC`重叠（`True`）或不重叠（`False`）。\n2. `GATEAB`（非重叠部分）到相邻图形的距离：\n   - `distance`: 距离是否满足 ≤236nm（`True`）或 >236nm（`False`）。\n\n因此，组合如下：\n1. `overlap=False`, `distance=True`：`GATEAB`不与`GATEC`重叠，且到相邻图形的距离 ≤236nm（正例）。\n2. `overlap=False`, `distance=False`：`GATEAB`不与`GATEC`重叠，但到相邻图形的距离 >236nm（反例）。\n3. `overlap=True`, `distance=True`：`GATEAB`与`GATEC`重叠，且到相邻图形的距离 ≤236nm（反例，因为规则要求`GATEAB not gatec`）。\n4. `overlap=True`, `distance=False`：`GATEAB`与`GATEC`重叠，且到相邻图形的距离 >236nm（反例）。\n\n### 正例和反例设计\n\n#### 正例：`overlap=False`, `distance=True`\n- `GATEAB`不与`GATEC`重叠，且到相邻图形的距离刚好为236nm。\n- 示例：\n  - `GATEAB_1`: { \"llx\": 0, \"lly\": 0, \"urx\": 100, \"ury\": 100 }\n  - `ACT_1`: { \"llx\": 336, \"lly\": 0, \"urx\": 436, \"ury\": 100 } （距离=336-100=236nm）\n  - 无`GATEC`层。\n\n#### 反例：`overlap=False`, `distance=False`\n- `GATEAB`不与`GATEC`重叠，但到相邻图形的距离为237nm（>236nm）。\n- 示例：\n  - `GATEAB_1`: { \"llx\": 0, \"lly\": 0, \"urx\": 100, \"ury\": 100 }\n  - `ACT_1`: { \"llx\": 337, \"lly\": 0, \"urx\": 437, \"ury\": 100 } （距离=337-100=237nm）\n  - 无`GATEC`层。\n\n#### 反例：`overlap=True`, `distance=True`\n- `GATEAB`与`GATEC`重叠，且到相邻图形的距离 ≤236nm。\n- 示例：\n  - `GATEAB_1`: { \"llx\": 0, \"lly\": 0, \"urx\": 100, \"ury\": 100 }\n  - `GATEC_1`: { \"llx\": 50, \"lly\": 50, \"urx\": 150, \"ury\": 150 } （重叠）\n  - `ACT_1`: { \"llx\": 336, \"lly\": 0, \"urx\": 436, \"ury\": 100 } （距离=336-100=236nm）\n\n#### 反例：`overlap=True`, `distance=False`\n- `GATEAB`与`GATEC`重叠，且到相邻图形的距离 >236nm。\n- 示例：\n  - `GATEAB_1`: { \"llx\": 0, \"lly\": 0, \"urx\": 100, \"ury\": 100 }\n  - `GATEC_1`: { \"llx\": 50, \"lly\": 50, \"urx\": 150, \"ury\": 150 } （重叠）\n  - `ACT_1`: { \"llx\": 337, \"lly\": 0, \"urx\": 437, \"ury\": 100 } （距离=337-100=237nm）\n\n### 自检\n- 正例：\n  - `GATEAB`不与`GATEC`重叠：满足。\n  - 到`ACT`的距离=236nm：满足。\n- 反例1：\n  - `GATEAB`不与`GATEC`重叠：满足。\n  - 到`ACT`的距离=237nm > 236nm：违反。\n- 反例2：\n  - `GATEAB`与`GATEC`重叠：违反`not gatec`条件。\n  - 到`ACT`的距离=236nm：不相关（因为已经违反`not gatec`）。\n- 反例3：\n  - `GATEAB`与`GATEC`重叠：违反`not gatec`条件。\n  - 到`ACT`的距离=237nm > 236nm：不相关（因为已经违反`not gatec`）。\n\n### JSON输出\n```json\n{\n  \"examples\": [\n    {\n      \"GATEAB_1\": [{ \"llx\": 0, \"lly\": 0, \"urx\": 100, \"ury\": 100 }],\n      \"ACT_1\": [{ \"llx\": 336, \"lly\": 0, \"urx\": 436, \"ury\": 100 }]\n    },\n    {\n      \"GATEAB_1\": [{ \"llx\": 0, \"lly\": 0, \"urx\": 100, \"ury\": 100 }],\n      \"ACT_1\": [{ \"llx\": 337, \"lly\": 0, \"urx\": 437, \"ury\": 100 }]\n    },\n    {\n      \"GATEAB_1\": [{ \"llx\": 0, \"lly\": 0, \"urx\": 100, \"ury\": 100 }],\n      \"GATEC_1\": [{ \"llx\": 50, \"lly\": 50, \"urx\": 150, \"ury\": 150 }],\n      \"ACT_1\": [{ \"llx\": 336, \"lly\": 0, \"urx\": 436, \"ury\": 100 }]\n    },\n    {\n      \"GATEAB_1\": [{ \"llx\": 0, \"lly\": 0, \"urx\": 100, \"ury\": 100 }],\n      \"GATEC_1\": [{ \"llx\": 50, \"lly\": 50, \"urx\": 150, \"ury\": 150 }],\n      \"ACT_1\": [{ \"llx\": 337, \"lly\": 0, \"urx\": 437, \"ury\": 100 }]\n    }\n  ],\n  \"labels\": [true, false, false, false]\n}\n```",
+  "examples": [
+    {
+      "GATEAB_1": [
+        {
+          "llx": 0,
+          "lly": 0,
+          "urx": 100,
+          "ury": 100
+        }
+      ],
+      "ACT_1": [
+        {
+          "llx": 336,
+          "lly": 0,
+          "urx": 436,
+          "ury": 100
+        }
+      ]
+    },
+    {
+      "GATEAB_1": [
+        {
+          "llx": 0,
+          "lly": 0,
+          "urx": 100,
+          "ury": 100
+        }
+      ],
+      "ACT_1": [
+        {
+          "llx": 337,
+          "lly": 0,
+          "urx": 437,
+          "ury": 100
+        }
+      ]
+    },
+    {
+      "GATEAB_1": [
+        {
+          "llx": 0,
+          "lly": 0,
+          "urx": 100,
+          "ury": 100
+        }
+      ],
+      "GATEC_1": [
+        {
+          "llx": 50,
+          "lly": 50,
+          "urx": 150,
+          "ury": 150
+        }
+      ],
+      "ACT_1": [
+        {
+          "llx": 336,
+          "lly": 0,
+          "urx": 436,
+          "ury": 100
+        }
+      ]
+    },
+    {
+      "GATEAB_1": [
+        {
+          "llx": 0,
+          "lly": 0,
+          "urx": 100,
+          "ury": 100
+        }
+      ],
+      "GATEC_1": [
+        {
+          "llx": 50,
+          "lly": 50,
+          "urx": 150,
+          "ury": 150
+        }
+      ],
+      "ACT_1": [
+        {
+          "llx": 337,
+          "lly": 0,
+          "urx": 437,
+          "ury": 100
+        }
+      ]
+    }
+  ],
+  "labels": [
+    true,
+    false,
+    false,
+    false
+  ]
+}
