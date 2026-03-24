@@ -1,9 +1,123 @@
 {
   "rule_name": "RULE_M1027B",
   "rule_description": "M1B minimum area for rectangular shape is 0.0024um2",
-  "rule_script": "rect_M1B = RECTANGLE M1B\nAREA rect_M1B < 0.0024",
-  "sample_correct": 0,
-  "sample_total": 0,
-  "accuracy": 0.0,
-  "message": "no examples from agent"
+  "rule_script": "rect_M1B = RECTANGLE M1B \nAREA rect_M1B < 0.0024",
+  "calibre_skipped": true,
+  "sample_correct": null,
+  "sample_total": null,
+  "accuracy": null,
+  "details": [
+    {
+      "idx": 0,
+      "predicted_label": true,
+      "pos": {
+        "M1B_1": [
+          {
+            "llx": 0,
+            "lly": 0,
+            "urx": 60,
+            "ury": 40
+          }
+        ]
+      }
+    },
+    {
+      "idx": 1,
+      "predicted_label": false,
+      "pos": {
+        "M1B_1": [
+          {
+            "llx": 0,
+            "lly": 0,
+            "urx": 59,
+            "ury": 40
+          }
+        ]
+      }
+    },
+    {
+      "idx": 2,
+      "predicted_label": false,
+      "pos": {
+        "M1B_1": [
+          {
+            "llx": 0,
+            "lly": 0,
+            "urx": 60,
+            "ury": 39
+          }
+        ]
+      }
+    },
+    {
+      "idx": 3,
+      "predicted_label": true,
+      "pos": {
+        "M1B_1": [
+          {
+            "llx": 0,
+            "lly": 0,
+            "urx": 40,
+            "ury": 60
+          }
+        ]
+      }
+    },
+    {
+      "idx": 4,
+      "predicted_label": false,
+      "pos": {
+        "M1B_1": [
+          {
+            "llx": 0,
+            "lly": 0,
+            "urx": 39,
+            "ury": 60
+          }
+        ]
+      }
+    },
+    {
+      "idx": 5,
+      "predicted_label": false,
+      "pos": {
+        "M1B_1": [
+          {
+            "llx": 0,
+            "lly": 0,
+            "urx": 40,
+            "ury": 59
+          }
+        ]
+      }
+    },
+    {
+      "idx": 6,
+      "predicted_label": true,
+      "pos": {
+        "M1B_1": [
+          {
+            "llx": 0,
+            "lly": 0,
+            "urx": 49,
+            "ury": 49
+          }
+        ]
+      }
+    },
+    {
+      "idx": 7,
+      "predicted_label": false,
+      "pos": {
+        "M1B_1": [
+          {
+            "llx": 0,
+            "lly": 0,
+            "urx": 48,
+            "ury": 49
+          }
+        ]
+      }
+    }
+  ]
 }

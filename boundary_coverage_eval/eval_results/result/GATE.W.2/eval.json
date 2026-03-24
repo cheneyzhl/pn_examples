@@ -1,0 +1,129 @@
+{
+  "rule_name": "GATE.W.2",
+  "rule_description": "Minimum vertical GATE width is 40 nm.",
+  "rule_script": "INTERNAL GATE_HE < VAR_OPT_RES",
+  "perturbed_scripts": {
+    "corner_000": "INTERNAL GATE_HE < VAR_OPT_RES\n"
+  },
+  "data_name": "asap7",
+  "judge_mode": "match",
+  "corner_count": 1,
+  "sample_count": 6,
+  "all_corners_match": false,
+  "all_corners_detect": true,
+  "all_corners_ok": false,
+  "per_corner": [
+    {
+      "corner_id": "corner_000",
+      "script_expected_correct": true,
+      "script_predicted_correct": false,
+      "corner_any_mismatch": true,
+      "corner_all_match": false,
+      "corner_ok": false,
+      "samples": [
+        {
+          "idx": 0,
+          "predicted_label": true,
+          "calibre_label": true,
+          "match": true,
+          "error": null,
+          "pos": {
+            "GATE_1": [
+              {
+                "llx": 0,
+                "lly": 0,
+                "urx": 40,
+                "ury": 100
+              }
+            ]
+          }
+        },
+        {
+          "idx": 1,
+          "predicted_label": false,
+          "calibre_label": true,
+          "match": false,
+          "error": null,
+          "pos": {
+            "GATE_1": [
+              {
+                "llx": 0,
+                "lly": 0,
+                "urx": 39,
+                "ury": 100
+              }
+            ]
+          }
+        },
+        {
+          "idx": 2,
+          "predicted_label": true,
+          "calibre_label": true,
+          "match": true,
+          "error": null,
+          "pos": {
+            "GATE_1": [
+              {
+                "llx": 0,
+                "lly": 0,
+                "urx": 40,
+                "ury": 40
+              }
+            ]
+          }
+        },
+        {
+          "idx": 3,
+          "predicted_label": false,
+          "calibre_label": false,
+          "match": true,
+          "error": null,
+          "pos": {
+            "GATE_1": [
+              {
+                "llx": 0,
+                "lly": 0,
+                "urx": 39,
+                "ury": 39
+              }
+            ]
+          }
+        },
+        {
+          "idx": 4,
+          "predicted_label": true,
+          "calibre_label": true,
+          "match": true,
+          "error": null,
+          "pos": {
+            "GATE_1": [
+              {
+                "llx": 0,
+                "lly": 0,
+                "urx": 100,
+                "ury": 40
+              }
+            ]
+          }
+        },
+        {
+          "idx": 5,
+          "predicted_label": false,
+          "calibre_label": false,
+          "match": true,
+          "error": null,
+          "pos": {
+            "GATE_1": [
+              {
+                "llx": 0,
+                "lly": 0,
+                "urx": 100,
+                "ury": 39
+              }
+            ]
+          }
+        }
+      ]
+    }
+  ]
+}

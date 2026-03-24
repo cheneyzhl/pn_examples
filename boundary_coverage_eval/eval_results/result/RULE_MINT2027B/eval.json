@@ -1,0 +1,253 @@
+{
+  "rule_name": "RULE_MINT2027B",
+  "rule_description": "MINT2B minimum area for rectangular shape is 0.0024um2",
+  "rule_script": "rect_MINT2B = RECTANGLE MINT2B \nAREA rect_MINT2B < 0.0024",
+  "perturbed_scripts": {
+    "corner_000": "rect_MINT2B = RECTANGLE MINT2B\nAREA rect_MINT2B < 0.0014\n",
+    "corner_001": "rect_MINT2B = RECTANGLE MINT2B\nAREA rect_MINT2B < 0.0034\n",
+    "corner_original": "rect_MINT2B = RECTANGLE MINT2B \nAREA rect_MINT2B < 0.0024\n"
+  },
+  "data_name": "freePDK15",
+  "judge_mode": "match",
+  "corner_count": 3,
+  "sample_count": 4,
+  "all_corners_match": false,
+  "all_corners_detect": false,
+  "all_corners_ok": true,
+  "per_corner": [
+    {
+      "corner_id": "corner_000",
+      "script_expected_correct": false,
+      "script_predicted_correct": false,
+      "corner_any_mismatch": true,
+      "corner_all_match": false,
+      "corner_ok": true,
+      "samples": [
+        {
+          "idx": 0,
+          "predicted_label": true,
+          "calibre_label": true,
+          "match": true,
+          "error": null,
+          "pos": {
+            "MINT2B_1": [
+              {
+                "llx": 0,
+                "lly": 0,
+                "urx": 60,
+                "ury": 40
+              }
+            ]
+          }
+        },
+        {
+          "idx": 1,
+          "predicted_label": false,
+          "calibre_label": true,
+          "match": false,
+          "error": null,
+          "pos": {
+            "MINT2B_1": [
+              {
+                "llx": 0,
+                "lly": 0,
+                "urx": 60,
+                "ury": 39
+              }
+            ]
+          }
+        },
+        {
+          "idx": 2,
+          "predicted_label": true,
+          "calibre_label": true,
+          "match": true,
+          "error": null,
+          "pos": {
+            "MINT2B_1": [
+              {
+                "llx": 0,
+                "lly": 0,
+                "urx": 80,
+                "ury": 30
+              }
+            ]
+          }
+        },
+        {
+          "idx": 3,
+          "predicted_label": false,
+          "calibre_label": true,
+          "match": false,
+          "error": null,
+          "pos": {
+            "MINT2B_1": [
+              {
+                "llx": 0,
+                "lly": 0,
+                "urx": 80,
+                "ury": 29
+              }
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "corner_id": "corner_001",
+      "script_expected_correct": false,
+      "script_predicted_correct": false,
+      "corner_any_mismatch": true,
+      "corner_all_match": false,
+      "corner_ok": true,
+      "samples": [
+        {
+          "idx": 0,
+          "predicted_label": true,
+          "calibre_label": false,
+          "match": false,
+          "error": null,
+          "pos": {
+            "MINT2B_1": [
+              {
+                "llx": 0,
+                "lly": 0,
+                "urx": 60,
+                "ury": 40
+              }
+            ]
+          }
+        },
+        {
+          "idx": 1,
+          "predicted_label": false,
+          "calibre_label": false,
+          "match": true,
+          "error": null,
+          "pos": {
+            "MINT2B_1": [
+              {
+                "llx": 0,
+                "lly": 0,
+                "urx": 60,
+                "ury": 39
+              }
+            ]
+          }
+        },
+        {
+          "idx": 2,
+          "predicted_label": true,
+          "calibre_label": false,
+          "match": false,
+          "error": null,
+          "pos": {
+            "MINT2B_1": [
+              {
+                "llx": 0,
+                "lly": 0,
+                "urx": 80,
+                "ury": 30
+              }
+            ]
+          }
+        },
+        {
+          "idx": 3,
+          "predicted_label": false,
+          "calibre_label": false,
+          "match": true,
+          "error": null,
+          "pos": {
+            "MINT2B_1": [
+              {
+                "llx": 0,
+                "lly": 0,
+                "urx": 80,
+                "ury": 29
+              }
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "corner_id": "corner_original",
+      "script_expected_correct": true,
+      "script_predicted_correct": true,
+      "corner_any_mismatch": false,
+      "corner_all_match": true,
+      "corner_ok": true,
+      "samples": [
+        {
+          "idx": 0,
+          "predicted_label": true,
+          "calibre_label": true,
+          "match": true,
+          "error": null,
+          "pos": {
+            "MINT2B_1": [
+              {
+                "llx": 0,
+                "lly": 0,
+                "urx": 60,
+                "ury": 40
+              }
+            ]
+          }
+        },
+        {
+          "idx": 1,
+          "predicted_label": false,
+          "calibre_label": false,
+          "match": true,
+          "error": null,
+          "pos": {
+            "MINT2B_1": [
+              {
+                "llx": 0,
+                "lly": 0,
+                "urx": 60,
+                "ury": 39
+              }
+            ]
+          }
+        },
+        {
+          "idx": 2,
+          "predicted_label": true,
+          "calibre_label": true,
+          "match": true,
+          "error": null,
+          "pos": {
+            "MINT2B_1": [
+              {
+                "llx": 0,
+                "lly": 0,
+                "urx": 80,
+                "ury": 30
+              }
+            ]
+          }
+        },
+        {
+          "idx": 3,
+          "predicted_label": false,
+          "calibre_label": false,
+          "match": true,
+          "error": null,
+          "pos": {
+            "MINT2B_1": [
+              {
+                "llx": 0,
+                "lly": 0,
+                "urx": 80,
+                "ury": 29
+              }
+            ]
+          }
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,880 @@
+{
+  "rule_name": "GATE.W.1",
+  "rule_description": "GATE.W.1 Exact horizontal GATE width is 20 nm.",
+  "rule_script": "INTERNAL GATE_VE < 0.020 \nINTERNAL GATE_VE > 0.020 < 1000",
+  "perturbed_scripts": {
+    "corner_000": "INTERNAL GATE_VE < 0.019\nINTERNAL GATE_VE > 0.019 < 999.999\n",
+    "corner_001": "INTERNAL GATE_VE < 0.021\nINTERNAL GATE_VE > 0.019 < 999.999\n",
+    "corner_002": "INTERNAL GATE_VE < 0.019\nINTERNAL GATE_VE > 0.021 < 999.999\n",
+    "corner_003": "INTERNAL GATE_VE < 0.021\nINTERNAL GATE_VE > 0.021 < 999.999\n",
+    "corner_004": "INTERNAL GATE_VE < 0.019\nINTERNAL GATE_VE > 0.019 < 1000.001\n",
+    "corner_005": "INTERNAL GATE_VE < 0.021\nINTERNAL GATE_VE > 0.019 < 1000.001\n",
+    "corner_006": "INTERNAL GATE_VE < 0.019\nINTERNAL GATE_VE > 0.021 < 1000.001\n",
+    "corner_007": "INTERNAL GATE_VE < 0.021\nINTERNAL GATE_VE > 0.021 < 1000.001\n",
+    "corner_original": "INTERNAL GATE_VE < 0.020 \nINTERNAL GATE_VE > 0.020 < 1000\n"
+  },
+  "data_name": "asap7",
+  "judge_mode": "match",
+  "corner_count": 9,
+  "sample_count": 5,
+  "all_corners_match": false,
+  "all_corners_detect": false,
+  "all_corners_ok": true,
+  "per_corner": [
+    {
+      "corner_id": "corner_000",
+      "script_expected_correct": false,
+      "script_predicted_correct": false,
+      "corner_any_mismatch": true,
+      "corner_all_match": false,
+      "corner_ok": true,
+      "samples": [
+        {
+          "idx": 0,
+          "predicted_label": true,
+          "calibre_label": false,
+          "match": false,
+          "error": null,
+          "pos": {
+            "GATE_1": [
+              {
+                "llx": 0,
+                "lly": 0,
+                "urx": 20,
+                "ury": 10
+              }
+            ]
+          }
+        },
+        {
+          "idx": 1,
+          "predicted_label": false,
+          "calibre_label": true,
+          "match": false,
+          "error": null,
+          "pos": {
+            "GATE_1": [
+              {
+                "llx": 0,
+                "lly": 0,
+                "urx": 19,
+                "ury": 10
+              }
+            ]
+          }
+        },
+        {
+          "idx": 2,
+          "predicted_label": false,
+          "calibre_label": false,
+          "match": true,
+          "error": null,
+          "pos": {
+            "GATE_1": [
+              {
+                "llx": 0,
+                "lly": 0,
+                "urx": 21,
+                "ury": 10
+              }
+            ]
+          }
+        },
+        {
+          "idx": 3,
+          "predicted_label": true,
+          "calibre_label": false,
+          "match": false,
+          "error": null,
+          "pos": {
+            "GATE_1": [
+              {
+                "llx": 0,
+                "lly": 0,
+                "urx": 20,
+                "ury": 20
+              }
+            ]
+          }
+        },
+        {
+          "idx": 4,
+          "predicted_label": true,
+          "calibre_label": false,
+          "match": false,
+          "error": null,
+          "pos": {
+            "GATE_1": [
+              {
+                "llx": 0,
+                "lly": 0,
+                "urx": 20,
+                "ury": 5
+              }
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "corner_id": "corner_001",
+      "script_expected_correct": false,
+      "script_predicted_correct": false,
+      "corner_any_mismatch": true,
+      "corner_all_match": false,
+      "corner_ok": true,
+      "samples": [
+        {
+          "idx": 0,
+          "predicted_label": true,
+          "calibre_label": false,
+          "match": false,
+          "error": null,
+          "pos": {
+            "GATE_1": [
+              {
+                "llx": 0,
+                "lly": 0,
+                "urx": 20,
+                "ury": 10
+              }
+            ]
+          }
+        },
+        {
+          "idx": 1,
+          "predicted_label": false,
+          "calibre_label": false,
+          "match": true,
+          "error": null,
+          "pos": {
+            "GATE_1": [
+              {
+                "llx": 0,
+                "lly": 0,
+                "urx": 19,
+                "ury": 10
+              }
+            ]
+          }
+        },
+        {
+          "idx": 2,
+          "predicted_label": false,
+          "calibre_label": false,
+          "match": true,
+          "error": null,
+          "pos": {
+            "GATE_1": [
+              {
+                "llx": 0,
+                "lly": 0,
+                "urx": 21,
+                "ury": 10
+              }
+            ]
+          }
+        },
+        {
+          "idx": 3,
+          "predicted_label": true,
+          "calibre_label": false,
+          "match": false,
+          "error": null,
+          "pos": {
+            "GATE_1": [
+              {
+                "llx": 0,
+                "lly": 0,
+                "urx": 20,
+                "ury": 20
+              }
+            ]
+          }
+        },
+        {
+          "idx": 4,
+          "predicted_label": true,
+          "calibre_label": false,
+          "match": false,
+          "error": null,
+          "pos": {
+            "GATE_1": [
+              {
+                "llx": 0,
+                "lly": 0,
+                "urx": 20,
+                "ury": 5
+              }
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "corner_id": "corner_002",
+      "script_expected_correct": false,
+      "script_predicted_correct": false,
+      "corner_any_mismatch": true,
+      "corner_all_match": false,
+      "corner_ok": true,
+      "samples": [
+        {
+          "idx": 0,
+          "predicted_label": true,
+          "calibre_label": true,
+          "match": true,
+          "error": null,
+          "pos": {
+            "GATE_1": [
+              {
+                "llx": 0,
+                "lly": 0,
+                "urx": 20,
+                "ury": 10
+              }
+            ]
+          }
+        },
+        {
+          "idx": 1,
+          "predicted_label": false,
+          "calibre_label": true,
+          "match": false,
+          "error": null,
+          "pos": {
+            "GATE_1": [
+              {
+                "llx": 0,
+                "lly": 0,
+                "urx": 19,
+                "ury": 10
+              }
+            ]
+          }
+        },
+        {
+          "idx": 2,
+          "predicted_label": false,
+          "calibre_label": true,
+          "match": false,
+          "error": null,
+          "pos": {
+            "GATE_1": [
+              {
+                "llx": 0,
+                "lly": 0,
+                "urx": 21,
+                "ury": 10
+              }
+            ]
+          }
+        },
+        {
+          "idx": 3,
+          "predicted_label": true,
+          "calibre_label": true,
+          "match": true,
+          "error": null,
+          "pos": {
+            "GATE_1": [
+              {
+                "llx": 0,
+                "lly": 0,
+                "urx": 20,
+                "ury": 20
+              }
+            ]
+          }
+        },
+        {
+          "idx": 4,
+          "predicted_label": true,
+          "calibre_label": true,
+          "match": true,
+          "error": null,
+          "pos": {
+            "GATE_1": [
+              {
+                "llx": 0,
+                "lly": 0,
+                "urx": 20,
+                "ury": 5
+              }
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "corner_id": "corner_003",
+      "script_expected_correct": false,
+      "script_predicted_correct": false,
+      "corner_any_mismatch": true,
+      "corner_all_match": false,
+      "corner_ok": true,
+      "samples": [
+        {
+          "idx": 0,
+          "predicted_label": true,
+          "calibre_label": false,
+          "match": false,
+          "error": null,
+          "pos": {
+            "GATE_1": [
+              {
+                "llx": 0,
+                "lly": 0,
+                "urx": 20,
+                "ury": 10
+              }
+            ]
+          }
+        },
+        {
+          "idx": 1,
+          "predicted_label": false,
+          "calibre_label": false,
+          "match": true,
+          "error": null,
+          "pos": {
+            "GATE_1": [
+              {
+                "llx": 0,
+                "lly": 0,
+                "urx": 19,
+                "ury": 10
+              }
+            ]
+          }
+        },
+        {
+          "idx": 2,
+          "predicted_label": false,
+          "calibre_label": true,
+          "match": false,
+          "error": null,
+          "pos": {
+            "GATE_1": [
+              {
+                "llx": 0,
+                "lly": 0,
+                "urx": 21,
+                "ury": 10
+              }
+            ]
+          }
+        },
+        {
+          "idx": 3,
+          "predicted_label": true,
+          "calibre_label": false,
+          "match": false,
+          "error": null,
+          "pos": {
+            "GATE_1": [
+              {
+                "llx": 0,
+                "lly": 0,
+                "urx": 20,
+                "ury": 20
+              }
+            ]
+          }
+        },
+        {
+          "idx": 4,
+          "predicted_label": true,
+          "calibre_label": false,
+          "match": false,
+          "error": null,
+          "pos": {
+            "GATE_1": [
+              {
+                "llx": 0,
+                "lly": 0,
+                "urx": 20,
+                "ury": 5
+              }
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "corner_id": "corner_004",
+      "script_expected_correct": false,
+      "script_predicted_correct": false,
+      "corner_any_mismatch": true,
+      "corner_all_match": false,
+      "corner_ok": true,
+      "samples": [
+        {
+          "idx": 0,
+          "predicted_label": true,
+          "calibre_label": false,
+          "match": false,
+          "error": null,
+          "pos": {
+            "GATE_1": [
+              {
+                "llx": 0,
+                "lly": 0,
+                "urx": 20,
+                "ury": 10
+              }
+            ]
+          }
+        },
+        {
+          "idx": 1,
+          "predicted_label": false,
+          "calibre_label": true,
+          "match": false,
+          "error": null,
+          "pos": {
+            "GATE_1": [
+              {
+                "llx": 0,
+                "lly": 0,
+                "urx": 19,
+                "ury": 10
+              }
+            ]
+          }
+        },
+        {
+          "idx": 2,
+          "predicted_label": false,
+          "calibre_label": false,
+          "match": true,
+          "error": null,
+          "pos": {
+            "GATE_1": [
+              {
+                "llx": 0,
+                "lly": 0,
+                "urx": 21,
+                "ury": 10
+              }
+            ]
+          }
+        },
+        {
+          "idx": 3,
+          "predicted_label": true,
+          "calibre_label": false,
+          "match": false,
+          "error": null,
+          "pos": {
+            "GATE_1": [
+              {
+                "llx": 0,
+                "lly": 0,
+                "urx": 20,
+                "ury": 20
+              }
+            ]
+          }
+        },
+        {
+          "idx": 4,
+          "predicted_label": true,
+          "calibre_label": false,
+          "match": false,
+          "error": null,
+          "pos": {
+            "GATE_1": [
+              {
+                "llx": 0,
+                "lly": 0,
+                "urx": 20,
+                "ury": 5
+              }
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "corner_id": "corner_005",
+      "script_expected_correct": false,
+      "script_predicted_correct": false,
+      "corner_any_mismatch": true,
+      "corner_all_match": false,
+      "corner_ok": true,
+      "samples": [
+        {
+          "idx": 0,
+          "predicted_label": true,
+          "calibre_label": false,
+          "match": false,
+          "error": null,
+          "pos": {
+            "GATE_1": [
+              {
+                "llx": 0,
+                "lly": 0,
+                "urx": 20,
+                "ury": 10
+              }
+            ]
+          }
+        },
+        {
+          "idx": 1,
+          "predicted_label": false,
+          "calibre_label": false,
+          "match": true,
+          "error": null,
+          "pos": {
+            "GATE_1": [
+              {
+                "llx": 0,
+                "lly": 0,
+                "urx": 19,
+                "ury": 10
+              }
+            ]
+          }
+        },
+        {
+          "idx": 2,
+          "predicted_label": false,
+          "calibre_label": false,
+          "match": true,
+          "error": null,
+          "pos": {
+            "GATE_1": [
+              {
+                "llx": 0,
+                "lly": 0,
+                "urx": 21,
+                "ury": 10
+              }
+            ]
+          }
+        },
+        {
+          "idx": 3,
+          "predicted_label": true,
+          "calibre_label": false,
+          "match": false,
+          "error": null,
+          "pos": {
+            "GATE_1": [
+              {
+                "llx": 0,
+                "lly": 0,
+                "urx": 20,
+                "ury": 20
+              }
+            ]
+          }
+        },
+        {
+          "idx": 4,
+          "predicted_label": true,
+          "calibre_label": false,
+          "match": false,
+          "error": null,
+          "pos": {
+            "GATE_1": [
+              {
+                "llx": 0,
+                "lly": 0,
+                "urx": 20,
+                "ury": 5
+              }
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "corner_id": "corner_006",
+      "script_expected_correct": false,
+      "script_predicted_correct": false,
+      "corner_any_mismatch": true,
+      "corner_all_match": false,
+      "corner_ok": true,
+      "samples": [
+        {
+          "idx": 0,
+          "predicted_label": true,
+          "calibre_label": true,
+          "match": true,
+          "error": null,
+          "pos": {
+            "GATE_1": [
+              {
+                "llx": 0,
+                "lly": 0,
+                "urx": 20,
+                "ury": 10
+              }
+            ]
+          }
+        },
+        {
+          "idx": 1,
+          "predicted_label": false,
+          "calibre_label": true,
+          "match": false,
+          "error": null,
+          "pos": {
+            "GATE_1": [
+              {
+                "llx": 0,
+                "lly": 0,
+                "urx": 19,
+                "ury": 10
+              }
+            ]
+          }
+        },
+        {
+          "idx": 2,
+          "predicted_label": false,
+          "calibre_label": true,
+          "match": false,
+          "error": null,
+          "pos": {
+            "GATE_1": [
+              {
+                "llx": 0,
+                "lly": 0,
+                "urx": 21,
+                "ury": 10
+              }
+            ]
+          }
+        },
+        {
+          "idx": 3,
+          "predicted_label": true,
+          "calibre_label": true,
+          "match": true,
+          "error": null,
+          "pos": {
+            "GATE_1": [
+              {
+                "llx": 0,
+                "lly": 0,
+                "urx": 20,
+                "ury": 20
+              }
+            ]
+          }
+        },
+        {
+          "idx": 4,
+          "predicted_label": true,
+          "calibre_label": true,
+          "match": true,
+          "error": null,
+          "pos": {
+            "GATE_1": [
+              {
+                "llx": 0,
+                "lly": 0,
+                "urx": 20,
+                "ury": 5
+              }
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "corner_id": "corner_007",
+      "script_expected_correct": false,
+      "script_predicted_correct": false,
+      "corner_any_mismatch": true,
+      "corner_all_match": false,
+      "corner_ok": true,
+      "samples": [
+        {
+          "idx": 0,
+          "predicted_label": true,
+          "calibre_label": false,
+          "match": false,
+          "error": null,
+          "pos": {
+            "GATE_1": [
+              {
+                "llx": 0,
+                "lly": 0,
+                "urx": 20,
+                "ury": 10
+              }
+            ]
+          }
+        },
+        {
+          "idx": 1,
+          "predicted_label": false,
+          "calibre_label": false,
+          "match": true,
+          "error": null,
+          "pos": {
+            "GATE_1": [
+              {
+                "llx": 0,
+                "lly": 0,
+                "urx": 19,
+                "ury": 10
+              }
+            ]
+          }
+        },
+        {
+          "idx": 2,
+          "predicted_label": false,
+          "calibre_label": true,
+          "match": false,
+          "error": null,
+          "pos": {
+            "GATE_1": [
+              {
+                "llx": 0,
+                "lly": 0,
+                "urx": 21,
+                "ury": 10
+              }
+            ]
+          }
+        },
+        {
+          "idx": 3,
+          "predicted_label": true,
+          "calibre_label": false,
+          "match": false,
+          "error": null,
+          "pos": {
+            "GATE_1": [
+              {
+                "llx": 0,
+                "lly": 0,
+                "urx": 20,
+                "ury": 20
+              }
+            ]
+          }
+        },
+        {
+          "idx": 4,
+          "predicted_label": true,
+          "calibre_label": false,
+          "match": false,
+          "error": null,
+          "pos": {
+            "GATE_1": [
+              {
+                "llx": 0,
+                "lly": 0,
+                "urx": 20,
+                "ury": 5
+              }
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "corner_id": "corner_original",
+      "script_expected_correct": true,
+      "script_predicted_correct": true,
+      "corner_any_mismatch": false,
+      "corner_all_match": true,
+      "corner_ok": true,
+      "samples": [
+        {
+          "idx": 0,
+          "predicted_label": true,
+          "calibre_label": true,
+          "match": true,
+          "error": null,
+          "pos": {
+            "GATE_1": [
+              {
+                "llx": 0,
+                "lly": 0,
+                "urx": 20,
+                "ury": 10
+              }
+            ]
+          }
+        },
+        {
+          "idx": 1,
+          "predicted_label": false,
+          "calibre_label": false,
+          "match": true,
+          "error": null,
+          "pos": {
+            "GATE_1": [
+              {
+                "llx": 0,
+                "lly": 0,
+                "urx": 19,
+                "ury": 10
+              }
+            ]
+          }
+        },
+        {
+          "idx": 2,
+          "predicted_label": false,
+          "calibre_label": false,
+          "match": true,
+          "error": null,
+          "pos": {
+            "GATE_1": [
+              {
+                "llx": 0,
+                "lly": 0,
+                "urx": 21,
+                "ury": 10
+              }
+            ]
+          }
+        },
+        {
+          "idx": 3,
+          "predicted_label": true,
+          "calibre_label": true,
+          "match": true,
+          "error": null,
+          "pos": {
+            "GATE_1": [
+              {
+                "llx": 0,
+                "lly": 0,
+                "urx": 20,
+                "ury": 20
+              }
+            ]
+          }
+        },
+        {
+          "idx": 4,
+          "predicted_label": true,
+          "calibre_label": true,
+          "match": true,
+          "error": null,
+          "pos": {
+            "GATE_1": [
+              {
+                "llx": 0,
+                "lly": 0,
+                "urx": 20,
+                "ury": 5
+              }
+            ]
+          }
+        }
+      ]
+    }
+  ]
+}

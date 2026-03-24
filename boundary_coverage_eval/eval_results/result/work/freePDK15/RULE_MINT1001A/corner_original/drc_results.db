@@ -1,0 +1,9 @@
+TOPCELL 5000
+RULE_MINT1001A
+1 1 3 Mar 23 16:46:57 2026                     
+Rule File Pathname: /share/home/zenghuanlong/pn_examples/boundary_coverage_eval/eval_results/result/work/freePDK15/RULE_MINT1001A/corner_original/example_1.rul
+RULE_MINT1001A
+MINT1A width > 28nm
+e 1 2
+0 0 140 0
+0 50 140 50

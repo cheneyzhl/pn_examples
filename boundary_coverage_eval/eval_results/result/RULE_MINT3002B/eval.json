@@ -1,0 +1,208 @@
+{
+  "rule_name": "RULE_MINT3002B",
+  "rule_description": "One of two edges connected to the same vertex must have at least one of 56nm",
+  "rule_script": "x = CONVEX EDGE MINT3B ANGLE1==90 ANGLE2==90 WITH LENGTH < 0.056 \nINT x < 0.001 ABUT",
+  "perturbed_scripts": {
+    "corner_000": "x = CONVEX EDGE MINT3B ANGLE1==90 ANGLE2==90 WITH LENGTH < 0.056 \nINT x < 0.001 ABUT\n"
+  },
+  "data_name": "freePDK15",
+  "judge_mode": "match",
+  "corner_count": 1,
+  "sample_count": 5,
+  "all_corners_match": false,
+  "all_corners_detect": true,
+  "all_corners_ok": false,
+  "per_corner": [
+    {
+      "corner_id": "corner_000",
+      "script_expected_correct": true,
+      "script_predicted_correct": false,
+      "corner_any_mismatch": true,
+      "corner_all_match": false,
+      "corner_ok": false,
+      "samples": [
+        {
+          "idx": 0,
+          "predicted_label": true,
+          "calibre_label": true,
+          "match": true,
+          "error": null,
+          "pos": {
+            "NW_1": [
+              {
+                "llx": 0,
+                "lly": 0,
+                "urx": 100,
+                "ury": 100
+              }
+            ],
+            "NW_2": [
+              {
+                "llx": 100,
+                "lly": 0,
+                "urx": 200,
+                "ury": 100
+              }
+            ],
+            "V0_1": [
+              {
+                "llx": 90,
+                "lly": 40,
+                "urx": 110,
+                "ury": 60
+              }
+            ]
+          }
+        },
+        {
+          "idx": 1,
+          "predicted_label": true,
+          "calibre_label": true,
+          "match": true,
+          "error": null,
+          "pos": {
+            "NW_1": [
+              {
+                "llx": 0,
+                "lly": 0,
+                "urx": 100,
+                "ury": 100
+              }
+            ],
+            "NW_2": [
+              {
+                "llx": 100,
+                "lly": 0,
+                "urx": 200,
+                "ury": 100
+              }
+            ],
+            "V0_1": [
+              {
+                "llx": 90,
+                "lly": 40,
+                "urx": 146,
+                "ury": 60
+              }
+            ]
+          }
+        },
+        {
+          "idx": 2,
+          "predicted_label": false,
+          "calibre_label": true,
+          "match": false,
+          "error": null,
+          "pos": {
+            "NW_1": [
+              {
+                "llx": 0,
+                "lly": 0,
+                "urx": 100,
+                "ury": 100
+              }
+            ],
+            "NW_2": [
+              {
+                "llx": 100,
+                "lly": 0,
+                "urx": 200,
+                "ury": 100
+              }
+            ],
+            "V0_1": [
+              {
+                "llx": 90,
+                "lly": 40,
+                "urx": 145,
+                "ury": 60
+              }
+            ]
+          }
+        },
+        {
+          "idx": 3,
+          "predicted_label": true,
+          "calibre_label": true,
+          "match": true,
+          "error": null,
+          "pos": {
+            "NW_1": [
+              {
+                "llx": 0,
+                "lly": 0,
+                "urx": 100,
+                "ury": 100
+              }
+            ],
+            "NW_2": [
+              {
+                "llx": 100,
+                "lly": 0,
+                "urx": 200,
+                "ury": 100
+              }
+            ],
+            "V0_1": [
+              {
+                "llx": 90,
+                "lly": 40,
+                "urx": 110,
+                "ury": 60
+              }
+            ],
+            "V0_2": [
+              {
+                "llx": 140,
+                "lly": 40,
+                "urx": 160,
+                "ury": 60
+              }
+            ]
+          }
+        },
+        {
+          "idx": 4,
+          "predicted_label": false,
+          "calibre_label": true,
+          "match": false,
+          "error": null,
+          "pos": {
+            "NW_1": [
+              {
+                "llx": 0,
+                "lly": 0,
+                "urx": 100,
+                "ury": 100
+              }
+            ],
+            "NW_2": [
+              {
+                "llx": 100,
+                "lly": 0,
+                "urx": 200,
+                "ury": 100
+              }
+            ],
+            "V0_1": [
+              {
+                "llx": 90,
+                "lly": 40,
+                "urx": 110,
+                "ury": 60
+              }
+            ],
+            "V0_2": [
+              {
+                "llx": 140,
+                "lly": 40,
+                "urx": 195,
+                "ury": 60
+              }
+            ]
+          }
+        }
+      ]
+    }
+  ]
+}

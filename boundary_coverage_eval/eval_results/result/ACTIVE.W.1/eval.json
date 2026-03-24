@@ -1,0 +1,355 @@
+{
+  "rule_name": "ACTIVE.W.1",
+  "rule_description": "Minimum vertical width of ACTIVE layer is 27 nm.",
+  "rule_script": "INTERNAL ACTIVE_HE < 0.027",
+  "perturbed_scripts": {
+    "corner_000": "INTERNAL ACTIVE_HE < 0.026\n",
+    "corner_001": "INTERNAL ACTIVE_HE < 0.028\n",
+    "corner_original": "INTERNAL ACTIVE_HE < 0.027\n"
+  },
+  "data_name": "asap7",
+  "judge_mode": "match",
+  "corner_count": 3,
+  "sample_count": 6,
+  "all_corners_match": false,
+  "all_corners_detect": true,
+  "all_corners_ok": false,
+  "per_corner": [
+    {
+      "corner_id": "corner_000",
+      "script_expected_correct": false,
+      "script_predicted_correct": false,
+      "corner_any_mismatch": true,
+      "corner_all_match": false,
+      "corner_ok": true,
+      "samples": [
+        {
+          "idx": 0,
+          "predicted_label": true,
+          "calibre_label": true,
+          "match": true,
+          "error": null,
+          "pos": {
+            "ACTIVE_1": [
+              {
+                "llx": 0,
+                "lly": 0,
+                "urx": 100,
+                "ury": 27
+              }
+            ]
+          }
+        },
+        {
+          "idx": 1,
+          "predicted_label": false,
+          "calibre_label": true,
+          "match": false,
+          "error": null,
+          "pos": {
+            "ACTIVE_1": [
+              {
+                "llx": 0,
+                "lly": 0,
+                "urx": 100,
+                "ury": 26
+              }
+            ]
+          }
+        },
+        {
+          "idx": 2,
+          "predicted_label": true,
+          "calibre_label": true,
+          "match": true,
+          "error": null,
+          "pos": {
+            "ACTIVE_1": [
+              {
+                "llx": 0,
+                "lly": 0,
+                "urx": 27,
+                "ury": 100
+              }
+            ]
+          }
+        },
+        {
+          "idx": 3,
+          "predicted_label": false,
+          "calibre_label": true,
+          "match": false,
+          "error": null,
+          "pos": {
+            "ACTIVE_1": [
+              {
+                "llx": 0,
+                "lly": 0,
+                "urx": 26,
+                "ury": 100
+              }
+            ]
+          }
+        },
+        {
+          "idx": 4,
+          "predicted_label": true,
+          "calibre_label": true,
+          "match": true,
+          "error": null,
+          "pos": {
+            "ACTIVE_1": [
+              {
+                "llx": 0,
+                "lly": 0,
+                "urx": 27,
+                "ury": 27
+              }
+            ]
+          }
+        },
+        {
+          "idx": 5,
+          "predicted_label": false,
+          "calibre_label": true,
+          "match": false,
+          "error": null,
+          "pos": {
+            "ACTIVE_1": [
+              {
+                "llx": 0,
+                "lly": 0,
+                "urx": 26,
+                "ury": 26
+              }
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "corner_id": "corner_001",
+      "script_expected_correct": false,
+      "script_predicted_correct": false,
+      "corner_any_mismatch": true,
+      "corner_all_match": false,
+      "corner_ok": true,
+      "samples": [
+        {
+          "idx": 0,
+          "predicted_label": true,
+          "calibre_label": false,
+          "match": false,
+          "error": null,
+          "pos": {
+            "ACTIVE_1": [
+              {
+                "llx": 0,
+                "lly": 0,
+                "urx": 100,
+                "ury": 27
+              }
+            ]
+          }
+        },
+        {
+          "idx": 1,
+          "predicted_label": false,
+          "calibre_label": false,
+          "match": true,
+          "error": null,
+          "pos": {
+            "ACTIVE_1": [
+              {
+                "llx": 0,
+                "lly": 0,
+                "urx": 100,
+                "ury": 26
+              }
+            ]
+          }
+        },
+        {
+          "idx": 2,
+          "predicted_label": true,
+          "calibre_label": true,
+          "match": true,
+          "error": null,
+          "pos": {
+            "ACTIVE_1": [
+              {
+                "llx": 0,
+                "lly": 0,
+                "urx": 27,
+                "ury": 100
+              }
+            ]
+          }
+        },
+        {
+          "idx": 3,
+          "predicted_label": false,
+          "calibre_label": true,
+          "match": false,
+          "error": null,
+          "pos": {
+            "ACTIVE_1": [
+              {
+                "llx": 0,
+                "lly": 0,
+                "urx": 26,
+                "ury": 100
+              }
+            ]
+          }
+        },
+        {
+          "idx": 4,
+          "predicted_label": true,
+          "calibre_label": false,
+          "match": false,
+          "error": null,
+          "pos": {
+            "ACTIVE_1": [
+              {
+                "llx": 0,
+                "lly": 0,
+                "urx": 27,
+                "ury": 27
+              }
+            ]
+          }
+        },
+        {
+          "idx": 5,
+          "predicted_label": false,
+          "calibre_label": false,
+          "match": true,
+          "error": null,
+          "pos": {
+            "ACTIVE_1": [
+              {
+                "llx": 0,
+                "lly": 0,
+                "urx": 26,
+                "ury": 26
+              }
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "corner_id": "corner_original",
+      "script_expected_correct": true,
+      "script_predicted_correct": false,
+      "corner_any_mismatch": true,
+      "corner_all_match": false,
+      "corner_ok": false,
+      "samples": [
+        {
+          "idx": 0,
+          "predicted_label": true,
+          "calibre_label": true,
+          "match": true,
+          "error": null,
+          "pos": {
+            "ACTIVE_1": [
+              {
+                "llx": 0,
+                "lly": 0,
+                "urx": 100,
+                "ury": 27
+              }
+            ]
+          }
+        },
+        {
+          "idx": 1,
+          "predicted_label": false,
+          "calibre_label": false,
+          "match": true,
+          "error": null,
+          "pos": {
+            "ACTIVE_1": [
+              {
+                "llx": 0,
+                "lly": 0,
+                "urx": 100,
+                "ury": 26
+              }
+            ]
+          }
+        },
+        {
+          "idx": 2,
+          "predicted_label": true,
+          "calibre_label": true,
+          "match": true,
+          "error": null,
+          "pos": {
+            "ACTIVE_1": [
+              {
+                "llx": 0,
+                "lly": 0,
+                "urx": 27,
+                "ury": 100
+              }
+            ]
+          }
+        },
+        {
+          "idx": 3,
+          "predicted_label": false,
+          "calibre_label": true,
+          "match": false,
+          "error": null,
+          "pos": {
+            "ACTIVE_1": [
+              {
+                "llx": 0,
+                "lly": 0,
+                "urx": 26,
+                "ury": 100
+              }
+            ]
+          }
+        },
+        {
+          "idx": 4,
+          "predicted_label": true,
+          "calibre_label": true,
+          "match": true,
+          "error": null,
+          "pos": {
+            "ACTIVE_1": [
+              {
+                "llx": 0,
+                "lly": 0,
+                "urx": 27,
+                "ury": 27
+              }
+            ]
+          }
+        },
+        {
+          "idx": 5,
+          "predicted_label": false,
+          "calibre_label": false,
+          "match": true,
+          "error": null,
+          "pos": {
+            "ACTIVE_1": [
+              {
+                "llx": 0,
+                "lly": 0,
+                "urx": 26,
+                "ury": 26
+              }
+            ]
+          }
+        }
+      ]
+    }
+  ]
+}

@@ -1,5 +1,95 @@
 {
-  "raw_response": "```json\n{\n  \"examples\": [\n    {\n      \"M1B_1\": [\n        {\n          \"llx\": 0,\n          \"lly\": 0,\n          \"urx\": 60,\n          \"ury\": 40\n        }\n      ]\n    },\n    {\n      \"M1B_1\": [\n        {\n          \"llx\": 0,\n          \"lly\": 0,\n          \"urx\": 59,\n          \"ury\": 40\n        }\n      ]\n    },\n    {\n      \"M1B_1\": [\n        {\n          \"llx\": 0,\n          \"lly\": 0,\n          \"urx\": 60,\n          \"ury\": 39\n        }\n      ]\n    },\n    {\n      \"M1B_1\": [\n        {\n          \"llx\": 0,\n          \"lly\": 0,\n          \"urx\": 30,\n          \"ury\": 80\n        }\n      ]\n    },\n    {\n      \"M1B_1\": [\n        {\n          \"llx\": 0,\n          \"lly\": 0,\n          \"urx\": 29,\n          \"ury\": 80\n        }\n      ]\n    },\n    {\n      \"M1B_1\": [\n        {\n          \"llx\": 0,\n          \"lly\": 0,\n          \"urx\": 30,\n          \"ury\": 79\n        }\n      ]\n    },\n    {\n      \"M1B_1\": [\n        {\n          \"llx\": 0,\n          \"lly\": 0,\n          \"urx\": 24,\n          \"ury\": 100\n        }\n      ]\n    },\n    {\n      \"M1B_1\": [\n        {\n          \"llx\": 0,\n          \"lly\": 0,\n          \"urx\": 23,\n          \"ury\": 100\n        }\n      ]\n    },\n    {\n      \"M1B_1\": [\n        {\n          \"llx\": 0,\n          \"lly\": 0,\n          \"urx\": 24,\n          \"ury\": 99\n        }\n      ]\n    },\n    {\n      \"M1B_1\": [\n        {\n          \"llx\": 0,\n          \"lly\": 0,\n          \"urx\": 20,\n          \"ury\": 120\n        }\n      ]\n    },\n    {\n      \"M1B_1\": [\n        {\n          \"llx\": 0,\n          \"lly\": 0,\n          \"urx\": 19,\n          \"ury\": 120\n        }\n      ]\n    },\n    {\n      \"M1B_1\": [\n        {\n          \"llx\": 0,\n          \"lly\": 0,\n          \"urx\": 20,\n          \"ury\": 119\n        }\n      ]\n    }\n  ],\n  \"labels\": [\n    true,\n    false,\n    false,\n    true,\n    false,\n    false,\n    true,\n    false,\n    false true false false\n  ]\n}\n```",
-  "examples": [],
-  "labels": []
+  "raw_response": "```json\n{\n  \"examples\": [\n    {\n      \"M1B_1\": [\n        {\n          \"llx\": 0,\n          \"lly\": 0,\n          \"urx\": 60,\n          \"ury\": 40\n        }\n      ]\n    },\n    {\n      \"M1B_1\": [\n        {\n          \"llx\": 0,\n          \"lly\": 0,\n          \"urx\": 59,\n          \"ury\": 40\n        }\n      ]\n    },\n    {\n      \"M1B_1\": [\n        {\n          \"llx\": 0,\n          \"lly\": 0,\n          \"urx\": 60,\n          \"ury\": 39\n        }\n      ]\n    },\n    {\n      \"M1B_1\": [\n        {\n          \"llx\": 0,\n          \"lly\": 0,\n          \"urx\": 40,\n          \"ury\": 60\n        }\n      ]\n    },\n    {\n      \"M1B_1\": [\n        {\n          \"llx\": 0,\n          \"lly\": 0,\n          \"urx\": 39,\n          \"ury\": 60\n        }\n      ]\n    },\n    {\n      \"M1B_1\": [\n        {\n          \"llx\": 0,\n          \"lly\": 0,\n          \"urx\": 40,\n          \"ury\": 59\n        }\n      ]\n    },\n    {\n      \"M1B_1\": [\n        {\n          \"llx\": 0,\n          \"lly\": 0,\n          \"urx\": 49,\n          \"ury\": 49\n        }\n      ]\n    },\n    {\n      \"M1B_1\": [\n        {\n          \"llx\": 0,\n          \"lly\": 0,\n          \"urx\": 48,\n          \"ury\": 49\n        }\n      ]\n    }\n  ],\n  \"labels\": [\n    true,\n    false,\n    false,\n    true,\n    false,\n    false,\n    true,\n    false\n  ]\n}\n```",
+  "examples": [
+    {
+      "M1B_1": [
+        {
+          "llx": 0,
+          "lly": 0,
+          "urx": 60,
+          "ury": 40
+        }
+      ]
+    },
+    {
+      "M1B_1": [
+        {
+          "llx": 0,
+          "lly": 0,
+          "urx": 59,
+          "ury": 40
+        }
+      ]
+    },
+    {
+      "M1B_1": [
+        {
+          "llx": 0,
+          "lly": 0,
+          "urx": 60,
+          "ury": 39
+        }
+      ]
+    },
+    {
+      "M1B_1": [
+        {
+          "llx": 0,
+          "lly": 0,
+          "urx": 40,
+          "ury": 60
+        }
+      ]
+    },
+    {
+      "M1B_1": [
+        {
+          "llx": 0,
+          "lly": 0,
+          "urx": 39,
+          "ury": 60
+        }
+      ]
+    },
+    {
+      "M1B_1": [
+        {
+          "llx": 0,
+          "lly": 0,
+          "urx": 40,
+          "ury": 59
+        }
+      ]
+    },
+    {
+      "M1B_1": [
+        {
+          "llx": 0,
+          "lly": 0,
+          "urx": 49,
+          "ury": 49
+        }
+      ]
+    },
+    {
+      "M1B_1": [
+        {
+          "llx": 0,
+          "lly": 0,
+          "urx": 48,
+          "ury": 49
+        }
+      ]
+    }
+  ],
+  "labels": [
+    true,
+    false,
+    false,
+    true,
+    false,
+    false,
+    true,
+    false
+  ]
 }

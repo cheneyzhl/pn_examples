@@ -1,0 +1,988 @@
+{
+  "rule_name": "FIN.W.1",
+  "rule_description": "Exact vertical FIN width is 7 nm.",
+  "rule_script": "INTERNAL FIN_HE < 0.007 \nINTERNAL FIN_HE > 0.007 < 0.5",
+  "perturbed_scripts": {
+    "corner_000": "INTERNAL FIN_HE < 0.006\nINTERNAL FIN_HE > 0.006 < 0.499\n",
+    "corner_001": "INTERNAL FIN_HE < 0.008\nINTERNAL FIN_HE > 0.006 < 0.499\n",
+    "corner_002": "INTERNAL FIN_HE < 0.006\nINTERNAL FIN_HE > 0.008 < 0.499\n",
+    "corner_003": "INTERNAL FIN_HE < 0.008\nINTERNAL FIN_HE > 0.008 < 0.499\n",
+    "corner_004": "INTERNAL FIN_HE < 0.006\nINTERNAL FIN_HE > 0.006 < 0.501\n",
+    "corner_005": "INTERNAL FIN_HE < 0.008\nINTERNAL FIN_HE > 0.006 < 0.501\n",
+    "corner_006": "INTERNAL FIN_HE < 0.006\nINTERNAL FIN_HE > 0.008 < 0.501\n",
+    "corner_007": "INTERNAL FIN_HE < 0.008\nINTERNAL FIN_HE > 0.008 < 0.501\n",
+    "corner_original": "INTERNAL FIN_HE < 0.007 \nINTERNAL FIN_HE > 0.007 < 0.5\n"
+  },
+  "data_name": "asap7",
+  "judge_mode": "match",
+  "corner_count": 9,
+  "sample_count": 5,
+  "all_corners_match": false,
+  "all_corners_detect": true,
+  "all_corners_ok": false,
+  "per_corner": [
+    {
+      "corner_id": "corner_000",
+      "script_expected_correct": false,
+      "script_predicted_correct": false,
+      "corner_any_mismatch": true,
+      "corner_all_match": false,
+      "corner_ok": true,
+      "samples": [
+        {
+          "idx": 0,
+          "predicted_label": true,
+          "calibre_label": false,
+          "match": false,
+          "error": null,
+          "pos": {
+            "FIN_1": [
+              {
+                "llx": 0,
+                "lly": 0,
+                "urx": 7,
+                "ury": 100
+              }
+            ]
+          }
+        },
+        {
+          "idx": 1,
+          "predicted_label": false,
+          "calibre_label": false,
+          "match": true,
+          "error": null,
+          "pos": {
+            "FIN_1": [
+              {
+                "llx": 0,
+                "lly": 0,
+                "urx": 6,
+                "ury": 100
+              }
+            ]
+          }
+        },
+        {
+          "idx": 2,
+          "predicted_label": false,
+          "calibre_label": false,
+          "match": true,
+          "error": null,
+          "pos": {
+            "FIN_1": [
+              {
+                "llx": 0,
+                "lly": 0,
+                "urx": 8,
+                "ury": 100
+              }
+            ]
+          }
+        },
+        {
+          "idx": 3,
+          "predicted_label": true,
+          "calibre_label": false,
+          "match": false,
+          "error": null,
+          "pos": {
+            "FIN_1": [
+              {
+                "llx": 0,
+                "lly": 0,
+                "urx": 7,
+                "ury": 100
+              },
+              {
+                "llx": 8,
+                "lly": 0,
+                "urx": 15,
+                "ury": 100
+              }
+            ]
+          }
+        },
+        {
+          "idx": 4,
+          "predicted_label": false,
+          "calibre_label": false,
+          "match": true,
+          "error": null,
+          "pos": {
+            "FIN_1": [
+              {
+                "llx": 0,
+                "lly": 0,
+                "urx": 7,
+                "ury": 100
+              },
+              {
+                "llx": 7,
+                "lly": 0,
+                "urx": 14,
+                "ury": 100
+              }
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "corner_id": "corner_001",
+      "script_expected_correct": false,
+      "script_predicted_correct": false,
+      "corner_any_mismatch": true,
+      "corner_all_match": false,
+      "corner_ok": true,
+      "samples": [
+        {
+          "idx": 0,
+          "predicted_label": true,
+          "calibre_label": false,
+          "match": false,
+          "error": null,
+          "pos": {
+            "FIN_1": [
+              {
+                "llx": 0,
+                "lly": 0,
+                "urx": 7,
+                "ury": 100
+              }
+            ]
+          }
+        },
+        {
+          "idx": 1,
+          "predicted_label": false,
+          "calibre_label": false,
+          "match": true,
+          "error": null,
+          "pos": {
+            "FIN_1": [
+              {
+                "llx": 0,
+                "lly": 0,
+                "urx": 6,
+                "ury": 100
+              }
+            ]
+          }
+        },
+        {
+          "idx": 2,
+          "predicted_label": false,
+          "calibre_label": false,
+          "match": true,
+          "error": null,
+          "pos": {
+            "FIN_1": [
+              {
+                "llx": 0,
+                "lly": 0,
+                "urx": 8,
+                "ury": 100
+              }
+            ]
+          }
+        },
+        {
+          "idx": 3,
+          "predicted_label": true,
+          "calibre_label": false,
+          "match": false,
+          "error": null,
+          "pos": {
+            "FIN_1": [
+              {
+                "llx": 0,
+                "lly": 0,
+                "urx": 7,
+                "ury": 100
+              },
+              {
+                "llx": 8,
+                "lly": 0,
+                "urx": 15,
+                "ury": 100
+              }
+            ]
+          }
+        },
+        {
+          "idx": 4,
+          "predicted_label": false,
+          "calibre_label": false,
+          "match": true,
+          "error": null,
+          "pos": {
+            "FIN_1": [
+              {
+                "llx": 0,
+                "lly": 0,
+                "urx": 7,
+                "ury": 100
+              },
+              {
+                "llx": 7,
+                "lly": 0,
+                "urx": 14,
+                "ury": 100
+              }
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "corner_id": "corner_002",
+      "script_expected_correct": false,
+      "script_predicted_correct": false,
+      "corner_any_mismatch": true,
+      "corner_all_match": false,
+      "corner_ok": true,
+      "samples": [
+        {
+          "idx": 0,
+          "predicted_label": true,
+          "calibre_label": false,
+          "match": false,
+          "error": null,
+          "pos": {
+            "FIN_1": [
+              {
+                "llx": 0,
+                "lly": 0,
+                "urx": 7,
+                "ury": 100
+              }
+            ]
+          }
+        },
+        {
+          "idx": 1,
+          "predicted_label": false,
+          "calibre_label": false,
+          "match": true,
+          "error": null,
+          "pos": {
+            "FIN_1": [
+              {
+                "llx": 0,
+                "lly": 0,
+                "urx": 6,
+                "ury": 100
+              }
+            ]
+          }
+        },
+        {
+          "idx": 2,
+          "predicted_label": false,
+          "calibre_label": false,
+          "match": true,
+          "error": null,
+          "pos": {
+            "FIN_1": [
+              {
+                "llx": 0,
+                "lly": 0,
+                "urx": 8,
+                "ury": 100
+              }
+            ]
+          }
+        },
+        {
+          "idx": 3,
+          "predicted_label": true,
+          "calibre_label": false,
+          "match": false,
+          "error": null,
+          "pos": {
+            "FIN_1": [
+              {
+                "llx": 0,
+                "lly": 0,
+                "urx": 7,
+                "ury": 100
+              },
+              {
+                "llx": 8,
+                "lly": 0,
+                "urx": 15,
+                "ury": 100
+              }
+            ]
+          }
+        },
+        {
+          "idx": 4,
+          "predicted_label": false,
+          "calibre_label": false,
+          "match": true,
+          "error": null,
+          "pos": {
+            "FIN_1": [
+              {
+                "llx": 0,
+                "lly": 0,
+                "urx": 7,
+                "ury": 100
+              },
+              {
+                "llx": 7,
+                "lly": 0,
+                "urx": 14,
+                "ury": 100
+              }
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "corner_id": "corner_003",
+      "script_expected_correct": false,
+      "script_predicted_correct": false,
+      "corner_any_mismatch": true,
+      "corner_all_match": false,
+      "corner_ok": true,
+      "samples": [
+        {
+          "idx": 0,
+          "predicted_label": true,
+          "calibre_label": false,
+          "match": false,
+          "error": null,
+          "pos": {
+            "FIN_1": [
+              {
+                "llx": 0,
+                "lly": 0,
+                "urx": 7,
+                "ury": 100
+              }
+            ]
+          }
+        },
+        {
+          "idx": 1,
+          "predicted_label": false,
+          "calibre_label": false,
+          "match": true,
+          "error": null,
+          "pos": {
+            "FIN_1": [
+              {
+                "llx": 0,
+                "lly": 0,
+                "urx": 6,
+                "ury": 100
+              }
+            ]
+          }
+        },
+        {
+          "idx": 2,
+          "predicted_label": false,
+          "calibre_label": false,
+          "match": true,
+          "error": null,
+          "pos": {
+            "FIN_1": [
+              {
+                "llx": 0,
+                "lly": 0,
+                "urx": 8,
+                "ury": 100
+              }
+            ]
+          }
+        },
+        {
+          "idx": 3,
+          "predicted_label": true,
+          "calibre_label": false,
+          "match": false,
+          "error": null,
+          "pos": {
+            "FIN_1": [
+              {
+                "llx": 0,
+                "lly": 0,
+                "urx": 7,
+                "ury": 100
+              },
+              {
+                "llx": 8,
+                "lly": 0,
+                "urx": 15,
+                "ury": 100
+              }
+            ]
+          }
+        },
+        {
+          "idx": 4,
+          "predicted_label": false,
+          "calibre_label": false,
+          "match": true,
+          "error": null,
+          "pos": {
+            "FIN_1": [
+              {
+                "llx": 0,
+                "lly": 0,
+                "urx": 7,
+                "ury": 100
+              },
+              {
+                "llx": 7,
+                "lly": 0,
+                "urx": 14,
+                "ury": 100
+              }
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "corner_id": "corner_004",
+      "script_expected_correct": false,
+      "script_predicted_correct": false,
+      "corner_any_mismatch": true,
+      "corner_all_match": false,
+      "corner_ok": true,
+      "samples": [
+        {
+          "idx": 0,
+          "predicted_label": true,
+          "calibre_label": false,
+          "match": false,
+          "error": null,
+          "pos": {
+            "FIN_1": [
+              {
+                "llx": 0,
+                "lly": 0,
+                "urx": 7,
+                "ury": 100
+              }
+            ]
+          }
+        },
+        {
+          "idx": 1,
+          "predicted_label": false,
+          "calibre_label": false,
+          "match": true,
+          "error": null,
+          "pos": {
+            "FIN_1": [
+              {
+                "llx": 0,
+                "lly": 0,
+                "urx": 6,
+                "ury": 100
+              }
+            ]
+          }
+        },
+        {
+          "idx": 2,
+          "predicted_label": false,
+          "calibre_label": false,
+          "match": true,
+          "error": null,
+          "pos": {
+            "FIN_1": [
+              {
+                "llx": 0,
+                "lly": 0,
+                "urx": 8,
+                "ury": 100
+              }
+            ]
+          }
+        },
+        {
+          "idx": 3,
+          "predicted_label": true,
+          "calibre_label": false,
+          "match": false,
+          "error": null,
+          "pos": {
+            "FIN_1": [
+              {
+                "llx": 0,
+                "lly": 0,
+                "urx": 7,
+                "ury": 100
+              },
+              {
+                "llx": 8,
+                "lly": 0,
+                "urx": 15,
+                "ury": 100
+              }
+            ]
+          }
+        },
+        {
+          "idx": 4,
+          "predicted_label": false,
+          "calibre_label": false,
+          "match": true,
+          "error": null,
+          "pos": {
+            "FIN_1": [
+              {
+                "llx": 0,
+                "lly": 0,
+                "urx": 7,
+                "ury": 100
+              },
+              {
+                "llx": 7,
+                "lly": 0,
+                "urx": 14,
+                "ury": 100
+              }
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "corner_id": "corner_005",
+      "script_expected_correct": false,
+      "script_predicted_correct": false,
+      "corner_any_mismatch": true,
+      "corner_all_match": false,
+      "corner_ok": true,
+      "samples": [
+        {
+          "idx": 0,
+          "predicted_label": true,
+          "calibre_label": false,
+          "match": false,
+          "error": null,
+          "pos": {
+            "FIN_1": [
+              {
+                "llx": 0,
+                "lly": 0,
+                "urx": 7,
+                "ury": 100
+              }
+            ]
+          }
+        },
+        {
+          "idx": 1,
+          "predicted_label": false,
+          "calibre_label": false,
+          "match": true,
+          "error": null,
+          "pos": {
+            "FIN_1": [
+              {
+                "llx": 0,
+                "lly": 0,
+                "urx": 6,
+                "ury": 100
+              }
+            ]
+          }
+        },
+        {
+          "idx": 2,
+          "predicted_label": false,
+          "calibre_label": false,
+          "match": true,
+          "error": null,
+          "pos": {
+            "FIN_1": [
+              {
+                "llx": 0,
+                "lly": 0,
+                "urx": 8,
+                "ury": 100
+              }
+            ]
+          }
+        },
+        {
+          "idx": 3,
+          "predicted_label": true,
+          "calibre_label": false,
+          "match": false,
+          "error": null,
+          "pos": {
+            "FIN_1": [
+              {
+                "llx": 0,
+                "lly": 0,
+                "urx": 7,
+                "ury": 100
+              },
+              {
+                "llx": 8,
+                "lly": 0,
+                "urx": 15,
+                "ury": 100
+              }
+            ]
+          }
+        },
+        {
+          "idx": 4,
+          "predicted_label": false,
+          "calibre_label": false,
+          "match": true,
+          "error": null,
+          "pos": {
+            "FIN_1": [
+              {
+                "llx": 0,
+                "lly": 0,
+                "urx": 7,
+                "ury": 100
+              },
+              {
+                "llx": 7,
+                "lly": 0,
+                "urx": 14,
+                "ury": 100
+              }
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "corner_id": "corner_006",
+      "script_expected_correct": false,
+      "script_predicted_correct": false,
+      "corner_any_mismatch": true,
+      "corner_all_match": false,
+      "corner_ok": true,
+      "samples": [
+        {
+          "idx": 0,
+          "predicted_label": true,
+          "calibre_label": false,
+          "match": false,
+          "error": null,
+          "pos": {
+            "FIN_1": [
+              {
+                "llx": 0,
+                "lly": 0,
+                "urx": 7,
+                "ury": 100
+              }
+            ]
+          }
+        },
+        {
+          "idx": 1,
+          "predicted_label": false,
+          "calibre_label": false,
+          "match": true,
+          "error": null,
+          "pos": {
+            "FIN_1": [
+              {
+                "llx": 0,
+                "lly": 0,
+                "urx": 6,
+                "ury": 100
+              }
+            ]
+          }
+        },
+        {
+          "idx": 2,
+          "predicted_label": false,
+          "calibre_label": false,
+          "match": true,
+          "error": null,
+          "pos": {
+            "FIN_1": [
+              {
+                "llx": 0,
+                "lly": 0,
+                "urx": 8,
+                "ury": 100
+              }
+            ]
+          }
+        },
+        {
+          "idx": 3,
+          "predicted_label": true,
+          "calibre_label": false,
+          "match": false,
+          "error": null,
+          "pos": {
+            "FIN_1": [
+              {
+                "llx": 0,
+                "lly": 0,
+                "urx": 7,
+                "ury": 100
+              },
+              {
+                "llx": 8,
+                "lly": 0,
+                "urx": 15,
+                "ury": 100
+              }
+            ]
+          }
+        },
+        {
+          "idx": 4,
+          "predicted_label": false,
+          "calibre_label": false,
+          "match": true,
+          "error": null,
+          "pos": {
+            "FIN_1": [
+              {
+                "llx": 0,
+                "lly": 0,
+                "urx": 7,
+                "ury": 100
+              },
+              {
+                "llx": 7,
+                "lly": 0,
+                "urx": 14,
+                "ury": 100
+              }
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "corner_id": "corner_007",
+      "script_expected_correct": false,
+      "script_predicted_correct": false,
+      "corner_any_mismatch": true,
+      "corner_all_match": false,
+      "corner_ok": true,
+      "samples": [
+        {
+          "idx": 0,
+          "predicted_label": true,
+          "calibre_label": false,
+          "match": false,
+          "error": null,
+          "pos": {
+            "FIN_1": [
+              {
+                "llx": 0,
+                "lly": 0,
+                "urx": 7,
+                "ury": 100
+              }
+            ]
+          }
+        },
+        {
+          "idx": 1,
+          "predicted_label": false,
+          "calibre_label": false,
+          "match": true,
+          "error": null,
+          "pos": {
+            "FIN_1": [
+              {
+                "llx": 0,
+                "lly": 0,
+                "urx": 6,
+                "ury": 100
+              }
+            ]
+          }
+        },
+        {
+          "idx": 2,
+          "predicted_label": false,
+          "calibre_label": false,
+          "match": true,
+          "error": null,
+          "pos": {
+            "FIN_1": [
+              {
+                "llx": 0,
+                "lly": 0,
+                "urx": 8,
+                "ury": 100
+              }
+            ]
+          }
+        },
+        {
+          "idx": 3,
+          "predicted_label": true,
+          "calibre_label": false,
+          "match": false,
+          "error": null,
+          "pos": {
+            "FIN_1": [
+              {
+                "llx": 0,
+                "lly": 0,
+                "urx": 7,
+                "ury": 100
+              },
+              {
+                "llx": 8,
+                "lly": 0,
+                "urx": 15,
+                "ury": 100
+              }
+            ]
+          }
+        },
+        {
+          "idx": 4,
+          "predicted_label": false,
+          "calibre_label": false,
+          "match": true,
+          "error": null,
+          "pos": {
+            "FIN_1": [
+              {
+                "llx": 0,
+                "lly": 0,
+                "urx": 7,
+                "ury": 100
+              },
+              {
+                "llx": 7,
+                "lly": 0,
+                "urx": 14,
+                "ury": 100
+              }
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "corner_id": "corner_original",
+      "script_expected_correct": true,
+      "script_predicted_correct": false,
+      "corner_any_mismatch": true,
+      "corner_all_match": false,
+      "corner_ok": false,
+      "samples": [
+        {
+          "idx": 0,
+          "predicted_label": true,
+          "calibre_label": false,
+          "match": false,
+          "error": null,
+          "pos": {
+            "FIN_1": [
+              {
+                "llx": 0,
+                "lly": 0,
+                "urx": 7,
+                "ury": 100
+              }
+            ]
+          }
+        },
+        {
+          "idx": 1,
+          "predicted_label": false,
+          "calibre_label": false,
+          "match": true,
+          "error": null,
+          "pos": {
+            "FIN_1": [
+              {
+                "llx": 0,
+                "lly": 0,
+                "urx": 6,
+                "ury": 100
+              }
+            ]
+          }
+        },
+        {
+          "idx": 2,
+          "predicted_label": false,
+          "calibre_label": false,
+          "match": true,
+          "error": null,
+          "pos": {
+            "FIN_1": [
+              {
+                "llx": 0,
+                "lly": 0,
+                "urx": 8,
+                "ury": 100
+              }
+            ]
+          }
+        },
+        {
+          "idx": 3,
+          "predicted_label": true,
+          "calibre_label": false,
+          "match": false,
+          "error": null,
+          "pos": {
+            "FIN_1": [
+              {
+                "llx": 0,
+                "lly": 0,
+                "urx": 7,
+                "ury": 100
+              },
+              {
+                "llx": 8,
+                "lly": 0,
+                "urx": 15,
+                "ury": 100
+              }
+            ]
+          }
+        },
+        {
+          "idx": 4,
+          "predicted_label": false,
+          "calibre_label": false,
+          "match": true,
+          "error": null,
+          "pos": {
+            "FIN_1": [
+              {
+                "llx": 0,
+                "lly": 0,
+                "urx": 7,
+                "ury": 100
+              },
+              {
+                "llx": 7,
+                "lly": 0,
+                "urx": 14,
+                "ury": 100
+              }
+            ]
+          }
+        }
+      ]
+    }
+  ]
+}

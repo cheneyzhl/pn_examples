@@ -1,0 +1,11 @@
+TOPCELL 5000
+RULE_M1027B
+1 1 3 Mar 23 16:15:39 2026                     
+Rule File Pathname: /share/home/zenghuanlong/pn_examples/boundary_coverage_eval/eval_results/result/work/freePDK15/RULE_M1027B/corner_001/example_7.rul
+RULE_M1027B
+M1B minimum area for rectangular shape is 0.0024um2
+p 1 4
+0 0
+240 0
+240 245
+0 245

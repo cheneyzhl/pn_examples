@@ -1,0 +1,95 @@
+{
+  "rule_name": "RULE_MINT2003A",
+  "rule_description": "maximum length of MINT2A for wires with min width 28nm is 1.8um",
+  "rule_script": "wide_MINT2A = MINT2A with width <= 0.028 \nd = INT wide_MINT2A <= 1 opposite \nd_p = dfm property wide_MINT2A d overlap abut also [EC1 = EC(d)] > 1.80 \ncopy d_p",
+  "perturbed_scripts": {
+    "corner_000": "wide_MINT2A = MINT2A with width <= 0.028 \nd = INT wide_MINT2A <= 1 opposite \nd_p = dfm property wide_MINT2A d overlap abut also [EC1 = EC(d)] > 1.80 \ncopy d_p\n"
+  },
+  "data_name": "freePDK15",
+  "judge_mode": "match",
+  "corner_count": 1,
+  "sample_count": 4,
+  "all_corners_match": false,
+  "all_corners_detect": true,
+  "all_corners_ok": false,
+  "per_corner": [
+    {
+      "corner_id": "corner_000",
+      "script_expected_correct": true,
+      "script_predicted_correct": false,
+      "corner_any_mismatch": true,
+      "corner_all_match": false,
+      "corner_ok": false,
+      "samples": [
+        {
+          "idx": 0,
+          "predicted_label": true,
+          "calibre_label": true,
+          "match": true,
+          "error": null,
+          "pos": {
+            "MINT2A_1": [
+              {
+                "llx": 0,
+                "lly": 0,
+                "urx": 28,
+                "ury": 1800
+              }
+            ]
+          }
+        },
+        {
+          "idx": 1,
+          "predicted_label": false,
+          "calibre_label": false,
+          "match": true,
+          "error": null,
+          "pos": {
+            "MINT2A_1": [
+              {
+                "llx": 0,
+                "lly": 0,
+                "urx": 28,
+                "ury": 1801
+              }
+            ]
+          }
+        },
+        {
+          "idx": 2,
+          "predicted_label": false,
+          "calibre_label": true,
+          "match": false,
+          "error": null,
+          "pos": {
+            "MINT2A_1": [
+              {
+                "llx": 0,
+                "lly": 0,
+                "urx": 27,
+                "ury": 1800
+              }
+            ]
+          }
+        },
+        {
+          "idx": 3,
+          "predicted_label": true,
+          "calibre_label": true,
+          "match": true,
+          "error": null,
+          "pos": {
+            "MINT2A_1": [
+              {
+                "llx": 0,
+                "lly": 0,
+                "urx": 29,
+                "ury": 1800
+              }
+            ]
+          }
+        }
+      ]
+    }
+  ]
+}

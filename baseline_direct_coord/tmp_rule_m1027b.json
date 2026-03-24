@@ -1,0 +1,8 @@
+[
+  {
+    "rule_name": "RULE_M1027B",
+    "rule": "M1B minimum area for rectangular shape is 0.0024um2",
+    "layers": [],
+    "process": "freePDK15"
+  }
+]

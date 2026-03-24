@@ -1,0 +1,112 @@
+{
+  "rule_name": "RULE_VINT3001a",
+  "rule_description": "VINT3 is a square with 28nm edge length",
+  "rule_script": "RECTANGLE VINT3 != 0.028 BY != 0.028 ASPECT ==1",
+  "perturbed_scripts": {
+    "corner_000": "RECTANGLE VINT3 != 0.028 BY != 0.028 ASPECT ==1\n"
+  },
+  "data_name": "freePDK15",
+  "judge_mode": "match",
+  "corner_count": 1,
+  "sample_count": 5,
+  "all_corners_match": false,
+  "all_corners_detect": true,
+  "all_corners_ok": false,
+  "per_corner": [
+    {
+      "corner_id": "corner_000",
+      "script_expected_correct": true,
+      "script_predicted_correct": false,
+      "corner_any_mismatch": true,
+      "corner_all_match": false,
+      "corner_ok": false,
+      "samples": [
+        {
+          "idx": 0,
+          "predicted_label": true,
+          "calibre_label": true,
+          "match": true,
+          "error": null,
+          "pos": {
+            "VINT3_1": [
+              {
+                "llx": 0,
+                "lly": 0,
+                "urx": 28,
+                "ury": 28
+              }
+            ]
+          }
+        },
+        {
+          "idx": 1,
+          "predicted_label": false,
+          "calibre_label": true,
+          "match": false,
+          "error": null,
+          "pos": {
+            "VINT3_1": [
+              {
+                "llx": 0,
+                "lly": 0,
+                "urx": 27,
+                "ury": 28
+              }
+            ]
+          }
+        },
+        {
+          "idx": 2,
+          "predicted_label": false,
+          "calibre_label": true,
+          "match": false,
+          "error": null,
+          "pos": {
+            "VINT3_1": [
+              {
+                "llx": 0,
+                "lly": 0,
+                "urx": 28,
+                "ury": 27
+              }
+            ]
+          }
+        },
+        {
+          "idx": 3,
+          "predicted_label": true,
+          "calibre_label": true,
+          "match": true,
+          "error": null,
+          "pos": {
+            "VINT3_1": [
+              {
+                "llx": 0,
+                "lly": 0,
+                "urx": 29,
+                "ury": 28
+              }
+            ]
+          }
+        },
+        {
+          "idx": 4,
+          "predicted_label": true,
+          "calibre_label": true,
+          "match": true,
+          "error": null,
+          "pos": {
+            "VINT3_1": [
+              {
+                "llx": 0,
+                "lly": 0,
+                "urx": 28,
+                "ury": 29
+              }
+            ]
+          }
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,406 @@
+{
+  "rule_name": "RULE_MINT3027A",
+  "rule_description": "MINT3A minimum area for rectangular shape is 0.0024um2",
+  "rule_script": "rect_MINT3A = RECTANGLE MINT3A \nAREA rect_MINT3A < 0.0024",
+  "perturbed_scripts": {
+    "corner_000": "rect_MINT3A = RECTANGLE MINT3A\nAREA rect_MINT3A < 0.0014\n",
+    "corner_001": "rect_MINT3A = RECTANGLE MINT3A\nAREA rect_MINT3A < 0.0034\n",
+    "corner_original": "rect_MINT3A = RECTANGLE MINT3A \nAREA rect_MINT3A < 0.0024\n"
+  },
+  "data_name": "freePDK15",
+  "judge_mode": "match",
+  "corner_count": 3,
+  "sample_count": 7,
+  "all_corners_match": false,
+  "all_corners_detect": false,
+  "all_corners_ok": true,
+  "per_corner": [
+    {
+      "corner_id": "corner_000",
+      "script_expected_correct": false,
+      "script_predicted_correct": false,
+      "corner_any_mismatch": true,
+      "corner_all_match": false,
+      "corner_ok": true,
+      "samples": [
+        {
+          "idx": 0,
+          "predicted_label": true,
+          "calibre_label": true,
+          "match": true,
+          "error": null,
+          "pos": {
+            "MINT3A_1": [
+              {
+                "llx": 0,
+                "lly": 0,
+                "urx": 60,
+                "ury": 40
+              }
+            ]
+          }
+        },
+        {
+          "idx": 1,
+          "predicted_label": false,
+          "calibre_label": true,
+          "match": false,
+          "error": null,
+          "pos": {
+            "MINT3A_1": [
+              {
+                "llx": 0,
+                "lly": 0,
+                "urx": 59,
+                "ury": 40
+              }
+            ]
+          }
+        },
+        {
+          "idx": 2,
+          "predicted_label": false,
+          "calibre_label": true,
+          "match": false,
+          "error": null,
+          "pos": {
+            "MINT3A_1": [
+              {
+                "llx": 0,
+                "lly": 0,
+                "urx": 60,
+                "ury": 39
+              }
+            ]
+          }
+        },
+        {
+          "idx": 3,
+          "predicted_label": true,
+          "calibre_label": true,
+          "match": true,
+          "error": null,
+          "pos": {
+            "MINT3A_1": [
+              {
+                "llx": 0,
+                "lly": 0,
+                "urx": 30,
+                "ury": 80
+              }
+            ]
+          }
+        },
+        {
+          "idx": 4,
+          "predicted_label": false,
+          "calibre_label": true,
+          "match": false,
+          "error": null,
+          "pos": {
+            "MINT3A_1": [
+              {
+                "llx": 0,
+                "lly": 0,
+                "urx": 29,
+                "ury": 80
+              }
+            ]
+          }
+        },
+        {
+          "idx": 5,
+          "predicted_label": true,
+          "calibre_label": true,
+          "match": true,
+          "error": null,
+          "pos": {
+            "MINT3A_1": [
+              {
+                "llx": 0,
+                "lly": 0,
+                "urx": 24,
+                "ury": 100
+              }
+            ]
+          }
+        },
+        {
+          "idx": 6,
+          "predicted_label": false,
+          "calibre_label": true,
+          "match": false,
+          "error": null,
+          "pos": {
+            "MINT3A_1": [
+              {
+                "llx": 0,
+                "lly": 0,
+                "urx": 23,
+                "ury": 100
+              }
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "corner_id": "corner_001",
+      "script_expected_correct": false,
+      "script_predicted_correct": false,
+      "corner_any_mismatch": true,
+      "corner_all_match": false,
+      "corner_ok": true,
+      "samples": [
+        {
+          "idx": 0,
+          "predicted_label": true,
+          "calibre_label": false,
+          "match": false,
+          "error": null,
+          "pos": {
+            "MINT3A_1": [
+              {
+                "llx": 0,
+                "lly": 0,
+                "urx": 60,
+                "ury": 40
+              }
+            ]
+          }
+        },
+        {
+          "idx": 1,
+          "predicted_label": false,
+          "calibre_label": false,
+          "match": true,
+          "error": null,
+          "pos": {
+            "MINT3A_1": [
+              {
+                "llx": 0,
+                "lly": 0,
+                "urx": 59,
+                "ury": 40
+              }
+            ]
+          }
+        },
+        {
+          "idx": 2,
+          "predicted_label": false,
+          "calibre_label": false,
+          "match": true,
+          "error": null,
+          "pos": {
+            "MINT3A_1": [
+              {
+                "llx": 0,
+                "lly": 0,
+                "urx": 60,
+                "ury": 39
+              }
+            ]
+          }
+        },
+        {
+          "idx": 3,
+          "predicted_label": true,
+          "calibre_label": false,
+          "match": false,
+          "error": null,
+          "pos": {
+            "MINT3A_1": [
+              {
+                "llx": 0,
+                "lly": 0,
+                "urx": 30,
+                "ury": 80
+              }
+            ]
+          }
+        },
+        {
+          "idx": 4,
+          "predicted_label": false,
+          "calibre_label": false,
+          "match": true,
+          "error": null,
+          "pos": {
+            "MINT3A_1": [
+              {
+                "llx": 0,
+                "lly": 0,
+                "urx": 29,
+                "ury": 80
+              }
+            ]
+          }
+        },
+        {
+          "idx": 5,
+          "predicted_label": true,
+          "calibre_label": false,
+          "match": false,
+          "error": null,
+          "pos": {
+            "MINT3A_1": [
+              {
+                "llx": 0,
+                "lly": 0,
+                "urx": 24,
+                "ury": 100
+              }
+            ]
+          }
+        },
+        {
+          "idx": 6,
+          "predicted_label": false,
+          "calibre_label": false,
+          "match": true,
+          "error": null,
+          "pos": {
+            "MINT3A_1": [
+              {
+                "llx": 0,
+                "lly": 0,
+                "urx": 23,
+                "ury": 100
+              }
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "corner_id": "corner_original",
+      "script_expected_correct": true,
+      "script_predicted_correct": true,
+      "corner_any_mismatch": false,
+      "corner_all_match": true,
+      "corner_ok": true,
+      "samples": [
+        {
+          "idx": 0,
+          "predicted_label": true,
+          "calibre_label": true,
+          "match": true,
+          "error": null,
+          "pos": {
+            "MINT3A_1": [
+              {
+                "llx": 0,
+                "lly": 0,
+                "urx": 60,
+                "ury": 40
+              }
+            ]
+          }
+        },
+        {
+          "idx": 1,
+          "predicted_label": false,
+          "calibre_label": false,
+          "match": true,
+          "error": null,
+          "pos": {
+            "MINT3A_1": [
+              {
+                "llx": 0,
+                "lly": 0,
+                "urx": 59,
+                "ury": 40
+              }
+            ]
+          }
+        },
+        {
+          "idx": 2,
+          "predicted_label": false,
+          "calibre_label": false,
+          "match": true,
+          "error": null,
+          "pos": {
+            "MINT3A_1": [
+              {
+                "llx": 0,
+                "lly": 0,
+                "urx": 60,
+                "ury": 39
+              }
+            ]
+          }
+        },
+        {
+          "idx": 3,
+          "predicted_label": true,
+          "calibre_label": true,
+          "match": true,
+          "error": null,
+          "pos": {
+            "MINT3A_1": [
+              {
+                "llx": 0,
+                "lly": 0,
+                "urx": 30,
+                "ury": 80
+              }
+            ]
+          }
+        },
+        {
+          "idx": 4,
+          "predicted_label": false,
+          "calibre_label": false,
+          "match": true,
+          "error": null,
+          "pos": {
+            "MINT3A_1": [
+              {
+                "llx": 0,
+                "lly": 0,
+                "urx": 29,
+                "ury": 80
+              }
+            ]
+          }
+        },
+        {
+          "idx": 5,
+          "predicted_label": true,
+          "calibre_label": true,
+          "match": true,
+          "error": null,
+          "pos": {
+            "MINT3A_1": [
+              {
+                "llx": 0,
+                "lly": 0,
+                "urx": 24,
+                "ury": 100
+              }
+            ]
+          }
+        },
+        {
+          "idx": 6,
+          "predicted_label": false,
+          "calibre_label": false,
+          "match": true,
+          "error": null,
+          "pos": {
+            "MINT3A_1": [
+              {
+                "llx": 0,
+                "lly": 0,
+                "urx": 23,
+                "ury": 100
+              }
+            ]
+          }
+        }
+      ]
+    }
+  ]
+}

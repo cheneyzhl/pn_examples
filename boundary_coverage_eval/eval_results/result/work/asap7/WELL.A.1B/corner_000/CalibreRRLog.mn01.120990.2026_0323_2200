@@ -1,0 +1,16 @@
+MTFLEX(0) <T 0 C 0 P 0 R 0> : startup_threads() : system_query thread created
+MTFLEX(0) <T 0 C 0 P 0 R 0> : system_query() : START loop_interval = 60 monitor_print_interval = 0
+MTFLEX(0) <T 0 C 0 P 0 R 0> : grow_host_array() : new size limit = 512
+MTFLEX(0) <T 0 C 0 P 0 R 0> : get_host_entry() : adding remote host, hostname = mn01 index = 0
+MTFLEX(0) <T 0 C 0 P 0 R 0> : add_hdb() : Adding pseudo hdb on host=mn01 pid=121147 id=0 pri=1
+MTFLEX(0) <T 0 C 0 P 0 R 0> : add_hdb() : Adding pseudo hdb on host=mn01 pid=121154 id=1 pri=2
+MTFLEX(0) <T 0 C 0 P 0 R 0> : add_hdb() : Adding pseudo hdb on host=mn01 pid=121149 id=2 pri=3
+MTFLEX(0) <T 0 C 0 P 0 R 0> : add_hdb() : Adding pseudo hdb on host=mn01 pid=121153 id=3 pri=4
+MTFLEX(0) <T 0 C 0 P 0 R 0> : add_hdb() : Adding pseudo hdb on host=mn01 pid=121152 id=4 pri=5
+MTFLEX(0) <T 0 C 0 P 0 R 0> : add_hdb() : Adding pseudo hdb on host=mn01 pid=121150 id=5 pri=6
+MTFLEX(0) <T 0 C 0 P 0 R 0> : add_hdb() : Adding pseudo hdb on host=mn01 pid=121148 id=6 pri=7
+MTFLEX(0) <T 0 C 0 P 0 R 0> : add_hdb() : Adding pseudo hdb on host=mn01 pid=121151 id=7 pri=8
+MTFLEX(0) <T 28 C 0 P 0 R 0> : acquire_hdb() : mn01 (pid=121147, id=0, pri=1) TASK : ID=33
+MTFLEX(0) <T 28 C 0 P 0 R 0> : release_hdb() : mn01 (pid=121147, id=0, pri=1) rc=0
+MTFLEX(0) <T 28 C 0 P 0 R 0> : acquire_hdb() : mn01 (pid=121147, id=0, pri=1) TASK : ID=34
+MTFLEX(0) <T 28 C 0 P 0 R 0> : release_hdb() : mn01 (pid=121147, id=0, pri=1) rc=0

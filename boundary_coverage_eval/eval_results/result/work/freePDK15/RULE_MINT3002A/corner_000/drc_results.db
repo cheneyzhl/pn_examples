@@ -1,0 +1,6 @@
+TOPCELL 5000
+RULE_MINT3002A
+0 0 3 Mar 23 18:48:17 2026                     
+Rule File Pathname: /share/home/zenghuanlong/pn_examples/boundary_coverage_eval/eval_results/result/work/freePDK15/RULE_MINT3002A/corner_000/example_0.rul
+RULE_MINT3002A
+One of two edges connected to the same vertex must have at least one of 56nm

@@ -21,10 +21,25 @@ def _find_rule_block(lines: List[str], rule_name: str) -> Tuple[int, int]:
             continue
         # freePDK15: "RULE_NW003{"
         # asap7:    "WELL.W.1 {"
-        # 这里保守：只要 stripped 以 rule_name 开头即可
-        if s.startswith(rule_name) and "{" in s:
-            start_idx = i
-            break
+        # 兼容两种写法：
+        # 1) 规则名与 "{" 同行：RULE_X{ / RULE_X {
+        # 2) 规则名单独一行，下一行才是 "{"
+        if s.startswith(rule_name):
+            if "{" in s:
+                start_idx = i
+                break
+            # 允许中间有空行/注释，再出现 "{"
+            j = i + 1
+            while j < len(lines):
+                sj = lines[j].strip()
+                if (not sj) or sj.startswith("//") or sj.startswith("@"):
+                    j += 1
+                    continue
+                if sj == "{":
+                    start_idx = j
+                break
+            if start_idx >= 0:
+                break
 
     if start_idx < 0:
         raise ValueError(f"Cannot find rule block start for rule_name={rule_name}")
