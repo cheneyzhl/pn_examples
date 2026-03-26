@@ -1,0 +1,661 @@
+{
+  "rule_name": "LISD.A.1",
+  "rule_description": "LISD.A.1 Minimum LISD area is 648 nm-sq.",
+  "rule_script": "AREA LISD < 0.000648",
+  "perturbed_scripts": {
+    "corner_000": "AREA LISD < 0.000000\n",
+    "corner_001": "AREA LISD < 0.001648\n",
+    "corner_original": "AREA LISD < 0.000648\n"
+  },
+  "data_name": "asap7",
+  "judge_mode": "match",
+  "corner_count": 3,
+  "sample_count": 12,
+  "all_corners_match": false,
+  "all_corners_detect": false,
+  "all_corners_ok": true,
+  "per_corner": [
+    {
+      "corner_id": "corner_000",
+      "script_expected_correct": false,
+      "script_predicted_correct": false,
+      "corner_any_mismatch": true,
+      "corner_all_match": false,
+      "corner_ok": true,
+      "samples": [
+        {
+          "idx": 0,
+          "predicted_label": true,
+          "calibre_label": null,
+          "match": false,
+          "error": "Command 'calibre -drc -hier -turbo -hyper /share/home/zenghuanlong/pn_examples/boundary_coverage_eval/eval_results/result/work/asap7/LISD.A.1/corner_000/example_0.rul' returned non-zero exit status 4.",
+          "pos": {
+            "LISD_1": [
+              {
+                "llx": 0,
+                "lly": 0,
+                "urx": 36,
+                "ury": 18
+              }
+            ]
+          }
+        },
+        {
+          "idx": 1,
+          "predicted_label": false,
+          "calibre_label": null,
+          "match": false,
+          "error": "Command 'calibre -drc -hier -turbo -hyper /share/home/zenghuanlong/pn_examples/boundary_coverage_eval/eval_results/result/work/asap7/LISD.A.1/corner_000/example_1.rul' returned non-zero exit status 4.",
+          "pos": {
+            "LISD_1": [
+              {
+                "llx": 0,
+                "lly": 0,
+                "urx": 35,
+                "ury": 18
+              }
+            ]
+          }
+        },
+        {
+          "idx": 2,
+          "predicted_label": true,
+          "calibre_label": null,
+          "match": false,
+          "error": "Command 'calibre -drc -hier -turbo -hyper /share/home/zenghuanlong/pn_examples/boundary_coverage_eval/eval_results/result/work/asap7/LISD.A.1/corner_000/example_2.rul' returned non-zero exit status 4.",
+          "pos": {
+            "LISD_1": [
+              {
+                "llx": 0,
+                "lly": 0,
+                "urx": 18,
+                "ury": 36
+              }
+            ]
+          }
+        },
+        {
+          "idx": 3,
+          "predicted_label": false,
+          "calibre_label": null,
+          "match": false,
+          "error": "Command 'calibre -drc -hier -turbo -hyper /share/home/zenghuanlong/pn_examples/boundary_coverage_eval/eval_results/result/work/asap7/LISD.A.1/corner_000/example_3.rul' returned non-zero exit status 4.",
+          "pos": {
+            "LISD_1": [
+              {
+                "llx": 0,
+                "lly": 0,
+                "urx": 18,
+                "ury": 35
+              }
+            ]
+          }
+        },
+        {
+          "idx": 4,
+          "predicted_label": true,
+          "calibre_label": null,
+          "match": false,
+          "error": "Command 'calibre -drc -hier -turbo -hyper /share/home/zenghuanlong/pn_examples/boundary_coverage_eval/eval_results/result/work/asap7/LISD.A.1/corner_000/example_4.rul' returned non-zero exit status 4.",
+          "pos": {
+            "LISD_1": [
+              {
+                "llx": 0,
+                "lly": 0,
+                "urx": 27,
+                "ury": 24
+              }
+            ]
+          }
+        },
+        {
+          "idx": 5,
+          "predicted_label": false,
+          "calibre_label": null,
+          "match": false,
+          "error": "Command 'calibre -drc -hier -turbo -hyper /share/home/zenghuanlong/pn_examples/boundary_coverage_eval/eval_results/result/work/asap7/LISD.A.1/corner_000/example_5.rul' returned non-zero exit status 4.",
+          "pos": {
+            "LISD_1": [
+              {
+                "llx": 0,
+                "lly": 0,
+                "urx": 26,
+                "ury": 24
+              }
+            ]
+          }
+        },
+        {
+          "idx": 6,
+          "predicted_label": true,
+          "calibre_label": null,
+          "match": false,
+          "error": "Command 'calibre -drc -hier -turbo -hyper /share/home/zenghuanlong/pn_examples/boundary_coverage_eval/eval_results/result/work/asap7/LISD.A.1/corner_000/example_6.rul' returned non-zero exit status 4.",
+          "pos": {
+            "LISD_1": [
+              {
+                "llx": 0,
+                "lly": 0,
+                "urx": 24,
+                "ury": 27
+              }
+            ]
+          }
+        },
+        {
+          "idx": 7,
+          "predicted_label": false,
+          "calibre_label": null,
+          "match": false,
+          "error": "Command 'calibre -drc -hier -turbo -hyper /share/home/zenghuanlong/pn_examples/boundary_coverage_eval/eval_results/result/work/asap7/LISD.A.1/corner_000/example_7.rul' returned non-zero exit status 4.",
+          "pos": {
+            "LISD_1": [
+              {
+                "llx": 0,
+                "lly": 0,
+                "urx": 24,
+                "ury": 26
+              }
+            ]
+          }
+        },
+        {
+          "idx": 8,
+          "predicted_label": true,
+          "calibre_label": null,
+          "match": false,
+          "error": "Command 'calibre -drc -hier -turbo -hyper /share/home/zenghuanlong/pn_examples/boundary_coverage_eval/eval_results/result/work/asap7/LISD.A.1/corner_000/example_8.rul' returned non-zero exit status 4.",
+          "pos": {
+            "LISD_1": [
+              {
+                "llx": 0,
+                "lly": 0,
+                "urx": 648,
+                "ury": 1
+              }
+            ]
+          }
+        },
+        {
+          "idx": 9,
+          "predicted_label": false,
+          "calibre_label": null,
+          "match": false,
+          "error": "Command 'calibre -drc -hier -turbo -hyper /share/home/zenghuanlong/pn_examples/boundary_coverage_eval/eval_results/result/work/asap7/LISD.A.1/corner_000/example_9.rul' returned non-zero exit status 4.",
+          "pos": {
+            "LISD_1": [
+              {
+                "llx": 0,
+                "lly": 0,
+                "urx": 647,
+                "ury": 1
+              }
+            ]
+          }
+        },
+        {
+          "idx": 10,
+          "predicted_label": true,
+          "calibre_label": null,
+          "match": false,
+          "error": "Command 'calibre -drc -hier -turbo -hyper /share/home/zenghuanlong/pn_examples/boundary_coverage_eval/eval_results/result/work/asap7/LISD.A.1/corner_000/example_10.rul' returned non-zero exit status 4.",
+          "pos": {
+            "LISD_1": [
+              {
+                "llx": 0,
+                "lly": 0,
+                "urx": 1,
+                "ury": 648
+              }
+            ]
+          }
+        },
+        {
+          "idx": 11,
+          "predicted_label": false,
+          "calibre_label": null,
+          "match": false,
+          "error": "Command 'calibre -drc -hier -turbo -hyper /share/home/zenghuanlong/pn_examples/boundary_coverage_eval/eval_results/result/work/asap7/LISD.A.1/corner_000/example_11.rul' returned non-zero exit status 4.",
+          "pos": {
+            "LISD_1": [
+              {
+                "llx": 0,
+                "lly": 0,
+                "urx": 1,
+                "ury": 647
+              }
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "corner_id": "corner_001",
+      "script_expected_correct": false,
+      "script_predicted_correct": false,
+      "corner_any_mismatch": true,
+      "corner_all_match": false,
+      "corner_ok": true,
+      "samples": [
+        {
+          "idx": 0,
+          "predicted_label": true,
+          "calibre_label": false,
+          "match": false,
+          "error": null,
+          "pos": {
+            "LISD_1": [
+              {
+                "llx": 0,
+                "lly": 0,
+                "urx": 36,
+                "ury": 18
+              }
+            ]
+          }
+        },
+        {
+          "idx": 1,
+          "predicted_label": false,
+          "calibre_label": false,
+          "match": true,
+          "error": null,
+          "pos": {
+            "LISD_1": [
+              {
+                "llx": 0,
+                "lly": 0,
+                "urx": 35,
+                "ury": 18
+              }
+            ]
+          }
+        },
+        {
+          "idx": 2,
+          "predicted_label": true,
+          "calibre_label": false,
+          "match": false,
+          "error": null,
+          "pos": {
+            "LISD_1": [
+              {
+                "llx": 0,
+                "lly": 0,
+                "urx": 18,
+                "ury": 36
+              }
+            ]
+          }
+        },
+        {
+          "idx": 3,
+          "predicted_label": false,
+          "calibre_label": false,
+          "match": true,
+          "error": null,
+          "pos": {
+            "LISD_1": [
+              {
+                "llx": 0,
+                "lly": 0,
+                "urx": 18,
+                "ury": 35
+              }
+            ]
+          }
+        },
+        {
+          "idx": 4,
+          "predicted_label": true,
+          "calibre_label": false,
+          "match": false,
+          "error": null,
+          "pos": {
+            "LISD_1": [
+              {
+                "llx": 0,
+                "lly": 0,
+                "urx": 27,
+                "ury": 24
+              }
+            ]
+          }
+        },
+        {
+          "idx": 5,
+          "predicted_label": false,
+          "calibre_label": false,
+          "match": true,
+          "error": null,
+          "pos": {
+            "LISD_1": [
+              {
+                "llx": 0,
+                "lly": 0,
+                "urx": 26,
+                "ury": 24
+              }
+            ]
+          }
+        },
+        {
+          "idx": 6,
+          "predicted_label": true,
+          "calibre_label": false,
+          "match": false,
+          "error": null,
+          "pos": {
+            "LISD_1": [
+              {
+                "llx": 0,
+                "lly": 0,
+                "urx": 24,
+                "ury": 27
+              }
+            ]
+          }
+        },
+        {
+          "idx": 7,
+          "predicted_label": false,
+          "calibre_label": false,
+          "match": true,
+          "error": null,
+          "pos": {
+            "LISD_1": [
+              {
+                "llx": 0,
+                "lly": 0,
+                "urx": 24,
+                "ury": 26
+              }
+            ]
+          }
+        },
+        {
+          "idx": 8,
+          "predicted_label": true,
+          "calibre_label": false,
+          "match": false,
+          "error": null,
+          "pos": {
+            "LISD_1": [
+              {
+                "llx": 0,
+                "lly": 0,
+                "urx": 648,
+                "ury": 1
+              }
+            ]
+          }
+        },
+        {
+          "idx": 9,
+          "predicted_label": false,
+          "calibre_label": false,
+          "match": true,
+          "error": null,
+          "pos": {
+            "LISD_1": [
+              {
+                "llx": 0,
+                "lly": 0,
+                "urx": 647,
+                "ury": 1
+              }
+            ]
+          }
+        },
+        {
+          "idx": 10,
+          "predicted_label": true,
+          "calibre_label": false,
+          "match": false,
+          "error": null,
+          "pos": {
+            "LISD_1": [
+              {
+                "llx": 0,
+                "lly": 0,
+                "urx": 1,
+                "ury": 648
+              }
+            ]
+          }
+        },
+        {
+          "idx": 11,
+          "predicted_label": false,
+          "calibre_label": false,
+          "match": true,
+          "error": null,
+          "pos": {
+            "LISD_1": [
+              {
+                "llx": 0,
+                "lly": 0,
+                "urx": 1,
+                "ury": 647
+              }
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "corner_id": "corner_original",
+      "script_expected_correct": true,
+      "script_predicted_correct": true,
+      "corner_any_mismatch": false,
+      "corner_all_match": true,
+      "corner_ok": true,
+      "samples": [
+        {
+          "idx": 0,
+          "predicted_label": true,
+          "calibre_label": true,
+          "match": true,
+          "error": null,
+          "pos": {
+            "LISD_1": [
+              {
+                "llx": 0,
+                "lly": 0,
+                "urx": 36,
+                "ury": 18
+              }
+            ]
+          }
+        },
+        {
+          "idx": 1,
+          "predicted_label": false,
+          "calibre_label": false,
+          "match": true,
+          "error": null,
+          "pos": {
+            "LISD_1": [
+              {
+                "llx": 0,
+                "lly": 0,
+                "urx": 35,
+                "ury": 18
+              }
+            ]
+          }
+        },
+        {
+          "idx": 2,
+          "predicted_label": true,
+          "calibre_label": true,
+          "match": true,
+          "error": null,
+          "pos": {
+            "LISD_1": [
+              {
+                "llx": 0,
+                "lly": 0,
+                "urx": 18,
+                "ury": 36
+              }
+            ]
+          }
+        },
+        {
+          "idx": 3,
+          "predicted_label": false,
+          "calibre_label": false,
+          "match": true,
+          "error": null,
+          "pos": {
+            "LISD_1": [
+              {
+                "llx": 0,
+                "lly": 0,
+                "urx": 18,
+                "ury": 35
+              }
+            ]
+          }
+        },
+        {
+          "idx": 4,
+          "predicted_label": true,
+          "calibre_label": true,
+          "match": true,
+          "error": null,
+          "pos": {
+            "LISD_1": [
+              {
+                "llx": 0,
+                "lly": 0,
+                "urx": 27,
+                "ury": 24
+              }
+            ]
+          }
+        },
+        {
+          "idx": 5,
+          "predicted_label": false,
+          "calibre_label": false,
+          "match": true,
+          "error": null,
+          "pos": {
+            "LISD_1": [
+              {
+                "llx": 0,
+                "lly": 0,
+                "urx": 26,
+                "ury": 24
+              }
+            ]
+          }
+        },
+        {
+          "idx": 6,
+          "predicted_label": true,
+          "calibre_label": true,
+          "match": true,
+          "error": null,
+          "pos": {
+            "LISD_1": [
+              {
+                "llx": 0,
+                "lly": 0,
+                "urx": 24,
+                "ury": 27
+              }
+            ]
+          }
+        },
+        {
+          "idx": 7,
+          "predicted_label": false,
+          "calibre_label": false,
+          "match": true,
+          "error": null,
+          "pos": {
+            "LISD_1": [
+              {
+                "llx": 0,
+                "lly": 0,
+                "urx": 24,
+                "ury": 26
+              }
+            ]
+          }
+        },
+        {
+          "idx": 8,
+          "predicted_label": true,
+          "calibre_label": true,
+          "match": true,
+          "error": null,
+          "pos": {
+            "LISD_1": [
+              {
+                "llx": 0,
+                "lly": 0,
+                "urx": 648,
+                "ury": 1
+              }
+            ]
+          }
+        },
+        {
+          "idx": 9,
+          "predicted_label": false,
+          "calibre_label": false,
+          "match": true,
+          "error": null,
+          "pos": {
+            "LISD_1": [
+              {
+                "llx": 0,
+                "lly": 0,
+                "urx": 647,
+                "ury": 1
+              }
+            ]
+          }
+        },
+        {
+          "idx": 10,
+          "predicted_label": true,
+          "calibre_label": true,
+          "match": true,
+          "error": null,
+          "pos": {
+            "LISD_1": [
+              {
+                "llx": 0,
+                "lly": 0,
+                "urx": 1,
+                "ury": 648
+              }
+            ]
+          }
+        },
+        {
+          "idx": 11,
+          "predicted_label": false,
+          "calibre_label": false,
+          "match": true,
+          "error": null,
+          "pos": {
+            "LISD_1": [
+              {
+                "llx": 0,
+                "lly": 0,
+                "urx": 1,
+                "ury": 647
+              }
+            ]
+          }
+        }
+      ]
+    }
+  ]
+}

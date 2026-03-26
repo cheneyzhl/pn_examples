@@ -3,7 +3,7 @@
 ==================================================================================
 === CALIBRE::DRC-H SUMMARY REPORT
 ===
-Execution Date/Time:       Tue Mar 24 15:39:11 2026
+Execution Date/Time:       Tue Mar 24 16:28:09 2026
 Calibre Version:           v2019.3_15.11    Tue Jul 2 12:24:58 PDT 2019
 Rule File Pathname:        /share/home/zenghuanlong/pn_examples/boundary_coverage_eval/eval_results/result/work/asap7/ACTIVE.W.2/corner_016/example_3.rul
 Rule File Title:           
@@ -94,7 +94,7 @@ RULECHECK SRAM.LIG.GATE.OV.2 ......... TOTAL Result Count = 0 (0)
 --- SUMMARY
 ---
 TOTAL CPU Time:                  0
-TOTAL REAL Time:                 27
+TOTAL REAL Time:                 28
 TOTAL Original Layer Geometries: 1 (1)
 TOTAL DRC RuleChecks Executed:   26
 TOTAL DRC Results Generated:     0 (0)

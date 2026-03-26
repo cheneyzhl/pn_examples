@@ -1,0 +1,3745 @@
+{
+  "rule_name": "M5.W.4",
+  "rule_description": "M5 horizontal width, resulting in the polygon spanning an even number of minimum width routing tracks horizontally, is not allowed.",
+  "rule_script": "INTERNAL M5_VE ==  3*VAR_M5_1X REGION OPPOSITE PARALLEL ONLY PROJ > 0 \nINTERNAL M5_VE ==  7*VAR_M5_1X REGION OPPOSITE PARALLEL ONLY PROJ > 0 \nINTERNAL M5_VE == 11*VAR_M5_1X REGION OPPOSITE PARALLEL ONLY PROJ > 0 \nINTERNAL M5_VE == 15*VAR_M5_1X REGION OPPOSITE PARALLEL ONLY PROJ > 0 \nINTERNAL M5_VE == 19*VAR_M5_1X REGION OPPOSITE PARALLEL ONLY PROJ > 0",
+  "perturbed_scripts": {
+    "corner_000": "INTERNAL M5_VE ==  3*VAR_M5_1X REGION OPPOSITE PARALLEL ONLY PROJ > 0.000\nINTERNAL M5_VE ==  7*VAR_M5_1X REGION OPPOSITE PARALLEL ONLY PROJ > 0.000\nINTERNAL M5_VE == 11*VAR_M5_1X REGION OPPOSITE PARALLEL ONLY PROJ > 0.000\nINTERNAL M5_VE == 15*VAR_M5_1X REGION OPPOSITE PARALLEL ONLY PROJ > 0.000\nINTERNAL M5_VE == 19*VAR_M5_1X REGION OPPOSITE PARALLEL ONLY PROJ > 0.000\n",
+    "corner_001": "INTERNAL M5_VE ==  3*VAR_M5_1X REGION OPPOSITE PARALLEL ONLY PROJ > 0.001\nINTERNAL M5_VE ==  7*VAR_M5_1X REGION OPPOSITE PARALLEL ONLY PROJ > 0.000\nINTERNAL M5_VE == 11*VAR_M5_1X REGION OPPOSITE PARALLEL ONLY PROJ > 0.000\nINTERNAL M5_VE == 15*VAR_M5_1X REGION OPPOSITE PARALLEL ONLY PROJ > 0.000\nINTERNAL M5_VE == 19*VAR_M5_1X REGION OPPOSITE PARALLEL ONLY PROJ > 0.000\n",
+    "corner_002": "INTERNAL M5_VE ==  3*VAR_M5_1X REGION OPPOSITE PARALLEL ONLY PROJ > 0.000\nINTERNAL M5_VE ==  7*VAR_M5_1X REGION OPPOSITE PARALLEL ONLY PROJ > 0.001\nINTERNAL M5_VE == 11*VAR_M5_1X REGION OPPOSITE PARALLEL ONLY PROJ > 0.000\nINTERNAL M5_VE == 15*VAR_M5_1X REGION OPPOSITE PARALLEL ONLY PROJ > 0.000\nINTERNAL M5_VE == 19*VAR_M5_1X REGION OPPOSITE PARALLEL ONLY PROJ > 0.000\n",
+    "corner_003": "INTERNAL M5_VE ==  3*VAR_M5_1X REGION OPPOSITE PARALLEL ONLY PROJ > 0.001\nINTERNAL M5_VE ==  7*VAR_M5_1X REGION OPPOSITE PARALLEL ONLY PROJ > 0.001\nINTERNAL M5_VE == 11*VAR_M5_1X REGION OPPOSITE PARALLEL ONLY PROJ > 0.000\nINTERNAL M5_VE == 15*VAR_M5_1X REGION OPPOSITE PARALLEL ONLY PROJ > 0.000\nINTERNAL M5_VE == 19*VAR_M5_1X REGION OPPOSITE PARALLEL ONLY PROJ > 0.000\n",
+    "corner_004": "INTERNAL M5_VE ==  3*VAR_M5_1X REGION OPPOSITE PARALLEL ONLY PROJ > 0.000\nINTERNAL M5_VE ==  7*VAR_M5_1X REGION OPPOSITE PARALLEL ONLY PROJ > 0.000\nINTERNAL M5_VE == 11*VAR_M5_1X REGION OPPOSITE PARALLEL ONLY PROJ > 0.001\nINTERNAL M5_VE == 15*VAR_M5_1X REGION OPPOSITE PARALLEL ONLY PROJ > 0.000\nINTERNAL M5_VE == 19*VAR_M5_1X REGION OPPOSITE PARALLEL ONLY PROJ > 0.000\n",
+    "corner_005": "INTERNAL M5_VE ==  3*VAR_M5_1X REGION OPPOSITE PARALLEL ONLY PROJ > 0.001\nINTERNAL M5_VE ==  7*VAR_M5_1X REGION OPPOSITE PARALLEL ONLY PROJ > 0.000\nINTERNAL M5_VE == 11*VAR_M5_1X REGION OPPOSITE PARALLEL ONLY PROJ > 0.001\nINTERNAL M5_VE == 15*VAR_M5_1X REGION OPPOSITE PARALLEL ONLY PROJ > 0.000\nINTERNAL M5_VE == 19*VAR_M5_1X REGION OPPOSITE PARALLEL ONLY PROJ > 0.000\n",
+    "corner_006": "INTERNAL M5_VE ==  3*VAR_M5_1X REGION OPPOSITE PARALLEL ONLY PROJ > 0.000\nINTERNAL M5_VE ==  7*VAR_M5_1X REGION OPPOSITE PARALLEL ONLY PROJ > 0.001\nINTERNAL M5_VE == 11*VAR_M5_1X REGION OPPOSITE PARALLEL ONLY PROJ > 0.001\nINTERNAL M5_VE == 15*VAR_M5_1X REGION OPPOSITE PARALLEL ONLY PROJ > 0.000\nINTERNAL M5_VE == 19*VAR_M5_1X REGION OPPOSITE PARALLEL ONLY PROJ > 0.000\n",
+    "corner_007": "INTERNAL M5_VE ==  3*VAR_M5_1X REGION OPPOSITE PARALLEL ONLY PROJ > 0.001\nINTERNAL M5_VE ==  7*VAR_M5_1X REGION OPPOSITE PARALLEL ONLY PROJ > 0.001\nINTERNAL M5_VE == 11*VAR_M5_1X REGION OPPOSITE PARALLEL ONLY PROJ > 0.001\nINTERNAL M5_VE == 15*VAR_M5_1X REGION OPPOSITE PARALLEL ONLY PROJ > 0.000\nINTERNAL M5_VE == 19*VAR_M5_1X REGION OPPOSITE PARALLEL ONLY PROJ > 0.000\n",
+    "corner_008": "INTERNAL M5_VE ==  3*VAR_M5_1X REGION OPPOSITE PARALLEL ONLY PROJ > 0.000\nINTERNAL M5_VE ==  7*VAR_M5_1X REGION OPPOSITE PARALLEL ONLY PROJ > 0.000\nINTERNAL M5_VE == 11*VAR_M5_1X REGION OPPOSITE PARALLEL ONLY PROJ > 0.000\nINTERNAL M5_VE == 15*VAR_M5_1X REGION OPPOSITE PARALLEL ONLY PROJ > 0.001\nINTERNAL M5_VE == 19*VAR_M5_1X REGION OPPOSITE PARALLEL ONLY PROJ > 0.000\n",
+    "corner_009": "INTERNAL M5_VE ==  3*VAR_M5_1X REGION OPPOSITE PARALLEL ONLY PROJ > 0.001\nINTERNAL M5_VE ==  7*VAR_M5_1X REGION OPPOSITE PARALLEL ONLY PROJ > 0.000\nINTERNAL M5_VE == 11*VAR_M5_1X REGION OPPOSITE PARALLEL ONLY PROJ > 0.000\nINTERNAL M5_VE == 15*VAR_M5_1X REGION OPPOSITE PARALLEL ONLY PROJ > 0.001\nINTERNAL M5_VE == 19*VAR_M5_1X REGION OPPOSITE PARALLEL ONLY PROJ > 0.000\n",
+    "corner_010": "INTERNAL M5_VE ==  3*VAR_M5_1X REGION OPPOSITE PARALLEL ONLY PROJ > 0.000\nINTERNAL M5_VE ==  7*VAR_M5_1X REGION OPPOSITE PARALLEL ONLY PROJ > 0.001\nINTERNAL M5_VE == 11*VAR_M5_1X REGION OPPOSITE PARALLEL ONLY PROJ > 0.000\nINTERNAL M5_VE == 15*VAR_M5_1X REGION OPPOSITE PARALLEL ONLY PROJ > 0.001\nINTERNAL M5_VE == 19*VAR_M5_1X REGION OPPOSITE PARALLEL ONLY PROJ > 0.000\n",
+    "corner_011": "INTERNAL M5_VE ==  3*VAR_M5_1X REGION OPPOSITE PARALLEL ONLY PROJ > 0.001\nINTERNAL M5_VE ==  7*VAR_M5_1X REGION OPPOSITE PARALLEL ONLY PROJ > 0.001\nINTERNAL M5_VE == 11*VAR_M5_1X REGION OPPOSITE PARALLEL ONLY PROJ > 0.000\nINTERNAL M5_VE == 15*VAR_M5_1X REGION OPPOSITE PARALLEL ONLY PROJ > 0.001\nINTERNAL M5_VE == 19*VAR_M5_1X REGION OPPOSITE PARALLEL ONLY PROJ > 0.000\n",
+    "corner_012": "INTERNAL M5_VE ==  3*VAR_M5_1X REGION OPPOSITE PARALLEL ONLY PROJ > 0.000\nINTERNAL M5_VE ==  7*VAR_M5_1X REGION OPPOSITE PARALLEL ONLY PROJ > 0.000\nINTERNAL M5_VE == 11*VAR_M5_1X REGION OPPOSITE PARALLEL ONLY PROJ > 0.001\nINTERNAL M5_VE == 15*VAR_M5_1X REGION OPPOSITE PARALLEL ONLY PROJ > 0.001\nINTERNAL M5_VE == 19*VAR_M5_1X REGION OPPOSITE PARALLEL ONLY PROJ > 0.000\n",
+    "corner_013": "INTERNAL M5_VE ==  3*VAR_M5_1X REGION OPPOSITE PARALLEL ONLY PROJ > 0.001\nINTERNAL M5_VE ==  7*VAR_M5_1X REGION OPPOSITE PARALLEL ONLY PROJ > 0.000\nINTERNAL M5_VE == 11*VAR_M5_1X REGION OPPOSITE PARALLEL ONLY PROJ > 0.001\nINTERNAL M5_VE == 15*VAR_M5_1X REGION OPPOSITE PARALLEL ONLY PROJ > 0.001\nINTERNAL M5_VE == 19*VAR_M5_1X REGION OPPOSITE PARALLEL ONLY PROJ > 0.000\n",
+    "corner_014": "INTERNAL M5_VE ==  3*VAR_M5_1X REGION OPPOSITE PARALLEL ONLY PROJ > 0.000\nINTERNAL M5_VE ==  7*VAR_M5_1X REGION OPPOSITE PARALLEL ONLY PROJ > 0.001\nINTERNAL M5_VE == 11*VAR_M5_1X REGION OPPOSITE PARALLEL ONLY PROJ > 0.001\nINTERNAL M5_VE == 15*VAR_M5_1X REGION OPPOSITE PARALLEL ONLY PROJ > 0.001\nINTERNAL M5_VE == 19*VAR_M5_1X REGION OPPOSITE PARALLEL ONLY PROJ > 0.000\n",
+    "corner_015": "INTERNAL M5_VE ==  3*VAR_M5_1X REGION OPPOSITE PARALLEL ONLY PROJ > 0.001\nINTERNAL M5_VE ==  7*VAR_M5_1X REGION OPPOSITE PARALLEL ONLY PROJ > 0.001\nINTERNAL M5_VE == 11*VAR_M5_1X REGION OPPOSITE PARALLEL ONLY PROJ > 0.001\nINTERNAL M5_VE == 15*VAR_M5_1X REGION OPPOSITE PARALLEL ONLY PROJ > 0.001\nINTERNAL M5_VE == 19*VAR_M5_1X REGION OPPOSITE PARALLEL ONLY PROJ > 0.000\n",
+    "corner_016": "INTERNAL M5_VE ==  3*VAR_M5_1X REGION OPPOSITE PARALLEL ONLY PROJ > 0.000\nINTERNAL M5_VE ==  7*VAR_M5_1X REGION OPPOSITE PARALLEL ONLY PROJ > 0.000\nINTERNAL M5_VE == 11*VAR_M5_1X REGION OPPOSITE PARALLEL ONLY PROJ > 0.000\nINTERNAL M5_VE == 15*VAR_M5_1X REGION OPPOSITE PARALLEL ONLY PROJ > 0.000\nINTERNAL M5_VE == 19*VAR_M5_1X REGION OPPOSITE PARALLEL ONLY PROJ > 0.001\n",
+    "corner_017": "INTERNAL M5_VE ==  3*VAR_M5_1X REGION OPPOSITE PARALLEL ONLY PROJ > 0.001\nINTERNAL M5_VE ==  7*VAR_M5_1X REGION OPPOSITE PARALLEL ONLY PROJ > 0.000\nINTERNAL M5_VE == 11*VAR_M5_1X REGION OPPOSITE PARALLEL ONLY PROJ > 0.000\nINTERNAL M5_VE == 15*VAR_M5_1X REGION OPPOSITE PARALLEL ONLY PROJ > 0.000\nINTERNAL M5_VE == 19*VAR_M5_1X REGION OPPOSITE PARALLEL ONLY PROJ > 0.001\n",
+    "corner_018": "INTERNAL M5_VE ==  3*VAR_M5_1X REGION OPPOSITE PARALLEL ONLY PROJ > 0.000\nINTERNAL M5_VE ==  7*VAR_M5_1X REGION OPPOSITE PARALLEL ONLY PROJ > 0.001\nINTERNAL M5_VE == 11*VAR_M5_1X REGION OPPOSITE PARALLEL ONLY PROJ > 0.000\nINTERNAL M5_VE == 15*VAR_M5_1X REGION OPPOSITE PARALLEL ONLY PROJ > 0.000\nINTERNAL M5_VE == 19*VAR_M5_1X REGION OPPOSITE PARALLEL ONLY PROJ > 0.001\n",
+    "corner_019": "INTERNAL M5_VE ==  3*VAR_M5_1X REGION OPPOSITE PARALLEL ONLY PROJ > 0.001\nINTERNAL M5_VE ==  7*VAR_M5_1X REGION OPPOSITE PARALLEL ONLY PROJ > 0.001\nINTERNAL M5_VE == 11*VAR_M5_1X REGION OPPOSITE PARALLEL ONLY PROJ > 0.000\nINTERNAL M5_VE == 15*VAR_M5_1X REGION OPPOSITE PARALLEL ONLY PROJ > 0.000\nINTERNAL M5_VE == 19*VAR_M5_1X REGION OPPOSITE PARALLEL ONLY PROJ > 0.001\n",
+    "corner_020": "INTERNAL M5_VE ==  3*VAR_M5_1X REGION OPPOSITE PARALLEL ONLY PROJ > 0.000\nINTERNAL M5_VE ==  7*VAR_M5_1X REGION OPPOSITE PARALLEL ONLY PROJ > 0.000\nINTERNAL M5_VE == 11*VAR_M5_1X REGION OPPOSITE PARALLEL ONLY PROJ > 0.001\nINTERNAL M5_VE == 15*VAR_M5_1X REGION OPPOSITE PARALLEL ONLY PROJ > 0.000\nINTERNAL M5_VE == 19*VAR_M5_1X REGION OPPOSITE PARALLEL ONLY PROJ > 0.001\n",
+    "corner_021": "INTERNAL M5_VE ==  3*VAR_M5_1X REGION OPPOSITE PARALLEL ONLY PROJ > 0.001\nINTERNAL M5_VE ==  7*VAR_M5_1X REGION OPPOSITE PARALLEL ONLY PROJ > 0.000\nINTERNAL M5_VE == 11*VAR_M5_1X REGION OPPOSITE PARALLEL ONLY PROJ > 0.001\nINTERNAL M5_VE == 15*VAR_M5_1X REGION OPPOSITE PARALLEL ONLY PROJ > 0.000\nINTERNAL M5_VE == 19*VAR_M5_1X REGION OPPOSITE PARALLEL ONLY PROJ > 0.001\n",
+    "corner_022": "INTERNAL M5_VE ==  3*VAR_M5_1X REGION OPPOSITE PARALLEL ONLY PROJ > 0.000\nINTERNAL M5_VE ==  7*VAR_M5_1X REGION OPPOSITE PARALLEL ONLY PROJ > 0.001\nINTERNAL M5_VE == 11*VAR_M5_1X REGION OPPOSITE PARALLEL ONLY PROJ > 0.001\nINTERNAL M5_VE == 15*VAR_M5_1X REGION OPPOSITE PARALLEL ONLY PROJ > 0.000\nINTERNAL M5_VE == 19*VAR_M5_1X REGION OPPOSITE PARALLEL ONLY PROJ > 0.001\n",
+    "corner_023": "INTERNAL M5_VE ==  3*VAR_M5_1X REGION OPPOSITE PARALLEL ONLY PROJ > 0.001\nINTERNAL M5_VE ==  7*VAR_M5_1X REGION OPPOSITE PARALLEL ONLY PROJ > 0.001\nINTERNAL M5_VE == 11*VAR_M5_1X REGION OPPOSITE PARALLEL ONLY PROJ > 0.001\nINTERNAL M5_VE == 15*VAR_M5_1X REGION OPPOSITE PARALLEL ONLY PROJ > 0.000\nINTERNAL M5_VE == 19*VAR_M5_1X REGION OPPOSITE PARALLEL ONLY PROJ > 0.001\n",
+    "corner_024": "INTERNAL M5_VE ==  3*VAR_M5_1X REGION OPPOSITE PARALLEL ONLY PROJ > 0.000\nINTERNAL M5_VE ==  7*VAR_M5_1X REGION OPPOSITE PARALLEL ONLY PROJ > 0.000\nINTERNAL M5_VE == 11*VAR_M5_1X REGION OPPOSITE PARALLEL ONLY PROJ > 0.000\nINTERNAL M5_VE == 15*VAR_M5_1X REGION OPPOSITE PARALLEL ONLY PROJ > 0.001\nINTERNAL M5_VE == 19*VAR_M5_1X REGION OPPOSITE PARALLEL ONLY PROJ > 0.001\n",
+    "corner_025": "INTERNAL M5_VE ==  3*VAR_M5_1X REGION OPPOSITE PARALLEL ONLY PROJ > 0.001\nINTERNAL M5_VE ==  7*VAR_M5_1X REGION OPPOSITE PARALLEL ONLY PROJ > 0.000\nINTERNAL M5_VE == 11*VAR_M5_1X REGION OPPOSITE PARALLEL ONLY PROJ > 0.000\nINTERNAL M5_VE == 15*VAR_M5_1X REGION OPPOSITE PARALLEL ONLY PROJ > 0.001\nINTERNAL M5_VE == 19*VAR_M5_1X REGION OPPOSITE PARALLEL ONLY PROJ > 0.001\n",
+    "corner_026": "INTERNAL M5_VE ==  3*VAR_M5_1X REGION OPPOSITE PARALLEL ONLY PROJ > 0.000\nINTERNAL M5_VE ==  7*VAR_M5_1X REGION OPPOSITE PARALLEL ONLY PROJ > 0.001\nINTERNAL M5_VE == 11*VAR_M5_1X REGION OPPOSITE PARALLEL ONLY PROJ > 0.000\nINTERNAL M5_VE == 15*VAR_M5_1X REGION OPPOSITE PARALLEL ONLY PROJ > 0.001\nINTERNAL M5_VE == 19*VAR_M5_1X REGION OPPOSITE PARALLEL ONLY PROJ > 0.001\n",
+    "corner_027": "INTERNAL M5_VE ==  3*VAR_M5_1X REGION OPPOSITE PARALLEL ONLY PROJ > 0.001\nINTERNAL M5_VE ==  7*VAR_M5_1X REGION OPPOSITE PARALLEL ONLY PROJ > 0.001\nINTERNAL M5_VE == 11*VAR_M5_1X REGION OPPOSITE PARALLEL ONLY PROJ > 0.000\nINTERNAL M5_VE == 15*VAR_M5_1X REGION OPPOSITE PARALLEL ONLY PROJ > 0.001\nINTERNAL M5_VE == 19*VAR_M5_1X REGION OPPOSITE PARALLEL ONLY PROJ > 0.001\n",
+    "corner_028": "INTERNAL M5_VE ==  3*VAR_M5_1X REGION OPPOSITE PARALLEL ONLY PROJ > 0.000\nINTERNAL M5_VE ==  7*VAR_M5_1X REGION OPPOSITE PARALLEL ONLY PROJ > 0.000\nINTERNAL M5_VE == 11*VAR_M5_1X REGION OPPOSITE PARALLEL ONLY PROJ > 0.001\nINTERNAL M5_VE == 15*VAR_M5_1X REGION OPPOSITE PARALLEL ONLY PROJ > 0.001\nINTERNAL M5_VE == 19*VAR_M5_1X REGION OPPOSITE PARALLEL ONLY PROJ > 0.001\n",
+    "corner_029": "INTERNAL M5_VE ==  3*VAR_M5_1X REGION OPPOSITE PARALLEL ONLY PROJ > 0.001\nINTERNAL M5_VE ==  7*VAR_M5_1X REGION OPPOSITE PARALLEL ONLY PROJ > 0.000\nINTERNAL M5_VE == 11*VAR_M5_1X REGION OPPOSITE PARALLEL ONLY PROJ > 0.001\nINTERNAL M5_VE == 15*VAR_M5_1X REGION OPPOSITE PARALLEL ONLY PROJ > 0.001\nINTERNAL M5_VE == 19*VAR_M5_1X REGION OPPOSITE PARALLEL ONLY PROJ > 0.001\n",
+    "corner_030": "INTERNAL M5_VE ==  3*VAR_M5_1X REGION OPPOSITE PARALLEL ONLY PROJ > 0.000\nINTERNAL M5_VE ==  7*VAR_M5_1X REGION OPPOSITE PARALLEL ONLY PROJ > 0.001\nINTERNAL M5_VE == 11*VAR_M5_1X REGION OPPOSITE PARALLEL ONLY PROJ > 0.001\nINTERNAL M5_VE == 15*VAR_M5_1X REGION OPPOSITE PARALLEL ONLY PROJ > 0.001\nINTERNAL M5_VE == 19*VAR_M5_1X REGION OPPOSITE PARALLEL ONLY PROJ > 0.001\n",
+    "corner_031": "INTERNAL M5_VE ==  3*VAR_M5_1X REGION OPPOSITE PARALLEL ONLY PROJ > 0.001\nINTERNAL M5_VE ==  7*VAR_M5_1X REGION OPPOSITE PARALLEL ONLY PROJ > 0.001\nINTERNAL M5_VE == 11*VAR_M5_1X REGION OPPOSITE PARALLEL ONLY PROJ > 0.001\nINTERNAL M5_VE == 15*VAR_M5_1X REGION OPPOSITE PARALLEL ONLY PROJ > 0.001\nINTERNAL M5_VE == 19*VAR_M5_1X REGION OPPOSITE PARALLEL ONLY PROJ > 0.001\n",
+    "corner_original": "INTERNAL M5_VE ==  3*VAR_M5_1X REGION OPPOSITE PARALLEL ONLY PROJ > 0 \nINTERNAL M5_VE ==  7*VAR_M5_1X REGION OPPOSITE PARALLEL ONLY PROJ > 0 \nINTERNAL M5_VE == 11*VAR_M5_1X REGION OPPOSITE PARALLEL ONLY PROJ > 0 \nINTERNAL M5_VE == 15*VAR_M5_1X REGION OPPOSITE PARALLEL ONLY PROJ > 0 \nINTERNAL M5_VE == 19*VAR_M5_1X REGION OPPOSITE PARALLEL ONLY PROJ > 0\n"
+  },
+  "data_name": "asap7",
+  "judge_mode": "match",
+  "corner_count": 33,
+  "sample_count": 6,
+  "all_corners_match": false,
+  "all_corners_detect": true,
+  "all_corners_ok": false,
+  "per_corner": [
+    {
+      "corner_id": "corner_000",
+      "script_expected_correct": false,
+      "script_predicted_correct": false,
+      "corner_any_mismatch": true,
+      "corner_all_match": false,
+      "corner_ok": true,
+      "samples": [
+        {
+          "idx": 0,
+          "predicted_label": true,
+          "calibre_label": true,
+          "match": true,
+          "error": null,
+          "pos": {
+            "M5_1": [
+              {
+                "llx": 0,
+                "lly": 0,
+                "urx": 40,
+                "ury": 100
+              }
+            ]
+          }
+        },
+        {
+          "idx": 1,
+          "predicted_label": false,
+          "calibre_label": true,
+          "match": false,
+          "error": null,
+          "pos": {
+            "M5_1": [
+              {
+                "llx": 0,
+                "lly": 0,
+                "urx": 80,
+                "ury": 100
+              }
+            ]
+          }
+        },
+        {
+          "idx": 2,
+          "predicted_label": true,
+          "calibre_label": true,
+          "match": true,
+          "error": null,
+          "pos": {
+            "M5_1": [
+              {
+                "llx": 0,
+                "lly": 0,
+                "urx": 120,
+                "ury": 100
+              }
+            ]
+          }
+        },
+        {
+          "idx": 3,
+          "predicted_label": false,
+          "calibre_label": true,
+          "match": false,
+          "error": null,
+          "pos": {
+            "M5_1": [
+              {
+                "llx": 0,
+                "lly": 0,
+                "urx": 160,
+                "ury": 100
+              }
+            ]
+          }
+        },
+        {
+          "idx": 4,
+          "predicted_label": true,
+          "calibre_label": true,
+          "match": true,
+          "error": null,
+          "pos": {
+            "M5_1": [
+              {
+                "llx": 0,
+                "lly": 0,
+                "urx": 41,
+                "ury": 100
+              }
+            ]
+          }
+        },
+        {
+          "idx": 5,
+          "predicted_label": true,
+          "calibre_label": true,
+          "match": true,
+          "error": null,
+          "pos": {
+            "M5_1": [
+              {
+                "llx": 0,
+                "lly": 0,
+                "urx": 39,
+                "ury": 100
+              }
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "corner_id": "corner_001",
+      "script_expected_correct": false,
+      "script_predicted_correct": false,
+      "corner_any_mismatch": true,
+      "corner_all_match": false,
+      "corner_ok": true,
+      "samples": [
+        {
+          "idx": 0,
+          "predicted_label": true,
+          "calibre_label": true,
+          "match": true,
+          "error": null,
+          "pos": {
+            "M5_1": [
+              {
+                "llx": 0,
+                "lly": 0,
+                "urx": 40,
+                "ury": 100
+              }
+            ]
+          }
+        },
+        {
+          "idx": 1,
+          "predicted_label": false,
+          "calibre_label": true,
+          "match": false,
+          "error": null,
+          "pos": {
+            "M5_1": [
+              {
+                "llx": 0,
+                "lly": 0,
+                "urx": 80,
+                "ury": 100
+              }
+            ]
+          }
+        },
+        {
+          "idx": 2,
+          "predicted_label": true,
+          "calibre_label": true,
+          "match": true,
+          "error": null,
+          "pos": {
+            "M5_1": [
+              {
+                "llx": 0,
+                "lly": 0,
+                "urx": 120,
+                "ury": 100
+              }
+            ]
+          }
+        },
+        {
+          "idx": 3,
+          "predicted_label": false,
+          "calibre_label": true,
+          "match": false,
+          "error": null,
+          "pos": {
+            "M5_1": [
+              {
+                "llx": 0,
+                "lly": 0,
+                "urx": 160,
+                "ury": 100
+              }
+            ]
+          }
+        },
+        {
+          "idx": 4,
+          "predicted_label": true,
+          "calibre_label": true,
+          "match": true,
+          "error": null,
+          "pos": {
+            "M5_1": [
+              {
+                "llx": 0,
+                "lly": 0,
+                "urx": 41,
+                "ury": 100
+              }
+            ]
+          }
+        },
+        {
+          "idx": 5,
+          "predicted_label": true,
+          "calibre_label": true,
+          "match": true,
+          "error": null,
+          "pos": {
+            "M5_1": [
+              {
+                "llx": 0,
+                "lly": 0,
+                "urx": 39,
+                "ury": 100
+              }
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "corner_id": "corner_002",
+      "script_expected_correct": false,
+      "script_predicted_correct": false,
+      "corner_any_mismatch": true,
+      "corner_all_match": false,
+      "corner_ok": true,
+      "samples": [
+        {
+          "idx": 0,
+          "predicted_label": true,
+          "calibre_label": true,
+          "match": true,
+          "error": null,
+          "pos": {
+            "M5_1": [
+              {
+                "llx": 0,
+                "lly": 0,
+                "urx": 40,
+                "ury": 100
+              }
+            ]
+          }
+        },
+        {
+          "idx": 1,
+          "predicted_label": false,
+          "calibre_label": true,
+          "match": false,
+          "error": null,
+          "pos": {
+            "M5_1": [
+              {
+                "llx": 0,
+                "lly": 0,
+                "urx": 80,
+                "ury": 100
+              }
+            ]
+          }
+        },
+        {
+          "idx": 2,
+          "predicted_label": true,
+          "calibre_label": true,
+          "match": true,
+          "error": null,
+          "pos": {
+            "M5_1": [
+              {
+                "llx": 0,
+                "lly": 0,
+                "urx": 120,
+                "ury": 100
+              }
+            ]
+          }
+        },
+        {
+          "idx": 3,
+          "predicted_label": false,
+          "calibre_label": true,
+          "match": false,
+          "error": null,
+          "pos": {
+            "M5_1": [
+              {
+                "llx": 0,
+                "lly": 0,
+                "urx": 160,
+                "ury": 100
+              }
+            ]
+          }
+        },
+        {
+          "idx": 4,
+          "predicted_label": true,
+          "calibre_label": true,
+          "match": true,
+          "error": null,
+          "pos": {
+            "M5_1": [
+              {
+                "llx": 0,
+                "lly": 0,
+                "urx": 41,
+                "ury": 100
+              }
+            ]
+          }
+        },
+        {
+          "idx": 5,
+          "predicted_label": true,
+          "calibre_label": true,
+          "match": true,
+          "error": null,
+          "pos": {
+            "M5_1": [
+              {
+                "llx": 0,
+                "lly": 0,
+                "urx": 39,
+                "ury": 100
+              }
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "corner_id": "corner_003",
+      "script_expected_correct": false,
+      "script_predicted_correct": false,
+      "corner_any_mismatch": true,
+      "corner_all_match": false,
+      "corner_ok": true,
+      "samples": [
+        {
+          "idx": 0,
+          "predicted_label": true,
+          "calibre_label": true,
+          "match": true,
+          "error": null,
+          "pos": {
+            "M5_1": [
+              {
+                "llx": 0,
+                "lly": 0,
+                "urx": 40,
+                "ury": 100
+              }
+            ]
+          }
+        },
+        {
+          "idx": 1,
+          "predicted_label": false,
+          "calibre_label": true,
+          "match": false,
+          "error": null,
+          "pos": {
+            "M5_1": [
+              {
+                "llx": 0,
+                "lly": 0,
+                "urx": 80,
+                "ury": 100
+              }
+            ]
+          }
+        },
+        {
+          "idx": 2,
+          "predicted_label": true,
+          "calibre_label": true,
+          "match": true,
+          "error": null,
+          "pos": {
+            "M5_1": [
+              {
+                "llx": 0,
+                "lly": 0,
+                "urx": 120,
+                "ury": 100
+              }
+            ]
+          }
+        },
+        {
+          "idx": 3,
+          "predicted_label": false,
+          "calibre_label": true,
+          "match": false,
+          "error": null,
+          "pos": {
+            "M5_1": [
+              {
+                "llx": 0,
+                "lly": 0,
+                "urx": 160,
+                "ury": 100
+              }
+            ]
+          }
+        },
+        {
+          "idx": 4,
+          "predicted_label": true,
+          "calibre_label": true,
+          "match": true,
+          "error": null,
+          "pos": {
+            "M5_1": [
+              {
+                "llx": 0,
+                "lly": 0,
+                "urx": 41,
+                "ury": 100
+              }
+            ]
+          }
+        },
+        {
+          "idx": 5,
+          "predicted_label": true,
+          "calibre_label": true,
+          "match": true,
+          "error": null,
+          "pos": {
+            "M5_1": [
+              {
+                "llx": 0,
+                "lly": 0,
+                "urx": 39,
+                "ury": 100
+              }
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "corner_id": "corner_004",
+      "script_expected_correct": false,
+      "script_predicted_correct": false,
+      "corner_any_mismatch": true,
+      "corner_all_match": false,
+      "corner_ok": true,
+      "samples": [
+        {
+          "idx": 0,
+          "predicted_label": true,
+          "calibre_label": true,
+          "match": true,
+          "error": null,
+          "pos": {
+            "M5_1": [
+              {
+                "llx": 0,
+                "lly": 0,
+                "urx": 40,
+                "ury": 100
+              }
+            ]
+          }
+        },
+        {
+          "idx": 1,
+          "predicted_label": false,
+          "calibre_label": true,
+          "match": false,
+          "error": null,
+          "pos": {
+            "M5_1": [
+              {
+                "llx": 0,
+                "lly": 0,
+                "urx": 80,
+                "ury": 100
+              }
+            ]
+          }
+        },
+        {
+          "idx": 2,
+          "predicted_label": true,
+          "calibre_label": true,
+          "match": true,
+          "error": null,
+          "pos": {
+            "M5_1": [
+              {
+                "llx": 0,
+                "lly": 0,
+                "urx": 120,
+                "ury": 100
+              }
+            ]
+          }
+        },
+        {
+          "idx": 3,
+          "predicted_label": false,
+          "calibre_label": true,
+          "match": false,
+          "error": null,
+          "pos": {
+            "M5_1": [
+              {
+                "llx": 0,
+                "lly": 0,
+                "urx": 160,
+                "ury": 100
+              }
+            ]
+          }
+        },
+        {
+          "idx": 4,
+          "predicted_label": true,
+          "calibre_label": true,
+          "match": true,
+          "error": null,
+          "pos": {
+            "M5_1": [
+              {
+                "llx": 0,
+                "lly": 0,
+                "urx": 41,
+                "ury": 100
+              }
+            ]
+          }
+        },
+        {
+          "idx": 5,
+          "predicted_label": true,
+          "calibre_label": true,
+          "match": true,
+          "error": null,
+          "pos": {
+            "M5_1": [
+              {
+                "llx": 0,
+                "lly": 0,
+                "urx": 39,
+                "ury": 100
+              }
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "corner_id": "corner_005",
+      "script_expected_correct": false,
+      "script_predicted_correct": false,
+      "corner_any_mismatch": true,
+      "corner_all_match": false,
+      "corner_ok": true,
+      "samples": [
+        {
+          "idx": 0,
+          "predicted_label": true,
+          "calibre_label": true,
+          "match": true,
+          "error": null,
+          "pos": {
+            "M5_1": [
+              {
+                "llx": 0,
+                "lly": 0,
+                "urx": 40,
+                "ury": 100
+              }
+            ]
+          }
+        },
+        {
+          "idx": 1,
+          "predicted_label": false,
+          "calibre_label": true,
+          "match": false,
+          "error": null,
+          "pos": {
+            "M5_1": [
+              {
+                "llx": 0,
+                "lly": 0,
+                "urx": 80,
+                "ury": 100
+              }
+            ]
+          }
+        },
+        {
+          "idx": 2,
+          "predicted_label": true,
+          "calibre_label": true,
+          "match": true,
+          "error": null,
+          "pos": {
+            "M5_1": [
+              {
+                "llx": 0,
+                "lly": 0,
+                "urx": 120,
+                "ury": 100
+              }
+            ]
+          }
+        },
+        {
+          "idx": 3,
+          "predicted_label": false,
+          "calibre_label": true,
+          "match": false,
+          "error": null,
+          "pos": {
+            "M5_1": [
+              {
+                "llx": 0,
+                "lly": 0,
+                "urx": 160,
+                "ury": 100
+              }
+            ]
+          }
+        },
+        {
+          "idx": 4,
+          "predicted_label": true,
+          "calibre_label": true,
+          "match": true,
+          "error": null,
+          "pos": {
+            "M5_1": [
+              {
+                "llx": 0,
+                "lly": 0,
+                "urx": 41,
+                "ury": 100
+              }
+            ]
+          }
+        },
+        {
+          "idx": 5,
+          "predicted_label": true,
+          "calibre_label": true,
+          "match": true,
+          "error": null,
+          "pos": {
+            "M5_1": [
+              {
+                "llx": 0,
+                "lly": 0,
+                "urx": 39,
+                "ury": 100
+              }
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "corner_id": "corner_006",
+      "script_expected_correct": false,
+      "script_predicted_correct": false,
+      "corner_any_mismatch": true,
+      "corner_all_match": false,
+      "corner_ok": true,
+      "samples": [
+        {
+          "idx": 0,
+          "predicted_label": true,
+          "calibre_label": true,
+          "match": true,
+          "error": null,
+          "pos": {
+            "M5_1": [
+              {
+                "llx": 0,
+                "lly": 0,
+                "urx": 40,
+                "ury": 100
+              }
+            ]
+          }
+        },
+        {
+          "idx": 1,
+          "predicted_label": false,
+          "calibre_label": true,
+          "match": false,
+          "error": null,
+          "pos": {
+            "M5_1": [
+              {
+                "llx": 0,
+                "lly": 0,
+                "urx": 80,
+                "ury": 100
+              }
+            ]
+          }
+        },
+        {
+          "idx": 2,
+          "predicted_label": true,
+          "calibre_label": true,
+          "match": true,
+          "error": null,
+          "pos": {
+            "M5_1": [
+              {
+                "llx": 0,
+                "lly": 0,
+                "urx": 120,
+                "ury": 100
+              }
+            ]
+          }
+        },
+        {
+          "idx": 3,
+          "predicted_label": false,
+          "calibre_label": true,
+          "match": false,
+          "error": null,
+          "pos": {
+            "M5_1": [
+              {
+                "llx": 0,
+                "lly": 0,
+                "urx": 160,
+                "ury": 100
+              }
+            ]
+          }
+        },
+        {
+          "idx": 4,
+          "predicted_label": true,
+          "calibre_label": true,
+          "match": true,
+          "error": null,
+          "pos": {
+            "M5_1": [
+              {
+                "llx": 0,
+                "lly": 0,
+                "urx": 41,
+                "ury": 100
+              }
+            ]
+          }
+        },
+        {
+          "idx": 5,
+          "predicted_label": true,
+          "calibre_label": true,
+          "match": true,
+          "error": null,
+          "pos": {
+            "M5_1": [
+              {
+                "llx": 0,
+                "lly": 0,
+                "urx": 39,
+                "ury": 100
+              }
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "corner_id": "corner_007",
+      "script_expected_correct": false,
+      "script_predicted_correct": false,
+      "corner_any_mismatch": true,
+      "corner_all_match": false,
+      "corner_ok": true,
+      "samples": [
+        {
+          "idx": 0,
+          "predicted_label": true,
+          "calibre_label": true,
+          "match": true,
+          "error": null,
+          "pos": {
+            "M5_1": [
+              {
+                "llx": 0,
+                "lly": 0,
+                "urx": 40,
+                "ury": 100
+              }
+            ]
+          }
+        },
+        {
+          "idx": 1,
+          "predicted_label": false,
+          "calibre_label": true,
+          "match": false,
+          "error": null,
+          "pos": {
+            "M5_1": [
+              {
+                "llx": 0,
+                "lly": 0,
+                "urx": 80,
+                "ury": 100
+              }
+            ]
+          }
+        },
+        {
+          "idx": 2,
+          "predicted_label": true,
+          "calibre_label": true,
+          "match": true,
+          "error": null,
+          "pos": {
+            "M5_1": [
+              {
+                "llx": 0,
+                "lly": 0,
+                "urx": 120,
+                "ury": 100
+              }
+            ]
+          }
+        },
+        {
+          "idx": 3,
+          "predicted_label": false,
+          "calibre_label": true,
+          "match": false,
+          "error": null,
+          "pos": {
+            "M5_1": [
+              {
+                "llx": 0,
+                "lly": 0,
+                "urx": 160,
+                "ury": 100
+              }
+            ]
+          }
+        },
+        {
+          "idx": 4,
+          "predicted_label": true,
+          "calibre_label": true,
+          "match": true,
+          "error": null,
+          "pos": {
+            "M5_1": [
+              {
+                "llx": 0,
+                "lly": 0,
+                "urx": 41,
+                "ury": 100
+              }
+            ]
+          }
+        },
+        {
+          "idx": 5,
+          "predicted_label": true,
+          "calibre_label": true,
+          "match": true,
+          "error": null,
+          "pos": {
+            "M5_1": [
+              {
+                "llx": 0,
+                "lly": 0,
+                "urx": 39,
+                "ury": 100
+              }
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "corner_id": "corner_008",
+      "script_expected_correct": false,
+      "script_predicted_correct": false,
+      "corner_any_mismatch": true,
+      "corner_all_match": false,
+      "corner_ok": true,
+      "samples": [
+        {
+          "idx": 0,
+          "predicted_label": true,
+          "calibre_label": true,
+          "match": true,
+          "error": null,
+          "pos": {
+            "M5_1": [
+              {
+                "llx": 0,
+                "lly": 0,
+                "urx": 40,
+                "ury": 100
+              }
+            ]
+          }
+        },
+        {
+          "idx": 1,
+          "predicted_label": false,
+          "calibre_label": true,
+          "match": false,
+          "error": null,
+          "pos": {
+            "M5_1": [
+              {
+                "llx": 0,
+                "lly": 0,
+                "urx": 80,
+                "ury": 100
+              }
+            ]
+          }
+        },
+        {
+          "idx": 2,
+          "predicted_label": true,
+          "calibre_label": true,
+          "match": true,
+          "error": null,
+          "pos": {
+            "M5_1": [
+              {
+                "llx": 0,
+                "lly": 0,
+                "urx": 120,
+                "ury": 100
+              }
+            ]
+          }
+        },
+        {
+          "idx": 3,
+          "predicted_label": false,
+          "calibre_label": true,
+          "match": false,
+          "error": null,
+          "pos": {
+            "M5_1": [
+              {
+                "llx": 0,
+                "lly": 0,
+                "urx": 160,
+                "ury": 100
+              }
+            ]
+          }
+        },
+        {
+          "idx": 4,
+          "predicted_label": true,
+          "calibre_label": true,
+          "match": true,
+          "error": null,
+          "pos": {
+            "M5_1": [
+              {
+                "llx": 0,
+                "lly": 0,
+                "urx": 41,
+                "ury": 100
+              }
+            ]
+          }
+        },
+        {
+          "idx": 5,
+          "predicted_label": true,
+          "calibre_label": true,
+          "match": true,
+          "error": null,
+          "pos": {
+            "M5_1": [
+              {
+                "llx": 0,
+                "lly": 0,
+                "urx": 39,
+                "ury": 100
+              }
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "corner_id": "corner_009",
+      "script_expected_correct": false,
+      "script_predicted_correct": false,
+      "corner_any_mismatch": true,
+      "corner_all_match": false,
+      "corner_ok": true,
+      "samples": [
+        {
+          "idx": 0,
+          "predicted_label": true,
+          "calibre_label": true,
+          "match": true,
+          "error": null,
+          "pos": {
+            "M5_1": [
+              {
+                "llx": 0,
+                "lly": 0,
+                "urx": 40,
+                "ury": 100
+              }
+            ]
+          }
+        },
+        {
+          "idx": 1,
+          "predicted_label": false,
+          "calibre_label": true,
+          "match": false,
+          "error": null,
+          "pos": {
+            "M5_1": [
+              {
+                "llx": 0,
+                "lly": 0,
+                "urx": 80,
+                "ury": 100
+              }
+            ]
+          }
+        },
+        {
+          "idx": 2,
+          "predicted_label": true,
+          "calibre_label": true,
+          "match": true,
+          "error": null,
+          "pos": {
+            "M5_1": [
+              {
+                "llx": 0,
+                "lly": 0,
+                "urx": 120,
+                "ury": 100
+              }
+            ]
+          }
+        },
+        {
+          "idx": 3,
+          "predicted_label": false,
+          "calibre_label": true,
+          "match": false,
+          "error": null,
+          "pos": {
+            "M5_1": [
+              {
+                "llx": 0,
+                "lly": 0,
+                "urx": 160,
+                "ury": 100
+              }
+            ]
+          }
+        },
+        {
+          "idx": 4,
+          "predicted_label": true,
+          "calibre_label": true,
+          "match": true,
+          "error": null,
+          "pos": {
+            "M5_1": [
+              {
+                "llx": 0,
+                "lly": 0,
+                "urx": 41,
+                "ury": 100
+              }
+            ]
+          }
+        },
+        {
+          "idx": 5,
+          "predicted_label": true,
+          "calibre_label": true,
+          "match": true,
+          "error": null,
+          "pos": {
+            "M5_1": [
+              {
+                "llx": 0,
+                "lly": 0,
+                "urx": 39,
+                "ury": 100
+              }
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "corner_id": "corner_010",
+      "script_expected_correct": false,
+      "script_predicted_correct": false,
+      "corner_any_mismatch": true,
+      "corner_all_match": false,
+      "corner_ok": true,
+      "samples": [
+        {
+          "idx": 0,
+          "predicted_label": true,
+          "calibre_label": true,
+          "match": true,
+          "error": null,
+          "pos": {
+            "M5_1": [
+              {
+                "llx": 0,
+                "lly": 0,
+                "urx": 40,
+                "ury": 100
+              }
+            ]
+          }
+        },
+        {
+          "idx": 1,
+          "predicted_label": false,
+          "calibre_label": true,
+          "match": false,
+          "error": null,
+          "pos": {
+            "M5_1": [
+              {
+                "llx": 0,
+                "lly": 0,
+                "urx": 80,
+                "ury": 100
+              }
+            ]
+          }
+        },
+        {
+          "idx": 2,
+          "predicted_label": true,
+          "calibre_label": true,
+          "match": true,
+          "error": null,
+          "pos": {
+            "M5_1": [
+              {
+                "llx": 0,
+                "lly": 0,
+                "urx": 120,
+                "ury": 100
+              }
+            ]
+          }
+        },
+        {
+          "idx": 3,
+          "predicted_label": false,
+          "calibre_label": true,
+          "match": false,
+          "error": null,
+          "pos": {
+            "M5_1": [
+              {
+                "llx": 0,
+                "lly": 0,
+                "urx": 160,
+                "ury": 100
+              }
+            ]
+          }
+        },
+        {
+          "idx": 4,
+          "predicted_label": true,
+          "calibre_label": true,
+          "match": true,
+          "error": null,
+          "pos": {
+            "M5_1": [
+              {
+                "llx": 0,
+                "lly": 0,
+                "urx": 41,
+                "ury": 100
+              }
+            ]
+          }
+        },
+        {
+          "idx": 5,
+          "predicted_label": true,
+          "calibre_label": true,
+          "match": true,
+          "error": null,
+          "pos": {
+            "M5_1": [
+              {
+                "llx": 0,
+                "lly": 0,
+                "urx": 39,
+                "ury": 100
+              }
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "corner_id": "corner_011",
+      "script_expected_correct": false,
+      "script_predicted_correct": false,
+      "corner_any_mismatch": true,
+      "corner_all_match": false,
+      "corner_ok": true,
+      "samples": [
+        {
+          "idx": 0,
+          "predicted_label": true,
+          "calibre_label": true,
+          "match": true,
+          "error": null,
+          "pos": {
+            "M5_1": [
+              {
+                "llx": 0,
+                "lly": 0,
+                "urx": 40,
+                "ury": 100
+              }
+            ]
+          }
+        },
+        {
+          "idx": 1,
+          "predicted_label": false,
+          "calibre_label": true,
+          "match": false,
+          "error": null,
+          "pos": {
+            "M5_1": [
+              {
+                "llx": 0,
+                "lly": 0,
+                "urx": 80,
+                "ury": 100
+              }
+            ]
+          }
+        },
+        {
+          "idx": 2,
+          "predicted_label": true,
+          "calibre_label": true,
+          "match": true,
+          "error": null,
+          "pos": {
+            "M5_1": [
+              {
+                "llx": 0,
+                "lly": 0,
+                "urx": 120,
+                "ury": 100
+              }
+            ]
+          }
+        },
+        {
+          "idx": 3,
+          "predicted_label": false,
+          "calibre_label": true,
+          "match": false,
+          "error": null,
+          "pos": {
+            "M5_1": [
+              {
+                "llx": 0,
+                "lly": 0,
+                "urx": 160,
+                "ury": 100
+              }
+            ]
+          }
+        },
+        {
+          "idx": 4,
+          "predicted_label": true,
+          "calibre_label": true,
+          "match": true,
+          "error": null,
+          "pos": {
+            "M5_1": [
+              {
+                "llx": 0,
+                "lly": 0,
+                "urx": 41,
+                "ury": 100
+              }
+            ]
+          }
+        },
+        {
+          "idx": 5,
+          "predicted_label": true,
+          "calibre_label": true,
+          "match": true,
+          "error": null,
+          "pos": {
+            "M5_1": [
+              {
+                "llx": 0,
+                "lly": 0,
+                "urx": 39,
+                "ury": 100
+              }
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "corner_id": "corner_012",
+      "script_expected_correct": false,
+      "script_predicted_correct": false,
+      "corner_any_mismatch": true,
+      "corner_all_match": false,
+      "corner_ok": true,
+      "samples": [
+        {
+          "idx": 0,
+          "predicted_label": true,
+          "calibre_label": true,
+          "match": true,
+          "error": null,
+          "pos": {
+            "M5_1": [
+              {
+                "llx": 0,
+                "lly": 0,
+                "urx": 40,
+                "ury": 100
+              }
+            ]
+          }
+        },
+        {
+          "idx": 1,
+          "predicted_label": false,
+          "calibre_label": true,
+          "match": false,
+          "error": null,
+          "pos": {
+            "M5_1": [
+              {
+                "llx": 0,
+                "lly": 0,
+                "urx": 80,
+                "ury": 100
+              }
+            ]
+          }
+        },
+        {
+          "idx": 2,
+          "predicted_label": true,
+          "calibre_label": true,
+          "match": true,
+          "error": null,
+          "pos": {
+            "M5_1": [
+              {
+                "llx": 0,
+                "lly": 0,
+                "urx": 120,
+                "ury": 100
+              }
+            ]
+          }
+        },
+        {
+          "idx": 3,
+          "predicted_label": false,
+          "calibre_label": true,
+          "match": false,
+          "error": null,
+          "pos": {
+            "M5_1": [
+              {
+                "llx": 0,
+                "lly": 0,
+                "urx": 160,
+                "ury": 100
+              }
+            ]
+          }
+        },
+        {
+          "idx": 4,
+          "predicted_label": true,
+          "calibre_label": true,
+          "match": true,
+          "error": null,
+          "pos": {
+            "M5_1": [
+              {
+                "llx": 0,
+                "lly": 0,
+                "urx": 41,
+                "ury": 100
+              }
+            ]
+          }
+        },
+        {
+          "idx": 5,
+          "predicted_label": true,
+          "calibre_label": true,
+          "match": true,
+          "error": null,
+          "pos": {
+            "M5_1": [
+              {
+                "llx": 0,
+                "lly": 0,
+                "urx": 39,
+                "ury": 100
+              }
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "corner_id": "corner_013",
+      "script_expected_correct": false,
+      "script_predicted_correct": false,
+      "corner_any_mismatch": true,
+      "corner_all_match": false,
+      "corner_ok": true,
+      "samples": [
+        {
+          "idx": 0,
+          "predicted_label": true,
+          "calibre_label": true,
+          "match": true,
+          "error": null,
+          "pos": {
+            "M5_1": [
+              {
+                "llx": 0,
+                "lly": 0,
+                "urx": 40,
+                "ury": 100
+              }
+            ]
+          }
+        },
+        {
+          "idx": 1,
+          "predicted_label": false,
+          "calibre_label": true,
+          "match": false,
+          "error": null,
+          "pos": {
+            "M5_1": [
+              {
+                "llx": 0,
+                "lly": 0,
+                "urx": 80,
+                "ury": 100
+              }
+            ]
+          }
+        },
+        {
+          "idx": 2,
+          "predicted_label": true,
+          "calibre_label": true,
+          "match": true,
+          "error": null,
+          "pos": {
+            "M5_1": [
+              {
+                "llx": 0,
+                "lly": 0,
+                "urx": 120,
+                "ury": 100
+              }
+            ]
+          }
+        },
+        {
+          "idx": 3,
+          "predicted_label": false,
+          "calibre_label": true,
+          "match": false,
+          "error": null,
+          "pos": {
+            "M5_1": [
+              {
+                "llx": 0,
+                "lly": 0,
+                "urx": 160,
+                "ury": 100
+              }
+            ]
+          }
+        },
+        {
+          "idx": 4,
+          "predicted_label": true,
+          "calibre_label": true,
+          "match": true,
+          "error": null,
+          "pos": {
+            "M5_1": [
+              {
+                "llx": 0,
+                "lly": 0,
+                "urx": 41,
+                "ury": 100
+              }
+            ]
+          }
+        },
+        {
+          "idx": 5,
+          "predicted_label": true,
+          "calibre_label": true,
+          "match": true,
+          "error": null,
+          "pos": {
+            "M5_1": [
+              {
+                "llx": 0,
+                "lly": 0,
+                "urx": 39,
+                "ury": 100
+              }
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "corner_id": "corner_014",
+      "script_expected_correct": false,
+      "script_predicted_correct": false,
+      "corner_any_mismatch": true,
+      "corner_all_match": false,
+      "corner_ok": true,
+      "samples": [
+        {
+          "idx": 0,
+          "predicted_label": true,
+          "calibre_label": true,
+          "match": true,
+          "error": null,
+          "pos": {
+            "M5_1": [
+              {
+                "llx": 0,
+                "lly": 0,
+                "urx": 40,
+                "ury": 100
+              }
+            ]
+          }
+        },
+        {
+          "idx": 1,
+          "predicted_label": false,
+          "calibre_label": true,
+          "match": false,
+          "error": null,
+          "pos": {
+            "M5_1": [
+              {
+                "llx": 0,
+                "lly": 0,
+                "urx": 80,
+                "ury": 100
+              }
+            ]
+          }
+        },
+        {
+          "idx": 2,
+          "predicted_label": true,
+          "calibre_label": true,
+          "match": true,
+          "error": null,
+          "pos": {
+            "M5_1": [
+              {
+                "llx": 0,
+                "lly": 0,
+                "urx": 120,
+                "ury": 100
+              }
+            ]
+          }
+        },
+        {
+          "idx": 3,
+          "predicted_label": false,
+          "calibre_label": true,
+          "match": false,
+          "error": null,
+          "pos": {
+            "M5_1": [
+              {
+                "llx": 0,
+                "lly": 0,
+                "urx": 160,
+                "ury": 100
+              }
+            ]
+          }
+        },
+        {
+          "idx": 4,
+          "predicted_label": true,
+          "calibre_label": true,
+          "match": true,
+          "error": null,
+          "pos": {
+            "M5_1": [
+              {
+                "llx": 0,
+                "lly": 0,
+                "urx": 41,
+                "ury": 100
+              }
+            ]
+          }
+        },
+        {
+          "idx": 5,
+          "predicted_label": true,
+          "calibre_label": true,
+          "match": true,
+          "error": null,
+          "pos": {
+            "M5_1": [
+              {
+                "llx": 0,
+                "lly": 0,
+                "urx": 39,
+                "ury": 100
+              }
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "corner_id": "corner_015",
+      "script_expected_correct": false,
+      "script_predicted_correct": false,
+      "corner_any_mismatch": true,
+      "corner_all_match": false,
+      "corner_ok": true,
+      "samples": [
+        {
+          "idx": 0,
+          "predicted_label": true,
+          "calibre_label": true,
+          "match": true,
+          "error": null,
+          "pos": {
+            "M5_1": [
+              {
+                "llx": 0,
+                "lly": 0,
+                "urx": 40,
+                "ury": 100
+              }
+            ]
+          }
+        },
+        {
+          "idx": 1,
+          "predicted_label": false,
+          "calibre_label": true,
+          "match": false,
+          "error": null,
+          "pos": {
+            "M5_1": [
+              {
+                "llx": 0,
+                "lly": 0,
+                "urx": 80,
+                "ury": 100
+              }
+            ]
+          }
+        },
+        {
+          "idx": 2,
+          "predicted_label": true,
+          "calibre_label": true,
+          "match": true,
+          "error": null,
+          "pos": {
+            "M5_1": [
+              {
+                "llx": 0,
+                "lly": 0,
+                "urx": 120,
+                "ury": 100
+              }
+            ]
+          }
+        },
+        {
+          "idx": 3,
+          "predicted_label": false,
+          "calibre_label": true,
+          "match": false,
+          "error": null,
+          "pos": {
+            "M5_1": [
+              {
+                "llx": 0,
+                "lly": 0,
+                "urx": 160,
+                "ury": 100
+              }
+            ]
+          }
+        },
+        {
+          "idx": 4,
+          "predicted_label": true,
+          "calibre_label": true,
+          "match": true,
+          "error": null,
+          "pos": {
+            "M5_1": [
+              {
+                "llx": 0,
+                "lly": 0,
+                "urx": 41,
+                "ury": 100
+              }
+            ]
+          }
+        },
+        {
+          "idx": 5,
+          "predicted_label": true,
+          "calibre_label": true,
+          "match": true,
+          "error": null,
+          "pos": {
+            "M5_1": [
+              {
+                "llx": 0,
+                "lly": 0,
+                "urx": 39,
+                "ury": 100
+              }
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "corner_id": "corner_016",
+      "script_expected_correct": false,
+      "script_predicted_correct": false,
+      "corner_any_mismatch": true,
+      "corner_all_match": false,
+      "corner_ok": true,
+      "samples": [
+        {
+          "idx": 0,
+          "predicted_label": true,
+          "calibre_label": true,
+          "match": true,
+          "error": null,
+          "pos": {
+            "M5_1": [
+              {
+                "llx": 0,
+                "lly": 0,
+                "urx": 40,
+                "ury": 100
+              }
+            ]
+          }
+        },
+        {
+          "idx": 1,
+          "predicted_label": false,
+          "calibre_label": true,
+          "match": false,
+          "error": null,
+          "pos": {
+            "M5_1": [
+              {
+                "llx": 0,
+                "lly": 0,
+                "urx": 80,
+                "ury": 100
+              }
+            ]
+          }
+        },
+        {
+          "idx": 2,
+          "predicted_label": true,
+          "calibre_label": true,
+          "match": true,
+          "error": null,
+          "pos": {
+            "M5_1": [
+              {
+                "llx": 0,
+                "lly": 0,
+                "urx": 120,
+                "ury": 100
+              }
+            ]
+          }
+        },
+        {
+          "idx": 3,
+          "predicted_label": false,
+          "calibre_label": true,
+          "match": false,
+          "error": null,
+          "pos": {
+            "M5_1": [
+              {
+                "llx": 0,
+                "lly": 0,
+                "urx": 160,
+                "ury": 100
+              }
+            ]
+          }
+        },
+        {
+          "idx": 4,
+          "predicted_label": true,
+          "calibre_label": true,
+          "match": true,
+          "error": null,
+          "pos": {
+            "M5_1": [
+              {
+                "llx": 0,
+                "lly": 0,
+                "urx": 41,
+                "ury": 100
+              }
+            ]
+          }
+        },
+        {
+          "idx": 5,
+          "predicted_label": true,
+          "calibre_label": true,
+          "match": true,
+          "error": null,
+          "pos": {
+            "M5_1": [
+              {
+                "llx": 0,
+                "lly": 0,
+                "urx": 39,
+                "ury": 100
+              }
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "corner_id": "corner_017",
+      "script_expected_correct": false,
+      "script_predicted_correct": false,
+      "corner_any_mismatch": true,
+      "corner_all_match": false,
+      "corner_ok": true,
+      "samples": [
+        {
+          "idx": 0,
+          "predicted_label": true,
+          "calibre_label": true,
+          "match": true,
+          "error": null,
+          "pos": {
+            "M5_1": [
+              {
+                "llx": 0,
+                "lly": 0,
+                "urx": 40,
+                "ury": 100
+              }
+            ]
+          }
+        },
+        {
+          "idx": 1,
+          "predicted_label": false,
+          "calibre_label": true,
+          "match": false,
+          "error": null,
+          "pos": {
+            "M5_1": [
+              {
+                "llx": 0,
+                "lly": 0,
+                "urx": 80,
+                "ury": 100
+              }
+            ]
+          }
+        },
+        {
+          "idx": 2,
+          "predicted_label": true,
+          "calibre_label": true,
+          "match": true,
+          "error": null,
+          "pos": {
+            "M5_1": [
+              {
+                "llx": 0,
+                "lly": 0,
+                "urx": 120,
+                "ury": 100
+              }
+            ]
+          }
+        },
+        {
+          "idx": 3,
+          "predicted_label": false,
+          "calibre_label": true,
+          "match": false,
+          "error": null,
+          "pos": {
+            "M5_1": [
+              {
+                "llx": 0,
+                "lly": 0,
+                "urx": 160,
+                "ury": 100
+              }
+            ]
+          }
+        },
+        {
+          "idx": 4,
+          "predicted_label": true,
+          "calibre_label": true,
+          "match": true,
+          "error": null,
+          "pos": {
+            "M5_1": [
+              {
+                "llx": 0,
+                "lly": 0,
+                "urx": 41,
+                "ury": 100
+              }
+            ]
+          }
+        },
+        {
+          "idx": 5,
+          "predicted_label": true,
+          "calibre_label": true,
+          "match": true,
+          "error": null,
+          "pos": {
+            "M5_1": [
+              {
+                "llx": 0,
+                "lly": 0,
+                "urx": 39,
+                "ury": 100
+              }
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "corner_id": "corner_018",
+      "script_expected_correct": false,
+      "script_predicted_correct": false,
+      "corner_any_mismatch": true,
+      "corner_all_match": false,
+      "corner_ok": true,
+      "samples": [
+        {
+          "idx": 0,
+          "predicted_label": true,
+          "calibre_label": true,
+          "match": true,
+          "error": null,
+          "pos": {
+            "M5_1": [
+              {
+                "llx": 0,
+                "lly": 0,
+                "urx": 40,
+                "ury": 100
+              }
+            ]
+          }
+        },
+        {
+          "idx": 1,
+          "predicted_label": false,
+          "calibre_label": true,
+          "match": false,
+          "error": null,
+          "pos": {
+            "M5_1": [
+              {
+                "llx": 0,
+                "lly": 0,
+                "urx": 80,
+                "ury": 100
+              }
+            ]
+          }
+        },
+        {
+          "idx": 2,
+          "predicted_label": true,
+          "calibre_label": true,
+          "match": true,
+          "error": null,
+          "pos": {
+            "M5_1": [
+              {
+                "llx": 0,
+                "lly": 0,
+                "urx": 120,
+                "ury": 100
+              }
+            ]
+          }
+        },
+        {
+          "idx": 3,
+          "predicted_label": false,
+          "calibre_label": true,
+          "match": false,
+          "error": null,
+          "pos": {
+            "M5_1": [
+              {
+                "llx": 0,
+                "lly": 0,
+                "urx": 160,
+                "ury": 100
+              }
+            ]
+          }
+        },
+        {
+          "idx": 4,
+          "predicted_label": true,
+          "calibre_label": true,
+          "match": true,
+          "error": null,
+          "pos": {
+            "M5_1": [
+              {
+                "llx": 0,
+                "lly": 0,
+                "urx": 41,
+                "ury": 100
+              }
+            ]
+          }
+        },
+        {
+          "idx": 5,
+          "predicted_label": true,
+          "calibre_label": true,
+          "match": true,
+          "error": null,
+          "pos": {
+            "M5_1": [
+              {
+                "llx": 0,
+                "lly": 0,
+                "urx": 39,
+                "ury": 100
+              }
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "corner_id": "corner_019",
+      "script_expected_correct": false,
+      "script_predicted_correct": false,
+      "corner_any_mismatch": true,
+      "corner_all_match": false,
+      "corner_ok": true,
+      "samples": [
+        {
+          "idx": 0,
+          "predicted_label": true,
+          "calibre_label": true,
+          "match": true,
+          "error": null,
+          "pos": {
+            "M5_1": [
+              {
+                "llx": 0,
+                "lly": 0,
+                "urx": 40,
+                "ury": 100
+              }
+            ]
+          }
+        },
+        {
+          "idx": 1,
+          "predicted_label": false,
+          "calibre_label": true,
+          "match": false,
+          "error": null,
+          "pos": {
+            "M5_1": [
+              {
+                "llx": 0,
+                "lly": 0,
+                "urx": 80,
+                "ury": 100
+              }
+            ]
+          }
+        },
+        {
+          "idx": 2,
+          "predicted_label": true,
+          "calibre_label": true,
+          "match": true,
+          "error": null,
+          "pos": {
+            "M5_1": [
+              {
+                "llx": 0,
+                "lly": 0,
+                "urx": 120,
+                "ury": 100
+              }
+            ]
+          }
+        },
+        {
+          "idx": 3,
+          "predicted_label": false,
+          "calibre_label": true,
+          "match": false,
+          "error": null,
+          "pos": {
+            "M5_1": [
+              {
+                "llx": 0,
+                "lly": 0,
+                "urx": 160,
+                "ury": 100
+              }
+            ]
+          }
+        },
+        {
+          "idx": 4,
+          "predicted_label": true,
+          "calibre_label": true,
+          "match": true,
+          "error": null,
+          "pos": {
+            "M5_1": [
+              {
+                "llx": 0,
+                "lly": 0,
+                "urx": 41,
+                "ury": 100
+              }
+            ]
+          }
+        },
+        {
+          "idx": 5,
+          "predicted_label": true,
+          "calibre_label": true,
+          "match": true,
+          "error": null,
+          "pos": {
+            "M5_1": [
+              {
+                "llx": 0,
+                "lly": 0,
+                "urx": 39,
+                "ury": 100
+              }
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "corner_id": "corner_020",
+      "script_expected_correct": false,
+      "script_predicted_correct": false,
+      "corner_any_mismatch": true,
+      "corner_all_match": false,
+      "corner_ok": true,
+      "samples": [
+        {
+          "idx": 0,
+          "predicted_label": true,
+          "calibre_label": true,
+          "match": true,
+          "error": null,
+          "pos": {
+            "M5_1": [
+              {
+                "llx": 0,
+                "lly": 0,
+                "urx": 40,
+                "ury": 100
+              }
+            ]
+          }
+        },
+        {
+          "idx": 1,
+          "predicted_label": false,
+          "calibre_label": true,
+          "match": false,
+          "error": null,
+          "pos": {
+            "M5_1": [
+              {
+                "llx": 0,
+                "lly": 0,
+                "urx": 80,
+                "ury": 100
+              }
+            ]
+          }
+        },
+        {
+          "idx": 2,
+          "predicted_label": true,
+          "calibre_label": true,
+          "match": true,
+          "error": null,
+          "pos": {
+            "M5_1": [
+              {
+                "llx": 0,
+                "lly": 0,
+                "urx": 120,
+                "ury": 100
+              }
+            ]
+          }
+        },
+        {
+          "idx": 3,
+          "predicted_label": false,
+          "calibre_label": true,
+          "match": false,
+          "error": null,
+          "pos": {
+            "M5_1": [
+              {
+                "llx": 0,
+                "lly": 0,
+                "urx": 160,
+                "ury": 100
+              }
+            ]
+          }
+        },
+        {
+          "idx": 4,
+          "predicted_label": true,
+          "calibre_label": true,
+          "match": true,
+          "error": null,
+          "pos": {
+            "M5_1": [
+              {
+                "llx": 0,
+                "lly": 0,
+                "urx": 41,
+                "ury": 100
+              }
+            ]
+          }
+        },
+        {
+          "idx": 5,
+          "predicted_label": true,
+          "calibre_label": true,
+          "match": true,
+          "error": null,
+          "pos": {
+            "M5_1": [
+              {
+                "llx": 0,
+                "lly": 0,
+                "urx": 39,
+                "ury": 100
+              }
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "corner_id": "corner_021",
+      "script_expected_correct": false,
+      "script_predicted_correct": false,
+      "corner_any_mismatch": true,
+      "corner_all_match": false,
+      "corner_ok": true,
+      "samples": [
+        {
+          "idx": 0,
+          "predicted_label": true,
+          "calibre_label": true,
+          "match": true,
+          "error": null,
+          "pos": {
+            "M5_1": [
+              {
+                "llx": 0,
+                "lly": 0,
+                "urx": 40,
+                "ury": 100
+              }
+            ]
+          }
+        },
+        {
+          "idx": 1,
+          "predicted_label": false,
+          "calibre_label": true,
+          "match": false,
+          "error": null,
+          "pos": {
+            "M5_1": [
+              {
+                "llx": 0,
+                "lly": 0,
+                "urx": 80,
+                "ury": 100
+              }
+            ]
+          }
+        },
+        {
+          "idx": 2,
+          "predicted_label": true,
+          "calibre_label": true,
+          "match": true,
+          "error": null,
+          "pos": {
+            "M5_1": [
+              {
+                "llx": 0,
+                "lly": 0,
+                "urx": 120,
+                "ury": 100
+              }
+            ]
+          }
+        },
+        {
+          "idx": 3,
+          "predicted_label": false,
+          "calibre_label": true,
+          "match": false,
+          "error": null,
+          "pos": {
+            "M5_1": [
+              {
+                "llx": 0,
+                "lly": 0,
+                "urx": 160,
+                "ury": 100
+              }
+            ]
+          }
+        },
+        {
+          "idx": 4,
+          "predicted_label": true,
+          "calibre_label": true,
+          "match": true,
+          "error": null,
+          "pos": {
+            "M5_1": [
+              {
+                "llx": 0,
+                "lly": 0,
+                "urx": 41,
+                "ury": 100
+              }
+            ]
+          }
+        },
+        {
+          "idx": 5,
+          "predicted_label": true,
+          "calibre_label": true,
+          "match": true,
+          "error": null,
+          "pos": {
+            "M5_1": [
+              {
+                "llx": 0,
+                "lly": 0,
+                "urx": 39,
+                "ury": 100
+              }
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "corner_id": "corner_022",
+      "script_expected_correct": false,
+      "script_predicted_correct": false,
+      "corner_any_mismatch": true,
+      "corner_all_match": false,
+      "corner_ok": true,
+      "samples": [
+        {
+          "idx": 0,
+          "predicted_label": true,
+          "calibre_label": true,
+          "match": true,
+          "error": null,
+          "pos": {
+            "M5_1": [
+              {
+                "llx": 0,
+                "lly": 0,
+                "urx": 40,
+                "ury": 100
+              }
+            ]
+          }
+        },
+        {
+          "idx": 1,
+          "predicted_label": false,
+          "calibre_label": true,
+          "match": false,
+          "error": null,
+          "pos": {
+            "M5_1": [
+              {
+                "llx": 0,
+                "lly": 0,
+                "urx": 80,
+                "ury": 100
+              }
+            ]
+          }
+        },
+        {
+          "idx": 2,
+          "predicted_label": true,
+          "calibre_label": true,
+          "match": true,
+          "error": null,
+          "pos": {
+            "M5_1": [
+              {
+                "llx": 0,
+                "lly": 0,
+                "urx": 120,
+                "ury": 100
+              }
+            ]
+          }
+        },
+        {
+          "idx": 3,
+          "predicted_label": false,
+          "calibre_label": true,
+          "match": false,
+          "error": null,
+          "pos": {
+            "M5_1": [
+              {
+                "llx": 0,
+                "lly": 0,
+                "urx": 160,
+                "ury": 100
+              }
+            ]
+          }
+        },
+        {
+          "idx": 4,
+          "predicted_label": true,
+          "calibre_label": true,
+          "match": true,
+          "error": null,
+          "pos": {
+            "M5_1": [
+              {
+                "llx": 0,
+                "lly": 0,
+                "urx": 41,
+                "ury": 100
+              }
+            ]
+          }
+        },
+        {
+          "idx": 5,
+          "predicted_label": true,
+          "calibre_label": true,
+          "match": true,
+          "error": null,
+          "pos": {
+            "M5_1": [
+              {
+                "llx": 0,
+                "lly": 0,
+                "urx": 39,
+                "ury": 100
+              }
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "corner_id": "corner_023",
+      "script_expected_correct": false,
+      "script_predicted_correct": false,
+      "corner_any_mismatch": true,
+      "corner_all_match": false,
+      "corner_ok": true,
+      "samples": [
+        {
+          "idx": 0,
+          "predicted_label": true,
+          "calibre_label": true,
+          "match": true,
+          "error": null,
+          "pos": {
+            "M5_1": [
+              {
+                "llx": 0,
+                "lly": 0,
+                "urx": 40,
+                "ury": 100
+              }
+            ]
+          }
+        },
+        {
+          "idx": 1,
+          "predicted_label": false,
+          "calibre_label": true,
+          "match": false,
+          "error": null,
+          "pos": {
+            "M5_1": [
+              {
+                "llx": 0,
+                "lly": 0,
+                "urx": 80,
+                "ury": 100
+              }
+            ]
+          }
+        },
+        {
+          "idx": 2,
+          "predicted_label": true,
+          "calibre_label": true,
+          "match": true,
+          "error": null,
+          "pos": {
+            "M5_1": [
+              {
+                "llx": 0,
+                "lly": 0,
+                "urx": 120,
+                "ury": 100
+              }
+            ]
+          }
+        },
+        {
+          "idx": 3,
+          "predicted_label": false,
+          "calibre_label": true,
+          "match": false,
+          "error": null,
+          "pos": {
+            "M5_1": [
+              {
+                "llx": 0,
+                "lly": 0,
+                "urx": 160,
+                "ury": 100
+              }
+            ]
+          }
+        },
+        {
+          "idx": 4,
+          "predicted_label": true,
+          "calibre_label": true,
+          "match": true,
+          "error": null,
+          "pos": {
+            "M5_1": [
+              {
+                "llx": 0,
+                "lly": 0,
+                "urx": 41,
+                "ury": 100
+              }
+            ]
+          }
+        },
+        {
+          "idx": 5,
+          "predicted_label": true,
+          "calibre_label": true,
+          "match": true,
+          "error": null,
+          "pos": {
+            "M5_1": [
+              {
+                "llx": 0,
+                "lly": 0,
+                "urx": 39,
+                "ury": 100
+              }
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "corner_id": "corner_024",
+      "script_expected_correct": false,
+      "script_predicted_correct": false,
+      "corner_any_mismatch": true,
+      "corner_all_match": false,
+      "corner_ok": true,
+      "samples": [
+        {
+          "idx": 0,
+          "predicted_label": true,
+          "calibre_label": true,
+          "match": true,
+          "error": null,
+          "pos": {
+            "M5_1": [
+              {
+                "llx": 0,
+                "lly": 0,
+                "urx": 40,
+                "ury": 100
+              }
+            ]
+          }
+        },
+        {
+          "idx": 1,
+          "predicted_label": false,
+          "calibre_label": true,
+          "match": false,
+          "error": null,
+          "pos": {
+            "M5_1": [
+              {
+                "llx": 0,
+                "lly": 0,
+                "urx": 80,
+                "ury": 100
+              }
+            ]
+          }
+        },
+        {
+          "idx": 2,
+          "predicted_label": true,
+          "calibre_label": true,
+          "match": true,
+          "error": null,
+          "pos": {
+            "M5_1": [
+              {
+                "llx": 0,
+                "lly": 0,
+                "urx": 120,
+                "ury": 100
+              }
+            ]
+          }
+        },
+        {
+          "idx": 3,
+          "predicted_label": false,
+          "calibre_label": true,
+          "match": false,
+          "error": null,
+          "pos": {
+            "M5_1": [
+              {
+                "llx": 0,
+                "lly": 0,
+                "urx": 160,
+                "ury": 100
+              }
+            ]
+          }
+        },
+        {
+          "idx": 4,
+          "predicted_label": true,
+          "calibre_label": true,
+          "match": true,
+          "error": null,
+          "pos": {
+            "M5_1": [
+              {
+                "llx": 0,
+                "lly": 0,
+                "urx": 41,
+                "ury": 100
+              }
+            ]
+          }
+        },
+        {
+          "idx": 5,
+          "predicted_label": true,
+          "calibre_label": true,
+          "match": true,
+          "error": null,
+          "pos": {
+            "M5_1": [
+              {
+                "llx": 0,
+                "lly": 0,
+                "urx": 39,
+                "ury": 100
+              }
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "corner_id": "corner_025",
+      "script_expected_correct": false,
+      "script_predicted_correct": false,
+      "corner_any_mismatch": true,
+      "corner_all_match": false,
+      "corner_ok": true,
+      "samples": [
+        {
+          "idx": 0,
+          "predicted_label": true,
+          "calibre_label": true,
+          "match": true,
+          "error": null,
+          "pos": {
+            "M5_1": [
+              {
+                "llx": 0,
+                "lly": 0,
+                "urx": 40,
+                "ury": 100
+              }
+            ]
+          }
+        },
+        {
+          "idx": 1,
+          "predicted_label": false,
+          "calibre_label": true,
+          "match": false,
+          "error": null,
+          "pos": {
+            "M5_1": [
+              {
+                "llx": 0,
+                "lly": 0,
+                "urx": 80,
+                "ury": 100
+              }
+            ]
+          }
+        },
+        {
+          "idx": 2,
+          "predicted_label": true,
+          "calibre_label": true,
+          "match": true,
+          "error": null,
+          "pos": {
+            "M5_1": [
+              {
+                "llx": 0,
+                "lly": 0,
+                "urx": 120,
+                "ury": 100
+              }
+            ]
+          }
+        },
+        {
+          "idx": 3,
+          "predicted_label": false,
+          "calibre_label": true,
+          "match": false,
+          "error": null,
+          "pos": {
+            "M5_1": [
+              {
+                "llx": 0,
+                "lly": 0,
+                "urx": 160,
+                "ury": 100
+              }
+            ]
+          }
+        },
+        {
+          "idx": 4,
+          "predicted_label": true,
+          "calibre_label": true,
+          "match": true,
+          "error": null,
+          "pos": {
+            "M5_1": [
+              {
+                "llx": 0,
+                "lly": 0,
+                "urx": 41,
+                "ury": 100
+              }
+            ]
+          }
+        },
+        {
+          "idx": 5,
+          "predicted_label": true,
+          "calibre_label": true,
+          "match": true,
+          "error": null,
+          "pos": {
+            "M5_1": [
+              {
+                "llx": 0,
+                "lly": 0,
+                "urx": 39,
+                "ury": 100
+              }
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "corner_id": "corner_026",
+      "script_expected_correct": false,
+      "script_predicted_correct": false,
+      "corner_any_mismatch": true,
+      "corner_all_match": false,
+      "corner_ok": true,
+      "samples": [
+        {
+          "idx": 0,
+          "predicted_label": true,
+          "calibre_label": true,
+          "match": true,
+          "error": null,
+          "pos": {
+            "M5_1": [
+              {
+                "llx": 0,
+                "lly": 0,
+                "urx": 40,
+                "ury": 100
+              }
+            ]
+          }
+        },
+        {
+          "idx": 1,
+          "predicted_label": false,
+          "calibre_label": true,
+          "match": false,
+          "error": null,
+          "pos": {
+            "M5_1": [
+              {
+                "llx": 0,
+                "lly": 0,
+                "urx": 80,
+                "ury": 100
+              }
+            ]
+          }
+        },
+        {
+          "idx": 2,
+          "predicted_label": true,
+          "calibre_label": true,
+          "match": true,
+          "error": null,
+          "pos": {
+            "M5_1": [
+              {
+                "llx": 0,
+                "lly": 0,
+                "urx": 120,
+                "ury": 100
+              }
+            ]
+          }
+        },
+        {
+          "idx": 3,
+          "predicted_label": false,
+          "calibre_label": true,
+          "match": false,
+          "error": null,
+          "pos": {
+            "M5_1": [
+              {
+                "llx": 0,
+                "lly": 0,
+                "urx": 160,
+                "ury": 100
+              }
+            ]
+          }
+        },
+        {
+          "idx": 4,
+          "predicted_label": true,
+          "calibre_label": true,
+          "match": true,
+          "error": null,
+          "pos": {
+            "M5_1": [
+              {
+                "llx": 0,
+                "lly": 0,
+                "urx": 41,
+                "ury": 100
+              }
+            ]
+          }
+        },
+        {
+          "idx": 5,
+          "predicted_label": true,
+          "calibre_label": true,
+          "match": true,
+          "error": null,
+          "pos": {
+            "M5_1": [
+              {
+                "llx": 0,
+                "lly": 0,
+                "urx": 39,
+                "ury": 100
+              }
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "corner_id": "corner_027",
+      "script_expected_correct": false,
+      "script_predicted_correct": false,
+      "corner_any_mismatch": true,
+      "corner_all_match": false,
+      "corner_ok": true,
+      "samples": [
+        {
+          "idx": 0,
+          "predicted_label": true,
+          "calibre_label": true,
+          "match": true,
+          "error": null,
+          "pos": {
+            "M5_1": [
+              {
+                "llx": 0,
+                "lly": 0,
+                "urx": 40,
+                "ury": 100
+              }
+            ]
+          }
+        },
+        {
+          "idx": 1,
+          "predicted_label": false,
+          "calibre_label": true,
+          "match": false,
+          "error": null,
+          "pos": {
+            "M5_1": [
+              {
+                "llx": 0,
+                "lly": 0,
+                "urx": 80,
+                "ury": 100
+              }
+            ]
+          }
+        },
+        {
+          "idx": 2,
+          "predicted_label": true,
+          "calibre_label": true,
+          "match": true,
+          "error": null,
+          "pos": {
+            "M5_1": [
+              {
+                "llx": 0,
+                "lly": 0,
+                "urx": 120,
+                "ury": 100
+              }
+            ]
+          }
+        },
+        {
+          "idx": 3,
+          "predicted_label": false,
+          "calibre_label": true,
+          "match": false,
+          "error": null,
+          "pos": {
+            "M5_1": [
+              {
+                "llx": 0,
+                "lly": 0,
+                "urx": 160,
+                "ury": 100
+              }
+            ]
+          }
+        },
+        {
+          "idx": 4,
+          "predicted_label": true,
+          "calibre_label": true,
+          "match": true,
+          "error": null,
+          "pos": {
+            "M5_1": [
+              {
+                "llx": 0,
+                "lly": 0,
+                "urx": 41,
+                "ury": 100
+              }
+            ]
+          }
+        },
+        {
+          "idx": 5,
+          "predicted_label": true,
+          "calibre_label": true,
+          "match": true,
+          "error": null,
+          "pos": {
+            "M5_1": [
+              {
+                "llx": 0,
+                "lly": 0,
+                "urx": 39,
+                "ury": 100
+              }
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "corner_id": "corner_028",
+      "script_expected_correct": false,
+      "script_predicted_correct": false,
+      "corner_any_mismatch": true,
+      "corner_all_match": false,
+      "corner_ok": true,
+      "samples": [
+        {
+          "idx": 0,
+          "predicted_label": true,
+          "calibre_label": true,
+          "match": true,
+          "error": null,
+          "pos": {
+            "M5_1": [
+              {
+                "llx": 0,
+                "lly": 0,
+                "urx": 40,
+                "ury": 100
+              }
+            ]
+          }
+        },
+        {
+          "idx": 1,
+          "predicted_label": false,
+          "calibre_label": true,
+          "match": false,
+          "error": null,
+          "pos": {
+            "M5_1": [
+              {
+                "llx": 0,
+                "lly": 0,
+                "urx": 80,
+                "ury": 100
+              }
+            ]
+          }
+        },
+        {
+          "idx": 2,
+          "predicted_label": true,
+          "calibre_label": true,
+          "match": true,
+          "error": null,
+          "pos": {
+            "M5_1": [
+              {
+                "llx": 0,
+                "lly": 0,
+                "urx": 120,
+                "ury": 100
+              }
+            ]
+          }
+        },
+        {
+          "idx": 3,
+          "predicted_label": false,
+          "calibre_label": true,
+          "match": false,
+          "error": null,
+          "pos": {
+            "M5_1": [
+              {
+                "llx": 0,
+                "lly": 0,
+                "urx": 160,
+                "ury": 100
+              }
+            ]
+          }
+        },
+        {
+          "idx": 4,
+          "predicted_label": true,
+          "calibre_label": true,
+          "match": true,
+          "error": null,
+          "pos": {
+            "M5_1": [
+              {
+                "llx": 0,
+                "lly": 0,
+                "urx": 41,
+                "ury": 100
+              }
+            ]
+          }
+        },
+        {
+          "idx": 5,
+          "predicted_label": true,
+          "calibre_label": true,
+          "match": true,
+          "error": null,
+          "pos": {
+            "M5_1": [
+              {
+                "llx": 0,
+                "lly": 0,
+                "urx": 39,
+                "ury": 100
+              }
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "corner_id": "corner_029",
+      "script_expected_correct": false,
+      "script_predicted_correct": false,
+      "corner_any_mismatch": true,
+      "corner_all_match": false,
+      "corner_ok": true,
+      "samples": [
+        {
+          "idx": 0,
+          "predicted_label": true,
+          "calibre_label": true,
+          "match": true,
+          "error": null,
+          "pos": {
+            "M5_1": [
+              {
+                "llx": 0,
+                "lly": 0,
+                "urx": 40,
+                "ury": 100
+              }
+            ]
+          }
+        },
+        {
+          "idx": 1,
+          "predicted_label": false,
+          "calibre_label": true,
+          "match": false,
+          "error": null,
+          "pos": {
+            "M5_1": [
+              {
+                "llx": 0,
+                "lly": 0,
+                "urx": 80,
+                "ury": 100
+              }
+            ]
+          }
+        },
+        {
+          "idx": 2,
+          "predicted_label": true,
+          "calibre_label": true,
+          "match": true,
+          "error": null,
+          "pos": {
+            "M5_1": [
+              {
+                "llx": 0,
+                "lly": 0,
+                "urx": 120,
+                "ury": 100
+              }
+            ]
+          }
+        },
+        {
+          "idx": 3,
+          "predicted_label": false,
+          "calibre_label": true,
+          "match": false,
+          "error": null,
+          "pos": {
+            "M5_1": [
+              {
+                "llx": 0,
+                "lly": 0,
+                "urx": 160,
+                "ury": 100
+              }
+            ]
+          }
+        },
+        {
+          "idx": 4,
+          "predicted_label": true,
+          "calibre_label": true,
+          "match": true,
+          "error": null,
+          "pos": {
+            "M5_1": [
+              {
+                "llx": 0,
+                "lly": 0,
+                "urx": 41,
+                "ury": 100
+              }
+            ]
+          }
+        },
+        {
+          "idx": 5,
+          "predicted_label": true,
+          "calibre_label": true,
+          "match": true,
+          "error": null,
+          "pos": {
+            "M5_1": [
+              {
+                "llx": 0,
+                "lly": 0,
+                "urx": 39,
+                "ury": 100
+              }
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "corner_id": "corner_030",
+      "script_expected_correct": false,
+      "script_predicted_correct": false,
+      "corner_any_mismatch": true,
+      "corner_all_match": false,
+      "corner_ok": true,
+      "samples": [
+        {
+          "idx": 0,
+          "predicted_label": true,
+          "calibre_label": true,
+          "match": true,
+          "error": null,
+          "pos": {
+            "M5_1": [
+              {
+                "llx": 0,
+                "lly": 0,
+                "urx": 40,
+                "ury": 100
+              }
+            ]
+          }
+        },
+        {
+          "idx": 1,
+          "predicted_label": false,
+          "calibre_label": true,
+          "match": false,
+          "error": null,
+          "pos": {
+            "M5_1": [
+              {
+                "llx": 0,
+                "lly": 0,
+                "urx": 80,
+                "ury": 100
+              }
+            ]
+          }
+        },
+        {
+          "idx": 2,
+          "predicted_label": true,
+          "calibre_label": true,
+          "match": true,
+          "error": null,
+          "pos": {
+            "M5_1": [
+              {
+                "llx": 0,
+                "lly": 0,
+                "urx": 120,
+                "ury": 100
+              }
+            ]
+          }
+        },
+        {
+          "idx": 3,
+          "predicted_label": false,
+          "calibre_label": true,
+          "match": false,
+          "error": null,
+          "pos": {
+            "M5_1": [
+              {
+                "llx": 0,
+                "lly": 0,
+                "urx": 160,
+                "ury": 100
+              }
+            ]
+          }
+        },
+        {
+          "idx": 4,
+          "predicted_label": true,
+          "calibre_label": true,
+          "match": true,
+          "error": null,
+          "pos": {
+            "M5_1": [
+              {
+                "llx": 0,
+                "lly": 0,
+                "urx": 41,
+                "ury": 100
+              }
+            ]
+          }
+        },
+        {
+          "idx": 5,
+          "predicted_label": true,
+          "calibre_label": true,
+          "match": true,
+          "error": null,
+          "pos": {
+            "M5_1": [
+              {
+                "llx": 0,
+                "lly": 0,
+                "urx": 39,
+                "ury": 100
+              }
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "corner_id": "corner_031",
+      "script_expected_correct": false,
+      "script_predicted_correct": false,
+      "corner_any_mismatch": true,
+      "corner_all_match": false,
+      "corner_ok": true,
+      "samples": [
+        {
+          "idx": 0,
+          "predicted_label": true,
+          "calibre_label": true,
+          "match": true,
+          "error": null,
+          "pos": {
+            "M5_1": [
+              {
+                "llx": 0,
+                "lly": 0,
+                "urx": 40,
+                "ury": 100
+              }
+            ]
+          }
+        },
+        {
+          "idx": 1,
+          "predicted_label": false,
+          "calibre_label": true,
+          "match": false,
+          "error": null,
+          "pos": {
+            "M5_1": [
+              {
+                "llx": 0,
+                "lly": 0,
+                "urx": 80,
+                "ury": 100
+              }
+            ]
+          }
+        },
+        {
+          "idx": 2,
+          "predicted_label": true,
+          "calibre_label": true,
+          "match": true,
+          "error": null,
+          "pos": {
+            "M5_1": [
+              {
+                "llx": 0,
+                "lly": 0,
+                "urx": 120,
+                "ury": 100
+              }
+            ]
+          }
+        },
+        {
+          "idx": 3,
+          "predicted_label": false,
+          "calibre_label": true,
+          "match": false,
+          "error": null,
+          "pos": {
+            "M5_1": [
+              {
+                "llx": 0,
+                "lly": 0,
+                "urx": 160,
+                "ury": 100
+              }
+            ]
+          }
+        },
+        {
+          "idx": 4,
+          "predicted_label": true,
+          "calibre_label": true,
+          "match": true,
+          "error": null,
+          "pos": {
+            "M5_1": [
+              {
+                "llx": 0,
+                "lly": 0,
+                "urx": 41,
+                "ury": 100
+              }
+            ]
+          }
+        },
+        {
+          "idx": 5,
+          "predicted_label": true,
+          "calibre_label": true,
+          "match": true,
+          "error": null,
+          "pos": {
+            "M5_1": [
+              {
+                "llx": 0,
+                "lly": 0,
+                "urx": 39,
+                "ury": 100
+              }
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "corner_id": "corner_original",
+      "script_expected_correct": true,
+      "script_predicted_correct": false,
+      "corner_any_mismatch": true,
+      "corner_all_match": false,
+      "corner_ok": false,
+      "samples": [
+        {
+          "idx": 0,
+          "predicted_label": true,
+          "calibre_label": true,
+          "match": true,
+          "error": null,
+          "pos": {
+            "M5_1": [
+              {
+                "llx": 0,
+                "lly": 0,
+                "urx": 40,
+                "ury": 100
+              }
+            ]
+          }
+        },
+        {
+          "idx": 1,
+          "predicted_label": false,
+          "calibre_label": true,
+          "match": false,
+          "error": null,
+          "pos": {
+            "M5_1": [
+              {
+                "llx": 0,
+                "lly": 0,
+                "urx": 80,
+                "ury": 100
+              }
+            ]
+          }
+        },
+        {
+          "idx": 2,
+          "predicted_label": true,
+          "calibre_label": true,
+          "match": true,
+          "error": null,
+          "pos": {
+            "M5_1": [
+              {
+                "llx": 0,
+                "lly": 0,
+                "urx": 120,
+                "ury": 100
+              }
+            ]
+          }
+        },
+        {
+          "idx": 3,
+          "predicted_label": false,
+          "calibre_label": true,
+          "match": false,
+          "error": null,
+          "pos": {
+            "M5_1": [
+              {
+                "llx": 0,
+                "lly": 0,
+                "urx": 160,
+                "ury": 100
+              }
+            ]
+          }
+        },
+        {
+          "idx": 4,
+          "predicted_label": true,
+          "calibre_label": true,
+          "match": true,
+          "error": null,
+          "pos": {
+            "M5_1": [
+              {
+                "llx": 0,
+                "lly": 0,
+                "urx": 41,
+                "ury": 100
+              }
+            ]
+          }
+        },
+        {
+          "idx": 5,
+          "predicted_label": true,
+          "calibre_label": true,
+          "match": true,
+          "error": null,
+          "pos": {
+            "M5_1": [
+              {
+                "llx": 0,
+                "lly": 0,
+                "urx": 39,
+                "ury": 100
+              }
+            ]
+          }
+        }
+      ]
+    }
+  ]
+}

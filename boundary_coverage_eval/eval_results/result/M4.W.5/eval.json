@@ -1,0 +1,61 @@
+{
+  "rule_name": "M4.W.5",
+  "rule_description": "Minimum horizontal width of M4 is 44 nm.",
+  "rule_script": "INTERNAL M4_VE < VAR_BLOCK_MASK_T2T",
+  "perturbed_scripts": {
+    "corner_000": "INTERNAL M4_VE < VAR_BLOCK_MASK_T2T\n"
+  },
+  "data_name": "asap7",
+  "judge_mode": "match",
+  "corner_count": 1,
+  "sample_count": 2,
+  "all_corners_match": true,
+  "all_corners_detect": false,
+  "all_corners_ok": true,
+  "per_corner": [
+    {
+      "corner_id": "corner_000",
+      "script_expected_correct": true,
+      "script_predicted_correct": true,
+      "corner_any_mismatch": false,
+      "corner_all_match": true,
+      "corner_ok": true,
+      "samples": [
+        {
+          "idx": 0,
+          "predicted_label": true,
+          "calibre_label": true,
+          "match": true,
+          "error": null,
+          "pos": {
+            "M4_1": [
+              {
+                "llx": 0,
+                "lly": 0,
+                "urx": 44,
+                "ury": 100
+              }
+            ]
+          }
+        },
+        {
+          "idx": 1,
+          "predicted_label": false,
+          "calibre_label": false,
+          "match": true,
+          "error": null,
+          "pos": {
+            "M4_1": [
+              {
+                "llx": 0,
+                "lly": 0,
+                "urx": 43,
+                "ury": 100
+              }
+            ]
+          }
+        }
+      ]
+    }
+  ]
+}

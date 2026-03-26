@@ -1,0 +1,100 @@
+
+
+==================================================================================
+=== CALIBRE::DRC-H SUMMARY REPORT
+===
+Execution Date/Time:       Tue Mar 24 22:08:15 2026
+Calibre Version:           v2019.3_15.11    Tue Jul 2 12:24:58 PDT 2019
+Rule File Pathname:        /share/home/zenghuanlong/pn_examples/boundary_coverage_eval/eval_results/result/work/asap7/ACTIVE.W.2/corner_154/example_3.rul
+Rule File Title:           
+Layout System:             GDS
+Layout Path(s):            /share/home/zenghuanlong/pn_examples/boundary_coverage_eval/eval_results/result/work/asap7/ACTIVE.W.2/gds/example_3.gds
+Layout Primary Cell:       TOPCELL
+Current Directory:         /share/home/zenghuanlong/pn_examples/boundary_coverage_eval/eval_results/result/work/asap7/ACTIVE.W.2/corner_154
+User Name:                 zenghuanlong
+Maximum Results/RuleCheck: 1000
+Maximum Result Vertices:   4096
+DRC Results Database:      drc_results.db (ASCII)
+Layout Depth:              ALL
+Text Depth:                PRIMARY
+Summary Report File:       drc_report (REPLACE)
+Geometry Flagging:         ACUTE = NO  SKEW = NO  ANGLED = NO  OFFGRID = NO
+                           NONSIMPLE POLYGON = NO  NONSIMPLE PATH = NO
+Excluded Cells:           
+CheckText Mapping:         COMMENT TEXT + RULE FILE INFORMATION
+Layers:                    MEMORY-BASED
+Keep Empty Checks:         YES
+----------------------------------------------------------------------------------
+--- RUNTIME WARNINGS
+---
+----------------------------------------------------------------------------------
+--- ORIGINAL LAYER STATISTICS
+---
+LAYER GCUT ...... TOTAL Original Geometry Count = 0 (0)
+LAYER GATE ...... TOTAL Original Geometry Count = 0 (0)
+LAYER SRAMDRC ... TOTAL Original Geometry Count = 0 (0)
+LAYER ACTIVE .... TOTAL Original Geometry Count = 1 (1)
+LAYER WELL ...... TOTAL Original Geometry Count = 0 (0)
+LAYER NSELECT ... TOTAL Original Geometry Count = 0 (0)
+LAYER PSELECT ... TOTAL Original Geometry Count = 0 (0)
+LAYER SLVT ...... TOTAL Original Geometry Count = 0 (0)
+LAYER LVT ....... TOTAL Original Geometry Count = 0 (0)
+LAYER SRAMVT .... TOTAL Original Geometry Count = 0 (0)
+LAYER SDT ....... TOTAL Original Geometry Count = 0 (0)
+LAYER LISD ...... TOTAL Original Geometry Count = 0 (0)
+LAYER LIG ....... TOTAL Original Geometry Count = 0 (0)
+LAYER V0 ........ TOTAL Original Geometry Count = 0 (0)
+LAYER M1 ........ TOTAL Original Geometry Count = 0 (0)
+LAYER M4 ........ TOTAL Original Geometry Count = 0 (0)
+LAYER M5 ........ TOTAL Original Geometry Count = 0 (0)
+LAYER M6 ........ TOTAL Original Geometry Count = 0 (0)
+LAYER M7 ........ TOTAL Original Geometry Count = 0 (0)
+LAYER M2 ........ TOTAL Original Geometry Count = 0 (0)
+LAYER M3 ........ TOTAL Original Geometry Count = 0 (0)
+LAYER M8 ........ TOTAL Original Geometry Count = 0 (0)
+LAYER V1 ........ TOTAL Original Geometry Count = 0 (0)
+LAYER V2 ........ TOTAL Original Geometry Count = 0 (0)
+LAYER V3 ........ TOTAL Original Geometry Count = 0 (0)
+LAYER V4 ........ TOTAL Original Geometry Count = 0 (0)
+LAYER V5 ........ TOTAL Original Geometry Count = 0 (0)
+LAYER V6 ........ TOTAL Original Geometry Count = 0 (0)
+LAYER V7 ........ TOTAL Original Geometry Count = 0 (0)
+LAYER M9 ........ TOTAL Original Geometry Count = 0 (0)
+LAYER V8 ........ TOTAL Original Geometry Count = 0 (0)
+----------------------------------------------------------------------------------
+--- RULECHECK RESULTS STATISTICS
+---
+RULECHECK GEOMETRY.NONORTHOGONAL ..... TOTAL Result Count = 0 (0)
+RULECHECK ACTIVE.W.2 ................. TOTAL Result Count = 0 (0)
+RULECHECK SRAM.ACTIVE.WELL.S.5 ....... TOTAL Result Count = 0 (0)
+RULECHECK SRAM.ACTIVE.WELL.EN.2 ...... TOTAL Result Count = 0 (0)
+RULECHECK SRAM.ACTIVE.A.2A ........... TOTAL Result Count = 0 (0)
+RULECHECK SRAM.ACTIVE.A.2B ........... TOTAL Result Count = 0 (0)
+RULECHECK SRAM.ACTIVE.AUX.2 .......... TOTAL Result Count = 0 (0)
+RULECHECK SRAM.NSELECT.ACTIVE.EN.3 ... TOTAL Result Count = 0 (0)
+RULECHECK SRAM.NSELECT.ACTIVE.EN.4 ... TOTAL Result Count = 0 (0)
+RULECHECK SRAM.PSELECT.ACTIVE.EN.3 ... TOTAL Result Count = 0 (0)
+RULECHECK SRAM.PSELECT.ACTIVE.EN.4 ... TOTAL Result Count = 0 (0)
+RULECHECK SRAM.SLVT.ACTIVE.EN.3 ...... TOTAL Result Count = 0 (0)
+RULECHECK SRAM.SLVT.ACTIVE.EN.4 ...... TOTAL Result Count = 0 (0)
+RULECHECK SRAM.LVT.ACTIVE.EN.3 ....... TOTAL Result Count = 0 (0)
+RULECHECK SRAM.LVT.ACTIVE.EN.4 ....... TOTAL Result Count = 0 (0)
+RULECHECK SRAM.SRAMVT.ACTIVE.EN.3 .... TOTAL Result Count = 0 (0)
+RULECHECK SRAM.SRAMVT.ACTIVE.EN.4 .... TOTAL Result Count = 0 (0)
+RULECHECK VT.AUX.2 ................... TOTAL Result Count = 0 (0)
+RULECHECK SRAM.SDT.W.4 ............... TOTAL Result Count = 0 (0)
+RULECHECK SRAM.SDT.ACTIVE.OV.3 ....... TOTAL Result Count = 0 (0)
+RULECHECK SRAM.SDT.LISD.OV.4 ......... TOTAL Result Count = 0 (0)
+RULECHECK SRAM.LISD.S.4 .............. TOTAL Result Count = 0 (0)
+RULECHECK SRAM.LISD.AUX.1 ............ TOTAL Result Count = 0 (0)
+RULECHECK SRAM.LIG.GATE.A.4 .......... TOTAL Result Count = 0 (0)
+RULECHECK SRAM.LIG.AUX.2 ............. TOTAL Result Count = 0 (0)
+RULECHECK SRAM.LIG.GATE.OV.2 ......... TOTAL Result Count = 0 (0)
+----------------------------------------------------------------------------------
+--- SUMMARY
+---
+TOTAL CPU Time:                  0
+TOTAL REAL Time:                 27
+TOTAL Original Layer Geometries: 1 (1)
+TOTAL DRC RuleChecks Executed:   26
+TOTAL DRC Results Generated:     0 (0)

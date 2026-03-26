@@ -1,0 +1,1141 @@
+{
+  "rule_name": "DUMMY.W.1",
+  "rule_description": "Width of dummy should be 40 nm",
+  "rule_script": "INTERNAL DUMMY_VE <0.040 \nINTERNAL DUMMY_VE >0.040 < 0.5",
+  "perturbed_scripts": {
+    "corner_000": "INTERNAL DUMMY_VE <0.039\nINTERNAL DUMMY_VE >0.039 < 0.499\n",
+    "corner_001": "INTERNAL DUMMY_VE <0.041\nINTERNAL DUMMY_VE >0.039 < 0.499\n",
+    "corner_002": "INTERNAL DUMMY_VE <0.039\nINTERNAL DUMMY_VE >0.041 < 0.499\n",
+    "corner_003": "INTERNAL DUMMY_VE <0.041\nINTERNAL DUMMY_VE >0.041 < 0.499\n",
+    "corner_004": "INTERNAL DUMMY_VE <0.039\nINTERNAL DUMMY_VE >0.039 < 0.501\n",
+    "corner_005": "INTERNAL DUMMY_VE <0.041\nINTERNAL DUMMY_VE >0.039 < 0.501\n",
+    "corner_006": "INTERNAL DUMMY_VE <0.039\nINTERNAL DUMMY_VE >0.041 < 0.501\n",
+    "corner_007": "INTERNAL DUMMY_VE <0.041\nINTERNAL DUMMY_VE >0.041 < 0.501\n",
+    "corner_original": "INTERNAL DUMMY_VE <0.040 \nINTERNAL DUMMY_VE >0.040 < 0.5\n"
+  },
+  "data_name": "asap7",
+  "judge_mode": "match",
+  "corner_count": 9,
+  "sample_count": 6,
+  "all_corners_match": false,
+  "all_corners_detect": false,
+  "all_corners_ok": true,
+  "per_corner": [
+    {
+      "corner_id": "corner_000",
+      "script_expected_correct": false,
+      "script_predicted_correct": false,
+      "corner_any_mismatch": true,
+      "corner_all_match": false,
+      "corner_ok": true,
+      "samples": [
+        {
+          "idx": 0,
+          "predicted_label": true,
+          "calibre_label": false,
+          "match": false,
+          "error": null,
+          "pos": {
+            "DUMMY_1": [
+              {
+                "llx": 0,
+                "lly": 0,
+                "urx": 40,
+                "ury": 100
+              }
+            ]
+          }
+        },
+        {
+          "idx": 1,
+          "predicted_label": false,
+          "calibre_label": true,
+          "match": false,
+          "error": null,
+          "pos": {
+            "DUMMY_1": [
+              {
+                "llx": 0,
+                "lly": 0,
+                "urx": 39,
+                "ury": 100
+              }
+            ]
+          }
+        },
+        {
+          "idx": 2,
+          "predicted_label": true,
+          "calibre_label": false,
+          "match": false,
+          "error": null,
+          "pos": {
+            "DUMMY_1": [
+              {
+                "llx": 0,
+                "lly": 0,
+                "urx": 40,
+                "ury": 40
+              }
+            ]
+          }
+        },
+        {
+          "idx": 3,
+          "predicted_label": false,
+          "calibre_label": true,
+          "match": false,
+          "error": null,
+          "pos": {
+            "DUMMY_1": [
+              {
+                "llx": 0,
+                "lly": 0,
+                "urx": 39,
+                "ury": 39
+              }
+            ]
+          }
+        },
+        {
+          "idx": 4,
+          "predicted_label": true,
+          "calibre_label": false,
+          "match": false,
+          "error": null,
+          "pos": {
+            "DUMMY_1": [
+              {
+                "llx": 0,
+                "lly": 0,
+                "urx": 40,
+                "ury": 200
+              },
+              {
+                "llx": 50,
+                "lly": 0,
+                "urx": 90,
+                "ury": 200
+              }
+            ]
+          }
+        },
+        {
+          "idx": 5,
+          "predicted_label": false,
+          "calibre_label": false,
+          "match": true,
+          "error": null,
+          "pos": {
+            "DUMMY_1": [
+              {
+                "llx": 0,
+                "lly": 0,
+                "urx": 40,
+                "ury": 200
+              },
+              {
+                "llx": 50,
+                "lly": 0,
+                "urx": 89,
+                "ury": 200
+              }
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "corner_id": "corner_001",
+      "script_expected_correct": false,
+      "script_predicted_correct": false,
+      "corner_any_mismatch": true,
+      "corner_all_match": false,
+      "corner_ok": true,
+      "samples": [
+        {
+          "idx": 0,
+          "predicted_label": true,
+          "calibre_label": false,
+          "match": false,
+          "error": null,
+          "pos": {
+            "DUMMY_1": [
+              {
+                "llx": 0,
+                "lly": 0,
+                "urx": 40,
+                "ury": 100
+              }
+            ]
+          }
+        },
+        {
+          "idx": 1,
+          "predicted_label": false,
+          "calibre_label": false,
+          "match": true,
+          "error": null,
+          "pos": {
+            "DUMMY_1": [
+              {
+                "llx": 0,
+                "lly": 0,
+                "urx": 39,
+                "ury": 100
+              }
+            ]
+          }
+        },
+        {
+          "idx": 2,
+          "predicted_label": true,
+          "calibre_label": false,
+          "match": false,
+          "error": null,
+          "pos": {
+            "DUMMY_1": [
+              {
+                "llx": 0,
+                "lly": 0,
+                "urx": 40,
+                "ury": 40
+              }
+            ]
+          }
+        },
+        {
+          "idx": 3,
+          "predicted_label": false,
+          "calibre_label": false,
+          "match": true,
+          "error": null,
+          "pos": {
+            "DUMMY_1": [
+              {
+                "llx": 0,
+                "lly": 0,
+                "urx": 39,
+                "ury": 39
+              }
+            ]
+          }
+        },
+        {
+          "idx": 4,
+          "predicted_label": true,
+          "calibre_label": false,
+          "match": false,
+          "error": null,
+          "pos": {
+            "DUMMY_1": [
+              {
+                "llx": 0,
+                "lly": 0,
+                "urx": 40,
+                "ury": 200
+              },
+              {
+                "llx": 50,
+                "lly": 0,
+                "urx": 90,
+                "ury": 200
+              }
+            ]
+          }
+        },
+        {
+          "idx": 5,
+          "predicted_label": false,
+          "calibre_label": false,
+          "match": true,
+          "error": null,
+          "pos": {
+            "DUMMY_1": [
+              {
+                "llx": 0,
+                "lly": 0,
+                "urx": 40,
+                "ury": 200
+              },
+              {
+                "llx": 50,
+                "lly": 0,
+                "urx": 89,
+                "ury": 200
+              }
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "corner_id": "corner_002",
+      "script_expected_correct": false,
+      "script_predicted_correct": false,
+      "corner_any_mismatch": true,
+      "corner_all_match": false,
+      "corner_ok": true,
+      "samples": [
+        {
+          "idx": 0,
+          "predicted_label": true,
+          "calibre_label": true,
+          "match": true,
+          "error": null,
+          "pos": {
+            "DUMMY_1": [
+              {
+                "llx": 0,
+                "lly": 0,
+                "urx": 40,
+                "ury": 100
+              }
+            ]
+          }
+        },
+        {
+          "idx": 1,
+          "predicted_label": false,
+          "calibre_label": true,
+          "match": false,
+          "error": null,
+          "pos": {
+            "DUMMY_1": [
+              {
+                "llx": 0,
+                "lly": 0,
+                "urx": 39,
+                "ury": 100
+              }
+            ]
+          }
+        },
+        {
+          "idx": 2,
+          "predicted_label": true,
+          "calibre_label": true,
+          "match": true,
+          "error": null,
+          "pos": {
+            "DUMMY_1": [
+              {
+                "llx": 0,
+                "lly": 0,
+                "urx": 40,
+                "ury": 40
+              }
+            ]
+          }
+        },
+        {
+          "idx": 3,
+          "predicted_label": false,
+          "calibre_label": true,
+          "match": false,
+          "error": null,
+          "pos": {
+            "DUMMY_1": [
+              {
+                "llx": 0,
+                "lly": 0,
+                "urx": 39,
+                "ury": 39
+              }
+            ]
+          }
+        },
+        {
+          "idx": 4,
+          "predicted_label": true,
+          "calibre_label": true,
+          "match": true,
+          "error": null,
+          "pos": {
+            "DUMMY_1": [
+              {
+                "llx": 0,
+                "lly": 0,
+                "urx": 40,
+                "ury": 200
+              },
+              {
+                "llx": 50,
+                "lly": 0,
+                "urx": 90,
+                "ury": 200
+              }
+            ]
+          }
+        },
+        {
+          "idx": 5,
+          "predicted_label": false,
+          "calibre_label": true,
+          "match": false,
+          "error": null,
+          "pos": {
+            "DUMMY_1": [
+              {
+                "llx": 0,
+                "lly": 0,
+                "urx": 40,
+                "ury": 200
+              },
+              {
+                "llx": 50,
+                "lly": 0,
+                "urx": 89,
+                "ury": 200
+              }
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "corner_id": "corner_003",
+      "script_expected_correct": false,
+      "script_predicted_correct": false,
+      "corner_any_mismatch": true,
+      "corner_all_match": false,
+      "corner_ok": true,
+      "samples": [
+        {
+          "idx": 0,
+          "predicted_label": true,
+          "calibre_label": false,
+          "match": false,
+          "error": null,
+          "pos": {
+            "DUMMY_1": [
+              {
+                "llx": 0,
+                "lly": 0,
+                "urx": 40,
+                "ury": 100
+              }
+            ]
+          }
+        },
+        {
+          "idx": 1,
+          "predicted_label": false,
+          "calibre_label": false,
+          "match": true,
+          "error": null,
+          "pos": {
+            "DUMMY_1": [
+              {
+                "llx": 0,
+                "lly": 0,
+                "urx": 39,
+                "ury": 100
+              }
+            ]
+          }
+        },
+        {
+          "idx": 2,
+          "predicted_label": true,
+          "calibre_label": false,
+          "match": false,
+          "error": null,
+          "pos": {
+            "DUMMY_1": [
+              {
+                "llx": 0,
+                "lly": 0,
+                "urx": 40,
+                "ury": 40
+              }
+            ]
+          }
+        },
+        {
+          "idx": 3,
+          "predicted_label": false,
+          "calibre_label": false,
+          "match": true,
+          "error": null,
+          "pos": {
+            "DUMMY_1": [
+              {
+                "llx": 0,
+                "lly": 0,
+                "urx": 39,
+                "ury": 39
+              }
+            ]
+          }
+        },
+        {
+          "idx": 4,
+          "predicted_label": true,
+          "calibre_label": false,
+          "match": false,
+          "error": null,
+          "pos": {
+            "DUMMY_1": [
+              {
+                "llx": 0,
+                "lly": 0,
+                "urx": 40,
+                "ury": 200
+              },
+              {
+                "llx": 50,
+                "lly": 0,
+                "urx": 90,
+                "ury": 200
+              }
+            ]
+          }
+        },
+        {
+          "idx": 5,
+          "predicted_label": false,
+          "calibre_label": false,
+          "match": true,
+          "error": null,
+          "pos": {
+            "DUMMY_1": [
+              {
+                "llx": 0,
+                "lly": 0,
+                "urx": 40,
+                "ury": 200
+              },
+              {
+                "llx": 50,
+                "lly": 0,
+                "urx": 89,
+                "ury": 200
+              }
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "corner_id": "corner_004",
+      "script_expected_correct": false,
+      "script_predicted_correct": false,
+      "corner_any_mismatch": true,
+      "corner_all_match": false,
+      "corner_ok": true,
+      "samples": [
+        {
+          "idx": 0,
+          "predicted_label": true,
+          "calibre_label": false,
+          "match": false,
+          "error": null,
+          "pos": {
+            "DUMMY_1": [
+              {
+                "llx": 0,
+                "lly": 0,
+                "urx": 40,
+                "ury": 100
+              }
+            ]
+          }
+        },
+        {
+          "idx": 1,
+          "predicted_label": false,
+          "calibre_label": true,
+          "match": false,
+          "error": null,
+          "pos": {
+            "DUMMY_1": [
+              {
+                "llx": 0,
+                "lly": 0,
+                "urx": 39,
+                "ury": 100
+              }
+            ]
+          }
+        },
+        {
+          "idx": 2,
+          "predicted_label": true,
+          "calibre_label": false,
+          "match": false,
+          "error": null,
+          "pos": {
+            "DUMMY_1": [
+              {
+                "llx": 0,
+                "lly": 0,
+                "urx": 40,
+                "ury": 40
+              }
+            ]
+          }
+        },
+        {
+          "idx": 3,
+          "predicted_label": false,
+          "calibre_label": true,
+          "match": false,
+          "error": null,
+          "pos": {
+            "DUMMY_1": [
+              {
+                "llx": 0,
+                "lly": 0,
+                "urx": 39,
+                "ury": 39
+              }
+            ]
+          }
+        },
+        {
+          "idx": 4,
+          "predicted_label": true,
+          "calibre_label": false,
+          "match": false,
+          "error": null,
+          "pos": {
+            "DUMMY_1": [
+              {
+                "llx": 0,
+                "lly": 0,
+                "urx": 40,
+                "ury": 200
+              },
+              {
+                "llx": 50,
+                "lly": 0,
+                "urx": 90,
+                "ury": 200
+              }
+            ]
+          }
+        },
+        {
+          "idx": 5,
+          "predicted_label": false,
+          "calibre_label": false,
+          "match": true,
+          "error": null,
+          "pos": {
+            "DUMMY_1": [
+              {
+                "llx": 0,
+                "lly": 0,
+                "urx": 40,
+                "ury": 200
+              },
+              {
+                "llx": 50,
+                "lly": 0,
+                "urx": 89,
+                "ury": 200
+              }
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "corner_id": "corner_005",
+      "script_expected_correct": false,
+      "script_predicted_correct": false,
+      "corner_any_mismatch": true,
+      "corner_all_match": false,
+      "corner_ok": true,
+      "samples": [
+        {
+          "idx": 0,
+          "predicted_label": true,
+          "calibre_label": false,
+          "match": false,
+          "error": null,
+          "pos": {
+            "DUMMY_1": [
+              {
+                "llx": 0,
+                "lly": 0,
+                "urx": 40,
+                "ury": 100
+              }
+            ]
+          }
+        },
+        {
+          "idx": 1,
+          "predicted_label": false,
+          "calibre_label": false,
+          "match": true,
+          "error": null,
+          "pos": {
+            "DUMMY_1": [
+              {
+                "llx": 0,
+                "lly": 0,
+                "urx": 39,
+                "ury": 100
+              }
+            ]
+          }
+        },
+        {
+          "idx": 2,
+          "predicted_label": true,
+          "calibre_label": false,
+          "match": false,
+          "error": null,
+          "pos": {
+            "DUMMY_1": [
+              {
+                "llx": 0,
+                "lly": 0,
+                "urx": 40,
+                "ury": 40
+              }
+            ]
+          }
+        },
+        {
+          "idx": 3,
+          "predicted_label": false,
+          "calibre_label": false,
+          "match": true,
+          "error": null,
+          "pos": {
+            "DUMMY_1": [
+              {
+                "llx": 0,
+                "lly": 0,
+                "urx": 39,
+                "ury": 39
+              }
+            ]
+          }
+        },
+        {
+          "idx": 4,
+          "predicted_label": true,
+          "calibre_label": false,
+          "match": false,
+          "error": null,
+          "pos": {
+            "DUMMY_1": [
+              {
+                "llx": 0,
+                "lly": 0,
+                "urx": 40,
+                "ury": 200
+              },
+              {
+                "llx": 50,
+                "lly": 0,
+                "urx": 90,
+                "ury": 200
+              }
+            ]
+          }
+        },
+        {
+          "idx": 5,
+          "predicted_label": false,
+          "calibre_label": false,
+          "match": true,
+          "error": null,
+          "pos": {
+            "DUMMY_1": [
+              {
+                "llx": 0,
+                "lly": 0,
+                "urx": 40,
+                "ury": 200
+              },
+              {
+                "llx": 50,
+                "lly": 0,
+                "urx": 89,
+                "ury": 200
+              }
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "corner_id": "corner_006",
+      "script_expected_correct": false,
+      "script_predicted_correct": false,
+      "corner_any_mismatch": true,
+      "corner_all_match": false,
+      "corner_ok": true,
+      "samples": [
+        {
+          "idx": 0,
+          "predicted_label": true,
+          "calibre_label": true,
+          "match": true,
+          "error": null,
+          "pos": {
+            "DUMMY_1": [
+              {
+                "llx": 0,
+                "lly": 0,
+                "urx": 40,
+                "ury": 100
+              }
+            ]
+          }
+        },
+        {
+          "idx": 1,
+          "predicted_label": false,
+          "calibre_label": true,
+          "match": false,
+          "error": null,
+          "pos": {
+            "DUMMY_1": [
+              {
+                "llx": 0,
+                "lly": 0,
+                "urx": 39,
+                "ury": 100
+              }
+            ]
+          }
+        },
+        {
+          "idx": 2,
+          "predicted_label": true,
+          "calibre_label": true,
+          "match": true,
+          "error": null,
+          "pos": {
+            "DUMMY_1": [
+              {
+                "llx": 0,
+                "lly": 0,
+                "urx": 40,
+                "ury": 40
+              }
+            ]
+          }
+        },
+        {
+          "idx": 3,
+          "predicted_label": false,
+          "calibre_label": true,
+          "match": false,
+          "error": null,
+          "pos": {
+            "DUMMY_1": [
+              {
+                "llx": 0,
+                "lly": 0,
+                "urx": 39,
+                "ury": 39
+              }
+            ]
+          }
+        },
+        {
+          "idx": 4,
+          "predicted_label": true,
+          "calibre_label": true,
+          "match": true,
+          "error": null,
+          "pos": {
+            "DUMMY_1": [
+              {
+                "llx": 0,
+                "lly": 0,
+                "urx": 40,
+                "ury": 200
+              },
+              {
+                "llx": 50,
+                "lly": 0,
+                "urx": 90,
+                "ury": 200
+              }
+            ]
+          }
+        },
+        {
+          "idx": 5,
+          "predicted_label": false,
+          "calibre_label": true,
+          "match": false,
+          "error": null,
+          "pos": {
+            "DUMMY_1": [
+              {
+                "llx": 0,
+                "lly": 0,
+                "urx": 40,
+                "ury": 200
+              },
+              {
+                "llx": 50,
+                "lly": 0,
+                "urx": 89,
+                "ury": 200
+              }
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "corner_id": "corner_007",
+      "script_expected_correct": false,
+      "script_predicted_correct": false,
+      "corner_any_mismatch": true,
+      "corner_all_match": false,
+      "corner_ok": true,
+      "samples": [
+        {
+          "idx": 0,
+          "predicted_label": true,
+          "calibre_label": false,
+          "match": false,
+          "error": null,
+          "pos": {
+            "DUMMY_1": [
+              {
+                "llx": 0,
+                "lly": 0,
+                "urx": 40,
+                "ury": 100
+              }
+            ]
+          }
+        },
+        {
+          "idx": 1,
+          "predicted_label": false,
+          "calibre_label": false,
+          "match": true,
+          "error": null,
+          "pos": {
+            "DUMMY_1": [
+              {
+                "llx": 0,
+                "lly": 0,
+                "urx": 39,
+                "ury": 100
+              }
+            ]
+          }
+        },
+        {
+          "idx": 2,
+          "predicted_label": true,
+          "calibre_label": false,
+          "match": false,
+          "error": null,
+          "pos": {
+            "DUMMY_1": [
+              {
+                "llx": 0,
+                "lly": 0,
+                "urx": 40,
+                "ury": 40
+              }
+            ]
+          }
+        },
+        {
+          "idx": 3,
+          "predicted_label": false,
+          "calibre_label": false,
+          "match": true,
+          "error": null,
+          "pos": {
+            "DUMMY_1": [
+              {
+                "llx": 0,
+                "lly": 0,
+                "urx": 39,
+                "ury": 39
+              }
+            ]
+          }
+        },
+        {
+          "idx": 4,
+          "predicted_label": true,
+          "calibre_label": false,
+          "match": false,
+          "error": null,
+          "pos": {
+            "DUMMY_1": [
+              {
+                "llx": 0,
+                "lly": 0,
+                "urx": 40,
+                "ury": 200
+              },
+              {
+                "llx": 50,
+                "lly": 0,
+                "urx": 90,
+                "ury": 200
+              }
+            ]
+          }
+        },
+        {
+          "idx": 5,
+          "predicted_label": false,
+          "calibre_label": false,
+          "match": true,
+          "error": null,
+          "pos": {
+            "DUMMY_1": [
+              {
+                "llx": 0,
+                "lly": 0,
+                "urx": 40,
+                "ury": 200
+              },
+              {
+                "llx": 50,
+                "lly": 0,
+                "urx": 89,
+                "ury": 200
+              }
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "corner_id": "corner_original",
+      "script_expected_correct": true,
+      "script_predicted_correct": true,
+      "corner_any_mismatch": false,
+      "corner_all_match": true,
+      "corner_ok": true,
+      "samples": [
+        {
+          "idx": 0,
+          "predicted_label": true,
+          "calibre_label": true,
+          "match": true,
+          "error": null,
+          "pos": {
+            "DUMMY_1": [
+              {
+                "llx": 0,
+                "lly": 0,
+                "urx": 40,
+                "ury": 100
+              }
+            ]
+          }
+        },
+        {
+          "idx": 1,
+          "predicted_label": false,
+          "calibre_label": false,
+          "match": true,
+          "error": null,
+          "pos": {
+            "DUMMY_1": [
+              {
+                "llx": 0,
+                "lly": 0,
+                "urx": 39,
+                "ury": 100
+              }
+            ]
+          }
+        },
+        {
+          "idx": 2,
+          "predicted_label": true,
+          "calibre_label": true,
+          "match": true,
+          "error": null,
+          "pos": {
+            "DUMMY_1": [
+              {
+                "llx": 0,
+                "lly": 0,
+                "urx": 40,
+                "ury": 40
+              }
+            ]
+          }
+        },
+        {
+          "idx": 3,
+          "predicted_label": false,
+          "calibre_label": false,
+          "match": true,
+          "error": null,
+          "pos": {
+            "DUMMY_1": [
+              {
+                "llx": 0,
+                "lly": 0,
+                "urx": 39,
+                "ury": 39
+              }
+            ]
+          }
+        },
+        {
+          "idx": 4,
+          "predicted_label": true,
+          "calibre_label": true,
+          "match": true,
+          "error": null,
+          "pos": {
+            "DUMMY_1": [
+              {
+                "llx": 0,
+                "lly": 0,
+                "urx": 40,
+                "ury": 200
+              },
+              {
+                "llx": 50,
+                "lly": 0,
+                "urx": 90,
+                "ury": 200
+              }
+            ]
+          }
+        },
+        {
+          "idx": 5,
+          "predicted_label": false,
+          "calibre_label": false,
+          "match": true,
+          "error": null,
+          "pos": {
+            "DUMMY_1": [
+              {
+                "llx": 0,
+                "lly": 0,
+                "urx": 40,
+                "ury": 200
+              },
+              {
+                "llx": 50,
+                "lly": 0,
+                "urx": 89,
+                "ury": 200
+              }
+            ]
+          }
+        }
+      ]
+    }
+  ]
+}

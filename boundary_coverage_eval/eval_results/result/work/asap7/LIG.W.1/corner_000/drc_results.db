@@ -1,0 +1,157 @@
+TOPCELL 10000
+GEOMETRY.NONORTHOGONAL
+0 0 3 Mar 25 04:14:08 2026                     
+Rule File Pathname: /share/home/zenghuanlong/pn_examples/boundary_coverage_eval/eval_results/result/work/asap7/LIG.W.1/corner_000/example_5.rul
+GEOMETRY.NONORTHOGONAL
+Non-orthogonal shapes are not allowed
+LIG.W.1
+0 0 3 Mar 25 04:14:08 2026                     
+Rule File Pathname: /share/home/zenghuanlong/pn_examples/boundary_coverage_eval/eval_results/result/work/asap7/LIG.W.1/corner_000/example_5.rul
+LIG.W.1
+Minimum width of LIG is 16 nm.
+SRAM.ACTIVE.WELL.S.5
+0 0 4 Mar 25 04:14:08 2026                     
+Rule File Pathname: /share/home/zenghuanlong/pn_examples/boundary_coverage_eval/eval_results/result/work/asap7/LIG.W.1/corner_000/example_5.rul
+SRAM.ACTIVE.WELL.S.5
+Minimum spacing of ACTIVE (interacting with the layer SRAMDRC) to WELL
+is 13.5 nm.
+SRAM.ACTIVE.WELL.EN.2
+0 0 4 Mar 25 04:14:08 2026                     
+Rule File Pathname: /share/home/zenghuanlong/pn_examples/boundary_coverage_eval/eval_results/result/work/asap7/LIG.W.1/corner_000/example_5.rul
+SRAM.ACTIVE.WELL.EN.2
+Minimum enclosure of ACTIVE (interacting with the layer SRAMDRC) by WELL
+is 13.5 nm.
+SRAM.ACTIVE.A.2A
+0 0 4 Mar 25 04:14:08 2026                     
+Rule File Pathname: /share/home/zenghuanlong/pn_examples/boundary_coverage_eval/eval_results/result/work/asap7/LIG.W.1/corner_000/example_5.rul
+SRAM.ACTIVE.A.2A
+Minimum area of an ACTIVE layer polygon that interacts with the
+layer SRAMDRC is 432 nm-sq
+SRAM.ACTIVE.A.2B
+0 0 4 Mar 25 04:14:08 2026                     
+Rule File Pathname: /share/home/zenghuanlong/pn_examples/boundary_coverage_eval/eval_results/result/work/asap7/LIG.W.1/corner_000/example_5.rul
+SRAM.ACTIVE.A.2B
+Minimum enclosed area of an ACTIVE layer polygon that interacts with the
+layer SRAMDRC is 432 nm-sq.
+SRAM.ACTIVE.AUX.2
+0 0 5 Mar 25 04:14:08 2026                     
+Rule File Pathname: /share/home/zenghuanlong/pn_examples/boundary_coverage_eval/eval_results/result/work/asap7/LIG.W.1/corner_000/example_5.rul
+SRAM.ACTIVE.AUX.2
+ACTIVE layer polygons not belonging to an SRAM cell, i.e. those that are
+either completely outside the SRAMDRC layer or those that do not
+intersect the SRAMDRC layer, may not touch the SRAMDRC layer.
+SRAM.NSELECT.ACTIVE.EN.3
+0 0 4 Mar 25 04:14:08 2026                     
+Rule File Pathname: /share/home/zenghuanlong/pn_examples/boundary_coverage_eval/eval_results/result/work/asap7/LIG.W.1/corner_000/example_5.rul
+SRAM.NSELECT.ACTIVE.EN.3
+Minimum horizontal enclosure of ACTIVE (interacting with SRAMDRC) by
+NSELECT is 13.5 nm.
+SRAM.NSELECT.ACTIVE.EN.4
+0 0 4 Mar 25 04:14:08 2026                     
+Rule File Pathname: /share/home/zenghuanlong/pn_examples/boundary_coverage_eval/eval_results/result/work/asap7/LIG.W.1/corner_000/example_5.rul
+SRAM.NSELECT.ACTIVE.EN.4
+Minimum vertical enclosure of ACTIVE (interacting with SRAMDRC) by
+NSELECT is 13.5 nm.
+SRAM.PSELECT.ACTIVE.EN.3
+0 0 4 Mar 25 04:14:08 2026                     
+Rule File Pathname: /share/home/zenghuanlong/pn_examples/boundary_coverage_eval/eval_results/result/work/asap7/LIG.W.1/corner_000/example_5.rul
+SRAM.PSELECT.ACTIVE.EN.3
+Minimum horizontal enclosure of ACTIVE (interacting with SRAMDRC) by
+PSELECT is 13.5 nm.
+SRAM.PSELECT.ACTIVE.EN.4
+0 0 4 Mar 25 04:14:08 2026                     
+Rule File Pathname: /share/home/zenghuanlong/pn_examples/boundary_coverage_eval/eval_results/result/work/asap7/LIG.W.1/corner_000/example_5.rul
+SRAM.PSELECT.ACTIVE.EN.4
+Minimum vertical enclosure of ACTIVE (interacting with SRAMDRC) by
+PSELECT is 13.5 nm.
+SRAM.SLVT.ACTIVE.EN.3
+0 0 4 Mar 25 04:14:08 2026                     
+Rule File Pathname: /share/home/zenghuanlong/pn_examples/boundary_coverage_eval/eval_results/result/work/asap7/LIG.W.1/corner_000/example_5.rul
+SRAM.SLVT.ACTIVE.EN.3
+Minimum horizontal enclosure of ACTIVE (interacting with SRAMDRC) by
+SLVT is 13.5 nm.
+SRAM.SLVT.ACTIVE.EN.4
+0 0 4 Mar 25 04:14:08 2026                     
+Rule File Pathname: /share/home/zenghuanlong/pn_examples/boundary_coverage_eval/eval_results/result/work/asap7/LIG.W.1/corner_000/example_5.rul
+SRAM.SLVT.ACTIVE.EN.4
+Minimum vertical enclosure of ACTIVE (interacting with SRAMDRC) by
+SLVT is 13.5 nm.
+SRAM.LVT.ACTIVE.EN.3
+0 0 4 Mar 25 04:14:08 2026                     
+Rule File Pathname: /share/home/zenghuanlong/pn_examples/boundary_coverage_eval/eval_results/result/work/asap7/LIG.W.1/corner_000/example_5.rul
+SRAM.LVT.ACTIVE.EN.3
+Minimum horizontal enclosure of ACTIVE (interacting with SRAMDRC) by
+LVT is 13.5 nm.
+SRAM.LVT.ACTIVE.EN.4
+0 0 4 Mar 25 04:14:08 2026                     
+Rule File Pathname: /share/home/zenghuanlong/pn_examples/boundary_coverage_eval/eval_results/result/work/asap7/LIG.W.1/corner_000/example_5.rul
+SRAM.LVT.ACTIVE.EN.4
+Minimum vertical enclosure of ACTIVE (interacting with SRAMDRC) by
+LVT is 13.5 nm.
+SRAM.SRAMVT.ACTIVE.EN.3
+0 0 4 Mar 25 04:14:08 2026                     
+Rule File Pathname: /share/home/zenghuanlong/pn_examples/boundary_coverage_eval/eval_results/result/work/asap7/LIG.W.1/corner_000/example_5.rul
+SRAM.SRAMVT.ACTIVE.EN.3
+Minimum horizontal enclosure of ACTIVE (interacting with SRAMDRC) by
+SRAMVT is 13.5 nm.
+SRAM.SRAMVT.ACTIVE.EN.4
+0 0 4 Mar 25 04:14:08 2026                     
+Rule File Pathname: /share/home/zenghuanlong/pn_examples/boundary_coverage_eval/eval_results/result/work/asap7/LIG.W.1/corner_000/example_5.rul
+SRAM.SRAMVT.ACTIVE.EN.4
+Minimum vertical enclosure of ACTIVE (interacting with SRAMDRC) by
+SRAMVT is 13.5 nm.
+VT.AUX.2
+0 0 3 Mar 25 04:14:08 2026                     
+Rule File Pathname: /share/home/zenghuanlong/pn_examples/boundary_coverage_eval/eval_results/result/work/asap7/LIG.W.1/corner_000/example_5.rul
+VT.AUX.2
+VT layers (LVT, SLVT, and SRAMVT) may not overlap.
+SRAM.SDT.W.4
+0 0 3 Mar 25 04:14:08 2026                     
+Rule File Pathname: /share/home/zenghuanlong/pn_examples/boundary_coverage_eval/eval_results/result/work/asap7/LIG.W.1/corner_000/example_5.rul
+SRAM.SDT.W.4
+Minimum vertical width of SDT (interacting with SRAMDRC) is 17 nm.
+SRAM.SDT.ACTIVE.OV.3
+0 0 4 Mar 25 04:14:08 2026                     
+Rule File Pathname: /share/home/zenghuanlong/pn_examples/boundary_coverage_eval/eval_results/result/work/asap7/LIG.W.1/corner_000/example_5.rul
+SRAM.SDT.ACTIVE.OV.3
+Minimum vertical overlap between SDT (interacting with SRAMDRC) and
+ACTIVE is 17 nm.
+SRAM.SDT.LISD.OV.4
+0 0 4 Mar 25 04:14:08 2026                     
+Rule File Pathname: /share/home/zenghuanlong/pn_examples/boundary_coverage_eval/eval_results/result/work/asap7/LIG.W.1/corner_000/example_5.rul
+SRAM.SDT.LISD.OV.4
+Minimum vertical overlap between SDT (interacting with SRAMDRC) and LISD
+is 17 nm.
+SRAM.LISD.S.4
+0 0 5 Mar 25 04:14:08 2026                     
+Rule File Pathname: /share/home/zenghuanlong/pn_examples/boundary_coverage_eval/eval_results/result/work/asap7/LIG.W.1/corner_000/example_5.rul
+SRAM.LISD.S.4
+Minimum (tip-to-tip) spacing between two LISD layer polygons'
+(interacting with the layer SRAMDRC) edges, when both edges are <=
+36 nm, is 27 nm. 
+SRAM.LISD.AUX.1
+0 0 5 Mar 25 04:14:08 2026                     
+Rule File Pathname: /share/home/zenghuanlong/pn_examples/boundary_coverage_eval/eval_results/result/work/asap7/LIG.W.1/corner_000/example_5.rul
+SRAM.LISD.AUX.1
+LISD layer polygons, which are either completely outside the SRAMDRC
+layer or which do not intersect the SRAMDRC layer, may not touch the SRAMDRC
+layer.
+SRAM.LIG.AUX.2
+0 0 5 Mar 25 04:14:08 2026                     
+Rule File Pathname: /share/home/zenghuanlong/pn_examples/boundary_coverage_eval/eval_results/result/work/asap7/LIG.W.1/corner_000/example_5.rul
+SRAM.LIG.AUX.2
+LIG layer polygons, which are either completely outside the SRAMDRC
+layer or which do not intersect the SRAMDRC layer, may not touch the SRAMDRC
+layer.
+SRAM.LIG.GATE.OV.2
+0 0 4 Mar 25 04:14:08 2026                     
+Rule File Pathname: /share/home/zenghuanlong/pn_examples/boundary_coverage_eval/eval_results/result/work/asap7/LIG.W.1/corner_000/example_5.rul
+SRAM.LIG.GATE.OV.2
+Minimum overlap of LIG (interacting with the layer SRAMDRC) and GATE (not
+cut using GCUT) is 15 nm.
+SRAM.LIG.GATE.A.4
+0 0 4 Mar 25 04:14:08 2026                     
+Rule File Pathname: /share/home/zenghuanlong/pn_examples/boundary_coverage_eval/eval_results/result/work/asap7/LIG.W.1/corner_000/example_5.rul
+SRAM.LIG.GATE.A.4
+Minimum area of overlap between LIG (interacting with the layer
+SRAMDRC) and GATE (not cut using GCUT) is 240 nm-sq.

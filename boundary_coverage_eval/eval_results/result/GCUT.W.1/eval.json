@@ -1,0 +1,581 @@
+{
+  "rule_name": "GCUT.W.1",
+  "rule_description": "Minimum vertical width of GCUT is 17 nm.",
+  "rule_script": "INTERNAL GCUT_HE < 0.017 ABUT < 90 OPPOSITE",
+  "perturbed_scripts": {
+    "corner_000": "INTERNAL GCUT_HE < 0.016 ABUT < 89.999 OPPOSITE\n",
+    "corner_001": "INTERNAL GCUT_HE < 0.018 ABUT < 89.999 OPPOSITE\n",
+    "corner_002": "INTERNAL GCUT_HE < 0.016 ABUT < 90.001 OPPOSITE\n",
+    "corner_003": "INTERNAL GCUT_HE < 0.018 ABUT < 90.001 OPPOSITE\n",
+    "corner_original": "INTERNAL GCUT_HE < 0.017 ABUT < 90 OPPOSITE\n"
+  },
+  "data_name": "asap7",
+  "judge_mode": "match",
+  "corner_count": 5,
+  "sample_count": 6,
+  "all_corners_match": false,
+  "all_corners_detect": true,
+  "all_corners_ok": false,
+  "per_corner": [
+    {
+      "corner_id": "corner_000",
+      "script_expected_correct": false,
+      "script_predicted_correct": false,
+      "corner_any_mismatch": true,
+      "corner_all_match": false,
+      "corner_ok": true,
+      "samples": [
+        {
+          "idx": 0,
+          "predicted_label": true,
+          "calibre_label": true,
+          "match": true,
+          "error": null,
+          "pos": {
+            "GCUT_1": [
+              {
+                "llx": 0,
+                "lly": 0,
+                "urx": 50,
+                "ury": 17
+              }
+            ]
+          }
+        },
+        {
+          "idx": 1,
+          "predicted_label": false,
+          "calibre_label": true,
+          "match": false,
+          "error": null,
+          "pos": {
+            "GCUT_1": [
+              {
+                "llx": 0,
+                "lly": 0,
+                "urx": 50,
+                "ury": 16
+              }
+            ]
+          }
+        },
+        {
+          "idx": 2,
+          "predicted_label": true,
+          "calibre_label": true,
+          "match": true,
+          "error": null,
+          "pos": {
+            "GCUT_1": [
+              {
+                "llx": 0,
+                "lly": 0,
+                "urx": 17,
+                "ury": 50
+              }
+            ]
+          }
+        },
+        {
+          "idx": 3,
+          "predicted_label": false,
+          "calibre_label": true,
+          "match": false,
+          "error": null,
+          "pos": {
+            "GCUT_1": [
+              {
+                "llx": 0,
+                "lly": 0,
+                "urx": 16,
+                "ury": 50
+              }
+            ]
+          }
+        },
+        {
+          "idx": 4,
+          "predicted_label": true,
+          "calibre_label": true,
+          "match": true,
+          "error": null,
+          "pos": {
+            "GCUT_1": [
+              {
+                "llx": 0,
+                "lly": 0,
+                "urx": 17,
+                "ury": 17
+              }
+            ]
+          }
+        },
+        {
+          "idx": 5,
+          "predicted_label": false,
+          "calibre_label": true,
+          "match": false,
+          "error": null,
+          "pos": {
+            "GCUT_1": [
+              {
+                "llx": 0,
+                "lly": 0,
+                "urx": 16,
+                "ury": 16
+              }
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "corner_id": "corner_001",
+      "script_expected_correct": false,
+      "script_predicted_correct": false,
+      "corner_any_mismatch": true,
+      "corner_all_match": false,
+      "corner_ok": true,
+      "samples": [
+        {
+          "idx": 0,
+          "predicted_label": true,
+          "calibre_label": false,
+          "match": false,
+          "error": null,
+          "pos": {
+            "GCUT_1": [
+              {
+                "llx": 0,
+                "lly": 0,
+                "urx": 50,
+                "ury": 17
+              }
+            ]
+          }
+        },
+        {
+          "idx": 1,
+          "predicted_label": false,
+          "calibre_label": false,
+          "match": true,
+          "error": null,
+          "pos": {
+            "GCUT_1": [
+              {
+                "llx": 0,
+                "lly": 0,
+                "urx": 50,
+                "ury": 16
+              }
+            ]
+          }
+        },
+        {
+          "idx": 2,
+          "predicted_label": true,
+          "calibre_label": true,
+          "match": true,
+          "error": null,
+          "pos": {
+            "GCUT_1": [
+              {
+                "llx": 0,
+                "lly": 0,
+                "urx": 17,
+                "ury": 50
+              }
+            ]
+          }
+        },
+        {
+          "idx": 3,
+          "predicted_label": false,
+          "calibre_label": true,
+          "match": false,
+          "error": null,
+          "pos": {
+            "GCUT_1": [
+              {
+                "llx": 0,
+                "lly": 0,
+                "urx": 16,
+                "ury": 50
+              }
+            ]
+          }
+        },
+        {
+          "idx": 4,
+          "predicted_label": true,
+          "calibre_label": false,
+          "match": false,
+          "error": null,
+          "pos": {
+            "GCUT_1": [
+              {
+                "llx": 0,
+                "lly": 0,
+                "urx": 17,
+                "ury": 17
+              }
+            ]
+          }
+        },
+        {
+          "idx": 5,
+          "predicted_label": false,
+          "calibre_label": false,
+          "match": true,
+          "error": null,
+          "pos": {
+            "GCUT_1": [
+              {
+                "llx": 0,
+                "lly": 0,
+                "urx": 16,
+                "ury": 16
+              }
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "corner_id": "corner_002",
+      "script_expected_correct": false,
+      "script_predicted_correct": false,
+      "corner_any_mismatch": true,
+      "corner_all_match": false,
+      "corner_ok": true,
+      "samples": [
+        {
+          "idx": 0,
+          "predicted_label": true,
+          "calibre_label": true,
+          "match": true,
+          "error": null,
+          "pos": {
+            "GCUT_1": [
+              {
+                "llx": 0,
+                "lly": 0,
+                "urx": 50,
+                "ury": 17
+              }
+            ]
+          }
+        },
+        {
+          "idx": 1,
+          "predicted_label": false,
+          "calibre_label": true,
+          "match": false,
+          "error": null,
+          "pos": {
+            "GCUT_1": [
+              {
+                "llx": 0,
+                "lly": 0,
+                "urx": 50,
+                "ury": 16
+              }
+            ]
+          }
+        },
+        {
+          "idx": 2,
+          "predicted_label": true,
+          "calibre_label": true,
+          "match": true,
+          "error": null,
+          "pos": {
+            "GCUT_1": [
+              {
+                "llx": 0,
+                "lly": 0,
+                "urx": 17,
+                "ury": 50
+              }
+            ]
+          }
+        },
+        {
+          "idx": 3,
+          "predicted_label": false,
+          "calibre_label": true,
+          "match": false,
+          "error": null,
+          "pos": {
+            "GCUT_1": [
+              {
+                "llx": 0,
+                "lly": 0,
+                "urx": 16,
+                "ury": 50
+              }
+            ]
+          }
+        },
+        {
+          "idx": 4,
+          "predicted_label": true,
+          "calibre_label": true,
+          "match": true,
+          "error": null,
+          "pos": {
+            "GCUT_1": [
+              {
+                "llx": 0,
+                "lly": 0,
+                "urx": 17,
+                "ury": 17
+              }
+            ]
+          }
+        },
+        {
+          "idx": 5,
+          "predicted_label": false,
+          "calibre_label": true,
+          "match": false,
+          "error": null,
+          "pos": {
+            "GCUT_1": [
+              {
+                "llx": 0,
+                "lly": 0,
+                "urx": 16,
+                "ury": 16
+              }
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "corner_id": "corner_003",
+      "script_expected_correct": false,
+      "script_predicted_correct": false,
+      "corner_any_mismatch": true,
+      "corner_all_match": false,
+      "corner_ok": true,
+      "samples": [
+        {
+          "idx": 0,
+          "predicted_label": true,
+          "calibre_label": false,
+          "match": false,
+          "error": null,
+          "pos": {
+            "GCUT_1": [
+              {
+                "llx": 0,
+                "lly": 0,
+                "urx": 50,
+                "ury": 17
+              }
+            ]
+          }
+        },
+        {
+          "idx": 1,
+          "predicted_label": false,
+          "calibre_label": false,
+          "match": true,
+          "error": null,
+          "pos": {
+            "GCUT_1": [
+              {
+                "llx": 0,
+                "lly": 0,
+                "urx": 50,
+                "ury": 16
+              }
+            ]
+          }
+        },
+        {
+          "idx": 2,
+          "predicted_label": true,
+          "calibre_label": true,
+          "match": true,
+          "error": null,
+          "pos": {
+            "GCUT_1": [
+              {
+                "llx": 0,
+                "lly": 0,
+                "urx": 17,
+                "ury": 50
+              }
+            ]
+          }
+        },
+        {
+          "idx": 3,
+          "predicted_label": false,
+          "calibre_label": true,
+          "match": false,
+          "error": null,
+          "pos": {
+            "GCUT_1": [
+              {
+                "llx": 0,
+                "lly": 0,
+                "urx": 16,
+                "ury": 50
+              }
+            ]
+          }
+        },
+        {
+          "idx": 4,
+          "predicted_label": true,
+          "calibre_label": false,
+          "match": false,
+          "error": null,
+          "pos": {
+            "GCUT_1": [
+              {
+                "llx": 0,
+                "lly": 0,
+                "urx": 17,
+                "ury": 17
+              }
+            ]
+          }
+        },
+        {
+          "idx": 5,
+          "predicted_label": false,
+          "calibre_label": false,
+          "match": true,
+          "error": null,
+          "pos": {
+            "GCUT_1": [
+              {
+                "llx": 0,
+                "lly": 0,
+                "urx": 16,
+                "ury": 16
+              }
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "corner_id": "corner_original",
+      "script_expected_correct": true,
+      "script_predicted_correct": false,
+      "corner_any_mismatch": true,
+      "corner_all_match": false,
+      "corner_ok": false,
+      "samples": [
+        {
+          "idx": 0,
+          "predicted_label": true,
+          "calibre_label": true,
+          "match": true,
+          "error": null,
+          "pos": {
+            "GCUT_1": [
+              {
+                "llx": 0,
+                "lly": 0,
+                "urx": 50,
+                "ury": 17
+              }
+            ]
+          }
+        },
+        {
+          "idx": 1,
+          "predicted_label": false,
+          "calibre_label": false,
+          "match": true,
+          "error": null,
+          "pos": {
+            "GCUT_1": [
+              {
+                "llx": 0,
+                "lly": 0,
+                "urx": 50,
+                "ury": 16
+              }
+            ]
+          }
+        },
+        {
+          "idx": 2,
+          "predicted_label": true,
+          "calibre_label": true,
+          "match": true,
+          "error": null,
+          "pos": {
+            "GCUT_1": [
+              {
+                "llx": 0,
+                "lly": 0,
+                "urx": 17,
+                "ury": 50
+              }
+            ]
+          }
+        },
+        {
+          "idx": 3,
+          "predicted_label": false,
+          "calibre_label": true,
+          "match": false,
+          "error": null,
+          "pos": {
+            "GCUT_1": [
+              {
+                "llx": 0,
+                "lly": 0,
+                "urx": 16,
+                "ury": 50
+              }
+            ]
+          }
+        },
+        {
+          "idx": 4,
+          "predicted_label": true,
+          "calibre_label": true,
+          "match": true,
+          "error": null,
+          "pos": {
+            "GCUT_1": [
+              {
+                "llx": 0,
+                "lly": 0,
+                "urx": 17,
+                "ury": 17
+              }
+            ]
+          }
+        },
+        {
+          "idx": 5,
+          "predicted_label": false,
+          "calibre_label": false,
+          "match": true,
+          "error": null,
+          "pos": {
+            "GCUT_1": [
+              {
+                "llx": 0,
+                "lly": 0,
+                "urx": 16,
+                "ury": 16
+              }
+            ]
+          }
+        }
+      ]
+    }
+  ]
+}

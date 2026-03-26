@@ -1,0 +1,102 @@
+{
+  "rule_name": "GCUT.AUX.3",
+  "rule_description": "GCUT.AUX.3 GCUT may not interact with channel.",
+  "rule_script": "GCUT INTERACT CHANNELR",
+  "perturbed_scripts": {
+    "corner_000": "GCUT INTERACT CHANNELR\n"
+  },
+  "data_name": "asap7",
+  "judge_mode": "match",
+  "corner_count": 1,
+  "sample_count": 3,
+  "all_corners_match": false,
+  "all_corners_detect": true,
+  "all_corners_ok": false,
+  "per_corner": [
+    {
+      "corner_id": "corner_000",
+      "script_expected_correct": true,
+      "script_predicted_correct": false,
+      "corner_any_mismatch": true,
+      "corner_all_match": false,
+      "corner_ok": false,
+      "samples": [
+        {
+          "idx": 0,
+          "predicted_label": true,
+          "calibre_label": true,
+          "match": true,
+          "error": null,
+          "pos": {
+            "GCUT_1": [
+              {
+                "llx": 100,
+                "lly": 100,
+                "urx": 200,
+                "ury": 200
+              }
+            ],
+            "ACTIVE_1": [
+              {
+                "llx": 300,
+                "lly": 100,
+                "urx": 400,
+                "ury": 200
+              }
+            ]
+          }
+        },
+        {
+          "idx": 1,
+          "predicted_label": true,
+          "calibre_label": true,
+          "match": true,
+          "error": null,
+          "pos": {
+            "GCUT_1": [
+              {
+                "llx": 100,
+                "lly": 100,
+                "urx": 200,
+                "ury": 200
+              }
+            ],
+            "ACTIVE_1": [
+              {
+                "llx": 201,
+                "lly": 100,
+                "urx": 300,
+                "ury": 200
+              }
+            ]
+          }
+        },
+        {
+          "idx": 2,
+          "predicted_label": false,
+          "calibre_label": true,
+          "match": false,
+          "error": null,
+          "pos": {
+            "GCUT_1": [
+              {
+                "llx": 100,
+                "lly": 100,
+                "urx": 200,
+                "ury": 200
+              }
+            ],
+            "ACTIVE_1": [
+              {
+                "llx": 200,
+                "lly": 100,
+                "urx": 300,
+                "ury": 200
+              }
+            ]
+          }
+        }
+      ]
+    }
+  ]
+}
