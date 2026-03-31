@@ -248,6 +248,7 @@ def run_detection_for_rule(
     drc_report_name: str = "drc_report",
     skip_existing: bool = False,
     resume_corner_checkpoint: bool = False,
+    verbose_progress: bool = False,
 ) -> Dict[str, Any]:
     """
     仅支持从 baseline summary/result 导入正反例的 pos 与 predicted_label，在本项目内仿 baseline_direct_coord
@@ -339,7 +340,8 @@ def run_detection_for_rule(
     # 对每个 corner：
     # 1) patch base_rule_template -> corner_rule_template.rul
     # 2) 对每个样本：edit_script_path 设定 LAYOUT PATH -> example_{idx}.rul，然后跑 calibre，读 drc_report，和 predicted_label 比较
-    for corner_id in corner_ids:
+    n_corner = len(corner_ids)
+    for ci, corner_id in enumerate(corner_ids):
         corner_script_dir = os.path.join(rule_generated_scripts_dir, corner_id)
         if corner_id in completed_from_ckpt:
             try:
@@ -347,8 +349,19 @@ def run_detection_for_rule(
                 perturbed_scripts[corner_id] = corner_script_body
             except Exception:
                 pass
+            if verbose_progress:
+                print(
+                    f"[corner] {rule_name} {corner_id} ({ci + 1}/{n_corner}) "
+                    f"samples={len(idx_list)} (from checkpoint, skipped)"
+                )
             per_corner.append(completed_from_ckpt[corner_id])
             continue
+
+        if verbose_progress:
+            print(
+                f"[corner] {rule_name} {corner_id} ({ci + 1}/{n_corner}) "
+                f"samples={len(idx_list)} data_name={data_name}"
+            )
 
         corner_dir = os.path.join(rule_work_dir, corner_id)
         corner_dir_abs = os.path.abspath(os.path.normpath(corner_dir))
@@ -378,7 +391,11 @@ def run_detection_for_rule(
         try:
             # calibre 报告写入当前目录
             os.chdir(corner_dir_abs)
-            for idx in idx_list:
+            for si, idx in enumerate(idx_list):
+                if verbose_progress:
+                    print(
+                        f"[sample] {rule_name} {corner_id} sample_idx={idx} ({si + 1}/{len(idx_list)})"
+                    )
                 gds_abs_path = os.path.abspath(gds_paths[idx])
                 example_rul_path = os.path.join(corner_dir_abs, f"example_{idx}.rul")
                 edit_script_path(corner_template_rul_abs, gds_abs_path, example_rul_path)
@@ -558,6 +575,11 @@ def main():
         action="store_true",
         help="与 --skip_rules_with_missing_pos 相反：遇到缺失 pos 立即报错退出。",
     )
+    parser.add_argument(
+        "--verbose_progress",
+        action="store_true",
+        help="打印每条规则下各 corner 的进度（corner 序号、样本数等），便于并行/长任务观察。",
+    )
     args = parser.parse_args()
 
     from config import BASELINE_RESULT_DIR, BASE_RUL_PATHS, NEW_DATASETS_DIR
@@ -633,6 +655,7 @@ def main():
                         drc_report_name=args.drc_report_name,
                         skip_existing=args.skip_existing,
                         resume_corner_checkpoint=args.resume,
+                        verbose_progress=args.verbose_progress,
                     )
                     os.makedirs(out_rule_dir, exist_ok=True)
                     with open(out_rule_json, "w", encoding="utf-8") as f:
@@ -722,6 +745,7 @@ def main():
                         drc_report_name=args.drc_report_name,
                         skip_existing=args.skip_existing,
                         resume_corner_checkpoint=args.resume,
+                        verbose_progress=args.verbose_progress,
                     )
                     os.makedirs(out_rule_dir, exist_ok=True)
                     with open(out_rule_json, "w", encoding="utf-8") as f:

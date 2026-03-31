@@ -14,7 +14,7 @@
 会输出每条规则在每个 `corner_id` 下的扰动 script body（`script.txt`）与元信息（`meta.json`）。`meta.json` 含 `script_expected_correct`（该 corner 的 script 预期为正确/错误），供检测流程使用。
 
 ## 2) 边界覆盖检测
-入口：`check_boundary_coverage.py`
+入口：`check_boundary_coverage.py`（单进程）；多进程总控：`run_parallel_check.py`（子进程调用同一脚本，输出格式一致）。
 
 会读取基线正/反例结果 + 之前生成的扰动 script，运行 Calibre 并统计每条规则是否满足判定标准。
 
@@ -83,6 +83,27 @@ python check_boundary_coverage.py --data_name freePDK15 \
 ```
 同样仅从 result JSON 读取 pos 与 predicted_label，GDS 与 .rul 在本项目内仿 baseline_direct_coord 生成。
 
+### 多进程并行（总控：`run_parallel_check.py`）
+
+用多进程并行跑同一套检测：每个 worker 仍是子进程调用 `check_boundary_coverage.py`，规则列表按顺序**分片**；结束后合并 `result/`、`work/` 与根目录 `summary.json`，**字段与单进程一致**。默认子进程的输出会**带前缀**（如 `[w00]`）打印到终端；`worker.log` **只记录** `[run]`/`[skip]`、`[corner]`、`[resume]`、`[INFO]`/`[WARN]`、`[OK]` 等状态行（不含 Calibre 海量 stdout）。若不要终端刷屏、只要各 worker 的精简日志，可加 `--quiet`。
+
+```bash
+python run_parallel_check.py --jobs 4  --baseline_summary ../baseline_direct_coord/summary_10_10_10.json  --generated_scripts_dir ../perturbed_datasets  --output_dir eval_results
+```
+
+| 参数 | 说明 |
+|------|------|
+| `--jobs N` | 并行 worker 数量（默认 4） |
+| `--keep_worker_dirs` | 保留 `output_dir/_parallel_tmp/worker_XX/`（默认跑完删除临时目录） |
+| `--quiet` | 不在终端打印子进程；**仅**将上述状态行写入 `worker.log`（非全量） |
+| `--no_verbose_progress` | 不向子进程传 `--verbose_progress`，关闭按 corner 打印的进度行 |
+
+其余参数与 `check_boundary_coverage.py` 相同（如 `--resume`、`--skip_existing`、`--max_rules`、`--judge_mode` 等），会原样传给各 worker。合并完成后，若汇总里含跳过的规则（如 `merged_skipped`），总控会在终端打印摘要。
+
+**输出**：与单进程相同，仍为 `output_dir/summary.json`、`output_dir/result/<rule_name>/eval.json`；中间过程写在 `output_dir/_parallel_tmp/worker_XX/`（`worker.log` 为状态行摘要），合并后默认删除该目录（除非 `--keep_worker_dirs`）。
+
+**续跑**：与单进程一样使用 `--resume` / `--skip_existing`；总控会在启动 worker 前把**当前 `output_dir` 里已有**的 `eval.json` / `eval.checkpoint.json`（及对应 `work/`）预拷到各分片目录，避免重复算已完成的规则。
+
 ### 断点续测（`--skip_existing` / `--resume`）
 
 可以**保留已有输出**再继续测，无需从头跑：
@@ -131,7 +152,7 @@ python check_boundary_coverage.py --data_name freePDK15 \
 
 ### 4. 中途停止后如何接着跑？
 
-1. **已跑完若干条规则**（每条都有 `eval.json`）：用**相同** `--output_dir`、`--baseline_summary`（或 `--baseline_result_dir`）等参数，加上 `--skip_existing` 或 `--resume`，会跳过已有 `eval.json` 的规则，只跑剩余规则。  
+1. **已跑完若干条规则**（每条都有 `eval.json`）：用**相同** `--output_dir`、`--baseline_summary`（或 `--baseline_result_dir`）等参数，加上 `--skip_existing` 或 `--resume`，会跳过已有 `eval.json` 的规则，只跑剩余规则（多进程时用 `run_parallel_check.py` 并同样传这些参数）。  
 2. **停在一条规则中间**（该条尚无 `eval.json`，但可能有 `eval.checkpoint.json`）：加上 `--resume`，会从断点继续跑该规则未完成的 corner。  
 3. 若希望某条规则**完全重跑**，先删除对应的 `result/<rule_name>/eval.json`（以及如有）`eval.checkpoint.json`。
 
